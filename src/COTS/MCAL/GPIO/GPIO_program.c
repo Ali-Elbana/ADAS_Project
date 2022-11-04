@@ -60,6 +60,7 @@ FUNC(void) MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, V
 				break;
 			}
 			break;
+			
 		case GPIOx_PUSHPULL:
 			switch(A_u8PortID)
 			{
@@ -175,6 +176,7 @@ FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8
 					break;
 			}
 			break;
+
 		case GPIOx_LOW:
 			switch( A_u8PortID )
 			{
@@ -237,7 +239,6 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 					break;
 			}
 			break;
-
 
 		case GPIO_PORTB:
 			switch( A_u8PinID )
