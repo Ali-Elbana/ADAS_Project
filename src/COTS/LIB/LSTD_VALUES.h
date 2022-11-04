@@ -23,7 +23,7 @@
 /* Check whether the NULL define is defined before */
 #ifndef NULL
 	/* Type definition for NULL */
-	#define NULL ((void*) 0)
+	#define NULL (P2VAR(void) 0)
 #endif  /* ifndef NULL */
 
 /* Check whether the INITIAL_ZERO define is defined before */
