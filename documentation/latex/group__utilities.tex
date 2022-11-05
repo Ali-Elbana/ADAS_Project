@@ -1,0 +1,20 @@
+\hypertarget{group__utilities}{}\doxysection{Utilities macros}
+\label{group__utilities}\index{Utilities macros@{Utilities macros}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__utilities_ga160c8b5c95d88dfe9d501f087611755d}{MY\+\_\+\+MS\+\_\+\+DELAY}}(T)~do\{ u32 Timer = (T $\ast$ 500); while (Timer-\/-\/) \{ asm (\char`\"{}nop\char`\"{}); \} \} while(0);
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__utilities_ga160c8b5c95d88dfe9d501f087611755d}\label{group__utilities_ga160c8b5c95d88dfe9d501f087611755d}} 
+\index{Utilities macros@{Utilities macros}!MY\_MS\_DELAY@{MY\_MS\_DELAY}}
+\index{MY\_MS\_DELAY@{MY\_MS\_DELAY}!Utilities macros@{Utilities macros}}
+\doxysubsubsection{\texorpdfstring{MY\_MS\_DELAY}{MY\_MS\_DELAY}}
+{\footnotesize\ttfamily \#define MY\+\_\+\+MS\+\_\+\+DELAY(\begin{DoxyParamCaption}\item[{}]{T }\end{DoxyParamCaption})~do\{ u32 Timer = (T $\ast$ 500); while (Timer-\/-\/) \{ asm (\char`\"{}nop\char`\"{}); \} \} while(0);}
+
+Declare a delay with a {\ttfamily T} microseconds with a NOP delay 

@@ -1,0 +1,33 @@
+\hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{}\doxysection{LSTD\+\_\+\+BITMATH.\+h}
+\label{_l_s_t_d___b_i_t_m_a_t_h_8h_source}\index{src/COTS/LIB/LSTD\_BITMATH.h@{src/COTS/LIB/LSTD\_BITMATH.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{ * LSTD\_BITMATH.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ *}}
+\DoxyCodeLine{4 \textcolor{comment}{ *  Created on: Oct 29, 2022}}
+\DoxyCodeLine{5 \textcolor{comment}{ *      Author: Abo3a}}
+\DoxyCodeLine{6 \textcolor{comment}{ */}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef COTS\_LIB\_LSTD\_BITMATH\_H\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define COTS\_LIB\_LSTD\_BITMATH\_H\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define SET\_BIT(Reg, bitnum) (Reg) |= (1 << (bitnum))}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define CLR\_BIT(Reg, bitnum) (Reg) \&= \string~(1 << (bitnum))}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define TOGGLE\_BIT(Reg, bitnum) (Reg) \string^= (1 << (bitnum))}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define GET\_BIT(Reg, bitnum)        (((Reg)>>(bitnum)) \& 1)}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define SET\_BITs(Reg, bits, bitnum, factor) (Reg) |= ((bits) << (bitnum * factor))}}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#define CLR\_BITs(Reg, bits, bitnum, factor) (Reg) \&= \string~((bits) << (bitnum * factor))}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{72 \textcolor{preprocessor}{\#define TOGGLE\_BITs(Reg, bits, bitnum, factor) (Reg) \string^= ((bits) << (bitnum * factor))}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#define GET\_BITs(Reg, bits, bitnum, factor) (((Reg) >> (bitnum * factor)) \& (bits))}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* COTS\_LIB\_LSTD\_BITMATH\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

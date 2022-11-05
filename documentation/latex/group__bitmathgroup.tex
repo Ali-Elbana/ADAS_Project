@@ -1,0 +1,44 @@
+\hypertarget{group__bitmathgroup}{}\doxysection{Bit Group Manipulation Math Macros}
+\label{group__bitmathgroup}\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}{SET\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(Reg) $\vert$= ((bits) $<$$<$ (bitnum $\ast$ factor))
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}{CLR\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(Reg) \&= $\sim$((bits) $<$$<$ (bitnum $\ast$ factor))
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}{TOGGLE\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(Reg) $^\wedge$= ((bits) $<$$<$ (bitnum $\ast$ factor))
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}{GET\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(((Reg) $>$$>$ (bitnum $\ast$ factor)) \& (bits))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}\label{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}} 
+\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!CLR\_BITs@{CLR\_BITs}}
+\index{CLR\_BITs@{CLR\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{CLR\_BITs}{CLR\_BITs}}
+{\footnotesize\ttfamily \#define CLR\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) \&= $\sim$((bits) $<$$<$ (bitnum $\ast$ factor))}
+
+Clears the value of a group of bits \mbox{\Hypertarget{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}\label{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}} 
+\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!GET\_BITs@{GET\_BITs}}
+\index{GET\_BITs@{GET\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{GET\_BITs}{GET\_BITs}}
+{\footnotesize\ttfamily \#define GET\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(((Reg) $>$$>$ (bitnum $\ast$ factor)) \& (bits))}
+
+Returns the value of a group of bits \mbox{\Hypertarget{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}\label{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}} 
+\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!SET\_BITs@{SET\_BITs}}
+\index{SET\_BITs@{SET\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{SET\_BITs}{SET\_BITs}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) $\vert$= ((bits) $<$$<$ (bitnum $\ast$ factor))}
+
+Sets the values of a group of bits \mbox{\Hypertarget{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}\label{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}} 
+\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!TOGGLE\_BITs@{TOGGLE\_BITs}}
+\index{TOGGLE\_BITs@{TOGGLE\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{TOGGLE\_BITs}{TOGGLE\_BITs}}
+{\footnotesize\ttfamily \#define TOGGLE\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) $^\wedge$= ((bits) $<$$<$ (bitnum $\ast$ factor))}
+
+Toggles the value of a group of bits 
