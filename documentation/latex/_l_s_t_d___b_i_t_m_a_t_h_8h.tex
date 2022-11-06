@@ -1,0 +1,21 @@
+\hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h}{}\doxysection{src/\+COTS/\+LIB/\+LSTD\+\_\+\+BITMATH.h File Reference}
+\label{_l_s_t_d___b_i_t_m_a_t_h_8h}\index{src/COTS/LIB/LSTD\_BITMATH.h@{src/COTS/LIB/LSTD\_BITMATH.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\+\_\+\+BIT}}(Reg,  bitnum)~(Reg) $\vert$= (1 $<$$<$ (bitnum))
+\item 
+\#define \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\+\_\+\+BIT}}(Reg,  bitnum)~(Reg) \&= $\sim$(1 $<$$<$ (bitnum))
+\item 
+\#define \mbox{\hyperlink{group__bitmath_ga9488851bfeef0fa7ccafaf75597c4d29}{TOGGLE\+\_\+\+BIT}}(Reg,  bitnum)~(Reg) $^\wedge$= (1 $<$$<$ (bitnum))
+\item 
+\#define \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\+\_\+\+BIT}}(Reg,  bitnum)~(((Reg)$>$$>$(bitnum)) \& 1)
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}{SET\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(Reg) $\vert$= ((bits) $<$$<$ (bitnum $\ast$ factor))
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}{CLR\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(Reg) \&= $\sim$((bits) $<$$<$ (bitnum $\ast$ factor))
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}{TOGGLE\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(Reg) $^\wedge$= ((bits) $<$$<$ (bitnum $\ast$ factor))
+\item 
+\#define \mbox{\hyperlink{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}{GET\+\_\+\+BITs}}(Reg,  bits,  bitnum,  factor)~(((Reg) $>$$>$ (bitnum $\ast$ factor)) \& (bits))
+\end{DoxyCompactItemize}

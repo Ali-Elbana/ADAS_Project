@@ -47,8 +47,12 @@ Ali El Bana
 1.\+0 
 \end{DoxyVersion}
 \begin{DoxyDate}{Date}
-d/m/Y 
+08/22/2022 
 \end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_g_p_i_o__interface_8h_source}{GPIO\+\_\+interface.\+h}}.
+
 
 
 \doxysubsection{Function Documentation}
@@ -87,6 +91,25 @@ Initialize the GPIO with a certain configuration.
 \mbox{\texttt{ in}}  & {\em A\+\_\+x\+Pin\+Config} & The initialization configuration for the GPIO \\
 \hline
 \end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00283}{283}} of file \mbox{\hyperlink{_g_p_i_o__program_8c_source}{GPIO\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00284 \{}
+\DoxyCodeLine{00285     \mbox{\hyperlink{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}{MGPIOx\_vSetPinMode}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>Mode);}
+\DoxyCodeLine{00286     \mbox{\hyperlink{_g_p_i_o__program_8c_ae96fece4783997728111939101fa9acd}{MGPIOx\_vSetPinOutputType}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>OutputType);}
+\DoxyCodeLine{00287     \mbox{\hyperlink{_g_p_i_o__program_8c_a9aa97f2ab874a52442157be1d116e3ec}{MGPIOx\_vSetPinOutputSpeed}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>OutputSpeed);}
+\DoxyCodeLine{00288     \mbox{\hyperlink{_g_p_i_o__program_8c_aed7c233eae6f28f195b7e8474465dbeb}{MGPIOx\_vSetPinInputPullType}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>InputType);}
+\DoxyCodeLine{00289     \mbox{\hyperlink{_g_p_i_o__program_8c_a9f4bdac7d7d5430ad1b71bd86ec7fb5a}{MGPIOx\_vSetAlternateFunctionON}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>AF\_Type);}
+\DoxyCodeLine{00290 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00190}{MGPIOx\+\_\+v\+Set\+Alternate\+Function\+ON()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00102}{MGPIOx\+\_\+v\+Set\+Pin\+Input\+Pull\+Type()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00020}{MGPIOx\+\_\+v\+Set\+Pin\+Mode()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00081}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Speed()}}, and \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00041}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Type()}}.
+
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_a7e88babca6499dd8eb11315215bac806}\label{_g_p_i_o__interface_8h_a7e88babca6499dd8eb11315215bac806}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetAlternateFunctionON@{MGPIOx\_vSetAlternateFunctionON}}
 \index{MGPIOx\_vSetAlternateFunctionON@{MGPIOx\_vSetAlternateFunctionON}!GPIO\_interface.h@{GPIO\_interface.h}}

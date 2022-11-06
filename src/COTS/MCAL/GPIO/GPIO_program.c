@@ -1,14 +1,18 @@
-/* FILENAME: GPIO_program 
-*  Author:  Ali El Bana
-*  Version:  V1.0
-*  DATE:   Mon 08/22/2022
-*/
+/**
+ * @file GPIO_program.c
+ * @author Ali El Bana
+ * @brief This file contains the source code of the interfacing for the GPIO modules
+ * @version 1.0
+ * @date 08/22/2022
+ */
 
+/************************************************************************/
+/*                         		Includes                       			*/
+/************************************************************************/
 #include "../../LIB/LSTD_TYPES.h"
 #include "../../LIB/LSTD_COMPILER.h"
 #include "../../LIB/LSTD_VALUES.h"
 #include "../../LIB/LSTD_BITMATH.h"
-
 #include "GPIO_interface.h"
 #include "GPIO_private.h"
 #include "GPIO_config.h"
@@ -221,7 +225,7 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 			break;
 
 		case GPIO_PORTB:
-			switch( A_u8PinID )
+			switch (A_u8PinID)
 			{
 				case GPIOx_PIN0:
 				case GPIOx_PIN1:

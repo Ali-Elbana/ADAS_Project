@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['utilities_20macros_0',['Utilities macros',['../group__utilities.html',1,'']]]
+  ['standard_20types_0',['Standard types',['../group__typedefs.html',1,'']]],
+  ['standard_20values_1',['Standard values',['../group__standardvalues.html',1,'']]]
 ];

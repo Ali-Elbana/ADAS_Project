@@ -1,7 +1,9 @@
-/*
- * LSTD_TYPES.h
- *
- *  Created on: Oct 29, 2022
+/**
+ * @file LSTD_TYPES.h
+ * @author Ali El Bana
+ * @brief This file contains the standard types
+ * @version 1.0
+ * @date 10/29/2022
  */
 
 #ifndef COTS_LIB_LSTD_TYPES_H_

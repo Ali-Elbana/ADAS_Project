@@ -1,7 +1,9 @@
-/*
- * LSTD_COMPILER.h
- *
- *  Created on: Nov 4, 2022
+/**
+ * @file LSTD_COMPILER.h
+ * @author Mohamed Alaa
+ * @brief This file contains the compiler standard macros
+ * @version 1.0
+ * @date 11/04/2022
  */
 
 #ifndef COTS_LIB_LSTD_COMPILER_H_

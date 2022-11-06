@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['var_0',['VAR',['../struct_m_g_p_i_ox___config_type.html#ab8f886862c77663ad284ad853db50fe1',1,'MGPIOx_ConfigType::VAR(u8_t) Port'],['../struct_m_g_p_i_ox___config_type.html#a8f80e4fc6ab34dcad26b7314ac75ee46',1,'MGPIOx_ConfigType::VAR(u8_t) Pin'],['../struct_m_g_p_i_ox___config_type.html#a4241853969dadbf4a7a08cfeb3d91777',1,'MGPIOx_ConfigType::VAR(u8_t) Mode'],['../struct_m_g_p_i_ox___config_type.html#ab065ed2a7eca0631a70911077b32e1ac',1,'MGPIOx_ConfigType::VAR(u8_t) OutputType'],['../struct_m_g_p_i_ox___config_type.html#ade7a4c3be9f01a6bf7ecb157a0129c32',1,'MGPIOx_ConfigType::VAR(u8_t) OutputSpeed'],['../struct_m_g_p_i_ox___config_type.html#abccb5fd4b5688b0de21fe5a8d096dcc7',1,'MGPIOx_ConfigType::VAR(u8_t) InputType'],['../struct_m_g_p_i_ox___config_type.html#aae6383cc61ea577595a0a34ecf12f223',1,'MGPIOx_ConfigType::VAR(u8_t) AF_Type'],['../group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9',1,'VAR():&#160;LSTD_COMPILER.h']]]
+  ['toggle_5fbit_0',['TOGGLE_BIT',['../group__bitmath.html#ga9488851bfeef0fa7ccafaf75597c4d29',1,'LSTD_BITMATH.h']]],
+  ['toggle_5fbits_1',['TOGGLE_BITs',['../group__bitmathgroup.html#ga6ba80d3aeea2b1acef66178451fa2136',1,'LSTD_BITMATH.h']]],
+  ['true_2',['TRUE',['../group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d',1,'LSTD_VALUES.h']]]
 ];

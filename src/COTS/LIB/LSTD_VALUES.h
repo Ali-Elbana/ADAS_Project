@@ -1,8 +1,9 @@
-/*
- * LSTD_VALUES.h
- *
- *  Created on: Oct 29, 2022
- *      Author: Abo3a
+/**
+ * @file LSTD_VALUES.h
+ * @author Ali El Bana
+ * @brief This file contains the standard values
+ * @version 1.0
+ * @date 10/29/2022
  */
 
 #ifndef COTS_LIB_LSTD_VALUES_H_
