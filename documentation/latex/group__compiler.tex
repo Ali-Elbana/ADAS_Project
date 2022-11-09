@@ -1,0 +1,119 @@
+\hypertarget{group__compiler}{}\doxysection{Compiler standard macros}
+\label{group__compiler}\index{Compiler standard macros@{Compiler standard macros}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(vartype)~vartype
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga846278437e035619630d1fffd9974e82}{FUNC}}(rettype)~rettype
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(ptrtype)~ptrtype $\ast$
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga6a5331902e985468785893e55a26df67}{P2\+CONST}}(ptrtype)~const ptrtype $\ast$
+\item 
+\#define \mbox{\hyperlink{group__compiler_gab5fd09ff387aec5366fd5b10301c8520}{CONSTP2\+VAR}}(ptrtype)~ptrtype $\ast$ const
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga6282e9404278fd614583a4ff57e65b15}{CONSTP2\+CONST}}(ptrtype)~const ptrtype $\ast$ const
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(rettype,  fctname)~rettype ($\ast$ fctname)
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga69d9ea05cf6f223b225c937e8a375395}{CONST}}(consttype)~const consttype
+\item 
+\#define \mbox{\hyperlink{group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb}{STATIC}}~static
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__compiler_ga69d9ea05cf6f223b225c937e8a375395}\label{group__compiler_ga69d9ea05cf6f223b225c937e8a375395}} 
+\index{Compiler standard macros@{Compiler standard macros}!CONST@{CONST}}
+\index{CONST@{CONST}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{CONST}{CONST}}
+{\footnotesize\ttfamily \#define CONST(\begin{DoxyParamCaption}\item[{}]{consttype }\end{DoxyParamCaption})~const consttype}
+
+Declare a standard constant variable with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00071}{71}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_ga6282e9404278fd614583a4ff57e65b15}\label{group__compiler_ga6282e9404278fd614583a4ff57e65b15}} 
+\index{Compiler standard macros@{Compiler standard macros}!CONSTP2CONST@{CONSTP2CONST}}
+\index{CONSTP2CONST@{CONSTP2CONST}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{CONSTP2CONST}{CONSTP2CONST}}
+{\footnotesize\ttfamily \#define CONSTP2\+CONST(\begin{DoxyParamCaption}\item[{}]{ptrtype }\end{DoxyParamCaption})~const ptrtype $\ast$ const}
+
+Declare a constant pointer-\/to-\/variable constant with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00056}{56}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_gab5fd09ff387aec5366fd5b10301c8520}\label{group__compiler_gab5fd09ff387aec5366fd5b10301c8520}} 
+\index{Compiler standard macros@{Compiler standard macros}!CONSTP2VAR@{CONSTP2VAR}}
+\index{CONSTP2VAR@{CONSTP2VAR}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{CONSTP2VAR}{CONSTP2VAR}}
+{\footnotesize\ttfamily \#define CONSTP2\+VAR(\begin{DoxyParamCaption}\item[{}]{ptrtype }\end{DoxyParamCaption})~ptrtype $\ast$ const}
+
+Declare a pointer-\/to-\/variable constant with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00049}{49}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_ga846278437e035619630d1fffd9974e82}\label{group__compiler_ga846278437e035619630d1fffd9974e82}} 
+\index{Compiler standard macros@{Compiler standard macros}!FUNC@{FUNC}}
+\index{FUNC@{FUNC}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{FUNC}{FUNC}}
+{\footnotesize\ttfamily \#define FUNC(\begin{DoxyParamCaption}\item[{}]{rettype }\end{DoxyParamCaption})~rettype}
+
+Declare a function\textquotesingle{}s return type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00028}{28}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_ga6a5331902e985468785893e55a26df67}\label{group__compiler_ga6a5331902e985468785893e55a26df67}} 
+\index{Compiler standard macros@{Compiler standard macros}!P2CONST@{P2CONST}}
+\index{P2CONST@{P2CONST}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{P2CONST}{P2CONST}}
+{\footnotesize\ttfamily \#define P2\+CONST(\begin{DoxyParamCaption}\item[{}]{ptrtype }\end{DoxyParamCaption})~const ptrtype $\ast$}
+
+Declare a constant pointer-\/to-\/variable with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00042}{42}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}\label{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}} 
+\index{Compiler standard macros@{Compiler standard macros}!P2FUNC@{P2FUNC}}
+\index{P2FUNC@{P2FUNC}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{P2FUNC}{P2FUNC}}
+{\footnotesize\ttfamily \#define P2\+FUNC(\begin{DoxyParamCaption}\item[{}]{rettype,  }\item[{}]{fctname }\end{DoxyParamCaption})~rettype ($\ast$ fctname)}
+
+Declare a pointer-\/to-\/function with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00063}{63}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}\label{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}} 
+\index{Compiler standard macros@{Compiler standard macros}!P2VAR@{P2VAR}}
+\index{P2VAR@{P2VAR}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{P2VAR}{P2VAR}}
+{\footnotesize\ttfamily \#define P2\+VAR(\begin{DoxyParamCaption}\item[{}]{ptrtype }\end{DoxyParamCaption})~ptrtype $\ast$}
+
+Declare a pointer-\/to-\/variable with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00035}{35}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb}\label{group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb}} 
+\index{Compiler standard macros@{Compiler standard macros}!STATIC@{STATIC}}
+\index{STATIC@{STATIC}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{STATIC}{STATIC}}
+{\footnotesize\ttfamily \#define STATIC~static}
+
+Declare a standard static variable 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00080}{80}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+
+\mbox{\Hypertarget{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}\label{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}} 
+\index{Compiler standard macros@{Compiler standard macros}!VAR@{VAR}}
+\index{VAR@{VAR}!Compiler standard macros@{Compiler standard macros}}
+\doxysubsubsection{\texorpdfstring{VAR}{VAR}}
+{\footnotesize\ttfamily \#define VAR(\begin{DoxyParamCaption}\item[{}]{vartype }\end{DoxyParamCaption})~vartype}
+
+Declare a variable with the specified type 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00021}{21}} of file \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}{LSTD\+\_\+\+COMPILER.\+h}}.
+

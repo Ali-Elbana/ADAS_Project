@@ -1,0 +1,33 @@
+\hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{}\doxysection{LSTD\+\_\+\+BITMATH.\+h}
+\label{_l_s_t_d___b_i_t_m_a_t_h_8h_source}\index{src/COTS/LIB/LSTD\_BITMATH.h@{src/COTS/LIB/LSTD\_BITMATH.h}}
+\mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00002}00002 \textcolor{comment}{ * LSTD\_BITMATH.h}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00004}00004 \textcolor{comment}{ *  Created on: Oct 29, 2022}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00005}00005 \textcolor{comment}{ *      Author: Abo3a}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00006}00006 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00008}00008 \textcolor{preprocessor}{\#ifndef COTS\_LIB\_LSTD\_BITMATH\_H\_}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00009}00009 \textcolor{preprocessor}{\#define COTS\_LIB\_LSTD\_BITMATH\_H\_}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00022}\mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{00022}} \textcolor{preprocessor}{\#define SET\_BIT(Reg, bitnum) (Reg) |= (1 << (bitnum))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00029}\mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{00029}} \textcolor{preprocessor}{\#define CLR\_BIT(Reg, bitnum) (Reg) \&= \string~(1 << (bitnum))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00036}\mbox{\hyperlink{group__bitmath_ga9488851bfeef0fa7ccafaf75597c4d29}{00036}} \textcolor{preprocessor}{\#define TOGGLE\_BIT(Reg, bitnum) (Reg) \string^= (1 << (bitnum))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00043}\mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{00043}} \textcolor{preprocessor}{\#define GET\_BIT(Reg, bitnum)        (((Reg)>>(bitnum)) \& 1)}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00058}\mbox{\hyperlink{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}{00058}} \textcolor{preprocessor}{\#define SET\_BITs(Reg, bits, bitnum, factor) (Reg) |= ((bits) << (bitnum * factor))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00065}\mbox{\hyperlink{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}{00065}} \textcolor{preprocessor}{\#define CLR\_BITs(Reg, bits, bitnum, factor) (Reg) \&= \string~((bits) << (bitnum * factor))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00072}\mbox{\hyperlink{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}{00072}} \textcolor{preprocessor}{\#define TOGGLE\_BITs(Reg, bits, bitnum, factor) (Reg) \string^= ((bits) << (bitnum * factor))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00079}\mbox{\hyperlink{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}{00079}} \textcolor{preprocessor}{\#define GET\_BITs(Reg, bits, bitnum, factor) (((Reg) >> (bitnum * factor)) \& (bits))}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00083}00083 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* COTS\_LIB\_LSTD\_BITMATH\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,277 @@
+\hypertarget{_g_p_i_o__interface_8h}{}\doxysection{src/\+COTS/\+MCAL/\+GPIO/\+GPIO\+\_\+interface.h File Reference}
+\label{_g_p_i_o__interface_8h}\index{src/COTS/MCAL/GPIO/GPIO\_interface.h@{src/COTS/MCAL/GPIO/GPIO\_interface.h}}
+
+
+This file contains the interfacing information for the GPIO module.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}}
+\begin{DoxyCompactList}\small\item\em MDIO Configuration structure for a speific PIN initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}{MGPIOx\+\_\+v\+Set\+Pin\+Mode}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Mode)
+\begin{DoxyCompactList}\small\item\em Sets a certain pin\textquotesingle{}s mode on a speific port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_aa257a3acb91828ecf11477c882cc8a47}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Type}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Output\+Type)
+\begin{DoxyCompactList}\small\item\em Sets a certain pin\textquotesingle{}s output type on a speific port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_a9770a5328d104bcf99fad16945e91a3c}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Speed}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Output\+Speed)
+\begin{DoxyCompactList}\small\item\em Sets a certain pin\textquotesingle{}s output speed on a speific port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_ad6b97a96185619d9985ec6b4324acca9}{MGPIOx\+\_\+v\+Set\+Pin\+Input\+Pull\+Type}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Input\+Pull\+Type)
+\begin{DoxyCompactList}\small\item\em Sets a certain pin\textquotesingle{}s input pull type on a speific port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_g_p_i_o__interface_8h_ae2e4c57235f249b9c191b620de7cb72f}{MGPIOx\+\_\+u8\+Get\+Pin\+Value}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID)
+\begin{DoxyCompactList}\small\item\em Gets the value currently on a certain pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\+\_\+v\+Set\+Pin\+Value}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+Value)
+\begin{DoxyCompactList}\small\item\em Sets a certain pin\textquotesingle{}s output value on a speific port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_aad586b29f77a4eaa053e939eff3bf986}{MGPIOx\+\_\+v\+Set\+Reset\+Pin\+Value}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Set\+Reset\+Pin\+Value)
+\begin{DoxyCompactList}\small\item\em Resets a certain pin\textquotesingle{}s output value on a speific port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_a7e88babca6499dd8eb11315215bac806}{MGPIOx\+\_\+v\+Set\+Alternate\+Function\+ON}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+AFID)
+\begin{DoxyCompactList}\small\item\em Applys an alternative function on a certain pin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_aa08db93858812ffc7e233d590dd049eb}{MGPIOx\+\_\+v\+Set\+Port\+Config\+Lock}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID)
+\begin{DoxyCompactList}\small\item\em Updates a port\textquotesingle{}s configuration lock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\+\_\+v\+Init}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}}) A\+\_\+x\+Pin\+Config)
+\begin{DoxyCompactList}\small\item\em Initialize the GPIO with a certain configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}{MGPIOx\+\_\+v\+Toggle\+Pin\+Value}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID)
+\begin{DoxyCompactList}\small\item\em Toggles a certain\textquotesingle{}s pin\textquotesingle{}s value on a certain port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the interfacing information for the GPIO module. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/22/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_g_p_i_o__interface_8h_source}{GPIO\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_ae2e4c57235f249b9c191b620de7cb72f}\label{_g_p_i_o__interface_8h_ae2e4c57235f249b9c191b620de7cb72f}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_u8GetPinValue@{MGPIOx\_u8GetPinValue}}
+\index{MGPIOx\_u8GetPinValue@{MGPIOx\_u8GetPinValue}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_u8GetPinValue()}{MGPIOx\_u8GetPinValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MGPIOx\+\_\+u8\+Get\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID }\end{DoxyParamCaption})}
+
+
+
+Gets the value currently on a certain pin. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current value on the pin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}\label{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vInit@{MGPIOx\_vInit}}
+\index{MGPIOx\_vInit@{MGPIOx\_vInit}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vInit()}{MGPIOx\_vInit()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}})}]{A\+\_\+x\+Pin\+Config }\end{DoxyParamCaption})}
+
+
+
+Initialize the GPIO with a certain configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+x\+Pin\+Config} & The initialization configuration for the GPIO \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00283}{283}} of file \mbox{\hyperlink{_g_p_i_o__program_8c_source}{GPIO\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00284 \{}
+\DoxyCodeLine{00285     \mbox{\hyperlink{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}{MGPIOx\_vSetPinMode}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>Mode);}
+\DoxyCodeLine{00286     \mbox{\hyperlink{_g_p_i_o__program_8c_ae96fece4783997728111939101fa9acd}{MGPIOx\_vSetPinOutputType}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>OutputType);}
+\DoxyCodeLine{00287     \mbox{\hyperlink{_g_p_i_o__program_8c_a9aa97f2ab874a52442157be1d116e3ec}{MGPIOx\_vSetPinOutputSpeed}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>OutputSpeed);}
+\DoxyCodeLine{00288     \mbox{\hyperlink{_g_p_i_o__program_8c_aed7c233eae6f28f195b7e8474465dbeb}{MGPIOx\_vSetPinInputPullType}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>InputType);}
+\DoxyCodeLine{00289     \mbox{\hyperlink{_g_p_i_o__program_8c_a9f4bdac7d7d5430ad1b71bd86ec7fb5a}{MGPIOx\_vSetAlternateFunctionON}}(A\_xPinConfig-\/>Port, A\_xPinConfig-\/>Pin, A\_xPinConfig-\/>AF\_Type);}
+\DoxyCodeLine{00290 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00190}{MGPIOx\+\_\+v\+Set\+Alternate\+Function\+ON()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00102}{MGPIOx\+\_\+v\+Set\+Pin\+Input\+Pull\+Type()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00020}{MGPIOx\+\_\+v\+Set\+Pin\+Mode()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00081}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Speed()}}, and \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00041}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Type()}}.
+
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_a7e88babca6499dd8eb11315215bac806}\label{_g_p_i_o__interface_8h_a7e88babca6499dd8eb11315215bac806}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetAlternateFunctionON@{MGPIOx\_vSetAlternateFunctionON}}
+\index{MGPIOx\_vSetAlternateFunctionON@{MGPIOx\_vSetAlternateFunctionON}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetAlternateFunctionON()}{MGPIOx\_vSetAlternateFunctionON()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Alternate\+Function\+ON (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+AFID }\end{DoxyParamCaption})}
+
+
+
+Applys an alternative function on a certain pin. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+AFID} & The alternative function to apply on the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_ad6b97a96185619d9985ec6b4324acca9}\label{_g_p_i_o__interface_8h_ad6b97a96185619d9985ec6b4324acca9}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinInputPullType@{MGPIOx\_vSetPinInputPullType}}
+\index{MGPIOx\_vSetPinInputPullType@{MGPIOx\_vSetPinInputPullType}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetPinInputPullType()}{MGPIOx\_vSetPinInputPullType()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Pin\+Input\+Pull\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Input\+Pull\+Type }\end{DoxyParamCaption})}
+
+
+
+Sets a certain pin\textquotesingle{}s input pull type on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Input\+Pull\+Type} & The input pull type to apply on the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}\label{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinMode@{MGPIOx\_vSetPinMode}}
+\index{MGPIOx\_vSetPinMode@{MGPIOx\_vSetPinMode}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetPinMode()}{MGPIOx\_vSetPinMode()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Pin\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Mode }\end{DoxyParamCaption})}
+
+
+
+Sets a certain pin\textquotesingle{}s mode on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Mode} & The mode to apply the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_a9770a5328d104bcf99fad16945e91a3c}\label{_g_p_i_o__interface_8h_a9770a5328d104bcf99fad16945e91a3c}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinOutputSpeed@{MGPIOx\_vSetPinOutputSpeed}}
+\index{MGPIOx\_vSetPinOutputSpeed@{MGPIOx\_vSetPinOutputSpeed}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetPinOutputSpeed()}{MGPIOx\_vSetPinOutputSpeed()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Pin\+Output\+Speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Output\+Speed }\end{DoxyParamCaption})}
+
+
+
+Sets a certain pin\textquotesingle{}s output speed on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Output\+Speed} & The output speed to apply on the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_aa257a3acb91828ecf11477c882cc8a47}\label{_g_p_i_o__interface_8h_aa257a3acb91828ecf11477c882cc8a47}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinOutputType@{MGPIOx\_vSetPinOutputType}}
+\index{MGPIOx\_vSetPinOutputType@{MGPIOx\_vSetPinOutputType}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetPinOutputType()}{MGPIOx\_vSetPinOutputType()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Pin\+Output\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Output\+Type }\end{DoxyParamCaption})}
+
+
+
+Sets a certain pin\textquotesingle{}s output type on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Output\+Type} & The output type to apply on the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}\label{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinValue@{MGPIOx\_vSetPinValue}}
+\index{MGPIOx\_vSetPinValue@{MGPIOx\_vSetPinValue}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetPinValue()}{MGPIOx\_vSetPinValue()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets a certain pin\textquotesingle{}s output value on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+Value} & The set value to set on the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_aa08db93858812ffc7e233d590dd049eb}\label{_g_p_i_o__interface_8h_aa08db93858812ffc7e233d590dd049eb}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPortConfigLock@{MGPIOx\_vSetPortConfigLock}}
+\index{MGPIOx\_vSetPortConfigLock@{MGPIOx\_vSetPortConfigLock}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetPortConfigLock()}{MGPIOx\_vSetPortConfigLock()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Port\+Config\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID }\end{DoxyParamCaption})}
+
+
+
+Updates a port\textquotesingle{}s configuration lock. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port to update the pin\textquotesingle{}s mode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_aad586b29f77a4eaa053e939eff3bf986}\label{_g_p_i_o__interface_8h_aad586b29f77a4eaa053e939eff3bf986}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetResetPinValue@{MGPIOx\_vSetResetPinValue}}
+\index{MGPIOx\_vSetResetPinValue@{MGPIOx\_vSetResetPinValue}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vSetResetPinValue()}{MGPIOx\_vSetResetPinValue()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Set\+Reset\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Set\+Reset\+Pin\+Value }\end{DoxyParamCaption})}
+
+
+
+Resets a certain pin\textquotesingle{}s output value on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Set\+Reset\+Pin\+Value} & The reset value to set on the pin \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}\label{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vTogglePinValue@{MGPIOx\_vTogglePinValue}}
+\index{MGPIOx\_vTogglePinValue@{MGPIOx\_vTogglePinValue}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MGPIOx\_vTogglePinValue()}{MGPIOx\_vTogglePinValue()}}
+{\footnotesize\ttfamily void MGPIOx\+\_\+v\+Toggle\+Pin\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Pin\+ID }\end{DoxyParamCaption})}
+
+
+
+Toggles a certain\textquotesingle{}s pin\textquotesingle{}s value on a certain port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to toggle its value \\
+\hline
+\end{DoxyParams}

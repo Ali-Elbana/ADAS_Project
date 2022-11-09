@@ -1,0 +1,59 @@
+\hypertarget{group__bitmath}{}\doxysection{Bit Manipulation Math Macros}
+\label{group__bitmath}\index{Bit Manipulation Math Macros@{Bit Manipulation Math Macros}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\+\_\+\+BIT}}(Reg,  bitnum)~(Reg) $\vert$= (1 $<$$<$ (bitnum))
+\item 
+\#define \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\+\_\+\+BIT}}(Reg,  bitnum)~(Reg) \&= $\sim$(1 $<$$<$ (bitnum))
+\item 
+\#define \mbox{\hyperlink{group__bitmath_ga9488851bfeef0fa7ccafaf75597c4d29}{TOGGLE\+\_\+\+BIT}}(Reg,  bitnum)~(Reg) $^\wedge$= (1 $<$$<$ (bitnum))
+\item 
+\#define \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\+\_\+\+BIT}}(Reg,  bitnum)~(((Reg)$>$$>$(bitnum)) \& 1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}\label{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}} 
+\index{Bit Manipulation Math Macros@{Bit Manipulation Math Macros}!CLR\_BIT@{CLR\_BIT}}
+\index{CLR\_BIT@{CLR\_BIT}!Bit Manipulation Math Macros@{Bit Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{CLR\_BIT}{CLR\_BIT}}
+{\footnotesize\ttfamily \#define CLR\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bitnum }\end{DoxyParamCaption})~(Reg) \&= $\sim$(1 $<$$<$ (bitnum))}
+
+Clears a certain bit\textquotesingle{}s value to 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00029}{29}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+
+\mbox{\Hypertarget{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}\label{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}} 
+\index{Bit Manipulation Math Macros@{Bit Manipulation Math Macros}!GET\_BIT@{GET\_BIT}}
+\index{GET\_BIT@{GET\_BIT}!Bit Manipulation Math Macros@{Bit Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{GET\_BIT}{GET\_BIT}}
+{\footnotesize\ttfamily \#define GET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bitnum }\end{DoxyParamCaption})~(((Reg)$>$$>$(bitnum)) \& 1)}
+
+Returns the value of the bit whether it\textquotesingle{}s {\ttfamily 1} or {\ttfamily 0} 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00043}{43}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+
+\mbox{\Hypertarget{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}\label{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}} 
+\index{Bit Manipulation Math Macros@{Bit Manipulation Math Macros}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!Bit Manipulation Math Macros@{Bit Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bitnum }\end{DoxyParamCaption})~(Reg) $\vert$= (1 $<$$<$ (bitnum))}
+
+Sets a certain bit\textquotesingle{}s value 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00022}{22}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+
+\mbox{\Hypertarget{group__bitmath_ga9488851bfeef0fa7ccafaf75597c4d29}\label{group__bitmath_ga9488851bfeef0fa7ccafaf75597c4d29}} 
+\index{Bit Manipulation Math Macros@{Bit Manipulation Math Macros}!TOGGLE\_BIT@{TOGGLE\_BIT}}
+\index{TOGGLE\_BIT@{TOGGLE\_BIT}!Bit Manipulation Math Macros@{Bit Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{TOGGLE\_BIT}{TOGGLE\_BIT}}
+{\footnotesize\ttfamily \#define TOGGLE\+\_\+\+BIT(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bitnum }\end{DoxyParamCaption})~(Reg) $^\wedge$= (1 $<$$<$ (bitnum))}
+
+Toggle a bit to {\ttfamily 0} if it\textquotesingle{}s {\ttfamily 1}, {\ttfamily 1} otherwise 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00036}{36}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+

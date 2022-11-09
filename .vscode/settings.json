@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.inc": "amxxpawn",
+    "*.sma": "amxxpawn",
+    "lstd_types.h": "c"
+  }
+}

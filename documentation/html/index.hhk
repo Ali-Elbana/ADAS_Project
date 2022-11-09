@@ -1,0 +1,661 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#ae1134f253e11d2498842f6e124f178ce"><param name="Name" value="AF_Type"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html"><param name="Name" value="Bit Group Manipulation Math Macros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html"><param name="Name" value="Bit Manipulation Math Macros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786"><param name="Name" value="CLR_BIT(Reg, bitnum)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#ga63f1579914decc1a223d865c1fa54350"><param name="Name" value="CLR_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga69d9ea05cf6f223b225c937e8a375395"><param name="Name" value="CONST(consttype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga6282e9404278fd614583a4ff57e65b15"><param name="Name" value="CONSTP2CONST(ptrtype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#gab5fd09ff387aec5366fd5b10301c8520"><param name="Name" value="CONSTP2VAR(ptrtype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="Compiler standard macros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#gaa93f0eb578d23995850d61f7d61c55c1"><param name="Name" value="FALSE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#ga2553f2666905212b3d10e0792c87938d"><param name="Name" value="FLAG_CLEARED"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#gaeadc670e6fd25b11cefab921983d1f63"><param name="Name" value="FLAG_SET"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga846278437e035619630d1fffd9974e82"><param name="Name" value="FUNC(rettype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#ga675c41d461abd3b2224e9c3d99d7151a"><param name="Name" value="GET_BIT(Reg, bitnum)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#gaecf172240669d21bb20b8555e7090868"><param name="Name" value="GET_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html"><param name="Name" value="GPIO Addresses"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="GPIO Alternate Functions"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html"><param name="Name" value="GPIO Modes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="GPIO Output PINs"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html"><param name="Name" value="GPIO Output Types"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html"><param name="Name" value="GPIO Output Values"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html"><param name="Name" value="GPIO PIN Speed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html"><param name="Name" value="GPIO Ports"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html"><param name="Name" value="GPIO Pull Types"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html"><param name="Name" value="GPIO Registers"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html#gac485358099728ddae050db37924dd6b7"><param name="Name" value="GPIOA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html#ga68b66ac73be4c836db878a42e1fea3cd"><param name="Name" value="GPIOB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html#ga2dca03332d620196ba943bc2346eaa08"><param name="Name" value="GPIOC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html#ga23f716ce6f03880a5ea6cf32fef82133"><param name="Name" value="GPIO_BASE_ADDRESS_A"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html#gabc40e2a5721ec0500a69897961bd5ffb"><param name="Name" value="GPIO_BASE_ADDRESS_B"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html#ga24a1609e05f7ae0f091452ff9481c2fc"><param name="Name" value="GPIO_BASE_ADDRESS_C"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html#gace1f2998664b32913e0c7f9a76699060"><param name="Name" value="GPIO_PORTA"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923"><param name="Name" value="GPIO_PORTB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html#ga1f67e53aff58af920fc394ec5d86faeb"><param name="Name" value="GPIO_PORTC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__config_8h.html#a92aa7a206fa9f76a336dad4cd69f904c"><param name="Name" value="GPIO_config.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#ae2e4c57235f249b9c191b620de7cb72f"><param name="Name" value="MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#a6903496555fd7b13cc21ad6465c2c8b8"><param name="Name" value="MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#a7e88babca6499dd8eb11315215bac806"><param name="Name" value="MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8AFID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#ad6b97a96185619d9985ec6b4324acca9"><param name="Name" value="MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8InputPullType)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#afc362fef8b827f868df511979deeabe7"><param name="Name" value="MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8Mode)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#a9770a5328d104bcf99fad16945e91a3c"><param name="Name" value="MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputSpeed)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aa257a3acb91828ecf11477c882cc8a47"><param name="Name" value="MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputType)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#af20c7fe5cc6f8343c15c804adb2bb064"><param name="Name" value="MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8PinValue)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aa08db93858812ffc7e233d590dd049eb"><param name="Name" value="MGPIOx_vSetPortConfigLock(VAR(u8_t) A_u8PortID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aad586b29f77a4eaa053e939eff3bf986"><param name="Name" value="MGPIOx_vSetResetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html"><param name="Name" value="GPIO_interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c"><param name="Name" value="MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#ad812a682e84c5bcc3fdda9546fb957d4"><param name="Name" value="MGPIOx_u8GetPinValue(u8_t A_u8PortID, u8_t A_u8PinID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#ae0822bea960c4226977e88ec16f3764e"><param name="Name" value="MGPIOx_vInit(MGPIOx_ConfigType *A_xPinConfig)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a9f4bdac7d7d5430ad1b71bd86ec7fb5a"><param name="Name" value="MGPIOx_vSetAlternateFunctionON(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8AFID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#aed7c233eae6f28f195b7e8474465dbeb"><param name="Name" value="MGPIOx_vSetPinInputPullType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8InputPullType)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a2aa50bedad3f84f3ddc1d373f6a1677f"><param name="Name" value="MGPIOx_vSetPinMode(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8Mode)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a9aa97f2ab874a52442157be1d116e3ec"><param name="Name" value="MGPIOx_vSetPinOutputSpeed(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputSpeed)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#ae96fece4783997728111939101fa9acd"><param name="Name" value="MGPIOx_vSetPinOutputType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputType)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a3d6ad5ad5f68b519f08d4be6292bf6a2"><param name="Name" value="MGPIOx_vSetPinValue(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8PinValue)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a7607934dcacde1f631bab9de4354431b"><param name="Name" value="MGPIOx_vSetResetPinValue(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8SetResetPinValue)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html"><param name="Name" value="GPIO_program.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a36bc9410064c8b745c2ef939c545e8f4"><param name="Name" value="MGPIOx_vTogglePinValue(u8_t A_u8PortID, u8_t A_u8PinID)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gab51bc32bfd8375fcc33c347c945654ab"><param name="Name" value="GPIOx_AF0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gaec9a524f2894a9872038bef534bf94ee"><param name="Name" value="GPIOx_AF10"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gaa2f3651491f1ee2845fba7447ef57a3d"><param name="Name" value="GPIOx_AF11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gac8cbc080fe90d1b4a2068bab138d5e4d"><param name="Name" value="GPIOx_AF12"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92"><param name="Name" value="GPIOx_AF13"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db"><param name="Name" value="GPIOx_AF14"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52"><param name="Name" value="GPIOx_AF15"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gae7a091c8afd3bcfbcd05980b22be4cfb"><param name="Name" value="GPIOx_AF1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga2e5bc5321250c96b720ca25bdc50fb2c"><param name="Name" value="GPIOx_AF2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga70805e6ffce753a9c2845334a97ece79"><param name="Name" value="GPIOx_AF3"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga518a9cdab14db515469a3b79a3bcb498"><param name="Name" value="GPIOx_AF4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga9e21769f3bb32137699ab10d8128c485"><param name="Name" value="GPIOx_AF5"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga1915c7d75ae6917d870928ca0cce7e5f"><param name="Name" value="GPIOx_AF6"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gab6c3d03c1a4962f7505dab5ebf294968"><param name="Name" value="GPIOx_AF7"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga8c11bf59cac7dda3ac8da73e70eac000"><param name="Name" value="GPIOx_AF8"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga9dd9d5c2ad3695c2194485165be529a2"><param name="Name" value="GPIOx_AF9"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html#gad4850c5b570986c1a0b8111114fbbfdc"><param name="Name" value="GPIOx_HIGH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#ga74ec6384b34245c8e97ce6e028872b44"><param name="Name" value="GPIOx_HighSpeed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html#ga024aaae1f1031a1886437ac9089ddab9"><param name="Name" value="GPIOx_LOW"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#ga0c2f1d04e61f1ea65a8e68751013e2b2"><param name="Name" value="GPIOx_LowSpeed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#ga68830dfd5f7c4ce1bc4993e6dc409dda"><param name="Name" value="GPIOx_MODE_AF"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#gaa234a69e2b2cf024a771929e7f1cb54e"><param name="Name" value="GPIOx_MODE_ANALOG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#gad653959c0619374559a3ef878315a87d"><param name="Name" value="GPIOx_MODE_INPUT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#ga4972d73d7eb99665462f063f0264138f"><param name="Name" value="GPIOx_MODE_OUTPUT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#ga8dbc220db50dd66e8bde537a1fa5c539"><param name="Name" value="GPIOx_MediumSpeed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#ab623fb569c4a7d289fae96c7d628159e"><param name="Name" value="VAR(u32_t) AFRHx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#ab04329ab1e3faeba160cd1ac22d28402"><param name="Name" value="VAR(u32_t) AFRLx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a1113ccf43794e857d51c22b16eee8842"><param name="Name" value="VAR(u32_t) BSRRx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#afc8b770ec97321a67add9c0fc496cae4"><param name="Name" value="VAR(u32_t) IDRx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#aeda7b02dede0082b9c45163c46196fba"><param name="Name" value="VAR(u32_t) LCKRx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a117306dfc0dad17785203bdc8c93b9f0"><param name="Name" value="VAR(u32_t) MODERx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a308a2814aa743e5a0a7eb76334313247"><param name="Name" value="VAR(u32_t) ODRx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a867f94e4c7cf656dbe173980cd548e02"><param name="Name" value="VAR(u32_t) OSPEEDRx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#aa4e09f60bf0c95a6462d39ee9936fee9"><param name="Name" value="VAR(u32_t) OTYPERx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html"><param name="Name" value="GPIOx_MemoryMapType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a3cd906ed5f7ba87b9746c9764208cba2"><param name="Name" value="VAR(u32_t) PUPDRx"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html#gaf4cf4bb06c94c525f63f7c84377d48f8"><param name="Name" value="GPIOx_NoPull"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html#gae72919755d4c0875acfed6f678486329"><param name="Name" value="GPIOx_OPENDRAIN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga0555a2d75b515e59c007ea1981dbdabc"><param name="Name" value="GPIOx_PIN0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga05197bf08ff254157acaf1fa16260873"><param name="Name" value="GPIOx_PIN10"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga7d19430f2fca4df12e35f7d8c81b2341"><param name="Name" value="GPIOx_PIN11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga177981236c6aa829d1e60226a401290d"><param name="Name" value="GPIOx_PIN12"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gaf0d7d102f365587c63616c62e84fd42f"><param name="Name" value="GPIOx_PIN13"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga994ef956212316de9161da30623eac07"><param name="Name" value="GPIOx_PIN14"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga8762d4d63fea54051d3765143d0a75fc"><param name="Name" value="GPIOx_PIN15"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga4396ba448ed90c7fb9db8218574c2cb9"><param name="Name" value="GPIOx_PIN1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga761496d60fa0d24fad0ba2bd677b6b1e"><param name="Name" value="GPIOx_PIN2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga673960489ce24947429db3f907a3fe73"><param name="Name" value="GPIOx_PIN3"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gae89fddd9995edc54ead9f44f21d348ec"><param name="Name" value="GPIOx_PIN4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gac8ab9dabe136553fbb48c7fe06862934"><param name="Name" value="GPIOx_PIN5"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga2d0996a4344c4825922db05b6bf34b3b"><param name="Name" value="GPIOx_PIN6"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gab441403d46ced3f1577194a14069a2d0"><param name="Name" value="GPIOx_PIN7"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91"><param name="Name" value="GPIOx_PIN8"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga5f7c3f8fbd957501ef6e6799909b7474"><param name="Name" value="GPIOx_PIN9"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html#ga5343b590d444a2b8a37f7507366869ea"><param name="Name" value="GPIOx_PUSHPULL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html#gacc24f327614c0148d3f0af59d8bad2f8"><param name="Name" value="GPIOx_PullDown"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html#ga76fd5ecbcc083cc92f448ff4bab5f9ce"><param name="Name" value="GPIOx_PullUp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#gaaeeee0e7cc243a81f32af45e30ce4447"><param name="Name" value="GPIOx_VeryHighSpeed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468"><param name="Name" value="INITIAL_ZERO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a524fd644a012e61e7884de20267b12bd"><param name="Name" value="InputType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#ae1134f253e11d2498842f6e124f178ce"><param name="Name" value="AF_Type"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a524fd644a012e61e7884de20267b12bd"><param name="Name" value="InputType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a3f8b1a7b7115da39c634caa265c9a288"><param name="Name" value="Mode"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#af8ad6ff00c1fcea451978e0403f29484"><param name="Name" value="OutputSpeed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#ac6f8ddbcc6ac7eab096f80943e2f9c35"><param name="Name" value="OutputType"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a6edaa6c244cf152f48755cc6f0865794"><param name="Name" value="Pin"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html"><param name="Name" value="MGPIOx_ConfigType"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a5fd991c1d48a95358085baf482215bfc"><param name="Name" value="Port"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#ae2e4c57235f249b9c191b620de7cb72f"><param name="Name" value="MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#ad812a682e84c5bcc3fdda9546fb957d4"><param name="Name" value="MGPIOx_u8GetPinValue(u8_t A_u8PortID, u8_t A_u8PinID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#ae0822bea960c4226977e88ec16f3764e"><param name="Name" value="MGPIOx_vInit(MGPIOx_ConfigType *A_xPinConfig)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#a6903496555fd7b13cc21ad6465c2c8b8"><param name="Name" value="MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#a7e88babca6499dd8eb11315215bac806"><param name="Name" value="MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8AFID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a9f4bdac7d7d5430ad1b71bd86ec7fb5a"><param name="Name" value="MGPIOx_vSetAlternateFunctionON(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8AFID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#ad6b97a96185619d9985ec6b4324acca9"><param name="Name" value="MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8InputPullType)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#aed7c233eae6f28f195b7e8474465dbeb"><param name="Name" value="MGPIOx_vSetPinInputPullType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8InputPullType)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#afc362fef8b827f868df511979deeabe7"><param name="Name" value="MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8Mode)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a2aa50bedad3f84f3ddc1d373f6a1677f"><param name="Name" value="MGPIOx_vSetPinMode(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8Mode)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#a9770a5328d104bcf99fad16945e91a3c"><param name="Name" value="MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputSpeed)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a9aa97f2ab874a52442157be1d116e3ec"><param name="Name" value="MGPIOx_vSetPinOutputSpeed(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputSpeed)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aa257a3acb91828ecf11477c882cc8a47"><param name="Name" value="MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputType)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#ae96fece4783997728111939101fa9acd"><param name="Name" value="MGPIOx_vSetPinOutputType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputType)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#af20c7fe5cc6f8343c15c804adb2bb064"><param name="Name" value="MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8PinValue)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a3d6ad5ad5f68b519f08d4be6292bf6a2"><param name="Name" value="MGPIOx_vSetPinValue(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8PinValue)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aa08db93858812ffc7e233d590dd049eb"><param name="Name" value="MGPIOx_vSetPortConfigLock(VAR(u8_t) A_u8PortID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aad586b29f77a4eaa053e939eff3bf986"><param name="Name" value="MGPIOx_vSetResetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a7607934dcacde1f631bab9de4354431b"><param name="Name" value="MGPIOx_vSetResetPinValue(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8SetResetPinValue)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c"><param name="Name" value="MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__program_8c.html#a36bc9410064c8b745c2ef939c545e8f4"><param name="Name" value="MGPIOx_vTogglePinValue(u8_t A_u8PortID, u8_t A_u8PinID)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_g_p_i_o__config_8h.html#a92aa7a206fa9f76a336dad4cd69f904c"><param name="Name" value="MODERType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utilities.html#ga160c8b5c95d88dfe9d501f087611755d"><param name="Name" value="MY_MS_DELAY(T)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a3f8b1a7b7115da39c634caa265c9a288"><param name="Name" value="Mode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4"><param name="Name" value="NULL"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#af8ad6ff00c1fcea451978e0403f29484"><param name="Name" value="OutputSpeed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#ac6f8ddbcc6ac7eab096f80943e2f9c35"><param name="Name" value="OutputType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga6a5331902e985468785893e55a26df67"><param name="Name" value="P2CONST(ptrtype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga93522904f3ee5ba154d6688d847f73b1"><param name="Name" value="P2FUNC(rettype, fctname)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga30c6e83ff2cac859ff6d852ea99fa3f1"><param name="Name" value="P2VAR(ptrtype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a6edaa6c244cf152f48755cc6f0865794"><param name="Name" value="Pin"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_m_g_p_i_ox___config_type.html#a5fd991c1d48a95358085baf482215bfc"><param name="Name" value="Port"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3"><param name="Name" value="SET_BIT(Reg, bitnum)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#ga144236a5e2a4ca05b69188788329d059"><param name="Name" value="SET_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga10b2d890d871e1489bb02b7e70d9bdfb"><param name="Name" value="STATIC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="Standard types"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="Standard values"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#ga9488851bfeef0fa7ccafaf75597c4d29"><param name="Name" value="TOGGLE_BIT(Reg, bitnum)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#ga6ba80d3aeea2b1acef66178451fa2136"><param name="Name" value="TOGGLE_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d"><param name="Name" value="TRUE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utilities.html"><param name="Name" value="Utilities macros"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#ab623fb569c4a7d289fae96c7d628159e"><param name="Name" value="VAR(u32_t) AFRHx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#ab04329ab1e3faeba160cd1ac22d28402"><param name="Name" value="VAR(u32_t) AFRLx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a1113ccf43794e857d51c22b16eee8842"><param name="Name" value="VAR(u32_t) BSRRx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#afc8b770ec97321a67add9c0fc496cae4"><param name="Name" value="VAR(u32_t) IDRx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#aeda7b02dede0082b9c45163c46196fba"><param name="Name" value="VAR(u32_t) LCKRx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a117306dfc0dad17785203bdc8c93b9f0"><param name="Name" value="VAR(u32_t) MODERx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a308a2814aa743e5a0a7eb76334313247"><param name="Name" value="VAR(u32_t) ODRx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a867f94e4c7cf656dbe173980cd548e02"><param name="Name" value="VAR(u32_t) OSPEEDRx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#aa4e09f60bf0c95a6462d39ee9936fee9"><param name="Name" value="VAR(u32_t) OTYPERx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_g_p_i_ox___memory_map_type.html#a3cd906ed5f7ba87b9746c9764208cba2"><param name="Name" value="VAR(u32_t) PUPDRx"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9"><param name="Name" value="VAR(vartype)"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html"><param name="Name" value="bitmath"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786"><param name="Name" value="CLR_BIT(Reg, bitnum)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html"><param name="Name" value="bitmath"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#ga675c41d461abd3b2224e9c3d99d7151a"><param name="Name" value="GET_BIT(Reg, bitnum)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html"><param name="Name" value="bitmath"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3"><param name="Name" value="SET_BIT(Reg, bitnum)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html"><param name="Name" value="bitmath"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmath.html#ga9488851bfeef0fa7ccafaf75597c4d29"><param name="Name" value="TOGGLE_BIT(Reg, bitnum)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html"><param name="Name" value="bitmathgroup"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#ga63f1579914decc1a223d865c1fa54350"><param name="Name" value="CLR_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html"><param name="Name" value="bitmathgroup"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#gaecf172240669d21bb20b8555e7090868"><param name="Name" value="GET_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html"><param name="Name" value="bitmathgroup"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#ga144236a5e2a4ca05b69188788329d059"><param name="Name" value="SET_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html"><param name="Name" value="bitmathgroup"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__bitmathgroup.html#ga6ba80d3aeea2b1acef66178451fa2136"><param name="Name" value="TOGGLE_BITs(Reg, bits, bitnum, factor)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga04dd5074964518403bf944f2b240a5f8"><param name="Name" value="bool_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga69d9ea05cf6f223b225c937e8a375395"><param name="Name" value="CONST(consttype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga6282e9404278fd614583a4ff57e65b15"><param name="Name" value="CONSTP2CONST(ptrtype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#gab5fd09ff387aec5366fd5b10301c8520"><param name="Name" value="CONSTP2VAR(ptrtype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga846278437e035619630d1fffd9974e82"><param name="Name" value="FUNC(rettype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga6a5331902e985468785893e55a26df67"><param name="Name" value="P2CONST(ptrtype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga93522904f3ee5ba154d6688d847f73b1"><param name="Name" value="P2FUNC(rettype, fctname)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga30c6e83ff2cac859ff6d852ea99fa3f1"><param name="Name" value="P2VAR(ptrtype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#ga10b2d890d871e1489bb02b7e70d9bdfb"><param name="Name" value="STATIC"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html"><param name="Name" value="compiler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9"><param name="Name" value="VAR(vartype)"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gaea18e97fe4ad79b1972d2e9ab64a7def"><param name="Name" value="fl32_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gae508fe7e6b0f5f01e4eae145da6dd747"><param name="Name" value="fl64_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html"><param name="Name" value="gpio_addresses"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html#ga23f716ce6f03880a5ea6cf32fef82133"><param name="Name" value="GPIO_BASE_ADDRESS_A"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html"><param name="Name" value="gpio_addresses"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html#gabc40e2a5721ec0500a69897961bd5ffb"><param name="Name" value="GPIO_BASE_ADDRESS_B"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html"><param name="Name" value="gpio_addresses"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__addresses.html#ga24a1609e05f7ae0f091452ff9481c2fc"><param name="Name" value="GPIO_BASE_ADDRESS_C"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gab51bc32bfd8375fcc33c347c945654ab"><param name="Name" value="GPIOx_AF0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gae7a091c8afd3bcfbcd05980b22be4cfb"><param name="Name" value="GPIOx_AF1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gaec9a524f2894a9872038bef534bf94ee"><param name="Name" value="GPIOx_AF10"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gaa2f3651491f1ee2845fba7447ef57a3d"><param name="Name" value="GPIOx_AF11"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gac8cbc080fe90d1b4a2068bab138d5e4d"><param name="Name" value="GPIOx_AF12"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92"><param name="Name" value="GPIOx_AF13"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db"><param name="Name" value="GPIOx_AF14"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52"><param name="Name" value="GPIOx_AF15"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga2e5bc5321250c96b720ca25bdc50fb2c"><param name="Name" value="GPIOx_AF2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga70805e6ffce753a9c2845334a97ece79"><param name="Name" value="GPIOx_AF3"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga518a9cdab14db515469a3b79a3bcb498"><param name="Name" value="GPIOx_AF4"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga9e21769f3bb32137699ab10d8128c485"><param name="Name" value="GPIOx_AF5"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga1915c7d75ae6917d870928ca0cce7e5f"><param name="Name" value="GPIOx_AF6"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#gab6c3d03c1a4962f7505dab5ebf294968"><param name="Name" value="GPIOx_AF7"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga8c11bf59cac7dda3ac8da73e70eac000"><param name="Name" value="GPIOx_AF8"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html"><param name="Name" value="gpio_alternate_functions"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__alternate__functions.html#ga9dd9d5c2ad3695c2194485165be529a2"><param name="Name" value="GPIOx_AF9"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html"><param name="Name" value="gpio_modes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#ga68830dfd5f7c4ce1bc4993e6dc409dda"><param name="Name" value="GPIOx_MODE_AF"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html"><param name="Name" value="gpio_modes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#gaa234a69e2b2cf024a771929e7f1cb54e"><param name="Name" value="GPIOx_MODE_ANALOG"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html"><param name="Name" value="gpio_modes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#gad653959c0619374559a3ef878315a87d"><param name="Name" value="GPIOx_MODE_INPUT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html"><param name="Name" value="gpio_modes"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__modes.html#ga4972d73d7eb99665462f063f0264138f"><param name="Name" value="GPIOx_MODE_OUTPUT"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga0555a2d75b515e59c007ea1981dbdabc"><param name="Name" value="GPIOx_PIN0"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga4396ba448ed90c7fb9db8218574c2cb9"><param name="Name" value="GPIOx_PIN1"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga05197bf08ff254157acaf1fa16260873"><param name="Name" value="GPIOx_PIN10"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga7d19430f2fca4df12e35f7d8c81b2341"><param name="Name" value="GPIOx_PIN11"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga177981236c6aa829d1e60226a401290d"><param name="Name" value="GPIOx_PIN12"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gaf0d7d102f365587c63616c62e84fd42f"><param name="Name" value="GPIOx_PIN13"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga994ef956212316de9161da30623eac07"><param name="Name" value="GPIOx_PIN14"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga8762d4d63fea54051d3765143d0a75fc"><param name="Name" value="GPIOx_PIN15"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga761496d60fa0d24fad0ba2bd677b6b1e"><param name="Name" value="GPIOx_PIN2"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga673960489ce24947429db3f907a3fe73"><param name="Name" value="GPIOx_PIN3"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gae89fddd9995edc54ead9f44f21d348ec"><param name="Name" value="GPIOx_PIN4"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gac8ab9dabe136553fbb48c7fe06862934"><param name="Name" value="GPIOx_PIN5"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga2d0996a4344c4825922db05b6bf34b3b"><param name="Name" value="GPIOx_PIN6"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#gab441403d46ced3f1577194a14069a2d0"><param name="Name" value="GPIOx_PIN7"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91"><param name="Name" value="GPIOx_PIN8"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html"><param name="Name" value="gpio_output_pins"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__pins.html#ga5f7c3f8fbd957501ef6e6799909b7474"><param name="Name" value="GPIOx_PIN9"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html"><param name="Name" value="gpio_output_types"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html#gae72919755d4c0875acfed6f678486329"><param name="Name" value="GPIOx_OPENDRAIN"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html"><param name="Name" value="gpio_output_types"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__types.html#ga5343b590d444a2b8a37f7507366869ea"><param name="Name" value="GPIOx_PUSHPULL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html"><param name="Name" value="gpio_output_values"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html#gad4850c5b570986c1a0b8111114fbbfdc"><param name="Name" value="GPIOx_HIGH"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html"><param name="Name" value="gpio_output_values"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__output__values.html#ga024aaae1f1031a1886437ac9089ddab9"><param name="Name" value="GPIOx_LOW"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html"><param name="Name" value="gpio_pin_speed"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#ga74ec6384b34245c8e97ce6e028872b44"><param name="Name" value="GPIOx_HighSpeed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html"><param name="Name" value="gpio_pin_speed"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#ga0c2f1d04e61f1ea65a8e68751013e2b2"><param name="Name" value="GPIOx_LowSpeed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html"><param name="Name" value="gpio_pin_speed"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#ga8dbc220db50dd66e8bde537a1fa5c539"><param name="Name" value="GPIOx_MediumSpeed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html"><param name="Name" value="gpio_pin_speed"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pin__speed.html#gaaeeee0e7cc243a81f32af45e30ce4447"><param name="Name" value="GPIOx_VeryHighSpeed"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html"><param name="Name" value="gpio_ports"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html#gace1f2998664b32913e0c7f9a76699060"><param name="Name" value="GPIO_PORTA"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html"><param name="Name" value="gpio_ports"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923"><param name="Name" value="GPIO_PORTB"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html"><param name="Name" value="gpio_ports"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__ports.html#ga1f67e53aff58af920fc394ec5d86faeb"><param name="Name" value="GPIO_PORTC"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html"><param name="Name" value="gpio_pull_types"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html#gaf4cf4bb06c94c525f63f7c84377d48f8"><param name="Name" value="GPIOx_NoPull"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html"><param name="Name" value="gpio_pull_types"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html#gacc24f327614c0148d3f0af59d8bad2f8"><param name="Name" value="GPIOx_PullDown"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html"><param name="Name" value="gpio_pull_types"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__pull__types.html#ga76fd5ecbcc083cc92f448ff4bab5f9ce"><param name="Name" value="GPIOx_PullUp"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html"><param name="Name" value="gpio_registers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html#gac485358099728ddae050db37924dd6b7"><param name="Name" value="GPIOA"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html"><param name="Name" value="gpio_registers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html#ga68b66ac73be4c836db878a42e1fea3cd"><param name="Name" value="GPIOB"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html"><param name="Name" value="gpio_registers"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__gpio__registers.html#ga2dca03332d620196ba943bc2346eaa08"><param name="Name" value="GPIOC"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478"><param name="Name" value="s16_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5"><param name="Name" value="s32_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5"><param name="Name" value="s8_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="standardvalues"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#gaa93f0eb578d23995850d61f7d61c55c1"><param name="Name" value="FALSE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="standardvalues"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#ga2553f2666905212b3d10e0792c87938d"><param name="Name" value="FLAG_CLEARED"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="standardvalues"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#gaeadc670e6fd25b11cefab921983d1f63"><param name="Name" value="FLAG_SET"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="standardvalues"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468"><param name="Name" value="INITIAL_ZERO"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="standardvalues"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4"><param name="Name" value="NULL"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html"><param name="Name" value="standardvalues"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d"><param name="Name" value="TRUE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga04dd5074964518403bf944f2b240a5f8"><param name="Name" value="bool_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gaea18e97fe4ad79b1972d2e9ab64a7def"><param name="Name" value="fl32_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gae508fe7e6b0f5f01e4eae145da6dd747"><param name="Name" value="fl64_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478"><param name="Name" value="s16_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5"><param name="Name" value="s32_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5"><param name="Name" value="s8_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b"><param name="Name" value="u16_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071"><param name="Name" value="u32_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html"><param name="Name" value="typedefs"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24"><param name="Name" value="u8_t"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b"><param name="Name" value="u16_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071"><param name="Name" value="u32_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24"><param name="Name" value="u8_t"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="group__utilities.html#ga160c8b5c95d88dfe9d501f087611755d"><param name="Name" value="utilities"></OBJECT>
+</UL>
+</BODY>
+</HTML>
