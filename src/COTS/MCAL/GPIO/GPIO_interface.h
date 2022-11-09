@@ -3,7 +3,7 @@
  * @author Ali El Bana & Mo Alaa
  * @brief This file contains the interfacing information for the GPIO module
  * @version 2.0
- * @date 08/22/2022
+ * @date 11/9/2022
  */
 
 /* Header file guard */
@@ -45,10 +45,11 @@ typedef struct
 	 * @brief Configures a speific GPIO Alternative function
 	 */
 	u8_t AF_Type;
+
 } MGPIOx_ConfigType;
 
 /************************************************************************/
-/*                        Functions' prototypes                        */
+/*                        Functions prototypes                          */
 /************************************************************************/
 
 /**
