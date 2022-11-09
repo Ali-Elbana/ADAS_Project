@@ -1,8 +1,8 @@
 /**
  * @file GPIO_program.c
- * @author Ali El Bana
+ * @author Ali El Bana & Mo Alaa
  * @brief This file contains the source code of the interfacing for the GPIO modules
- * @version 1.0
+ * @version 2.0
  * @date 08/22/2022
  */
 
@@ -41,6 +41,9 @@ FUNC(void) MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_
 			break;
 	}
 }
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 FUNC(void) MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputType)
 {
@@ -82,6 +85,9 @@ FUNC(void) MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, V
 	}
 }
 
+/**************************************************************************************/
+/**************************************************************************************/
+
 FUNC(void) MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputSpeed)
 {
 	switch(A_u8PortID)
@@ -102,6 +108,9 @@ FUNC(void) MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, 
 			break;
 	}
 }
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 FUNC(void) MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8InputPullType)
 {
@@ -124,6 +133,9 @@ FUNC(void) MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID
 	}
 }
 
+/**************************************************************************************/
+/**************************************************************************************/
+
 FUNC(u8_t) MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
 {
 	VAR(u8_t) L_u8PinValue = INITIAL_ZERO;
@@ -145,6 +157,9 @@ FUNC(u8_t) MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
 
 	return L_u8PinValue;
 }
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8PinValue)
 {
@@ -186,10 +201,16 @@ FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8
 	}
 }
 
+/**************************************************************************************/
+/**************************************************************************************/
+
 FUNC(void) MGPIOx_vSetResetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)
 {
 	/* Do nothing */
 }
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8AFID)
 {
@@ -284,14 +305,20 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 	}
 }
 
+/**************************************************************************************/
+/**************************************************************************************/
+
 FUNC(void) MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig)
 {
-	MGPIOx_vSetPinMode(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->Mode);
-	MGPIOx_vSetPinOutputType(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->OutputType);
-	MGPIOx_vSetPinOutputSpeed(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->OutputSpeed);
-	MGPIOx_vSetPinInputPullType(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->InputType);
-	MGPIOx_vSetAlternateFunctionON(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->AF_Type);
+	MGPIOx_vSetPinMode				(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->Mode			);
+	MGPIOx_vSetPinOutputType		(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->OutputType	);
+	MGPIOx_vSetPinOutputSpeed		(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->OutputSpeed	);
+	MGPIOx_vSetPinInputPullType		(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->InputType		);
+	MGPIOx_vSetAlternateFunctionON	(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->AF_Type		);
 }
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 FUNC(void) MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
 {
@@ -310,3 +337,9 @@ FUNC(void) MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
 			break;
 	}
 }
+
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+

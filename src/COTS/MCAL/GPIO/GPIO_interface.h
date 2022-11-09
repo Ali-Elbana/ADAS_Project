@@ -1,8 +1,8 @@
 /**
  * @file GPIO_interface.h
- * @author Ali El Bana
+ * @author Ali El Bana & Mo Alaa
  * @brief This file contains the interfacing information for the GPIO module
- * @version 1.0
+ * @version 2.0
  * @date 08/22/2022
  */
 
@@ -513,42 +513,42 @@ void MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID);
  * @brief GPIO Alternate function 10
  *
  */
-#define GPIOx_AF10 1(0)
+#define GPIOx_AF10 (10)
 
 /**
  * @def GPIOx_AF11
  * @brief GPIO Alternate function 11
  *
  */
-#define GPIOx_AF11 1(1)
+#define GPIOx_AF11 (11)
 
 /**
  * @def GPIOx_AF12
  * @brief GPIO Alternate function 12
  *
  */
-#define GPIOx_AF12 1(2)
+#define GPIOx_AF12 (12)
 
 /**
  * @def GPIOx_AF13
  * @brief GPIO Alternate function 13
  *
  */
-#define GPIOx_AF13 1(3)
+#define GPIOx_AF13 (13)
 
 /**
  * @def GPIOx_AF14
  * @brief GPIO Alternate function 14
  *
  */
-#define GPIOx_AF14 1(4)
+#define GPIOx_AF14 (14)
 
 /**
  * @def GPIOx_AF15
  * @brief GPIO Alternate function 15
  *
  */
-#define GPIOx_AF15 1(5)
+#define GPIOx_AF15 (15)
 
 /** @} */
 

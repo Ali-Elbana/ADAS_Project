@@ -1,8 +1,8 @@
 /**
  * @file GPIO_config.h
- * @author Ali El Bana
+ * @author Ali El Bana & Mo Alaa
  * @brief This file contains the GPIO configurations
- * @version 1.0
+ * @version 2.0
  * @date 08/22/2022
  */
 
@@ -11,15 +11,8 @@
 
 
 /**********************************************************************************/
-							// GPIOx_MODER configurations //
+							// GPIOx configurations //
 /**********************************************************************************/
 
-/*options:
- *INPUT
- *OUTPUT
- *AF
- *ANALOG
- */
-#define MODERType DISABLE
 
 #endif //_GPIO_config_H

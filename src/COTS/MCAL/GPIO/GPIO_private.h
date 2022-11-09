@@ -1,8 +1,8 @@
 /**
  * @file GPIO_private.h
- * @author Ali El Bana
+ * @author Ali El Bana & Mo Alaa
  * @brief This file contains the registers information and addresses for the GPIO module
- * @version 1.0
+ * @version 2.0
  * @date 08/22/2022
  */
 
@@ -66,6 +66,7 @@ typedef struct
 	 * @brief Control alternate function **HIGH** register
 	 */
 	VAR(u32_t) AFRHx;
+
 } GPIOx_MemoryMapType;
 
 /**
@@ -79,21 +80,21 @@ typedef struct
  * Port A Base address
  *
  */
-#define GPIO_BASE_ADDRESS_A (0x40020000)
+#define GPIOA_BASE_ADDRESS (0x40020000)
 
 /**
  * @def GPIO_BASE_ADDRESS_B
  * Port B Base address
  *
  */
-#define GPIO_BASE_ADDRESS_B (0x40020400)
+#define GPIOB_BASE_ADDRESS (0x40020400)
 
 /**
  * @def GPIO_BASE_ADDRESS_C
  * Port C Base address
  *
  */
-#define GPIO_BASE_ADDRESS_C (0x40020800)
+#define GPIOC_BASE_ADDRESS (0x40020800)
 
 /** @} */
 
@@ -108,21 +109,21 @@ typedef struct
  * GPIO register for port A
  *
  */
-#define GPIOA ((volatile P2VAR(GPIOx_MemoryMapType))	(GPIO_BASE_ADDRESS_A))
+#define GPIOA ( (volatile P2VAR(GPIOx_MemoryMapType)) (GPIOA_BASE_ADDRESS) )
 
 /**
  * @def GPIOB
  * GPIO register for port B
  *
  */
-#define GPIOB ((volatile P2VAR(GPIOx_MemoryMapType))	(GPIO_BASE_ADDRESS_B))
+#define GPIOB ( (volatile P2VAR(GPIOx_MemoryMapType)) (GPIOB_BASE_ADDRESS) )
 
 /**
  * @def GPIOC
  * GPIO register for port C
  *
  */
-#define GPIOC ((volatile P2VAR(GPIOx_MemoryMapType))	(GPIO_BASE_ADDRESS_C))
+#define GPIOC ( (volatile P2VAR(GPIOx_MemoryMapType)) (GPIOC_BASE_ADDRESS) )
 
 /** @} */
 
