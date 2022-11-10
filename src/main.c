@@ -23,13 +23,16 @@ int main(void)
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
 
-	MGPIOx_ConfigType LED =
+	MGPIOx_vLockedPins( ) ;
+
+	MGPIOx_ConfigType LED1 =
 	{
 
-			.Port 			= GPIO_PORTA 		,
+			.Port 			= GPIO_PORTB 		,
 
-			.Pin 			= GPIOx_PIN1 		,
+			.Pin 			= GPIOx_PIN0 		,
 
 			.Mode 			= GPIOx_MODE_OUTPUT ,
 
@@ -42,16 +45,39 @@ int main(void)
 	} ;
 
 
-	MGPIOx_vInit( &LED ) ;
+	MGPIOx_ConfigType LED2 =
+	{
 
-	MGPIOx_vSetPinValue( LED.Port, LED.Pin, GPIOx_HIGH ) ;
+			.Port 			= GPIO_PORTA 		,
+
+			.Pin 			= GPIOx_PIN0 		,
+
+			.Mode 			= GPIOx_MODE_OUTPUT ,
+
+			.OutputType 	= GPIOx_PUSHPULL 	,
+
+			.OutputSpeed 	= GPIOx_LowSpeed 	,
+
+			.InputType 		= GPIOx_NoPull
+
+	} ;
+
+
+	MGPIOx_vInit( &LED1 ) ;
+
+	MGPIOx_vInit( &LED2 ) ;
+
 
 	while( TRUE )
 	{
 
+		MGPIOx_vSetResetAtomic( LED1.Port, LED1.Pin, GPIOx_HIGH ) ;
+		MGPIOx_vSetResetAtomic( LED2.Port, LED2.Pin, GPIOx_HIGH ) ;
+
 		for( VAR( u32_t) i = INITIAL_ZERO; i < 250000; i++ ) ;
 
-		MGPIOx_vTogglePinValue( LED.Port, LED.Pin ) ;
+		MGPIOx_vSetResetAtomic( LED1.Port, LED1.Pin, GPIOx_LOW ) ;
+		MGPIOx_vSetResetAtomic( LED2.Port, LED2.Pin, GPIOx_LOW ) ;
 
 		for( VAR( u32_t) i = INITIAL_ZERO; i < 250000; i++ ) ;
 

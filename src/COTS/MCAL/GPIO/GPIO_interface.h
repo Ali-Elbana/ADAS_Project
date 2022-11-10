@@ -52,6 +52,10 @@ typedef struct
 /*                        Functions prototypes                          */
 /************************************************************************/
 
+
+FUNC(void) MGPIOx_vLockedPins(void) ;
+
+
 /**
  * @brief Sets a certain pin's mode on a speific port
  * @param[in] A_u8PortID The port that the pin belongs to
@@ -104,9 +108,9 @@ FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8
  * @brief Resets a certain pin's output value on a speific port
  * @param[in] A_u8PortID The port that the pin belongs to
  * @param[in] A_u8PinID The pin to update its mode
- * @param[in] A_u8SetResetPinValue The reset value to set on the pin
+ * @param[in] MGPIOx_vSetResetAtomic The reset value to set on the pin
  */
-FUNC(void) MGPIOx_vSetResetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue);
+FUNC(void) MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue);
 
 /**
  * @brief Applys an alternative function on a certain pin

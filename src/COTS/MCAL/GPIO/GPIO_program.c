@@ -21,6 +21,58 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
+FUNC(void) MGPIOx_vLockedPins(void)
+{
+
+	#define GPIOA_PIN_POS (0b1110000000000000)  //I want to lock PA13,14,15.
+	#define LCKK_BIT_POS (16U)   			   //Position of LCKK bit.
+
+	VAR(volatile u32_t) L_u32LockGPIOA = INITIAL_ZERO ;
+
+	/* Lock key write sequence */
+
+	/* WR LCKR[16] = ‘1’ + LCKR[13,14,15] = ‘1’ */
+	L_u32LockGPIOA = ( (1UL << LCKK_BIT_POS) | (GPIOA_PIN_POS) ) ;
+
+	GPIOA->LCKRx = L_u32LockGPIOA ;
+
+	/* WR LCKR[16] = ‘0’ + LCKR[13,14,15] should not change*/
+	GPIOA->LCKRx = (GPIOA_PIN_POS) ;
+
+	/* WR LCKR[16] = ‘1’ + LCKR[13,14,15] should not change*/
+	GPIOA->LCKRx = L_u32LockGPIOA ;
+
+	/* RD LCKR */
+	L_u32LockGPIOA = GPIOA->LCKRx ;
+
+	//////////////////////////////////////////////////////////////////////////////////
+
+	#define GPIOB_PIN_POS (0b0000000000011100)  //I want to lock PB2,3,4.
+	#define LCKK_BIT_POS (16U)   			   //Position of LCKK bit.
+
+	VAR(volatile u32_t) L_u32LockGPIOB = INITIAL_ZERO ;
+
+	/* Lock key write sequence */
+
+	/* WR LCKR[16] = ‘1’ + LCKR[2,3,4] = ‘1’ */
+	L_u32LockGPIOB = ( (1UL << LCKK_BIT_POS) | (GPIOB_PIN_POS) ) ;
+
+	GPIOB->LCKRx = L_u32LockGPIOB ;
+
+	/* WR LCKR[16] = ‘0’ + LCKR[2,3,4] should not change*/
+	GPIOB->LCKRx = (GPIOB_PIN_POS) ;
+
+	/* WR LCKR[16] = ‘1’ + LCKR[2,3,4] should not change*/
+	GPIOB->LCKRx = L_u32LockGPIOB ;
+
+	/* RD LCKR */
+	L_u32LockGPIOB = GPIOB->LCKRx ;
+
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
+
 FUNC(void) MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8Mode)
 {
 
@@ -216,9 +268,58 @@ FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetResetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)
+FUNC(void) MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)
 {
-	/* Do nothing */
+
+	switch (A_u8PortID)
+	{
+
+		case GPIO_PORTA:
+
+		switch (A_u8SetResetPinValue)
+		{
+			case GPIOx_HIGH:
+			GPIOA->BSRRx = (1 << A_u8PinID);
+			break;
+
+			case GPIOx_LOW:
+			GPIOA->BSRRx = (1 << (A_u8PinID + 16));
+			break;
+		}
+
+		break;
+
+		case GPIO_PORTB:
+
+			switch (A_u8SetResetPinValue)
+			{
+				case GPIOx_HIGH:
+				GPIOB->BSRRx = (1 << A_u8PinID);
+				break;
+
+				case GPIOx_LOW:
+				GPIOB->BSRRx = (1 << (A_u8PinID + 16));
+				break;
+			}
+
+			break;
+
+		case GPIO_PORTC:
+
+				switch (A_u8SetResetPinValue)
+				{
+					case GPIOx_HIGH:
+					GPIOC->BSRRx = (1 << A_u8PinID);
+					break;
+
+					case GPIOx_LOW:
+					GPIOC->BSRRx = (1 << (A_u8PinID + 16));
+					break;
+				}
+
+				break;
+	}
+
 }
 
 /**************************************************************************************/
