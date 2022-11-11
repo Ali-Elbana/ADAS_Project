@@ -24,9 +24,6 @@
 FUNC(void) MGPIOx_vLockedPins(void)
 {
 
-	#define GPIOA_PIN_POS (0b1110000000000000)  //I want to lock PA13,14,15.
-	#define LCKK_BIT_POS (16U)   			   //Position of LCKK bit.
-
 	VAR(volatile u32_t) L_u32LockGPIOA = INITIAL_ZERO ;
 
 	/* Lock key write sequence */
@@ -46,9 +43,6 @@ FUNC(void) MGPIOx_vLockedPins(void)
 	L_u32LockGPIOA = GPIOA->LCKRx ;
 
 	//////////////////////////////////////////////////////////////////////////////////
-
-	#define GPIOB_PIN_POS (0b0000000000011100)  //I want to lock PB2,3,4.
-	#define LCKK_BIT_POS (16U)   			   //Position of LCKK bit.
 
 	VAR(volatile u32_t) L_u32LockGPIOB = INITIAL_ZERO ;
 
