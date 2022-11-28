@@ -67,66 +67,26 @@ Macros</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga69d9ea05cf6f223b225c937e8a375395" name="ga69d9ea05cf6f223b225c937e8a375395"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga69d9ea05cf6f223b225c937e8a375395">&#9670;&#160;</a></span>CONST</h2>
+<a id="gaf36fbf9b72d48ddc34a627487ef0bba9" name="gaf36fbf9b72d48ddc34a627487ef0bba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf36fbf9b72d48ddc34a627487ef0bba9">&#9670;&#160;</a></span>VAR</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONST</td>
+          <td class="memname">#define VAR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">consttype</td><td>)</td>
-          <td>&#160;&#160;&#160;const consttype</td>
+          <td class="paramname">vartype</td><td>)</td>
+          <td>&#160;&#160;&#160;vartype</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Declare a standard constant variable with the specified type </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00073">73</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
+<p >Declare a variable with the specified type </p>
 
-</div>
-</div>
-<a id="ga6282e9404278fd614583a4ff57e65b15" name="ga6282e9404278fd614583a4ff57e65b15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6282e9404278fd614583a4ff57e65b15">&#9670;&#160;</a></span>CONSTP2CONST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONSTP2CONST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ptrtype</td><td>)</td>
-          <td>&#160;&#160;&#160;const ptrtype * const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Declare a constant pointer-to-variable constant with the specified type </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00058">58</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
-
-</div>
-</div>
-<a id="gab5fd09ff387aec5366fd5b10301c8520" name="gab5fd09ff387aec5366fd5b10301c8520"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab5fd09ff387aec5366fd5b10301c8520">&#9670;&#160;</a></span>CONSTP2VAR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CONSTP2VAR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ptrtype</td><td>)</td>
-          <td>&#160;&#160;&#160;ptrtype * const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Declare a pointer-to-variable constant with the specified type </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00051">51</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">23</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
 
 </div>
 </div>
@@ -145,9 +105,34 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
 <p >Declare a function's return type </p>
 
 <p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00030">30</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
+
+</div>
+</div>
+<a id="ga30c6e83ff2cac859ff6d852ea99fa3f1" name="ga30c6e83ff2cac859ff6d852ea99fa3f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga30c6e83ff2cac859ff6d852ea99fa3f1">&#9670;&#160;</a></span>P2VAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define P2VAR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptrtype</td><td>)</td>
+          <td>&#160;&#160;&#160;ptrtype *</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
+<p >Declare a pointer-to-variable with the specified type </p>
+
+<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00037">37</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
 
 </div>
 </div>
@@ -166,9 +151,57 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
 <p >Declare a constant pointer-to-variable with the specified type </p>
 
 <p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00044">44</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
+
+</div>
+</div>
+<a id="gab5fd09ff387aec5366fd5b10301c8520" name="gab5fd09ff387aec5366fd5b10301c8520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5fd09ff387aec5366fd5b10301c8520">&#9670;&#160;</a></span>CONSTP2VAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONSTP2VAR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptrtype</td><td>)</td>
+          <td>&#160;&#160;&#160;ptrtype * const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
+<p >Declare a pointer-to-variable constant with the specified type </p>
+
+<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00051">51</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
+
+</div>
+</div>
+<a id="ga6282e9404278fd614583a4ff57e65b15" name="ga6282e9404278fd614583a4ff57e65b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6282e9404278fd614583a4ff57e65b15">&#9670;&#160;</a></span>CONSTP2CONST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CONSTP2CONST</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptrtype</td><td>)</td>
+          <td>&#160;&#160;&#160;const ptrtype * const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
+<p >Declare a constant pointer-to-variable constant with the specified type </p>
+
+<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00058">58</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
 
 </div>
 </div>
@@ -197,30 +230,34 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
 <p >Declare a pointer-to-function with the specified type </p>
 
 <p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00065">65</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
 
 </div>
 </div>
-<a id="ga30c6e83ff2cac859ff6d852ea99fa3f1" name="ga30c6e83ff2cac859ff6d852ea99fa3f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30c6e83ff2cac859ff6d852ea99fa3f1">&#9670;&#160;</a></span>P2VAR</h2>
+<a id="ga69d9ea05cf6f223b225c937e8a375395" name="ga69d9ea05cf6f223b225c937e8a375395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69d9ea05cf6f223b225c937e8a375395">&#9670;&#160;</a></span>CONST</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define P2VAR</td>
+          <td class="memname">#define CONST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">ptrtype</td><td>)</td>
-          <td>&#160;&#160;&#160;ptrtype *</td>
+          <td class="paramname">consttype</td><td>)</td>
+          <td>&#160;&#160;&#160;const consttype</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Declare a pointer-to-variable with the specified type </p>
 
-<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00037">37</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
+<p >Declare a standard constant variable with the specified type </p>
+
+<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00073">73</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
 
 </div>
 </div>
@@ -235,37 +272,18 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">src/COTS/LIB/LSTD_COMPILER.h</a>&gt;</code></p>
 <p >Declare a standard static variable </p>
 
 <p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00082">82</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
 
 </div>
 </div>
-<a id="gaf36fbf9b72d48ddc34a627487ef0bba9" name="gaf36fbf9b72d48ddc34a627487ef0bba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf36fbf9b72d48ddc34a627487ef0bba9">&#9670;&#160;</a></span>VAR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VAR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">vartype</td><td>)</td>
-          <td>&#160;&#160;&#160;vartype</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Declare a variable with the specified type </p>
-
-<p class="definition">Definition at line <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">23</a> of file <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">LSTD_COMPILER.h</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 19:38:55 for ADAS Graduation Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Mon Nov 28 2022 19:04:42 for ADAS Graduation Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

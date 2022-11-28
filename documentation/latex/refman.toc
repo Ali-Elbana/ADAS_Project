@@ -1,0 +1,612 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}ADAS Graudation Project}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Description}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Adaptive Cruise Control}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Adaptive Light Control}{1}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Driver Health Care}{1}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Hardware specifications}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Module Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Modules}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Data Structure Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Data Structures}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Module Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bit Manipulation Math Macros}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Macro Definition Documentation}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}SET\_BIT}{9}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}CLR\_BIT}{10}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}TOGGLE\_BIT}{10}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}GET\_BIT}{10}{subsubsection.5.1.2.4}%
+\contentsline {section}{\numberline {5.2}Bit Group Manipulation Math Macros}{10}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{11}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Macro Definition Documentation}{11}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}SET\_BITs}{11}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}CLR\_BITs}{11}{subsubsection.5.2.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}TOGGLE\_BITs}{11}{subsubsection.5.2.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.2.4}GET\_BITs}{12}{subsubsection.5.2.2.4}%
+\contentsline {section}{\numberline {5.3}Compiler standard macros}{12}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{12}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Macro Definition Documentation}{12}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}VAR}{12}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}FUNC}{13}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}P2VAR}{13}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {5.3.2.4}P2CONST}{13}{subsubsection.5.3.2.4}%
+\contentsline {subsubsection}{\numberline {5.3.2.5}CONSTP2VAR}{13}{subsubsection.5.3.2.5}%
+\contentsline {subsubsection}{\numberline {5.3.2.6}CONSTP2CONST}{14}{subsubsection.5.3.2.6}%
+\contentsline {subsubsection}{\numberline {5.3.2.7}P2FUNC}{14}{subsubsection.5.3.2.7}%
+\contentsline {subsubsection}{\numberline {5.3.2.8}CONST}{14}{subsubsection.5.3.2.8}%
+\contentsline {subsubsection}{\numberline {5.3.2.9}STATIC}{14}{subsubsection.5.3.2.9}%
+\contentsline {section}{\numberline {5.4}Utilities macros}{15}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{15}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Macro Definition Documentation}{15}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}MY\_MS\_DELAY}{15}{subsubsection.5.4.2.1}%
+\contentsline {section}{\numberline {5.5}Standard types}{15}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{15}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Typedef Documentation}{15}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}bool\_t}{16}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}u8\_t}{16}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}u16\_t}{16}{subsubsection.5.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.5.2.4}u32\_t}{16}{subsubsection.5.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.5.2.5}s8\_t}{17}{subsubsection.5.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.5.2.6}s16\_t}{17}{subsubsection.5.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.5.2.7}s32\_t}{17}{subsubsection.5.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.5.2.8}fl32\_t}{17}{subsubsection.5.5.2.8}%
+\contentsline {subsubsection}{\numberline {5.5.2.9}fl64\_t}{18}{subsubsection.5.5.2.9}%
+\contentsline {section}{\numberline {5.6}Standard values}{18}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{18}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Macro Definition Documentation}{18}{subsection.5.6.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.1}TRUE}{18}{subsubsection.5.6.2.1}%
+\contentsline {subsubsection}{\numberline {5.6.2.2}FALSE}{18}{subsubsection.5.6.2.2}%
+\contentsline {subsubsection}{\numberline {5.6.2.3}NULL}{19}{subsubsection.5.6.2.3}%
+\contentsline {subsubsection}{\numberline {5.6.2.4}INITIAL\_ZERO}{19}{subsubsection.5.6.2.4}%
+\contentsline {subsubsection}{\numberline {5.6.2.5}FLAG\_SET}{19}{subsubsection.5.6.2.5}%
+\contentsline {subsubsection}{\numberline {5.6.2.6}FLAG\_CLEARED}{19}{subsubsection.5.6.2.6}%
+\contentsline {section}{\numberline {5.7}GPIO Modes}{20}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{20}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Macro Definition Documentation}{20}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}GPIOx\_MODE\_INPUT}{20}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}GPIOx\_MODE\_OUTPUT}{20}{subsubsection.5.7.2.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.3}GPIOx\_MODE\_AF}{20}{subsubsection.5.7.2.3}%
+\contentsline {subsubsection}{\numberline {5.7.2.4}GPIOx\_MODE\_ANALOG}{21}{subsubsection.5.7.2.4}%
+\contentsline {section}{\numberline {5.8}GPIO Ports}{21}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{21}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Macro Definition Documentation}{21}{subsection.5.8.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.1}GPIO\_PORTA}{21}{subsubsection.5.8.2.1}%
+\contentsline {subsubsection}{\numberline {5.8.2.2}GPIO\_PORTB}{21}{subsubsection.5.8.2.2}%
+\contentsline {subsubsection}{\numberline {5.8.2.3}GPIO\_PORTC}{22}{subsubsection.5.8.2.3}%
+\contentsline {section}{\numberline {5.9}GPIO Output Types}{22}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{22}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Macro Definition Documentation}{22}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}GPIOx\_OPENDRAIN}{22}{subsubsection.5.9.2.1}%
+\contentsline {subsubsection}{\numberline {5.9.2.2}GPIOx\_PUSHPULL}{22}{subsubsection.5.9.2.2}%
+\contentsline {section}{\numberline {5.10}GPIO PIN Speed}{23}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{23}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Macro Definition Documentation}{23}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}GPIOx\_LowSpeed}{23}{subsubsection.5.10.2.1}%
+\contentsline {subsubsection}{\numberline {5.10.2.2}GPIOx\_MediumSpeed}{23}{subsubsection.5.10.2.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.3}GPIOx\_HighSpeed}{23}{subsubsection.5.10.2.3}%
+\contentsline {subsubsection}{\numberline {5.10.2.4}GPIOx\_VeryHighSpeed}{24}{subsubsection.5.10.2.4}%
+\contentsline {section}{\numberline {5.11}GPIO Pull Types}{24}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{24}{subsection.5.11.1}%
+\contentsline {subsection}{\numberline {5.11.2}Macro Definition Documentation}{24}{subsection.5.11.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.1}GPIOx\_NoPull}{24}{subsubsection.5.11.2.1}%
+\contentsline {subsubsection}{\numberline {5.11.2.2}GPIOx\_PullUp}{24}{subsubsection.5.11.2.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.3}GPIOx\_PullDown}{25}{subsubsection.5.11.2.3}%
+\contentsline {section}{\numberline {5.12}GPIO Output Values}{25}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{25}{subsection.5.12.1}%
+\contentsline {subsection}{\numberline {5.12.2}Macro Definition Documentation}{25}{subsection.5.12.2}%
+\contentsline {subsubsection}{\numberline {5.12.2.1}GPIOx\_HIGH}{25}{subsubsection.5.12.2.1}%
+\contentsline {subsubsection}{\numberline {5.12.2.2}GPIOx\_LOW}{25}{subsubsection.5.12.2.2}%
+\contentsline {section}{\numberline {5.13}GPIO Output PINs}{26}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{26}{subsection.5.13.1}%
+\contentsline {subsection}{\numberline {5.13.2}Macro Definition Documentation}{26}{subsection.5.13.2}%
+\contentsline {subsubsection}{\numberline {5.13.2.1}GPIOx\_PIN0}{26}{subsubsection.5.13.2.1}%
+\contentsline {subsubsection}{\numberline {5.13.2.2}GPIOx\_PIN1}{27}{subsubsection.5.13.2.2}%
+\contentsline {subsubsection}{\numberline {5.13.2.3}GPIOx\_PIN2}{27}{subsubsection.5.13.2.3}%
+\contentsline {subsubsection}{\numberline {5.13.2.4}GPIOx\_PIN3}{27}{subsubsection.5.13.2.4}%
+\contentsline {subsubsection}{\numberline {5.13.2.5}GPIOx\_PIN4}{27}{subsubsection.5.13.2.5}%
+\contentsline {subsubsection}{\numberline {5.13.2.6}GPIOx\_PIN5}{28}{subsubsection.5.13.2.6}%
+\contentsline {subsubsection}{\numberline {5.13.2.7}GPIOx\_PIN6}{28}{subsubsection.5.13.2.7}%
+\contentsline {subsubsection}{\numberline {5.13.2.8}GPIOx\_PIN7}{28}{subsubsection.5.13.2.8}%
+\contentsline {subsubsection}{\numberline {5.13.2.9}GPIOx\_PIN8}{28}{subsubsection.5.13.2.9}%
+\contentsline {subsubsection}{\numberline {5.13.2.10}GPIOx\_PIN9}{29}{subsubsection.5.13.2.10}%
+\contentsline {subsubsection}{\numberline {5.13.2.11}GPIOx\_PIN10}{29}{subsubsection.5.13.2.11}%
+\contentsline {subsubsection}{\numberline {5.13.2.12}GPIOx\_PIN11}{29}{subsubsection.5.13.2.12}%
+\contentsline {subsubsection}{\numberline {5.13.2.13}GPIOx\_PIN12}{29}{subsubsection.5.13.2.13}%
+\contentsline {subsubsection}{\numberline {5.13.2.14}GPIOx\_PIN13}{30}{subsubsection.5.13.2.14}%
+\contentsline {subsubsection}{\numberline {5.13.2.15}GPIOx\_PIN14}{30}{subsubsection.5.13.2.15}%
+\contentsline {subsubsection}{\numberline {5.13.2.16}GPIOx\_PIN15}{30}{subsubsection.5.13.2.16}%
+\contentsline {section}{\numberline {5.14}GPIO Alternate Functions}{30}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{31}{subsection.5.14.1}%
+\contentsline {subsection}{\numberline {5.14.2}Macro Definition Documentation}{31}{subsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.1}GPIOx\_AF0}{31}{subsubsection.5.14.2.1}%
+\contentsline {subsubsection}{\numberline {5.14.2.2}GPIOx\_AF1}{31}{subsubsection.5.14.2.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.3}GPIOx\_AF2}{32}{subsubsection.5.14.2.3}%
+\contentsline {subsubsection}{\numberline {5.14.2.4}GPIOx\_AF3}{32}{subsubsection.5.14.2.4}%
+\contentsline {subsubsection}{\numberline {5.14.2.5}GPIOx\_AF4}{32}{subsubsection.5.14.2.5}%
+\contentsline {subsubsection}{\numberline {5.14.2.6}GPIOx\_AF5}{32}{subsubsection.5.14.2.6}%
+\contentsline {subsubsection}{\numberline {5.14.2.7}GPIOx\_AF6}{33}{subsubsection.5.14.2.7}%
+\contentsline {subsubsection}{\numberline {5.14.2.8}GPIOx\_AF7}{33}{subsubsection.5.14.2.8}%
+\contentsline {subsubsection}{\numberline {5.14.2.9}GPIOx\_AF8}{33}{subsubsection.5.14.2.9}%
+\contentsline {subsubsection}{\numberline {5.14.2.10}GPIOx\_AF9}{33}{subsubsection.5.14.2.10}%
+\contentsline {subsubsection}{\numberline {5.14.2.11}GPIOx\_AF10}{34}{subsubsection.5.14.2.11}%
+\contentsline {subsubsection}{\numberline {5.14.2.12}GPIOx\_AF11}{34}{subsubsection.5.14.2.12}%
+\contentsline {subsubsection}{\numberline {5.14.2.13}GPIOx\_AF12}{34}{subsubsection.5.14.2.13}%
+\contentsline {subsubsection}{\numberline {5.14.2.14}GPIOx\_AF13}{34}{subsubsection.5.14.2.14}%
+\contentsline {subsubsection}{\numberline {5.14.2.15}GPIOx\_AF14}{35}{subsubsection.5.14.2.15}%
+\contentsline {subsubsection}{\numberline {5.14.2.16}GPIOx\_AF15}{35}{subsubsection.5.14.2.16}%
+\contentsline {section}{\numberline {5.15}GPIO Addresses}{35}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{35}{subsection.5.15.1}%
+\contentsline {subsection}{\numberline {5.15.2}Macro Definition Documentation}{35}{subsection.5.15.2}%
+\contentsline {subsubsection}{\numberline {5.15.2.1}GPIOA\_BASE\_ADDRESS}{35}{subsubsection.5.15.2.1}%
+\contentsline {subsubsection}{\numberline {5.15.2.2}GPIOB\_BASE\_ADDRESS}{36}{subsubsection.5.15.2.2}%
+\contentsline {subsubsection}{\numberline {5.15.2.3}GPIOC\_BASE\_ADDRESS}{36}{subsubsection.5.15.2.3}%
+\contentsline {section}{\numberline {5.16}GPIO Registers}{36}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Detailed Description}{36}{subsection.5.16.1}%
+\contentsline {subsection}{\numberline {5.16.2}Macro Definition Documentation}{36}{subsection.5.16.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.1}GPIOA}{36}{subsubsection.5.16.2.1}%
+\contentsline {subsubsection}{\numberline {5.16.2.2}GPIOB}{37}{subsubsection.5.16.2.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.3}GPIOC}{37}{subsubsection.5.16.2.3}%
+\contentsline {chapter}{\numberline {6}Data Structure Documentation}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}GPIOx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Memory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Map\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Struct Reference}{39}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{39}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Field Documentation}{40}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}MODERx}{40}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}OTYPERx}{40}{subsubsection.6.1.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}OSPEEDRx}{40}{subsubsection.6.1.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}PUPDRx}{40}{subsubsection.6.1.2.4}%
+\contentsline {subsubsection}{\numberline {6.1.2.5}IDRx}{40}{subsubsection.6.1.2.5}%
+\contentsline {subsubsection}{\numberline {6.1.2.6}ODRx}{41}{subsubsection.6.1.2.6}%
+\contentsline {subsubsection}{\numberline {6.1.2.7}BSRRx}{41}{subsubsection.6.1.2.7}%
+\contentsline {subsubsection}{\numberline {6.1.2.8}LCKRx}{41}{subsubsection.6.1.2.8}%
+\contentsline {subsubsection}{\numberline {6.1.2.9}AFRLx}{41}{subsubsection.6.1.2.9}%
+\contentsline {subsubsection}{\numberline {6.1.2.10}AFRHx}{41}{subsubsection.6.1.2.10}%
+\contentsline {section}{\numberline {6.2}MGPIOx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Struct Reference}{42}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{42}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Field Documentation}{42}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Port}{42}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}Pin}{43}{subsubsection.6.2.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.3}Mode}{43}{subsubsection.6.2.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.2.4}OutputType}{43}{subsubsection.6.2.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.2.5}OutputSpeed}{43}{subsubsection.6.2.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.2.6}InputType}{44}{subsubsection.6.2.2.6}%
+\contentsline {subsubsection}{\numberline {6.2.2.7}AF\_Type}{44}{subsubsection.6.2.2.7}%
+\contentsline {section}{\numberline {6.3}RCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Memory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Map\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Struct Reference}{44}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{45}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Field Documentation}{45}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}CR}{45}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}PLLCFGR}{45}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}CFGR}{45}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}CIR}{46}{subsubsection.6.3.2.4}%
+\contentsline {subsubsection}{\numberline {6.3.2.5}AHB1RSTR}{46}{subsubsection.6.3.2.5}%
+\contentsline {subsubsection}{\numberline {6.3.2.6}AHB2RSTR}{46}{subsubsection.6.3.2.6}%
+\contentsline {subsubsection}{\numberline {6.3.2.7}Reserved1}{46}{subsubsection.6.3.2.7}%
+\contentsline {subsubsection}{\numberline {6.3.2.8}Reserved2}{46}{subsubsection.6.3.2.8}%
+\contentsline {subsubsection}{\numberline {6.3.2.9}APB1RSTR}{46}{subsubsection.6.3.2.9}%
+\contentsline {subsubsection}{\numberline {6.3.2.10}APB2RSTR}{47}{subsubsection.6.3.2.10}%
+\contentsline {subsubsection}{\numberline {6.3.2.11}Reserved3}{47}{subsubsection.6.3.2.11}%
+\contentsline {subsubsection}{\numberline {6.3.2.12}Reserved4}{47}{subsubsection.6.3.2.12}%
+\contentsline {subsubsection}{\numberline {6.3.2.13}AHB1ENR}{47}{subsubsection.6.3.2.13}%
+\contentsline {subsubsection}{\numberline {6.3.2.14}AHB2ENR}{47}{subsubsection.6.3.2.14}%
+\contentsline {subsubsection}{\numberline {6.3.2.15}Reserved5}{47}{subsubsection.6.3.2.15}%
+\contentsline {subsubsection}{\numberline {6.3.2.16}Reserved6}{48}{subsubsection.6.3.2.16}%
+\contentsline {subsubsection}{\numberline {6.3.2.17}APB1ENR}{48}{subsubsection.6.3.2.17}%
+\contentsline {subsubsection}{\numberline {6.3.2.18}APB2ENR}{48}{subsubsection.6.3.2.18}%
+\contentsline {subsubsection}{\numberline {6.3.2.19}Reserved7}{48}{subsubsection.6.3.2.19}%
+\contentsline {subsubsection}{\numberline {6.3.2.20}Reserved8}{48}{subsubsection.6.3.2.20}%
+\contentsline {subsubsection}{\numberline {6.3.2.21}AHB1LPENR}{48}{subsubsection.6.3.2.21}%
+\contentsline {subsubsection}{\numberline {6.3.2.22}AHB2LPENR}{49}{subsubsection.6.3.2.22}%
+\contentsline {subsubsection}{\numberline {6.3.2.23}Reserved9}{49}{subsubsection.6.3.2.23}%
+\contentsline {subsubsection}{\numberline {6.3.2.24}Reserved10}{49}{subsubsection.6.3.2.24}%
+\contentsline {subsubsection}{\numberline {6.3.2.25}APB1LPENR}{49}{subsubsection.6.3.2.25}%
+\contentsline {subsubsection}{\numberline {6.3.2.26}APB2LPENR}{49}{subsubsection.6.3.2.26}%
+\contentsline {subsubsection}{\numberline {6.3.2.27}Reserved11}{49}{subsubsection.6.3.2.27}%
+\contentsline {subsubsection}{\numberline {6.3.2.28}Reserved12}{50}{subsubsection.6.3.2.28}%
+\contentsline {subsubsection}{\numberline {6.3.2.29}BDCR}{50}{subsubsection.6.3.2.29}%
+\contentsline {subsubsection}{\numberline {6.3.2.30}CSR}{50}{subsubsection.6.3.2.30}%
+\contentsline {subsubsection}{\numberline {6.3.2.31}Reserved13}{50}{subsubsection.6.3.2.31}%
+\contentsline {subsubsection}{\numberline {6.3.2.32}Reserved14}{50}{subsubsection.6.3.2.32}%
+\contentsline {subsubsection}{\numberline {6.3.2.33}SSCGR}{50}{subsubsection.6.3.2.33}%
+\contentsline {subsubsection}{\numberline {6.3.2.34}PLLI2SCFGR}{50}{subsubsection.6.3.2.34}%
+\contentsline {subsubsection}{\numberline {6.3.2.35}DCKCFGR}{50}{subsubsection.6.3.2.35}%
+\contentsline {chapter}{\numberline {7}File Documentation}{51}{chapter.7}%
+\contentsline {section}{\numberline {7.1}README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md File Reference}{51}{section.7.1}%
+\contentsline {section}{\numberline {7.2}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LIB/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BITMATH.h File Reference}{51}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Detailed Description}{51}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BITMATH.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{52}{section.7.3}%
+\contentsline {section}{\numberline {7.4}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LIB/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COMPILER.h File Reference}{52}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Detailed Description}{52}{subsection.7.4.1}%
+\contentsline {section}{\numberline {7.5}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COMPILER.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{53}{section.7.5}%
+\contentsline {section}{\numberline {7.6}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LIB/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCU\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UTILITIES.h File Reference}{53}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{53}{subsection.7.6.1}%
+\contentsline {section}{\numberline {7.7}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCU\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}UTILITIES.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{54}{section.7.7}%
+\contentsline {section}{\numberline {7.8}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LIB/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TYPES.h File Reference}{54}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Detailed Description}{54}{subsection.7.8.1}%
+\contentsline {section}{\numberline {7.9}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TYPES.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.7.9}%
+\contentsline {section}{\numberline {7.10}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LIB/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}VALUES.h File Reference}{55}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Detailed Description}{55}{subsection.7.10.1}%
+\contentsline {section}{\numberline {7.11}LSTD\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}VALUES.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.7.11}%
+\contentsline {section}{\numberline {7.12}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.h File Reference}{56}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Detailed Description}{56}{subsection.7.12.1}%
+\contentsline {subsection}{\numberline {7.12.2}Macro Definition Documentation}{57}{subsection.7.12.2}%
+\contentsline {subsubsection}{\numberline {7.12.2.1}GPIOA\_PIN\_POS}{57}{subsubsection.7.12.2.1}%
+\contentsline {subsubsection}{\numberline {7.12.2.2}GPIOB\_PIN\_POS}{57}{subsubsection.7.12.2.2}%
+\contentsline {subsubsection}{\numberline {7.12.2.3}LCKK\_BIT\_POS}{57}{subsubsection.7.12.2.3}%
+\contentsline {section}{\numberline {7.13}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{57}{section.7.13}%
+\contentsline {section}{\numberline {7.14}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{57}{section.7.14}%
+\contentsline {subsection}{\numberline {7.14.1}Detailed Description}{60}{subsection.7.14.1}%
+\contentsline {subsection}{\numberline {7.14.2}Function Documentation}{61}{subsection.7.14.2}%
+\contentsline {subsubsection}{\numberline {7.14.2.1}MGPIOx\_vLockedPins()}{61}{subsubsection.7.14.2.1}%
+\contentsline {subsubsection}{\numberline {7.14.2.2}MGPIOx\_vSetPinMode()}{61}{subsubsection.7.14.2.2}%
+\contentsline {subsubsection}{\numberline {7.14.2.3}MGPIOx\_vSetPinOutputType()}{62}{subsubsection.7.14.2.3}%
+\contentsline {subsubsection}{\numberline {7.14.2.4}MGPIOx\_vSetPinOutputSpeed()}{62}{subsubsection.7.14.2.4}%
+\contentsline {subsubsection}{\numberline {7.14.2.5}MGPIOx\_vSetPinInputPullType()}{62}{subsubsection.7.14.2.5}%
+\contentsline {subsubsection}{\numberline {7.14.2.6}MGPIOx\_u8GetPinValue()}{64}{subsubsection.7.14.2.6}%
+\contentsline {subsubsection}{\numberline {7.14.2.7}MGPIOx\_vSetPinValue()}{64}{subsubsection.7.14.2.7}%
+\contentsline {subsubsection}{\numberline {7.14.2.8}MGPIOx\_vSetResetAtomic()}{64}{subsubsection.7.14.2.8}%
+\contentsline {subsubsection}{\numberline {7.14.2.9}MGPIOx\_vSetAlternateFunctionON()}{65}{subsubsection.7.14.2.9}%
+\contentsline {subsubsection}{\numberline {7.14.2.10}MGPIOx\_vSetPortConfigLock()}{65}{subsubsection.7.14.2.10}%
+\contentsline {subsubsection}{\numberline {7.14.2.11}MGPIOx\_vInit()}{65}{subsubsection.7.14.2.11}%
+\contentsline {subsubsection}{\numberline {7.14.2.12}MGPIOx\_vTogglePinValue()}{66}{subsubsection.7.14.2.12}%
+\contentsline {section}{\numberline {7.15}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{66}{section.7.15}%
+\contentsline {section}{\numberline {7.16}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.h File Reference}{68}{section.7.16}%
+\contentsline {subsection}{\numberline {7.16.1}Detailed Description}{68}{subsection.7.16.1}%
+\contentsline {section}{\numberline {7.17}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{69}{section.7.17}%
+\contentsline {section}{\numberline {7.18}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{69}{section.7.18}%
+\contentsline {subsection}{\numberline {7.18.1}Detailed Description}{70}{subsection.7.18.1}%
+\contentsline {subsection}{\numberline {7.18.2}Function Documentation}{70}{subsection.7.18.2}%
+\contentsline {subsubsection}{\numberline {7.18.2.1}MGPIOx\_vLockedPins()}{70}{subsubsection.7.18.2.1}%
+\contentsline {subsubsection}{\numberline {7.18.2.2}MGPIOx\_vSetPinMode()}{71}{subsubsection.7.18.2.2}%
+\contentsline {subsubsection}{\numberline {7.18.2.3}MGPIOx\_vSetPinOutputType()}{71}{subsubsection.7.18.2.3}%
+\contentsline {subsubsection}{\numberline {7.18.2.4}MGPIOx\_vSetPinOutputSpeed()}{72}{subsubsection.7.18.2.4}%
+\contentsline {subsubsection}{\numberline {7.18.2.5}MGPIOx\_vSetPinInputPullType()}{73}{subsubsection.7.18.2.5}%
+\contentsline {subsubsection}{\numberline {7.18.2.6}MGPIOx\_u8GetPinValue()}{73}{subsubsection.7.18.2.6}%
+\contentsline {subsubsection}{\numberline {7.18.2.7}MGPIOx\_vSetPinValue()}{74}{subsubsection.7.18.2.7}%
+\contentsline {subsubsection}{\numberline {7.18.2.8}MGPIOx\_vSetResetAtomic()}{74}{subsubsection.7.18.2.8}%
+\contentsline {subsubsection}{\numberline {7.18.2.9}MGPIOx\_vSetAlternateFunctionON()}{75}{subsubsection.7.18.2.9}%
+\contentsline {subsubsection}{\numberline {7.18.2.10}MGPIOx\_vInit()}{77}{subsubsection.7.18.2.10}%
+\contentsline {subsubsection}{\numberline {7.18.2.11}MGPIOx\_vTogglePinValue()}{77}{subsubsection.7.18.2.11}%
+\contentsline {section}{\numberline {7.19}GPIO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{77}{section.7.19}%
+\contentsline {section}{\numberline {7.20}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RCC/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.h File Reference}{83}{section.7.20}%
+\contentsline {subsection}{\numberline {7.20.1}Detailed Description}{84}{subsection.7.20.1}%
+\contentsline {subsection}{\numberline {7.20.2}Macro Definition Documentation}{84}{subsection.7.20.2}%
+\contentsline {subsubsection}{\numberline {7.20.2.1}PLLI2S}{84}{subsubsection.7.20.2.1}%
+\contentsline {subsubsection}{\numberline {7.20.2.2}PLL}{85}{subsubsection.7.20.2.2}%
+\contentsline {subsubsection}{\numberline {7.20.2.3}CSS}{85}{subsubsection.7.20.2.3}%
+\contentsline {subsubsection}{\numberline {7.20.2.4}HSEBYP}{85}{subsubsection.7.20.2.4}%
+\contentsline {subsubsection}{\numberline {7.20.2.5}HSE\_EN}{85}{subsubsection.7.20.2.5}%
+\contentsline {subsubsection}{\numberline {7.20.2.6}HSI\_EN}{85}{subsubsection.7.20.2.6}%
+\contentsline {subsubsection}{\numberline {7.20.2.7}PLLQ}{85}{subsubsection.7.20.2.7}%
+\contentsline {subsubsection}{\numberline {7.20.2.8}PLLSRC}{86}{subsubsection.7.20.2.8}%
+\contentsline {subsubsection}{\numberline {7.20.2.9}PLLP}{86}{subsubsection.7.20.2.9}%
+\contentsline {subsubsection}{\numberline {7.20.2.10}PLLN}{86}{subsubsection.7.20.2.10}%
+\contentsline {subsubsection}{\numberline {7.20.2.11}PLLM}{86}{subsubsection.7.20.2.11}%
+\contentsline {subsubsection}{\numberline {7.20.2.12}MCO2}{86}{subsubsection.7.20.2.12}%
+\contentsline {subsubsection}{\numberline {7.20.2.13}MCO2PRE}{86}{subsubsection.7.20.2.13}%
+\contentsline {subsubsection}{\numberline {7.20.2.14}MCO1PRE}{87}{subsubsection.7.20.2.14}%
+\contentsline {subsubsection}{\numberline {7.20.2.15}I2SSRC}{87}{subsubsection.7.20.2.15}%
+\contentsline {subsubsection}{\numberline {7.20.2.16}MCO1}{87}{subsubsection.7.20.2.16}%
+\contentsline {subsubsection}{\numberline {7.20.2.17}RTCPRE}{87}{subsubsection.7.20.2.17}%
+\contentsline {subsubsection}{\numberline {7.20.2.18}PPRE2}{87}{subsubsection.7.20.2.18}%
+\contentsline {subsubsection}{\numberline {7.20.2.19}PPRE1}{87}{subsubsection.7.20.2.19}%
+\contentsline {subsubsection}{\numberline {7.20.2.20}HPRE}{88}{subsubsection.7.20.2.20}%
+\contentsline {subsubsection}{\numberline {7.20.2.21}SWS}{88}{subsubsection.7.20.2.21}%
+\contentsline {subsubsection}{\numberline {7.20.2.22}SW}{88}{subsubsection.7.20.2.22}%
+\contentsline {subsubsection}{\numberline {7.20.2.23}DMA2CLK}{88}{subsubsection.7.20.2.23}%
+\contentsline {subsubsection}{\numberline {7.20.2.24}DMA1CLK}{88}{subsubsection.7.20.2.24}%
+\contentsline {subsubsection}{\numberline {7.20.2.25}CRCCLK}{88}{subsubsection.7.20.2.25}%
+\contentsline {subsubsection}{\numberline {7.20.2.26}GPIOHCLK}{89}{subsubsection.7.20.2.26}%
+\contentsline {subsubsection}{\numberline {7.20.2.27}GPIOECLK}{89}{subsubsection.7.20.2.27}%
+\contentsline {subsubsection}{\numberline {7.20.2.28}GPIODCLK}{89}{subsubsection.7.20.2.28}%
+\contentsline {subsubsection}{\numberline {7.20.2.29}GPIOCCLK}{89}{subsubsection.7.20.2.29}%
+\contentsline {subsubsection}{\numberline {7.20.2.30}GPIOBCLK}{89}{subsubsection.7.20.2.30}%
+\contentsline {subsubsection}{\numberline {7.20.2.31}GPIOACLK}{89}{subsubsection.7.20.2.31}%
+\contentsline {subsubsection}{\numberline {7.20.2.32}OTGFS}{90}{subsubsection.7.20.2.32}%
+\contentsline {subsubsection}{\numberline {7.20.2.33}PWREN}{90}{subsubsection.7.20.2.33}%
+\contentsline {subsubsection}{\numberline {7.20.2.34}I2C3EN}{90}{subsubsection.7.20.2.34}%
+\contentsline {subsubsection}{\numberline {7.20.2.35}I2C2EN}{90}{subsubsection.7.20.2.35}%
+\contentsline {subsubsection}{\numberline {7.20.2.36}I2C1EN}{90}{subsubsection.7.20.2.36}%
+\contentsline {subsubsection}{\numberline {7.20.2.37}USART2EN}{90}{subsubsection.7.20.2.37}%
+\contentsline {subsubsection}{\numberline {7.20.2.38}SPI3EN}{91}{subsubsection.7.20.2.38}%
+\contentsline {subsubsection}{\numberline {7.20.2.39}SPI2EN}{91}{subsubsection.7.20.2.39}%
+\contentsline {subsubsection}{\numberline {7.20.2.40}WWDGEN}{91}{subsubsection.7.20.2.40}%
+\contentsline {subsubsection}{\numberline {7.20.2.41}TIM5EN}{91}{subsubsection.7.20.2.41}%
+\contentsline {subsubsection}{\numberline {7.20.2.42}TIM4EN}{91}{subsubsection.7.20.2.42}%
+\contentsline {subsubsection}{\numberline {7.20.2.43}TIM3EN}{91}{subsubsection.7.20.2.43}%
+\contentsline {subsubsection}{\numberline {7.20.2.44}TIM2EN}{92}{subsubsection.7.20.2.44}%
+\contentsline {subsubsection}{\numberline {7.20.2.45}TIM11EN}{92}{subsubsection.7.20.2.45}%
+\contentsline {subsubsection}{\numberline {7.20.2.46}TIM10EN}{92}{subsubsection.7.20.2.46}%
+\contentsline {subsubsection}{\numberline {7.20.2.47}TIM9EN}{92}{subsubsection.7.20.2.47}%
+\contentsline {subsubsection}{\numberline {7.20.2.48}SYSCFGEN}{92}{subsubsection.7.20.2.48}%
+\contentsline {subsubsection}{\numberline {7.20.2.49}SPI4EN}{92}{subsubsection.7.20.2.49}%
+\contentsline {subsubsection}{\numberline {7.20.2.50}SPI1EN}{93}{subsubsection.7.20.2.50}%
+\contentsline {subsubsection}{\numberline {7.20.2.51}SDIOEN}{93}{subsubsection.7.20.2.51}%
+\contentsline {subsubsection}{\numberline {7.20.2.52}ADC1EN}{93}{subsubsection.7.20.2.52}%
+\contentsline {subsubsection}{\numberline {7.20.2.53}USART6EN}{93}{subsubsection.7.20.2.53}%
+\contentsline {subsubsection}{\numberline {7.20.2.54}USART1EN}{93}{subsubsection.7.20.2.54}%
+\contentsline {subsubsection}{\numberline {7.20.2.55}TIM1EN}{93}{subsubsection.7.20.2.55}%
+\contentsline {section}{\numberline {7.21}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}config.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{94}{section.7.21}%
+\contentsline {section}{\numberline {7.22}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RCC/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.h File Reference}{101}{section.7.22}%
+\contentsline {subsection}{\numberline {7.22.1}Detailed Description}{103}{subsection.7.22.1}%
+\contentsline {subsection}{\numberline {7.22.2}Macro Definition Documentation}{103}{subsection.7.22.2}%
+\contentsline {subsubsection}{\numberline {7.22.2.1}RCC\_AHB1}{103}{subsubsection.7.22.2.1}%
+\contentsline {subsubsection}{\numberline {7.22.2.2}RCC\_AHB2}{103}{subsubsection.7.22.2.2}%
+\contentsline {subsubsection}{\numberline {7.22.2.3}RCC\_APB1}{103}{subsubsection.7.22.2.3}%
+\contentsline {subsubsection}{\numberline {7.22.2.4}RCC\_APB2}{104}{subsubsection.7.22.2.4}%
+\contentsline {subsubsection}{\numberline {7.22.2.5}RCC\_AHB1LPENR}{104}{subsubsection.7.22.2.5}%
+\contentsline {subsubsection}{\numberline {7.22.2.6}AHB1ENR\_DMA2EN}{104}{subsubsection.7.22.2.6}%
+\contentsline {subsubsection}{\numberline {7.22.2.7}AHB1ENR\_DMA1EN}{104}{subsubsection.7.22.2.7}%
+\contentsline {subsubsection}{\numberline {7.22.2.8}AHB1ENR\_CRCEN}{104}{subsubsection.7.22.2.8}%
+\contentsline {subsubsection}{\numberline {7.22.2.9}AHB1ENR\_GPIOHEN}{104}{subsubsection.7.22.2.9}%
+\contentsline {subsubsection}{\numberline {7.22.2.10}AHB1ENR\_GPIOEEN}{105}{subsubsection.7.22.2.10}%
+\contentsline {subsubsection}{\numberline {7.22.2.11}AHB1ENR\_GPIODEN}{105}{subsubsection.7.22.2.11}%
+\contentsline {subsubsection}{\numberline {7.22.2.12}AHB1ENR\_GPIOCEN}{105}{subsubsection.7.22.2.12}%
+\contentsline {subsubsection}{\numberline {7.22.2.13}AHB1ENR\_GPIOBEN}{105}{subsubsection.7.22.2.13}%
+\contentsline {subsubsection}{\numberline {7.22.2.14}AHB1ENR\_GPIOAEN}{105}{subsubsection.7.22.2.14}%
+\contentsline {subsubsection}{\numberline {7.22.2.15}AHB2ENR\_OTGFSEN}{105}{subsubsection.7.22.2.15}%
+\contentsline {subsubsection}{\numberline {7.22.2.16}APB1ENR\_PWREN}{106}{subsubsection.7.22.2.16}%
+\contentsline {subsubsection}{\numberline {7.22.2.17}APB1ENR\_I2C3EN}{106}{subsubsection.7.22.2.17}%
+\contentsline {subsubsection}{\numberline {7.22.2.18}APB1ENR\_I2C2EN}{106}{subsubsection.7.22.2.18}%
+\contentsline {subsubsection}{\numberline {7.22.2.19}APB1ENR\_I2C1EN}{106}{subsubsection.7.22.2.19}%
+\contentsline {subsubsection}{\numberline {7.22.2.20}APB1ENR\_USART2EN}{106}{subsubsection.7.22.2.20}%
+\contentsline {subsubsection}{\numberline {7.22.2.21}APB1ENR\_SPI3EN}{106}{subsubsection.7.22.2.21}%
+\contentsline {subsubsection}{\numberline {7.22.2.22}APB1ENR\_SPI2EN}{107}{subsubsection.7.22.2.22}%
+\contentsline {subsubsection}{\numberline {7.22.2.23}APB1ENR\_WWDGEN}{107}{subsubsection.7.22.2.23}%
+\contentsline {subsubsection}{\numberline {7.22.2.24}APB1ENR\_TIM5EN}{107}{subsubsection.7.22.2.24}%
+\contentsline {subsubsection}{\numberline {7.22.2.25}APB1ENR\_TIM4EN}{107}{subsubsection.7.22.2.25}%
+\contentsline {subsubsection}{\numberline {7.22.2.26}APB1ENR\_TIM3EN}{107}{subsubsection.7.22.2.26}%
+\contentsline {subsubsection}{\numberline {7.22.2.27}APB1ENR\_TIM2EN}{107}{subsubsection.7.22.2.27}%
+\contentsline {subsubsection}{\numberline {7.22.2.28}APB2ENR\_TIM11EN}{108}{subsubsection.7.22.2.28}%
+\contentsline {subsubsection}{\numberline {7.22.2.29}APB2ENR\_TIM10EN}{108}{subsubsection.7.22.2.29}%
+\contentsline {subsubsection}{\numberline {7.22.2.30}APB2ENR\_TIM9EN}{108}{subsubsection.7.22.2.30}%
+\contentsline {subsubsection}{\numberline {7.22.2.31}APB2ENR\_SYSCFGEN}{108}{subsubsection.7.22.2.31}%
+\contentsline {subsubsection}{\numberline {7.22.2.32}APB2ENR\_SPI4EN}{108}{subsubsection.7.22.2.32}%
+\contentsline {subsubsection}{\numberline {7.22.2.33}APB2ENR\_SPI1EN}{108}{subsubsection.7.22.2.33}%
+\contentsline {subsubsection}{\numberline {7.22.2.34}APB2ENR\_SDIOEN}{109}{subsubsection.7.22.2.34}%
+\contentsline {subsubsection}{\numberline {7.22.2.35}APB2ENR\_ADC1EN}{109}{subsubsection.7.22.2.35}%
+\contentsline {subsubsection}{\numberline {7.22.2.36}APB2ENR\_USART6EN}{109}{subsubsection.7.22.2.36}%
+\contentsline {subsubsection}{\numberline {7.22.2.37}APB2ENR\_USART1EN}{109}{subsubsection.7.22.2.37}%
+\contentsline {subsubsection}{\numberline {7.22.2.38}APB2ENR\_TIM1EN}{109}{subsubsection.7.22.2.38}%
+\contentsline {subsubsection}{\numberline {7.22.2.39}AHB1LPENR\_FLITFLPEN}{109}{subsubsection.7.22.2.39}%
+\contentsline {subsection}{\numberline {7.22.3}Function Documentation}{110}{subsection.7.22.3}%
+\contentsline {subsubsection}{\numberline {7.22.3.1}MRCC\_vInit()}{110}{subsubsection.7.22.3.1}%
+\contentsline {subsubsection}{\numberline {7.22.3.2}MRCC\_vEnablePeriphralCLK()}{114}{subsubsection.7.22.3.2}%
+\contentsline {subsubsection}{\numberline {7.22.3.3}MRCC\_vDisablePeriphralCLK()}{115}{subsubsection.7.22.3.3}%
+\contentsline {section}{\numberline {7.23}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{116}{section.7.23}%
+\contentsline {section}{\numberline {7.24}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RCC/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.h File Reference}{116}{section.7.24}%
+\contentsline {subsection}{\numberline {7.24.1}Detailed Description}{121}{subsection.7.24.1}%
+\contentsline {subsection}{\numberline {7.24.2}Macro Definition Documentation}{121}{subsection.7.24.2}%
+\contentsline {subsubsection}{\numberline {7.24.2.1}RCC\_BASE\_ADDRESS}{121}{subsubsection.7.24.2.1}%
+\contentsline {subsubsection}{\numberline {7.24.2.2}RCC}{121}{subsubsection.7.24.2.2}%
+\contentsline {subsubsection}{\numberline {7.24.2.3}RCC\_CR\_PLLI2SRDY}{122}{subsubsection.7.24.2.3}%
+\contentsline {subsubsection}{\numberline {7.24.2.4}RCC\_CR\_PLLI2SON}{122}{subsubsection.7.24.2.4}%
+\contentsline {subsubsection}{\numberline {7.24.2.5}RCC\_CR\_PLLRDY}{122}{subsubsection.7.24.2.5}%
+\contentsline {subsubsection}{\numberline {7.24.2.6}RCC\_CR\_PLLON}{122}{subsubsection.7.24.2.6}%
+\contentsline {subsubsection}{\numberline {7.24.2.7}RCC\_CR\_CSSON}{122}{subsubsection.7.24.2.7}%
+\contentsline {subsubsection}{\numberline {7.24.2.8}RCC\_CR\_HSEBYP}{122}{subsubsection.7.24.2.8}%
+\contentsline {subsubsection}{\numberline {7.24.2.9}RCC\_CR\_HSERDY}{123}{subsubsection.7.24.2.9}%
+\contentsline {subsubsection}{\numberline {7.24.2.10}RCC\_CR\_HSEON}{123}{subsubsection.7.24.2.10}%
+\contentsline {subsubsection}{\numberline {7.24.2.11}RCC\_CR\_HSIRDY}{123}{subsubsection.7.24.2.11}%
+\contentsline {subsubsection}{\numberline {7.24.2.12}RCC\_CR\_HSION}{123}{subsubsection.7.24.2.12}%
+\contentsline {subsubsection}{\numberline {7.24.2.13}RCC\_PLLCFGR\_PLLQ\_b0}{123}{subsubsection.7.24.2.13}%
+\contentsline {subsubsection}{\numberline {7.24.2.14}RCC\_PLLCFGR\_PLLQ\_b1}{123}{subsubsection.7.24.2.14}%
+\contentsline {subsubsection}{\numberline {7.24.2.15}RCC\_PLLCFGR\_PLLQ\_b2}{124}{subsubsection.7.24.2.15}%
+\contentsline {subsubsection}{\numberline {7.24.2.16}RCC\_PLLCFGR\_PLLQ\_b3}{124}{subsubsection.7.24.2.16}%
+\contentsline {subsubsection}{\numberline {7.24.2.17}RCC\_PLLCFGR\_PLLSRC}{124}{subsubsection.7.24.2.17}%
+\contentsline {subsubsection}{\numberline {7.24.2.18}RCC\_PLLCFGR\_PLLP\_b0}{124}{subsubsection.7.24.2.18}%
+\contentsline {subsubsection}{\numberline {7.24.2.19}RCC\_PLLCFGR\_PLLP\_b1}{124}{subsubsection.7.24.2.19}%
+\contentsline {subsubsection}{\numberline {7.24.2.20}RCC\_PLLCFGR\_PLLN\_b0}{124}{subsubsection.7.24.2.20}%
+\contentsline {subsubsection}{\numberline {7.24.2.21}RCC\_PLLCFGR\_PLLN\_b1}{125}{subsubsection.7.24.2.21}%
+\contentsline {subsubsection}{\numberline {7.24.2.22}RCC\_PLLCFGR\_PLLN\_b2}{125}{subsubsection.7.24.2.22}%
+\contentsline {subsubsection}{\numberline {7.24.2.23}RCC\_PLLCFGR\_PLLN\_b3}{125}{subsubsection.7.24.2.23}%
+\contentsline {subsubsection}{\numberline {7.24.2.24}RCC\_PLLCFGR\_PLLN\_b4}{125}{subsubsection.7.24.2.24}%
+\contentsline {subsubsection}{\numberline {7.24.2.25}RCC\_PLLCFGR\_PLLN\_b5}{125}{subsubsection.7.24.2.25}%
+\contentsline {subsubsection}{\numberline {7.24.2.26}RCC\_PLLCFGR\_PLLN\_b6}{125}{subsubsection.7.24.2.26}%
+\contentsline {subsubsection}{\numberline {7.24.2.27}RCC\_PLLCFGR\_PLLN\_b7}{126}{subsubsection.7.24.2.27}%
+\contentsline {subsubsection}{\numberline {7.24.2.28}RCC\_PLLCFGR\_PLLN\_b8}{126}{subsubsection.7.24.2.28}%
+\contentsline {subsubsection}{\numberline {7.24.2.29}RCC\_PLLCFGR\_PLLM\_b0}{126}{subsubsection.7.24.2.29}%
+\contentsline {subsubsection}{\numberline {7.24.2.30}RCC\_PLLCFGR\_PLLM\_b1}{126}{subsubsection.7.24.2.30}%
+\contentsline {subsubsection}{\numberline {7.24.2.31}RCC\_PLLCFGR\_PLLM\_b2}{126}{subsubsection.7.24.2.31}%
+\contentsline {subsubsection}{\numberline {7.24.2.32}RCC\_PLLCFGR\_PLLM\_b3}{126}{subsubsection.7.24.2.32}%
+\contentsline {subsubsection}{\numberline {7.24.2.33}RCC\_PLLCFGR\_PLLM\_b4}{127}{subsubsection.7.24.2.33}%
+\contentsline {subsubsection}{\numberline {7.24.2.34}RCC\_PLLCFGR\_PLLM\_b5}{127}{subsubsection.7.24.2.34}%
+\contentsline {subsubsection}{\numberline {7.24.2.35}RCC\_CFGR\_MOC2\_b0}{127}{subsubsection.7.24.2.35}%
+\contentsline {subsubsection}{\numberline {7.24.2.36}RCC\_CFGR\_MOC2\_b1}{127}{subsubsection.7.24.2.36}%
+\contentsline {subsubsection}{\numberline {7.24.2.37}RCC\_CFGR\_MOC2PRE\_b0}{127}{subsubsection.7.24.2.37}%
+\contentsline {subsubsection}{\numberline {7.24.2.38}RCC\_CFGR\_MOC2PRE\_b1}{127}{subsubsection.7.24.2.38}%
+\contentsline {subsubsection}{\numberline {7.24.2.39}RCC\_CFGR\_MOC2PRE\_b2}{128}{subsubsection.7.24.2.39}%
+\contentsline {subsubsection}{\numberline {7.24.2.40}RCC\_CFGR\_MOC1PRE\_b0}{128}{subsubsection.7.24.2.40}%
+\contentsline {subsubsection}{\numberline {7.24.2.41}RCC\_CFGR\_MOC1PRE\_b1}{128}{subsubsection.7.24.2.41}%
+\contentsline {subsubsection}{\numberline {7.24.2.42}RCC\_CFGR\_MOC1PRE\_b2}{128}{subsubsection.7.24.2.42}%
+\contentsline {subsubsection}{\numberline {7.24.2.43}RCC\_CFGR\_I2SSRC}{128}{subsubsection.7.24.2.43}%
+\contentsline {subsubsection}{\numberline {7.24.2.44}RCC\_CFGR\_MOC1\_b0}{128}{subsubsection.7.24.2.44}%
+\contentsline {subsubsection}{\numberline {7.24.2.45}RCC\_CFGR\_MOC1\_b1}{129}{subsubsection.7.24.2.45}%
+\contentsline {subsubsection}{\numberline {7.24.2.46}RCC\_CFGR\_RTCPRE\_b0}{129}{subsubsection.7.24.2.46}%
+\contentsline {subsubsection}{\numberline {7.24.2.47}RCC\_CFGR\_RTCPRE\_b1}{129}{subsubsection.7.24.2.47}%
+\contentsline {subsubsection}{\numberline {7.24.2.48}RCC\_CFGR\_RTCPRE\_b2}{129}{subsubsection.7.24.2.48}%
+\contentsline {subsubsection}{\numberline {7.24.2.49}RCC\_CFGR\_RTCPRE\_b3}{129}{subsubsection.7.24.2.49}%
+\contentsline {subsubsection}{\numberline {7.24.2.50}RCC\_CFGR\_RTCPRE\_b4}{129}{subsubsection.7.24.2.50}%
+\contentsline {subsubsection}{\numberline {7.24.2.51}RCC\_CFGR\_PPRE2\_b0}{130}{subsubsection.7.24.2.51}%
+\contentsline {subsubsection}{\numberline {7.24.2.52}RCC\_CFGR\_PPRE2\_b1}{130}{subsubsection.7.24.2.52}%
+\contentsline {subsubsection}{\numberline {7.24.2.53}RCC\_CFGR\_PPRE2\_b2}{130}{subsubsection.7.24.2.53}%
+\contentsline {subsubsection}{\numberline {7.24.2.54}RCC\_CFGR\_PPRE1\_b0}{130}{subsubsection.7.24.2.54}%
+\contentsline {subsubsection}{\numberline {7.24.2.55}RCC\_CFGR\_PPRE1\_b1}{130}{subsubsection.7.24.2.55}%
+\contentsline {subsubsection}{\numberline {7.24.2.56}RCC\_CFGR\_PPRE1\_b2}{130}{subsubsection.7.24.2.56}%
+\contentsline {subsubsection}{\numberline {7.24.2.57}RCC\_CFGR\_HPRE\_b0}{131}{subsubsection.7.24.2.57}%
+\contentsline {subsubsection}{\numberline {7.24.2.58}RCC\_CFGR\_HPRE\_b1}{131}{subsubsection.7.24.2.58}%
+\contentsline {subsubsection}{\numberline {7.24.2.59}RCC\_CFGR\_HPRE\_b2}{131}{subsubsection.7.24.2.59}%
+\contentsline {subsubsection}{\numberline {7.24.2.60}RCC\_CFGR\_HPRE\_b3}{131}{subsubsection.7.24.2.60}%
+\contentsline {subsubsection}{\numberline {7.24.2.61}RCC\_CFGR\_SWS\_b0}{131}{subsubsection.7.24.2.61}%
+\contentsline {subsubsection}{\numberline {7.24.2.62}RCC\_CFGR\_SWS\_b1}{131}{subsubsection.7.24.2.62}%
+\contentsline {subsubsection}{\numberline {7.24.2.63}RCC\_CFGR\_SW\_b0}{132}{subsubsection.7.24.2.63}%
+\contentsline {subsubsection}{\numberline {7.24.2.64}RCC\_CFGR\_SW\_b1}{132}{subsubsection.7.24.2.64}%
+\contentsline {subsubsection}{\numberline {7.24.2.65}RCC\_AHB1ENR\_DMA2EN}{132}{subsubsection.7.24.2.65}%
+\contentsline {subsubsection}{\numberline {7.24.2.66}RCC\_AHB1ENR\_DMA1EN}{132}{subsubsection.7.24.2.66}%
+\contentsline {subsubsection}{\numberline {7.24.2.67}RCC\_AHB1ENR\_CRCEN}{132}{subsubsection.7.24.2.67}%
+\contentsline {subsubsection}{\numberline {7.24.2.68}RCC\_AHB1ENR\_GPIOHEN}{132}{subsubsection.7.24.2.68}%
+\contentsline {subsubsection}{\numberline {7.24.2.69}RCC\_AHB1ENR\_GPIOEEN}{133}{subsubsection.7.24.2.69}%
+\contentsline {subsubsection}{\numberline {7.24.2.70}RCC\_AHB1ENR\_GPIODEN}{133}{subsubsection.7.24.2.70}%
+\contentsline {subsubsection}{\numberline {7.24.2.71}RCC\_AHB1ENR\_GPIOCEN}{133}{subsubsection.7.24.2.71}%
+\contentsline {subsubsection}{\numberline {7.24.2.72}RCC\_AHB1ENR\_GPIOBEN}{133}{subsubsection.7.24.2.72}%
+\contentsline {subsubsection}{\numberline {7.24.2.73}RCC\_AHB1ENR\_GPIOAEN}{133}{subsubsection.7.24.2.73}%
+\contentsline {subsubsection}{\numberline {7.24.2.74}RCC\_AHB2ENR\_OTGFSEN}{133}{subsubsection.7.24.2.74}%
+\contentsline {subsubsection}{\numberline {7.24.2.75}RCC\_APB1ENR\_PWREN}{134}{subsubsection.7.24.2.75}%
+\contentsline {subsubsection}{\numberline {7.24.2.76}RCC\_APB1ENR\_I2C3EN}{134}{subsubsection.7.24.2.76}%
+\contentsline {subsubsection}{\numberline {7.24.2.77}RCC\_APB1ENR\_I2C2EN}{134}{subsubsection.7.24.2.77}%
+\contentsline {subsubsection}{\numberline {7.24.2.78}RCC\_APB1ENR\_I2C1EN}{134}{subsubsection.7.24.2.78}%
+\contentsline {subsubsection}{\numberline {7.24.2.79}RCC\_APB1ENR\_USART2EN}{134}{subsubsection.7.24.2.79}%
+\contentsline {subsubsection}{\numberline {7.24.2.80}RCC\_APB1ENR\_SPI3EN}{134}{subsubsection.7.24.2.80}%
+\contentsline {subsubsection}{\numberline {7.24.2.81}RCC\_APB1ENR\_SPI2EN}{135}{subsubsection.7.24.2.81}%
+\contentsline {subsubsection}{\numberline {7.24.2.82}RCC\_APB1ENR\_WWDGEN}{135}{subsubsection.7.24.2.82}%
+\contentsline {subsubsection}{\numberline {7.24.2.83}RCC\_APB1ENR\_TIM5EN}{135}{subsubsection.7.24.2.83}%
+\contentsline {subsubsection}{\numberline {7.24.2.84}RCC\_APB1ENR\_TIM4EN}{135}{subsubsection.7.24.2.84}%
+\contentsline {subsubsection}{\numberline {7.24.2.85}RCC\_APB1ENR\_TIM3EN}{135}{subsubsection.7.24.2.85}%
+\contentsline {subsubsection}{\numberline {7.24.2.86}RCC\_APB1ENR\_TIM2EN}{135}{subsubsection.7.24.2.86}%
+\contentsline {subsubsection}{\numberline {7.24.2.87}RCC\_APB2ENR\_TIM11EN}{136}{subsubsection.7.24.2.87}%
+\contentsline {subsubsection}{\numberline {7.24.2.88}RCC\_APB2ENR\_TIM10EN}{136}{subsubsection.7.24.2.88}%
+\contentsline {subsubsection}{\numberline {7.24.2.89}RCC\_APB2ENR\_TIM9EN}{136}{subsubsection.7.24.2.89}%
+\contentsline {subsubsection}{\numberline {7.24.2.90}RCC\_APB2ENR\_SYSCFGEN}{136}{subsubsection.7.24.2.90}%
+\contentsline {subsubsection}{\numberline {7.24.2.91}RCC\_APB2ENR\_SPI4EN}{136}{subsubsection.7.24.2.91}%
+\contentsline {subsubsection}{\numberline {7.24.2.92}RCC\_APB2ENR\_SPI1EN}{136}{subsubsection.7.24.2.92}%
+\contentsline {subsubsection}{\numberline {7.24.2.93}RCC\_APB2ENR\_SDIOEN}{137}{subsubsection.7.24.2.93}%
+\contentsline {subsubsection}{\numberline {7.24.2.94}RCC\_APB2ENR\_ADC1EN}{137}{subsubsection.7.24.2.94}%
+\contentsline {subsubsection}{\numberline {7.24.2.95}RCC\_APB2ENR\_USART6EN}{137}{subsubsection.7.24.2.95}%
+\contentsline {subsubsection}{\numberline {7.24.2.96}RCC\_APB2ENR\_USART1EN}{137}{subsubsection.7.24.2.96}%
+\contentsline {subsubsection}{\numberline {7.24.2.97}RCC\_APB2ENR\_TIM1EN}{137}{subsubsection.7.24.2.97}%
+\contentsline {subsubsection}{\numberline {7.24.2.98}RCC\_AHB1LPENR\_FLITFLPEN}{137}{subsubsection.7.24.2.98}%
+\contentsline {subsubsection}{\numberline {7.24.2.99}ENABLE}{138}{subsubsection.7.24.2.99}%
+\contentsline {subsubsection}{\numberline {7.24.2.100}DISABLE}{138}{subsubsection.7.24.2.100}%
+\contentsline {subsubsection}{\numberline {7.24.2.101}BYBASED}{138}{subsubsection.7.24.2.101}%
+\contentsline {subsubsection}{\numberline {7.24.2.102}NOTBYBASED}{138}{subsubsection.7.24.2.102}%
+\contentsline {subsubsection}{\numberline {7.24.2.103}SYSCLK}{138}{subsubsection.7.24.2.103}%
+\contentsline {subsubsection}{\numberline {7.24.2.104}PLLI2SCLK}{138}{subsubsection.7.24.2.104}%
+\contentsline {subsubsection}{\numberline {7.24.2.105}HSE}{139}{subsubsection.7.24.2.105}%
+\contentsline {subsubsection}{\numberline {7.24.2.106}PLLCLK\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{139}{subsubsection.7.24.2.106}%
+\contentsline {subsubsection}{\numberline {7.24.2.107}NoDivision}{139}{subsubsection.7.24.2.107}%
+\contentsline {subsubsection}{\numberline {7.24.2.108}DivisionBy2}{139}{subsubsection.7.24.2.108}%
+\contentsline {subsubsection}{\numberline {7.24.2.109}DivisionBy3}{139}{subsubsection.7.24.2.109}%
+\contentsline {subsubsection}{\numberline {7.24.2.110}DivisionBy4}{139}{subsubsection.7.24.2.110}%
+\contentsline {subsubsection}{\numberline {7.24.2.111}DivisionBy5}{140}{subsubsection.7.24.2.111}%
+\contentsline {subsubsection}{\numberline {7.24.2.112}I2S\_CKIN}{140}{subsubsection.7.24.2.112}%
+\contentsline {subsubsection}{\numberline {7.24.2.113}HSI}{140}{subsubsection.7.24.2.113}%
+\contentsline {subsubsection}{\numberline {7.24.2.114}LSE}{140}{subsubsection.7.24.2.114}%
+\contentsline {subsubsection}{\numberline {7.24.2.115}PLLCLK\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{140}{subsubsection.7.24.2.115}%
+\contentsline {subsubsection}{\numberline {7.24.2.116}SYSCLKby2}{140}{subsubsection.7.24.2.116}%
+\contentsline {subsubsection}{\numberline {7.24.2.117}SYSCLKby4}{141}{subsubsection.7.24.2.117}%
+\contentsline {subsubsection}{\numberline {7.24.2.118}SYSCLKby8}{141}{subsubsection.7.24.2.118}%
+\contentsline {subsubsection}{\numberline {7.24.2.119}SYSCLKby16}{141}{subsubsection.7.24.2.119}%
+\contentsline {subsubsection}{\numberline {7.24.2.120}SYSCLKby64}{141}{subsubsection.7.24.2.120}%
+\contentsline {subsubsection}{\numberline {7.24.2.121}SYSCLKby128}{141}{subsubsection.7.24.2.121}%
+\contentsline {subsubsection}{\numberline {7.24.2.122}SYSCLKby256}{141}{subsubsection.7.24.2.122}%
+\contentsline {subsubsection}{\numberline {7.24.2.123}SYSCLKby512}{142}{subsubsection.7.24.2.123}%
+\contentsline {subsubsection}{\numberline {7.24.2.124}NoCLK0}{142}{subsubsection.7.24.2.124}%
+\contentsline {subsubsection}{\numberline {7.24.2.125}NoCLK1}{142}{subsubsection.7.24.2.125}%
+\contentsline {subsubsection}{\numberline {7.24.2.126}HSEby2}{142}{subsubsection.7.24.2.126}%
+\contentsline {subsubsection}{\numberline {7.24.2.127}HSEby3}{142}{subsubsection.7.24.2.127}%
+\contentsline {subsubsection}{\numberline {7.24.2.128}HSEby4}{142}{subsubsection.7.24.2.128}%
+\contentsline {subsubsection}{\numberline {7.24.2.129}HSEby5}{143}{subsubsection.7.24.2.129}%
+\contentsline {subsubsection}{\numberline {7.24.2.130}HSEby6}{143}{subsubsection.7.24.2.130}%
+\contentsline {subsubsection}{\numberline {7.24.2.131}HSEby7}{143}{subsubsection.7.24.2.131}%
+\contentsline {subsubsection}{\numberline {7.24.2.132}HSEby8}{143}{subsubsection.7.24.2.132}%
+\contentsline {subsubsection}{\numberline {7.24.2.133}HSEby9}{143}{subsubsection.7.24.2.133}%
+\contentsline {subsubsection}{\numberline {7.24.2.134}HSEby10}{143}{subsubsection.7.24.2.134}%
+\contentsline {subsubsection}{\numberline {7.24.2.135}HSEby11}{144}{subsubsection.7.24.2.135}%
+\contentsline {subsubsection}{\numberline {7.24.2.136}HSEby12}{144}{subsubsection.7.24.2.136}%
+\contentsline {subsubsection}{\numberline {7.24.2.137}HSEby13}{144}{subsubsection.7.24.2.137}%
+\contentsline {subsubsection}{\numberline {7.24.2.138}HSEby14}{144}{subsubsection.7.24.2.138}%
+\contentsline {subsubsection}{\numberline {7.24.2.139}HSEby15}{144}{subsubsection.7.24.2.139}%
+\contentsline {subsubsection}{\numberline {7.24.2.140}HSEby16}{144}{subsubsection.7.24.2.140}%
+\contentsline {subsubsection}{\numberline {7.24.2.141}HSEby17}{145}{subsubsection.7.24.2.141}%
+\contentsline {subsubsection}{\numberline {7.24.2.142}HSEby18}{145}{subsubsection.7.24.2.142}%
+\contentsline {subsubsection}{\numberline {7.24.2.143}HSEby19}{145}{subsubsection.7.24.2.143}%
+\contentsline {subsubsection}{\numberline {7.24.2.144}HSEby20}{145}{subsubsection.7.24.2.144}%
+\contentsline {subsubsection}{\numberline {7.24.2.145}HSEby21}{145}{subsubsection.7.24.2.145}%
+\contentsline {subsubsection}{\numberline {7.24.2.146}HSEby22}{145}{subsubsection.7.24.2.146}%
+\contentsline {subsubsection}{\numberline {7.24.2.147}HSEby23}{146}{subsubsection.7.24.2.147}%
+\contentsline {subsubsection}{\numberline {7.24.2.148}HSEby24}{146}{subsubsection.7.24.2.148}%
+\contentsline {subsubsection}{\numberline {7.24.2.149}HSEby25}{146}{subsubsection.7.24.2.149}%
+\contentsline {subsubsection}{\numberline {7.24.2.150}HSEby26}{146}{subsubsection.7.24.2.150}%
+\contentsline {subsubsection}{\numberline {7.24.2.151}HSEby27}{146}{subsubsection.7.24.2.151}%
+\contentsline {subsubsection}{\numberline {7.24.2.152}HSEby28}{146}{subsubsection.7.24.2.152}%
+\contentsline {subsubsection}{\numberline {7.24.2.153}HSEby29}{147}{subsubsection.7.24.2.153}%
+\contentsline {subsubsection}{\numberline {7.24.2.154}HSEby30}{147}{subsubsection.7.24.2.154}%
+\contentsline {subsubsection}{\numberline {7.24.2.155}HSEby31}{147}{subsubsection.7.24.2.155}%
+\contentsline {subsubsection}{\numberline {7.24.2.156}AHBby2}{147}{subsubsection.7.24.2.156}%
+\contentsline {subsubsection}{\numberline {7.24.2.157}AHBby4}{147}{subsubsection.7.24.2.157}%
+\contentsline {subsubsection}{\numberline {7.24.2.158}AHBby8}{147}{subsubsection.7.24.2.158}%
+\contentsline {subsubsection}{\numberline {7.24.2.159}AHBby16}{148}{subsubsection.7.24.2.159}%
+\contentsline {subsubsection}{\numberline {7.24.2.160}Equal\_0}{148}{subsubsection.7.24.2.160}%
+\contentsline {subsubsection}{\numberline {7.24.2.161}Equal\_1}{148}{subsubsection.7.24.2.161}%
+\contentsline {subsubsection}{\numberline {7.24.2.162}Equal\_2}{148}{subsubsection.7.24.2.162}%
+\contentsline {subsubsection}{\numberline {7.24.2.163}Equal\_3}{148}{subsubsection.7.24.2.163}%
+\contentsline {subsubsection}{\numberline {7.24.2.164}Equal\_4}{148}{subsubsection.7.24.2.164}%
+\contentsline {subsubsection}{\numberline {7.24.2.165}Equal\_5}{149}{subsubsection.7.24.2.165}%
+\contentsline {subsubsection}{\numberline {7.24.2.166}Equal\_6}{149}{subsubsection.7.24.2.166}%
+\contentsline {subsubsection}{\numberline {7.24.2.167}Equal\_7}{149}{subsubsection.7.24.2.167}%
+\contentsline {subsubsection}{\numberline {7.24.2.168}Equal\_8}{149}{subsubsection.7.24.2.168}%
+\contentsline {subsubsection}{\numberline {7.24.2.169}Equal\_9}{149}{subsubsection.7.24.2.169}%
+\contentsline {subsubsection}{\numberline {7.24.2.170}Equal\_10}{149}{subsubsection.7.24.2.170}%
+\contentsline {subsubsection}{\numberline {7.24.2.171}Equal\_11}{150}{subsubsection.7.24.2.171}%
+\contentsline {subsubsection}{\numberline {7.24.2.172}Equal\_12}{150}{subsubsection.7.24.2.172}%
+\contentsline {subsubsection}{\numberline {7.24.2.173}Equal\_13}{150}{subsubsection.7.24.2.173}%
+\contentsline {subsubsection}{\numberline {7.24.2.174}Equal\_14}{150}{subsubsection.7.24.2.174}%
+\contentsline {subsubsection}{\numberline {7.24.2.175}Equal\_15}{150}{subsubsection.7.24.2.175}%
+\contentsline {subsubsection}{\numberline {7.24.2.176}Equal\_16}{150}{subsubsection.7.24.2.176}%
+\contentsline {subsubsection}{\numberline {7.24.2.177}Equal\_17}{151}{subsubsection.7.24.2.177}%
+\contentsline {subsubsection}{\numberline {7.24.2.178}Equal\_18}{151}{subsubsection.7.24.2.178}%
+\contentsline {subsubsection}{\numberline {7.24.2.179}Equal\_19}{151}{subsubsection.7.24.2.179}%
+\contentsline {subsubsection}{\numberline {7.24.2.180}Equal\_20}{151}{subsubsection.7.24.2.180}%
+\contentsline {subsubsection}{\numberline {7.24.2.181}Equal\_21}{151}{subsubsection.7.24.2.181}%
+\contentsline {subsubsection}{\numberline {7.24.2.182}Equal\_22}{151}{subsubsection.7.24.2.182}%
+\contentsline {subsubsection}{\numberline {7.24.2.183}Equal\_23}{152}{subsubsection.7.24.2.183}%
+\contentsline {subsubsection}{\numberline {7.24.2.184}Equal\_24}{152}{subsubsection.7.24.2.184}%
+\contentsline {subsubsection}{\numberline {7.24.2.185}Equal\_25}{152}{subsubsection.7.24.2.185}%
+\contentsline {subsubsection}{\numberline {7.24.2.186}Equal\_26}{152}{subsubsection.7.24.2.186}%
+\contentsline {subsubsection}{\numberline {7.24.2.187}Equal\_27}{152}{subsubsection.7.24.2.187}%
+\contentsline {subsubsection}{\numberline {7.24.2.188}Equal\_28}{152}{subsubsection.7.24.2.188}%
+\contentsline {subsubsection}{\numberline {7.24.2.189}Equal\_29}{153}{subsubsection.7.24.2.189}%
+\contentsline {subsubsection}{\numberline {7.24.2.190}Equal\_30}{153}{subsubsection.7.24.2.190}%
+\contentsline {subsubsection}{\numberline {7.24.2.191}Equal\_31}{153}{subsubsection.7.24.2.191}%
+\contentsline {subsubsection}{\numberline {7.24.2.192}Equal\_32}{153}{subsubsection.7.24.2.192}%
+\contentsline {subsubsection}{\numberline {7.24.2.193}Equal\_33}{153}{subsubsection.7.24.2.193}%
+\contentsline {subsubsection}{\numberline {7.24.2.194}Equal\_34}{153}{subsubsection.7.24.2.194}%
+\contentsline {subsubsection}{\numberline {7.24.2.195}Equal\_35}{154}{subsubsection.7.24.2.195}%
+\contentsline {subsubsection}{\numberline {7.24.2.196}Equal\_36}{154}{subsubsection.7.24.2.196}%
+\contentsline {subsubsection}{\numberline {7.24.2.197}Equal\_37}{154}{subsubsection.7.24.2.197}%
+\contentsline {subsubsection}{\numberline {7.24.2.198}Equal\_38}{154}{subsubsection.7.24.2.198}%
+\contentsline {subsubsection}{\numberline {7.24.2.199}Equal\_39}{154}{subsubsection.7.24.2.199}%
+\contentsline {subsubsection}{\numberline {7.24.2.200}Equal\_40}{154}{subsubsection.7.24.2.200}%
+\contentsline {subsubsection}{\numberline {7.24.2.201}Equal\_41}{155}{subsubsection.7.24.2.201}%
+\contentsline {subsubsection}{\numberline {7.24.2.202}Equal\_42}{155}{subsubsection.7.24.2.202}%
+\contentsline {subsubsection}{\numberline {7.24.2.203}Equal\_43}{155}{subsubsection.7.24.2.203}%
+\contentsline {subsubsection}{\numberline {7.24.2.204}Equal\_44}{155}{subsubsection.7.24.2.204}%
+\contentsline {subsubsection}{\numberline {7.24.2.205}Equal\_45}{155}{subsubsection.7.24.2.205}%
+\contentsline {subsubsection}{\numberline {7.24.2.206}Equal\_46}{155}{subsubsection.7.24.2.206}%
+\contentsline {subsubsection}{\numberline {7.24.2.207}Equal\_47}{156}{subsubsection.7.24.2.207}%
+\contentsline {subsubsection}{\numberline {7.24.2.208}Equal\_48}{156}{subsubsection.7.24.2.208}%
+\contentsline {subsubsection}{\numberline {7.24.2.209}Equal\_49}{156}{subsubsection.7.24.2.209}%
+\contentsline {subsubsection}{\numberline {7.24.2.210}Equal\_50}{156}{subsubsection.7.24.2.210}%
+\contentsline {subsubsection}{\numberline {7.24.2.211}Equal\_51}{156}{subsubsection.7.24.2.211}%
+\contentsline {subsubsection}{\numberline {7.24.2.212}Equal\_52}{156}{subsubsection.7.24.2.212}%
+\contentsline {subsubsection}{\numberline {7.24.2.213}Equal\_53}{157}{subsubsection.7.24.2.213}%
+\contentsline {subsubsection}{\numberline {7.24.2.214}Equal\_54}{157}{subsubsection.7.24.2.214}%
+\contentsline {subsubsection}{\numberline {7.24.2.215}Equal\_55}{157}{subsubsection.7.24.2.215}%
+\contentsline {subsubsection}{\numberline {7.24.2.216}Equal\_56}{157}{subsubsection.7.24.2.216}%
+\contentsline {subsubsection}{\numberline {7.24.2.217}Equal\_57}{157}{subsubsection.7.24.2.217}%
+\contentsline {subsubsection}{\numberline {7.24.2.218}Equal\_58}{157}{subsubsection.7.24.2.218}%
+\contentsline {subsubsection}{\numberline {7.24.2.219}Equal\_59}{158}{subsubsection.7.24.2.219}%
+\contentsline {subsubsection}{\numberline {7.24.2.220}Equal\_60}{158}{subsubsection.7.24.2.220}%
+\contentsline {subsubsection}{\numberline {7.24.2.221}Equal\_61}{158}{subsubsection.7.24.2.221}%
+\contentsline {subsubsection}{\numberline {7.24.2.222}Equal\_62}{158}{subsubsection.7.24.2.222}%
+\contentsline {subsubsection}{\numberline {7.24.2.223}Equal\_63}{158}{subsubsection.7.24.2.223}%
+\contentsline {section}{\numberline {7.25}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}private.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{159}{section.7.25}%
+\contentsline {section}{\numberline {7.26}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}COTS/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MCAL/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RCC/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.c File Reference}{163}{section.7.26}%
+\contentsline {subsection}{\numberline {7.26.1}Detailed Description}{163}{subsection.7.26.1}%
+\contentsline {subsection}{\numberline {7.26.2}Function Documentation}{163}{subsection.7.26.2}%
+\contentsline {subsubsection}{\numberline {7.26.2.1}MRCC\_vInit()}{164}{subsubsection.7.26.2.1}%
+\contentsline {subsubsection}{\numberline {7.26.2.2}MRCC\_vEnablePeriphralCLK()}{168}{subsubsection.7.26.2.2}%
+\contentsline {subsubsection}{\numberline {7.26.2.3}MRCC\_vDisablePeriphralCLK()}{169}{subsubsection.7.26.2.3}%
+\contentsline {section}{\numberline {7.27}MRCC\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}program.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c}{169}{section.7.27}%
+\contentsline {chapter}{Index}{177}{section*.38}%
