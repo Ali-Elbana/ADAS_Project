@@ -1,0 +1,80 @@
+\hypertarget{_m_r_c_c__interface_8h_source}{}\doxysection{MRCC\+\_\+interface.\+h}
+\label{_m_r_c_c__interface_8h_source}\index{src/COTS/MCAL/RCC/MRCC\_interface.h@{src/COTS/MCAL/RCC/MRCC\_interface.h}}
+\mbox{\hyperlink{_m_r_c_c__interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00010}00010 \textcolor{preprocessor}{\#ifndef MCAL\_RCC\_MRCC\_INTERFACE\_H\_}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00011}00011 \textcolor{preprocessor}{\#define MCAL\_RCC\_MRCC\_INTERFACE\_H\_}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00015}00015 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00016}00016 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00017}00017 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00019}00019 \textcolor{keywordtype}{void} \mbox{\hyperlink{_m_r_c_c__interface_8h_ab4245d45e035033aece85f81662a9cf0}{MRCC\_vInit}}( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00021}00021 \textcolor{keywordtype}{void} \mbox{\hyperlink{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} A\_u32BusID, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} A\_u32PeriphralID ) ;}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00023}00023 \textcolor{keywordtype}{void} \mbox{\hyperlink{_m_r_c_c__interface_8h_aae7b5bdf39efe155a97b93841422cce5}{MRCC\_vDisablePeriphralCLK}}( \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} A\_u32BusID, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} A\_u32PeriphralID ) ;}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00026}00026 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00027}00027 \textcolor{comment}{/*                          Interfacing macros                          */}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00028}00028 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00030}00030 \textcolor{comment}{// A\_u32BusID options:}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00031}\mbox{\hyperlink{_m_r_c_c__interface_8h_aefd73ec71a770d3b37f9bc0ea55ad130}{00031}} \textcolor{preprocessor}{\#define RCC\_AHB1        1}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00032}\mbox{\hyperlink{_m_r_c_c__interface_8h_aa933a7465c80c134626f66bdbe7a87ee}{00032}} \textcolor{preprocessor}{\#define RCC\_AHB2        2}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00033}\mbox{\hyperlink{_m_r_c_c__interface_8h_a138c4bafb268d42acaee8cd78a77bb76}{00033}} \textcolor{preprocessor}{\#define RCC\_APB1        3}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00034}\mbox{\hyperlink{_m_r_c_c__interface_8h_a87b37ab3b0024e2cdf8d4e0cbe1febdd}{00034}} \textcolor{preprocessor}{\#define RCC\_APB2        4}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00035}\mbox{\hyperlink{_m_r_c_c__interface_8h_a840cfbe16cf7de99465d760b34bd9911}{00035}} \textcolor{preprocessor}{\#define RCC\_AHB1LPENR   5}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00037}00037 \textcolor{comment}{// A\_u32PeriphralID options:}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00038}\mbox{\hyperlink{_m_r_c_c__interface_8h_a7a721fdc5a0025a67fca6b9eb44194aa}{00038}} \textcolor{preprocessor}{\#define AHB1ENR\_DMA2EN    22}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00039}\mbox{\hyperlink{_m_r_c_c__interface_8h_aad95f60833921687c23111862efbffb6}{00039}} \textcolor{preprocessor}{\#define AHB1ENR\_DMA1EN    21}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00040}\mbox{\hyperlink{_m_r_c_c__interface_8h_a59346763a519edae2f1f46f4e9c30c3a}{00040}} \textcolor{preprocessor}{\#define AHB1ENR\_CRCEN     12}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00041}\mbox{\hyperlink{_m_r_c_c__interface_8h_aa4047d48c8468f1ac3056ba8a5d00a20}{00041}} \textcolor{preprocessor}{\#define AHB1ENR\_GPIOHEN   7}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00042}\mbox{\hyperlink{_m_r_c_c__interface_8h_ab94d88d814e85c4e2d06862c95f8b78e}{00042}} \textcolor{preprocessor}{\#define AHB1ENR\_GPIOEEN   4}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00043}\mbox{\hyperlink{_m_r_c_c__interface_8h_ae65d475454a6d8d7e606691e30a9db7a}{00043}} \textcolor{preprocessor}{\#define AHB1ENR\_GPIODEN   3}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00044}\mbox{\hyperlink{_m_r_c_c__interface_8h_a3a484def9262a6814dd66ccc689ce6ca}{00044}} \textcolor{preprocessor}{\#define AHB1ENR\_GPIOCEN   2}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00045}\mbox{\hyperlink{_m_r_c_c__interface_8h_af9eb580ac91566870a67f3b6796793e8}{00045}} \textcolor{preprocessor}{\#define AHB1ENR\_GPIOBEN   1}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00046}\mbox{\hyperlink{_m_r_c_c__interface_8h_a49ad13d00bcc4499854bf16cdaa6838b}{00046}} \textcolor{preprocessor}{\#define AHB1ENR\_GPIOAEN   0}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00048}\mbox{\hyperlink{_m_r_c_c__interface_8h_a7ff180d4e53ade982c118b7627550a21}{00048}} \textcolor{preprocessor}{\#define AHB2ENR\_OTGFSEN   7}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00050}\mbox{\hyperlink{_m_r_c_c__interface_8h_a0905ca5c593bda98120d231dad473de9}{00050}} \textcolor{preprocessor}{\#define APB1ENR\_PWREN       28}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00051}\mbox{\hyperlink{_m_r_c_c__interface_8h_a6bbe7e058d32561ada259f30672cb06f}{00051}} \textcolor{preprocessor}{\#define APB1ENR\_I2C3EN      23}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00052}\mbox{\hyperlink{_m_r_c_c__interface_8h_a54e85416e23d65e3463f9f65561c4de5}{00052}} \textcolor{preprocessor}{\#define APB1ENR\_I2C2EN      22}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00053}\mbox{\hyperlink{_m_r_c_c__interface_8h_a030f7e6c7e6b5b89968fc8d9d7d779a9}{00053}} \textcolor{preprocessor}{\#define APB1ENR\_I2C1EN      21}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00054}\mbox{\hyperlink{_m_r_c_c__interface_8h_a9485c3e161e4c625e95e5a8f1aa05b30}{00054}} \textcolor{preprocessor}{\#define APB1ENR\_USART2EN    17}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00055}\mbox{\hyperlink{_m_r_c_c__interface_8h_afe93de200c69752ce593d903295fedd9}{00055}} \textcolor{preprocessor}{\#define APB1ENR\_SPI3EN      15}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00056}\mbox{\hyperlink{_m_r_c_c__interface_8h_a4fc2938b5527086eca53544c47e92fdb}{00056}} \textcolor{preprocessor}{\#define APB1ENR\_SPI2EN      14}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00057}\mbox{\hyperlink{_m_r_c_c__interface_8h_a1a74f8aa922de58bcead2f87f72f5a2d}{00057}} \textcolor{preprocessor}{\#define APB1ENR\_WWDGEN      11}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00058}\mbox{\hyperlink{_m_r_c_c__interface_8h_aaea0aa66ce069673b3c743b9835af8df}{00058}} \textcolor{preprocessor}{\#define APB1ENR\_TIM5EN      3}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00059}\mbox{\hyperlink{_m_r_c_c__interface_8h_ae88e12ffdcd0a8c7168b9dc49937c97d}{00059}} \textcolor{preprocessor}{\#define APB1ENR\_TIM4EN      2}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00060}\mbox{\hyperlink{_m_r_c_c__interface_8h_a4f5d502d28dc158fe67deb91ab2407cb}{00060}} \textcolor{preprocessor}{\#define APB1ENR\_TIM3EN      1}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00061}\mbox{\hyperlink{_m_r_c_c__interface_8h_a69a6f5b9a60087384dacd25a3206c86b}{00061}} \textcolor{preprocessor}{\#define APB1ENR\_TIM2EN      0}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00063}\mbox{\hyperlink{_m_r_c_c__interface_8h_aedea507497eae88c70dc102b21825020}{00063}} \textcolor{preprocessor}{\#define APB2ENR\_TIM11EN     18}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00064}\mbox{\hyperlink{_m_r_c_c__interface_8h_aa77cfb0767d9a734df37528948bb77f0}{00064}} \textcolor{preprocessor}{\#define APB2ENR\_TIM10EN     17}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00065}\mbox{\hyperlink{_m_r_c_c__interface_8h_a67d401b5b382d4d0413b0626ef9e3b0b}{00065}} \textcolor{preprocessor}{\#define APB2ENR\_TIM9EN      16}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00066}\mbox{\hyperlink{_m_r_c_c__interface_8h_a5cce85c8f4a347ad79308d1c4512e187}{00066}} \textcolor{preprocessor}{\#define APB2ENR\_SYSCFGEN    14}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00067}\mbox{\hyperlink{_m_r_c_c__interface_8h_adafb4f6a2565de12a9e5236a6097c6e9}{00067}} \textcolor{preprocessor}{\#define APB2ENR\_SPI4EN      13}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00068}\mbox{\hyperlink{_m_r_c_c__interface_8h_a6b7b881b7bc6f120d878a12b847860b8}{00068}} \textcolor{preprocessor}{\#define APB2ENR\_SPI1EN      12}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00069}\mbox{\hyperlink{_m_r_c_c__interface_8h_a9e59bb5270105cabad74f971c1f6dd48}{00069}} \textcolor{preprocessor}{\#define APB2ENR\_SDIOEN      11}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00070}\mbox{\hyperlink{_m_r_c_c__interface_8h_a3cfcc0e3cd7a1bdafb109192c4a4b34b}{00070}} \textcolor{preprocessor}{\#define APB2ENR\_ADC1EN      8}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00071}\mbox{\hyperlink{_m_r_c_c__interface_8h_a84b80e93e2a2d9aa77ede6763f2f6ba1}{00071}} \textcolor{preprocessor}{\#define APB2ENR\_USART6EN    5}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00072}\mbox{\hyperlink{_m_r_c_c__interface_8h_a420f9a41acd93e242601bb3a43fbd0f8}{00072}} \textcolor{preprocessor}{\#define APB2ENR\_USART1EN    4}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00073}\mbox{\hyperlink{_m_r_c_c__interface_8h_a560aa79d145ce9ea781a56a33015b5ab}{00073}} \textcolor{preprocessor}{\#define APB2ENR\_TIM1EN      0}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00077}\mbox{\hyperlink{_m_r_c_c__interface_8h_a4e266752804fcf69f7e9918dc2c73aac}{00077}} \textcolor{preprocessor}{\#define AHB1LPENR\_FLITFLPEN 15}}
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_m_r_c_c__interface_8h_source_l00082}00082 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* MCAL\_RCC\_MRCC\_INTERFACE\_H\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

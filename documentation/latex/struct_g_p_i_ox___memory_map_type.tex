@@ -7,31 +7,31 @@ MDIO Configuration structure for a speific PIN initialization.
 
 
 
-{\ttfamily \#include $<$GPIO\+\_\+private.\+h$>$}
+{\ttfamily \#include \char`\"{}GPIO\+\_\+private.\+h\char`\"{}}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_ab47ebc6d8401453259e8737473eb929e}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) MODERx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_aa4e09f60bf0c95a6462d39ee9936fee9}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) OTYPERx
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_aef72b74d6a4cccc9f107f843f16b0c87}{MODERx}}
+\begin{DoxyCompactList}\small\item\em Control PIN mode whether {\bfseries{INPUT}} or {\bfseries{OUTPUT}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a4181c46a628a261d3df8543a58b930f0}{OTYPERx}}
 \begin{DoxyCompactList}\small\item\em Select the output type between push-\/pull or open-\/drain. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a58fc00e4a1d5048f4cde8d7729493444}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) OSPEEDRx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_abb22cf3291aec73dfcb837b88c3d75ac}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) PUPDRx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a2d68613af42258889a468dcc24468c3e}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) IDRx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a19db148debb8144d70278592df374d33}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) ODRx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_ad0be9509714d4596943e171092a7af1d}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) BSRRx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_ade28be34ba2f8d89ddc21590101f25dc}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) LCKRx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_af0dc1571f9e16f567231a18fe2bff8f4}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) AFRLx
-\item 
-\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a10d2ff7b640d6121b094ce79136e25bc}{VAR}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) AFRHx
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a92f64597b7660d93d2939e6a3f53392a}{OSPEEDRx}}
+\begin{DoxyCompactList}\small\item\em Configure the speed that the PIN is connected to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a942332fbd07df1d02dbddf12949a78ab}{PUPDRx}}
+\begin{DoxyCompactList}\small\item\em Control the pull-\/up or pull-\/down of the pin, despite its directon. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a38ab622ef503b1c2172f49c0224df7c4}{IDRx}}
+\begin{DoxyCompactList}\small\item\em Read the input data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a255c4d2d2ef792dc1982a6115f00c40c}{ODRx}}
+\begin{DoxyCompactList}\small\item\em Write the output data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a237f55c1bd9b305ee442a07d46c09f91}{BSRRx}}
+\begin{DoxyCompactList}\small\item\em (Re)set each bit in the output data register \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a3342cf1e8177885584f8f6526f961a27}{LCKRx}}
+\begin{DoxyCompactList}\small\item\em Lock the GPIO control registers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_a8a8d53f55426684b3eeff7b75ad96fd4}{AFRLx}}
+\begin{DoxyCompactList}\small\item\em Control alternate function {\bfseries{LOW}} register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{struct_g_p_i_ox___memory_map_type_aaf96b9724e66d9ea57dab4a9d66d4a67}{AFRHx}}
+\begin{DoxyCompactList}\small\item\em Control alternate function {\bfseries{HIGH}} register. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -43,72 +43,148 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00018}{18}} of 
 
 
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a10d2ff7b640d6121b094ce79136e25bc}\label{struct_g_p_i_ox___memory_map_type_a10d2ff7b640d6121b094ce79136e25bc}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_aef72b74d6a4cccc9f107f843f16b0c87}\label{struct_g_p_i_ox___memory_map_type_aef72b74d6a4cccc9f107f843f16b0c87}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!MODERx@{MODERx}}
+\index{MODERx@{MODERx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{MODERx}{MODERx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} MODERx}
 
-Control alternate function {\bfseries{HIGH}} register \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_af0dc1571f9e16f567231a18fe2bff8f4}\label{struct_g_p_i_ox___memory_map_type_af0dc1571f9e16f567231a18fe2bff8f4}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
 
-Control alternate function {\bfseries{LOW}} register \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_ad0be9509714d4596943e171092a7af1d}\label{struct_g_p_i_ox___memory_map_type_ad0be9509714d4596943e171092a7af1d}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
 
-(Re)set each bit in the output data register \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a2d68613af42258889a468dcc24468c3e}\label{struct_g_p_i_ox___memory_map_type_a2d68613af42258889a468dcc24468c3e}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+Control PIN mode whether {\bfseries{INPUT}} or {\bfseries{OUTPUT}} 
 
-Read the input data \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_ade28be34ba2f8d89ddc21590101f25dc}\label{struct_g_p_i_ox___memory_map_type_ade28be34ba2f8d89ddc21590101f25dc}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
 
-Lock the GPIO control registers \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_ab47ebc6d8401453259e8737473eb929e}\label{struct_g_p_i_ox___memory_map_type_ab47ebc6d8401453259e8737473eb929e}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
 
-Control PIN mode whether {\bfseries{INPUT}} or {\bfseries{OUTPUT}} \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a19db148debb8144d70278592df374d33}\label{struct_g_p_i_ox___memory_map_type_a19db148debb8144d70278592df374d33}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00023}{23}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
 
-Write the output data \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a58fc00e4a1d5048f4cde8d7729493444}\label{struct_g_p_i_ox___memory_map_type_a58fc00e4a1d5048f4cde8d7729493444}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
-
-Configure the speed that the PIN is connected to \mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_aa4e09f60bf0c95a6462d39ee9936fee9}\label{struct_g_p_i_ox___memory_map_type_aa4e09f60bf0c95a6462d39ee9936fee9}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
-{\footnotesize\ttfamily VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a4181c46a628a261d3df8543a58b930f0}\label{struct_g_p_i_ox___memory_map_type_a4181c46a628a261d3df8543a58b930f0}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!OTYPERx@{OTYPERx}}
+\index{OTYPERx@{OTYPERx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{OTYPERx}{OTYPERx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} OTYPERx}
 
 
 
 Select the output type between push-\/pull or open-\/drain. 
 
-\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_abb22cf3291aec73dfcb837b88c3d75ac}\label{struct_g_p_i_ox___memory_map_type_abb22cf3291aec73dfcb837b88c3d75ac}} 
-\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!VAR@{VAR}}
-\index{VAR@{VAR}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
-\doxysubsubsection{\texorpdfstring{VAR()}{VAR()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
-{\footnotesize\ttfamily GPIOx\+\_\+\+Memory\+Map\+Type\+::\+VAR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{ }\end{DoxyParamCaption})}
 
-Control the pull-\/up or pull-\/down of the pin, despite its directon 
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00028}{28}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a92f64597b7660d93d2939e6a3f53392a}\label{struct_g_p_i_ox___memory_map_type_a92f64597b7660d93d2939e6a3f53392a}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!OSPEEDRx@{OSPEEDRx}}
+\index{OSPEEDRx@{OSPEEDRx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{OSPEEDRx}{OSPEEDRx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} OSPEEDRx}
+
+
+
+Configure the speed that the PIN is connected to. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00033}{33}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a942332fbd07df1d02dbddf12949a78ab}\label{struct_g_p_i_ox___memory_map_type_a942332fbd07df1d02dbddf12949a78ab}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!PUPDRx@{PUPDRx}}
+\index{PUPDRx@{PUPDRx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{PUPDRx}{PUPDRx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} PUPDRx}
+
+
+
+Control the pull-\/up or pull-\/down of the pin, despite its directon. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00038}{38}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a38ab622ef503b1c2172f49c0224df7c4}\label{struct_g_p_i_ox___memory_map_type_a38ab622ef503b1c2172f49c0224df7c4}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!IDRx@{IDRx}}
+\index{IDRx@{IDRx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{IDRx}{IDRx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} IDRx}
+
+
+
+Read the input data. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00043}{43}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a255c4d2d2ef792dc1982a6115f00c40c}\label{struct_g_p_i_ox___memory_map_type_a255c4d2d2ef792dc1982a6115f00c40c}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!ODRx@{ODRx}}
+\index{ODRx@{ODRx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{ODRx}{ODRx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} ODRx}
+
+
+
+Write the output data. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00048}{48}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a237f55c1bd9b305ee442a07d46c09f91}\label{struct_g_p_i_ox___memory_map_type_a237f55c1bd9b305ee442a07d46c09f91}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!BSRRx@{BSRRx}}
+\index{BSRRx@{BSRRx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{BSRRx}{BSRRx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} BSRRx}
+
+
+
+(Re)set each bit in the output data register 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00053}{53}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a3342cf1e8177885584f8f6526f961a27}\label{struct_g_p_i_ox___memory_map_type_a3342cf1e8177885584f8f6526f961a27}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!LCKRx@{LCKRx}}
+\index{LCKRx@{LCKRx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{LCKRx}{LCKRx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} LCKRx}
+
+
+
+Lock the GPIO control registers. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00058}{58}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_a8a8d53f55426684b3eeff7b75ad96fd4}\label{struct_g_p_i_ox___memory_map_type_a8a8d53f55426684b3eeff7b75ad96fd4}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!AFRLx@{AFRLx}}
+\index{AFRLx@{AFRLx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{AFRLx}{AFRLx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} AFRLx}
+
+
+
+Control alternate function {\bfseries{LOW}} register. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00063}{63}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{struct_g_p_i_ox___memory_map_type_aaf96b9724e66d9ea57dab4a9d66d4a67}\label{struct_g_p_i_ox___memory_map_type_aaf96b9724e66d9ea57dab4a9d66d4a67}} 
+\index{GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}!AFRHx@{AFRHx}}
+\index{AFRHx@{AFRHx}!GPIOx\_MemoryMapType@{GPIOx\_MemoryMapType}}
+\doxysubsubsection{\texorpdfstring{AFRHx}{AFRHx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} AFRHx}
+
+
+
+Control alternate function {\bfseries{HIGH}} register. 
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00068}{68}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+
+
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

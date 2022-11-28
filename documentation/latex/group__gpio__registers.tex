@@ -3,11 +3,11 @@
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{group__gpio__registers_ga6effdbb70b245ebb962ee7d577def09b}{GPIO\+\_\+\+REGISTER\+\_\+A}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}})) (\mbox{\hyperlink{group__gpio__addresses_ga23f716ce6f03880a5ea6cf32fef82133}{GPIO\+\_\+\+BASE\+\_\+\+ADDRESS\+\_\+A}}))
+\#define \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__gpio__addresses_ga034245d27ea38f0c5b26e72f78b18d8c}{GPIOA\+\_\+\+BASE\+\_\+\+ADDRESS}}))
 \item 
-\#define \mbox{\hyperlink{group__gpio__registers_ga0661727f9fb0d90e319961d070f9dcff}{GPIO\+\_\+\+REGISTER\+\_\+B}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}})) (\mbox{\hyperlink{group__gpio__addresses_gabc40e2a5721ec0500a69897961bd5ffb}{GPIO\+\_\+\+BASE\+\_\+\+ADDRESS\+\_\+B}}))
+\#define \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__gpio__addresses_gabbde468c4be08bb6288f992d2ba4b0b2}{GPIOB\+\_\+\+BASE\+\_\+\+ADDRESS}}))
 \item 
-\#define \mbox{\hyperlink{group__gpio__registers_ga9857f514c8642f577774072a96ceed75}{GPIO\+\_\+\+REGISTER\+\_\+C}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}})) (\mbox{\hyperlink{group__gpio__addresses_ga24a1609e05f7ae0f091452ff9481c2fc}{GPIO\+\_\+\+BASE\+\_\+\+ADDRESS\+\_\+C}}))
+\#define \mbox{\hyperlink{group__gpio__registers_ga2dca03332d620196ba943bc2346eaa08}{GPIOC}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__gpio__addresses_gacc0899208f96ee70b8f7bdab8d9045a4}{GPIOC\+\_\+\+BASE\+\_\+\+ADDRESS}}))
 \end{DoxyCompactItemize}
 
 
@@ -15,33 +15,45 @@
 
 
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{group__gpio__registers_ga6effdbb70b245ebb962ee7d577def09b}\label{group__gpio__registers_ga6effdbb70b245ebb962ee7d577def09b}} 
-\index{GPIO Registers@{GPIO Registers}!GPIO\_REGISTER\_A@{GPIO\_REGISTER\_A}}
-\index{GPIO\_REGISTER\_A@{GPIO\_REGISTER\_A}!GPIO Registers@{GPIO Registers}}
-\doxysubsubsection{\texorpdfstring{GPIO\_REGISTER\_A}{GPIO\_REGISTER\_A}}
-{\footnotesize\ttfamily \#define GPIO\+\_\+\+REGISTER\+\_\+A~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}})) (\mbox{\hyperlink{group__gpio__addresses_ga23f716ce6f03880a5ea6cf32fef82133}{GPIO\+\_\+\+BASE\+\_\+\+ADDRESS\+\_\+A}}))}
+\mbox{\Hypertarget{group__gpio__registers_gac485358099728ddae050db37924dd6b7}\label{group__gpio__registers_gac485358099728ddae050db37924dd6b7}} 
+\index{GPIO Registers@{GPIO Registers}!GPIOA@{GPIOA}}
+\index{GPIOA@{GPIOA}!GPIO Registers@{GPIO Registers}}
+\doxysubsubsection{\texorpdfstring{GPIOA}{GPIOA}}
+{\footnotesize\ttfamily \#define GPIOA~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__gpio__addresses_ga034245d27ea38f0c5b26e72f78b18d8c}{GPIOA\+\_\+\+BASE\+\_\+\+ADDRESS}}))}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_g_p_i_o__private_8h}{src/\+COTS/\+MCAL/\+GPIO/\+GPIO\+\_\+private.\+h}}$>$}
 
 GPIO register for port A 
 
-Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00085}{85}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{112}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
 
-\mbox{\Hypertarget{group__gpio__registers_ga0661727f9fb0d90e319961d070f9dcff}\label{group__gpio__registers_ga0661727f9fb0d90e319961d070f9dcff}} 
-\index{GPIO Registers@{GPIO Registers}!GPIO\_REGISTER\_B@{GPIO\_REGISTER\_B}}
-\index{GPIO\_REGISTER\_B@{GPIO\_REGISTER\_B}!GPIO Registers@{GPIO Registers}}
-\doxysubsubsection{\texorpdfstring{GPIO\_REGISTER\_B}{GPIO\_REGISTER\_B}}
-{\footnotesize\ttfamily \#define GPIO\+\_\+\+REGISTER\+\_\+B~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}})) (\mbox{\hyperlink{group__gpio__addresses_gabc40e2a5721ec0500a69897961bd5ffb}{GPIO\+\_\+\+BASE\+\_\+\+ADDRESS\+\_\+B}}))}
+\mbox{\Hypertarget{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}\label{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}} 
+\index{GPIO Registers@{GPIO Registers}!GPIOB@{GPIOB}}
+\index{GPIOB@{GPIOB}!GPIO Registers@{GPIO Registers}}
+\doxysubsubsection{\texorpdfstring{GPIOB}{GPIOB}}
+{\footnotesize\ttfamily \#define GPIOB~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__gpio__addresses_gabbde468c4be08bb6288f992d2ba4b0b2}{GPIOB\+\_\+\+BASE\+\_\+\+ADDRESS}}))}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_g_p_i_o__private_8h}{src/\+COTS/\+MCAL/\+GPIO/\+GPIO\+\_\+private.\+h}}$>$}
 
 GPIO register for port B 
 
-Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00092}{92}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{119}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
 
-\mbox{\Hypertarget{group__gpio__registers_ga9857f514c8642f577774072a96ceed75}\label{group__gpio__registers_ga9857f514c8642f577774072a96ceed75}} 
-\index{GPIO Registers@{GPIO Registers}!GPIO\_REGISTER\_C@{GPIO\_REGISTER\_C}}
-\index{GPIO\_REGISTER\_C@{GPIO\_REGISTER\_C}!GPIO Registers@{GPIO Registers}}
-\doxysubsubsection{\texorpdfstring{GPIO\_REGISTER\_C}{GPIO\_REGISTER\_C}}
-{\footnotesize\ttfamily \#define GPIO\+\_\+\+REGISTER\+\_\+C~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}})) (\mbox{\hyperlink{group__gpio__addresses_ga24a1609e05f7ae0f091452ff9481c2fc}{GPIO\+\_\+\+BASE\+\_\+\+ADDRESS\+\_\+C}}))}
+\mbox{\Hypertarget{group__gpio__registers_ga2dca03332d620196ba943bc2346eaa08}\label{group__gpio__registers_ga2dca03332d620196ba943bc2346eaa08}} 
+\index{GPIO Registers@{GPIO Registers}!GPIOC@{GPIOC}}
+\index{GPIOC@{GPIOC}!GPIO Registers@{GPIO Registers}}
+\doxysubsubsection{\texorpdfstring{GPIOC}{GPIOC}}
+{\footnotesize\ttfamily \#define GPIOC~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_g_p_i_ox___memory_map_type}{GPIOx\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__gpio__addresses_gacc0899208f96ee70b8f7bdab8d9045a4}{GPIOC\+\_\+\+BASE\+\_\+\+ADDRESS}}))}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_g_p_i_o__private_8h}{src/\+COTS/\+MCAL/\+GPIO/\+GPIO\+\_\+private.\+h}}$>$}
 
 GPIO register for port C 
 
-Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00099}{99}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{126}} of file \mbox{\hyperlink{_g_p_i_o__private_8h_source}{GPIO\+\_\+private.\+h}}.
 
