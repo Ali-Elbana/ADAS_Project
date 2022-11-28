@@ -19,55 +19,55 @@
 typedef struct
 {
 
-	VAR(u32_t) CR 			;
-	VAR(u32_t) PLLCFGR 		;
-	VAR(u32_t) CFGR 		;
-	VAR(u32_t) CIR     		;
-	VAR(u32_t) AHB1RSTR 	;
-	VAR(u32_t) AHB2RSTR 	;
+	u32_t CR 			;
+	u32_t PLLCFGR 		;
+	u32_t CFGR 		;
+	u32_t CIR     		;
+	u32_t AHB1RSTR 	;
+	u32_t AHB2RSTR 	;
 
-	VAR(u32_t) Reserved1 	;
-	VAR(u32_t) Reserved2 	;
+	u32_t Reserved1 	;
+	u32_t Reserved2 	;
 
-	VAR(u32_t) APB1RSTR 	;
-	VAR(u32_t) APB2RSTR 	;
+	u32_t APB1RSTR 	;
+	u32_t APB2RSTR 	;
 
-	VAR(u32_t) Reserved3 	;
-	VAR(u32_t) Reserved4 	;
+	u32_t Reserved3 	;
+	u32_t Reserved4 	;
 
-	VAR(u32_t) AHB1ENR 		;
-	VAR(u32_t) AHB2ENR 		;
+	u32_t AHB1ENR 		;
+	u32_t AHB2ENR 		;
 
-	VAR(u32_t) Reserved5 	;
-	VAR(u32_t) Reserved6 	;
+	u32_t Reserved5 	;
+	u32_t Reserved6 	;
 
-	VAR(u32_t) APB1ENR 		;
-	VAR(u32_t) APB2ENR 		;
+	u32_t APB1ENR 		;
+	u32_t APB2ENR 		;
 
-	VAR(u32_t) Reserved7 	;
-	VAR(u32_t) Reserved8 	;
+	u32_t Reserved7 	;
+	u32_t Reserved8 	;
 
-	VAR(u32_t) AHB1LPENR	;
-	VAR(u32_t) AHB2LPENR	;
+	u32_t AHB1LPENR	;
+	u32_t AHB2LPENR	;
 
-	VAR(u32_t) Reserved9 	;
-	VAR(u32_t) Reserved10 	;
+	u32_t Reserved9 	;
+	u32_t Reserved10 	;
 
-	VAR(u32_t) APB1LPENR 	;
-	VAR(u32_t) APB2LPENR 	;
+	u32_t APB1LPENR 	;
+	u32_t APB2LPENR 	;
 
-	VAR(u32_t) Reserved11 	;
-	VAR(u32_t) Reserved12 	;
+	u32_t Reserved11 	;
+	u32_t Reserved12 	;
 
-	VAR(u32_t) BDCR 		;
-	VAR(u32_t) CSR 			;
+	u32_t BDCR 		;
+	u32_t CSR 			;
 
-	VAR(u32_t) Reserved13 	;
-	VAR(u32_t) Reserved14 	;
+	u32_t Reserved13 	;
+	u32_t Reserved14 	;
 
-	VAR(u32_t) SSCGR 		;
-	VAR(u32_t) PLLI2SCFGR 	;
-	VAR(u32_t) DCKCFGR		;
+	u32_t SSCGR 		;
+	u32_t PLLI2SCFGR 	;
+	u32_t DCKCFGR		;
 
 
 } RCC_MemoryMapType ;

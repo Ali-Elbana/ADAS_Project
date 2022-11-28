@@ -2,37 +2,32 @@
 \label{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source}\index{src/COTS/LIB/LSTD\_COMPILER.h@{src/COTS/LIB/LSTD\_COMPILER.h}}
 \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00001}00001 \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00002}00002 \textcolor{comment}{ * LSTD\_COMPILER.h}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00003}00003 \textcolor{comment}{ *}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00004}00004 \textcolor{comment}{ *  Created on: Nov 4, 2022}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00005}00005 \textcolor{comment}{ */}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00006}00006 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00007}00007 \textcolor{preprocessor}{\#ifndef COTS\_LIB\_LSTD\_COMPILER\_H\_}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00008}00008 \textcolor{preprocessor}{\#define COTS\_LIB\_LSTD\_COMPILER\_H\_}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00021}\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{00021}} \textcolor{preprocessor}{\#define VAR(vartype) vartype}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00022}00022 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00028}\mbox{\hyperlink{group__compiler_ga846278437e035619630d1fffd9974e82}{00028}} \textcolor{preprocessor}{\#define FUNC(rettype) rettype}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00029}00029 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00035}\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{00035}} \textcolor{preprocessor}{\#define P2VAR(ptrtype) ptrtype *}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00036}00036 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00042}\mbox{\hyperlink{group__compiler_ga6a5331902e985468785893e55a26df67}{00042}} \textcolor{preprocessor}{\#define P2CONST(ptrtype) const ptrtype *}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00043}00043 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00049}\mbox{\hyperlink{group__compiler_gab5fd09ff387aec5366fd5b10301c8520}{00049}} \textcolor{preprocessor}{\#define CONSTP2VAR(ptrtype) ptrtype * const}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00050}00050 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00056}\mbox{\hyperlink{group__compiler_ga6282e9404278fd614583a4ff57e65b15}{00056}} \textcolor{preprocessor}{\#define CONSTP2CONST(ptrtype) const ptrtype * const}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00063}\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{00063}} \textcolor{preprocessor}{\#define P2FUNC(rettype, fctname) rettype (* fctname)}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00064}00064 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00070}00070 \textcolor{preprocessor}{\#ifndef CONST}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00071}\mbox{\hyperlink{group__compiler_ga69d9ea05cf6f223b225c937e8a375395}{00071}} \textcolor{preprocessor}{    \#define CONST(consttype) const consttype}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00072}00072 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00073}00073 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00079}00079 \textcolor{preprocessor}{\#ifndef STATIC}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00080}\mbox{\hyperlink{group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb}{00080}} \textcolor{preprocessor}{    \#define STATIC static}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00081}00081 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00082}00082 }
-\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00085}00085 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* COTS\_LIB\_LSTD\_COMPILER\_H\_ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00009}00009 \textcolor{preprocessor}{\#ifndef COTS\_LIB\_LSTD\_COMPILER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00010}00010 \textcolor{preprocessor}{\#define COTS\_LIB\_LSTD\_COMPILER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{00023}} \textcolor{preprocessor}{\#define VAR(vartype) vartype}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00030}\mbox{\hyperlink{group__compiler_ga846278437e035619630d1fffd9974e82}{00030}} \textcolor{preprocessor}{\#define FUNC(rettype) rettype}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00037}\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{00037}} \textcolor{preprocessor}{\#define P2VAR(ptrtype) ptrtype *}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00044}\mbox{\hyperlink{group__compiler_ga6a5331902e985468785893e55a26df67}{00044}} \textcolor{preprocessor}{\#define P2CONST(ptrtype) const ptrtype *}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00051}\mbox{\hyperlink{group__compiler_gab5fd09ff387aec5366fd5b10301c8520}{00051}} \textcolor{preprocessor}{\#define CONSTP2VAR(ptrtype) ptrtype * const}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00058}\mbox{\hyperlink{group__compiler_ga6282e9404278fd614583a4ff57e65b15}{00058}} \textcolor{preprocessor}{\#define CONSTP2CONST(ptrtype) const ptrtype * const}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00065}\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{00065}} \textcolor{preprocessor}{\#define P2FUNC(rettype, fctname) rettype (* fctname)}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00072}00072 \textcolor{preprocessor}{\#ifndef CONST}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00073}\mbox{\hyperlink{group__compiler_ga69d9ea05cf6f223b225c937e8a375395}{00073}} \textcolor{preprocessor}{    \#define CONST(consttype) const consttype}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00074}00074 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00081}00081 \textcolor{preprocessor}{\#ifndef STATIC}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00082}\mbox{\hyperlink{group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb}{00082}} \textcolor{preprocessor}{    \#define STATIC static}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00083}00083 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00087}00087 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* COTS\_LIB\_LSTD\_COMPILER\_H\_ */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

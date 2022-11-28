@@ -17,35 +17,33 @@
 
 
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}\label{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}} 
-\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!CLR\_BITs@{CLR\_BITs}}
-\index{CLR\_BITs@{CLR\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
-\doxysubsubsection{\texorpdfstring{CLR\_BITs}{CLR\_BITs}}
-{\footnotesize\ttfamily \#define CLR\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) \&= $\sim$((bits) $<$$<$ (bitnum $\ast$ factor))}
-
-Clears the value of a group of bits 
-
-Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00065}{65}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
-
-\mbox{\Hypertarget{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}\label{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}} 
-\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!GET\_BITs@{GET\_BITs}}
-\index{GET\_BITs@{GET\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
-\doxysubsubsection{\texorpdfstring{GET\_BITs}{GET\_BITs}}
-{\footnotesize\ttfamily \#define GET\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(((Reg) $>$$>$ (bitnum $\ast$ factor)) \& (bits))}
-
-Returns the value of a group of bits 
-
-Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00079}{79}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
-
 \mbox{\Hypertarget{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}\label{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}} 
 \index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!SET\_BITs@{SET\_BITs}}
 \index{SET\_BITs@{SET\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
 \doxysubsubsection{\texorpdfstring{SET\_BITs}{SET\_BITs}}
 {\footnotesize\ttfamily \#define SET\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) $\vert$= ((bits) $<$$<$ (bitnum $\ast$ factor))}
 
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h}{src/\+COTS/\+LIB/\+LSTD\+\_\+\+BITMATH.\+h}}$>$}
+
 Sets the values of a group of bits 
 
-Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00058}{58}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{59}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+
+\mbox{\Hypertarget{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}\label{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}} 
+\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!CLR\_BITs@{CLR\_BITs}}
+\index{CLR\_BITs@{CLR\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{CLR\_BITs}{CLR\_BITs}}
+{\footnotesize\ttfamily \#define CLR\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) \&= $\sim$((bits) $<$$<$ (bitnum $\ast$ factor))}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h}{src/\+COTS/\+LIB/\+LSTD\+\_\+\+BITMATH.\+h}}$>$}
+
+Clears the value of a group of bits 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{66}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
 
 \mbox{\Hypertarget{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}\label{group__bitmathgroup_ga6ba80d3aeea2b1acef66178451fa2136}} 
 \index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!TOGGLE\_BITs@{TOGGLE\_BITs}}
@@ -53,7 +51,25 @@ Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00058}{5
 \doxysubsubsection{\texorpdfstring{TOGGLE\_BITs}{TOGGLE\_BITs}}
 {\footnotesize\ttfamily \#define TOGGLE\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(Reg) $^\wedge$= ((bits) $<$$<$ (bitnum $\ast$ factor))}
 
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h}{src/\+COTS/\+LIB/\+LSTD\+\_\+\+BITMATH.\+h}}$>$}
+
 Toggles the value of a group of bits 
 
-Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00072}{72}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00073}{73}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
+
+\mbox{\Hypertarget{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}\label{group__bitmathgroup_gaecf172240669d21bb20b8555e7090868}} 
+\index{Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}!GET\_BITs@{GET\_BITs}}
+\index{GET\_BITs@{GET\_BITs}!Bit Group Manipulation Math Macros@{Bit Group Manipulation Math Macros}}
+\doxysubsubsection{\texorpdfstring{GET\_BITs}{GET\_BITs}}
+{\footnotesize\ttfamily \#define GET\+\_\+\+BITs(\begin{DoxyParamCaption}\item[{}]{Reg,  }\item[{}]{bits,  }\item[{}]{bitnum,  }\item[{}]{factor }\end{DoxyParamCaption})~(((Reg) $>$$>$ (bitnum $\ast$ factor)) \& (bits))}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h}{src/\+COTS/\+LIB/\+LSTD\+\_\+\+BITMATH.\+h}}$>$}
+
+Returns the value of a group of bits 
+
+Definition at line \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00080}{80}} of file \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source}{LSTD\+\_\+\+BITMATH.\+h}}.
 
