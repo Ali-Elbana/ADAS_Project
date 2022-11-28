@@ -16,11 +16,11 @@
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-FUNC(void) MRCC_vInit( void ) ;
+void MRCC_vInit( void ) ;
 
-FUNC(void) MRCC_vEnablePeriphralCLK( u32_t A_u32BusID, u32_t A_u32PeriphralID ) ;
+void MRCC_vEnablePeriphralCLK( u32_t A_u32BusID, u32_t A_u32PeriphralID ) ;
 
-FUNC(void) MRCC_vDisablePeriphralCLK( u32_t A_u32BusID, u32_t A_u32PeriphralID ) ;
+void MRCC_vDisablePeriphralCLK( u32_t A_u32BusID, u32_t A_u32PeriphralID ) ;
 
 
 /************************************************************************/

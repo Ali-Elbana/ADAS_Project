@@ -28,15 +28,15 @@ FUNC(void) MGPIOx_vLockedPins(void)
 
 	/* Lock key write sequence */
 
-	/* WR LCKR[16] = ‘1’ + LCKR[13,14,15] = ‘1’ */
+	/* WR LCKR[16] = ï¿½1ï¿½ + LCKR[13,14,15] = ï¿½1ï¿½ */
 	L_u32LockGPIOA = ( (1UL << LCKK_BIT_POS) | (GPIOA_PIN_POS) ) ;
 
 	GPIOA->LCKRx = L_u32LockGPIOA ;
 
-	/* WR LCKR[16] = ‘0’ + LCKR[13,14,15] should not change*/
+	/* WR LCKR[16] = ï¿½0ï¿½ + LCKR[13,14,15] should not change*/
 	GPIOA->LCKRx = (GPIOA_PIN_POS) ;
 
-	/* WR LCKR[16] = ‘1’ + LCKR[13,14,15] should not change*/
+	/* WR LCKR[16] = ï¿½1ï¿½ + LCKR[13,14,15] should not change*/
 	GPIOA->LCKRx = L_u32LockGPIOA ;
 
 	/* RD LCKR */
@@ -48,15 +48,15 @@ FUNC(void) MGPIOx_vLockedPins(void)
 
 	/* Lock key write sequence */
 
-	/* WR LCKR[16] = ‘1’ + LCKR[2,3,4] = ‘1’ */
+	/* WR LCKR[16] = ï¿½1ï¿½ + LCKR[2,3,4] = ï¿½1ï¿½ */
 	L_u32LockGPIOB = ( (1UL << LCKK_BIT_POS) | (GPIOB_PIN_POS) ) ;
 
 	GPIOB->LCKRx = L_u32LockGPIOB ;
 
-	/* WR LCKR[16] = ‘0’ + LCKR[2,3,4] should not change*/
+	/* WR LCKR[16] = ï¿½0ï¿½ + LCKR[2,3,4] should not change*/
 	GPIOB->LCKRx = (GPIOB_PIN_POS) ;
 
-	/* WR LCKR[16] = ‘1’ + LCKR[2,3,4] should not change*/
+	/* WR LCKR[16] = ï¿½1ï¿½ + LCKR[2,3,4] should not change*/
 	GPIOB->LCKRx = L_u32LockGPIOB ;
 
 	/* RD LCKR */
