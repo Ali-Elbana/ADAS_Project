@@ -69,6 +69,25 @@
 	#define FLAG_CLEARED (0)
 #endif  /* ifndef FLAG_CLEARED */
 
+/**
+ * @def RUN
+ * Type definition for RUN
+ *
+ */
+#ifndef RUN
+	#define RUN (1)
+#endif  /* ifndef RUN */
+
+
+/**
+ * @def STOP
+ * Type definition for STOP
+ *
+ */
+#ifndef STOP
+	#define STOP (0)
+#endif  /* ifndef STOP */
+
 /** @} */
 
 #endif /* COTS_LIB_LSTD_VALUES_H_ */
