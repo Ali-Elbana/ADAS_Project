@@ -20,7 +20,7 @@
 #include "SYSCFG_private.h"
 
 STATIC P2FUNC(void, *GS_vEXTI_Callback)(void) = {NULL};
-STATIC VAR(u8_t) GS_u8EXTI_EnabledLine_ID = INITIAL_ZERO;
+// STATIC VAR(u8_t) GS_u8EXTI_EnabledLine_ID = INITIAL_ZERO;
 
 /************************************************************************/
 /*                     Functions' implementations                      	*/
@@ -74,7 +74,7 @@ FUNC(void) MEXTI_vInit(void)
 #endif
 
 	// Get the enabled line ID.
-	GS_u8EXTI_EnabledLine_ID = L_u8ShiftedOffset;
+	// GS_u8EXTI_EnabledLine_ID = L_u8ShiftedOffset;
 
 	// Clear all flags.
 	MEXTI->PR = 0xffffffff;
@@ -269,7 +269,7 @@ FUNC(void) MEXTI_vInit(void)
 
 FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig)
 {
-	/* do nothing */
+	/* to be continued... */
 }
 
 /*******************************************************************************************************************/
@@ -277,11 +277,12 @@ FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig)
 
 FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 {
-	if (A_u8LineID <= 23)
+	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		SET_BIT(MEXTI->IMR, A_u8LineID);
+		MEXTI_vSetTrigger(A_u8LineID, A_u8TriggerStatus);
 
-		switch (A_u8TriggerStatus)
+		/* switch (A_u8TriggerStatus)
 		{
 		case EXTI_RisingEdge:
 			SET_BIT(MEXTI->RTSR, A_u8LineID);
@@ -297,11 +298,11 @@ FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 			SET_BIT(MEXTI->RTSR, A_u8LineID);
 			SET_BIT(MEXTI->FTSR, A_u8LineID);
 			break;
-		}
+		} */
 	}
 
 	// Get the enabled line ID.
-	GS_u8EXTI_EnabledLine_ID = A_u8LineID;
+	// GS_u8EXTI_EnabledLine_ID = A_u8LineID;
 }
 
 /*******************************************************************************************************************/
@@ -309,7 +310,7 @@ FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 
 FUNC(void) MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
 {
-	if (A_u8LineID <= 23)
+	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		CLR_BIT(MEXTI->IMR, A_u8LineID);
 	}
@@ -320,13 +321,13 @@ FUNC(void) MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
 
 FUNC(void) MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
 {
-	if (A_u8LineID <= 23)
+	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		SET_BIT(MEXTI->SWIER, A_u8LineID);
 	}
 
 	// Get the enabled line ID.
-	GS_u8EXTI_EnabledLine_ID = A_u8LineID;
+	// GS_u8EXTI_EnabledLine_ID = A_u8LineID;
 }
 
 /*******************************************************************************************************************/
@@ -334,9 +335,9 @@ FUNC(void) MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
 
 FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 {
-	if (A_u8LineID <= 23)
+	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
-		SET_BIT(MEXTI->IMR, A_u8LineID);
+		/* SET_BIT(MEXTI->IMR, A_u8LineID); */
 
 		switch (A_u8TriggerStatus)
 		{
@@ -361,7 +362,7 @@ FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 	}
 
 	// Get the enabled line ID.
-	GS_u8EXTI_EnabledLine_ID = A_u8LineID;
+	// GS_u8EXTI_EnabledLine_ID = A_u8LineID;
 }
 
 /*******************************************************************************************************************/
@@ -369,7 +370,7 @@ FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 
 FUNC(void) EXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
 {
-	if (A_u8LineID <= 23)
+	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		GS_vEXTI_Callback[A_u8LineID] = A_vFptr;
 

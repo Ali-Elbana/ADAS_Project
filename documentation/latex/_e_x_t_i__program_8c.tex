@@ -71,14 +71,14 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00031     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8Index = A\_u8LineID / 4;}
 \DoxyCodeLine{00032     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8ShiftAmount = A\_u8LineID \% 4;}
 \DoxyCodeLine{00033 }
-\DoxyCodeLine{00034     \mbox{\hyperlink{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}{CLR\_BITs}}(\mbox{\hyperlink{_s_y_s_c_f_g__private_8h_a531c08f5a73855527d044114a066fbb4}{MSYSCFG}}-\/>EXTICR[L\_u8Index], 0b1111, L\_u8ShiftAmount, 4);}
-\DoxyCodeLine{00035     \mbox{\hyperlink{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}{SET\_BITs}}(\mbox{\hyperlink{_s_y_s_c_f_g__private_8h_a531c08f5a73855527d044114a066fbb4}{MSYSCFG}}-\/>EXTICR[L\_u8Index], A\_u8PortID, L\_u8ShiftAmount, 4);}
+\DoxyCodeLine{00034     \mbox{\hyperlink{group__bitmathgroup_ga63f1579914decc1a223d865c1fa54350}{CLR\_BITs}}(\mbox{\hyperlink{group__syscfg__memory__registers_ga531c08f5a73855527d044114a066fbb4}{MSYSCFG}}-\/>EXTICR[L\_u8Index], 0b1111, L\_u8ShiftAmount, 4);}
+\DoxyCodeLine{00035     \mbox{\hyperlink{group__bitmathgroup_ga144236a5e2a4ca05b69188788329d059}{SET\_BITs}}(\mbox{\hyperlink{group__syscfg__memory__registers_ga531c08f5a73855527d044114a066fbb4}{MSYSCFG}}-\/>EXTICR[L\_u8Index], A\_u8PortID, L\_u8ShiftAmount, 4);}
 \DoxyCodeLine{00036 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_s_y_s_c_f_g__private_8h_source_l00028}{MSYSCFG}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_s_y_s_c_f_g__private_8h_source_l00064}{MSYSCFG}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_af54debc6d14edcd542b2d03f68b181b8}\label{_e_x_t_i__program_8c_af54debc6d14edcd542b2d03f68b181b8}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_vInit@{MEXTI\_vInit}}
@@ -90,6 +90,8 @@ References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+
 
 Initialize the EXTI module. 
 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]make sure that this function initializes the interrupt for all lines separately from the config \end{DoxyRefDesc}
 \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} 
 \end{DoxySeeAlso}
@@ -137,7 +139,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of 
 \DoxyCodeLine{00074 \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00075 }
 \DoxyCodeLine{00076     \textcolor{comment}{// Get the enabled line ID.}}
-\DoxyCodeLine{00077     GS\_u8EXTI\_EnabledLine\_ID = L\_u8ShiftedOffset;}
+\DoxyCodeLine{00077     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = L\_u8ShiftedOffset;}}
 \DoxyCodeLine{00078 }
 \DoxyCodeLine{00079     \textcolor{comment}{// Clear all flags.}}
 \DoxyCodeLine{00080     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>PR = 0xffffffff;}
@@ -145,7 +147,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of 
 \DoxyCodeLine{00082     \textcolor{comment}{// Enable EXTI on a line.}}
 \DoxyCodeLine{00083     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = 0;}
 \DoxyCodeLine{00084 }
-\DoxyCodeLine{00085     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = (\mbox{\hyperlink{group__exti__registers_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
+\DoxyCodeLine{00085     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = (\mbox{\hyperlink{group__exti__line__status_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
 \DoxyCodeLine{00086 }
 \DoxyCodeLine{00087 \textcolor{comment}{// Set EXTI Triggered status on a line.}}
 \DoxyCodeLine{00088 \textcolor{preprocessor}{\#if EXTI\_LINE0\_TRIGGER == EXTI\_RisingEdge}}
@@ -315,7 +317,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00068}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00085}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_ae056f3da68852f7a43a3d81b1e6f200d}\label{_e_x_t_i__program_8c_ae056f3da68852f7a43a3d81b1e6f200d}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}}
@@ -330,7 +332,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00270}{270}} of
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00271 \{}
-\DoxyCodeLine{00272     \textcolor{comment}{/* do nothing */}}
+\DoxyCodeLine{00272     \textcolor{comment}{/* to be continued... */}}
 \DoxyCodeLine{00273 \}}
 
 \end{DoxyCode}
@@ -347,37 +349,38 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00278}{278}} of
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00279 \{}
-\DoxyCodeLine{00280     \textcolor{keywordflow}{if} (A\_u8LineID <= 23)}
+\DoxyCodeLine{00280     \textcolor{keywordflow}{if} (A\_u8LineID < \mbox{\hyperlink{group__exti__line__settings_ga5870b26cac399eb25698f68a8603c645}{EXTI\_MAX\_EXTI\_NUM}})}
 \DoxyCodeLine{00281     \{}
 \DoxyCodeLine{00282         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR, A\_u8LineID);}
-\DoxyCodeLine{00283 }
-\DoxyCodeLine{00284         \textcolor{keywordflow}{switch} (A\_u8TriggerStatus)}
-\DoxyCodeLine{00285         \{}
-\DoxyCodeLine{00286         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_gababc163d1594cab727397a54b37fb34e}{EXTI\_RisingEdge}}:}
-\DoxyCodeLine{00287             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
-\DoxyCodeLine{00288             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
-\DoxyCodeLine{00289             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00290 }
-\DoxyCodeLine{00291         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_ga032ac080fc4ecd74df55cc9ad1ca2f95}{EXTI\_FallingEdge}}:}
-\DoxyCodeLine{00292             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
-\DoxyCodeLine{00293             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
-\DoxyCodeLine{00294             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00295 }
-\DoxyCodeLine{00296         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_gaf251e318af9a6ba2e13264a606254bc0}{EXTI\_OnChange}}:}
-\DoxyCodeLine{00297             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
-\DoxyCodeLine{00298             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
-\DoxyCodeLine{00299             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00300         \}}
-\DoxyCodeLine{00301     \}}
-\DoxyCodeLine{00302 }
-\DoxyCodeLine{00303     \textcolor{comment}{// Get the enabled line ID.}}
-\DoxyCodeLine{00304     GS\_u8EXTI\_EnabledLine\_ID = A\_u8LineID;}
-\DoxyCodeLine{00305 \}}
+\DoxyCodeLine{00283         \mbox{\hyperlink{_e_x_t_i__program_8c_ac222bf62cb25f9ef576b2222168826bd}{MEXTI\_vSetTrigger}}(A\_u8LineID, A\_u8TriggerStatus);}
+\DoxyCodeLine{00284 }
+\DoxyCodeLine{00285         \textcolor{comment}{/* switch (A\_u8TriggerStatus)}}
+\DoxyCodeLine{00286 \textcolor{comment}{        \{}}
+\DoxyCodeLine{00287 \textcolor{comment}{        case EXTI\_RisingEdge:}}
+\DoxyCodeLine{00288 \textcolor{comment}{            SET\_BIT(MEXTI-\/>RTSR, A\_u8LineID);}}
+\DoxyCodeLine{00289 \textcolor{comment}{            CLR\_BIT(MEXTI-\/>FTSR, A\_u8LineID);}}
+\DoxyCodeLine{00290 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00291 \textcolor{comment}{}}
+\DoxyCodeLine{00292 \textcolor{comment}{        case EXTI\_FallingEdge:}}
+\DoxyCodeLine{00293 \textcolor{comment}{            SET\_BIT(MEXTI-\/>FTSR, A\_u8LineID);}}
+\DoxyCodeLine{00294 \textcolor{comment}{            CLR\_BIT(MEXTI-\/>RTSR, A\_u8LineID);}}
+\DoxyCodeLine{00295 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00296 \textcolor{comment}{}}
+\DoxyCodeLine{00297 \textcolor{comment}{        case EXTI\_OnChange:}}
+\DoxyCodeLine{00298 \textcolor{comment}{            SET\_BIT(MEXTI-\/>RTSR, A\_u8LineID);}}
+\DoxyCodeLine{00299 \textcolor{comment}{            SET\_BIT(MEXTI-\/>FTSR, A\_u8LineID);}}
+\DoxyCodeLine{00300 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00301 \textcolor{comment}{        \} */}}
+\DoxyCodeLine{00302     \}}
+\DoxyCodeLine{00303 }
+\DoxyCodeLine{00304     \textcolor{comment}{// Get the enabled line ID.}}
+\DoxyCodeLine{00305     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = A\_u8LineID;}}
+\DoxyCodeLine{00306 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00210}{EXTI\+\_\+\+Falling\+Edge}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00222}{EXTI\+\_\+\+On\+Change}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00216}{EXTI\+\_\+\+Rising\+Edge}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00105}{EXTI\+\_\+\+MAX\+\_\+\+EXTI\+\_\+\+NUM}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00336}{MEXTI\+\_\+v\+Set\+Trigger()}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_a1f3b5b51bbe15c316b31195c6ca1841b}\label{_e_x_t_i__program_8c_a1f3b5b51bbe15c316b31195c6ca1841b}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_vDisableLine@{MEXTI\_vDisableLine}}
@@ -387,21 +390,21 @@ References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+
 
 
 
-Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00310}{310}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00311}{311}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00311 \{}
-\DoxyCodeLine{00312     \textcolor{keywordflow}{if} (A\_u8LineID <= 23)}
-\DoxyCodeLine{00313     \{}
-\DoxyCodeLine{00314         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR, A\_u8LineID);}
-\DoxyCodeLine{00315     \}}
-\DoxyCodeLine{00316 \}}
+\DoxyCodeLine{00312 \{}
+\DoxyCodeLine{00313     \textcolor{keywordflow}{if} (A\_u8LineID < \mbox{\hyperlink{group__exti__line__settings_ga5870b26cac399eb25698f68a8603c645}{EXTI\_MAX\_EXTI\_NUM}})}
+\DoxyCodeLine{00314     \{}
+\DoxyCodeLine{00315         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR, A\_u8LineID);}
+\DoxyCodeLine{00316     \}}
+\DoxyCodeLine{00317 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, and \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00105}{EXTI\+\_\+\+MAX\+\_\+\+EXTI\+\_\+\+NUM}}, and \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_af6b1b151ae0e7cfee8ee534510ada214}\label{_e_x_t_i__program_8c_af6b1b151ae0e7cfee8ee534510ada214}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_vSWITrigger@{MEXTI\_vSWITrigger}}
@@ -411,24 +414,24 @@ References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+
 
 
 
-Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00321}{321}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00322}{322}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00322 \{}
-\DoxyCodeLine{00323     \textcolor{keywordflow}{if} (A\_u8LineID <= 23)}
-\DoxyCodeLine{00324     \{}
-\DoxyCodeLine{00325         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>SWIER, A\_u8LineID);}
-\DoxyCodeLine{00326     \}}
-\DoxyCodeLine{00327 }
-\DoxyCodeLine{00328     \textcolor{comment}{// Get the enabled line ID.}}
-\DoxyCodeLine{00329     GS\_u8EXTI\_EnabledLine\_ID = A\_u8LineID;}
-\DoxyCodeLine{00330 \}}
+\DoxyCodeLine{00323 \{}
+\DoxyCodeLine{00324     \textcolor{keywordflow}{if} (A\_u8LineID < \mbox{\hyperlink{group__exti__line__settings_ga5870b26cac399eb25698f68a8603c645}{EXTI\_MAX\_EXTI\_NUM}})}
+\DoxyCodeLine{00325     \{}
+\DoxyCodeLine{00326         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>SWIER, A\_u8LineID);}
+\DoxyCodeLine{00327     \}}
+\DoxyCodeLine{00328 }
+\DoxyCodeLine{00329     \textcolor{comment}{// Get the enabled line ID.}}
+\DoxyCodeLine{00330     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = A\_u8LineID;}}
+\DoxyCodeLine{00331 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00105}{EXTI\+\_\+\+MAX\+\_\+\+EXTI\+\_\+\+NUM}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_ac222bf62cb25f9ef576b2222168826bd}\label{_e_x_t_i__program_8c_ac222bf62cb25f9ef576b2222168826bd}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_vSetTrigger@{MEXTI\_vSetTrigger}}
@@ -438,45 +441,49 @@ References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, and \mb
 
 
 
-Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00335}{335}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00336}{336}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00336 \{}
-\DoxyCodeLine{00337     \textcolor{keywordflow}{if} (A\_u8LineID <= 23)}
-\DoxyCodeLine{00338     \{}
-\DoxyCodeLine{00339         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR, A\_u8LineID);}
-\DoxyCodeLine{00340 }
-\DoxyCodeLine{00341         \textcolor{keywordflow}{switch} (A\_u8TriggerStatus)}
-\DoxyCodeLine{00342         \{}
-\DoxyCodeLine{00343         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_gababc163d1594cab727397a54b37fb34e}{EXTI\_RisingEdge}}:}
-\DoxyCodeLine{00344             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
-\DoxyCodeLine{00345 }
-\DoxyCodeLine{00346             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
-\DoxyCodeLine{00347             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00348 }
-\DoxyCodeLine{00349         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_ga032ac080fc4ecd74df55cc9ad1ca2f95}{EXTI\_FallingEdge}}:}
-\DoxyCodeLine{00350             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
-\DoxyCodeLine{00351 }
-\DoxyCodeLine{00352             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
-\DoxyCodeLine{00353             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00354 }
-\DoxyCodeLine{00355         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_gaf251e318af9a6ba2e13264a606254bc0}{EXTI\_OnChange}}:}
-\DoxyCodeLine{00356             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
-\DoxyCodeLine{00357 }
-\DoxyCodeLine{00358             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
-\DoxyCodeLine{00359             \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00360         \}}
-\DoxyCodeLine{00361     \}}
-\DoxyCodeLine{00362 }
-\DoxyCodeLine{00363     \textcolor{comment}{// Get the enabled line ID.}}
-\DoxyCodeLine{00364     GS\_u8EXTI\_EnabledLine\_ID = A\_u8LineID;}
-\DoxyCodeLine{00365 \}}
+\DoxyCodeLine{00337 \{}
+\DoxyCodeLine{00338     \textcolor{keywordflow}{if} (A\_u8LineID < \mbox{\hyperlink{group__exti__line__settings_ga5870b26cac399eb25698f68a8603c645}{EXTI\_MAX\_EXTI\_NUM}})}
+\DoxyCodeLine{00339     \{}
+\DoxyCodeLine{00340         \textcolor{comment}{/* SET\_BIT(MEXTI-\/>IMR, A\_u8LineID); */}}
+\DoxyCodeLine{00341 }
+\DoxyCodeLine{00342         \textcolor{keywordflow}{switch} (A\_u8TriggerStatus)}
+\DoxyCodeLine{00343         \{}
+\DoxyCodeLine{00344         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_gababc163d1594cab727397a54b37fb34e}{EXTI\_RisingEdge}}:}
+\DoxyCodeLine{00345             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
+\DoxyCodeLine{00346 }
+\DoxyCodeLine{00347             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
+\DoxyCodeLine{00348             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00349 }
+\DoxyCodeLine{00350         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_ga032ac080fc4ecd74df55cc9ad1ca2f95}{EXTI\_FallingEdge}}:}
+\DoxyCodeLine{00351             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
+\DoxyCodeLine{00352 }
+\DoxyCodeLine{00353             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
+\DoxyCodeLine{00354             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00355 }
+\DoxyCodeLine{00356         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__interrupt__trigger__status_gaf251e318af9a6ba2e13264a606254bc0}{EXTI\_OnChange}}:}
+\DoxyCodeLine{00357             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, A\_u8LineID);}
+\DoxyCodeLine{00358 }
+\DoxyCodeLine{00359             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, A\_u8LineID);}
+\DoxyCodeLine{00360             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00361         \}}
+\DoxyCodeLine{00362     \}}
+\DoxyCodeLine{00363 }
+\DoxyCodeLine{00364     \textcolor{comment}{// Get the enabled line ID.}}
+\DoxyCodeLine{00365     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = A\_u8LineID;}}
+\DoxyCodeLine{00366 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00210}{EXTI\+\_\+\+Falling\+Edge}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00222}{EXTI\+\_\+\+On\+Change}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00216}{EXTI\+\_\+\+Rising\+Edge}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00208}{EXTI\+\_\+\+Falling\+Edge}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00105}{EXTI\+\_\+\+MAX\+\_\+\+EXTI\+\_\+\+NUM}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00220}{EXTI\+\_\+\+On\+Change}}, \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00214}{EXTI\+\_\+\+Rising\+Edge}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+
+
+
+Referenced by \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00278}{MEXTI\+\_\+v\+Enable\+Line()}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_afce26a3904e8760933143d1aee5b761f}\label{_e_x_t_i__program_8c_afce26a3904e8760933143d1aee5b761f}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI\_vSetCallback@{EXTI\_vSetCallback}}
@@ -486,70 +493,74 @@ References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+
 
 
 
-Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00370}{370}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00371}{371}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00371 \{}
-\DoxyCodeLine{00372     \textcolor{keywordflow}{if} (A\_u8LineID <= 23)}
-\DoxyCodeLine{00373     \{}
-\DoxyCodeLine{00374         GS\_vEXTI\_Callback[A\_u8LineID] = A\_vFptr;}
-\DoxyCodeLine{00375 }
-\DoxyCodeLine{00376         \textcolor{comment}{/* switch (A\_u8LineID)}}
-\DoxyCodeLine{00377 \textcolor{comment}{        \{}}
-\DoxyCodeLine{00378 \textcolor{comment}{        case EXTI\_LINE0:}}
-\DoxyCodeLine{00379 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE0] = A\_vFptr;}}
-\DoxyCodeLine{00380 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00381 \textcolor{comment}{        case EXTI\_LINE1:}}
-\DoxyCodeLine{00382 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE1] = A\_vFptr;}}
-\DoxyCodeLine{00383 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00384 \textcolor{comment}{        case EXTI\_LINE2:}}
-\DoxyCodeLine{00385 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE2] = A\_vFptr;}}
-\DoxyCodeLine{00386 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00387 \textcolor{comment}{        case EXTI\_LINE3:}}
-\DoxyCodeLine{00388 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE3] = A\_vFptr;}}
-\DoxyCodeLine{00389 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00390 \textcolor{comment}{        case EXTI\_LINE4:}}
-\DoxyCodeLine{00391 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE4] = A\_vFptr;}}
-\DoxyCodeLine{00392 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00393 \textcolor{comment}{        case EXTI\_LINE5:}}
-\DoxyCodeLine{00394 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE5] = A\_vFptr;}}
-\DoxyCodeLine{00395 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00396 \textcolor{comment}{        case EXTI\_LINE6:}}
-\DoxyCodeLine{00397 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE6] = A\_vFptr;}}
-\DoxyCodeLine{00398 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00399 \textcolor{comment}{        case EXTI\_LINE7:}}
-\DoxyCodeLine{00400 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE7] = A\_vFptr;}}
-\DoxyCodeLine{00401 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00402 \textcolor{comment}{        case EXTI\_LINE8:}}
-\DoxyCodeLine{00403 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE8] = A\_vFptr;}}
-\DoxyCodeLine{00404 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00405 \textcolor{comment}{        case EXTI\_LINE9:}}
-\DoxyCodeLine{00406 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE9] = A\_vFptr;}}
-\DoxyCodeLine{00407 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00408 \textcolor{comment}{        case EXTI\_LINE10:}}
-\DoxyCodeLine{00409 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE10] = A\_vFptr;}}
-\DoxyCodeLine{00410 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00411 \textcolor{comment}{        case EXTI\_LINE11:}}
-\DoxyCodeLine{00412 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE11] = A\_vFptr;}}
-\DoxyCodeLine{00413 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00414 \textcolor{comment}{        case EXTI\_LINE12:}}
-\DoxyCodeLine{00415 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE12] = A\_vFptr;}}
-\DoxyCodeLine{00416 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00417 \textcolor{comment}{        case EXTI\_LINE13:}}
-\DoxyCodeLine{00418 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE13] = A\_vFptr;}}
-\DoxyCodeLine{00419 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00420 \textcolor{comment}{        case EXTI\_LINE14:}}
-\DoxyCodeLine{00421 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE14] = A\_vFptr;}}
-\DoxyCodeLine{00422 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00423 \textcolor{comment}{        case EXTI\_LINE15:}}
-\DoxyCodeLine{00424 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE15] = A\_vFptr;}}
-\DoxyCodeLine{00425 \textcolor{comment}{            break;}}
-\DoxyCodeLine{00426 \textcolor{comment}{        \} */}}
-\DoxyCodeLine{00427     \}}
-\DoxyCodeLine{00428 \}}
+\DoxyCodeLine{00372 \{}
+\DoxyCodeLine{00373     \textcolor{keywordflow}{if} (A\_u8LineID < \mbox{\hyperlink{group__exti__line__settings_ga5870b26cac399eb25698f68a8603c645}{EXTI\_MAX\_EXTI\_NUM}})}
+\DoxyCodeLine{00374     \{}
+\DoxyCodeLine{00375         GS\_vEXTI\_Callback[A\_u8LineID] = A\_vFptr;}
+\DoxyCodeLine{00376 }
+\DoxyCodeLine{00377         \textcolor{comment}{/* switch (A\_u8LineID)}}
+\DoxyCodeLine{00378 \textcolor{comment}{        \{}}
+\DoxyCodeLine{00379 \textcolor{comment}{        case EXTI\_LINE0:}}
+\DoxyCodeLine{00380 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE0] = A\_vFptr;}}
+\DoxyCodeLine{00381 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00382 \textcolor{comment}{        case EXTI\_LINE1:}}
+\DoxyCodeLine{00383 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE1] = A\_vFptr;}}
+\DoxyCodeLine{00384 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00385 \textcolor{comment}{        case EXTI\_LINE2:}}
+\DoxyCodeLine{00386 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE2] = A\_vFptr;}}
+\DoxyCodeLine{00387 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00388 \textcolor{comment}{        case EXTI\_LINE3:}}
+\DoxyCodeLine{00389 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE3] = A\_vFptr;}}
+\DoxyCodeLine{00390 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00391 \textcolor{comment}{        case EXTI\_LINE4:}}
+\DoxyCodeLine{00392 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE4] = A\_vFptr;}}
+\DoxyCodeLine{00393 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00394 \textcolor{comment}{        case EXTI\_LINE5:}}
+\DoxyCodeLine{00395 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE5] = A\_vFptr;}}
+\DoxyCodeLine{00396 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00397 \textcolor{comment}{        case EXTI\_LINE6:}}
+\DoxyCodeLine{00398 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE6] = A\_vFptr;}}
+\DoxyCodeLine{00399 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00400 \textcolor{comment}{        case EXTI\_LINE7:}}
+\DoxyCodeLine{00401 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE7] = A\_vFptr;}}
+\DoxyCodeLine{00402 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00403 \textcolor{comment}{        case EXTI\_LINE8:}}
+\DoxyCodeLine{00404 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE8] = A\_vFptr;}}
+\DoxyCodeLine{00405 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00406 \textcolor{comment}{        case EXTI\_LINE9:}}
+\DoxyCodeLine{00407 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE9] = A\_vFptr;}}
+\DoxyCodeLine{00408 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00409 \textcolor{comment}{        case EXTI\_LINE10:}}
+\DoxyCodeLine{00410 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE10] = A\_vFptr;}}
+\DoxyCodeLine{00411 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00412 \textcolor{comment}{        case EXTI\_LINE11:}}
+\DoxyCodeLine{00413 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE11] = A\_vFptr;}}
+\DoxyCodeLine{00414 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00415 \textcolor{comment}{        case EXTI\_LINE12:}}
+\DoxyCodeLine{00416 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE12] = A\_vFptr;}}
+\DoxyCodeLine{00417 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00418 \textcolor{comment}{        case EXTI\_LINE13:}}
+\DoxyCodeLine{00419 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE13] = A\_vFptr;}}
+\DoxyCodeLine{00420 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00421 \textcolor{comment}{        case EXTI\_LINE14:}}
+\DoxyCodeLine{00422 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE14] = A\_vFptr;}}
+\DoxyCodeLine{00423 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00424 \textcolor{comment}{        case EXTI\_LINE15:}}
+\DoxyCodeLine{00425 \textcolor{comment}{            GS\_vEXTI\_Callback[EXTI\_LINE15] = A\_vFptr;}}
+\DoxyCodeLine{00426 \textcolor{comment}{            break;}}
+\DoxyCodeLine{00427 \textcolor{comment}{        \} */}}
+\DoxyCodeLine{00428     \}}
+\DoxyCodeLine{00429 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00105}{EXTI\+\_\+\+MAX\+\_\+\+EXTI\+\_\+\+NUM}}.
+
 \mbox{\Hypertarget{_e_x_t_i__program_8c_a17e9789a29a87d2df54f12b94dd1a0b6}\label{_e_x_t_i__program_8c_a17e9789a29a87d2df54f12b94dd1a0b6}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI0\_IRQHandler@{EXTI0\_IRQHandler}}
 \index{EXTI0\_IRQHandler@{EXTI0\_IRQHandler}!EXTI\_program.c@{EXTI\_program.c}}
@@ -558,22 +569,22 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00370}{370}} of
 
 
 
-Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00433}{433}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00434}{434}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00434 \{}
-\DoxyCodeLine{00435     \textcolor{keywordflow}{if} (GS\_vEXTI\_Callback[\mbox{\hyperlink{group__interrupt__lines_ga5d9011faf4106bf40c74ff617b1e4973}{EXTI\_LINE0}}] != \mbox{\hyperlink{group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
-\DoxyCodeLine{00436     \{}
-\DoxyCodeLine{00437         GS\_vEXTI\_Callback[\mbox{\hyperlink{group__interrupt__lines_ga5d9011faf4106bf40c74ff617b1e4973}{EXTI\_LINE0}}]();}
-\DoxyCodeLine{00438     \}}
-\DoxyCodeLine{00439 }
-\DoxyCodeLine{00440     \textcolor{comment}{// Clear the flag.}}
-\DoxyCodeLine{00441     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>PR, \mbox{\hyperlink{group__interrupt__lines_ga5d9011faf4106bf40c74ff617b1e4973}{EXTI\_LINE0}});}
-\DoxyCodeLine{00442 \}}
+\DoxyCodeLine{00435 \{}
+\DoxyCodeLine{00436     \textcolor{keywordflow}{if} (GS\_vEXTI\_Callback[\mbox{\hyperlink{group__interrupt__lines_ga5d9011faf4106bf40c74ff617b1e4973}{EXTI\_LINE0}}] != \mbox{\hyperlink{group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{00437     \{}
+\DoxyCodeLine{00438         GS\_vEXTI\_Callback[\mbox{\hyperlink{group__interrupt__lines_ga5d9011faf4106bf40c74ff617b1e4973}{EXTI\_LINE0}}]();}
+\DoxyCodeLine{00439     \}}
+\DoxyCodeLine{00440 }
+\DoxyCodeLine{00441     \textcolor{comment}{// Clear the flag.}}
+\DoxyCodeLine{00442     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>PR, \mbox{\hyperlink{group__interrupt__lines_ga5d9011faf4106bf40c74ff617b1e4973}{EXTI\_LINE0}});}
+\DoxyCodeLine{00443 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00102}{EXTI\+\_\+\+LINE0}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00100}{EXTI\+\_\+\+LINE0}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 

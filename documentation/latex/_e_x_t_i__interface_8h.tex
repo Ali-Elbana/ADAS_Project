@@ -56,18 +56,18 @@ struct \mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}}
 \item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_af54debc6d14edcd542b2d03f68b181b8}{MEXTI\+\_\+v\+Init}} (void)
 \begin{DoxyCompactList}\small\item\em Initialize the EXTI module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}}) A\+\_\+x\+Config)
+\begin{DoxyCompactList}\small\item\em Initialize the EXTI module with a certain configuration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_acc0d34262afbbf8fb80fe0bb2cebc918}{MEXTI\+\_\+v\+Enable\+Line}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Trigger\+Status)
 \begin{DoxyCompactList}\small\item\em Enable the interrupt on a certain line ID with a certain trigger status. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_a7f8e1cf9737221c093c9e47688d479ad}{MEXTI\+\_\+v\+Disable\+Line}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID)
 \begin{DoxyCompactList}\small\item\em Disable the interrupt on a certain line ID. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_ae2881aaec96ac2479b9f492786365db2}{MEXTI\+\_\+v\+SWITrigger}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID)
-\begin{DoxyCompactList}\small\item\em Set the callback when an interrupt occurs on a certain line ID. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em perform a software event interrupt on a certain line \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_a880e5ab4d3ca7fbfcde882970c5ac81b}{MEXTI\+\_\+v\+Set\+Trigger}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Trigger\+Status)
 \begin{DoxyCompactList}\small\item\em Set the trigger status interrupt on a certain line ID. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_e_x_t_i__interface_8h_aa5f9717a73277418aa8f6ba8aa0bc2de}{EXTI\+\_\+v\+Set\+Callback}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(void), A\+\_\+v\+Fptr)(void))
+void \mbox{\hyperlink{_e_x_t_i__interface_8h_a27b3d6539ddce7a1efc15743d5f57d92}{EXTI\+\_\+v\+Set\+Callback}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, void($\ast$A\+\_\+v\+Fptr)(void))
 \begin{DoxyCompactList}\small\item\em Set the callback when an interrupt occurs on a certain line ID. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}}) A\+\_\+x\+Config)
-\begin{DoxyCompactList}\small\item\em Initialize the EXTI module with a certain configuration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_a4ff2b0474ed8dbaef5b76d829e71e6ad}{MSYSCFG\+\_\+v\+Set\+EXTIPort}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID)
 \begin{DoxyCompactList}\small\item\em Enable the interrupt on a certain line in a certain port. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -101,6 +101,8 @@ Definition in file \mbox{\hyperlink{_e_x_t_i__interface_8h_source}{EXTI\+\_\+int
 
 Initialize the EXTI module. 
 
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]make sure that this function initializes the interrupt for all lines separately from the config \end{DoxyRefDesc}
 \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} 
 \end{DoxySeeAlso}
@@ -148,7 +150,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of 
 \DoxyCodeLine{00074 \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00075 }
 \DoxyCodeLine{00076     \textcolor{comment}{// Get the enabled line ID.}}
-\DoxyCodeLine{00077     GS\_u8EXTI\_EnabledLine\_ID = L\_u8ShiftedOffset;}
+\DoxyCodeLine{00077     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = L\_u8ShiftedOffset;}}
 \DoxyCodeLine{00078 }
 \DoxyCodeLine{00079     \textcolor{comment}{// Clear all flags.}}
 \DoxyCodeLine{00080     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>PR = 0xffffffff;}
@@ -156,7 +158,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of 
 \DoxyCodeLine{00082     \textcolor{comment}{// Enable EXTI on a line.}}
 \DoxyCodeLine{00083     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = 0;}
 \DoxyCodeLine{00084 }
-\DoxyCodeLine{00085     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = (\mbox{\hyperlink{group__exti__registers_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
+\DoxyCodeLine{00085     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = (\mbox{\hyperlink{group__exti__line__status_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
 \DoxyCodeLine{00086 }
 \DoxyCodeLine{00087 \textcolor{comment}{// Set EXTI Triggered status on a line.}}
 \DoxyCodeLine{00088 \textcolor{preprocessor}{\#if EXTI\_LINE0\_TRIGGER == EXTI\_RisingEdge}}
@@ -326,8 +328,28 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00068}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00053}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00085}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
+\mbox{\Hypertarget{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}\label{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}}
+\index{MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MEXTI\_vInit\_WithStruct()}{MEXTI\_vInit\_WithStruct()}}
+{\footnotesize\ttfamily void MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}})}]{A\+\_\+x\+Config }\end{DoxyParamCaption})}
+
+
+
+Initialize the EXTI module with a certain configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+x\+Config} & The configuration structure to initialize the interrupt with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Write this function \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_e_x_t_i__interface_8h_af54debc6d14edcd542b2d03f68b181b8}{MEXTI\+\_\+v\+Init}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{_e_x_t_i__interface_8h_acc0d34262afbbf8fb80fe0bb2cebc918}\label{_e_x_t_i__interface_8h_acc0d34262afbbf8fb80fe0bb2cebc918}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vEnableLine@{MEXTI\_vEnableLine}}
 \index{MEXTI\_vEnableLine@{MEXTI\_vEnableLine}!EXTI\_interface.h@{EXTI\_interface.h}}
@@ -368,15 +390,13 @@ Disable the interrupt on a certain line ID.
 
 
 
-Set the callback when an interrupt occurs on a certain line ID. 
+perform a software event interrupt on a certain line 
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Line\+ID} & Which line to disable the interrupt on \\
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Line\+ID} & The line ID to perform the software event interrupt on \\
 \hline
 \end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]document this function \end{DoxyRefDesc}
 \mbox{\Hypertarget{_e_x_t_i__interface_8h_a880e5ab4d3ca7fbfcde882970c5ac81b}\label{_e_x_t_i__interface_8h_a880e5ab4d3ca7fbfcde882970c5ac81b}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vSetTrigger@{MEXTI\_vSetTrigger}}
 \index{MEXTI\_vSetTrigger@{MEXTI\_vSetTrigger}!EXTI\_interface.h@{EXTI\_interface.h}}
@@ -394,11 +414,11 @@ Set the trigger status interrupt on a certain line ID.
 \mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Trigger\+Status} & The trigger status to trigger when the interrupt occurs \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{_e_x_t_i__interface_8h_aa5f9717a73277418aa8f6ba8aa0bc2de}\label{_e_x_t_i__interface_8h_aa5f9717a73277418aa8f6ba8aa0bc2de}} 
+\mbox{\Hypertarget{_e_x_t_i__interface_8h_a27b3d6539ddce7a1efc15743d5f57d92}\label{_e_x_t_i__interface_8h_a27b3d6539ddce7a1efc15743d5f57d92}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!EXTI\_vSetCallback@{EXTI\_vSetCallback}}
 \index{EXTI\_vSetCallback@{EXTI\_vSetCallback}!EXTI\_interface.h@{EXTI\_interface.h}}
 \doxysubsubsection{\texorpdfstring{EXTI\_vSetCallback()}{EXTI\_vSetCallback()}}
-{\footnotesize\ttfamily void EXTI\+\_\+v\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Line\+ID,  }\item[{\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(void), A\+\_\+v\+Fptr)(void)}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void EXTI\+\_\+v\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Line\+ID,  }\item[{void($\ast$)(void)}]{A\+\_\+v\+Fptr }\end{DoxyParamCaption})}
 
 
 
@@ -411,26 +431,6 @@ Set the callback when an interrupt occurs on a certain line ID.
 \mbox{\texttt{ in}}  & {\em A\+\_\+v\+Fptr} & The callback to call when the interrupt occurs on a certain line \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}\label{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}} 
-\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}}
-\index{MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}!EXTI\_interface.h@{EXTI\_interface.h}}
-\doxysubsubsection{\texorpdfstring{MEXTI\_vInit\_WithStruct()}{MEXTI\_vInit\_WithStruct()}}
-{\footnotesize\ttfamily void MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}})}]{A\+\_\+x\+Config }\end{DoxyParamCaption})}
-
-
-
-Initialize the EXTI module with a certain configuration. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em A\+\_\+x\+Config} & The configuration structure to initialize the interrupt with \\
-\hline
-\end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Write this function \end{DoxyRefDesc}
-\begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{_e_x_t_i__interface_8h_af54debc6d14edcd542b2d03f68b181b8}{MEXTI\+\_\+v\+Init}} 
-\end{DoxySeeAlso}
 \mbox{\Hypertarget{_e_x_t_i__interface_8h_a4ff2b0474ed8dbaef5b76d829e71e6ad}\label{_e_x_t_i__interface_8h_a4ff2b0474ed8dbaef5b76d829e71e6ad}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!MSYSCFG\_vSetEXTIPort@{MSYSCFG\_vSetEXTIPort}}
 \index{MSYSCFG\_vSetEXTIPort@{MSYSCFG\_vSetEXTIPort}!EXTI\_interface.h@{EXTI\_interface.h}}
@@ -448,5 +448,3 @@ Enable the interrupt on a certain line in a certain port.
 \mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & Port that the line belongs to \\
 \hline
 \end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Document this function \end{DoxyRefDesc}

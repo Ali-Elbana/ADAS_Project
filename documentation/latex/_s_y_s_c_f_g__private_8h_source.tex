@@ -2,37 +2,21 @@
 \label{_s_y_s_c_f_g__private_8h_source}\index{src/COTS/MCAL/EXTI/SYSCFG\_private.h@{src/COTS/MCAL/EXTI/SYSCFG\_private.h}}
 \mbox{\hyperlink{_s_y_s_c_f_g__private_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00001}00001 \textcolor{comment}{/*}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00002}00002 \textcolor{comment}{ * SYSCFG\_prv.h}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00003}00003 \textcolor{comment}{ *}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00004}00004 \textcolor{comment}{ *  Created on: Sep 1, 2022}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00005}00005 \textcolor{comment}{ *      Author: mazen}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00006}00006 \textcolor{comment}{ */}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00008}00008 \textcolor{preprocessor}{\#ifndef MCAL\_EXTI\_SYSCFG\_PRV\_H\_}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00009}00009 \textcolor{preprocessor}{\#define MCAL\_EXTI\_SYSCFG\_PRV\_H\_}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00010}00010 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00011}00011 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_TYPES.h"{}}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00012}00012 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00013}\mbox{\hyperlink{_s_y_s_c_f_g__private_8h_a178af247859ffadcac6dc6ca09105a19}{00013}} \textcolor{preprocessor}{\#define SYSCFG\_BASE\_ADDR    0x40013800}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00014}00014 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00015}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t}{00015}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00016}00016 \{}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00017}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a95cf3f8e3465f68632c27e43a613c3cb}{00017}}     u32 \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a95cf3f8e3465f68632c27e43a613c3cb}{MEMRMP}}        ;}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00018}00018 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00019}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a3feb0a9c685b3f1e4fce9db0185641c7}{00019}}     u32 \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a3feb0a9c685b3f1e4fce9db0185641c7}{PMC}}          ;}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00020}00020 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00021}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_aba346afedf674a563f62bca8af4c331f}{00021}}     u32 EXTICR[4]   ;}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00022}00022 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00023}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a29020ee45e39cbb69219e5f6a9607848}{00023}}     u32 \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a29020ee45e39cbb69219e5f6a9607848}{CMPCR}}      ;}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00024}00024 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00025}00025 \} \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t}{MSYSCFG\_MemMap\_t}} ;}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00027}00027 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00028}\mbox{\hyperlink{_s_y_s_c_f_g__private_8h_a531c08f5a73855527d044114a066fbb4}{00028}} \textcolor{preprocessor}{\#define MSYSCFG   ( (volatile MSYSCFG\_MemMap\_t*) (SYSCFG\_BASE\_ADDR) )}}
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00029}00029 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00030}00030 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00031}00031 }
-\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00032}00032 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* MCAL\_EXTI\_SYSCFG\_PRV\_H\_ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00010}00010 \textcolor{comment}{/* Header file guard */}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00011}00011 \textcolor{preprocessor}{\#ifndef MCAL\_EXTI\_SYSCFG\_PRV\_H\_}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00012}00012 \textcolor{preprocessor}{\#define MCAL\_EXTI\_SYSCFG\_PRV\_H\_}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00019}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t}{00019}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00025}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a4c087b6cf7378f441d7220551d4af2ee}{00025}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a4c087b6cf7378f441d7220551d4af2ee}{MEMRMP}};}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00029}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a7274b20c20aa13d31a31c4fa206fc001}{00029}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a7274b20c20aa13d31a31c4fa206fc001}{PMC}};}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00033}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a41dd996f605170c600ed422238f2c8d0}{00033}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} EXTICR[4];}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00037}\mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a8f1959f782e609544a8022ffd291dca4}{00037}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t_a8f1959f782e609544a8022ffd291dca4}{CMPCR}};}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00038}00038 \} \mbox{\hyperlink{struct_m_s_y_s_c_f_g___mem_map__t}{MSYSCFG\_MemMap\_t}};}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00051}\mbox{\hyperlink{group__syscfg__memory__addresses_ga178af247859ffadcac6dc6ca09105a19}{00051}} \textcolor{preprocessor}{\#define SYSCFG\_BASE\_ADDR (0x40013800)}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00064}\mbox{\hyperlink{group__syscfg__memory__registers_ga531c08f5a73855527d044114a066fbb4}{00064}} \textcolor{preprocessor}{\#define MSYSCFG ((volatile MSYSCFG\_MemMap\_t *)(SYSCFG\_BASE\_ADDR))}}
+\DoxyCodeLine{\Hypertarget{_s_y_s_c_f_g__private_8h_source_l00067}00067 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* MCAL\_EXTI\_SYSCFG\_PRV\_H\_ */}\textcolor{preprocessor}{}}
 
 \end{DoxyCode}

@@ -106,6 +106,8 @@ globals_w.html
 group__bitmath.html
 group__bitmathgroup.html
 group__compiler.html
+group__exti__line__settings.html
+group__exti__line__status.html
 group__exti__memory__addresses.html
 group__exti__registers.html
 group__gpio__addresses.html
@@ -121,6 +123,8 @@ group__gpio__registers.html
 group__interrupt__lines.html
 group__interrupt__trigger__status.html
 group__standardvalues.html
+group__syscfg__memory__addresses.html
+group__syscfg__memory__registers.html
 group__typedefs.html
 group__utilities.html
 index.html

@@ -34,9 +34,17 @@ typedef struct
 
 /**
  * @brief Initialize the EXTI module
+ * @todo make sure that this function initializes the interrupt for all lines separately from the config
  * @see MEXTI_vInit_WithStruct
  */
 void MEXTI_vInit(void);
+/**
+ * @brief Initialize the EXTI module with a certain configuration
+ * @param[in] A_xConfig The configuration structure to initialize the interrupt with
+ * @todo Write this function
+ * @see MEXTI_vInit
+ */
+void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig);
 
 /**
  * @brief Enable the interrupt on a certain line ID with a certain trigger status
@@ -52,9 +60,8 @@ void MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus);
 void MEXTI_vDisableLine(VAR(u8_t) A_u8LineID);
 
 /**
- * @brief Set the callback when an interrupt occurs on a certain line ID
- * @param[in] A_u8LineID Which line to disable the interrupt on
- * @todo document this function
+ * @brief perform a software event interrupt on a certain line
+ * @param[in] A_u8LineID The line ID to perform the software event interrupt on
  */
 void MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID);
 
@@ -70,21 +77,12 @@ void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus);
  * @param[in] A_u8LineID The line ID to set the callback on
  * @param[in] A_vFptr The callback to call when the interrupt occurs on a certain line
  */
-void EXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void));
-
-/**
- * @brief Initialize the EXTI module with a certain configuration
- * @param[in] A_xConfig The configuration structure to initialize the interrupt with
- * @todo Write this function
- * @see MEXTI_vInit
- */
-void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig);
+void EXTI_vSetCallback(VAR(u8_t) A_u8LineID, void (*A_vFptr)(void));
 
 /**
  * @brief Enable the interrupt on a certain line in a certain port
  * @param[in] A_u8LineID The line ID to to enable the interrupt onto
  * @param[in] A_u8PortID Port that the line belongs to
- * @todo Document this function
  */
 void MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID);
 

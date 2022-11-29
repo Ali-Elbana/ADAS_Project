@@ -17,11 +17,29 @@
  */
 typedef struct
 {
+	/**
+	 * @brief Interrupt mask register
+	 */
 	u32_t IMR;
+	/**
+	 * @brief Event mask register
+	 */
 	u32_t EMR;
+	/**
+	 * @brief Rising trigger status register
+	 */
 	u32_t RTSR;
+	/**
+	 * @brief Falling trigger status register
+	 */
 	u32_t FTSR;
+	/**
+	 * @brief Software interrupt event register
+	 */
 	u32_t SWIER;
+	/**
+	 * @brief Pending regiser
+	 */
 	u32_t PR;
 } EXTI_Type;
 
@@ -54,40 +72,37 @@ typedef struct
 /** @} */
 
 /**
- * @defgroup exti_registers EXTI Registers
+ * @defgroup exti_line_status EXTI Lines Status
  *
  * @{
  */
 
 /**
  * @def ENABLE
- * EXTI register
- * @todo Document this macro
+ * Enable a certain line ID from the config
  *
  */
 #define ENABLE (1)
 /**
  * @def DISABLE
- * EXTI register
- * @todo Document this macro
+ * Disable a certain line ID from the config
  *
  */
 #define DISABLE (2)
 /** @} */
 
 /**
- * @defgroup exti_registers EXTI Registers
+ * @defgroup exti_line_settings EXTI Line Settings
  *
  * @{
  */
 
 /**
- * @def EXTI_IRQs
- * @todo Document this macro
- * EXTI register
+ * @def EXTI_MAX_EXTI_NUM
+ * Maximum number of available interrupt lines
  *
  */
-#define EXTI_IRQs (23)
+#define EXTI_MAX_EXTI_NUM (16)
 /** @} */
 
 #endif //_EXTI_private_H
