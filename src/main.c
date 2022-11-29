@@ -19,9 +19,9 @@
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_Output RUN
+#define TestingGPIO_Output STOP
 
-
+#define TestingGPIO_Input  RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -37,6 +37,11 @@ int main(void)
 
 	#endif
 
+	#if TestingGPIO_Input == RUN
+
+	TestingGPIO_InputPins( ) ;
+
+	#endif
 
 
 	while(TRUE) ;

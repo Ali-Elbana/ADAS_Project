@@ -13,7 +13,7 @@
 
 void TestingGPIO_OutputPins( void ) ;
 
-
+void TestingGPIO_InputPins( void ) 	;
 
 
 

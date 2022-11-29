@@ -95,9 +95,81 @@ void TestingGPIO_OutputPins( void )
 /**************************************************************************************/
 /**************************************************************************************/
 
+void TestingGPIO_InputPins( void )
+{
 
 
+	VAR( u8_t ) L_u8InputPIN ;
 
+	MRCC_vInit( ) ;
+
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
+
+	MGPIOx_vLockedPins( ) ;
+
+	MGPIOx_ConfigType switch1 =
+	{
+
+			.Port 			= GPIO_PORTB 		,
+
+			.Pin 			= GPIOx_PIN0 		,
+
+			.Mode 			= GPIOx_MODE_INPUT ,
+
+			.OutputType 	= GPIOx_PUSHPULL 	,
+
+			.OutputSpeed 	= GPIOx_LowSpeed 	,
+
+			.InputType 		= GPIOx_PullDown
+
+	} ;
+
+
+	MGPIOx_ConfigType LED1 =
+	{
+
+			.Port 			= GPIO_PORTA 		,
+
+			.Pin 			= GPIOx_PIN0 		,
+
+			.Mode 			= GPIOx_MODE_OUTPUT ,
+
+			.OutputType 	= GPIOx_PUSHPULL 	,
+
+			.OutputSpeed 	= GPIOx_LowSpeed 	,
+
+			.InputType 		= GPIOx_NoPull
+
+	} ;
+
+
+	MGPIOx_vInit( &switch1 ) ;
+
+	MGPIOx_vInit( &LED1 ) ;
+
+	while( TRUE )
+	{
+
+		L_u8InputPIN = MGPIOx_u8GetPinValue(switch1.Port, switch1.Pin) ;
+
+		if( L_u8InputPIN == 1 )
+		{
+			MGPIOx_vSetPinValue( LED1.Port, LED1.Pin, GPIOx_HIGH ) ;
+		}
+
+		else
+		{
+			MGPIOx_vSetPinValue( LED1.Port, LED1.Pin, GPIOx_LOW ) ;
+		}
+
+	}
+
+
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 
 
