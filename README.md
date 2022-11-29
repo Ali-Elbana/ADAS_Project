@@ -24,4 +24,4 @@ Driver health care is a system that is responsible for the detection of the driv
 
 This project is developed using:
 
-- Micro controller: `STM32F401CCU6`
+- Microcontroller: `STM32F401CCU6`
