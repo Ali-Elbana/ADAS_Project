@@ -2,6 +2,11 @@
   "files.associations": {
     "*.inc": "amxxpawn",
     "*.sma": "amxxpawn",
-    "lstd_types.h": "c"
+    "lstd_types.h": "c",
+    "lstd_values.h": "c",
+    "exti_config.h": "c",
+    "exti_private.h": "c",
+    "syscfg_private.h": "c",
+    "lstd_compiler.h": "c"
   }
 }

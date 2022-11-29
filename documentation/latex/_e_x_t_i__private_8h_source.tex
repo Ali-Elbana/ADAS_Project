@@ -1,0 +1,27 @@
+\hypertarget{_e_x_t_i__private_8h_source}{}\doxysection{EXTI\+\_\+private.\+h}
+\label{_e_x_t_i__private_8h_source}\index{src/COTS/MCAL/EXTI/EXTI\_private.h@{src/COTS/MCAL/EXTI/EXTI\_private.h}}
+\mbox{\hyperlink{_e_x_t_i__private_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00009}00009 \textcolor{comment}{/* Header file guard */}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00010}00010 \textcolor{preprocessor}{\#ifndef \_EXTI\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00011}00011 \textcolor{preprocessor}{\#define \_EXTI\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00018}\mbox{\hyperlink{struct_e_x_t_i___type}{00018}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00020}\mbox{\hyperlink{struct_e_x_t_i___type_a0fa7368da626b2ce9c1ce7827fafb644}{00020}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_e_x_t_i___type_a0fa7368da626b2ce9c1ce7827fafb644}{IMR}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00021}\mbox{\hyperlink{struct_e_x_t_i___type_a784633a4b35360004ea59e16b4bc6f08}{00021}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_e_x_t_i___type_a784633a4b35360004ea59e16b4bc6f08}{EMR}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00022}\mbox{\hyperlink{struct_e_x_t_i___type_a163576b305c3d33592299697b43d973d}{00022}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_e_x_t_i___type_a163576b305c3d33592299697b43d973d}{RTSR}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00023}\mbox{\hyperlink{struct_e_x_t_i___type_a0e01a3408c97388d6f151687ab3f4224}{00023}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_e_x_t_i___type_a0e01a3408c97388d6f151687ab3f4224}{FTSR}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00024}\mbox{\hyperlink{struct_e_x_t_i___type_a07e7192b1134e7d0ea8b1b5d015f629f}{00024}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_e_x_t_i___type_a07e7192b1134e7d0ea8b1b5d015f629f}{SWIER}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00025}\mbox{\hyperlink{struct_e_x_t_i___type_ae15431e44fc9844b9a897d435b568dee}{00025}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_e_x_t_i___type_ae15431e44fc9844b9a897d435b568dee}{PR}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00026}00026 \} \mbox{\hyperlink{struct_e_x_t_i___type}{EXTI\_Type}};}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00039}\mbox{\hyperlink{group__exti__memory__addresses_gab1b4b692d1672fd6b3b42757de83122a}{00039}} \textcolor{preprocessor}{\#define EXTI\_BASE\_ADDRESS (0x40013C00)}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00053}\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{00053}} \textcolor{preprocessor}{\#define MEXTI ((volatile P2VAR(EXTI\_Type))(EXTI\_BASE\_ADDRESS))}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00068}\mbox{\hyperlink{group__exti__registers_ga514ad415fb6125ba296793df7d1a468a}{00068}} \textcolor{preprocessor}{\#define ENABLE (1)}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00075}\mbox{\hyperlink{group__exti__registers_ga99496f7308834e8b220f7894efa0b6ab}{00075}} \textcolor{preprocessor}{\#define DISABLE (2)}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00090}\mbox{\hyperlink{group__exti__registers_ga5696d3b03a8cc0e124a164497c129681}{00090}} \textcolor{preprocessor}{\#define EXTI\_IRQs (23)}}
+\DoxyCodeLine{\Hypertarget{_e_x_t_i__private_8h_source_l00093}00093 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_EXTI\_private\_H}}
+
+\end{DoxyCode}
