@@ -1,0 +1,77 @@
+\hypertarget{_n_v_i_c__private_8h}{}\doxysection{COTS/\+MCAL/\+NVIC/\+NVIC\+\_\+private.h File Reference}
+\label{_n_v_i_c__private_8h}\index{COTS/MCAL/NVIC/NVIC\_private.h@{COTS/MCAL/NVIC/NVIC\_private.h}}
+
+
+This file contains the registers information and addresses for the NVIC module.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_n_v_i_c___memory_map_type}{NVIC\+\_\+\+Memory\+Map\+Type}}
+\begin{DoxyCompactList}\small\item\em NVIC configuration structure for NVIC memory map. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_s_c_b___memory_map_type}{SCB\+\_\+\+Memory\+Map\+Type}}
+\begin{DoxyCompactList}\small\item\em System control block memory map structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__nvic__addresses_ga34bb69bb1cf664ded3f70c7c70076046}{NVIC\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x\+E000\+E100)
+\begin{DoxyCompactList}\small\item\em NVIC base address. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__nvic__addresses_gaa677236f48778f5c6d5cc28679e9f2c6}{SCB\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x\+E000\+ED00)
+\begin{DoxyCompactList}\small\item\em SCB base address. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_s_c_b___memory_map_type}{SCB\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__nvic__addresses_gaa677236f48778f5c6d5cc28679e9f2c6}{SCB\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_n_v_i_c___memory_map_type}{NVIC\+\_\+\+Memory\+Map\+Type}}))(\mbox{\hyperlink{group__nvic__addresses_ga34bb69bb1cf664ded3f70c7c70076046}{NVIC\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{_n_v_i_c__private_8h_a9c228760273574d427b5d2bbcccc6c22}{VECTKEY\+\_\+\+PASSWORD}}~(0x05\+FA0000)
+\begin{DoxyCompactList}\small\item\em VECTKEY Password. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__nvic__settable__priorities_ga8553be2a10dccdecaf91ac8f8a2f294d}{PEND\+\_\+\+SV}}~(-\/6)
+\item 
+\#define \mbox{\hyperlink{group__nvic__settable__priorities_gad942404ac7d5ff6c1c65dec93525dcb9}{SYSTICK}}~(-\/5)
+\item 
+\#define \mbox{\hyperlink{group__nvic__settable__priorities_ga4e52bc38abb211c86b23c54cbec2bde2}{SV\+\_\+\+CALL}}~(-\/4)
+\item 
+\#define \mbox{\hyperlink{group__nvic__settable__priorities_gaffd50de6dc17574cfc949534345ee91c}{MEMORY\+\_\+\+MANAGE}}~(-\/3)
+\item 
+\#define \mbox{\hyperlink{group__nvic__settable__priorities_ga299f51d175d1b539575c86f3090ea740}{BUS\+\_\+\+FAULT}}~(-\/2)
+\item 
+\#define \mbox{\hyperlink{group__nvic__settable__priorities_ga74cc0334396805a1f1afa1c34f184986}{USAGE\+\_\+\+FAULT}}~(-\/1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the registers information and addresses for the NVIC module. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/22/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_n_v_i_c__private_8h_a9c228760273574d427b5d2bbcccc6c22}\label{_n_v_i_c__private_8h_a9c228760273574d427b5d2bbcccc6c22}} 
+\index{NVIC\_private.h@{NVIC\_private.h}!VECTKEY\_PASSWORD@{VECTKEY\_PASSWORD}}
+\index{VECTKEY\_PASSWORD@{VECTKEY\_PASSWORD}!NVIC\_private.h@{NVIC\_private.h}}
+\doxysubsubsection{\texorpdfstring{VECTKEY\_PASSWORD}{VECTKEY\_PASSWORD}}
+{\footnotesize\ttfamily \#define VECTKEY\+\_\+\+PASSWORD~(0x05\+FA0000)}
+
+
+
+VECTKEY Password. 
+
+This is the VECTKEY field password that must provides on every write attempt on the AIRCR register \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_s_c_b___memory_map_type_a6dd3adb726c2bd36ea906249c352b0bb}{SCB\+\_\+\+Memory\+Map\+Type\+::\+AIRCR}} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00254}{254}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+

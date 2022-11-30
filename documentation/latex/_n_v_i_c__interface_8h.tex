@@ -1,0 +1,403 @@
+\hypertarget{_n_v_i_c__interface_8h}{}\doxysection{COTS/\+MCAL/\+NVIC/\+NVIC\+\_\+interface.h File Reference}
+\label{_n_v_i_c__interface_8h}\index{COTS/MCAL/NVIC/NVIC\_interface.h@{COTS/MCAL/NVIC/NVIC\_interface.h}}
+
+
+This file contains the interface information and addresses for the NVIC module.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_ga07c28a8e61dae934727bbf23e4c65e34}{\+\_\+16\+GROUP\+\_\+\+No\+Sub\+\_\+\+Priorities}}~(0b000)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 16} groups and {\ttfamily 0} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_ga9be7891db281c11f8089caf9e2623848}{\+\_\+8\+GROUP\+\_\+2\+Sub\+\_\+\+Priorities}}~(0b100)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 8} groups and {\ttfamily 2} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_ga0414733f379f77ad20b4cc6c6401ebf6}{\+\_\+4\+GROUP\+\_\+4\+Sub\+\_\+\+Priorities}}~(0b101)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 4} groups and {\ttfamily 4} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_gab0d59c4c79896f432259094f14392d33}{\+\_\+2\+GROUP\+\_\+8\+Sub\+\_\+\+Priorities}}~(0b110)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 2} groups and {\ttfamily 8} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_gaa105a49b538c0cacaf99d28984e0b017}{No\+GROUP\+\_\+16\+Sub\+\_\+\+Priorities}}~(0b111)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 0} groups and {\ttfamily 16} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_gaab48df02c25aea8dd3fb004b751d4a63}{GROUP\+\_\+4\+BITS}}~(0b000)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 16} groups and {\ttfamily 0} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_gaf2884ad77698e872ff648aa671384fd8}{GROUP\+\_\+3\+BITS}}~(0b100)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 8} groups and {\ttfamily 2} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_gac56cee9067e82b91756b2fa0b1484e64}{GROUP\+\_\+2\+BITS}}~(0b101)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 4} groups and {\ttfamily 4} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_ga0f96187d801e1f5062c2f89cecdef74b}{GROUP\+\_\+1\+BITS}}~(0b110)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 2} groups and {\ttfamily 8} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__interrupt__prioty__grouping_ga7da47fcaa7edc5c851284de3edef6687}{GROUP\+\_\+0\+BITS}}~(0b111)
+\begin{DoxyCompactList}\small\item\em {\ttfamily 0} groups and {\ttfamily 16} sub-\/groups \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga31c9186fc8777ca9e9ebd52c3fdbeb01}{NO\+\_\+\+GROUP\+\_\+\+PRIORITY}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga8e2b88c7817a97f90e97d6d604012132}{GROUP\+\_\+\+PRIORITY\+\_\+0}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_gaad545d5912d156c5323fa30c92a0bedd}{GROUP\+\_\+\+PRIORITY\+\_\+1}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_gac1a337673df1832beba5a3d95aac62d8}{GROUP\+\_\+\+PRIORITY\+\_\+2}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga840c17b14a323357154c81750c4d6f14}{GROUP\+\_\+\+PRIORITY\+\_\+3}}~(3)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga7ecb99a5cd5f23f825aea11eb23d31d1}{GROUP\+\_\+\+PRIORITY\+\_\+4}}~(4)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_gaa624e3d6ecc3491047ab0c2ef32d223c}{GROUP\+\_\+\+PRIORITY\+\_\+5}}~(5)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga0c3f4c5cb37b1c889d5437f08ce147e6}{GROUP\+\_\+\+PRIORITY\+\_\+6}}~(6)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga4a6073002cd39491b98dbef13a115cb1}{GROUP\+\_\+\+PRIORITY\+\_\+7}}~(7)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga5d807339d59cd0b08048435b43e0b501}{GROUP\+\_\+\+PRIORITY\+\_\+8}}~(8)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_gaa563f4926151d6774ea77bbb37be5543}{GROUP\+\_\+\+PRIORITY\+\_\+9}}~(9)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga8b70ccb330f27632d8444b03381f19ff}{GROUP\+\_\+\+PRIORITY\+\_\+10}}~(10)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga4763a5a6c08a00c96599a52531cd8a45}{GROUP\+\_\+\+PRIORITY\+\_\+11}}~(11)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga9643077f4181f690e4c675b91e789ffa}{GROUP\+\_\+\+PRIORITY\+\_\+12}}~(12)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga56ad3accc01037831e142102c14bf651}{GROUP\+\_\+\+PRIORITY\+\_\+13}}~(13)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_ga8633e8698ed0d3b16db7566858999377}{GROUP\+\_\+\+PRIORITY\+\_\+14}}~(14)
+\item 
+\#define \mbox{\hyperlink{group__group__prioty_gab03ce7a5cd5902cacf0738dc1eb6b58d}{GROUP\+\_\+\+PRIORITY\+\_\+15}}~(15)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga0f459c644dd1567a391ba2fb7f1d13e7}{NO\+\_\+\+SUB\+\_\+\+PRIORITY}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga4da2ef75d0cdab029ad424f6df82c40e}{SUB\+\_\+\+PRIORITY\+\_\+0}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gaa47bd8f1615876728b070742ad34d7b7}{SUB\+\_\+\+PRIORITY\+\_\+1}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gad465fa4963eb6b31d0bdcaf5285801b8}{SUB\+\_\+\+PRIORITY\+\_\+2}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gabeffdea416cc02d6c4e10a2f87e458a1}{SUB\+\_\+\+PRIORITY\+\_\+3}}~(3)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga0903e82e4624117ad2ada96868aee136}{SUB\+\_\+\+PRIORITY\+\_\+4}}~(4)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga90222b7eb8a124b1875a5a8c9de65df9}{SUB\+\_\+\+PRIORITY\+\_\+5}}~(5)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gabd2d487a9681537030467b4e1eb3ab7a}{SUB\+\_\+\+PRIORITY\+\_\+6}}~(6)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga4917f7ffbe2cdf173a14996458dfebca}{SUB\+\_\+\+PRIORITY\+\_\+7}}~(7)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga75bf82bad3d707d583f2597007ed0349}{SUB\+\_\+\+PRIORITY\+\_\+8}}~(8)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga7b193d761d3a7df3c993852009be6fa0}{SUB\+\_\+\+PRIORITY\+\_\+9}}~(9)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gad64721677ea9519590c9c174e8170af4}{SUB\+\_\+\+PRIORITY\+\_\+10}}~(10)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga44b7556d8efe2c57312171e379ef7e21}{SUB\+\_\+\+PRIORITY\+\_\+11}}~(11)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga3a631580150154a629b95e09a7abae23}{SUB\+\_\+\+PRIORITY\+\_\+12}}~(12)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gaf31a3ee684df87d79d8bf57b7edb24ab}{SUB\+\_\+\+PRIORITY\+\_\+13}}~(13)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_gabe076a46e47c391c2bca54ecb1548ad2}{SUB\+\_\+\+PRIORITY\+\_\+14}}~(14)
+\item 
+\#define \mbox{\hyperlink{group__sub__group__prioty_ga8a84641869c3a7c7a14ab09cbd7189d2}{SUB\+\_\+\+PRIORITY\+\_\+15}}~(15)
+\item 
+\#define \mbox{\hyperlink{group__vector__table_ga9821fd01757986612ddb8982e2fe27f1}{WWDG}}~(0)
+\begin{DoxyCompactList}\small\item\em Window Watchdog (WWDG) Interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga08c3a430730f8ed59b2a8f13259f2ad7}{EXTI16}}~(1)
+\begin{DoxyCompactList}\small\item\em EXTI Line 16 interrupt / PVD through EXTI line detection interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga5424e78536b2ad7c9286dd4a25aa2fbb}{EXTI21}}~(2)
+\begin{DoxyCompactList}\small\item\em EXTI Line 21 interrupt / Tamper and Time\+Stamp interrupts through the EXTI line. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga106b779d4271f872067630bfd4b2ae64}{EXTI22}}~(3)
+\begin{DoxyCompactList}\small\item\em EXTI Line 22 interrupt / RTC (Real-\/time clock) wakeup interrupt through the EXTI line. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga844ea28ba1e0a5a0e497f16b61ea306b}{FLASH}}~(4)
+\begin{DoxyCompactList}\small\item\em Flash global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}~(5)
+\begin{DoxyCompactList}\small\item\em RCC global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga77d55cf55a67ff5d43794d24f7cb9922}{EXTI0}}~(6)
+\begin{DoxyCompactList}\small\item\em EXTI Line 0 interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gabcd18cd089259e5c95d338adc4949821}{EXTI1}}~(7)
+\begin{DoxyCompactList}\small\item\em EXTI Line 1 interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gac1864c46eb6702208ff59e4ececd3776}{EXTI2}}~(8)
+\begin{DoxyCompactList}\small\item\em EXTI Line 2 interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga205d284100ff421b0b4b13fd5950d912}{EXTI3}}~(9)
+\begin{DoxyCompactList}\small\item\em EXTI Line 3 interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga57183bff31f5cbbfbb5d24856c2ded44}{EXTI4}}~(10)
+\begin{DoxyCompactList}\small\item\em EXTI Line 4 interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gabb325344bf3ab820d93354e366861e70}{DMA1\+\_\+\+STREAM0}}~(11)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 0 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gaa2a9ef0918dfa94c18970a59a638be35}{DMA1\+\_\+\+STREAM1}}~(12)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 1 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga7aa893ebe356de882dfc096bb4640d4c}{DMA1\+\_\+\+STREAM2}}~(13)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 2 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga6e8be57ac11cbec15bc3e78b6ba5ef98}{DMA1\+\_\+\+STREAM3}}~(14)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 3 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga39e838dea0fa600e475a0e3b2d1a7a8f}{DMA1\+\_\+\+STREAM4}}~(15)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 4 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gac10b6313da1f7943da3f9c5b04ad86e7}{DMA1\+\_\+\+STREAM5}}~(16)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 5 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga1a5e1a8ed679141575cfd595ff1a5c41}{DMA1\+\_\+\+STREAM6}}~(17)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 6 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga54d148b91f3d356713f7e367a2243bea}{ADC}}~(18)
+\begin{DoxyCompactList}\small\item\em ADC (Analog-\/\+To-\/\+Digital Converter) ADC1 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gaf8f6b46d0fb67f0722f18a57bb09324d}{EXTI9}}~(23)
+\begin{DoxyCompactList}\small\item\em EXTI Lines \mbox{[}9\+:5\mbox{]} interrupts. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga8413d3a8795a9cfa6351ffdb7760d4d1}{TIM1\+\_\+\+BRK\+\_\+\+TIM9}}~(24)
+\begin{DoxyCompactList}\small\item\em TIM1 (Timer 1) break interrupt and TIM9 (Timer 9) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga3080182b4f83c26bdb603ae54ef1252f}{TIM1\+\_\+\+UP\+\_\+\+TIM10}}~(25)
+\begin{DoxyCompactList}\small\item\em TIM1 (Timer 1) udpate interrupt and TIM10 (Timer 10) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga7d87ca2931bfc1500e9116807f9beaef}{TIM1\+\_\+\+TRG\+\_\+\+COM\+\_\+\+TIM11}}~(26)
+\begin{DoxyCompactList}\small\item\em TIM1 (Timer 1) trigger and commutation itnerrupts and TIM11 (Timer 11) global interrupts. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga1b674b2e6588c20d9076f8757b7fd05b}{TIM1\+\_\+\+CC}}~(27)
+\begin{DoxyCompactList}\small\item\em TIM1 (Timer 1) capture compare interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga3cfac9f2e43673f790f8668d48b4b92b}{TIM2}}~(28)
+\begin{DoxyCompactList}\small\item\em TIM2 (Timer 2) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga61ee4c391385607d7af432b63905fcc9}{TIM3}}~(29)
+\begin{DoxyCompactList}\small\item\em TIM3 (Timer 3) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga91a09bad8bdc7a1cb3d85cf49c94c8ec}{TIM4}}~(30)
+\begin{DoxyCompactList}\small\item\em TIM4 (Timer 4) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga8dfb025cdb17bca9406431658f765579}{I2\+C1\+\_\+\+EV}}~(31)
+\begin{DoxyCompactList}\small\item\em I2\+C1 (Inter-\/integrated Circuit 1) event interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga2121f3f8cd827bf5db2d8706964c9487}{I2\+C1\+\_\+\+ER}}~(32)
+\begin{DoxyCompactList}\small\item\em I2\+C1 (Inter-\/integrated Circuit 1) error interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga8be8975cc53e74fee9bb91808653fe9a}{I2\+C2\+\_\+\+EV}}~(33)
+\begin{DoxyCompactList}\small\item\em I2\+C2 (Inter-\/integrated Circuit 2) event interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga54706b76d67a753ba42924b8b2d11907}{I2\+C2\+\_\+\+ER}}~(34)
+\begin{DoxyCompactList}\small\item\em I2\+C2 (Inter-\/integrated Circuit 2) error interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}}~(35)
+\begin{DoxyCompactList}\small\item\em SPI1 (Serial Peripheral Interface 1) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gaf2c3d8ce359dcfbb2261e07ed42af72b}{SPI2}}~(36)
+\begin{DoxyCompactList}\small\item\em SPI2 (Serial Peripheral Interface 2) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga92871691058ff7ccffd7635930cb08da}{USART1}}~(37)
+\begin{DoxyCompactList}\small\item\em USART1 (Universal Synchronous/\+Asynchronous Receiver/\+Transmitter 1) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gaf114a9eab03ca08a6fb720e511595930}{USART2}}~(38)
+\begin{DoxyCompactList}\small\item\em USART2 (Universal Synchronous/\+Asynchronous Receiver/\+Transmitter 2) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga94d83ccc2e1b59a9e954ff82c8412712}{EXTI15\+\_\+10}}~(30)
+\begin{DoxyCompactList}\small\item\em EXTI Line\mbox{[}15\+:10\mbox{]} interrupts. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga70fa93598715b662d570d5e9f02add04}{EXTI17}}~(41)
+\begin{DoxyCompactList}\small\item\em EXTI Line 17 interrupt / RTC Alarms (A and B) through EXTI line interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga46d5e165580f7e0d8a32500b68682d19}{EXTI18}}~(42)
+\begin{DoxyCompactList}\small\item\em EXTI Line 18 interrupt / USB On-\/\+The-\/\+Go FS Wakeup through EXTI line interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gad65baca06f113a2340e5e00abb25fc78}{DMA1\+\_\+\+STREAM7}}~(47)
+\begin{DoxyCompactList}\small\item\em DMA1 (Direct Memory Access) Steam 7 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga8149aa2760fffac16bc75216d5fd9331}{SDIO}}~(49)
+\begin{DoxyCompactList}\small\item\em SDIO (Secure Digital Input Output) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga5125ff6a23a2ed66e2e19bd196128c14}{TIM5}}~(50)
+\begin{DoxyCompactList}\small\item\em TIM5 (Timer 5) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gab2339cbf25502bf562b19208b1b257fc}{SPI3}}~(51)
+\begin{DoxyCompactList}\small\item\em SPI3 (Serial Peripheral Interface 3) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga0b6fa3a07607a6d9eb6f305f1ca1a345}{DMA2\+\_\+\+STREAM0}}~(56)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 0 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga9b270e74a56d5a37e65ee890af39ce7a}{DMA2\+\_\+\+STREAM1}}~(57)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 1 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gafb683f8af7af0075e2b253a815ac53e6}{DMA2\+\_\+\+STREAM2}}~(58)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 2 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga14fe483b7785fe05710877fed9ab07c8}{DMA2\+\_\+\+STREAM3}}~(59)
+\item 
+\#define \mbox{\hyperlink{group__vector__table_ga5b012d6c35e0154a0323abea3326a239}{DMA2\+\_\+\+STREAM4}}~(60)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 4 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gac6da148c09f511d1a6b951151614ccef}{OTG\+\_\+\+FS}}~(67)
+\begin{DoxyCompactList}\small\item\em USB On The Go FS global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga57a817146fe5ca233e8a8af2366b8796}{DMA2\+\_\+\+STREAM5}}~(68)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 3 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gaa805a63d66104f6f0dc048f9d063ed49}{DMA2\+\_\+\+STREAM6}}~(69)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 6 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gaf73ac59b037781c5cc0cc3562ffacadc}{DMA2\+\_\+\+STREAM7}}~(70)
+\begin{DoxyCompactList}\small\item\em DMA2 (Direct Memory Access 2) Steam 7 global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga2dab39a19ce3dd05fe360dcbb7b5dc84}{USART6}}~(71)
+\begin{DoxyCompactList}\small\item\em USART6 (Universal Synchronous/\+Asynchronous Receiver/\+Transmitter 6) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_gae5aabf8fab090c635d9f67a4d80bd3ae}{I2\+C3\+\_\+\+EV}}~(72)
+\begin{DoxyCompactList}\small\item\em I2\+C3 (Inter-\/integrated Circuit 3) event interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga16292a4165295cd81f1aa02b3757693f}{I2\+C3\+\_\+\+ER}}~(73)
+\item 
+\#define \mbox{\hyperlink{group__vector__table_gabc7c93f2594e85ece1e1a24f10591428}{FPU}}~(81)
+\begin{DoxyCompactList}\small\item\em FPU (Floating Point Unit) global interrupt. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__vector__table_ga2a2e6edef68cfe1946f39a5033da2301}{SPI4}}~(84)
+\begin{DoxyCompactList}\small\item\em SPI4 (Serial Peripheral Interface 4) global interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_n_v_i_c__interface_8h_ae2803f8dc399562d3dd0ffc4147c409c}{MNVIC\+\_\+v\+Enable\+Periphral}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+INTID)
+\begin{DoxyCompactList}\small\item\em Enable the interrupt of a certain peripheral in NVIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_n_v_i_c__interface_8h_a6c8d2e254b3866055f3a6a56b85968c6}{MNVIC\+\_\+v\+Disable\+Periphral}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+INTID)
+\begin{DoxyCompactList}\small\item\em Disable the interrupt of a certain peripheral in NVIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_n_v_i_c__interface_8h_a6ab8b8b781e3e0e9786faf33301a2dad}{MNVIC\+\_\+v\+Set\+Pending\+Flag}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+INTID)
+\begin{DoxyCompactList}\small\item\em Set the pending flag of the peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_n_v_i_c__interface_8h_a6950f540eeb30d4d2891f2f6bf87220e}{MNVIC\+\_\+v\+Clear\+Pending\+Flag}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+INTID)
+\begin{DoxyCompactList}\small\item\em Clear the pending flag of the peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_n_v_i_c__interface_8h_a20c911eec57f58191cdb1705e6f7f34f}{MNVIC\+\_\+u8\+Get\+Active}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+INTID)
+\begin{DoxyCompactList}\small\item\em Get the current state of the interrupt active flag of a certain peripheral in NVIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_n_v_i_c__interface_8h_ad172d11f79d53101b9054c7114f56756}{MNVIC\+\_\+v\+Set\+Priority\+Config}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Priority\+Option)
+\begin{DoxyCompactList}\small\item\em Configures the group and sub-\/group priority configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_n_v_i_c__interface_8h_af25c5527f363448764d8f65b79238b88}{MNVIC\+\_\+v\+Set\+Priority}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}}) A\+\_\+s8\+INTID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Group\+Priority, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Sub\+Priority)
+\begin{DoxyCompactList}\small\item\em Set the group and the sub-\/group priorities for the required interrupt. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{_n_v_i_c__interface_8h_ad3b1911350db17d52b25477f9b94642a}{NVIC\+\_\+\+Get\+Priority}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}}) A\+\_\+s8\+INTID)
+\begin{DoxyCompactList}\small\item\em Applys an alternative function on a certain pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the interface information and addresses for the NVIC module. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/25/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_n_v_i_c__interface_8h_source}{NVIC\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_ae2803f8dc399562d3dd0ffc4147c409c}\label{_n_v_i_c__interface_8h_ae2803f8dc399562d3dd0ffc4147c409c}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_vEnablePeriphral@{MNVIC\_vEnablePeriphral}}
+\index{MNVIC\_vEnablePeriphral@{MNVIC\_vEnablePeriphral}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vEnablePeriphral()}{MNVIC\_vEnablePeriphral()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Enable\+Periphral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Enable the interrupt of a certain peripheral in NVIC. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+INTID} & The peripheral\textquotesingle{}s interrupt ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_n_v_i_c__interface_8h_a6c8d2e254b3866055f3a6a56b85968c6}{MNVIC\+\_\+v\+Disable\+Periphral}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_a6c8d2e254b3866055f3a6a56b85968c6}\label{_n_v_i_c__interface_8h_a6c8d2e254b3866055f3a6a56b85968c6}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_vDisablePeriphral@{MNVIC\_vDisablePeriphral}}
+\index{MNVIC\_vDisablePeriphral@{MNVIC\_vDisablePeriphral}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vDisablePeriphral()}{MNVIC\_vDisablePeriphral()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Disable\+Periphral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Disable the interrupt of a certain peripheral in NVIC. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+INTID} & The peripheral\textquotesingle{}s interrupt ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_n_v_i_c__interface_8h_ae2803f8dc399562d3dd0ffc4147c409c}{MNVIC\+\_\+v\+Enable\+Periphral}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_a6ab8b8b781e3e0e9786faf33301a2dad}\label{_n_v_i_c__interface_8h_a6ab8b8b781e3e0e9786faf33301a2dad}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_vSetPendingFlag@{MNVIC\_vSetPendingFlag}}
+\index{MNVIC\_vSetPendingFlag@{MNVIC\_vSetPendingFlag}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vSetPendingFlag()}{MNVIC\_vSetPendingFlag()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Set\+Pending\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Set the pending flag of the peripheral. 
+
+\begin{DoxyNote}{Note}
+Used mostly for testing 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+INTID} & The peripheral\textquotesingle{}s interrupt ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_n_v_i_c__interface_8h_a6950f540eeb30d4d2891f2f6bf87220e}{MNVIC\+\_\+v\+Clear\+Pending\+Flag}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_a6950f540eeb30d4d2891f2f6bf87220e}\label{_n_v_i_c__interface_8h_a6950f540eeb30d4d2891f2f6bf87220e}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_vClearPendingFlag@{MNVIC\_vClearPendingFlag}}
+\index{MNVIC\_vClearPendingFlag@{MNVIC\_vClearPendingFlag}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vClearPendingFlag()}{MNVIC\_vClearPendingFlag()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Clear\+Pending\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Clear the pending flag of the peripheral. 
+
+\begin{DoxyNote}{Note}
+Used mostly for testing 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+INTID} & The peripheral\textquotesingle{}s interrupt ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_n_v_i_c__interface_8h_a6ab8b8b781e3e0e9786faf33301a2dad}{MNVIC\+\_\+v\+Set\+Pending\+Flag}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_a20c911eec57f58191cdb1705e6f7f34f}\label{_n_v_i_c__interface_8h_a20c911eec57f58191cdb1705e6f7f34f}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_u8GetActive@{MNVIC\_u8GetActive}}
+\index{MNVIC\_u8GetActive@{MNVIC\_u8GetActive}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_u8GetActive()}{MNVIC\_u8GetActive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MNVIC\+\_\+u8\+Get\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Get the current state of the interrupt active flag of a certain peripheral in NVIC. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+INTID} & The peripheral\textquotesingle{}s interrupt ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current state of the interrupt active flag 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_ad172d11f79d53101b9054c7114f56756}\label{_n_v_i_c__interface_8h_ad172d11f79d53101b9054c7114f56756}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_vSetPriorityConfig@{MNVIC\_vSetPriorityConfig}}
+\index{MNVIC\_vSetPriorityConfig@{MNVIC\_vSetPriorityConfig}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vSetPriorityConfig()}{MNVIC\_vSetPriorityConfig()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Set\+Priority\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Priority\+Option }\end{DoxyParamCaption})}
+
+
+
+Configures the group and sub-\/group priority configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Priority\+Option} & The peripheral\textquotesingle{}s interrupt ID \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_af25c5527f363448764d8f65b79238b88}\label{_n_v_i_c__interface_8h_af25c5527f363448764d8f65b79238b88}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!MNVIC\_vSetPriority@{MNVIC\_vSetPriority}}
+\index{MNVIC\_vSetPriority@{MNVIC\_vSetPriority}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vSetPriority()}{MNVIC\_vSetPriority()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Set\+Priority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}})}]{A\+\_\+s8\+INTID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Group\+Priority,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Sub\+Priority }\end{DoxyParamCaption})}
+
+
+
+Set the group and the sub-\/group priorities for the required interrupt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+s8\+INTID} & The port that the pin belongs to \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Group\+Priority} & The pin to update its mode \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Sub\+Priority} & The alternative function to apply on the pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__group__prioty}{Group priorities}} 
+
+\mbox{\hyperlink{group__sub__group__prioty}{Sub-\/\+Group priorities}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_n_v_i_c__interface_8h_ad3b1911350db17d52b25477f9b94642a}\label{_n_v_i_c__interface_8h_ad3b1911350db17d52b25477f9b94642a}} 
+\index{NVIC\_interface.h@{NVIC\_interface.h}!NVIC\_GetPriority@{NVIC\_GetPriority}}
+\index{NVIC\_GetPriority@{NVIC\_GetPriority}!NVIC\_interface.h@{NVIC\_interface.h}}
+\doxysubsubsection{\texorpdfstring{NVIC\_GetPriority()}{NVIC\_GetPriority()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} NVIC\+\_\+\+Get\+Priority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}})}]{A\+\_\+s8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Applys an alternative function on a certain pin. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+s8\+INTID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

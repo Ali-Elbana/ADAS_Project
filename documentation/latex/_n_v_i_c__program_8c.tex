@@ -1,0 +1,312 @@
+\hypertarget{_n_v_i_c__program_8c}{}\doxysection{COTS/\+MCAL/\+NVIC/\+NVIC\+\_\+program.c File Reference}
+\label{_n_v_i_c__program_8c}\index{COTS/MCAL/NVIC/NVIC\_program.c@{COTS/MCAL/NVIC/NVIC\_program.c}}
+
+
+This file contains the source code of the interfacing for the NVIC modules.  
+
+
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}NVIC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}NVIC\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}NVIC\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\+\_\+\+SIZE}}~(32)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_n_v_i_c__program_8c_a34cd565de1d9b98de8d37cf69893fb4d}{MNVIC\+\_\+v\+Enable\+Periphral}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+INTID)
+\item 
+void \mbox{\hyperlink{_n_v_i_c__program_8c_a7e5d39f4f5b477fae79556b5b53f235f}{MNVIC\+\_\+v\+Disable\+Periphral}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+INTID)
+\item 
+void \mbox{\hyperlink{_n_v_i_c__program_8c_ad5bcb425a5f5a2f145815bee02af5bd9}{MNVIC\+\_\+v\+Set\+Pending\+Flag}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+INTID)
+\item 
+void \mbox{\hyperlink{_n_v_i_c__program_8c_ac507713ac304b76f07267511941db0a0}{MNVIC\+\_\+v\+Clear\+Pending\+Flag}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+INTID)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_n_v_i_c__program_8c_a46fc4d62b97d6604e67848ccc555767b}{MNVIC\+\_\+u8\+Get\+Active}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+INTID)
+\item 
+void \mbox{\hyperlink{_n_v_i_c__program_8c_a060f3a46ddd39c723516d327c2a70a97}{MNVIC\+\_\+v\+Set\+Priority\+Config}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Priority\+Option)
+\item 
+void \mbox{\hyperlink{_n_v_i_c__program_8c_a2bc11a514b96fd1f36e2ea33d095bd55}{MNVIC\+\_\+v\+Set\+Priority}} (\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}} A\+\_\+s8\+INTID, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Group\+Priority, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Sub\+Priority)
+\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{_n_v_i_c__program_8c_a8631573a83351d70a0bb3add68c329dd}{NVIC\+\_\+\+Get\+Priority}} (\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}} A\+\_\+s8\+INTID)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the source code of the interfacing for the NVIC modules. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/25/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}\label{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!REGISTER\_SIZE@{REGISTER\_SIZE}}
+\index{REGISTER\_SIZE@{REGISTER\_SIZE}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_SIZE}{REGISTER\_SIZE}}
+{\footnotesize\ttfamily \#define REGISTER\+\_\+\+SIZE~(32)}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00027}{27}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_n_v_i_c__program_8c_a34cd565de1d9b98de8d37cf69893fb4d}\label{_n_v_i_c__program_8c_a34cd565de1d9b98de8d37cf69893fb4d}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_vEnablePeriphral@{MNVIC\_vEnablePeriphral}}
+\index{MNVIC\_vEnablePeriphral@{MNVIC\_vEnablePeriphral}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vEnablePeriphral()}{MNVIC\_vEnablePeriphral()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Enable\+Periphral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00036}{36}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037 \{}
+\DoxyCodeLine{00038     \mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>ISERx[A\_u8INTID / \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}] = (1 << (A\_u8INTID \% \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}));}
+\DoxyCodeLine{00039 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, and \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00027}{REGISTER\+\_\+\+SIZE}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_a7e5d39f4f5b477fae79556b5b53f235f}\label{_n_v_i_c__program_8c_a7e5d39f4f5b477fae79556b5b53f235f}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_vDisablePeriphral@{MNVIC\_vDisablePeriphral}}
+\index{MNVIC\_vDisablePeriphral@{MNVIC\_vDisablePeriphral}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vDisablePeriphral()}{MNVIC\_vDisablePeriphral()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Disable\+Periphral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00044}{44}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045 \{}
+\DoxyCodeLine{00046     \mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>ICERx[A\_u8INTID / \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}] = (1 << (A\_u8INTID \% \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}));}
+\DoxyCodeLine{00047 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, and \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00027}{REGISTER\+\_\+\+SIZE}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_ad5bcb425a5f5a2f145815bee02af5bd9}\label{_n_v_i_c__program_8c_ad5bcb425a5f5a2f145815bee02af5bd9}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_vSetPendingFlag@{MNVIC\_vSetPendingFlag}}
+\index{MNVIC\_vSetPendingFlag@{MNVIC\_vSetPendingFlag}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vSetPendingFlag()}{MNVIC\_vSetPendingFlag()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Set\+Pending\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00052}{52}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053 \{}
+\DoxyCodeLine{00054     \mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>ISPRx[A\_u8INTID / \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}] = (1 << (A\_u8INTID \% \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}));}
+\DoxyCodeLine{00055 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, and \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00027}{REGISTER\+\_\+\+SIZE}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_ac507713ac304b76f07267511941db0a0}\label{_n_v_i_c__program_8c_ac507713ac304b76f07267511941db0a0}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_vClearPendingFlag@{MNVIC\_vClearPendingFlag}}
+\index{MNVIC\_vClearPendingFlag@{MNVIC\_vClearPendingFlag}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vClearPendingFlag()}{MNVIC\_vClearPendingFlag()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Clear\+Pending\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00060}{60}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061 \{}
+\DoxyCodeLine{00062     \mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>ICPRx[A\_u8INTID / \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}] = (1 << (A\_u8INTID \% \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}));}
+\DoxyCodeLine{00063 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, and \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00027}{REGISTER\+\_\+\+SIZE}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_a46fc4d62b97d6604e67848ccc555767b}\label{_n_v_i_c__program_8c_a46fc4d62b97d6604e67848ccc555767b}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_u8GetActive@{MNVIC\_u8GetActive}}
+\index{MNVIC\_u8GetActive@{MNVIC\_u8GetActive}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_u8GetActive()}{MNVIC\_u8GetActive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MNVIC\+\_\+u8\+Get\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00068}{68}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069 \{}
+\DoxyCodeLine{00070     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8Active = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00071     L\_u8Active = \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}((\mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>IABRx[A\_u8INTID / \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}]), (A\_u8INTID \% \mbox{\hyperlink{_n_v_i_c__program_8c_abe2f7b6344bb4d51dfea9c9f58609427}{REGISTER\_SIZE}}));}
+\DoxyCodeLine{00072     \textcolor{keywordflow}{return} L\_u8Active;}
+\DoxyCodeLine{00073 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00027}{REGISTER\+\_\+\+SIZE}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_a060f3a46ddd39c723516d327c2a70a97}\label{_n_v_i_c__program_8c_a060f3a46ddd39c723516d327c2a70a97}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_vSetPriorityConfig@{MNVIC\_vSetPriorityConfig}}
+\index{MNVIC\_vSetPriorityConfig@{MNVIC\_vSetPriorityConfig}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vSetPriorityConfig()}{MNVIC\_vSetPriorityConfig()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Set\+Priority\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Priority\+Option }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00078}{78}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079 \{}
+\DoxyCodeLine{00080     GS\_u32GroupConf = (\mbox{\hyperlink{_n_v_i_c__private_8h_a9c228760273574d427b5d2bbcccc6c22}{VECTKEY\_PASSWORD}} | (A\_u8PriorityOption << 8));}
+\DoxyCodeLine{00081     \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>AIRCR = GS\_u32GroupConf;}
+\DoxyCodeLine{00082 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00237}{MSCB}}, and \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00254}{VECTKEY\+\_\+\+PASSWORD}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_a2bc11a514b96fd1f36e2ea33d095bd55}\label{_n_v_i_c__program_8c_a2bc11a514b96fd1f36e2ea33d095bd55}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!MNVIC\_vSetPriority@{MNVIC\_vSetPriority}}
+\index{MNVIC\_vSetPriority@{MNVIC\_vSetPriority}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{MNVIC\_vSetPriority()}{MNVIC\_vSetPriority()}}
+{\footnotesize\ttfamily void MNVIC\+\_\+v\+Set\+Priority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}}}]{A\+\_\+s8\+INTID,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Group\+Priority,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Sub\+Priority }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00087}{87}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088 \{}
+\DoxyCodeLine{00089     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8Priority = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00090     L\_u8Priority = A\_u8SubPriority | (A\_u8GroupPriority << ((GS\_u32GroupConf -\/ 0x05FA0300) / 0x100));}
+\DoxyCodeLine{00091 }
+\DoxyCodeLine{00092     \textcolor{comment}{// Core Peripheral}}
+\DoxyCodeLine{00093     \textcolor{keywordflow}{if} (A\_s8INTID < 0)}
+\DoxyCodeLine{00094     \{}
+\DoxyCodeLine{00095         \textcolor{keywordflow}{if} ((A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_gaffd50de6dc17574cfc949534345ee91c}{MEMORY\_MANAGE}}) || (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga299f51d175d1b539575c86f3090ea740}{BUS\_FAULT}}) || (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga74cc0334396805a1f1afa1c34f184986}{USAGE\_FAULT}}))}
+\DoxyCodeLine{00096         \{}
+\DoxyCodeLine{00097             A\_s8INTID += 3;}
+\DoxyCodeLine{00098             \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>SHPR1 = (L\_u8Priority) << ((8 * A\_s8INTID) + 4);}
+\DoxyCodeLine{00099         \}}
+\DoxyCodeLine{00100         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga4e52bc38abb211c86b23c54cbec2bde2}{SV\_CALL}})}
+\DoxyCodeLine{00101         \{}
+\DoxyCodeLine{00102             A\_s8INTID += 7;}
+\DoxyCodeLine{00103             \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>SHPR2 = (L\_u8Priority) << ((8 * A\_s8INTID) + 4);}
+\DoxyCodeLine{00104         \}}
+\DoxyCodeLine{00105         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga8553be2a10dccdecaf91ac8f8a2f294d}{PEND\_SV}} || A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_gad942404ac7d5ff6c1c65dec93525dcb9}{SYSTICK}})}
+\DoxyCodeLine{00106         \{}
+\DoxyCodeLine{00107             A\_s8INTID += 8;}
+\DoxyCodeLine{00108             \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>SHPR3 = (L\_u8Priority) << ((8 * A\_s8INTID) + 4);}
+\DoxyCodeLine{00109         \}}
+\DoxyCodeLine{00110         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00111         \{}
+\DoxyCodeLine{00112             \textcolor{comment}{/* Do nothing */}}
+\DoxyCodeLine{00113         \}}
+\DoxyCodeLine{00114     \}}
+\DoxyCodeLine{00115     \textcolor{comment}{// External Peripheral}}
+\DoxyCodeLine{00116     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_s8INTID >= 0)}
+\DoxyCodeLine{00117     \{}
+\DoxyCodeLine{00118         \mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>IPRx[A\_s8INTID] = (L\_u8Priority << 4);}
+\DoxyCodeLine{00119     \}}
+\DoxyCodeLine{00120     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00121     \{}
+\DoxyCodeLine{00122         \textcolor{comment}{/* Do nothing */}}
+\DoxyCodeLine{00123     \}}
+\DoxyCodeLine{00124 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00292}{BUS\+\_\+\+FAULT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{group__nvic__settable__priorities_gaffd50de6dc17574cfc949534345ee91c}{MEMORY\+\_\+\+MANAGE}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00237}{MSCB}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00268}{PEND\+\_\+\+SV}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00280}{SV\+\_\+\+CALL}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00274}{SYSTICK}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00298}{USAGE\+\_\+\+FAULT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_n_v_i_c__program_8c_a8631573a83351d70a0bb3add68c329dd}\label{_n_v_i_c__program_8c_a8631573a83351d70a0bb3add68c329dd}} 
+\index{NVIC\_program.c@{NVIC\_program.c}!NVIC\_GetPriority@{NVIC\_GetPriority}}
+\index{NVIC\_GetPriority@{NVIC\_GetPriority}!NVIC\_program.c@{NVIC\_program.c}}
+\doxysubsubsection{\texorpdfstring{NVIC\_GetPriority()}{NVIC\_GetPriority()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} NVIC\+\_\+\+Get\+Priority (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\+\_\+t}}}]{A\+\_\+s8\+INTID }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_n_v_i_c__program_8c_source_l00129}{129}} of file \mbox{\hyperlink{_n_v_i_c__program_8c_source}{NVIC\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130 \{}
+\DoxyCodeLine{00131     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}}) L\_u32ThePriorityIS = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00132 }
+\DoxyCodeLine{00133     \textcolor{comment}{// Core Peripheral}}
+\DoxyCodeLine{00134     \textcolor{keywordflow}{if} (A\_s8INTID < 0)}
+\DoxyCodeLine{00135     \{}
+\DoxyCodeLine{00136         \textcolor{keywordflow}{if} ((A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_gaffd50de6dc17574cfc949534345ee91c}{MEMORY\_MANAGE}}) || (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga299f51d175d1b539575c86f3090ea740}{BUS\_FAULT}}) || (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga74cc0334396805a1f1afa1c34f184986}{USAGE\_FAULT}}))}
+\DoxyCodeLine{00137         \{}
+\DoxyCodeLine{00138             A\_s8INTID += 3;}
+\DoxyCodeLine{00139             L\_u32ThePriorityIS = \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>SHPR1 >> ((8 * A\_s8INTID) + 4);}
+\DoxyCodeLine{00140         \}}
+\DoxyCodeLine{00141         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga4e52bc38abb211c86b23c54cbec2bde2}{SV\_CALL}})}
+\DoxyCodeLine{00142         \{}
+\DoxyCodeLine{00143             A\_s8INTID += 7;}
+\DoxyCodeLine{00144             L\_u32ThePriorityIS = \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>SHPR2 >> ((8 * A\_s8INTID) + 4);}
+\DoxyCodeLine{00145         \}}
+\DoxyCodeLine{00146         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_ga8553be2a10dccdecaf91ac8f8a2f294d}{PEND\_SV}} || A\_s8INTID == \mbox{\hyperlink{group__nvic__settable__priorities_gad942404ac7d5ff6c1c65dec93525dcb9}{SYSTICK}})}
+\DoxyCodeLine{00147         \{}
+\DoxyCodeLine{00148             A\_s8INTID += 8;}
+\DoxyCodeLine{00149             L\_u32ThePriorityIS = \mbox{\hyperlink{group__nvic__registers_gad64f4ba7787546fc107c2c2993554e91}{MSCB}}-\/>SHPR3 >> ((8 * A\_s8INTID) + 4);}
+\DoxyCodeLine{00150         \}}
+\DoxyCodeLine{00151         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00152         \{}
+\DoxyCodeLine{00153             \textcolor{comment}{/* Do nothing */}}
+\DoxyCodeLine{00154         \}}
+\DoxyCodeLine{00155     \}}
+\DoxyCodeLine{00156     \textcolor{comment}{// External Peripheral}}
+\DoxyCodeLine{00157     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_s8INTID >= 0)}
+\DoxyCodeLine{00158     \{}
+\DoxyCodeLine{00159         L\_u32ThePriorityIS = (\mbox{\hyperlink{group__nvic__registers_ga5592a87b609cf093eb988459b69071ce}{MNVIC}}-\/>IPRx[A\_s8INTID] >> 4);}
+\DoxyCodeLine{00160     \}}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00162     \{}
+\DoxyCodeLine{00163         \textcolor{comment}{/* Do nothing */}}
+\DoxyCodeLine{00164     \}}
+\DoxyCodeLine{00165 }
+\DoxyCodeLine{00166     \textcolor{keywordflow}{return} L\_u32ThePriorityIS;}
+\DoxyCodeLine{00167 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00292}{BUS\+\_\+\+FAULT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{group__nvic__settable__priorities_gaffd50de6dc17574cfc949534345ee91c}{MEMORY\+\_\+\+MANAGE}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00243}{MNVIC}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00237}{MSCB}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00268}{PEND\+\_\+\+SV}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00280}{SV\+\_\+\+CALL}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00274}{SYSTICK}}, \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00298}{USAGE\+\_\+\+FAULT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
