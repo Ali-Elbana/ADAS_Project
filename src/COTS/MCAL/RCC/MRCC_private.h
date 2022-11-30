@@ -6,7 +6,7 @@
  * @date 11/9/2022
  */
 
-
+/* Header file guard */
 #ifndef MCAL_RCC_MRCC_PRIVATE_H_
 #define MCAL_RCC_MRCC_PRIVATE_H_
 
@@ -16,65 +16,205 @@
 /*                        Peripherals declaration                       */
 /************************************************************************/
 
+/**
+ * @brief RCC declaration structure for its registers
+ * @struct RCC_MemoryMapType
+ *
+ */
 typedef struct
 {
 
+	/**
+	 * @brief clock control register
+	 */
 	u32_t CR 			;
-	u32_t PLLCFGR 		;
-	u32_t CFGR 		;
-	u32_t CIR     		;
-	u32_t AHB1RSTR 	;
-	u32_t AHB2RSTR 	;
 
+	/**
+	 * @brief PLL configuration register
+	 */
+	u32_t PLLCFGR 		;
+
+	/**
+	 * @brief clock configuration register
+	 */
+	u32_t CFGR 			;
+
+	/**
+	 * @brief clock interrupt register
+	 */
+	u32_t CIR     		;
+
+	/**
+	 * @brief AHB1 peripheral reset register
+	 */
+	u32_t AHB1RSTR 		;
+
+	/**
+	 * @brief AHB2 peripheral reset register
+	 */
+	u32_t AHB2RSTR 		;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved1 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved2 	;
 
-	u32_t APB1RSTR 	;
-	u32_t APB2RSTR 	;
+	/**
+	 * @brief APB1 peripheral reset register
+	 */
+	u32_t APB1RSTR 		;
 
+	/**
+	 * @brief APB2 peripheral reset register
+	 */
+	u32_t APB2RSTR 		;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved3 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved4 	;
 
+	/**
+	 * @brief AHB1 peripheral clock enable register
+	 */
 	u32_t AHB1ENR 		;
+
+	/**
+	 * @brief AHB2 peripheral clock enable register
+	 */
 	u32_t AHB2ENR 		;
 
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved5 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved6 	;
 
+	/**
+	 * @brief APB1 peripheral clock enable register
+	 */
 	u32_t APB1ENR 		;
+
+	/**
+	 * @brief APB2 peripheral clock enable register
+	 */
 	u32_t APB2ENR 		;
 
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved7 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved8 	;
 
-	u32_t AHB1LPENR	;
-	u32_t AHB2LPENR	;
+	/**
+	 * @brief AHB1 peripheral clock enable in low power mode register
+	 */
+	u32_t AHB1LPENR		;
 
+	/**
+	 * @brief AHB2 peripheral clock enable in low power mode register
+	 */
+	u32_t AHB2LPENR		;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved9 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved10 	;
 
+	/**
+	 * @brief APB1 peripheral clock enable in low power mode register
+	 */
 	u32_t APB1LPENR 	;
+
+	/**
+	 * @brief APB2 peripheral clock enable in low power mode register
+	 */
 	u32_t APB2LPENR 	;
 
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved11 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved12 	;
 
-	u32_t BDCR 		;
+	/**
+	 * @brief RCC Backup domain control register
+	 */
+	u32_t BDCR 			;
+
+	/**
+	 * @brief clock control & status register
+	 */
 	u32_t CSR 			;
 
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved13 	;
+
+	/**
+	 * @brief Reserved register
+	 */
 	u32_t Reserved14 	;
 
+	/**
+	 * @brief RCC spread spectrum clock generation register
+	 */
 	u32_t SSCGR 		;
+
+	/**
+	 * @brief PLLI2S configuration register
+	 */
 	u32_t PLLI2SCFGR 	;
+
+	/**
+	 * @brief Dedicated Clocks Configuration Register
+	 */
 	u32_t DCKCFGR		;
 
 
 } RCC_MemoryMapType ;
 
 
+/**
+ * @def RCC_BASE_ADDRESS
+ * RCC Base Address
+ *
+ */
 #define RCC_BASE_ADDRESS 0x40023800
 
+/**
+ * @def RCC
+ * RCC register
+ *
+ */
 #define RCC ( (volatile P2VAR(RCC_MemoryMapType) ) (RCC_BASE_ADDRESS) ) // Is a pointer to the struct.
 
 

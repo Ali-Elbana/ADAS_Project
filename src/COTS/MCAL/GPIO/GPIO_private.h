@@ -11,7 +11,7 @@
 #define _GPIO_private_H
 
 /**
- * @brief MDIO Configuration structure for a speific PIN initialization
+ * @brief GPIO declaration structure for its registers
  * @struct GPIOx_MemoryMapType
  *
  */
