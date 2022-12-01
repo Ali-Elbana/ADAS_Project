@@ -35,6 +35,9 @@ FUNC(void) MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
 	SET_BITs(MSYSCFG->EXTICR[L_u8Index], A_u8PortID, L_u8ShiftAmount, 4);
 }
 
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
 FUNC(void) MEXTI_vInit(void)
 {
 	VAR(u8_t) L_u8ShiftedOffset = INITIAL_ZERO;
