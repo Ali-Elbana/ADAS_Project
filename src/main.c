@@ -13,15 +13,17 @@
 #include "COTS/MCAL/GPIO/GPIO_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_GPIO/Testing_GPIO_interface.h"
-
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_Output RUN
+#define TestingGPIO_Output 	STOP
 
-#define TestingGPIO_Input  STOP
+#define TestingGPIO_Input  	STOP
+
+#define TestingPushButton	RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -40,6 +42,13 @@ int main(void)
 	#if TestingGPIO_Input == RUN
 
 	TMGPIO_vInputPins( ) ;
+
+	#endif
+
+
+	#if TestingPushButton == RUN
+
+	THPushButton(  ) ;
 
 	#endif
 

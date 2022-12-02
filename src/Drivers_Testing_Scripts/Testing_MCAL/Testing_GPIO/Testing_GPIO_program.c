@@ -21,7 +21,7 @@
 #include "Testing_GPIO_config.h"
 
 /************************************************************************/
-/*                     Functions' implementations                      	*/
+/*                     Functions implementations                      	*/
 /************************************************************************/
 
 void TMGPIO_vOutputPins( void )

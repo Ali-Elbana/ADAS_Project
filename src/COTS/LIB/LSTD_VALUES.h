@@ -88,6 +88,26 @@
 	#define STOP (0)
 #endif  /* ifndef STOP */
 
+/**
+ * @def PRESSED
+ * Type definition for PRESSED
+ *
+ */
+#ifndef PRESSED
+	#define PRESSED (1)
+#endif  /* ifndef PRESSED */
+
+
+/**
+ * @def RELEASED
+ * Type definition for RELEASED
+ *
+ */
+#ifndef RELEASED
+	#define RELEASED (0)
+#endif  /* ifndef RELEASED */
+
+
 /** @} */
 
 #endif /* COTS_LIB_LSTD_VALUES_H_ */
