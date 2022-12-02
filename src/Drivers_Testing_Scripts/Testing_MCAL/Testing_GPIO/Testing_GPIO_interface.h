@@ -11,9 +11,9 @@
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-void TestingGPIO_OutputPins( void ) ;
+void TMGPIO_vOutputPins( void ) ;
 
-void TestingGPIO_InputPins( void ) 	;
+void TMGPIO_vInputPins( void ) 	;
 
 
 

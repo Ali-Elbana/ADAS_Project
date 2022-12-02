@@ -8,13 +8,13 @@
 /*                        Include headers                        	    */
 /************************************************************************/
 
-#include "../../COTS/LIB/LSTD_TYPES.h"
-#include "../../COTS/LIB/LSTD_COMPILER.h"
-#include "../../COTS/LIB/LSTD_VALUES.h"
-#include "../../COTS/LIB/LSTD_BITMATH.h"
+#include "../../../COTS/LIB/LSTD_TYPES.h"
+#include "../../../COTS/LIB/LSTD_COMPILER.h"
+#include "../../../COTS/LIB/LSTD_VALUES.h"
+#include "../../../COTS/LIB/LSTD_BITMATH.h"
 
-#include "../../COTS/MCAL/RCC/MRCC_interface.h"
-#include "../../COTS/MCAL/GPIO/GPIO_interface.h"
+#include "../../../COTS/MCAL/RCC/MRCC_interface.h"
+#include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 
 #include "Testing_GPIO_interface.h"
 #include "Testing_GPIO_private.h"
@@ -24,7 +24,7 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-void TestingGPIO_OutputPins( void )
+void TMGPIO_vOutputPins( void )
 {
 
 	MRCC_vInit( ) ;
@@ -95,7 +95,7 @@ void TestingGPIO_OutputPins( void )
 /**************************************************************************************/
 /**************************************************************************************/
 
-void TestingGPIO_InputPins( void )
+void TMGPIO_vInputPins( void )
 {
 
 
@@ -121,7 +121,7 @@ void TestingGPIO_InputPins( void )
 
 			.OutputSpeed 	= GPIOx_LowSpeed 	,
 
-			.InputType 		= GPIOx_PullDown
+			.InputType 		= GPIOx_PullDown		// Connecting 3.3v to the input PIN
 
 	} ;
 
@@ -153,6 +153,7 @@ void TestingGPIO_InputPins( void )
 
 		L_u8InputPIN = MGPIOx_u8GetPinValue(switch1.Port, switch1.Pin) ;
 
+		// Using DIP switch check those cases:
 		if( L_u8InputPIN == 1 )
 		{
 			MGPIOx_vSetPinValue( LED1.Port, LED1.Pin, GPIOx_HIGH ) ;

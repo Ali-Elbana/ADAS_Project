@@ -12,16 +12,16 @@
 #include "COTS/MCAL/RCC/MRCC_interface.h"
 #include "COTS/MCAL/GPIO/GPIO_interface.h"
 
-#include "Drivers_Testing_Scripts/Testing_GPIO/Testing_GPIO_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_GPIO/Testing_GPIO_interface.h"
 
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_Output STOP
+#define TestingGPIO_Output RUN
 
-#define TestingGPIO_Input  RUN
+#define TestingGPIO_Input  STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -33,13 +33,13 @@ int main(void)
 
 	#if TestingGPIO_Output == RUN
 
-	TestingGPIO_OutputPins( ) ;
+	TMGPIO_vOutputPins( ) ;
 
 	#endif
 
 	#if TestingGPIO_Input == RUN
 
-	TestingGPIO_InputPins( ) ;
+	TMGPIO_vInputPins( ) ;
 
 	#endif
 
