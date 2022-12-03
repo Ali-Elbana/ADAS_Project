@@ -1,7 +1,7 @@
-/* FILENAME: Testing_PushButtonSwitch_program 
+/* FILENAME: Testing_DC_Motor_program 
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Fri 12/02/2022
+*  DATE:   Sat 12/03/2022
 */
 
 /************************************************************************/
@@ -17,16 +17,15 @@
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 
 
-#include "Testing_PushButtonSwitch_interface.h"
-#include "Testing_PushButtonSwitch_private.h"
-#include "Testing_PushButtonSwitch_config.h"
-
+#include "Testing_DC_Motor_interface.h"
+#include "Testing_DC_Motor_private.h"
+#include "Testing_DC_Motor_config.h"
 
 /************************************************************************/
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-void THPushButton_vTogglePIN( void )
+void THDC_vMotor( void )
 {
 
 	MRCC_vInit( ) ;
@@ -54,7 +53,7 @@ void THPushButton_vTogglePIN( void )
 	} ;
 
 
-	MGPIOx_ConfigType LED1 =
+	MGPIOx_ConfigType DC_CntrlPIN =
 	{
 
 			.Port 			= GPIO_PORTA 		,
@@ -74,7 +73,7 @@ void THPushButton_vTogglePIN( void )
 
 	MGPIOx_vInit( &switch1 ) ;
 
-	MGPIOx_vInit( &LED1 ) ;
+	MGPIOx_vInit( &DC_CntrlPIN ) ;
 
 	while( TRUE )
 	{
@@ -89,7 +88,7 @@ void THPushButton_vTogglePIN( void )
 			for( VAR( u32_t) i = INITIAL_ZERO; i < 2500; i++ ) ;
 
 			// Do the Action.
-			MGPIOx_vTogglePinValue( LED1.Port, LED1.Pin ) ;
+			MGPIOx_vTogglePinValue( DC_CntrlPIN.Port, DC_CntrlPIN.Pin ) ;
 
 		}
 
@@ -99,34 +98,6 @@ void THPushButton_vTogglePIN( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

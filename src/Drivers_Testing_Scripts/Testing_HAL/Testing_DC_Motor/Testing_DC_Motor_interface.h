@@ -1,17 +1,17 @@
-/* FILENAME: Testing_PushButtonSwitch_interface  
+/* FILENAME: Testing_DC_Motor_interface  
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Fri 12/02/2022
+*  DATE:   Sat 12/03/2022
 */
-#ifndef _Testing_PushButtonSwitch_interface_H
-#define _Testing_PushButtonSwitch_interface_H
+#ifndef _Testing_DC_Motor_interface_H
+#define _Testing_DC_Motor_interface_H
 
 
 /************************************************************************/
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-void THPushButton_vTogglePIN( void ) ;
+void THDC_vMotor( void ) ;
 
 
-#endif //_Testing_PushButtonSwitch_interface_H
+#endif //_Testing_DC_Motor_interface_H
