@@ -21,13 +21,15 @@
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_Output 	STOP
+#define TestingGPIO_OutputPushPull 	STOP
 
-#define TestingGPIO_Input  	STOP
+#define TestingGPIO_OutputOpenDrain RUN
 
-#define TestingPushButton	STOP
+#define TestingGPIO_Input  			STOP
 
-#define TestingDCMotor		RUN
+#define TestingPushButton			STOP
+
+#define TestingDCMotor				STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -37,15 +39,15 @@ int main(void)
 {
 
 
-	#if TestingGPIO_Output == RUN
+	#if TestingGPIO_OutputPushPull == RUN
 
-	TMGPIO_vOutputPins( ) ;
+	TMGPIO_vPushPullOutputPins( ) ;
 
 	#endif
 
 	#if TestingGPIO_Input == RUN
 
-	TMGPIO_vInputPins( ) ;
+	TMGPIO_vPullDownInputPins( ) ;
 
 	#endif
 
@@ -62,6 +64,11 @@ int main(void)
 
 	#endif
 
+	#if TestingGPIO_OutputOpenDrain == RUN
+
+	TMGPIO_vOpenDrainOutputPIN( ) ;
+
+	#endif
 
 
 	while(TRUE) ;

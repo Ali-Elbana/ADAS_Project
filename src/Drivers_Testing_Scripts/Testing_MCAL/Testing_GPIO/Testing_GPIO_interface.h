@@ -11,12 +11,11 @@
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-void TMGPIO_vOutputPins( void ) ;
+void TMGPIO_vPushPullOutputPins( void ) ;
 
-void TMGPIO_vInputPins( void ) 	;
+void TMGPIO_vPullDownInputPins( void ) 			;
 
-
-
+void TMGPIO_vOpenDrainOutputPIN( void ) 	;
 
 
 
