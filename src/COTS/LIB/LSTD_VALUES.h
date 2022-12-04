@@ -39,7 +39,7 @@
  *
  */
 #ifndef NULL
-	#define NULL (P2VAR(void) 0)
+#define NULL ((P2VAR(void))0)
 #endif  /* ifndef NULL */
 
 /**
