@@ -84,9 +84,10 @@ typedef struct
      * @details 
      * @see group_prioty
      * @see sub_group_prioty
-     * @todo Document this register
+     * @note Interrupt priority register
      */
     u8_t IPRx[240];
+
 } NVIC_MemoryMapType;
 
 /**
@@ -110,8 +111,7 @@ typedef struct
     u32_t ICSR;
     /**
      * @brief Vector table offset register
-     * @details 
-     * @todo Docuement this register
+     * @details Interrupt control and state register
      */
     u32_t VTOR;
     /**
@@ -171,8 +171,7 @@ typedef struct
      * - Bus Fault Status Register (BFSR)
      * @details 
      * - Memory Management Fault Status Register (MMFSR)
-     * @details 
-     * @todo Docuement this register or its sub-registers
+     * @details System handler control and state register
      */
     u32_t CFSR;
     /**
@@ -188,14 +187,12 @@ typedef struct
     u32_t RESERVED;
     /**
      * @brief Memory management fault address register
-     * @details 
-     * @todo Docuement this register
+     * @details Memory management fault address register
      */
     u32_t MMFAR;
     /**
      * @brief Bus fault address register
-     * @details 
-     * @todo Docuement this register
+     * @details Bus fault address register
      */
     u32_t BFAR;
 } SCB_MemoryMapType;
@@ -242,7 +239,8 @@ typedef struct
  */
 #define MNVIC ((volatile P2VAR(NVIC_MemoryMapType))(NVIC_BASE_ADDRESS))
 /** @} */
-// #define MNVIC_STIR *((volatile 32 *)(0xE000EF00))
+
+#define MNVIC_STIR *((volatile 32 *)(0xE000EF00))
 
 /**
  * @def VECTKEY_PASSWORD

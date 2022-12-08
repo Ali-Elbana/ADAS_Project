@@ -94,7 +94,7 @@ u32_t NVIC_GetPriority(VAR(s8_t) A_s8INTID);
  * @see GROUP_4BITS
  *
  */
-#define _16GROUP_NoSub_Priorities (0b000)
+#define _16GROUP_NoSub_Priorities (0b011)
 /**
  * @def _8GROUP_2Sub_Priorities
  * @brief `8` groups and `2` sub-groups
@@ -144,7 +144,7 @@ u32_t NVIC_GetPriority(VAR(s8_t) A_s8INTID);
  * @details This tells the system there is going to be `16` groups and `0` sub-groups
  *
  */
-#define GROUP_4BITS (0b000)
+#define GROUP_4BITS (0b011)
 /**
  * @def GROUP_3BITS
  * @brief `8` groups and `2` sub-groups
