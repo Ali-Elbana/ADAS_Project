@@ -1,3 +1,5 @@
 /Debug/
 /Release/
 /.metadata/
+src/Drivers_Testing_Scripts/*/*/Proteus/Project Backups/
+*.workspace
