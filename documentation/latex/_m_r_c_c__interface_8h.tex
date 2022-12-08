@@ -1,5 +1,5 @@
-\hypertarget{_m_r_c_c__interface_8h}{}\doxysection{src/\+COTS/\+MCAL/\+RCC/\+MRCC\+\_\+interface.h File Reference}
-\label{_m_r_c_c__interface_8h}\index{src/COTS/MCAL/RCC/MRCC\_interface.h@{src/COTS/MCAL/RCC/MRCC\_interface.h}}
+\hypertarget{_m_r_c_c__interface_8h}{}\doxysection{COTS/\+MCAL/\+RCC/\+MRCC\+\_\+interface.h File Reference}
+\label{_m_r_c_c__interface_8h}\index{COTS/MCAL/RCC/MRCC\_interface.h@{COTS/MCAL/RCC/MRCC\_interface.h}}
 
 
 This file contains the interfacing information for the RCC module.  
@@ -526,11 +526,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00032     \textcolor{comment}{// PLLI2S (ON/OFF).}}
 \DoxyCodeLine{00033 \textcolor{preprocessor}{    \#if PLLI2S == ENABLE}}
 \DoxyCodeLine{00034 }
-\DoxyCodeLine{00035         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_a3ccb8964b640530f1080f9ea549d8133}{RCC\_CR\_PLLI2SON}} ) ;}
+\DoxyCodeLine{00035         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_a3ccb8964b640530f1080f9ea549d8133}{RCC\_CR\_PLLI2SON}} ) ;}
 \DoxyCodeLine{00036 }
 \DoxyCodeLine{00037 \textcolor{preprocessor}{    \#elif PLLI2S == DISABLE}}
 \DoxyCodeLine{00038 }
-\DoxyCodeLine{00039         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_a3ccb8964b640530f1080f9ea549d8133}{RCC\_CR\_PLLI2SON}} ) ;}
+\DoxyCodeLine{00039         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_a3ccb8964b640530f1080f9ea549d8133}{RCC\_CR\_PLLI2SON}} ) ;}
 \DoxyCodeLine{00040 }
 \DoxyCodeLine{00041 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00042 }
@@ -538,11 +538,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00044     \textcolor{comment}{// PLL (ON/OFF).}}
 \DoxyCodeLine{00045 \textcolor{preprocessor}{    \#if PLL == ENABLE}}
 \DoxyCodeLine{00046 }
-\DoxyCodeLine{00047         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}} ) ;}
+\DoxyCodeLine{00047         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}} ) ;}
 \DoxyCodeLine{00048 }
 \DoxyCodeLine{00049 \textcolor{preprocessor}{    \#elif PLL == DISABLE}}
 \DoxyCodeLine{00050 }
-\DoxyCodeLine{00051         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}} ) ;}
+\DoxyCodeLine{00051         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad0e73d5b0a4883e074d40029b49ee47e}{RCC\_CR\_PLLON}} ) ;}
 \DoxyCodeLine{00052 }
 \DoxyCodeLine{00053 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00054 }
@@ -550,11 +550,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00056     \textcolor{comment}{// CSS (ON/OFF).}}
 \DoxyCodeLine{00057 \textcolor{preprocessor}{    \#if CSS == ENABLE}}
 \DoxyCodeLine{00058 }
-\DoxyCodeLine{00059         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_acc05308869ad055e1e6f2c32d738aecd}{RCC\_CR\_CSSON}} ) ;}
+\DoxyCodeLine{00059         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_acc05308869ad055e1e6f2c32d738aecd}{RCC\_CR\_CSSON}} ) ;}
 \DoxyCodeLine{00060 }
 \DoxyCodeLine{00061 \textcolor{preprocessor}{    \#elif CSS == DISABLE}}
 \DoxyCodeLine{00062 }
-\DoxyCodeLine{00063         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_acc05308869ad055e1e6f2c32d738aecd}{RCC\_CR\_CSSON}} ) ;}
+\DoxyCodeLine{00063         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_acc05308869ad055e1e6f2c32d738aecd}{RCC\_CR\_CSSON}} ) ;}
 \DoxyCodeLine{00064 }
 \DoxyCodeLine{00065 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00066 }
@@ -562,11 +562,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00068     \textcolor{comment}{// HSEBYP.}}
 \DoxyCodeLine{00069 \textcolor{preprocessor}{    \#if HSEBYP == BYBASED}}
 \DoxyCodeLine{00070 }
-\DoxyCodeLine{00071         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_aa3288090671af5a959aae4d7f7696d55}{RCC\_CR\_HSEBYP}} ) ;}
+\DoxyCodeLine{00071         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_aa3288090671af5a959aae4d7f7696d55}{RCC\_CR\_HSEBYP}} ) ;}
 \DoxyCodeLine{00072 }
 \DoxyCodeLine{00073 \textcolor{preprocessor}{    \#elif HSEBYP == NOTBYBASED}}
 \DoxyCodeLine{00074 }
-\DoxyCodeLine{00075         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_aa3288090671af5a959aae4d7f7696d55}{RCC\_CR\_HSEBYP}} ) ;}
+\DoxyCodeLine{00075         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_aa3288090671af5a959aae4d7f7696d55}{RCC\_CR\_HSEBYP}} ) ;}
 \DoxyCodeLine{00076 }
 \DoxyCodeLine{00077 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00078 }
@@ -574,18 +574,18 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00080     \textcolor{comment}{// Select CLK switch (HSI/HSE/PLL).}}
 \DoxyCodeLine{00081 \textcolor{preprocessor}{    \#if SW == HSI}}
 \DoxyCodeLine{00082 }
-\DoxyCodeLine{00083         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4ec762be98659ce934895414435959d4}{RCC\_CFGR\_SW\_b0}} ) ;}
-\DoxyCodeLine{00084         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a13f86bda561141bd25f9fa46a1408459}{RCC\_CFGR\_SW\_b1}} ) ;}
+\DoxyCodeLine{00083         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4ec762be98659ce934895414435959d4}{RCC\_CFGR\_SW\_b0}} ) ;}
+\DoxyCodeLine{00084         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a13f86bda561141bd25f9fa46a1408459}{RCC\_CFGR\_SW\_b1}} ) ;}
 \DoxyCodeLine{00085 }
 \DoxyCodeLine{00086 \textcolor{preprocessor}{    \#elif SW == HSE}}
 \DoxyCodeLine{00087 }
-\DoxyCodeLine{00088         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4ec762be98659ce934895414435959d4}{RCC\_CFGR\_SW\_b0}} ) ;}
-\DoxyCodeLine{00089         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a13f86bda561141bd25f9fa46a1408459}{RCC\_CFGR\_SW\_b1}} ) ;}
+\DoxyCodeLine{00088         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4ec762be98659ce934895414435959d4}{RCC\_CFGR\_SW\_b0}} ) ;}
+\DoxyCodeLine{00089         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a13f86bda561141bd25f9fa46a1408459}{RCC\_CFGR\_SW\_b1}} ) ;}
 \DoxyCodeLine{00090 }
 \DoxyCodeLine{00091 \textcolor{preprocessor}{    \#elif SW == PLLCLK}}
 \DoxyCodeLine{00092 }
-\DoxyCodeLine{00093         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4ec762be98659ce934895414435959d4}{RCC\_CFGR\_SW\_b0}} ) ;}
-\DoxyCodeLine{00094         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a13f86bda561141bd25f9fa46a1408459}{RCC\_CFGR\_SW\_b1}} ) ;}
+\DoxyCodeLine{00093         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4ec762be98659ce934895414435959d4}{RCC\_CFGR\_SW\_b0}} ) ;}
+\DoxyCodeLine{00094         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a13f86bda561141bd25f9fa46a1408459}{RCC\_CFGR\_SW\_b1}} ) ;}
 \DoxyCodeLine{00095 }
 \DoxyCodeLine{00096 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00097 }
@@ -593,23 +593,23 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00099     \textcolor{comment}{// MCO2 selection:}}
 \DoxyCodeLine{00100 \textcolor{preprocessor}{    \#if MCO2 == SYSCLK}}
 \DoxyCodeLine{00101 }
-\DoxyCodeLine{00102         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
-\DoxyCodeLine{00103         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
+\DoxyCodeLine{00102         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
+\DoxyCodeLine{00103         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
 \DoxyCodeLine{00104 }
 \DoxyCodeLine{00105 \textcolor{preprocessor}{    \#elif MCO2 == PLLI2SCLK}}
 \DoxyCodeLine{00106 }
-\DoxyCodeLine{00107         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
-\DoxyCodeLine{00108         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
+\DoxyCodeLine{00107         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
+\DoxyCodeLine{00108         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
 \DoxyCodeLine{00109 }
 \DoxyCodeLine{00110 \textcolor{preprocessor}{    \#elif MCO2 == HSE}}
 \DoxyCodeLine{00111 }
-\DoxyCodeLine{00112         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
-\DoxyCodeLine{00113         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
+\DoxyCodeLine{00112         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
+\DoxyCodeLine{00113         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
 \DoxyCodeLine{00114 }
 \DoxyCodeLine{00115 \textcolor{preprocessor}{    \#elif MCO2 == PLLCLK}}
 \DoxyCodeLine{00116 }
-\DoxyCodeLine{00117         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
-\DoxyCodeLine{00118         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
+\DoxyCodeLine{00117         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ac40f34015b075e6101d6e7e87fdea405}{RCC\_CFGR\_MOC2\_b0}} ) ;}
+\DoxyCodeLine{00118         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a55a7dc20977c92c7d48f48992b6af17e}{RCC\_CFGR\_MOC2\_b1}} ) ;}
 \DoxyCodeLine{00119 }
 \DoxyCodeLine{00120 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00121 }
@@ -617,33 +617,33 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00123     \textcolor{comment}{// MCO2 prescaler:}}
 \DoxyCodeLine{00124 \textcolor{preprocessor}{    \#if MCO2PRE == NoDivision}}
 \DoxyCodeLine{00125 }
-\DoxyCodeLine{00126         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
-\DoxyCodeLine{00127         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
-\DoxyCodeLine{00128         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
+\DoxyCodeLine{00126         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
+\DoxyCodeLine{00127         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
+\DoxyCodeLine{00128         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
 \DoxyCodeLine{00129 }
 \DoxyCodeLine{00130 \textcolor{preprocessor}{    \#elif MCO2PRE == DivisionBy2}}
 \DoxyCodeLine{00131 }
-\DoxyCodeLine{00132         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
-\DoxyCodeLine{00133         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
-\DoxyCodeLine{00134         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
+\DoxyCodeLine{00132         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
+\DoxyCodeLine{00133         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
+\DoxyCodeLine{00134         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
 \DoxyCodeLine{00135 }
 \DoxyCodeLine{00136 \textcolor{preprocessor}{    \#elif MCO2PRE == DivisionBy3}}
 \DoxyCodeLine{00137 }
-\DoxyCodeLine{00138         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
-\DoxyCodeLine{00139         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
-\DoxyCodeLine{00140         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
+\DoxyCodeLine{00138         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
+\DoxyCodeLine{00139         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
+\DoxyCodeLine{00140         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
 \DoxyCodeLine{00141 }
 \DoxyCodeLine{00142 \textcolor{preprocessor}{    \#elif MCO2PRE == DivisionBy4}}
 \DoxyCodeLine{00143 }
-\DoxyCodeLine{00144         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
-\DoxyCodeLine{00145         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
-\DoxyCodeLine{00146         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
+\DoxyCodeLine{00144         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
+\DoxyCodeLine{00145         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
+\DoxyCodeLine{00146         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
 \DoxyCodeLine{00147 }
 \DoxyCodeLine{00148 \textcolor{preprocessor}{    \#elif MCO2PRE == DivisionBy5}}
 \DoxyCodeLine{00149 }
-\DoxyCodeLine{00150         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
-\DoxyCodeLine{00151         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
-\DoxyCodeLine{00152         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
+\DoxyCodeLine{00150         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a4e5d3abf408a5b0e0764e7495dbdf25c}{RCC\_CFGR\_MOC2PRE\_b0}} ) ;}
+\DoxyCodeLine{00151         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1798d37349f0c8adef81a9efc85e9593}{RCC\_CFGR\_MOC2PRE\_b1}} ) ;}
+\DoxyCodeLine{00152         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ab0cb8c74eaee6177e695323d52804974}{RCC\_CFGR\_MOC2PRE\_b2}} ) ;}
 \DoxyCodeLine{00153 }
 \DoxyCodeLine{00154 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00155 }
@@ -651,23 +651,23 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00157     \textcolor{comment}{// MCO1 selection:}}
 \DoxyCodeLine{00158 \textcolor{preprocessor}{    \#if MCO1 == HSI}}
 \DoxyCodeLine{00159 }
-\DoxyCodeLine{00160         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
-\DoxyCodeLine{00161         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
+\DoxyCodeLine{00160         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
+\DoxyCodeLine{00161         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
 \DoxyCodeLine{00162 }
 \DoxyCodeLine{00163 \textcolor{preprocessor}{    \#elif MCO1 == LSE}}
 \DoxyCodeLine{00164 }
-\DoxyCodeLine{00165         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
-\DoxyCodeLine{00166         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
+\DoxyCodeLine{00165         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
+\DoxyCodeLine{00166         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
 \DoxyCodeLine{00167 }
 \DoxyCodeLine{00168 \textcolor{preprocessor}{    \#elif MCO1 == HSE}}
 \DoxyCodeLine{00169 }
-\DoxyCodeLine{00170         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
-\DoxyCodeLine{00171         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
+\DoxyCodeLine{00170         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
+\DoxyCodeLine{00171         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
 \DoxyCodeLine{00172 }
 \DoxyCodeLine{00173 \textcolor{preprocessor}{    \#elif MCO1 == PLLCLK}}
 \DoxyCodeLine{00174 }
-\DoxyCodeLine{00175         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
-\DoxyCodeLine{00176         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
+\DoxyCodeLine{00175         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a94db33680ee6faaedf3f94ac5b4006fe}{RCC\_CFGR\_MOC1\_b0}} ) ;}
+\DoxyCodeLine{00176         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a7ffaee719233844047b403ef31c457b3}{RCC\_CFGR\_MOC1\_b1}} ) ;}
 \DoxyCodeLine{00177 }
 \DoxyCodeLine{00178 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00179 }
@@ -675,33 +675,33 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00181     \textcolor{comment}{// MCO1 prescaler:}}
 \DoxyCodeLine{00182 \textcolor{preprocessor}{    \#if MCO1PRE == NoDivision}}
 \DoxyCodeLine{00183 }
-\DoxyCodeLine{00184         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
-\DoxyCodeLine{00185         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
-\DoxyCodeLine{00186         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
+\DoxyCodeLine{00184         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
+\DoxyCodeLine{00185         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
+\DoxyCodeLine{00186         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
 \DoxyCodeLine{00187 }
 \DoxyCodeLine{00188 \textcolor{preprocessor}{    \#elif MCO1PRE == DivisionBy2}}
 \DoxyCodeLine{00189 }
-\DoxyCodeLine{00190         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
-\DoxyCodeLine{00191         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
-\DoxyCodeLine{00192         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
+\DoxyCodeLine{00190         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
+\DoxyCodeLine{00191         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
+\DoxyCodeLine{00192         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
 \DoxyCodeLine{00193 }
 \DoxyCodeLine{00194 \textcolor{preprocessor}{    \#elif MCO1PRE == DivisionBy3}}
 \DoxyCodeLine{00195 }
-\DoxyCodeLine{00196         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
-\DoxyCodeLine{00197         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
-\DoxyCodeLine{00198         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
+\DoxyCodeLine{00196         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
+\DoxyCodeLine{00197         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
+\DoxyCodeLine{00198         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
 \DoxyCodeLine{00199 }
 \DoxyCodeLine{00200 \textcolor{preprocessor}{    \#elif MCO1PRE == DivisionBy4}}
 \DoxyCodeLine{00201 }
-\DoxyCodeLine{00202         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
-\DoxyCodeLine{00203         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
-\DoxyCodeLine{00204         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
+\DoxyCodeLine{00202         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
+\DoxyCodeLine{00203         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
+\DoxyCodeLine{00204         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
 \DoxyCodeLine{00205 }
 \DoxyCodeLine{00206 \textcolor{preprocessor}{    \#elif MCO1PRE == DivisionBy5}}
 \DoxyCodeLine{00207 }
-\DoxyCodeLine{00208         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
-\DoxyCodeLine{00209         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
-\DoxyCodeLine{00210         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
+\DoxyCodeLine{00208         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8d277f007bf4b140b51c0cc6cc32679d}{RCC\_CFGR\_MOC1PRE\_b0}} ) ;}
+\DoxyCodeLine{00209         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_ad2045633ec191231a741910e3b6641ab}{RCC\_CFGR\_MOC1PRE\_b1}} ) ;}
+\DoxyCodeLine{00210         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a748f9e0cbb789185f60da10ffb8394c1}{RCC\_CFGR\_MOC1PRE\_b2}} ) ;}
 \DoxyCodeLine{00211 }
 \DoxyCodeLine{00212 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00213 }
@@ -709,66 +709,66 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00215     \textcolor{comment}{// AHB prescalers:}}
 \DoxyCodeLine{00216 \textcolor{preprocessor}{    \#if HPRE == NoDivision}}
 \DoxyCodeLine{00217 }
-\DoxyCodeLine{00218         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00219         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00220         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00221         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00218         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00219         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00220         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00221         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00222 }
 \DoxyCodeLine{00223 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby2}}
 \DoxyCodeLine{00224 }
-\DoxyCodeLine{00225         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00226         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00227         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00228         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00225         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00226         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00227         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00228         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00229 }
 \DoxyCodeLine{00230 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby4}}
 \DoxyCodeLine{00231 }
-\DoxyCodeLine{00232         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00233         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00234         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00235         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00232         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00233         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00234         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00235         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00236 }
 \DoxyCodeLine{00237 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby8}}
 \DoxyCodeLine{00238 }
-\DoxyCodeLine{00239         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00240         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00241         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00242         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00239         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00240         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00241         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00242         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00243 }
 \DoxyCodeLine{00244 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby16}}
 \DoxyCodeLine{00245 }
-\DoxyCodeLine{00246         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00247         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00248         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00249         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00246         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00247         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00248         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00249         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00250 }
 \DoxyCodeLine{00251 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby64}}
 \DoxyCodeLine{00252 }
-\DoxyCodeLine{00253         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00254         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00255         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00256         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00253         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00254         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00255         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00256         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00257 }
 \DoxyCodeLine{00258 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby128}}
 \DoxyCodeLine{00259 }
-\DoxyCodeLine{00260         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00261         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00262         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00263         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00260         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00261         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00262         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00263         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00264 }
 \DoxyCodeLine{00265 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby256}}
 \DoxyCodeLine{00266 }
-\DoxyCodeLine{00267         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00268         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00269         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00270         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00267         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00268         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00269         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00270         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00271 }
 \DoxyCodeLine{00272 \textcolor{preprocessor}{    \#elif HPRE == SYSCLKby512}}
 \DoxyCodeLine{00273 }
-\DoxyCodeLine{00274         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
-\DoxyCodeLine{00275         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
-\DoxyCodeLine{00276         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
-\DoxyCodeLine{00277         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
+\DoxyCodeLine{00274         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_aeb262b9f8f18f70b1d7104d63b19ed58}{RCC\_CFGR\_HPRE\_b0}} ) ;}
+\DoxyCodeLine{00275         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_abdd6ead3810ccf81dca767f68650d4b6}{RCC\_CFGR\_HPRE\_b1}} ) ;}
+\DoxyCodeLine{00276         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a1f9d3b36e7f260e735942d224b9c2162}{RCC\_CFGR\_HPRE\_b2}} ) ;}
+\DoxyCodeLine{00277         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a8e8e7008ec556b2d64e1c819f62d1b87}{RCC\_CFGR\_HPRE\_b3}} ) ;}
 \DoxyCodeLine{00278 }
 \DoxyCodeLine{00279 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00280 }
@@ -776,66 +776,66 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00282     \textcolor{comment}{// APB1 prescalers:}}
 \DoxyCodeLine{00283 \textcolor{preprocessor}{    \#if PPRE1 == NoDivision}}
 \DoxyCodeLine{00284 }
-\DoxyCodeLine{00285         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
-\DoxyCodeLine{00286         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
-\DoxyCodeLine{00287         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
+\DoxyCodeLine{00285         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
+\DoxyCodeLine{00286         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
+\DoxyCodeLine{00287         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
 \DoxyCodeLine{00288 }
 \DoxyCodeLine{00289 \textcolor{preprocessor}{    \#elif PPRE1 == AHBby2}}
 \DoxyCodeLine{00290 }
-\DoxyCodeLine{00291         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
-\DoxyCodeLine{00292         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
-\DoxyCodeLine{00293         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
+\DoxyCodeLine{00291         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
+\DoxyCodeLine{00292         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
+\DoxyCodeLine{00293         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
 \DoxyCodeLine{00294 }
 \DoxyCodeLine{00295 \textcolor{preprocessor}{    \#elif PPRE1 == AHBby4}}
 \DoxyCodeLine{00296 }
-\DoxyCodeLine{00297         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
-\DoxyCodeLine{00298         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
-\DoxyCodeLine{00299         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
+\DoxyCodeLine{00297         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
+\DoxyCodeLine{00298         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
+\DoxyCodeLine{00299         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
 \DoxyCodeLine{00300 }
 \DoxyCodeLine{00301 \textcolor{preprocessor}{    \#elif PPRE1 == AHBby8}}
 \DoxyCodeLine{00302 }
-\DoxyCodeLine{00303         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
-\DoxyCodeLine{00304         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
-\DoxyCodeLine{00305         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
+\DoxyCodeLine{00303         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
+\DoxyCodeLine{00304         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
+\DoxyCodeLine{00305         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
 \DoxyCodeLine{00306 }
 \DoxyCodeLine{00307 \textcolor{preprocessor}{    \#elif PPRE1 == AHBby16}}
 \DoxyCodeLine{00308 }
-\DoxyCodeLine{00309         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
-\DoxyCodeLine{00310         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
-\DoxyCodeLine{00311         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
+\DoxyCodeLine{00309         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a231274f29657e327a68af0b2ed345ee1}{RCC\_CFGR\_PPRE1\_b0}} ) ;}
+\DoxyCodeLine{00310         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a527bd9f6be8355ad5a81d817c4b35a3b}{RCC\_CFGR\_PPRE1\_b1}} ) ;}
+\DoxyCodeLine{00311         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_a85c79b6b817ae9dace1c16d011b368ad}{RCC\_CFGR\_PPRE1\_b2}} ) ;}
 \DoxyCodeLine{00312 }
 \DoxyCodeLine{00313 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00314 }
 \DoxyCodeLine{00315     \textcolor{comment}{// APB2 prescalers:}}
 \DoxyCodeLine{00316 \textcolor{preprocessor}{    \#if PPRE2 == NoDivision}}
 \DoxyCodeLine{00317 }
-\DoxyCodeLine{00318         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
-\DoxyCodeLine{00319         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
-\DoxyCodeLine{00320         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
+\DoxyCodeLine{00318         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
+\DoxyCodeLine{00319         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
+\DoxyCodeLine{00320         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
 \DoxyCodeLine{00321 }
 \DoxyCodeLine{00322 \textcolor{preprocessor}{    \#elif PPRE2 == AHBby2}}
 \DoxyCodeLine{00323 }
-\DoxyCodeLine{00324         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
-\DoxyCodeLine{00325         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
-\DoxyCodeLine{00326         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
+\DoxyCodeLine{00324         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
+\DoxyCodeLine{00325         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
+\DoxyCodeLine{00326         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
 \DoxyCodeLine{00327 }
 \DoxyCodeLine{00328 \textcolor{preprocessor}{    \#elif PPRE2 == AHBby4}}
 \DoxyCodeLine{00329 }
-\DoxyCodeLine{00330         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
-\DoxyCodeLine{00331         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
-\DoxyCodeLine{00332         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
+\DoxyCodeLine{00330         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
+\DoxyCodeLine{00331         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
+\DoxyCodeLine{00332         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
 \DoxyCodeLine{00333 }
 \DoxyCodeLine{00334 \textcolor{preprocessor}{    \#elif PPRE2 == AHBby8}}
 \DoxyCodeLine{00335 }
-\DoxyCodeLine{00336         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
-\DoxyCodeLine{00337         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
-\DoxyCodeLine{00338         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
+\DoxyCodeLine{00336         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
+\DoxyCodeLine{00337         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
+\DoxyCodeLine{00338         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
 \DoxyCodeLine{00339 }
 \DoxyCodeLine{00340 \textcolor{preprocessor}{    \#elif PPRE2 == AHBby16}}
 \DoxyCodeLine{00341 }
-\DoxyCodeLine{00342         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
-\DoxyCodeLine{00343         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
-\DoxyCodeLine{00344         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
+\DoxyCodeLine{00342         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_addf707d0e9e0b3f83b816c9b69ca5e11}{RCC\_CFGR\_PPRE2\_b0}} ) ;}
+\DoxyCodeLine{00343         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af28cd86dc06547782817443af59ff7b3}{RCC\_CFGR\_PPRE2\_b1}} ) ;}
+\DoxyCodeLine{00344         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CFGR, \mbox{\hyperlink{_m_r_c_c__private_8h_af21d36388ae67c3413cdb5db3655e60f}{RCC\_CFGR\_PPRE2\_b2}} ) ;}
 \DoxyCodeLine{00345 }
 \DoxyCodeLine{00346 \textcolor{preprocessor}{\#endif}}
 \DoxyCodeLine{00347 }
@@ -848,11 +848,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00354     \textcolor{comment}{// HSE (ON/OFF).}}
 \DoxyCodeLine{00355 \textcolor{preprocessor}{    \#if HSE\_EN == ENABLE}}
 \DoxyCodeLine{00356 }
-\DoxyCodeLine{00357         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}} ) ;}
+\DoxyCodeLine{00357         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}} ) ;}
 \DoxyCodeLine{00358 }
 \DoxyCodeLine{00359 \textcolor{preprocessor}{    \#elif HSE\_EN == DISABLE}}
 \DoxyCodeLine{00360 }
-\DoxyCodeLine{00361         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}} ) ;}
+\DoxyCodeLine{00361         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_adb8228c9020595b4cf9995137b8c9a7d}{RCC\_CR\_HSEON}} ) ;}
 \DoxyCodeLine{00362 }
 \DoxyCodeLine{00363 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00364 }
@@ -860,11 +860,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \DoxyCodeLine{00366     \textcolor{comment}{// HSI (ON/OFF).}}
 \DoxyCodeLine{00367 \textcolor{preprocessor}{    \#if HSI\_EN == ENABLE}}
 \DoxyCodeLine{00368 }
-\DoxyCodeLine{00369         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}} ) ;}
+\DoxyCodeLine{00369         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}} ) ;}
 \DoxyCodeLine{00370 }
 \DoxyCodeLine{00371 \textcolor{preprocessor}{    \#elif HSI\_EN == DISABLE}}
 \DoxyCodeLine{00372 }
-\DoxyCodeLine{00373         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}} ) ;}
+\DoxyCodeLine{00373         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>CR, \mbox{\hyperlink{_m_r_c_c__private_8h_af4fcacf94a97f7d49a70e089b39cf474}{RCC\_CR\_HSION}} ) ;}
 \DoxyCodeLine{00374 }
 \DoxyCodeLine{00375 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00376 }
@@ -873,7 +873,7 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00078}{RCC}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00143}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00144}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00145}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00146}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b3}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00130}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00131}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00126}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00127}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00128}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00121}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00122}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00123}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00124}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00125}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00140}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00141}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00142}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00137}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00138}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00139}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00149}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00150}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00089}{RCC\+\_\+\+CR\+\_\+\+CSSON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00090}{RCC\+\_\+\+CR\+\_\+\+HSEBYP}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00092}{RCC\+\_\+\+CR\+\_\+\+HSEON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00094}{RCC\+\_\+\+CR\+\_\+\+HSION}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00086}{RCC\+\_\+\+CR\+\_\+\+PLLI2\+SON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00088}{RCC\+\_\+\+CR\+\_\+\+PLLON}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00143}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00144}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00145}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00146}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b3}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00130}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00131}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00126}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00127}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00128}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00121}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00122}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00123}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00124}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00125}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00140}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00141}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00142}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00137}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00138}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00139}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00149}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00150}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00089}{RCC\+\_\+\+CR\+\_\+\+CSSON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00090}{RCC\+\_\+\+CR\+\_\+\+HSEBYP}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00092}{RCC\+\_\+\+CR\+\_\+\+HSEON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00094}{RCC\+\_\+\+CR\+\_\+\+HSION}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00086}{RCC\+\_\+\+CR\+\_\+\+PLLI2\+SON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00088}{RCC\+\_\+\+CR\+\_\+\+PLLON}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}\label{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}} 
 \index{MRCC\_interface.h@{MRCC\_interface.h}!MRCC\_vEnablePeriphralCLK@{MRCC\_vEnablePeriphralCLK}}
@@ -894,14 +894,14 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of
 \DoxyCodeLine{00387 }
 \DoxyCodeLine{00388         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aefd73ec71a770d3b37f9bc0ea55ad130}{RCC\_AHB1}} :}
 \DoxyCodeLine{00389 }
-\DoxyCodeLine{00390             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00390             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00391 }
 \DoxyCodeLine{00392         break ;}
 \DoxyCodeLine{00393 }
 \DoxyCodeLine{00394 }
 \DoxyCodeLine{00395         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aa933a7465c80c134626f66bdbe7a87ee}{RCC\_AHB2}} :}
 \DoxyCodeLine{00396 }
-\DoxyCodeLine{00397             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB2ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00397             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00398 }
 \DoxyCodeLine{00399 }
 \DoxyCodeLine{00400         break ;}
@@ -909,20 +909,20 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of
 \DoxyCodeLine{00402 }
 \DoxyCodeLine{00403         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}} :}
 \DoxyCodeLine{00404 }
-\DoxyCodeLine{00405             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00405             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00406 }
 \DoxyCodeLine{00407         break ;}
 \DoxyCodeLine{00408 }
 \DoxyCodeLine{00409 }
 \DoxyCodeLine{00410         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}} :}
 \DoxyCodeLine{00411 }
-\DoxyCodeLine{00412             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00412             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00413 }
 \DoxyCodeLine{00414         break ;}
 \DoxyCodeLine{00415 }
 \DoxyCodeLine{00416         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a840cfbe16cf7de99465d760b34bd9911}{RCC\_AHB1LPENR}}:}
 \DoxyCodeLine{00417 }
-\DoxyCodeLine{00418             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1LPENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00418             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1LPENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00419 }
 \DoxyCodeLine{00420         break ;}
 \DoxyCodeLine{00421 }
@@ -939,7 +939,7 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00078}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00031}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00035}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00032}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00033}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00034}{RCC\+\_\+\+APB2}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00031}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00035}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00032}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00033}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00034}{RCC\+\_\+\+APB2}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_m_r_c_c__interface_8h_aae7b5bdf39efe155a97b93841422cce5}\label{_m_r_c_c__interface_8h_aae7b5bdf39efe155a97b93841422cce5}} 
 \index{MRCC\_interface.h@{MRCC\_interface.h}!MRCC\_vDisablePeriphralCLK@{MRCC\_vDisablePeriphralCLK}}
@@ -960,14 +960,14 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of
 \DoxyCodeLine{00440 }
 \DoxyCodeLine{00441         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aefd73ec71a770d3b37f9bc0ea55ad130}{RCC\_AHB1}} :}
 \DoxyCodeLine{00442 }
-\DoxyCodeLine{00443             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00443             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00444 }
 \DoxyCodeLine{00445         break ;}
 \DoxyCodeLine{00446 }
 \DoxyCodeLine{00447 }
 \DoxyCodeLine{00448         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aa933a7465c80c134626f66bdbe7a87ee}{RCC\_AHB2}} :}
 \DoxyCodeLine{00449 }
-\DoxyCodeLine{00450             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB2ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00450             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00451 }
 \DoxyCodeLine{00452 }
 \DoxyCodeLine{00453         break ;}
@@ -975,21 +975,21 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of
 \DoxyCodeLine{00455 }
 \DoxyCodeLine{00456         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}} :}
 \DoxyCodeLine{00457 }
-\DoxyCodeLine{00458             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00458             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00459 }
 \DoxyCodeLine{00460         break ;}
 \DoxyCodeLine{00461 }
 \DoxyCodeLine{00462 }
 \DoxyCodeLine{00463         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}} :}
 \DoxyCodeLine{00464 }
-\DoxyCodeLine{00465             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00465             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00466 }
 \DoxyCodeLine{00467         break ;}
 \DoxyCodeLine{00468 }
 \DoxyCodeLine{00469 }
 \DoxyCodeLine{00470         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a840cfbe16cf7de99465d760b34bd9911}{RCC\_AHB1LPENR}}:}
 \DoxyCodeLine{00471 }
-\DoxyCodeLine{00472             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{_m_r_c_c__private_8h_a74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1LPENR, A\_u32PeriphralID ) ;}
+\DoxyCodeLine{00472             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1LPENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00473 }
 \DoxyCodeLine{00474         break ;}
 \DoxyCodeLine{00475 }
@@ -1007,5 +1007,5 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00078}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00031}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00035}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00032}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00033}{RCC\+\_\+\+APB1}}, and \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00034}{RCC\+\_\+\+APB2}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00031}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00035}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00032}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00033}{RCC\+\_\+\+APB1}}, and \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00034}{RCC\+\_\+\+APB2}}.
 

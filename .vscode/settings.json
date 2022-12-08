@@ -2,6 +2,12 @@
   "files.associations": {
     "*.inc": "amxxpawn",
     "*.sma": "amxxpawn",
-    "lstd_types.h": "c"
+    "lstd_types.h": "c",
+    "nvic_interface.h": "c",
+    "gpio_interface.h": "c",
+    "nvic_private.h": "c",
+    "gpio_private.h": "c",
+    "nvic_config.h": "c",
+    "gpio_config.h": "c"
   }
 }
