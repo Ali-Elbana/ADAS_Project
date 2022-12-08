@@ -15,21 +15,23 @@
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_GPIO/Testing_GPIO_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
-
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_Motor_Driver/Testing_Motor_Driver_interface.h"
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_OutputPushPull 	STOP
+#define TestingGPIO_OutputPushPull STOP
 
-#define TestingGPIO_OutputOpenDrain RUN
+#define TestingGPIO_OutputOpenDrain STOP
 
-#define TestingGPIO_Input  			STOP
+#define TestingGPIO_Input STOP
 
-#define TestingPushButton			STOP
+#define TestingPushButton STOP
 
-#define TestingDCMotor				STOP
+#define TestingDCMotor STOP
+
+#define TestingMotorDriver RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -38,50 +40,42 @@
 int main(void)
 {
 
+#if TestingGPIO_OutputPushPull == RUN
 
-	#if TestingGPIO_OutputPushPull == RUN
+	TMGPIO_vPushPullOutputPins();
 
-	TMGPIO_vPushPullOutputPins( ) ;
+#endif
 
-	#endif
+#if TestingGPIO_Input == RUN
 
-	#if TestingGPIO_Input == RUN
+	TMGPIO_vPullDownInputPins();
 
-	TMGPIO_vPullDownInputPins( ) ;
+#endif
 
-	#endif
+#if TestingPushButton == RUN
 
+	THPushButton_vTogglePIN();
 
-	#if TestingPushButton == RUN
+#endif
 
-	THPushButton_vTogglePIN(  ) ;
+#if TestingDCMotor == RUN
 
-	#endif
+	THDC_vMotor();
 
-	#if TestingDCMotor == RUN
+#endif
 
-	THDC_vMotor(  ) ;
+#if TestingGPIO_OutputOpenDrain == RUN
 
-	#endif
+	TMGPIO_vOpenDrainOutputPIN();
 
-	#if TestingGPIO_OutputOpenDrain == RUN
+#endif
 
-	TMGPIO_vOpenDrainOutputPIN( ) ;
+#if TestingMotorDriver == RUN
 
-	#endif
+	THDC_vTestMotors();
 
+#endif
 
-	while(TRUE) ;
-
-
-
+	while (TRUE)
+		;
 }
-
-
-
-
-
-
-
-
-
