@@ -25,15 +25,15 @@
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00028}00028 }
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00029}00029     \textcolor{comment}{/* Lock key write sequence */}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00030}00030 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00031}00031     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[13,14,15] = {\ucr}1{\ucr} */}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00031}00031     \textcolor{comment}{/* WR LCKR[16] = '1' + LCKR[13,14,15] = {\ucr}1{\ucr} */}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00032}00032     L\_u32LockGPIOA = ( (1UL << \mbox{\hyperlink{_g_p_i_o__config_8h_aec9764fb7c7a18a92444892a6333e614}{LCKK\_BIT\_POS}}) | (\mbox{\hyperlink{_g_p_i_o__config_8h_a13e84566d603a1923361df965110c94d}{GPIOA\_PIN\_POS}}) ) ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00033}00033 }
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00034}00034     \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>LCKRx = L\_u32LockGPIOA ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00035}00035 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00036}00036     \textcolor{comment}{/* WR LCKR[16] = {\ucr}0{\ucr} + LCKR[13,14,15] should not change*/}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00036}00036     \textcolor{comment}{/* WR LCKR[16] = '0' + LCKR[13,14,15] should not change*/}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00037}00037     \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>LCKRx = (\mbox{\hyperlink{_g_p_i_o__config_8h_a13e84566d603a1923361df965110c94d}{GPIOA\_PIN\_POS}}) ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00038}00038 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00039}00039     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[13,14,15] should not change*/}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00039}00039     \textcolor{comment}{/* WR LCKR[16] = '1'+ LCKR[13,14,15] should not change*/}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00040}00040     \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>LCKRx = L\_u32LockGPIOA ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00041}00041 }
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00042}00042     \textcolor{comment}{/* RD LCKR */}}
@@ -44,15 +44,15 @@
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00048}00048 }
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00049}00049     \textcolor{comment}{/* Lock key write sequence */}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00050}00050 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00051}00051     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[2,3,4] = {\ucr}1{\ucr} */}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00051}00051     \textcolor{comment}{/* WR LCKR[16] = '1' + LCKR[2,3,4] = {\ucr}1{\ucr} */}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00052}00052     L\_u32LockGPIOB = ( (1UL << \mbox{\hyperlink{_g_p_i_o__config_8h_aec9764fb7c7a18a92444892a6333e614}{LCKK\_BIT\_POS}}) | (\mbox{\hyperlink{_g_p_i_o__config_8h_ab3758da87052ce9d2988dc84b5c9d1eb}{GPIOB\_PIN\_POS}}) ) ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00053}00053 }
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00054}00054     \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>LCKRx = L\_u32LockGPIOB ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00055}00055 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00056}00056     \textcolor{comment}{/* WR LCKR[16] = {\ucr}0{\ucr} + LCKR[2,3,4] should not change*/}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00056}00056     \textcolor{comment}{/* WR LCKR[16] = '0' + LCKR[2,3,4] should not change*/}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00057}00057     \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>LCKRx = (\mbox{\hyperlink{_g_p_i_o__config_8h_ab3758da87052ce9d2988dc84b5c9d1eb}{GPIOB\_PIN\_POS}}) ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00058}00058 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00059}00059     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[2,3,4] should not change*/}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00059}00059     \textcolor{comment}{/* WR LCKR[16] = '1' + LCKR[2,3,4] should not change*/}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00060}00060     \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>LCKRx = L\_u32LockGPIOB ;}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00061}00061 }
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00062}00062     \textcolor{comment}{/* RD LCKR */}}

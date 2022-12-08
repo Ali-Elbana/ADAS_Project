@@ -31,7 +31,6 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -70,10 +69,13 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab4245d45e035033aece85f81662a9cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_r_c_c__program_8c.html#ab4245d45e035033aece85f81662a9cf0">MRCC_vInit</a> (void)</td></tr>
+<tr class="memdesc:ab4245d45e035033aece85f81662a9cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RCC with a certain configurations.  <a href="_m_r_c_c__program_8c.html#ab4245d45e035033aece85f81662a9cf0">More...</a><br /></td></tr>
 <tr class="separator:ab4245d45e035033aece85f81662a9cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4049d31c5859572e821de89f05d6df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_r_c_c__program_8c.html#adf4049d31c5859572e821de89f05d6df">MRCC_vEnablePeriphralCLK</a> (<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32BusID, <a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32PeriphralID)</td></tr>
+<tr class="memdesc:adf4049d31c5859572e821de89f05d6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enabling the CLK on a specific Peripheral.  <a href="_m_r_c_c__program_8c.html#adf4049d31c5859572e821de89f05d6df">More...</a><br /></td></tr>
 <tr class="separator:adf4049d31c5859572e821de89f05d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7b5bdf39efe155a97b93841422cce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_r_c_c__program_8c.html#aae7b5bdf39efe155a97b93841422cce5">MRCC_vDisablePeriphralCLK</a> (<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32BusID, <a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32PeriphralID)</td></tr>
+<tr class="memdesc:aae7b5bdf39efe155a97b93841422cce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disabling the CLK on a specific Peripheral.  <a href="_m_r_c_c__program_8c.html#aae7b5bdf39efe155a97b93841422cce5">More...</a><br /></td></tr>
 <tr class="separator:aae7b5bdf39efe155a97b93841422cce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -99,6 +101,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Initialize the RCC with a certain configurations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">void.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_m_r_c_c__program_8c_source.html#l00029">29</a> of file <a class="el" href="_m_r_c_c__program_8c_source.html">MRCC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
@@ -449,39 +460,39 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  375</span><span class="preprocessor">    #endif</span></div>
 <div class="line"><span class="lineno">  376</span> </div>
 <div class="line"><span class="lineno">  377</span>}</div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a13f86bda561141bd25f9fa46a1408459"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a13f86bda561141bd25f9fa46a1408459">RCC_CFGR_SW_b1</a></div><div class="ttdeci">#define RCC_CFGR_SW_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00150">MRCC_private.h:150</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a1798d37349f0c8adef81a9efc85e9593"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a1798d37349f0c8adef81a9efc85e9593">RCC_CFGR_MOC2PRE_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC2PRE_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00124">MRCC_private.h:124</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a1f9d3b36e7f260e735942d224b9c2162"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a1f9d3b36e7f260e735942d224b9c2162">RCC_CFGR_HPRE_b2</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00145">MRCC_private.h:145</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a231274f29657e327a68af0b2ed345ee1"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a231274f29657e327a68af0b2ed345ee1">RCC_CFGR_PPRE1_b0</a></div><div class="ttdeci">#define RCC_CFGR_PPRE1_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00140">MRCC_private.h:140</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a3ccb8964b640530f1080f9ea549d8133"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a3ccb8964b640530f1080f9ea549d8133">RCC_CR_PLLI2SON</a></div><div class="ttdeci">#define RCC_CR_PLLI2SON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00086">MRCC_private.h:86</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a4e5d3abf408a5b0e0764e7495dbdf25c"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a4e5d3abf408a5b0e0764e7495dbdf25c">RCC_CFGR_MOC2PRE_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC2PRE_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00123">MRCC_private.h:123</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a4ec762be98659ce934895414435959d4"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a4ec762be98659ce934895414435959d4">RCC_CFGR_SW_b0</a></div><div class="ttdeci">#define RCC_CFGR_SW_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00149">MRCC_private.h:149</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a527bd9f6be8355ad5a81d817c4b35a3b"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a527bd9f6be8355ad5a81d817c4b35a3b">RCC_CFGR_PPRE1_b1</a></div><div class="ttdeci">#define RCC_CFGR_PPRE1_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00141">MRCC_private.h:141</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a55a7dc20977c92c7d48f48992b6af17e"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a55a7dc20977c92c7d48f48992b6af17e">RCC_CFGR_MOC2_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC2_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00122">MRCC_private.h:122</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a748f9e0cbb789185f60da10ffb8394c1"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a748f9e0cbb789185f60da10ffb8394c1">RCC_CFGR_MOC1PRE_b2</a></div><div class="ttdeci">#define RCC_CFGR_MOC1PRE_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00128">MRCC_private.h:128</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a7ffaee719233844047b403ef31c457b3"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a7ffaee719233844047b403ef31c457b3">RCC_CFGR_MOC1_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC1_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00131">MRCC_private.h:131</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a85c79b6b817ae9dace1c16d011b368ad"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a85c79b6b817ae9dace1c16d011b368ad">RCC_CFGR_PPRE1_b2</a></div><div class="ttdeci">#define RCC_CFGR_PPRE1_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00142">MRCC_private.h:142</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a8d277f007bf4b140b51c0cc6cc32679d"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a8d277f007bf4b140b51c0cc6cc32679d">RCC_CFGR_MOC1PRE_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC1PRE_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00126">MRCC_private.h:126</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a8e8e7008ec556b2d64e1c819f62d1b87"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a8e8e7008ec556b2d64e1c819f62d1b87">RCC_CFGR_HPRE_b3</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b3</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00146">MRCC_private.h:146</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_a94db33680ee6faaedf3f94ac5b4006fe"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a94db33680ee6faaedf3f94ac5b4006fe">RCC_CFGR_MOC1_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC1_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00130">MRCC_private.h:130</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_aa3288090671af5a959aae4d7f7696d55"><div class="ttname"><a href="_m_r_c_c__private_8h.html#aa3288090671af5a959aae4d7f7696d55">RCC_CR_HSEBYP</a></div><div class="ttdeci">#define RCC_CR_HSEBYP</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00090">MRCC_private.h:90</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_ab0cb8c74eaee6177e695323d52804974"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ab0cb8c74eaee6177e695323d52804974">RCC_CFGR_MOC2PRE_b2</a></div><div class="ttdeci">#define RCC_CFGR_MOC2PRE_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00125">MRCC_private.h:125</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_abdd6ead3810ccf81dca767f68650d4b6"><div class="ttname"><a href="_m_r_c_c__private_8h.html#abdd6ead3810ccf81dca767f68650d4b6">RCC_CFGR_HPRE_b1</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00144">MRCC_private.h:144</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_ac40f34015b075e6101d6e7e87fdea405"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ac40f34015b075e6101d6e7e87fdea405">RCC_CFGR_MOC2_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC2_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00121">MRCC_private.h:121</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_acc05308869ad055e1e6f2c32d738aecd"><div class="ttname"><a href="_m_r_c_c__private_8h.html#acc05308869ad055e1e6f2c32d738aecd">RCC_CR_CSSON</a></div><div class="ttdeci">#define RCC_CR_CSSON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00089">MRCC_private.h:89</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_ad0e73d5b0a4883e074d40029b49ee47e"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ad0e73d5b0a4883e074d40029b49ee47e">RCC_CR_PLLON</a></div><div class="ttdeci">#define RCC_CR_PLLON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00088">MRCC_private.h:88</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_ad2045633ec191231a741910e3b6641ab"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ad2045633ec191231a741910e3b6641ab">RCC_CFGR_MOC1PRE_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC1PRE_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00127">MRCC_private.h:127</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_adb8228c9020595b4cf9995137b8c9a7d"><div class="ttname"><a href="_m_r_c_c__private_8h.html#adb8228c9020595b4cf9995137b8c9a7d">RCC_CR_HSEON</a></div><div class="ttdeci">#define RCC_CR_HSEON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00092">MRCC_private.h:92</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_addf707d0e9e0b3f83b816c9b69ca5e11"><div class="ttname"><a href="_m_r_c_c__private_8h.html#addf707d0e9e0b3f83b816c9b69ca5e11">RCC_CFGR_PPRE2_b0</a></div><div class="ttdeci">#define RCC_CFGR_PPRE2_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00137">MRCC_private.h:137</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_aeb262b9f8f18f70b1d7104d63b19ed58"><div class="ttname"><a href="_m_r_c_c__private_8h.html#aeb262b9f8f18f70b1d7104d63b19ed58">RCC_CFGR_HPRE_b0</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00143">MRCC_private.h:143</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_af21d36388ae67c3413cdb5db3655e60f"><div class="ttname"><a href="_m_r_c_c__private_8h.html#af21d36388ae67c3413cdb5db3655e60f">RCC_CFGR_PPRE2_b2</a></div><div class="ttdeci">#define RCC_CFGR_PPRE2_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00139">MRCC_private.h:139</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_af28cd86dc06547782817443af59ff7b3"><div class="ttname"><a href="_m_r_c_c__private_8h.html#af28cd86dc06547782817443af59ff7b3">RCC_CFGR_PPRE2_b1</a></div><div class="ttdeci">#define RCC_CFGR_PPRE2_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00138">MRCC_private.h:138</a></div></div>
-<div class="ttc" id="a_m_r_c_c__private_8h_html_af4fcacf94a97f7d49a70e089b39cf474"><div class="ttname"><a href="_m_r_c_c__private_8h.html#af4fcacf94a97f7d49a70e089b39cf474">RCC_CR_HSION</a></div><div class="ttdeci">#define RCC_CR_HSION</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00094">MRCC_private.h:94</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a13f86bda561141bd25f9fa46a1408459"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a13f86bda561141bd25f9fa46a1408459">RCC_CFGR_SW_b1</a></div><div class="ttdeci">#define RCC_CFGR_SW_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00290">MRCC_private.h:290</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a1798d37349f0c8adef81a9efc85e9593"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a1798d37349f0c8adef81a9efc85e9593">RCC_CFGR_MOC2PRE_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC2PRE_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00264">MRCC_private.h:264</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a1f9d3b36e7f260e735942d224b9c2162"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a1f9d3b36e7f260e735942d224b9c2162">RCC_CFGR_HPRE_b2</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00285">MRCC_private.h:285</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a231274f29657e327a68af0b2ed345ee1"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a231274f29657e327a68af0b2ed345ee1">RCC_CFGR_PPRE1_b0</a></div><div class="ttdeci">#define RCC_CFGR_PPRE1_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00280">MRCC_private.h:280</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a3ccb8964b640530f1080f9ea549d8133"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a3ccb8964b640530f1080f9ea549d8133">RCC_CR_PLLI2SON</a></div><div class="ttdeci">#define RCC_CR_PLLI2SON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00226">MRCC_private.h:226</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a4e5d3abf408a5b0e0764e7495dbdf25c"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a4e5d3abf408a5b0e0764e7495dbdf25c">RCC_CFGR_MOC2PRE_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC2PRE_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00263">MRCC_private.h:263</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a4ec762be98659ce934895414435959d4"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a4ec762be98659ce934895414435959d4">RCC_CFGR_SW_b0</a></div><div class="ttdeci">#define RCC_CFGR_SW_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00289">MRCC_private.h:289</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a527bd9f6be8355ad5a81d817c4b35a3b"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a527bd9f6be8355ad5a81d817c4b35a3b">RCC_CFGR_PPRE1_b1</a></div><div class="ttdeci">#define RCC_CFGR_PPRE1_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00281">MRCC_private.h:281</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a55a7dc20977c92c7d48f48992b6af17e"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a55a7dc20977c92c7d48f48992b6af17e">RCC_CFGR_MOC2_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC2_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00262">MRCC_private.h:262</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a748f9e0cbb789185f60da10ffb8394c1"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a748f9e0cbb789185f60da10ffb8394c1">RCC_CFGR_MOC1PRE_b2</a></div><div class="ttdeci">#define RCC_CFGR_MOC1PRE_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00268">MRCC_private.h:268</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a7ffaee719233844047b403ef31c457b3"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a7ffaee719233844047b403ef31c457b3">RCC_CFGR_MOC1_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC1_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00271">MRCC_private.h:271</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a85c79b6b817ae9dace1c16d011b368ad"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a85c79b6b817ae9dace1c16d011b368ad">RCC_CFGR_PPRE1_b2</a></div><div class="ttdeci">#define RCC_CFGR_PPRE1_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00282">MRCC_private.h:282</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a8d277f007bf4b140b51c0cc6cc32679d"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a8d277f007bf4b140b51c0cc6cc32679d">RCC_CFGR_MOC1PRE_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC1PRE_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00266">MRCC_private.h:266</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a8e8e7008ec556b2d64e1c819f62d1b87"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a8e8e7008ec556b2d64e1c819f62d1b87">RCC_CFGR_HPRE_b3</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b3</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00286">MRCC_private.h:286</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_a94db33680ee6faaedf3f94ac5b4006fe"><div class="ttname"><a href="_m_r_c_c__private_8h.html#a94db33680ee6faaedf3f94ac5b4006fe">RCC_CFGR_MOC1_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC1_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00270">MRCC_private.h:270</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_aa3288090671af5a959aae4d7f7696d55"><div class="ttname"><a href="_m_r_c_c__private_8h.html#aa3288090671af5a959aae4d7f7696d55">RCC_CR_HSEBYP</a></div><div class="ttdeci">#define RCC_CR_HSEBYP</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00230">MRCC_private.h:230</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_ab0cb8c74eaee6177e695323d52804974"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ab0cb8c74eaee6177e695323d52804974">RCC_CFGR_MOC2PRE_b2</a></div><div class="ttdeci">#define RCC_CFGR_MOC2PRE_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00265">MRCC_private.h:265</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_abdd6ead3810ccf81dca767f68650d4b6"><div class="ttname"><a href="_m_r_c_c__private_8h.html#abdd6ead3810ccf81dca767f68650d4b6">RCC_CFGR_HPRE_b1</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00284">MRCC_private.h:284</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_ac40f34015b075e6101d6e7e87fdea405"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ac40f34015b075e6101d6e7e87fdea405">RCC_CFGR_MOC2_b0</a></div><div class="ttdeci">#define RCC_CFGR_MOC2_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00261">MRCC_private.h:261</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_acc05308869ad055e1e6f2c32d738aecd"><div class="ttname"><a href="_m_r_c_c__private_8h.html#acc05308869ad055e1e6f2c32d738aecd">RCC_CR_CSSON</a></div><div class="ttdeci">#define RCC_CR_CSSON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00229">MRCC_private.h:229</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_ad0e73d5b0a4883e074d40029b49ee47e"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ad0e73d5b0a4883e074d40029b49ee47e">RCC_CR_PLLON</a></div><div class="ttdeci">#define RCC_CR_PLLON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00228">MRCC_private.h:228</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_ad2045633ec191231a741910e3b6641ab"><div class="ttname"><a href="_m_r_c_c__private_8h.html#ad2045633ec191231a741910e3b6641ab">RCC_CFGR_MOC1PRE_b1</a></div><div class="ttdeci">#define RCC_CFGR_MOC1PRE_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00267">MRCC_private.h:267</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_adb8228c9020595b4cf9995137b8c9a7d"><div class="ttname"><a href="_m_r_c_c__private_8h.html#adb8228c9020595b4cf9995137b8c9a7d">RCC_CR_HSEON</a></div><div class="ttdeci">#define RCC_CR_HSEON</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00232">MRCC_private.h:232</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_addf707d0e9e0b3f83b816c9b69ca5e11"><div class="ttname"><a href="_m_r_c_c__private_8h.html#addf707d0e9e0b3f83b816c9b69ca5e11">RCC_CFGR_PPRE2_b0</a></div><div class="ttdeci">#define RCC_CFGR_PPRE2_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00277">MRCC_private.h:277</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_aeb262b9f8f18f70b1d7104d63b19ed58"><div class="ttname"><a href="_m_r_c_c__private_8h.html#aeb262b9f8f18f70b1d7104d63b19ed58">RCC_CFGR_HPRE_b0</a></div><div class="ttdeci">#define RCC_CFGR_HPRE_b0</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00283">MRCC_private.h:283</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_af21d36388ae67c3413cdb5db3655e60f"><div class="ttname"><a href="_m_r_c_c__private_8h.html#af21d36388ae67c3413cdb5db3655e60f">RCC_CFGR_PPRE2_b2</a></div><div class="ttdeci">#define RCC_CFGR_PPRE2_b2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00279">MRCC_private.h:279</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_af28cd86dc06547782817443af59ff7b3"><div class="ttname"><a href="_m_r_c_c__private_8h.html#af28cd86dc06547782817443af59ff7b3">RCC_CFGR_PPRE2_b1</a></div><div class="ttdeci">#define RCC_CFGR_PPRE2_b1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00278">MRCC_private.h:278</a></div></div>
+<div class="ttc" id="a_m_r_c_c__private_8h_html_af4fcacf94a97f7d49a70e089b39cf474"><div class="ttname"><a href="_m_r_c_c__private_8h.html#af4fcacf94a97f7d49a70e089b39cf474">RCC_CR_HSION</a></div><div class="ttdeci">#define RCC_CR_HSION</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__private_8h_source.html#l00234">MRCC_private.h:234</a></div></div>
 <div class="ttc" id="agroup__bitmath_html_ga6ec8b9eaa50956e59aedcd2c050298d3"><div class="ttname"><a href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a></div><div class="ttdeci">#define SET_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">LSTD_BITMATH.h:23</a></div></div>
 <div class="ttc" id="agroup__bitmath_html_gaf19b6fac717c58884e62ee37a2e89786"><div class="ttname"><a href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a></div><div class="ttdeci">#define CLR_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">LSTD_BITMATH.h:30</a></div></div>
-<div class="ttc" id="agroup__vector__table_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdoc">RCC global interrupt.</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__interface_8h_source.html#l00270">NVIC_interface.h:270</a></div></div>
+<div class="ttc" id="agroup__vector__table_html_ga74944438a086975793d26ae48d5882d4"><div class="ttname"><a href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a></div><div class="ttdeci">#define RCC</div><div class="ttdoc">RCC global interrupt.</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__interface_8h_source.html#l00404">NVIC_interface.h:404</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_n_v_i_c__interface_8h_source.html#l00270">RCC</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00143">RCC_CFGR_HPRE_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00144">RCC_CFGR_HPRE_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00145">RCC_CFGR_HPRE_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00146">RCC_CFGR_HPRE_b3</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00130">RCC_CFGR_MOC1_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00131">RCC_CFGR_MOC1_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00126">RCC_CFGR_MOC1PRE_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00127">RCC_CFGR_MOC1PRE_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00128">RCC_CFGR_MOC1PRE_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00121">RCC_CFGR_MOC2_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00122">RCC_CFGR_MOC2_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00123">RCC_CFGR_MOC2PRE_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00124">RCC_CFGR_MOC2PRE_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00125">RCC_CFGR_MOC2PRE_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00140">RCC_CFGR_PPRE1_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00141">RCC_CFGR_PPRE1_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00142">RCC_CFGR_PPRE1_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00137">RCC_CFGR_PPRE2_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00138">RCC_CFGR_PPRE2_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00139">RCC_CFGR_PPRE2_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00149">RCC_CFGR_SW_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00150">RCC_CFGR_SW_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00089">RCC_CR_CSSON</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00090">RCC_CR_HSEBYP</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00092">RCC_CR_HSEON</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00094">RCC_CR_HSION</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00086">RCC_CR_PLLI2SON</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00088">RCC_CR_PLLON</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_n_v_i_c__interface_8h_source.html#l00404">RCC</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00283">RCC_CFGR_HPRE_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00284">RCC_CFGR_HPRE_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00285">RCC_CFGR_HPRE_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00286">RCC_CFGR_HPRE_b3</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00270">RCC_CFGR_MOC1_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00271">RCC_CFGR_MOC1_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00266">RCC_CFGR_MOC1PRE_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00267">RCC_CFGR_MOC1PRE_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00268">RCC_CFGR_MOC1PRE_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00261">RCC_CFGR_MOC2_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00262">RCC_CFGR_MOC2_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00263">RCC_CFGR_MOC2PRE_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00264">RCC_CFGR_MOC2PRE_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00265">RCC_CFGR_MOC2PRE_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00280">RCC_CFGR_PPRE1_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00281">RCC_CFGR_PPRE1_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00282">RCC_CFGR_PPRE1_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00277">RCC_CFGR_PPRE2_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00278">RCC_CFGR_PPRE2_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00279">RCC_CFGR_PPRE2_b2</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00289">RCC_CFGR_SW_b0</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00290">RCC_CFGR_SW_b1</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00229">RCC_CR_CSSON</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00230">RCC_CR_HSEBYP</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00232">RCC_CR_HSEON</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00234">RCC_CR_HSION</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00226">RCC_CR_PLLI2SON</a>, <a class="el" href="_m_r_c_c__private_8h_source.html#l00228">RCC_CR_PLLON</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -511,20 +522,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Enabling the CLK on a specific Peripheral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Bus</td><td>ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Peripheral</td><td>ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_m_r_c_c__program_8c_source.html#l00382">382</a> of file <a class="el" href="_m_r_c_c__program_8c_source.html">MRCC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  383</span>{</div>
 <div class="line"><span class="lineno">  384</span> </div>
 <div class="line"><span class="lineno">  385</span>    <span class="keywordflow">switch</span>( A_u32BusID )</div>
 <div class="line"><span class="lineno">  386</span>    {</div>
 <div class="line"><span class="lineno">  387</span> </div>
-<div class="line"><span class="lineno">  388</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#aefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a> :</div>
+<div class="line"><span class="lineno">  388</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#gaefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a> :</div>
 <div class="line"><span class="lineno">  389</span> </div>
 <div class="line"><span class="lineno">  390</span>            <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  391</span> </div>
 <div class="line"><span class="lineno">  392</span>        break ;</div>
 <div class="line"><span class="lineno">  393</span> </div>
 <div class="line"><span class="lineno">  394</span> </div>
-<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#aa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a> :</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#gaa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a> :</div>
 <div class="line"><span class="lineno">  396</span> </div>
 <div class="line"><span class="lineno">  397</span>            <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  398</span> </div>
@@ -532,20 +553,20 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  400</span>        break ;</div>
 <div class="line"><span class="lineno">  401</span> </div>
 <div class="line"><span class="lineno">  402</span> </div>
-<div class="line"><span class="lineno">  403</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#a138c4bafb268d42acaee8cd78a77bb76">RCC_APB1</a> :</div>
+<div class="line"><span class="lineno">  403</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#ga138c4bafb268d42acaee8cd78a77bb76">RCC_APB1</a> :</div>
 <div class="line"><span class="lineno">  404</span> </div>
 <div class="line"><span class="lineno">  405</span>            <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  406</span> </div>
 <div class="line"><span class="lineno">  407</span>        break ;</div>
 <div class="line"><span class="lineno">  408</span> </div>
 <div class="line"><span class="lineno">  409</span> </div>
-<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#a87b37ab3b0024e2cdf8d4e0cbe1febdd">RCC_APB2</a> :</div>
+<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#ga87b37ab3b0024e2cdf8d4e0cbe1febdd">RCC_APB2</a> :</div>
 <div class="line"><span class="lineno">  411</span> </div>
 <div class="line"><span class="lineno">  412</span>            <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  413</span> </div>
 <div class="line"><span class="lineno">  414</span>        break ;</div>
 <div class="line"><span class="lineno">  415</span> </div>
-<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#a840cfbe16cf7de99465d760b34bd9911">RCC_AHB1LPENR</a>:</div>
+<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#ga840cfbe16cf7de99465d760b34bd9911">RCC_AHB1LPENR</a>:</div>
 <div class="line"><span class="lineno">  417</span> </div>
 <div class="line"><span class="lineno">  418</span>            <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1LPENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  419</span> </div>
@@ -560,13 +581,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  428</span>    }</div>
 <div class="line"><span class="lineno">  429</span> </div>
 <div class="line"><span class="lineno">  430</span>}</div>
-<div class="ttc" id="a_m_r_c_c__interface_8h_html_a138c4bafb268d42acaee8cd78a77bb76"><div class="ttname"><a href="_m_r_c_c__interface_8h.html#a138c4bafb268d42acaee8cd78a77bb76">RCC_APB1</a></div><div class="ttdeci">#define RCC_APB1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00033">MRCC_interface.h:33</a></div></div>
-<div class="ttc" id="a_m_r_c_c__interface_8h_html_a840cfbe16cf7de99465d760b34bd9911"><div class="ttname"><a href="_m_r_c_c__interface_8h.html#a840cfbe16cf7de99465d760b34bd9911">RCC_AHB1LPENR</a></div><div class="ttdeci">#define RCC_AHB1LPENR</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00035">MRCC_interface.h:35</a></div></div>
-<div class="ttc" id="a_m_r_c_c__interface_8h_html_a87b37ab3b0024e2cdf8d4e0cbe1febdd"><div class="ttname"><a href="_m_r_c_c__interface_8h.html#a87b37ab3b0024e2cdf8d4e0cbe1febdd">RCC_APB2</a></div><div class="ttdeci">#define RCC_APB2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00034">MRCC_interface.h:34</a></div></div>
-<div class="ttc" id="a_m_r_c_c__interface_8h_html_aa933a7465c80c134626f66bdbe7a87ee"><div class="ttname"><a href="_m_r_c_c__interface_8h.html#aa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a></div><div class="ttdeci">#define RCC_AHB2</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00032">MRCC_interface.h:32</a></div></div>
-<div class="ttc" id="a_m_r_c_c__interface_8h_html_aefd73ec71a770d3b37f9bc0ea55ad130"><div class="ttname"><a href="_m_r_c_c__interface_8h.html#aefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a></div><div class="ttdeci">#define RCC_AHB1</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00031">MRCC_interface.h:31</a></div></div>
+<div class="ttc" id="agroup___bus_html_ga138c4bafb268d42acaee8cd78a77bb76"><div class="ttname"><a href="group___bus.html#ga138c4bafb268d42acaee8cd78a77bb76">RCC_APB1</a></div><div class="ttdeci">#define RCC_APB1</div><div class="ttdoc">APB1 Bus.</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00072">MRCC_interface.h:72</a></div></div>
+<div class="ttc" id="agroup___bus_html_ga840cfbe16cf7de99465d760b34bd9911"><div class="ttname"><a href="group___bus.html#ga840cfbe16cf7de99465d760b34bd9911">RCC_AHB1LPENR</a></div><div class="ttdeci">#define RCC_AHB1LPENR</div><div class="ttdoc">peripheral clock enable in low power mode register</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00086">MRCC_interface.h:86</a></div></div>
+<div class="ttc" id="agroup___bus_html_ga87b37ab3b0024e2cdf8d4e0cbe1febdd"><div class="ttname"><a href="group___bus.html#ga87b37ab3b0024e2cdf8d4e0cbe1febdd">RCC_APB2</a></div><div class="ttdeci">#define RCC_APB2</div><div class="ttdoc">APB2 Bus.</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00079">MRCC_interface.h:79</a></div></div>
+<div class="ttc" id="agroup___bus_html_gaa933a7465c80c134626f66bdbe7a87ee"><div class="ttname"><a href="group___bus.html#gaa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a></div><div class="ttdeci">#define RCC_AHB2</div><div class="ttdoc">AHB2 Bus.</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00065">MRCC_interface.h:65</a></div></div>
+<div class="ttc" id="agroup___bus_html_gaefd73ec71a770d3b37f9bc0ea55ad130"><div class="ttname"><a href="group___bus.html#gaefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a></div><div class="ttdeci">#define RCC_AHB1</div><div class="ttdoc">AHB1 Bus.</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00058">MRCC_interface.h:58</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__interface_8h_source.html#l00270">RCC</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00031">RCC_AHB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00035">RCC_AHB1LPENR</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00032">RCC_AHB2</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00033">RCC_APB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00034">RCC_APB2</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_n_v_i_c__interface_8h_source.html#l00404">RCC</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00058">RCC_AHB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00086">RCC_AHB1LPENR</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00065">RCC_AHB2</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00072">RCC_APB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00079">RCC_APB2</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -596,20 +617,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Disabling the CLK on a specific Peripheral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Bus</td><td>ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Peripheral</td><td>ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_m_r_c_c__program_8c_source.html#l00435">435</a> of file <a class="el" href="_m_r_c_c__program_8c_source.html">MRCC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  436</span>{</div>
 <div class="line"><span class="lineno">  437</span> </div>
 <div class="line"><span class="lineno">  438</span>    <span class="keywordflow">switch</span>( A_u32BusID )</div>
 <div class="line"><span class="lineno">  439</span>    {</div>
 <div class="line"><span class="lineno">  440</span> </div>
-<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#aefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a> :</div>
+<div class="line"><span class="lineno">  441</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#gaefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a> :</div>
 <div class="line"><span class="lineno">  442</span> </div>
 <div class="line"><span class="lineno">  443</span>            <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  444</span> </div>
 <div class="line"><span class="lineno">  445</span>        break ;</div>
 <div class="line"><span class="lineno">  446</span> </div>
 <div class="line"><span class="lineno">  447</span> </div>
-<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#aa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a> :</div>
+<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#gaa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a> :</div>
 <div class="line"><span class="lineno">  449</span> </div>
 <div class="line"><span class="lineno">  450</span>            <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB2ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  451</span> </div>
@@ -617,21 +648,21 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  453</span>        break ;</div>
 <div class="line"><span class="lineno">  454</span> </div>
 <div class="line"><span class="lineno">  455</span> </div>
-<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#a138c4bafb268d42acaee8cd78a77bb76">RCC_APB1</a> :</div>
+<div class="line"><span class="lineno">  456</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#ga138c4bafb268d42acaee8cd78a77bb76">RCC_APB1</a> :</div>
 <div class="line"><span class="lineno">  457</span> </div>
 <div class="line"><span class="lineno">  458</span>            <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB1ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  459</span> </div>
 <div class="line"><span class="lineno">  460</span>        break ;</div>
 <div class="line"><span class="lineno">  461</span> </div>
 <div class="line"><span class="lineno">  462</span> </div>
-<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#a87b37ab3b0024e2cdf8d4e0cbe1febdd">RCC_APB2</a> :</div>
+<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#ga87b37ab3b0024e2cdf8d4e0cbe1febdd">RCC_APB2</a> :</div>
 <div class="line"><span class="lineno">  464</span> </div>
 <div class="line"><span class="lineno">  465</span>            <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;APB2ENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  466</span> </div>
 <div class="line"><span class="lineno">  467</span>        break ;</div>
 <div class="line"><span class="lineno">  468</span> </div>
 <div class="line"><span class="lineno">  469</span> </div>
-<div class="line"><span class="lineno">  470</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="_m_r_c_c__interface_8h.html#a840cfbe16cf7de99465d760b34bd9911">RCC_AHB1LPENR</a>:</div>
+<div class="line"><span class="lineno">  470</span>        <span class="keywordflow">case</span> <a class="code hl_define" href="group___bus.html#ga840cfbe16cf7de99465d760b34bd9911">RCC_AHB1LPENR</a>:</div>
 <div class="line"><span class="lineno">  471</span> </div>
 <div class="line"><span class="lineno">  472</span>            <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>( <a class="code hl_define" href="group__vector__table.html#ga74944438a086975793d26ae48d5882d4">RCC</a>-&gt;AHB1LPENR, A_u32PeriphralID ) ;</div>
 <div class="line"><span class="lineno">  473</span> </div>
@@ -648,14 +679,14 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  484</span> </div>
 <div class="line"><span class="lineno">  485</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_n_v_i_c__interface_8h_source.html#l00270">RCC</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00031">RCC_AHB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00035">RCC_AHB1LPENR</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00032">RCC_AHB2</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00033">RCC_APB1</a>, and <a class="el" href="_m_r_c_c__interface_8h_source.html#l00034">RCC_APB2</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_n_v_i_c__interface_8h_source.html#l00404">RCC</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00058">RCC_AHB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00086">RCC_AHB1LPENR</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00065">RCC_AHB2</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00072">RCC_APB1</a>, and <a class="el" href="_m_r_c_c__interface_8h_source.html#l00079">RCC_APB2</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 1 2022 00:15:11 for ADAS Graduation Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Thu Dec 8 2022 17:04:48 for ADAS Graduation Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

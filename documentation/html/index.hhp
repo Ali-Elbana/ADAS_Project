@@ -12,6 +12,14 @@ Title=ADAS Graduation Project
 main="ADAS Graduation Project","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
 
 [FILES]
+_d_c_m__config_8h.html
+_d_c_m__config_8h_source.html
+_d_c_m__interface_8h.html
+_d_c_m__interface_8h_source.html
+_d_c_m__private_8h.html
+_d_c_m__private_8h_source.html
+_d_c_m__program_8c.html
+_d_c_m__program_8c_source.html
 _g_p_i_o__config_8h.html
 _g_p_i_o__config_8h_source.html
 _g_p_i_o__interface_8h.html
@@ -49,6 +57,8 @@ _n_v_i_c__program_8c_source.html
 _r_e_a_d_m_e_8md.html
 annotated.html
 classes.html
+dir_39747b045b67bbc7fd218691b253bdc6.html
+dir_5b9f402d8cd57bcc858ed2703dcc50fe.html
 dir_7491c6db81a5c0dd574a8291d8a3e0d7.html
 dir_a209168a2a96c7e0a316e7cc0f4c7c5b.html
 dir_b58645a5aaf8ed5939b0aed386878fd4.html
@@ -102,9 +112,15 @@ globals_type.html
 globals_u.html
 globals_v.html
 globals_w.html
+group___bus.html
+group___peripheral.html
 group__bitmath.html
 group__bitmathgroup.html
 group__compiler.html
+group__dc__motor1__configurations.html
+group__dc__motor2__configurations.html
+group__dc__motor3__configurations.html
+group__dc__motor4__configurations.html
 group__gpio__addresses.html
 group__gpio__alternate__functions.html
 group__gpio__modes.html
@@ -127,13 +143,12 @@ group__utilities.html
 group__vector__table.html
 index.html
 modules.html
-pages.html
+struct_d_c_m___motor_configuration.html
 struct_g_p_i_ox___memory_map_type.html
 struct_m_g_p_i_ox___config_type.html
 struct_n_v_i_c___memory_map_type.html
 struct_r_c_c___memory_map_type.html
 struct_s_c_b___memory_map_type.html
-todo.html
 bc_s.png
 bc_sd.png
 bdwn.png

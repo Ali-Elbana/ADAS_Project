@@ -16,11 +16,11 @@ This file contains the source code of the interfacing for the RCC module.
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_m_r_c_c__program_8c_ab4245d45e035033aece85f81662a9cf0}{MRCC\+\_\+v\+Init}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize the RCC with a certain configurations. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_m_r_c_c__program_8c_adf4049d31c5859572e821de89f05d6df}{MRCC\+\_\+v\+Enable\+Periphral\+CLK}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Bus\+ID, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Periphral\+ID)
-\item 
+\begin{DoxyCompactList}\small\item\em Enabling the CLK on a specific Peripheral. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_m_r_c_c__program_8c_aae7b5bdf39efe155a97b93841422cce5}{MRCC\+\_\+v\+Disable\+Periphral\+CLK}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Bus\+ID, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Periphral\+ID)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Disabling the CLK on a specific Peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -48,6 +48,18 @@ Definition in file \mbox{\hyperlink{_m_r_c_c__program_8c_source}{MRCC\+\_\+progr
 \doxysubsubsection{\texorpdfstring{MRCC\_vInit()}{MRCC\_vInit()}}
 {\footnotesize\ttfamily void MRCC\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
+
+
+Initialize the RCC with a certain configurations. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em void.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of file \mbox{\hyperlink{_m_r_c_c__program_8c_source}{MRCC\+\_\+program.\+c}}.
@@ -406,7 +418,7 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00029}{29}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00143}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00144}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00145}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00146}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b3}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00130}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00131}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00126}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00127}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00128}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00121}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00122}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00123}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00124}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00125}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00140}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00141}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00142}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00137}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00138}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00139}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00149}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00150}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00089}{RCC\+\_\+\+CR\+\_\+\+CSSON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00090}{RCC\+\_\+\+CR\+\_\+\+HSEBYP}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00092}{RCC\+\_\+\+CR\+\_\+\+HSEON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00094}{RCC\+\_\+\+CR\+\_\+\+HSION}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00086}{RCC\+\_\+\+CR\+\_\+\+PLLI2\+SON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00088}{RCC\+\_\+\+CR\+\_\+\+PLLON}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00404}{RCC}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00283}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00284}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00285}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00286}{RCC\+\_\+\+CFGR\+\_\+\+HPRE\+\_\+b3}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00270}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00271}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00266}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00267}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00268}{RCC\+\_\+\+CFGR\+\_\+\+MOC1\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00261}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00262}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00263}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00264}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00265}{RCC\+\_\+\+CFGR\+\_\+\+MOC2\+PRE\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00280}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00281}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00282}{RCC\+\_\+\+CFGR\+\_\+\+PPRE1\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00277}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00278}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00279}{RCC\+\_\+\+CFGR\+\_\+\+PPRE2\+\_\+b2}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00289}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b0}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00290}{RCC\+\_\+\+CFGR\+\_\+\+SW\+\_\+b1}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00229}{RCC\+\_\+\+CR\+\_\+\+CSSON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00230}{RCC\+\_\+\+CR\+\_\+\+HSEBYP}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00232}{RCC\+\_\+\+CR\+\_\+\+HSEON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00234}{RCC\+\_\+\+CR\+\_\+\+HSION}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00226}{RCC\+\_\+\+CR\+\_\+\+PLLI2\+SON}}, \mbox{\hyperlink{_m_r_c_c__private_8h_source_l00228}{RCC\+\_\+\+CR\+\_\+\+PLLON}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_m_r_c_c__program_8c_adf4049d31c5859572e821de89f05d6df}\label{_m_r_c_c__program_8c_adf4049d31c5859572e821de89f05d6df}} 
 \index{MRCC\_program.c@{MRCC\_program.c}!MRCC\_vEnablePeriphralCLK@{MRCC\_vEnablePeriphralCLK}}
@@ -414,6 +426,20 @@ References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+
 \doxysubsubsection{\texorpdfstring{MRCC\_vEnablePeriphralCLK()}{MRCC\_vEnablePeriphralCLK()}}
 {\footnotesize\ttfamily void MRCC\+\_\+v\+Enable\+Periphral\+CLK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Bus\+ID,  }\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Periphral\+ID }\end{DoxyParamCaption})}
 
+
+
+Enabling the CLK on a specific Peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Bus} & ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Peripheral} & ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of file \mbox{\hyperlink{_m_r_c_c__program_8c_source}{MRCC\+\_\+program.\+c}}.
@@ -425,14 +451,14 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of
 \DoxyCodeLine{00385     \textcolor{keywordflow}{switch}( A\_u32BusID )}
 \DoxyCodeLine{00386     \{}
 \DoxyCodeLine{00387 }
-\DoxyCodeLine{00388         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aefd73ec71a770d3b37f9bc0ea55ad130}{RCC\_AHB1}} :}
+\DoxyCodeLine{00388         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_gaefd73ec71a770d3b37f9bc0ea55ad130}{RCC\_AHB1}} :}
 \DoxyCodeLine{00389 }
 \DoxyCodeLine{00390             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00391 }
 \DoxyCodeLine{00392         break ;}
 \DoxyCodeLine{00393 }
 \DoxyCodeLine{00394 }
-\DoxyCodeLine{00395         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aa933a7465c80c134626f66bdbe7a87ee}{RCC\_AHB2}} :}
+\DoxyCodeLine{00395         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_gaa933a7465c80c134626f66bdbe7a87ee}{RCC\_AHB2}} :}
 \DoxyCodeLine{00396 }
 \DoxyCodeLine{00397             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00398 }
@@ -440,20 +466,20 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of
 \DoxyCodeLine{00400         break ;}
 \DoxyCodeLine{00401 }
 \DoxyCodeLine{00402 }
-\DoxyCodeLine{00403         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}} :}
+\DoxyCodeLine{00403         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_ga138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}} :}
 \DoxyCodeLine{00404 }
 \DoxyCodeLine{00405             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00406 }
 \DoxyCodeLine{00407         break ;}
 \DoxyCodeLine{00408 }
 \DoxyCodeLine{00409 }
-\DoxyCodeLine{00410         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}} :}
+\DoxyCodeLine{00410         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}} :}
 \DoxyCodeLine{00411 }
 \DoxyCodeLine{00412             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00413 }
 \DoxyCodeLine{00414         break ;}
 \DoxyCodeLine{00415 }
-\DoxyCodeLine{00416         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a840cfbe16cf7de99465d760b34bd9911}{RCC\_AHB1LPENR}}:}
+\DoxyCodeLine{00416         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_ga840cfbe16cf7de99465d760b34bd9911}{RCC\_AHB1LPENR}}:}
 \DoxyCodeLine{00417 }
 \DoxyCodeLine{00418             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1LPENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00419 }
@@ -472,7 +498,7 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00382}{382}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00031}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00035}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00032}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00033}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00034}{RCC\+\_\+\+APB2}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00404}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00058}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00086}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00065}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00079}{RCC\+\_\+\+APB2}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_m_r_c_c__program_8c_aae7b5bdf39efe155a97b93841422cce5}\label{_m_r_c_c__program_8c_aae7b5bdf39efe155a97b93841422cce5}} 
 \index{MRCC\_program.c@{MRCC\_program.c}!MRCC\_vDisablePeriphralCLK@{MRCC\_vDisablePeriphralCLK}}
@@ -480,6 +506,20 @@ References \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\
 \doxysubsubsection{\texorpdfstring{MRCC\_vDisablePeriphralCLK()}{MRCC\_vDisablePeriphralCLK()}}
 {\footnotesize\ttfamily void MRCC\+\_\+v\+Disable\+Periphral\+CLK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Bus\+ID,  }\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Periphral\+ID }\end{DoxyParamCaption})}
 
+
+
+Disabling the CLK on a specific Peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Bus} & ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em Peripheral} & ID. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of file \mbox{\hyperlink{_m_r_c_c__program_8c_source}{MRCC\+\_\+program.\+c}}.
@@ -491,14 +531,14 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of
 \DoxyCodeLine{00438     \textcolor{keywordflow}{switch}( A\_u32BusID )}
 \DoxyCodeLine{00439     \{}
 \DoxyCodeLine{00440 }
-\DoxyCodeLine{00441         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aefd73ec71a770d3b37f9bc0ea55ad130}{RCC\_AHB1}} :}
+\DoxyCodeLine{00441         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_gaefd73ec71a770d3b37f9bc0ea55ad130}{RCC\_AHB1}} :}
 \DoxyCodeLine{00442 }
 \DoxyCodeLine{00443             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00444 }
 \DoxyCodeLine{00445         break ;}
 \DoxyCodeLine{00446 }
 \DoxyCodeLine{00447 }
-\DoxyCodeLine{00448         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_aa933a7465c80c134626f66bdbe7a87ee}{RCC\_AHB2}} :}
+\DoxyCodeLine{00448         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_gaa933a7465c80c134626f66bdbe7a87ee}{RCC\_AHB2}} :}
 \DoxyCodeLine{00449 }
 \DoxyCodeLine{00450             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00451 }
@@ -506,21 +546,21 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of
 \DoxyCodeLine{00453         break ;}
 \DoxyCodeLine{00454 }
 \DoxyCodeLine{00455 }
-\DoxyCodeLine{00456         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}} :}
+\DoxyCodeLine{00456         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_ga138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}} :}
 \DoxyCodeLine{00457 }
 \DoxyCodeLine{00458             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB1ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00459 }
 \DoxyCodeLine{00460         break ;}
 \DoxyCodeLine{00461 }
 \DoxyCodeLine{00462 }
-\DoxyCodeLine{00463         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}} :}
+\DoxyCodeLine{00463         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}} :}
 \DoxyCodeLine{00464 }
 \DoxyCodeLine{00465             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>APB2ENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00466 }
 \DoxyCodeLine{00467         break ;}
 \DoxyCodeLine{00468 }
 \DoxyCodeLine{00469 }
-\DoxyCodeLine{00470         \textcolor{keywordflow}{case} \mbox{\hyperlink{_m_r_c_c__interface_8h_a840cfbe16cf7de99465d760b34bd9911}{RCC\_AHB1LPENR}}:}
+\DoxyCodeLine{00470         \textcolor{keywordflow}{case} \mbox{\hyperlink{group___bus_ga840cfbe16cf7de99465d760b34bd9911}{RCC\_AHB1LPENR}}:}
 \DoxyCodeLine{00471 }
 \DoxyCodeLine{00472             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__vector__table_ga74944438a086975793d26ae48d5882d4}{RCC}}-\/>AHB1LPENR, A\_u32PeriphralID ) ;}
 \DoxyCodeLine{00473 }
@@ -540,5 +580,5 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00435}{435}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00270}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00031}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00035}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00032}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00033}{RCC\+\_\+\+APB1}}, and \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00034}{RCC\+\_\+\+APB2}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00404}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00058}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00086}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00065}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB1}}, and \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00079}{RCC\+\_\+\+APB2}}.
 
