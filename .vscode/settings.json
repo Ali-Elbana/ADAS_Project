@@ -8,6 +8,15 @@
     "nvic_private.h": "c",
     "gpio_private.h": "c",
     "nvic_config.h": "c",
-    "gpio_config.h": "c"
+    "gpio_config.h": "c",
+    "testing_dc_motor_interface.h": "c",
+    "testing_motor_driver_interface.h": "c",
+    "testing_motor_driver_config.h": "c",
+    "lstd_compiler.h": "c",
+    "lstd_values.h": "c",
+    "lstd_bitmath.h": "c",
+    "mrcc_interface.h": "c",
+    "dcm_interface.h": "c",
+    "dcm_private.h": "c"
   }
 }
