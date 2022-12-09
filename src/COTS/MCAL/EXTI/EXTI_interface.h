@@ -21,10 +21,18 @@ typedef struct
 	 * @brief Initialize the interrupt with a certain line ID
 	 */
 	u8_t LineNum;
+
+	/**
+	* @brief Initialize the interrupt with a certain PORT
+	*/
+	u8_t PortNum ;
+
 	/**
 	 * @brief The trigger status to trigger when the interrupt occurs
 	 */
 	u8_t TriggerStatus;
+
+
 
 } EXTI_ConfigType;
 
@@ -34,17 +42,13 @@ typedef struct
 
 /**
  * @brief Initialize the EXTI module
- * @todo make sure that this function initializes the interrupt for all lines separately from the config
- * @see MEXTI_vInit_WithStruct
  */
 void MEXTI_vInit(void);
 /**
  * @brief Initialize the EXTI module with a certain configuration
  * @param[in] A_xConfig The configuration structure to initialize the interrupt with
- * @todo Write this function
- * @see MEXTI_vInit
  */
-void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig);
+void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig);
 
 /**
  * @brief Enable the interrupt on a certain line ID with a certain trigger status

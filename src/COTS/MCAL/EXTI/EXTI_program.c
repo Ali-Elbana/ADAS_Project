@@ -19,11 +19,12 @@
 #include "EXTI_config.h"
 #include "SYSCFG_private.h"
 
-STATIC P2FUNC(void, *GS_vEXTI_Callback)(void) = {NULL};
-// STATIC VAR(u8_t) GS_u8EXTI_EnabledLine_ID = INITIAL_ZERO;
+
+static void( *GS_vEXTI_Callback[EXTI_IRQs] ) (void) = {NULL} ;
+
 
 /************************************************************************/
-/*                     Functions' implementations                      	*/
+/*                     Functions implementations                      	*/
 /************************************************************************/
 
 FUNC(void) MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
@@ -40,6 +41,7 @@ FUNC(void) MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
 
 FUNC(void) MEXTI_vInit(void)
 {
+
 	VAR(u8_t) L_u8ShiftedOffset = INITIAL_ZERO;
 
 #if EXTI_LINE0_EN == ENABLE
@@ -85,7 +87,7 @@ FUNC(void) MEXTI_vInit(void)
 	// Enable EXTI on a line.
 	MEXTI->IMR = 0;
 
-	MEXTI->IMR = (ENABLE << L_u8ShiftedOffset);
+	MEXTI->IMR |= (ENABLE << L_u8ShiftedOffset);
 
 // Set EXTI Triggered status on a line.
 #if EXTI_LINE0_TRIGGER == EXTI_RisingEdge
@@ -265,14 +267,19 @@ FUNC(void) MEXTI_vInit(void)
 	SET_BIT(MEXTI->FTSR, L_u8ShiftedOffset);
 
 #endif
+
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig)
+FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig)
 {
-	/* to be continued... */
+
+	MEXTI_vEnableLine( A_xINTConfig->LineNum, A_xINTConfig->TriggerStatus ) ;
+
+	MSYSCFG_vSetEXTIPort( A_xINTConfig->LineNum, A_xINTConfig->PortNum ) ;
+
 }
 
 /*******************************************************************************************************************/
@@ -280,32 +287,16 @@ FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xConfig)
 
 FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 {
+
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
+
 		SET_BIT(MEXTI->IMR, A_u8LineID);
+
 		MEXTI_vSetTrigger(A_u8LineID, A_u8TriggerStatus);
 
-		/* switch (A_u8TriggerStatus)
-		{
-		case EXTI_RisingEdge:
-			SET_BIT(MEXTI->RTSR, A_u8LineID);
-			CLR_BIT(MEXTI->FTSR, A_u8LineID);
-			break;
-
-		case EXTI_FallingEdge:
-			SET_BIT(MEXTI->FTSR, A_u8LineID);
-			CLR_BIT(MEXTI->RTSR, A_u8LineID);
-			break;
-
-		case EXTI_OnChange:
-			SET_BIT(MEXTI->RTSR, A_u8LineID);
-			SET_BIT(MEXTI->FTSR, A_u8LineID);
-			break;
-		} */
 	}
 
-	// Get the enabled line ID.
-	// GS_u8EXTI_EnabledLine_ID = A_u8LineID;
 }
 
 /*******************************************************************************************************************/
@@ -313,10 +304,12 @@ FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 
 FUNC(void) MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
 {
+
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		CLR_BIT(MEXTI->IMR, A_u8LineID);
 	}
+
 }
 
 /*******************************************************************************************************************/
@@ -324,13 +317,12 @@ FUNC(void) MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
 
 FUNC(void) MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
 {
+
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		SET_BIT(MEXTI->SWIER, A_u8LineID);
 	}
 
-	// Get the enabled line ID.
-	// GS_u8EXTI_EnabledLine_ID = A_u8LineID;
 }
 
 /*******************************************************************************************************************/
@@ -338,9 +330,9 @@ FUNC(void) MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
 
 FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 {
+
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
-		/* SET_BIT(MEXTI->IMR, A_u8LineID); */
 
 		switch (A_u8TriggerStatus)
 		{
@@ -364,8 +356,6 @@ FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 		}
 	}
 
-	// Get the enabled line ID.
-	// GS_u8EXTI_EnabledLine_ID = A_u8LineID;
 }
 
 /*******************************************************************************************************************/
@@ -373,62 +363,12 @@ FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 
 FUNC(void) EXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
 {
+
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		GS_vEXTI_Callback[A_u8LineID] = A_vFptr;
-
-		/* switch (A_u8LineID)
-		{
-		case EXTI_LINE0:
-			GS_vEXTI_Callback[EXTI_LINE0] = A_vFptr;
-			break;
-		case EXTI_LINE1:
-			GS_vEXTI_Callback[EXTI_LINE1] = A_vFptr;
-			break;
-		case EXTI_LINE2:
-			GS_vEXTI_Callback[EXTI_LINE2] = A_vFptr;
-			break;
-		case EXTI_LINE3:
-			GS_vEXTI_Callback[EXTI_LINE3] = A_vFptr;
-			break;
-		case EXTI_LINE4:
-			GS_vEXTI_Callback[EXTI_LINE4] = A_vFptr;
-			break;
-		case EXTI_LINE5:
-			GS_vEXTI_Callback[EXTI_LINE5] = A_vFptr;
-			break;
-		case EXTI_LINE6:
-			GS_vEXTI_Callback[EXTI_LINE6] = A_vFptr;
-			break;
-		case EXTI_LINE7:
-			GS_vEXTI_Callback[EXTI_LINE7] = A_vFptr;
-			break;
-		case EXTI_LINE8:
-			GS_vEXTI_Callback[EXTI_LINE8] = A_vFptr;
-			break;
-		case EXTI_LINE9:
-			GS_vEXTI_Callback[EXTI_LINE9] = A_vFptr;
-			break;
-		case EXTI_LINE10:
-			GS_vEXTI_Callback[EXTI_LINE10] = A_vFptr;
-			break;
-		case EXTI_LINE11:
-			GS_vEXTI_Callback[EXTI_LINE11] = A_vFptr;
-			break;
-		case EXTI_LINE12:
-			GS_vEXTI_Callback[EXTI_LINE12] = A_vFptr;
-			break;
-		case EXTI_LINE13:
-			GS_vEXTI_Callback[EXTI_LINE13] = A_vFptr;
-			break;
-		case EXTI_LINE14:
-			GS_vEXTI_Callback[EXTI_LINE14] = A_vFptr;
-			break;
-		case EXTI_LINE15:
-			GS_vEXTI_Callback[EXTI_LINE15] = A_vFptr;
-			break;
-		} */
 	}
+
 }
 
 /*******************************************************************************************************************/
@@ -436,6 +376,7 @@ FUNC(void) EXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(vo
 
 FUNC(void) EXTI0_IRQHandler(void)
 {
+
 	if (GS_vEXTI_Callback[EXTI_LINE0] != NULL)
 	{
 		GS_vEXTI_Callback[EXTI_LINE0]();
@@ -443,7 +384,108 @@ FUNC(void) EXTI0_IRQHandler(void)
 
 	// Clear the flag.
 	SET_BIT(MEXTI->PR, EXTI_LINE0);
+
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
+
+FUNC(void) EXTI1_IRQHandler(void)
+{
+
+	if (GS_vEXTI_Callback[EXTI_LINE1] != NULL)
+	{
+		GS_vEXTI_Callback[EXTI_LINE1]();
+	}
+
+	// Clear the flag.
+	SET_BIT(MEXTI->PR, EXTI_LINE1);
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+FUNC(void) EXTI2_IRQHandler(void)
+{
+
+	if (GS_vEXTI_Callback[EXTI_LINE2] != NULL)
+	{
+		GS_vEXTI_Callback[EXTI_LINE2]();
+	}
+
+	// Clear the flag.
+	SET_BIT(MEXTI->PR, EXTI_LINE2);
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+FUNC(void) EXTI3_IRQHandler(void)
+{
+
+	if (GS_vEXTI_Callback[EXTI_LINE3] != NULL)
+	{
+		GS_vEXTI_Callback[EXTI_LINE3]();
+	}
+
+	// Clear the flag.
+	SET_BIT(MEXTI->PR, EXTI_LINE3);
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+FUNC(void) EXTI4_IRQHandler(void)
+{
+
+	if (GS_vEXTI_Callback[EXTI_LINE4] != NULL)
+	{
+		GS_vEXTI_Callback[EXTI_LINE4]();
+	}
+
+	// Clear the flag.
+	SET_BIT(MEXTI->PR, EXTI_LINE4);
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+FUNC(void) EXTI9_5_IRQHandler(void)
+{
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+FUNC(void) EXTI15_10_IRQHandler(void)
+{
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

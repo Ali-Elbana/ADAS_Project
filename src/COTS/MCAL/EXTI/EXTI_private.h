@@ -102,7 +102,11 @@ typedef struct
  * Maximum number of available interrupt lines
  *
  */
-#define EXTI_MAX_EXTI_NUM (16)
+#define EXTI_MAX_EXTI_NUM (22)
 /** @} */
+
+
+#define EXTI_IRQs 23
+
 
 #endif //_EXTI_private_H
