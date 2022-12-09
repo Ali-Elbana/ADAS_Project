@@ -55,6 +55,51 @@
       <topic label="FLAG_CLEARED" href="group__standardvalues.html#ga2553f2666905212b3d10e0792c87938d"/>
       <topic label="RUN" href="group__standardvalues.html#ga35f69a612b07bbf1de53bbbd8d877c09"/>
       <topic label="STOP" href="group__standardvalues.html#gae19b6bb2940d2fbe0a79852b070eeafd"/>
+<<<<<<< HEAD
+=======
+    </topic>
+    <topic label="Interrupt line IDs" href="group__interrupt__lines.html">
+      <topic label="EXTI_LINE0" href="group__interrupt__lines.html#ga5d9011faf4106bf40c74ff617b1e4973"/>
+      <topic label="EXTI_LINE1" href="group__interrupt__lines.html#gaaba6df92e2a71ffd93baec85cd0f9e89"/>
+      <topic label="EXTI_LINE2" href="group__interrupt__lines.html#gaa2510982e59ba9c313eada9cdc76aa08"/>
+      <topic label="EXTI_LINE3" href="group__interrupt__lines.html#ga9534db63b2c5e59646d415e13325c028"/>
+      <topic label="EXTI_LINE4" href="group__interrupt__lines.html#ga148019fb5e5bbf3dbb6cc5eb74541df0"/>
+      <topic label="EXTI_LINE5" href="group__interrupt__lines.html#ga11145270abb9a3d184bb9d8b00014cec"/>
+      <topic label="EXTI_LINE6" href="group__interrupt__lines.html#gafc75ecdd4cf7265d434f18320fb874ad"/>
+      <topic label="EXTI_LINE7" href="group__interrupt__lines.html#ga0d7c89e4fe627f9dc4e59d08820906d4"/>
+      <topic label="EXTI_LINE8" href="group__interrupt__lines.html#ga7c137e2f2a8f478cbad351fa412694ad"/>
+      <topic label="EXTI_LINE9" href="group__interrupt__lines.html#gab01e9777448076d5db8b9e3a02681f8a"/>
+      <topic label="EXTI_LINE10" href="group__interrupt__lines.html#ga62fc344e22f30467a6dcdeab42908fd3"/>
+      <topic label="EXTI_LINE11" href="group__interrupt__lines.html#ga8d4c2f6a70a983e971c933f507e3309d"/>
+      <topic label="EXTI_LINE12" href="group__interrupt__lines.html#ga36a546d69360530ca0345f0d0a15e7ae"/>
+      <topic label="EXTI_LINE13" href="group__interrupt__lines.html#gaa8ef9ed6d2e5b5fd2eb5aad1e89bcfb3"/>
+      <topic label="EXTI_LINE14" href="group__interrupt__lines.html#ga6b1c5fb1dac595296b9aeed7744d486c"/>
+      <topic label="EXTI_LINE15" href="group__interrupt__lines.html#ga373c9155ecf4572de295940c612b2f49"/>
+    </topic>
+    <topic label="Interrupt trigger status" href="group__interrupt__trigger__status.html">
+      <topic label="EXTI_FallingEdge" href="group__interrupt__trigger__status.html#ga032ac080fc4ecd74df55cc9ad1ca2f95"/>
+      <topic label="EXTI_RisingEdge" href="group__interrupt__trigger__status.html#gababc163d1594cab727397a54b37fb34e"/>
+      <topic label="EXTI_OnChange" href="group__interrupt__trigger__status.html#gaf251e318af9a6ba2e13264a606254bc0"/>
+    </topic>
+    <topic label="EXTI Memory Addresses" href="group__exti__memory__addresses.html">
+      <topic label="EXTI_BASE_ADDRESS" href="group__exti__memory__addresses.html#gab1b4b692d1672fd6b3b42757de83122a"/>
+    </topic>
+    <topic label="EXTI Registers" href="group__exti__registers.html">
+      <topic label="MEXTI" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2"/>
+    </topic>
+    <topic label="EXTI Lines Status" href="group__exti__line__status.html">
+      <topic label="ENABLE" href="group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a"/>
+      <topic label="DISABLE" href="group__exti__line__status.html#ga99496f7308834e8b220f7894efa0b6ab"/>
+    </topic>
+    <topic label="EXTI Line Settings" href="group__exti__line__settings.html">
+      <topic label="EXTI_MAX_EXTI_NUM" href="group__exti__line__settings.html#ga5870b26cac399eb25698f68a8603c645"/>
+    </topic>
+    <topic label="SYSCFG Memory Addresses" href="group__syscfg__memory__addresses.html">
+      <topic label="SYSCFG_BASE_ADDR" href="group__syscfg__memory__addresses.html#ga178af247859ffadcac6dc6ca09105a19"/>
+    </topic>
+    <topic label="SYSCFG Memory Registers" href="group__syscfg__memory__registers.html">
+      <topic label="MSYSCFG" href="group__syscfg__memory__registers.html#ga531c08f5a73855527d044114a066fbb4"/>
+>>>>>>> mo/update_exti
     </topic>
     <topic label="GPIO Modes" href="group__gpio__modes.html">
       <topic label="GPIOx_MODE_INPUT" href="group__gpio__modes.html#gad653959c0619374559a3ef878315a87d"/>
@@ -259,6 +304,18 @@
   </topic>
   <topic label="Data Structures" href="annotated.html">
     <topic label="Data Structures" href="annotated.html">
+      <topic label="EXTI_ConfigType" href="struct_e_x_t_i___config_type.html">
+        <topic label="LineNum" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911"/>
+        <topic label="TriggerStatus" href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9"/>
+      </topic>
+      <topic label="EXTI_Type" href="struct_e_x_t_i___type.html">
+        <topic label="IMR" href="struct_e_x_t_i___type.html#a0fa7368da626b2ce9c1ce7827fafb644"/>
+        <topic label="EMR" href="struct_e_x_t_i___type.html#a784633a4b35360004ea59e16b4bc6f08"/>
+        <topic label="RTSR" href="struct_e_x_t_i___type.html#a163576b305c3d33592299697b43d973d"/>
+        <topic label="FTSR" href="struct_e_x_t_i___type.html#a0e01a3408c97388d6f151687ab3f4224"/>
+        <topic label="SWIER" href="struct_e_x_t_i___type.html#a07e7192b1134e7d0ea8b1b5d015f629f"/>
+        <topic label="PR" href="struct_e_x_t_i___type.html#ae15431e44fc9844b9a897d435b568dee"/>
+      </topic>
       <topic label="GPIOx_MemoryMapType" href="struct_g_p_i_ox___memory_map_type.html">
         <topic label="MODERx" href="struct_g_p_i_ox___memory_map_type.html#aef72b74d6a4cccc9f107f843f16b0c87"/>
         <topic label="OTYPERx" href="struct_g_p_i_ox___memory_map_type.html#a4181c46a628a261d3df8543a58b930f0"/>
@@ -280,6 +337,7 @@
         <topic label="InputType" href="struct_m_g_p_i_ox___config_type.html#a524fd644a012e61e7884de20267b12bd"/>
         <topic label="AF_Type" href="struct_m_g_p_i_ox___config_type.html#ae1134f253e11d2498842f6e124f178ce"/>
       </topic>
+<<<<<<< HEAD
       <topic label="NVIC_MemoryMapType" href="struct_n_v_i_c___memory_map_type.html">
         <topic label="ISERx" href="struct_n_v_i_c___memory_map_type.html#a8dea6668f4956053a0dd2c5db1e99ea2"/>
         <topic label="RESERVED0x" href="struct_n_v_i_c___memory_map_type.html#a3e44e4d3251f72273dd61d28afb5d9c4"/>
@@ -292,6 +350,13 @@
         <topic label="IABRx" href="struct_n_v_i_c___memory_map_type.html#a6a87027ce2242dfd7ea98d1764a87b5e"/>
         <topic label="RESERVED4x" href="struct_n_v_i_c___memory_map_type.html#a942a137887b0107f45d1fd1c077a47fd"/>
         <topic label="IPRx" href="struct_n_v_i_c___memory_map_type.html#a5a90033ce080d5bcd448f9f68d0e40f9"/>
+=======
+      <topic label="MSYSCFG_MemMap_t" href="struct_m_s_y_s_c_f_g___mem_map__t.html">
+        <topic label="MEMRMP" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a4c087b6cf7378f441d7220551d4af2ee"/>
+        <topic label="PMC" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a7274b20c20aa13d31a31c4fa206fc001"/>
+        <topic label="EXTICR" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a41dd996f605170c600ed422238f2c8d0"/>
+        <topic label="CMPCR" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a8f1959f782e609544a8022ffd291dca4"/>
+>>>>>>> mo/update_exti
       </topic>
       <topic label="RCC_MemoryMapType" href="struct_r_c_c___memory_map_type.html">
         <topic label="CR" href="struct_r_c_c___memory_map_type.html#abab8fac8c1e8464cebada44cc0c95a0e"/>
@@ -504,6 +569,7 @@
               <topic label="GPIOB" href="group__gpio__registers.html#ga68b66ac73be4c836db878a42e1fea3cd"/>
               <topic label="GPIOC" href="group__gpio__registers.html#ga2dca03332d620196ba943bc2346eaa08"/>
             </topic>
+<<<<<<< HEAD
             <topic label="GPIO_program.c" href="_g_p_i_o__program_8c.html">
               <topic label="MGPIOx_vLockedPins" href="_g_p_i_o__program_8c.html#a9691f4861ec6e00ce72839a3d72c376f"/>
               <topic label="MGPIOx_vSetPinMode" href="_g_p_i_o__program_8c.html#a2aa50bedad3f84f3ddc1d373f6a1677f"/>
@@ -629,6 +695,248 @@
               <topic label="MNVIC_vSetPriorityConfig" href="_n_v_i_c__interface_8h.html#ad172d11f79d53101b9054c7114f56756"/>
               <topic label="MNVIC_vSetPriority" href="_n_v_i_c__interface_8h.html#af25c5527f363448764d8f65b79238b88"/>
               <topic label="NVIC_GetPriority" href="_n_v_i_c__interface_8h.html#ad3b1911350db17d52b25477f9b94642a"/>
+=======
+            <topic label="LSTD_TYPES.h" href="_l_s_t_d___t_y_p_e_s_8h.html">
+              <topic label="bool_t" href="group__typedefs.html#ga04dd5074964518403bf944f2b240a5f8"/>
+              <topic label="u8_t" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24"/>
+              <topic label="u16_t" href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b"/>
+              <topic label="u32_t" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071"/>
+              <topic label="s8_t" href="group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5"/>
+              <topic label="s16_t" href="group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478"/>
+              <topic label="s32_t" href="group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5"/>
+              <topic label="fl32_t" href="group__typedefs.html#gaea18e97fe4ad79b1972d2e9ab64a7def"/>
+              <topic label="fl64_t" href="group__typedefs.html#gae508fe7e6b0f5f01e4eae145da6dd747"/>
+            </topic>
+            <topic label="LSTD_VALUES.h" href="_l_s_t_d___v_a_l_u_e_s_8h.html">
+              <topic label="TRUE" href="group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d"/>
+              <topic label="FALSE" href="group__standardvalues.html#gaa93f0eb578d23995850d61f7d61c55c1"/>
+              <topic label="NULL" href="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4"/>
+              <topic label="INITIAL_ZERO" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468"/>
+              <topic label="FLAG_SET" href="group__standardvalues.html#gaeadc670e6fd25b11cefab921983d1f63"/>
+              <topic label="FLAG_CLEARED" href="group__standardvalues.html#ga2553f2666905212b3d10e0792c87938d"/>
+              <topic label="RUN" href="group__standardvalues.html#ga35f69a612b07bbf1de53bbbd8d877c09"/>
+              <topic label="STOP" href="group__standardvalues.html#gae19b6bb2940d2fbe0a79852b070eeafd"/>
+            </topic>
+          </topic>
+          <topic label="MCAL" href="dir_87c9925ea3b076c1bf262bbe5f3a4610.html">
+            <topic label="EXTI" href="dir_2ac85850a5790dba6eb04904a64094d7.html">
+              <topic label="EXTI_config.h" href="_e_x_t_i__config_8h.html">
+                <topic label="EXTI_LINE0_EN" href="_e_x_t_i__config_8h.html#a113a37a99548d9999fb9e5fb6d68d3ea"/>
+                <topic label="EXTI_LINE0_TRIGGER" href="_e_x_t_i__config_8h.html#a78717fd3f1a3c5940b20bf5e68b6843a"/>
+                <topic label="EXTI_LINE1_EN" href="_e_x_t_i__config_8h.html#a4c5deb4302d3d43dfcd0f81b300cb35f"/>
+                <topic label="EXTI_LINE1_TRIGGER" href="_e_x_t_i__config_8h.html#a569483d68d1092840860eeed64f718ff"/>
+                <topic label="EXTI_LINE2_EN" href="_e_x_t_i__config_8h.html#a6834847eda4b1a37cd206aad9779366b"/>
+                <topic label="EXTI_LINE2_TRIGGER" href="_e_x_t_i__config_8h.html#a197e60249cea5518136eb572dc765828"/>
+                <topic label="EXTI_LINE3_EN" href="_e_x_t_i__config_8h.html#a1b8159ec129ab9b622dcc7ec69deaef2"/>
+                <topic label="EXTI_LINE3_TRIGGER" href="_e_x_t_i__config_8h.html#aee73409b40d414da9d0be986f47912ff"/>
+                <topic label="EXTI_LINE4_EN" href="_e_x_t_i__config_8h.html#a8ca730f4e55c4eb9bc523f018815899f"/>
+                <topic label="EXTI_LINE4_TRIGGER" href="_e_x_t_i__config_8h.html#a0c8d07bf9a5953234f4bdfc41d178a43"/>
+                <topic label="EXTI_LINE5_EN" href="_e_x_t_i__config_8h.html#ace173a12a7e012ebafcf631b7073d7cd"/>
+                <topic label="EXTI_LINE5_TRIGGER" href="_e_x_t_i__config_8h.html#a510fbb64f81fabcaa10d8cfa7dbb8ea0"/>
+                <topic label="EXTI_LINE6_EN" href="_e_x_t_i__config_8h.html#a17f79e353d5f86ced4dde90f9c32fffd"/>
+                <topic label="EXTI_LINE6_TRIGGER" href="_e_x_t_i__config_8h.html#aa378614eec98a01e71c8fd5637b6c759"/>
+                <topic label="EXTI_LINE7_EN" href="_e_x_t_i__config_8h.html#a0841c9a82759865a1e7ff85d8a70e95c"/>
+                <topic label="EXTI_LINE7_TRIGGER" href="_e_x_t_i__config_8h.html#ad55d6685fe1606c49a04b38c99f7785a"/>
+                <topic label="EXTI_LINE8_EN" href="_e_x_t_i__config_8h.html#a8e99e79ba5f5154273c3bd990c6fcdbe"/>
+                <topic label="EXTI_LINE8_TRIGGER" href="_e_x_t_i__config_8h.html#a9b0c0891f24ea2e639e2bd1f1abb52ae"/>
+                <topic label="EXTI_LINE9_EN" href="_e_x_t_i__config_8h.html#a4a82e5d133c34fc600795d7375a01a61"/>
+                <topic label="EXTI_LINE9_TRIGGER" href="_e_x_t_i__config_8h.html#a2fcee3b5a8a8986e97bf0442a1535711"/>
+                <topic label="EXTI_LINE10_EN" href="_e_x_t_i__config_8h.html#a3f32da57894b7cb6943b05bfbe6759f4"/>
+                <topic label="EXTI_LINE10_TRIGGER" href="_e_x_t_i__config_8h.html#a408d7aee4f9f176d665ae7d23cb164d8"/>
+                <topic label="EXTI_LINE11_EN" href="_e_x_t_i__config_8h.html#a90daba99baae21616188b2e7b078faca"/>
+                <topic label="EXTI_LINE11_TRIGGER" href="_e_x_t_i__config_8h.html#a949090c43b0b32bc01ddda05b7d82294"/>
+                <topic label="EXTI_LINE12_EN" href="_e_x_t_i__config_8h.html#a671a4725fb3d3541ec5c9562b6c9410f"/>
+                <topic label="EXTI_LINE12_TRIGGER" href="_e_x_t_i__config_8h.html#a5ed89a8cc84960de518e364099b25862"/>
+                <topic label="EXTI_LINE13_EN" href="_e_x_t_i__config_8h.html#a1a1345d3b2d2a2326d395be70230bf3d"/>
+                <topic label="EXTI_LINE13_TRIGGER" href="_e_x_t_i__config_8h.html#a80c6ed10754174e7d321f2a51f914e1d"/>
+                <topic label="EXTI_LINE14_EN" href="_e_x_t_i__config_8h.html#a44ae672d51d487361722d5c4417b3308"/>
+                <topic label="EXTI_LINE14_TRIGGER" href="_e_x_t_i__config_8h.html#a888cd44ed24b6fb02259cf6918ba4402"/>
+                <topic label="EXTI_LINE15_EN" href="_e_x_t_i__config_8h.html#a930318c8f7716b99b991cca4992616d3"/>
+                <topic label="EXTI_LINE15_TRIGGER" href="_e_x_t_i__config_8h.html#a65e63622e789a60fc9069468af01d403"/>
+              </topic>
+              <topic label="EXTI_interface.h" href="_e_x_t_i__interface_8h.html">
+                <topic label="EXTI_ConfigType" href="struct_e_x_t_i___config_type.html">
+                  <topic label="LineNum" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911"/>
+                  <topic label="TriggerStatus" href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9"/>
+                </topic>
+                <topic label="EXTI_LINE0" href="group__interrupt__lines.html#ga5d9011faf4106bf40c74ff617b1e4973"/>
+                <topic label="EXTI_LINE1" href="group__interrupt__lines.html#gaaba6df92e2a71ffd93baec85cd0f9e89"/>
+                <topic label="EXTI_LINE2" href="group__interrupt__lines.html#gaa2510982e59ba9c313eada9cdc76aa08"/>
+                <topic label="EXTI_LINE3" href="group__interrupt__lines.html#ga9534db63b2c5e59646d415e13325c028"/>
+                <topic label="EXTI_LINE4" href="group__interrupt__lines.html#ga148019fb5e5bbf3dbb6cc5eb74541df0"/>
+                <topic label="EXTI_LINE5" href="group__interrupt__lines.html#ga11145270abb9a3d184bb9d8b00014cec"/>
+                <topic label="EXTI_LINE6" href="group__interrupt__lines.html#gafc75ecdd4cf7265d434f18320fb874ad"/>
+                <topic label="EXTI_LINE7" href="group__interrupt__lines.html#ga0d7c89e4fe627f9dc4e59d08820906d4"/>
+                <topic label="EXTI_LINE8" href="group__interrupt__lines.html#ga7c137e2f2a8f478cbad351fa412694ad"/>
+                <topic label="EXTI_LINE9" href="group__interrupt__lines.html#gab01e9777448076d5db8b9e3a02681f8a"/>
+                <topic label="EXTI_LINE10" href="group__interrupt__lines.html#ga62fc344e22f30467a6dcdeab42908fd3"/>
+                <topic label="EXTI_LINE11" href="group__interrupt__lines.html#ga8d4c2f6a70a983e971c933f507e3309d"/>
+                <topic label="EXTI_LINE12" href="group__interrupt__lines.html#ga36a546d69360530ca0345f0d0a15e7ae"/>
+                <topic label="EXTI_LINE13" href="group__interrupt__lines.html#gaa8ef9ed6d2e5b5fd2eb5aad1e89bcfb3"/>
+                <topic label="EXTI_LINE14" href="group__interrupt__lines.html#ga6b1c5fb1dac595296b9aeed7744d486c"/>
+                <topic label="EXTI_LINE15" href="group__interrupt__lines.html#ga373c9155ecf4572de295940c612b2f49"/>
+                <topic label="EXTI_FallingEdge" href="group__interrupt__trigger__status.html#ga032ac080fc4ecd74df55cc9ad1ca2f95"/>
+                <topic label="EXTI_RisingEdge" href="group__interrupt__trigger__status.html#gababc163d1594cab727397a54b37fb34e"/>
+                <topic label="EXTI_OnChange" href="group__interrupt__trigger__status.html#gaf251e318af9a6ba2e13264a606254bc0"/>
+                <topic label="MEXTI_vInit" href="_e_x_t_i__interface_8h.html#af54debc6d14edcd542b2d03f68b181b8"/>
+                <topic label="MEXTI_vInit_WithStruct" href="_e_x_t_i__interface_8h.html#a4855e79776f4d6ab5414c92a08a39c05"/>
+                <topic label="MEXTI_vEnableLine" href="_e_x_t_i__interface_8h.html#acc0d34262afbbf8fb80fe0bb2cebc918"/>
+                <topic label="MEXTI_vDisableLine" href="_e_x_t_i__interface_8h.html#a7f8e1cf9737221c093c9e47688d479ad"/>
+                <topic label="MEXTI_vSWITrigger" href="_e_x_t_i__interface_8h.html#ae2881aaec96ac2479b9f492786365db2"/>
+                <topic label="MEXTI_vSetTrigger" href="_e_x_t_i__interface_8h.html#a880e5ab4d3ca7fbfcde882970c5ac81b"/>
+                <topic label="EXTI_vSetCallback" href="_e_x_t_i__interface_8h.html#a27b3d6539ddce7a1efc15743d5f57d92"/>
+                <topic label="MSYSCFG_vSetEXTIPort" href="_e_x_t_i__interface_8h.html#a4ff2b0474ed8dbaef5b76d829e71e6ad"/>
+              </topic>
+              <topic label="EXTI_private.h" href="_e_x_t_i__private_8h.html">
+                <topic label="EXTI_Type" href="struct_e_x_t_i___type.html">
+                  <topic label="IMR" href="struct_e_x_t_i___type.html#a0fa7368da626b2ce9c1ce7827fafb644"/>
+                  <topic label="EMR" href="struct_e_x_t_i___type.html#a784633a4b35360004ea59e16b4bc6f08"/>
+                  <topic label="RTSR" href="struct_e_x_t_i___type.html#a163576b305c3d33592299697b43d973d"/>
+                  <topic label="FTSR" href="struct_e_x_t_i___type.html#a0e01a3408c97388d6f151687ab3f4224"/>
+                  <topic label="SWIER" href="struct_e_x_t_i___type.html#a07e7192b1134e7d0ea8b1b5d015f629f"/>
+                  <topic label="PR" href="struct_e_x_t_i___type.html#ae15431e44fc9844b9a897d435b568dee"/>
+                </topic>
+                <topic label="EXTI_BASE_ADDRESS" href="group__exti__memory__addresses.html#gab1b4b692d1672fd6b3b42757de83122a"/>
+                <topic label="MEXTI" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2"/>
+                <topic label="ENABLE" href="group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a"/>
+                <topic label="DISABLE" href="group__exti__line__status.html#ga99496f7308834e8b220f7894efa0b6ab"/>
+                <topic label="EXTI_MAX_EXTI_NUM" href="group__exti__line__settings.html#ga5870b26cac399eb25698f68a8603c645"/>
+              </topic>
+              <topic label="EXTI_program.c" href="_e_x_t_i__program_8c.html">
+                <topic label="MSYSCFG_vSetEXTIPort" href="_e_x_t_i__program_8c.html#a01ffb77d3fc4b388649f85dd7a376813"/>
+                <topic label="MEXTI_vInit" href="_e_x_t_i__program_8c.html#af54debc6d14edcd542b2d03f68b181b8"/>
+                <topic label="MEXTI_vInit_WithStruct" href="_e_x_t_i__program_8c.html#ae056f3da68852f7a43a3d81b1e6f200d"/>
+                <topic label="MEXTI_vEnableLine" href="_e_x_t_i__program_8c.html#a484a698963e210849ccfd33e69f61e8f"/>
+                <topic label="MEXTI_vDisableLine" href="_e_x_t_i__program_8c.html#a1f3b5b51bbe15c316b31195c6ca1841b"/>
+                <topic label="MEXTI_vSWITrigger" href="_e_x_t_i__program_8c.html#af6b1b151ae0e7cfee8ee534510ada214"/>
+                <topic label="MEXTI_vSetTrigger" href="_e_x_t_i__program_8c.html#ac222bf62cb25f9ef576b2222168826bd"/>
+                <topic label="EXTI_vSetCallback" href="_e_x_t_i__program_8c.html#afce26a3904e8760933143d1aee5b761f"/>
+                <topic label="EXTI0_IRQHandler" href="_e_x_t_i__program_8c.html#a17e9789a29a87d2df54f12b94dd1a0b6"/>
+              </topic>
+              <topic label="SYSCFG_private.h" href="_s_y_s_c_f_g__private_8h.html">
+                <topic label="MSYSCFG_MemMap_t" href="struct_m_s_y_s_c_f_g___mem_map__t.html">
+                  <topic label="MEMRMP" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a4c087b6cf7378f441d7220551d4af2ee"/>
+                  <topic label="PMC" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a7274b20c20aa13d31a31c4fa206fc001"/>
+                  <topic label="EXTICR" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a41dd996f605170c600ed422238f2c8d0"/>
+                  <topic label="CMPCR" href="struct_m_s_y_s_c_f_g___mem_map__t.html#a8f1959f782e609544a8022ffd291dca4"/>
+                </topic>
+                <topic label="SYSCFG_BASE_ADDR" href="group__syscfg__memory__addresses.html#ga178af247859ffadcac6dc6ca09105a19"/>
+                <topic label="MSYSCFG" href="group__syscfg__memory__registers.html#ga531c08f5a73855527d044114a066fbb4"/>
+              </topic>
+            </topic>
+            <topic label="GPIO" href="dir_aec800efe038c6f68ba99af85a50b3d1.html">
+              <topic label="GPIO_config.h" href="_g_p_i_o__config_8h.html">
+                <topic label="GPIOA_PIN_POS" href="_g_p_i_o__config_8h.html#a13e84566d603a1923361df965110c94d"/>
+                <topic label="GPIOB_PIN_POS" href="_g_p_i_o__config_8h.html#ab3758da87052ce9d2988dc84b5c9d1eb"/>
+                <topic label="LCKK_BIT_POS" href="_g_p_i_o__config_8h.html#aec9764fb7c7a18a92444892a6333e614"/>
+              </topic>
+              <topic label="GPIO_interface.h" href="_g_p_i_o__interface_8h.html">
+                <topic label="MGPIOx_ConfigType" href="struct_m_g_p_i_ox___config_type.html">
+                  <topic label="Port" href="struct_m_g_p_i_ox___config_type.html#a5fd991c1d48a95358085baf482215bfc"/>
+                  <topic label="Pin" href="struct_m_g_p_i_ox___config_type.html#a6edaa6c244cf152f48755cc6f0865794"/>
+                  <topic label="Mode" href="struct_m_g_p_i_ox___config_type.html#a3f8b1a7b7115da39c634caa265c9a288"/>
+                  <topic label="OutputType" href="struct_m_g_p_i_ox___config_type.html#ac6f8ddbcc6ac7eab096f80943e2f9c35"/>
+                  <topic label="OutputSpeed" href="struct_m_g_p_i_ox___config_type.html#af8ad6ff00c1fcea451978e0403f29484"/>
+                  <topic label="InputType" href="struct_m_g_p_i_ox___config_type.html#a524fd644a012e61e7884de20267b12bd"/>
+                  <topic label="AF_Type" href="struct_m_g_p_i_ox___config_type.html#ae1134f253e11d2498842f6e124f178ce"/>
+                </topic>
+                <topic label="GPIOx_MODE_INPUT" href="group__gpio__modes.html#gad653959c0619374559a3ef878315a87d"/>
+                <topic label="GPIOx_MODE_OUTPUT" href="group__gpio__modes.html#ga4972d73d7eb99665462f063f0264138f"/>
+                <topic label="GPIOx_MODE_AF" href="group__gpio__modes.html#ga68830dfd5f7c4ce1bc4993e6dc409dda"/>
+                <topic label="GPIOx_MODE_ANALOG" href="group__gpio__modes.html#gaa234a69e2b2cf024a771929e7f1cb54e"/>
+                <topic label="GPIO_PORTA" href="group__gpio__ports.html#gace1f2998664b32913e0c7f9a76699060"/>
+                <topic label="GPIO_PORTB" href="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923"/>
+                <topic label="GPIO_PORTC" href="group__gpio__ports.html#ga1f67e53aff58af920fc394ec5d86faeb"/>
+                <topic label="GPIOx_OPENDRAIN" href="group__gpio__output__types.html#gae72919755d4c0875acfed6f678486329"/>
+                <topic label="GPIOx_PUSHPULL" href="group__gpio__output__types.html#ga5343b590d444a2b8a37f7507366869ea"/>
+                <topic label="GPIOx_LowSpeed" href="group__gpio__pin__speed.html#ga0c2f1d04e61f1ea65a8e68751013e2b2"/>
+                <topic label="GPIOx_MediumSpeed" href="group__gpio__pin__speed.html#ga8dbc220db50dd66e8bde537a1fa5c539"/>
+                <topic label="GPIOx_HighSpeed" href="group__gpio__pin__speed.html#ga74ec6384b34245c8e97ce6e028872b44"/>
+                <topic label="GPIOx_VeryHighSpeed" href="group__gpio__pin__speed.html#gaaeeee0e7cc243a81f32af45e30ce4447"/>
+                <topic label="GPIOx_NoPull" href="group__gpio__pull__types.html#gaf4cf4bb06c94c525f63f7c84377d48f8"/>
+                <topic label="GPIOx_PullUp" href="group__gpio__pull__types.html#ga76fd5ecbcc083cc92f448ff4bab5f9ce"/>
+                <topic label="GPIOx_PullDown" href="group__gpio__pull__types.html#gacc24f327614c0148d3f0af59d8bad2f8"/>
+                <topic label="GPIOx_HIGH" href="group__gpio__output__values.html#gad4850c5b570986c1a0b8111114fbbfdc"/>
+                <topic label="GPIOx_LOW" href="group__gpio__output__values.html#ga024aaae1f1031a1886437ac9089ddab9"/>
+                <topic label="GPIOx_PIN0" href="group__gpio__output__pins.html#ga0555a2d75b515e59c007ea1981dbdabc"/>
+                <topic label="GPIOx_PIN1" href="group__gpio__output__pins.html#ga4396ba448ed90c7fb9db8218574c2cb9"/>
+                <topic label="GPIOx_PIN2" href="group__gpio__output__pins.html#ga761496d60fa0d24fad0ba2bd677b6b1e"/>
+                <topic label="GPIOx_PIN3" href="group__gpio__output__pins.html#ga673960489ce24947429db3f907a3fe73"/>
+                <topic label="GPIOx_PIN4" href="group__gpio__output__pins.html#gae89fddd9995edc54ead9f44f21d348ec"/>
+                <topic label="GPIOx_PIN5" href="group__gpio__output__pins.html#gac8ab9dabe136553fbb48c7fe06862934"/>
+                <topic label="GPIOx_PIN6" href="group__gpio__output__pins.html#ga2d0996a4344c4825922db05b6bf34b3b"/>
+                <topic label="GPIOx_PIN7" href="group__gpio__output__pins.html#gab441403d46ced3f1577194a14069a2d0"/>
+                <topic label="GPIOx_PIN8" href="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91"/>
+                <topic label="GPIOx_PIN9" href="group__gpio__output__pins.html#ga5f7c3f8fbd957501ef6e6799909b7474"/>
+                <topic label="GPIOx_PIN10" href="group__gpio__output__pins.html#ga05197bf08ff254157acaf1fa16260873"/>
+                <topic label="GPIOx_PIN11" href="group__gpio__output__pins.html#ga7d19430f2fca4df12e35f7d8c81b2341"/>
+                <topic label="GPIOx_PIN12" href="group__gpio__output__pins.html#ga177981236c6aa829d1e60226a401290d"/>
+                <topic label="GPIOx_PIN13" href="group__gpio__output__pins.html#gaf0d7d102f365587c63616c62e84fd42f"/>
+                <topic label="GPIOx_PIN14" href="group__gpio__output__pins.html#ga994ef956212316de9161da30623eac07"/>
+                <topic label="GPIOx_PIN15" href="group__gpio__output__pins.html#ga8762d4d63fea54051d3765143d0a75fc"/>
+                <topic label="GPIOx_AF0" href="group__gpio__alternate__functions.html#gab51bc32bfd8375fcc33c347c945654ab"/>
+                <topic label="GPIOx_AF1" href="group__gpio__alternate__functions.html#gae7a091c8afd3bcfbcd05980b22be4cfb"/>
+                <topic label="GPIOx_AF2" href="group__gpio__alternate__functions.html#ga2e5bc5321250c96b720ca25bdc50fb2c"/>
+                <topic label="GPIOx_AF3" href="group__gpio__alternate__functions.html#ga70805e6ffce753a9c2845334a97ece79"/>
+                <topic label="GPIOx_AF4" href="group__gpio__alternate__functions.html#ga518a9cdab14db515469a3b79a3bcb498"/>
+                <topic label="GPIOx_AF5" href="group__gpio__alternate__functions.html#ga9e21769f3bb32137699ab10d8128c485"/>
+                <topic label="GPIOx_AF6" href="group__gpio__alternate__functions.html#ga1915c7d75ae6917d870928ca0cce7e5f"/>
+                <topic label="GPIOx_AF7" href="group__gpio__alternate__functions.html#gab6c3d03c1a4962f7505dab5ebf294968"/>
+                <topic label="GPIOx_AF8" href="group__gpio__alternate__functions.html#ga8c11bf59cac7dda3ac8da73e70eac000"/>
+                <topic label="GPIOx_AF9" href="group__gpio__alternate__functions.html#ga9dd9d5c2ad3695c2194485165be529a2"/>
+                <topic label="GPIOx_AF10" href="group__gpio__alternate__functions.html#gaec9a524f2894a9872038bef534bf94ee"/>
+                <topic label="GPIOx_AF11" href="group__gpio__alternate__functions.html#gaa2f3651491f1ee2845fba7447ef57a3d"/>
+                <topic label="GPIOx_AF12" href="group__gpio__alternate__functions.html#gac8cbc080fe90d1b4a2068bab138d5e4d"/>
+                <topic label="GPIOx_AF13" href="group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92"/>
+                <topic label="GPIOx_AF14" href="group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db"/>
+                <topic label="GPIOx_AF15" href="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52"/>
+                <topic label="MGPIOx_vLockedPins" href="_g_p_i_o__interface_8h.html#a9691f4861ec6e00ce72839a3d72c376f"/>
+                <topic label="MGPIOx_vSetPinMode" href="_g_p_i_o__interface_8h.html#afc362fef8b827f868df511979deeabe7"/>
+                <topic label="MGPIOx_vSetPinOutputType" href="_g_p_i_o__interface_8h.html#aa257a3acb91828ecf11477c882cc8a47"/>
+                <topic label="MGPIOx_vSetPinOutputSpeed" href="_g_p_i_o__interface_8h.html#a9770a5328d104bcf99fad16945e91a3c"/>
+                <topic label="MGPIOx_vSetPinInputPullType" href="_g_p_i_o__interface_8h.html#ad6b97a96185619d9985ec6b4324acca9"/>
+                <topic label="MGPIOx_u8GetPinValue" href="_g_p_i_o__interface_8h.html#ae2e4c57235f249b9c191b620de7cb72f"/>
+                <topic label="MGPIOx_vSetPinValue" href="_g_p_i_o__interface_8h.html#af20c7fe5cc6f8343c15c804adb2bb064"/>
+                <topic label="MGPIOx_vSetResetAtomic" href="_g_p_i_o__interface_8h.html#a8372b7233448858c9b80d9ef73555a55"/>
+                <topic label="MGPIOx_vSetAlternateFunctionON" href="_g_p_i_o__interface_8h.html#a7e88babca6499dd8eb11315215bac806"/>
+                <topic label="MGPIOx_vSetPortConfigLock" href="_g_p_i_o__interface_8h.html#aa08db93858812ffc7e233d590dd049eb"/>
+                <topic label="MGPIOx_vInit" href="_g_p_i_o__interface_8h.html#a6903496555fd7b13cc21ad6465c2c8b8"/>
+                <topic label="MGPIOx_vTogglePinValue" href="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c"/>
+              </topic>
+              <topic label="GPIO_private.h" href="_g_p_i_o__private_8h.html">
+                <topic label="GPIOx_MemoryMapType" href="struct_g_p_i_ox___memory_map_type.html">
+                  <topic label="MODERx" href="struct_g_p_i_ox___memory_map_type.html#aef72b74d6a4cccc9f107f843f16b0c87"/>
+                  <topic label="OTYPERx" href="struct_g_p_i_ox___memory_map_type.html#a4181c46a628a261d3df8543a58b930f0"/>
+                  <topic label="OSPEEDRx" href="struct_g_p_i_ox___memory_map_type.html#a92f64597b7660d93d2939e6a3f53392a"/>
+                  <topic label="PUPDRx" href="struct_g_p_i_ox___memory_map_type.html#a942332fbd07df1d02dbddf12949a78ab"/>
+                  <topic label="IDRx" href="struct_g_p_i_ox___memory_map_type.html#a38ab622ef503b1c2172f49c0224df7c4"/>
+                  <topic label="ODRx" href="struct_g_p_i_ox___memory_map_type.html#a255c4d2d2ef792dc1982a6115f00c40c"/>
+                  <topic label="BSRRx" href="struct_g_p_i_ox___memory_map_type.html#a237f55c1bd9b305ee442a07d46c09f91"/>
+                  <topic label="LCKRx" href="struct_g_p_i_ox___memory_map_type.html#a3342cf1e8177885584f8f6526f961a27"/>
+                  <topic label="AFRLx" href="struct_g_p_i_ox___memory_map_type.html#a8a8d53f55426684b3eeff7b75ad96fd4"/>
+                  <topic label="AFRHx" href="struct_g_p_i_ox___memory_map_type.html#aaf96b9724e66d9ea57dab4a9d66d4a67"/>
+                </topic>
+                <topic label="GPIOA_BASE_ADDRESS" href="group__gpio__addresses.html#ga034245d27ea38f0c5b26e72f78b18d8c"/>
+                <topic label="GPIOB_BASE_ADDRESS" href="group__gpio__addresses.html#gabbde468c4be08bb6288f992d2ba4b0b2"/>
+                <topic label="GPIOC_BASE_ADDRESS" href="group__gpio__addresses.html#gacc0899208f96ee70b8f7bdab8d9045a4"/>
+                <topic label="GPIOA" href="group__gpio__registers.html#gac485358099728ddae050db37924dd6b7"/>
+                <topic label="GPIOB" href="group__gpio__registers.html#ga68b66ac73be4c836db878a42e1fea3cd"/>
+                <topic label="GPIOC" href="group__gpio__registers.html#ga2dca03332d620196ba943bc2346eaa08"/>
+              </topic>
+              <topic label="GPIO_program.c" href="_g_p_i_o__program_8c.html">
+                <topic label="MGPIOx_vLockedPins" href="_g_p_i_o__program_8c.html#a9691f4861ec6e00ce72839a3d72c376f"/>
+                <topic label="MGPIOx_vSetPinMode" href="_g_p_i_o__program_8c.html#a2aa50bedad3f84f3ddc1d373f6a1677f"/>
+                <topic label="MGPIOx_vSetPinOutputType" href="_g_p_i_o__program_8c.html#ae96fece4783997728111939101fa9acd"/>
+                <topic label="MGPIOx_vSetPinOutputSpeed" href="_g_p_i_o__program_8c.html#a9aa97f2ab874a52442157be1d116e3ec"/>
+                <topic label="MGPIOx_vSetPinInputPullType" href="_g_p_i_o__program_8c.html#aed7c233eae6f28f195b7e8474465dbeb"/>
+                <topic label="MGPIOx_u8GetPinValue" href="_g_p_i_o__program_8c.html#ad812a682e84c5bcc3fdda9546fb957d4"/>
+                <topic label="MGPIOx_vSetPinValue" href="_g_p_i_o__program_8c.html#a3d6ad5ad5f68b519f08d4be6292bf6a2"/>
+                <topic label="MGPIOx_vSetResetAtomic" href="_g_p_i_o__program_8c.html#a29da100159c6f4c0db683e1a12bbe827"/>
+                <topic label="MGPIOx_vSetAlternateFunctionON" href="_g_p_i_o__program_8c.html#a9f4bdac7d7d5430ad1b71bd86ec7fb5a"/>
+                <topic label="MGPIOx_vInit" href="_g_p_i_o__program_8c.html#ae0822bea960c4226977e88ec16f3764e"/>
+                <topic label="MGPIOx_vTogglePinValue" href="_g_p_i_o__program_8c.html#a36bc9410064c8b745c2ef939c545e8f4"/>
+              </topic>
+>>>>>>> mo/update_exti
             </topic>
             <topic label="NVIC_private.h" href="_n_v_i_c__private_8h.html">
               <topic label="NVIC_MemoryMapType" href="struct_n_v_i_c___memory_map_type.html">

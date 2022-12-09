@@ -62,7 +62,7 @@
  * Declare a pointer-to-function with the specified type
  *
  */
-#define P2FUNC(rettype, fctname) rettype (* fctname)
+#define P2FUNC(rettype, fctname) rettype (*fctname)
 
 /**
  * @def CONST(vartype)

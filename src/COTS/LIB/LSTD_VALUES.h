@@ -15,59 +15,59 @@
  * @{
  */
 
+#ifndef TRUE
 /**
  * @def TRUE
  * Type definition for TRUE
  *
  */
-#ifndef TRUE
-    #define TRUE (1)
-#endif  /* ifndef TRUE */
+#define TRUE (1)
+#endif /* ifndef TRUE */
 
+#ifndef FALSE
 /**
  * @def FALSE
  * Type definition for FALSE
  *
  */
-#ifndef FALSE
-    #define FALSE (0)
-#endif  /* ifndef FALSE */
+#define FALSE (0)
+#endif /* ifndef FALSE */
 
+#ifndef NULL
 /**
  * @def NULL
  * Type definition for NULL
  *
  */
-#ifndef NULL
-	#define NULL (P2VAR(void) 0)
-#endif  /* ifndef NULL */
+#define NULL ((P2VAR(void))0)
+#endif /* ifndef NULL */
 
+#ifndef INITIAL_ZERO
 /**
  * @def INITIAL_ZERO
  * Type definition for INITIAL_ZERO
  *
  */
-#ifndef INITIAL_ZERO
-	#define INITIAL_ZERO (0)
-#endif  /* ifndef INITIAL_ZERO */
+#define INITIAL_ZERO (0)
+#endif /* ifndef INITIAL_ZERO */
 
+#ifndef FLAG_SET
 /**
  * @def FLAG_SET
  * Type definition for FLAG_SET
  *
  */
-#ifndef FLAG_SET
-	#define FLAG_SET (1)
-#endif  /* ifndef FLAG_SET */
+#define FLAG_SET (1)
+#endif /* ifndef FLAG_SET */
 
+#ifndef FLAG_CLEARED
 /**
  * @def FLAG_CLEARED
  * Type definition for FLAG_CLEARED
  *
  */
-#ifndef FLAG_CLEARED
-	#define FLAG_CLEARED (0)
-#endif  /* ifndef FLAG_CLEARED */
+#define FLAG_CLEARED (0)
+#endif /* ifndef FLAG_CLEARED */
 
 /**
  * @def RUN

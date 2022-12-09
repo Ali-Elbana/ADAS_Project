@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['s16_5ft_0',['s16_t',['../group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478',1,'LSTD_TYPES.h']]],
-  ['s32_5ft_1',['s32_t',['../group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5',1,'LSTD_TYPES.h']]],
-  ['s8_5ft_2',['s8_t',['../group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5',1,'LSTD_TYPES.h']]],
-  ['set_5fbit_3',['SET_BIT',['../group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3',1,'LSTD_BITMATH.h']]],
-  ['set_5fbits_4',['SET_BITs',['../group__bitmathgroup.html#ga144236a5e2a4ca05b69188788329d059',1,'LSTD_BITMATH.h']]],
-  ['standard_20types_5',['Standard types',['../group__typedefs.html',1,'']]],
-  ['standard_20values_6',['Standard values',['../group__standardvalues.html',1,'']]],
-  ['static_7',['STATIC',['../group__compiler.html#ga10b2d890d871e1489bb02b7e70d9bdfb',1,'LSTD_COMPILER.h']]]
+  ['noclk0_0',['NoCLK0',['../_m_r_c_c__private_8h.html#a90d39c14e094bb639c481ecd2d887e95',1,'MRCC_private.h']]],
+  ['noclk1_1',['NoCLK1',['../_m_r_c_c__private_8h.html#aa2ffee62c2f32eb447526100b5a2db0f',1,'MRCC_private.h']]],
+  ['nodivision_2',['NoDivision',['../_m_r_c_c__private_8h.html#a25c012e72ad4cf808ed16b94ad10cfc7',1,'MRCC_private.h']]],
+  ['notbybased_3',['NOTBYBASED',['../_m_r_c_c__private_8h.html#a76b2fb0bbc7e011b710b1a2093c75c41',1,'MRCC_private.h']]],
+  ['null_4',['NULL',['../group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4',1,'LSTD_VALUES.h']]]
 ];

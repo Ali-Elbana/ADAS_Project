@@ -3,11 +3,19 @@
     "*.inc": "amxxpawn",
     "*.sma": "amxxpawn",
     "lstd_types.h": "c",
+<<<<<<< HEAD
     "nvic_interface.h": "c",
     "gpio_interface.h": "c",
     "nvic_private.h": "c",
     "gpio_private.h": "c",
     "nvic_config.h": "c",
     "gpio_config.h": "c"
+=======
+    "lstd_values.h": "c",
+    "exti_config.h": "c",
+    "exti_private.h": "c",
+    "syscfg_private.h": "c",
+    "lstd_compiler.h": "c"
+>>>>>>> mo/update_exti
   }
 }
