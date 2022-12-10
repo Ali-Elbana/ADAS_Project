@@ -39,8 +39,14 @@
  * Type definition for NULL
  *
  */
+
 #define NULL ((P2VAR(void))0)
 #endif /* ifndef NULL */
+
+#ifndef NULL
+#define NULL ((P2VAR(void))0)
+#endif  /* ifndef NULL */
+
 
 #ifndef INITIAL_ZERO
 /**
