@@ -28,6 +28,15 @@ void MSysTick_vInit(void);
 void MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks);
 
 /**
+ * @brief Synchronous delay function
+ * @param[in] A_u32Ticks Number of ticks to delay for
+ * @param[in] A_u32TickType Type of the delay
+ * @see MSysTick_vSetPeriodicInterval for a interval asynchronous delay function
+ * @see MSysTick_vSetSingleInterval for a 1-cycle asynchronous delay function
+ */
+FUNC(void) MSysTick_vDelay( VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType ) ;
+
+/**
  * @brief Asynchronous 1-cycle delay function
  * @details This function counts down the ticks number, and when it reaches 0, it stops, unlike `MSysTick_vSetPeriodicInterval`
  * @param[in] A_u32Ticks Number of ticks to delay for
@@ -113,11 +122,11 @@ void MSysTick_vEnableException(void) ;
 
 
 
+#define MILLI_SEC                   1
 
+#define MICRO_SEC                   2
 
-
-
-
+#define SEC                         3
 
 
 

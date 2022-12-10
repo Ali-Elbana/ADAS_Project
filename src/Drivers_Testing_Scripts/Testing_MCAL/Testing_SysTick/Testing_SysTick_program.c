@@ -1,8 +1,9 @@
-/* FILENAME: Testing_EXTI_program 
+/* FILENAME: Testing_SysTick_program 
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Fri 12/09/2022
+*  DATE:   Sat 12/10/2022
 */
+
 /************************************************************************/
 /*                        Include headers                        	    */
 /************************************************************************/
@@ -16,100 +17,59 @@
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../../COTS/MCAL/EXTI/EXTI_interface.h"
 #include "../../../COTS/MCAL/NVIC/NVIC_interface.h"
+#include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 
-#include "Testing_EXTI_interface.h"
-#include "Testing_EXTI_private.h"
-#include "Testing_EXTI_config.h"
+#include "Testing_SysTick_interface.h"
+#include "Testing_SysTick_private.h"
+#include "Testing_SysTick_config.h"
+
 
 /************************************************************************/
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-void ToggleLED( void )
-{
-
-	MGPIOx_vTogglePinValue( GPIO_PORTA, GPIOx_PIN1 ) ;
-
-}
-
-
-
-void TMEXTI_vToggleLED( void )
+void TMSysTick_vToggleLED_BusyWait(void)
 {
 
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
 
-	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_SYSCFGEN ) ;
-
 	MGPIOx_vLockedPins( ) ;
+
 
 	MGPIOx_ConfigType LED =
 	{
 
-		.Port 			= GPIO_PORTA 		,
+			.Port 			= GPIO_PORTA 		,
 
-		.Pin 			= GPIOx_PIN1 		,
+			.Pin 			= GPIOx_PIN0 		,
 
-		.Mode 			= GPIOx_MODE_OUTPUT ,
+			.Mode 			= GPIOx_MODE_OUTPUT ,
 
-		.OutputType 	= GPIOx_PUSHPULL 	,
+			.OutputType 	= GPIOx_PUSHPULL 	,
 
-		.OutputSpeed 	= GPIOx_LowSpeed 	,
+			.OutputSpeed 	= GPIOx_LowSpeed 	,
 
-		.InputType 		= GPIOx_NoPull
+			.InputType 		= GPIOx_NoPull
 
-	};
-
-	MGPIOx_ConfigType IRQ =
-	{
-
-		.Port 			= GPIO_PORTA 		,
-
-		.Pin 			= GPIOx_PIN0 		,
-
-		.Mode 			= GPIOx_MODE_INPUT 	,
-
-		.OutputType 	= GPIOx_NoPull 		,
-
-		.OutputSpeed 	= GPIOx_LowSpeed 	,
-
-		.InputType 		= GPIOx_PullDown
-	};
-
-	EXTI_ConfigType EXTI0_Config =
-	{
-
-		.LineNum = EXTI_LINE0 ,
-
-		.PortNum = GPIO_PORTA ,
-
-		.TriggerStatus = EXTI_FallingEdge
-
-	};
+	} ;
 
 
 	MGPIOx_vInit( &LED ) ;
 
-	MGPIOx_vInit( &IRQ ) ;
+	MSysTick_vInit( ) ;
 
-	MNVIC_vEnablePeriphral( EXTI0 ) ;
+	while( TRUE )
+	{
 
-	MEXTI_vSetCallback( EXTI_LINE0, ToggleLED ) ;
+		MGPIOx_vTogglePinValue( LED.Port, LED.Pin ) ;
 
-	MEXTI_vInit_WithStruct( &EXTI0_Config ) ;
+		MSysTick_vDelay( 15, SEC ) ; // 15 Secs
 
-	while( TRUE ) ;
+	}
 
 }
 
 /**************************************************************************************/
 /**************************************************************************************/
-
-
-
-
-
-
-

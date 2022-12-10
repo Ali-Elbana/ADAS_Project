@@ -35,7 +35,7 @@
  * Dont_AssertRequest
  * AssertRequest
  */
-#define Exception_Request AssertRequest
+#define Exception_Request Dont_AssertRequest
 
 /**********************************************************************************/
 
@@ -56,5 +56,9 @@
  */
 #define PERIODIC_INTERVAL_MODE (2)
 /** @} */
+
+
+#define MAX_TICKS 16777216
+
 
 #endif //_SysTick_config_H

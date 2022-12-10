@@ -35,9 +35,13 @@ FUNC(void) MSysTick_vEnableException(void)
 FUNC(void) MSysTick_vInit(void)
 {
 
+	// Reset timer value.
+	SysTick->VAL = INITIAL_ZERO;
+
 	// Choose the input CLK source.
 	#if CLK_SOURCE == AHB_DividedBy8
 		CLR_BIT(SysTick->CTRL, CLKSOURCE);
+
 	#elif CLK_SOURCE == AHB
 		SET_BIT(SysTick->CTRL, CLKSOURCE);
 	#endif
@@ -47,7 +51,7 @@ FUNC(void) MSysTick_vInit(void)
 		CLR_BIT( SysTick->CTRL, TICKINT ) ;
 
 	#elif Exception_Request == AssertRequest
-		CLR_BIT( SysTick->CTRL, TICKINT ) ;
+		SET_BIT( SysTick->CTRL, TICKINT ) ;
 	#endif
 
 }
@@ -58,17 +62,17 @@ FUNC(void) MSysTick_vInit(void)
 FUNC(void) MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
 {
 
-	// Reset timer value.
-	SysTick->VAL = INITIAL_ZERO;
-
 	// Load Ticks to the load register.
 	SysTick->LOAD = A_u32Ticks;
+
+	// Reset timer value.
+	SysTick->VAL = INITIAL_ZERO;
 
 	// Start Timer.
 	SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
 
 	// Wait till the flag is raised (= 1).
-	while( GET_BIT(SysTick->CTRL, COUNTFLAG) != FLAG_SET ) ;
+	while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
 
 	// Stop the timer.
 	CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
@@ -76,6 +80,59 @@ FUNC(void) MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
 	// Clear the LOAD and VAL registers
 	SysTick->LOAD = INITIAL_ZERO;
 	SysTick->VAL = INITIAL_ZERO;
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+FUNC(void) MSysTick_vDelay( VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType )
+{
+
+	VAR(u32_t) l_u32TickNum = INITIAL_ZERO ;
+
+	if( A_u32TickType == MILLI_SEC )
+	{
+		l_u32TickNum = A_u32Ticks * 1000 ;
+	}
+
+	else if( A_u32TickType == MICRO_SEC )
+	{
+		l_u32TickNum = A_u32Ticks ;
+	}
+
+	else if( A_u32TickType == SEC )
+	{
+		l_u32TickNum = A_u32Ticks * 1000000 ;
+	}
+
+	else
+	{
+		// error
+	}
+
+	if (l_u32TickNum < MAX_TICKS)
+	{
+
+		// Load Ticks to the load register.
+		SysTick->LOAD = l_u32TickNum;
+
+		// Reset timer value.
+		SysTick->VAL = INITIAL_ZERO;
+
+		// Start Timer.
+		SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+
+		// Wait till the flag is raised (= 1).
+		while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
+
+		// Stop the timer.
+		CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+
+		// Clear the LOAD and VAL registers
+		SysTick->LOAD = INITIAL_ZERO;
+		SysTick->VAL  = INITIAL_ZERO;
+
+	}
 
 }
 
