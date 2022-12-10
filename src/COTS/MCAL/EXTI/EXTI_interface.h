@@ -81,7 +81,7 @@ void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus);
  * @param[in] A_u8LineID The line ID to set the callback on
  * @param[in] A_vFptr The callback to call when the interrupt occurs on a certain line
  */
-void EXTI_vSetCallback(VAR(u8_t) A_u8LineID, void (*A_vFptr)(void));
+void MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, void (*A_vFptr)(void));
 
 /**
  * @brief Enable the interrupt on a certain line in a certain port

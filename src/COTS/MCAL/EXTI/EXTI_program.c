@@ -361,7 +361,7 @@ FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
+FUNC(void) MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)

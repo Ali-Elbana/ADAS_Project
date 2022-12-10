@@ -13,6 +13,8 @@
 #include "COTS/MCAL/GPIO/GPIO_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_GPIO/Testing_GPIO_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_EXTI/Testing_EXTI_interface.h"
+
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
 
@@ -23,13 +25,15 @@
 
 #define TestingGPIO_OutputPushPull 	STOP
 
-#define TestingGPIO_OutputOpenDrain RUN
+#define TestingGPIO_OutputOpenDrain STOP
 
 #define TestingGPIO_Input  			STOP
 
 #define TestingPushButton			STOP
 
 #define TestingDCMotor				STOP
+
+#define TestingEXTI_ToggleLED		RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -67,6 +71,13 @@ int main(void)
 	#if TestingGPIO_OutputOpenDrain == RUN
 
 	TMGPIO_vOpenDrainOutputPIN( ) ;
+
+	#endif
+
+
+	#if TestingEXTI_ToggleLED == RUN
+
+	TMEXTI_vToggleLED( ) ;
 
 	#endif
 
