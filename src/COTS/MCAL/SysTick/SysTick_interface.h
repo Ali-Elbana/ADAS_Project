@@ -76,6 +76,11 @@ void MSysTick_vEnable(void);
  */
 void MSysTick_vDisable(void);
 
+/**
+ * @brief Enable the Systick Exception
+ */
+void MSysTick_vEnableException(void) ;
+
 /************************************************************************/
 /*                          Interfacing macros                          */
 /************************************************************************/
@@ -87,11 +92,33 @@ void MSysTick_vDisable(void);
  */
 
 /**
- * @def TICK_TIME
- * @brief
- * @todo comment this macro
+ * @def BUSY_TICK_TIME
+ * @brief Set the time you want to count when using the busy wait function
  */
-#define TICK_TIME (3125)
+#define BUSY_TICK_TIME (1000)
+
+/**
+ * @def TICK_TIME
+ * @brief Set the time you want to count when using the single interval function
+ */
+#define SINGLE_INTERVAL_TICK_TIME (1000)
+
+/**
+ * @def TICK_TIME
+ * @brief @brief Set the time you want to count when using the periodic interval function
+ */
+#define PERIODIC_INTERVAL_TICK_TIME (1000)
+
 /** @} */
+
+
+
+
+
+
+
+
+
+
 
 #endif //_SysTick_interface_H

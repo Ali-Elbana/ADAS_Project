@@ -34,10 +34,10 @@ typedef struct
 	u32_t VAL;
 	/**
 	 * @brief Systick calibration value register
-	 * @details
-	 * @todo comment this register
+	 * @details SysTick calibration value register
 	 */
 	u32_t CALIB;
+
 } SysTick_Type;
 
 /**
