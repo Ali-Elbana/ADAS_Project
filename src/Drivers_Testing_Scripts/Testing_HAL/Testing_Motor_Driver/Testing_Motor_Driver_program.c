@@ -15,6 +15,7 @@
 
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
+// #include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 #include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 
 #include "Testing_Motor_Driver_private.h"
@@ -27,24 +28,23 @@
 
 void THDC_vTestMotors(void)
 {
+    VAR(u32_t) u32DelayCounter = INITIAL_ZERO;
     MRCC_vInit();
-
     MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOAEN);
-    MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOBEN);
-
-    MGPIOx_vLockedPins();
-
+    // MGPIOx_vLockedPins();
+    // MSysTick_vInit();
     HDCM_vInitMotors();
-    volatile VAR(u32_t) _32DelayCounter = INITIAL_ZERO;
+    HDCM_vMoveMotorsForward();
+    // MSysTick_vSetBusyWait(1000000);
 
     while (TRUE)
     {
-        HDCM_vMoveMotorsForward();
-        for (_32DelayCounter = 0; _32DelayCounter < 1000000; _32DelayCounter++)
-            ;
-        HDCM_vMoveMotorsBackward();
-        for (_32DelayCounter = 0; _32DelayCounter < 1000000; _32DelayCounter++)
-            ;
+        // HDCM_vMoveMotorsForward();
+        // for (u32DelayCounter = 0; u32DelayCounter < 10000000; u32DelayCounter++)
+        //     ;
+        // HDCM_vMoveMotorsBackward();
+        // for (u32DelayCounter = 0; u32DelayCounter < 10000000; u32DelayCounter++)
+        //     ;
     }
 }
 
