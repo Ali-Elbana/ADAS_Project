@@ -24,23 +24,13 @@
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingMotorDriver RUN
-#define TestingGPIO_OutputPushPull 		STOP
-
-#define TestingGPIO_OutputOpenDrain 	STOP
-
-#define TestingGPIO_Input  				STOP
-
-#define TestingPushButton				STOP
+#define TestingGPIO_OutputPushPull STOP
+#define TestingGPIO_OutputOpenDrain STOP
 #define TestingGPIO_Input STOP
-
-#define TestingDCMotor					STOP
 #define TestingPushButton STOP
-
-#define TestingEXTI_ToggleLED			STOP
+#define TestingEXTI_ToggleLED STOP
 #define TestingDCMotor STOP
-
-#define TestingSTK_ToggleLED_BusyWait	RUN
+#define TestingSTK_ToggleLED_BusyWait STOP
 #define TestingMotorDriver RUN
 
 /************************************************************************/
@@ -80,28 +70,21 @@ int main(void)
 
 #endif
 
-	TMGPIO_vOpenDrainOutputPIN();
+#if TestingMotorDriver == RUN
+
+	THDC_vTestMotors();
 
 #endif
 
-#if TestingMotorDriver == RUN
+#if TestingEXTI_ToggleLED == RUN
 
-	#if TestingEXTI_ToggleLED == RUN
+	TMEXTI_vToggleLED();
 
-	TMEXTI_vToggleLED( ) ;
+#endif
 
-	#endif
+#if TestingSTK_ToggleLED_BusyWait == RUN
 
-	#if TestingSTK_ToggleLED_BusyWait == RUN
-
-	TMSysTick_vToggleLED_BusyWait(  ) ;
-
-	#endif
-
-
-	THDC_vTestMotors();
-
-	THDC_vTestMotors();
+	TMSysTick_vToggleLED_BusyWait();
 
 #endif
 
