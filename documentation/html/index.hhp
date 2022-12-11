@@ -12,6 +12,7 @@ Title=ADAS Graduation Project
 main="ADAS Graduation Project","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
 
 [FILES]
+<<<<<<< HEAD
 _d_c_m__config_8h.html
 _d_c_m__config_8h_source.html
 _d_c_m__interface_8h.html
@@ -20,6 +21,16 @@ _d_c_m__private_8h.html
 _d_c_m__private_8h_source.html
 _d_c_m__program_8c.html
 _d_c_m__program_8c_source.html
+=======
+_e_x_t_i__config_8h.html
+_e_x_t_i__config_8h_source.html
+_e_x_t_i__interface_8h.html
+_e_x_t_i__interface_8h_source.html
+_e_x_t_i__private_8h.html
+_e_x_t_i__private_8h_source.html
+_e_x_t_i__program_8c.html
+_e_x_t_i__program_8c_source.html
+>>>>>>> main
 _g_p_i_o__config_8h.html
 _g_p_i_o__config_8h_source.html
 _g_p_i_o__interface_8h.html
@@ -55,16 +66,31 @@ _n_v_i_c__private_8h_source.html
 _n_v_i_c__program_8c.html
 _n_v_i_c__program_8c_source.html
 _r_e_a_d_m_e_8md.html
+_s_y_s_c_f_g__private_8h.html
+_s_y_s_c_f_g__private_8h_source.html
 annotated.html
 classes.html
+<<<<<<< HEAD
 dir_39747b045b67bbc7fd218691b253bdc6.html
 dir_5b9f402d8cd57bcc858ed2703dcc50fe.html
+=======
+<<<<<<< HEAD
+>>>>>>> main
 dir_7491c6db81a5c0dd574a8291d8a3e0d7.html
 dir_a209168a2a96c7e0a316e7cc0f4c7c5b.html
 dir_b58645a5aaf8ed5939b0aed386878fd4.html
 dir_bf6cfb23c629a1bbcb78d13135e184d7.html
 dir_d1250299a5376307af898043e4279e0d.html
 dir_d6f295fad42b91af10e375a168f2de53.html
+=======
+dir_138006c0aa1c431f998631532335eb0a.html
+dir_2377b1fe7689c9f20c8f5151463b8952.html
+dir_2ac85850a5790dba6eb04904a64094d7.html
+dir_4db5ace1cfbe87df2280218d278443a2.html
+dir_68267d1309a1af8e8297ef4c3efbcdba.html
+dir_87c9925ea3b076c1bf262bbe5f3a4610.html
+dir_aec800efe038c6f68ba99af85a50b3d1.html
+>>>>>>> mo/update_exti
 files.html
 functions.html
 functions_vars.html
@@ -117,10 +143,17 @@ group___peripheral.html
 group__bitmath.html
 group__bitmathgroup.html
 group__compiler.html
+<<<<<<< HEAD
 group__dc__motor1__configurations.html
 group__dc__motor2__configurations.html
 group__dc__motor3__configurations.html
 group__dc__motor4__configurations.html
+=======
+group__exti__line__settings.html
+group__exti__line__status.html
+group__exti__memory__addresses.html
+group__exti__registers.html
+>>>>>>> main
 group__gpio__addresses.html
 group__gpio__alternate__functions.html
 group__gpio__modes.html
@@ -131,6 +164,7 @@ group__gpio__pin__speed.html
 group__gpio__ports.html
 group__gpio__pull__types.html
 group__gpio__registers.html
+<<<<<<< HEAD
 group__group__prioty.html
 group__interrupt__prioty__grouping.html
 group__nvic__addresses.html
@@ -138,17 +172,41 @@ group__nvic__registers.html
 group__nvic__settable__priorities.html
 group__standardvalues.html
 group__sub__group__prioty.html
+=======
+group__interrupt__lines.html
+group__interrupt__trigger__status.html
+group__standardvalues.html
+group__syscfg__memory__addresses.html
+group__syscfg__memory__registers.html
+>>>>>>> mo/update_exti
 group__typedefs.html
 group__utilities.html
 group__vector__table.html
 index.html
 modules.html
+<<<<<<< HEAD
 struct_d_c_m___motor_configuration.html
+=======
+pages.html
+<<<<<<< HEAD
+>>>>>>> main
 struct_g_p_i_ox___memory_map_type.html
 struct_m_g_p_i_ox___config_type.html
 struct_n_v_i_c___memory_map_type.html
 struct_r_c_c___memory_map_type.html
 struct_s_c_b___memory_map_type.html
+<<<<<<< HEAD
+=======
+=======
+struct_e_x_t_i___config_type.html
+struct_e_x_t_i___type.html
+struct_g_p_i_ox___memory_map_type.html
+struct_m_g_p_i_ox___config_type.html
+struct_m_s_y_s_c_f_g___mem_map__t.html
+struct_r_c_c___memory_map_type.html
+>>>>>>> mo/update_exti
+todo.html
+>>>>>>> main
 bc_s.png
 bc_sd.png
 bdwn.png

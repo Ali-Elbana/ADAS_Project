@@ -13,6 +13,9 @@
 #include "COTS/MCAL/GPIO/GPIO_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_GPIO/Testing_GPIO_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_EXTI/Testing_EXTI_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_SysTick/Testing_SysTick_interface.h"
+
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Motor_Driver/Testing_Motor_Driver_interface.h"
@@ -21,16 +24,23 @@
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_OutputPushPull STOP
+#define TestingMotorDriver RUN
+#define TestingGPIO_OutputPushPull 		STOP
 
-#define TestingGPIO_OutputOpenDrain STOP
+#define TestingGPIO_OutputOpenDrain 	STOP
 
+#define TestingGPIO_Input  				STOP
+
+#define TestingPushButton				STOP
 #define TestingGPIO_Input STOP
 
+#define TestingDCMotor					STOP
 #define TestingPushButton STOP
 
+#define TestingEXTI_ToggleLED			STOP
 #define TestingDCMotor STOP
 
+#define TestingSTK_ToggleLED_BusyWait	RUN
 #define TestingMotorDriver RUN
 
 /************************************************************************/
@@ -70,7 +80,26 @@ int main(void)
 
 #endif
 
+	TMGPIO_vOpenDrainOutputPIN();
+
+#endif
+
 #if TestingMotorDriver == RUN
+
+	#if TestingEXTI_ToggleLED == RUN
+
+	TMEXTI_vToggleLED( ) ;
+
+	#endif
+
+	#if TestingSTK_ToggleLED_BusyWait == RUN
+
+	TMSysTick_vToggleLED_BusyWait(  ) ;
+
+	#endif
+
+
+	THDC_vTestMotors();
 
 	THDC_vTestMotors();
 

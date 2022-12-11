@@ -1,0 +1,27 @@
+var modules =
+[
+    [ "Bit Manipulation Math Macros", "group__bitmath.html", "group__bitmath" ],
+    [ "Bit Group Manipulation Math Macros", "group__bitmathgroup.html", "group__bitmathgroup" ],
+    [ "Compiler standard macros", "group__compiler.html", "group__compiler" ],
+    [ "Utilities macros", "group__utilities.html", "group__utilities" ],
+    [ "Standard types", "group__typedefs.html", "group__typedefs" ],
+    [ "Standard values", "group__standardvalues.html", "group__standardvalues" ],
+    [ "Interrupt line IDs", "group__interrupt__lines.html", "group__interrupt__lines" ],
+    [ "Interrupt trigger status", "group__interrupt__trigger__status.html", "group__interrupt__trigger__status" ],
+    [ "EXTI Memory Addresses", "group__exti__memory__addresses.html", "group__exti__memory__addresses" ],
+    [ "EXTI Registers", "group__exti__registers.html", "group__exti__registers" ],
+    [ "EXTI Lines Status", "group__exti__line__status.html", "group__exti__line__status" ],
+    [ "EXTI Line Settings", "group__exti__line__settings.html", "group__exti__line__settings" ],
+    [ "SYSCFG Memory Addresses", "group__syscfg__memory__addresses.html", "group__syscfg__memory__addresses" ],
+    [ "SYSCFG Memory Registers", "group__syscfg__memory__registers.html", "group__syscfg__memory__registers" ],
+    [ "GPIO Modes", "group__gpio__modes.html", "group__gpio__modes" ],
+    [ "GPIO Ports", "group__gpio__ports.html", "group__gpio__ports" ],
+    [ "GPIO Output Types", "group__gpio__output__types.html", "group__gpio__output__types" ],
+    [ "GPIO PIN Speed", "group__gpio__pin__speed.html", "group__gpio__pin__speed" ],
+    [ "GPIO Pull Types", "group__gpio__pull__types.html", "group__gpio__pull__types" ],
+    [ "GPIO Output Values", "group__gpio__output__values.html", "group__gpio__output__values" ],
+    [ "GPIO Output PINs", "group__gpio__output__pins.html", "group__gpio__output__pins" ],
+    [ "GPIO Alternate Functions", "group__gpio__alternate__functions.html", "group__gpio__alternate__functions" ],
+    [ "GPIO Addresses", "group__gpio__addresses.html", "group__gpio__addresses" ],
+    [ "GPIO Registers", "group__gpio__registers.html", "group__gpio__registers" ]
+];
