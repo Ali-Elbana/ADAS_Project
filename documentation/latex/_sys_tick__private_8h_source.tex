@@ -1,0 +1,38 @@
+\hypertarget{_sys_tick__private_8h_source}{}\doxysection{Sys\+Tick\+\_\+private.\+h}
+\label{_sys_tick__private_8h_source}\index{COTS/MCAL/SysTick/SysTick\_private.h@{COTS/MCAL/SysTick/SysTick\_private.h}}
+\mbox{\hyperlink{_sys_tick__private_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00009}00009 \textcolor{comment}{/* Header file guard */}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00010}00010 \textcolor{preprocessor}{\#ifndef \_SysTick\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00011}00011 \textcolor{preprocessor}{\#define \_SysTick\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00018}\mbox{\hyperlink{struct_sys_tick___type}{00018}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00024}\mbox{\hyperlink{struct_sys_tick___type_ac17d66221ad72dbebf4527a848136238}{00024}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_sys_tick___type_ac17d66221ad72dbebf4527a848136238}{CTRL}};}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00029}\mbox{\hyperlink{struct_sys_tick___type_aa41fd086580200059da755429a0c7bb9}{00029}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_sys_tick___type_aa41fd086580200059da755429a0c7bb9}{LOAD}};}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00034}\mbox{\hyperlink{struct_sys_tick___type_a91f0aa50edd91c8aa60b21241289f123}{00034}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_sys_tick___type_a91f0aa50edd91c8aa60b21241289f123}{VAL}};}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00039}\mbox{\hyperlink{struct_sys_tick___type_a0885fb8feb38187bf76a637ab048ddac}{00039}}     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{struct_sys_tick___type_a0885fb8feb38187bf76a637ab048ddac}{CALIB}};}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00041}00041 \} \mbox{\hyperlink{struct_sys_tick___type}{SysTick\_Type}};}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00055}\mbox{\hyperlink{group__systick__addresses_ga511cd340757ef938ab6d7a2cd7f5cde5}{00055}} \textcolor{preprocessor}{\#define SysTick\_BASE\_ADDRESS (0xE000E010)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00070}\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{00070}} \textcolor{preprocessor}{\#define SysTick ((volatile P2VAR(SysTick\_Type))(SysTick\_BASE\_ADDRESS))}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00085}\mbox{\hyperlink{group__systick__register__bits_gaf1ecc7ccf2930b69effd1a64a1058d7d}{00085}} \textcolor{preprocessor}{\#define COUNTFLAG (16)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00091}\mbox{\hyperlink{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}{00091}} \textcolor{preprocessor}{\#define CLKSOURCE (2)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00097}\mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{00097}} \textcolor{preprocessor}{\#define TICKINT (1)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00108}\mbox{\hyperlink{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}{00108}} \textcolor{preprocessor}{\#define COUNTER\_ENABLE (0)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00120}\mbox{\hyperlink{group__systick__clock__sources_gadd5f66ff13156c11c580ea1ecbe4d56e}{00120}} \textcolor{preprocessor}{\#define AHB\_DividedBy8 (1)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00126}\mbox{\hyperlink{group__systick__clock__sources_ga942fd4ea5019745b10664642934d6c4f}{00126}} \textcolor{preprocessor}{\#define AHB (2)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00138}\mbox{\hyperlink{group__systick__exception__request__enable_ga2b134b9547ceef09338eb24fc09e7a9d}{00138}} \textcolor{preprocessor}{\#define Dont\_AssertRequest (1)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00144}\mbox{\hyperlink{group__systick__exception__request__enable_ga08bc6a27e8bc51f94ff9e8466dc0cf7a}{00144}} \textcolor{preprocessor}{\#define AssertRequest (2)}}
+\DoxyCodeLine{\Hypertarget{_sys_tick__private_8h_source_l00147}00147 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_SysTick\_private\_H}}
+
+\end{DoxyCode}

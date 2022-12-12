@@ -1,5 +1,5 @@
-\hypertarget{_e_x_t_i__interface_8h}{}\doxysection{src/\+COTS/\+MCAL/\+EXTI/\+EXTI\+\_\+interface.h File Reference}
-\label{_e_x_t_i__interface_8h}\index{src/COTS/MCAL/EXTI/EXTI\_interface.h@{src/COTS/MCAL/EXTI/EXTI\_interface.h}}
+\hypertarget{_e_x_t_i__interface_8h}{}\doxysection{COTS/\+MCAL/\+EXTI/\+EXTI\+\_\+interface.h File Reference}
+\label{_e_x_t_i__interface_8h}\index{COTS/MCAL/EXTI/EXTI\_interface.h@{COTS/MCAL/EXTI/EXTI\_interface.h}}
 
 
 This file contains the interfacing information for the EXTI module.  
@@ -56,7 +56,7 @@ struct \mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}}
 \item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_af54debc6d14edcd542b2d03f68b181b8}{MEXTI\+\_\+v\+Init}} (void)
 \begin{DoxyCompactList}\small\item\em Initialize the EXTI module. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}}) A\+\_\+x\+Config)
+void \mbox{\hyperlink{_e_x_t_i__interface_8h_ac3c0a131d05ffc06852eb9867ccce3ea}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}}) A\+\_\+x\+INTConfig)
 \begin{DoxyCompactList}\small\item\em Initialize the EXTI module with a certain configuration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_acc0d34262afbbf8fb80fe0bb2cebc918}{MEXTI\+\_\+v\+Enable\+Line}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Trigger\+Status)
 \begin{DoxyCompactList}\small\item\em Enable the interrupt on a certain line ID with a certain trigger status. \end{DoxyCompactList}\item 
@@ -66,7 +66,7 @@ void \mbox{\hyperlink{_e_x_t_i__interface_8h_ae2881aaec96ac2479b9f492786365db2}{
 \begin{DoxyCompactList}\small\item\em perform a software event interrupt on a certain line \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_a880e5ab4d3ca7fbfcde882970c5ac81b}{MEXTI\+\_\+v\+Set\+Trigger}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Trigger\+Status)
 \begin{DoxyCompactList}\small\item\em Set the trigger status interrupt on a certain line ID. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_e_x_t_i__interface_8h_a27b3d6539ddce7a1efc15743d5f57d92}{EXTI\+\_\+v\+Set\+Callback}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, void($\ast$A\+\_\+v\+Fptr)(void))
+void \mbox{\hyperlink{_e_x_t_i__interface_8h_a95bab3f9258e4e6a2b3d84eda3362a51}{MEXTI\+\_\+v\+Set\+Callback}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, void($\ast$A\+\_\+v\+Fptr)(void))
 \begin{DoxyCompactList}\small\item\em Set the callback when an interrupt occurs on a certain line ID. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_e_x_t_i__interface_8h_a4ff2b0474ed8dbaef5b76d829e71e6ad}{MSYSCFG\+\_\+v\+Set\+EXTIPort}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Line\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID)
 \begin{DoxyCompactList}\small\item\em Enable the interrupt on a certain line in a certain port. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -101,240 +101,237 @@ Definition in file \mbox{\hyperlink{_e_x_t_i__interface_8h_source}{EXTI\+\_\+int
 
 Initialize the EXTI module. 
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]make sure that this function initializes the interrupt for all lines separately from the config \end{DoxyRefDesc}
-\begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}{MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct}} 
-\end{DoxySeeAlso}
 
 
-Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00038}{38}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00042}{42}} of file \mbox{\hyperlink{_e_x_t_i__program_8c_source}{EXTI\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00039 \{}
-\DoxyCodeLine{00040     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8ShiftedOffset = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
-\DoxyCodeLine{00041 }
-\DoxyCodeLine{00042 \textcolor{preprocessor}{\#if EXTI\_LINE0\_EN == ENABLE}}
-\DoxyCodeLine{00043     L\_u8ShiftedOffset = 0;}
-\DoxyCodeLine{00044 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_EN == ENABLE}}
-\DoxyCodeLine{00045     L\_u8ShiftedOffset = 1;}
-\DoxyCodeLine{00046 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_EN == ENABLE}}
-\DoxyCodeLine{00047     L\_u8ShiftedOffset = 2;}
-\DoxyCodeLine{00048 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_EN == ENABLE}}
-\DoxyCodeLine{00049     L\_u8ShiftedOffset = 3;}
-\DoxyCodeLine{00050 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_EN == ENABLE}}
-\DoxyCodeLine{00051     L\_u8ShiftedOffset = 4;}
-\DoxyCodeLine{00052 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_EN == ENABLE}}
-\DoxyCodeLine{00053     L\_u8ShiftedOffset = 5;}
-\DoxyCodeLine{00054 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_EN == ENABLE}}
-\DoxyCodeLine{00055     L\_u8ShiftedOffset = 6;}
-\DoxyCodeLine{00056 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_EN == ENABLE}}
-\DoxyCodeLine{00057     L\_u8ShiftedOffset = 7;}
-\DoxyCodeLine{00058 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_EN == ENABLE}}
-\DoxyCodeLine{00059     L\_u8ShiftedOffset = 8;}
-\DoxyCodeLine{00060 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_EN == ENABLE}}
-\DoxyCodeLine{00061     L\_u8ShiftedOffset = 9;}
-\DoxyCodeLine{00062 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_EN == ENABLE}}
-\DoxyCodeLine{00063     L\_u8ShiftedOffset = 10;}
-\DoxyCodeLine{00064 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_EN == ENABLE}}
-\DoxyCodeLine{00065     L\_u8ShiftedOffset = 11;}
-\DoxyCodeLine{00066 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_EN == ENABLE}}
-\DoxyCodeLine{00067     L\_u8ShiftedOffset = 12;}
-\DoxyCodeLine{00068 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_EN == ENABLE}}
-\DoxyCodeLine{00069     L\_u8ShiftedOffset = 13;}
-\DoxyCodeLine{00070 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_EN == ENABLE}}
-\DoxyCodeLine{00071     L\_u8ShiftedOffset = 14;}
-\DoxyCodeLine{00072 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_EN == ENABLE}}
-\DoxyCodeLine{00073     L\_u8ShiftedOffset = 15;}
-\DoxyCodeLine{00074 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00075 }
-\DoxyCodeLine{00076     \textcolor{comment}{// Get the enabled line ID.}}
-\DoxyCodeLine{00077     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = L\_u8ShiftedOffset;}}
-\DoxyCodeLine{00078 }
-\DoxyCodeLine{00079     \textcolor{comment}{// Clear all flags.}}
-\DoxyCodeLine{00080     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>PR = 0xffffffff;}
-\DoxyCodeLine{00081 }
-\DoxyCodeLine{00082     \textcolor{comment}{// Enable EXTI on a line.}}
-\DoxyCodeLine{00083     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = 0;}
-\DoxyCodeLine{00084 }
-\DoxyCodeLine{00085     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = (\mbox{\hyperlink{group__exti__line__status_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
+\DoxyCodeLine{00043 \{}
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{00045     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8ShiftedOffset = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047 \textcolor{preprocessor}{\#if EXTI\_LINE0\_EN == ENABLE}}
+\DoxyCodeLine{00048     L\_u8ShiftedOffset = 0;}
+\DoxyCodeLine{00049 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_EN == ENABLE}}
+\DoxyCodeLine{00050     L\_u8ShiftedOffset = 1;}
+\DoxyCodeLine{00051 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_EN == ENABLE}}
+\DoxyCodeLine{00052     L\_u8ShiftedOffset = 2;}
+\DoxyCodeLine{00053 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_EN == ENABLE}}
+\DoxyCodeLine{00054     L\_u8ShiftedOffset = 3;}
+\DoxyCodeLine{00055 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_EN == ENABLE}}
+\DoxyCodeLine{00056     L\_u8ShiftedOffset = 4;}
+\DoxyCodeLine{00057 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_EN == ENABLE}}
+\DoxyCodeLine{00058     L\_u8ShiftedOffset = 5;}
+\DoxyCodeLine{00059 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_EN == ENABLE}}
+\DoxyCodeLine{00060     L\_u8ShiftedOffset = 6;}
+\DoxyCodeLine{00061 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_EN == ENABLE}}
+\DoxyCodeLine{00062     L\_u8ShiftedOffset = 7;}
+\DoxyCodeLine{00063 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_EN == ENABLE}}
+\DoxyCodeLine{00064     L\_u8ShiftedOffset = 8;}
+\DoxyCodeLine{00065 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_EN == ENABLE}}
+\DoxyCodeLine{00066     L\_u8ShiftedOffset = 9;}
+\DoxyCodeLine{00067 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_EN == ENABLE}}
+\DoxyCodeLine{00068     L\_u8ShiftedOffset = 10;}
+\DoxyCodeLine{00069 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_EN == ENABLE}}
+\DoxyCodeLine{00070     L\_u8ShiftedOffset = 11;}
+\DoxyCodeLine{00071 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_EN == ENABLE}}
+\DoxyCodeLine{00072     L\_u8ShiftedOffset = 12;}
+\DoxyCodeLine{00073 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_EN == ENABLE}}
+\DoxyCodeLine{00074     L\_u8ShiftedOffset = 13;}
+\DoxyCodeLine{00075 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_EN == ENABLE}}
+\DoxyCodeLine{00076     L\_u8ShiftedOffset = 14;}
+\DoxyCodeLine{00077 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_EN == ENABLE}}
+\DoxyCodeLine{00078     L\_u8ShiftedOffset = 15;}
+\DoxyCodeLine{00079 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081     \textcolor{comment}{// Get the enabled line ID.}}
+\DoxyCodeLine{00082     \textcolor{comment}{// GS\_u8EXTI\_EnabledLine\_ID = L\_u8ShiftedOffset;}}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \textcolor{comment}{// Clear all flags.}}
+\DoxyCodeLine{00085     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>PR = 0xffffffff;}
 \DoxyCodeLine{00086 }
-\DoxyCodeLine{00087 \textcolor{comment}{// Set EXTI Triggered status on a line.}}
-\DoxyCodeLine{00088 \textcolor{preprocessor}{\#if EXTI\_LINE0\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00087     \textcolor{comment}{// Enable EXTI on a line.}}
+\DoxyCodeLine{00088     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = 0;}
 \DoxyCodeLine{00089 }
-\DoxyCodeLine{00090     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00090     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR |= (\mbox{\hyperlink{group__exti__line__status_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
 \DoxyCodeLine{00091 }
-\DoxyCodeLine{00092 \textcolor{preprocessor}{\#elif EXTI\_LINE0\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00093     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00092 \textcolor{comment}{// Set EXTI Triggered status on a line.}}
+\DoxyCodeLine{00093 \textcolor{preprocessor}{\#if EXTI\_LINE0\_TRIGGER == EXTI\_RisingEdge}}
 \DoxyCodeLine{00094 }
-\DoxyCodeLine{00095 \textcolor{preprocessor}{\#elif EXTI\_LINE0\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00096     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00097     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00098 }
-\DoxyCodeLine{00100 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00095     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00096 }
+\DoxyCodeLine{00097 \textcolor{preprocessor}{\#elif EXTI\_LINE0\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00098     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00099 }
+\DoxyCodeLine{00100 \textcolor{preprocessor}{\#elif EXTI\_LINE0\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00101     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00102 }
-\DoxyCodeLine{00103 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00104     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00105 }
-\DoxyCodeLine{00106 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00107     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00108     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00109 }
-\DoxyCodeLine{00111 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00102     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00103 }
+\DoxyCodeLine{00105 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00106     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00109     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111 \textcolor{preprocessor}{\#elif EXTI\_LINE1\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00112     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00113 }
-\DoxyCodeLine{00114 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00115     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00116 }
-\DoxyCodeLine{00117 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00118     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00119     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00120 }
-\DoxyCodeLine{00122 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00113     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00114 }
+\DoxyCodeLine{00116 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00117     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00120     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122 \textcolor{preprocessor}{\#elif EXTI\_LINE2\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00123     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00124 }
-\DoxyCodeLine{00125 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00126     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00127 }
-\DoxyCodeLine{00128 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00129     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00130     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00131 }
-\DoxyCodeLine{00133 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00124     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00127 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00128     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00129 }
+\DoxyCodeLine{00130 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00131     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00132 }
+\DoxyCodeLine{00133 \textcolor{preprocessor}{\#elif EXTI\_LINE3\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00134     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00135 }
-\DoxyCodeLine{00136 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00137     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00138 }
-\DoxyCodeLine{00139 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00140     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00141     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00142 }
-\DoxyCodeLine{00144 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00135     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00136 }
+\DoxyCodeLine{00138 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00139     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00140 }
+\DoxyCodeLine{00141 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00142     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144 \textcolor{preprocessor}{\#elif EXTI\_LINE4\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00145     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00146 }
-\DoxyCodeLine{00147 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00148     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00149 }
-\DoxyCodeLine{00150 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00151     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00152     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00153 }
-\DoxyCodeLine{00155 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00146     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00149 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00150     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00153     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155 \textcolor{preprocessor}{\#elif EXTI\_LINE5\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00156     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00157 }
-\DoxyCodeLine{00158 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00159     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00160 }
-\DoxyCodeLine{00161 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00162     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00163     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00164 }
-\DoxyCodeLine{00166 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00157     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00160 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00161     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00164     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00165 }
+\DoxyCodeLine{00166 \textcolor{preprocessor}{\#elif EXTI\_LINE6\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00167     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00168 }
-\DoxyCodeLine{00169 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00170     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00171 }
-\DoxyCodeLine{00172 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00173     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00174     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00175 }
-\DoxyCodeLine{00177 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00168     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00169 }
+\DoxyCodeLine{00171 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00172     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00173 }
+\DoxyCodeLine{00174 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00175     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00176 }
+\DoxyCodeLine{00177 \textcolor{preprocessor}{\#elif EXTI\_LINE7\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00178     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00179 }
-\DoxyCodeLine{00180 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00181     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00182 }
-\DoxyCodeLine{00183 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00184     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00185     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00186 }
-\DoxyCodeLine{00188 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00179     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00182 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00183     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00184 }
+\DoxyCodeLine{00185 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00186     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00187 }
+\DoxyCodeLine{00188 \textcolor{preprocessor}{\#elif EXTI\_LINE8\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00189     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00190 }
-\DoxyCodeLine{00191 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00192     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00193 }
-\DoxyCodeLine{00194 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00195     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00196     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00197 }
-\DoxyCodeLine{00199 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00190     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00191 }
+\DoxyCodeLine{00193 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00194     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00195 }
+\DoxyCodeLine{00196 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00197     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00198 }
+\DoxyCodeLine{00199 \textcolor{preprocessor}{\#elif EXTI\_LINE9\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00200     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00201 }
-\DoxyCodeLine{00202 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00203     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00204 }
-\DoxyCodeLine{00205 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00206     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00207     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00208 }
-\DoxyCodeLine{00210 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00201     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00202 }
+\DoxyCodeLine{00204 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00205     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00208     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00209 }
+\DoxyCodeLine{00210 \textcolor{preprocessor}{\#elif EXTI\_LINE10\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00211     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00212 }
-\DoxyCodeLine{00213 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00214     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00215 }
-\DoxyCodeLine{00216 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00217     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00218     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00219 }
-\DoxyCodeLine{00221 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00212     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00213 }
+\DoxyCodeLine{00215 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00216     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00217 }
+\DoxyCodeLine{00218 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00219     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00220 }
+\DoxyCodeLine{00221 \textcolor{preprocessor}{\#elif EXTI\_LINE11\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00222     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00223 }
-\DoxyCodeLine{00224 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00225     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00226 }
-\DoxyCodeLine{00227 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00228     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00229     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00230 }
-\DoxyCodeLine{00232 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00223     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00224 }
+\DoxyCodeLine{00226 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00227     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00228 }
+\DoxyCodeLine{00229 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00230     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00231 }
+\DoxyCodeLine{00232 \textcolor{preprocessor}{\#elif EXTI\_LINE12\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00233     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00234 }
-\DoxyCodeLine{00235 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00236     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00237 }
-\DoxyCodeLine{00238 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00239     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00240     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00241 }
-\DoxyCodeLine{00243 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00234     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00235 }
+\DoxyCodeLine{00237 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00238     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00239 }
+\DoxyCodeLine{00240 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00241     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00242 }
+\DoxyCodeLine{00243 \textcolor{preprocessor}{\#elif EXTI\_LINE13\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00244     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00245 }
-\DoxyCodeLine{00246 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00247     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00248 }
-\DoxyCodeLine{00249 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00250     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00251     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00252 }
-\DoxyCodeLine{00254 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00245     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00246 }
+\DoxyCodeLine{00248 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00249     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00250 }
+\DoxyCodeLine{00251 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00252     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00253 }
+\DoxyCodeLine{00254 \textcolor{preprocessor}{\#elif EXTI\_LINE14\_TRIGGER == EXTI\_OnChange}}
 \DoxyCodeLine{00255     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00256 }
-\DoxyCodeLine{00257 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_TRIGGER == EXTI\_FallingEdge}}
-\DoxyCodeLine{00258     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00259 }
-\DoxyCodeLine{00260 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_TRIGGER == EXTI\_OnChange}}
-\DoxyCodeLine{00261     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00262     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
-\DoxyCodeLine{00263 }
-\DoxyCodeLine{00264 \textcolor{preprocessor}{\#endif}}
-\DoxyCodeLine{00265 \}}
+\DoxyCodeLine{00256     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00257 }
+\DoxyCodeLine{00259 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_TRIGGER == EXTI\_RisingEdge}}
+\DoxyCodeLine{00260     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00261 }
+\DoxyCodeLine{00262 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_TRIGGER == EXTI\_FallingEdge}}
+\DoxyCodeLine{00263     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00264 }
+\DoxyCodeLine{00265 \textcolor{preprocessor}{\#elif EXTI\_LINE15\_TRIGGER == EXTI\_OnChange}}
+\DoxyCodeLine{00266     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>RTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00267     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>FTSR, L\_u8ShiftedOffset);}
+\DoxyCodeLine{00268 }
+\DoxyCodeLine{00269 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00270 }
+\DoxyCodeLine{00271 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00085}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00085}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
-\mbox{\Hypertarget{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}\label{_e_x_t_i__interface_8h_a4855e79776f4d6ab5414c92a08a39c05}} 
+\mbox{\Hypertarget{_e_x_t_i__interface_8h_ac3c0a131d05ffc06852eb9867ccce3ea}\label{_e_x_t_i__interface_8h_ac3c0a131d05ffc06852eb9867ccce3ea}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}}
 \index{MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}!EXTI\_interface.h@{EXTI\_interface.h}}
 \doxysubsubsection{\texorpdfstring{MEXTI\_vInit\_WithStruct()}{MEXTI\_vInit\_WithStruct()}}
-{\footnotesize\ttfamily void MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}})}]{A\+\_\+x\+Config }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void MEXTI\+\_\+v\+Init\+\_\+\+With\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_e_x_t_i___config_type}{EXTI\+\_\+\+Config\+Type}})}]{A\+\_\+x\+INTConfig }\end{DoxyParamCaption})}
 
 
 
@@ -342,14 +339,9 @@ Initialize the EXTI module with a certain configuration.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em A\+\_\+x\+Config} & The configuration structure to initialize the interrupt with \\
+\mbox{\texttt{ in}}  & {\em A\+\_\+x\+INTConfig} & The configuration structure to initialize the interrupt with \\
 \hline
 \end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Write this function \end{DoxyRefDesc}
-\begin{DoxySeeAlso}{See also}
-\mbox{\hyperlink{_e_x_t_i__interface_8h_af54debc6d14edcd542b2d03f68b181b8}{MEXTI\+\_\+v\+Init}} 
-\end{DoxySeeAlso}
 \mbox{\Hypertarget{_e_x_t_i__interface_8h_acc0d34262afbbf8fb80fe0bb2cebc918}\label{_e_x_t_i__interface_8h_acc0d34262afbbf8fb80fe0bb2cebc918}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vEnableLine@{MEXTI\_vEnableLine}}
 \index{MEXTI\_vEnableLine@{MEXTI\_vEnableLine}!EXTI\_interface.h@{EXTI\_interface.h}}
@@ -414,11 +406,11 @@ Set the trigger status interrupt on a certain line ID.
 \mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Trigger\+Status} & The trigger status to trigger when the interrupt occurs \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{_e_x_t_i__interface_8h_a27b3d6539ddce7a1efc15743d5f57d92}\label{_e_x_t_i__interface_8h_a27b3d6539ddce7a1efc15743d5f57d92}} 
-\index{EXTI\_interface.h@{EXTI\_interface.h}!EXTI\_vSetCallback@{EXTI\_vSetCallback}}
-\index{EXTI\_vSetCallback@{EXTI\_vSetCallback}!EXTI\_interface.h@{EXTI\_interface.h}}
-\doxysubsubsection{\texorpdfstring{EXTI\_vSetCallback()}{EXTI\_vSetCallback()}}
-{\footnotesize\ttfamily void EXTI\+\_\+v\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Line\+ID,  }\item[{void($\ast$)(void)}]{A\+\_\+v\+Fptr }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_e_x_t_i__interface_8h_a95bab3f9258e4e6a2b3d84eda3362a51}\label{_e_x_t_i__interface_8h_a95bab3f9258e4e6a2b3d84eda3362a51}} 
+\index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vSetCallback@{MEXTI\_vSetCallback}}
+\index{MEXTI\_vSetCallback@{MEXTI\_vSetCallback}!EXTI\_interface.h@{EXTI\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MEXTI\_vSetCallback()}{MEXTI\_vSetCallback()}}
+{\footnotesize\ttfamily void MEXTI\+\_\+v\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Line\+ID,  }\item[{void($\ast$)(void)}]{A\+\_\+v\+Fptr }\end{DoxyParamCaption})}
 
 
 

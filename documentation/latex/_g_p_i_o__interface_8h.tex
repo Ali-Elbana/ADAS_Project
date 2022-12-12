@@ -172,14 +172,6 @@ Definition in file \mbox{\hyperlink{_g_p_i_o__interface_8h_source}{GPIO\+\_\+int
 Locks the prohibited GPIO PINs. 
 
 
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em void.} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void. 
-\end{DoxyReturn}
-
 
 Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of file \mbox{\hyperlink{_g_p_i_o__program_8c_source}{GPIO\+\_\+program.\+c}}.
 
@@ -229,7 +221,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}\label{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinMode@{MGPIOx\_vSetPinMode}}
@@ -348,7 +340,7 @@ Sets a certain pin\textquotesingle{}s output value on a speific port.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00117}{HDCM\+\_\+v\+Move\+Motors\+Backward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00098}{HDCM\+\_\+v\+Move\+Motors\+Forward()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
 
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_a8372b7233448858c9b80d9ef73555a55}\label{_g_p_i_o__interface_8h_a8372b7233448858c9b80d9ef73555a55}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetResetAtomic@{MGPIOx\_vSetResetAtomic}}
@@ -418,6 +410,10 @@ Initialize the GPIO with a certain configuration.
 \mbox{\texttt{ in}}  & {\em A\+\_\+x\+Pin\+Config} & The initialization configuration for the GPIO \\
 \hline
 \end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}.
+
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}\label{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vTogglePinValue@{MGPIOx\_vTogglePinValue}}
 \index{MGPIOx\_vTogglePinValue@{MGPIOx\_vTogglePinValue}!GPIO\_interface.h@{GPIO\_interface.h}}

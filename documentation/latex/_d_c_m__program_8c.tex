@@ -16,11 +16,13 @@ This file contains the source code of the interfacing information for the DC Mot
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_d_c_m__program_8c_a2a49479db091de302a46fcfc33629501}{HDCM\+\_\+v\+Init\+Motors}} (void)
+void \mbox{\hyperlink{_d_c_m__program_8c_ab932a8d33764b8f9e4db1762ec1dea76}{HDCM\+\_\+v\+Init\+Motor}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
 \item 
-void \mbox{\hyperlink{_d_c_m__program_8c_a034253ebc7f58c20abfc12f4b1309369}{HDCM\+\_\+v\+Move\+Motors\+Forward}} (void)
+void \mbox{\hyperlink{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}{HDCM\+\_\+v\+Move\+Forward}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
 \item 
-void \mbox{\hyperlink{_d_c_m__program_8c_a26abdc3a64b76f28845e3e82246a189c}{HDCM\+\_\+v\+Move\+Motors\+Backward}} (void)
+void \mbox{\hyperlink{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}{HDCM\+\_\+v\+Move\+Backward}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
+\item 
+void \mbox{\hyperlink{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}{HDCM\+\_\+v\+Stop\+Motor}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
 \end{DoxyCompactItemize}
 
 
@@ -43,11 +45,75 @@ Definition in file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_d_c_m__program_8c_a2a49479db091de302a46fcfc33629501}\label{_d_c_m__program_8c_a2a49479db091de302a46fcfc33629501}} 
-\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vInitMotors@{HDCM\_vInitMotors}}
-\index{HDCM\_vInitMotors@{HDCM\_vInitMotors}!DCM\_program.c@{DCM\_program.c}}
-\doxysubsubsection{\texorpdfstring{HDCM\_vInitMotors()}{HDCM\_vInitMotors()}}
-{\footnotesize\ttfamily void HDCM\+\_\+v\+Init\+Motors (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_d_c_m__program_8c_ab932a8d33764b8f9e4db1762ec1dea76}\label{_d_c_m__program_8c_ab932a8d33764b8f9e4db1762ec1dea76}} 
+\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vInitMotor@{HDCM\_vInitMotor}}
+\index{HDCM\_vInitMotor@{HDCM\_vInitMotor}!DCM\_program.c@{DCM\_program.c}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vInitMotor()}{HDCM\_vInitMotor()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Init\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{31}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032 \{}
+\DoxyCodeLine{00033     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) DCMotorSide1Init =}
+\DoxyCodeLine{00034     \{}
+\DoxyCodeLine{00035         .Port = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}},}
+\DoxyCodeLine{00036         .Pin = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}},}
+\DoxyCodeLine{00037         .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
+\DoxyCodeLine{00038         .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00039         .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00040         .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00041     \};}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) DCMotorSide2Init =}
+\DoxyCodeLine{00044     \{}
+\DoxyCodeLine{00045         .Port = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}},}
+\DoxyCodeLine{00046         .Pin = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}},}
+\DoxyCodeLine{00047         .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
+\DoxyCodeLine{00048         .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00049         .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00050         .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00051     \};}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053     \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}(\&DCMotorSide1Init);}
+\DoxyCodeLine{00054     \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}(\&DCMotorSide2Init);}
+\DoxyCodeLine{00055 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00245}{GPIOx\+\_\+\+Low\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00165}{GPIOx\+\_\+\+MODE\+\_\+\+OUTPUT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00281}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00230}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00029}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00025}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}\label{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}} 
+\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMoveForward@{HDCM\_vMoveForward}}
+\index{HDCM\_vMoveForward@{HDCM\_vMoveForward}!DCM\_program.c@{DCM\_program.c}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vMoveForward()}{HDCM\_vMoveForward()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Move\+Forward (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{57}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058 \{}
+\DoxyCodeLine{00059     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{00060     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00061 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00310}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00317}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00029}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00025}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}.
+
+\mbox{\Hypertarget{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}\label{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}} 
+\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMoveBackward@{HDCM\_vMoveBackward}}
+\index{HDCM\_vMoveBackward@{HDCM\_vMoveBackward}!DCM\_program.c@{DCM\_program.c}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vMoveBackward()}{HDCM\_vMoveBackward()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Move\+Backward (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
 
 
 
@@ -56,111 +122,34 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{63}} of fi
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00064 \{}
-\DoxyCodeLine{00065     \textcolor{comment}{// Initialize motor 1}}
-\DoxyCodeLine{00066     GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}} = \mbox{\hyperlink{group__dc__motor1__configurations_gad8b988972e8c8803a45c37ccba07a004}{DCM\_MOTOR1\_SIDE1\_PORT}};}
-\DoxyCodeLine{00067     GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}} = \mbox{\hyperlink{group__dc__motor1__configurations_gadad770780de0862bb2730fb4b45620c8}{DCM\_MOTOR1\_SIDE1\_PIN}};}
-\DoxyCodeLine{00068     GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}} = \mbox{\hyperlink{group__dc__motor1__configurations_ga2c948467b33c4a9ed24875aaff4ed96d}{DCM\_MOTOR1\_SIDE2\_PORT}};}
-\DoxyCodeLine{00069     GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}} = \mbox{\hyperlink{group__dc__motor1__configurations_ga5ec9008c038cd2294fcd41ae2e24a0e7}{DCM\_MOTOR1\_SIDE2\_PIN}};}
-\DoxyCodeLine{00070 }
-\DoxyCodeLine{00071     HDCM\_vInitSingleMotor(GS\_pMotor1);}
-\DoxyCodeLine{00072 }
-\DoxyCodeLine{00073     \textcolor{comment}{// Initialize motor 2}}
-\DoxyCodeLine{00074     GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}} = \mbox{\hyperlink{group__dc__motor2__configurations_ga26dfe19d69fa3b56bed386791ece186f}{DCM\_MOTOR2\_SIDE1\_PORT}};}
-\DoxyCodeLine{00075     GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}} = \mbox{\hyperlink{group__dc__motor2__configurations_gaebc0e2fb5c7fb3a15024a968244bca6e}{DCM\_MOTOR2\_SIDE1\_PIN}};}
-\DoxyCodeLine{00076     GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}} = \mbox{\hyperlink{group__dc__motor2__configurations_ga6b101ba1d0393d7243c8981f01f732f1}{DCM\_MOTOR2\_SIDE2\_PORT}};}
-\DoxyCodeLine{00077     GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}} = \mbox{\hyperlink{group__dc__motor2__configurations_ga01f94174eec94361753373870e501bef}{DCM\_MOTOR2\_SIDE2\_PIN}};}
-\DoxyCodeLine{00078 }
-\DoxyCodeLine{00079     HDCM\_vInitSingleMotor(GS\_pMotor2);}
-\DoxyCodeLine{00080 }
-\DoxyCodeLine{00081     \textcolor{comment}{// Initialize motor 3}}
-\DoxyCodeLine{00082     GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}} = \mbox{\hyperlink{group__dc__motor3__configurations_ga061ed8ace4398497ce0826411bd48222}{DCM\_MOTOR3\_SIDE1\_PORT}};}
-\DoxyCodeLine{00083     GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}} = \mbox{\hyperlink{group__dc__motor3__configurations_gabe44cba06358024e862ee14fe33d0dfe}{DCM\_MOTOR3\_SIDE1\_PIN}};}
-\DoxyCodeLine{00084     GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}} = \mbox{\hyperlink{group__dc__motor3__configurations_ga51d042b51ef7fb5460d0b49b00a48b35}{DCM\_MOTOR3\_SIDE2\_PORT}};}
-\DoxyCodeLine{00085     GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}} = \mbox{\hyperlink{group__dc__motor3__configurations_gafc6789d802cec3b153a270063daca067}{DCM\_MOTOR3\_SIDE2\_PIN}};}
-\DoxyCodeLine{00086 }
-\DoxyCodeLine{00087     HDCM\_vInitSingleMotor(GS\_pMotor3);}
-\DoxyCodeLine{00088 }
-\DoxyCodeLine{00089     \textcolor{comment}{// Initialize motor 4}}
-\DoxyCodeLine{00090     GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}} = \mbox{\hyperlink{group__dc__motor4__configurations_ga1966148ae769a1d3a44b936a27388827}{DCM\_MOTOR4\_SIDE1\_PORT}};}
-\DoxyCodeLine{00091     GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}} = \mbox{\hyperlink{group__dc__motor4__configurations_gaded6a50bc1a7e2f149f44638a5f6de25}{DCM\_MOTOR4\_SIDE1\_PIN}};}
-\DoxyCodeLine{00092     GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}} = \mbox{\hyperlink{group__dc__motor4__configurations_ga7641836b638529ec2726b0a1f040c14a}{DCM\_MOTOR4\_SIDE2\_PORT}};}
-\DoxyCodeLine{00093     GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}} = \mbox{\hyperlink{group__dc__motor4__configurations_ga34e62a523c2dd22191aa1a1b61be23f7}{DCM\_MOTOR4\_SIDE2\_PIN}};}
-\DoxyCodeLine{00094 }
-\DoxyCodeLine{00095     HDCM\_vInitSingleMotor(GS\_pMotor4);}
-\DoxyCodeLine{00096 \}}
+\DoxyCodeLine{00065     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00066     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{00067 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_d_c_m__config_8h_source_l00035}{DCM\+\_\+\+MOTOR1\+\_\+\+SIDE1\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00028}{DCM\+\_\+\+MOTOR1\+\_\+\+SIDE1\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00049}{DCM\+\_\+\+MOTOR1\+\_\+\+SIDE2\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00042}{DCM\+\_\+\+MOTOR1\+\_\+\+SIDE2\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00070}{DCM\+\_\+\+MOTOR2\+\_\+\+SIDE1\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00063}{DCM\+\_\+\+MOTOR2\+\_\+\+SIDE1\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00084}{DCM\+\_\+\+MOTOR2\+\_\+\+SIDE2\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00077}{DCM\+\_\+\+MOTOR2\+\_\+\+SIDE2\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00105}{DCM\+\_\+\+MOTOR3\+\_\+\+SIDE1\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00098}{DCM\+\_\+\+MOTOR3\+\_\+\+SIDE1\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00119}{DCM\+\_\+\+MOTOR3\+\_\+\+SIDE2\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00112}{DCM\+\_\+\+MOTOR3\+\_\+\+SIDE2\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00141}{DCM\+\_\+\+MOTOR4\+\_\+\+SIDE1\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00134}{DCM\+\_\+\+MOTOR4\+\_\+\+SIDE1\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00155}{DCM\+\_\+\+MOTOR4\+\_\+\+SIDE2\+\_\+\+PIN}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00148}{DCM\+\_\+\+MOTOR4\+\_\+\+SIDE2\+\_\+\+PORT}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00030}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00026}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00038}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, and \mbox{\hyperlink{_d_c_m__private_8h_source_l00034}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00310}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00317}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00029}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00025}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}.
 
-\mbox{\Hypertarget{_d_c_m__program_8c_a034253ebc7f58c20abfc12f4b1309369}\label{_d_c_m__program_8c_a034253ebc7f58c20abfc12f4b1309369}} 
-\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMoveMotorsForward@{HDCM\_vMoveMotorsForward}}
-\index{HDCM\_vMoveMotorsForward@{HDCM\_vMoveMotorsForward}!DCM\_program.c@{DCM\_program.c}}
-\doxysubsubsection{\texorpdfstring{HDCM\_vMoveMotorsForward()}{HDCM\_vMoveMotorsForward()}}
-{\footnotesize\ttfamily void HDCM\+\_\+v\+Move\+Motors\+Forward (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}\label{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}} 
+\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vStopMotor@{HDCM\_vStopMotor}}
+\index{HDCM\_vStopMotor@{HDCM\_vStopMotor}!DCM\_program.c@{DCM\_program.c}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vStopMotor()}{HDCM\_vStopMotor()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Stop\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00098}{98}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{69}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00099 \{}
-\DoxyCodeLine{00100     \textcolor{comment}{// Motor 1}}
-\DoxyCodeLine{00101     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00102     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00103 }
-\DoxyCodeLine{00104     \textcolor{comment}{// Motor 2}}
-\DoxyCodeLine{00105     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00106     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00107 }
-\DoxyCodeLine{00108     \textcolor{comment}{// Motor 3}}
-\DoxyCodeLine{00109     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00110     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00111 }
-\DoxyCodeLine{00112     \textcolor{comment}{// Motor 4}}
-\DoxyCodeLine{00113     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00114     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00115 \}}
+\DoxyCodeLine{00070 \{}
+\DoxyCodeLine{00071     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00072     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00073 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00312}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00319}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00030}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00026}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00038}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, and \mbox{\hyperlink{_d_c_m__private_8h_source_l00034}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}.
-
-\mbox{\Hypertarget{_d_c_m__program_8c_a26abdc3a64b76f28845e3e82246a189c}\label{_d_c_m__program_8c_a26abdc3a64b76f28845e3e82246a189c}} 
-\index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMoveMotorsBackward@{HDCM\_vMoveMotorsBackward}}
-\index{HDCM\_vMoveMotorsBackward@{HDCM\_vMoveMotorsBackward}!DCM\_program.c@{DCM\_program.c}}
-\doxysubsubsection{\texorpdfstring{HDCM\_vMoveMotorsBackward()}{HDCM\_vMoveMotorsBackward()}}
-{\footnotesize\ttfamily void HDCM\+\_\+v\+Move\+Motors\+Backward (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00117}{117}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00118 \{}
-\DoxyCodeLine{00119     \textcolor{comment}{// Motor 1}}
-\DoxyCodeLine{00120     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00121     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor1-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00122 }
-\DoxyCodeLine{00123     \textcolor{comment}{// Motor 2}}
-\DoxyCodeLine{00124     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00125     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor2-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00126 }
-\DoxyCodeLine{00127     \textcolor{comment}{// Motor 3}}
-\DoxyCodeLine{00128     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00129     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor3-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00130 }
-\DoxyCodeLine{00131     \textcolor{comment}{// Motor 4}}
-\DoxyCodeLine{00132     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1Port}}, GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00133     \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\_vSetPinValue}}(GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2Port}}, GS\_pMotor4-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00134 \}}
-
-\end{DoxyCode}
-
-
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00312}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00319}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00030}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00026}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__private_8h_source_l00038}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, and \mbox{\hyperlink{_d_c_m__private_8h_source_l00034}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00317}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_af20c7fe5cc6f8343c15c804adb2bb064}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00029}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Pin}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00025}{DCM\+\_\+\+Motor\+Configuration\+::\+Side1\+Port}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Pin}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::\+Side2\+Port}}.
 

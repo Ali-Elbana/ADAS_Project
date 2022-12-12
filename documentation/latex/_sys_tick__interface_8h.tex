@@ -1,0 +1,467 @@
+\hypertarget{_sys_tick__interface_8h}{}\doxysection{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+interface.h File Reference}
+\label{_sys_tick__interface_8h}\index{COTS/MCAL/SysTick/SysTick\_interface.h@{COTS/MCAL/SysTick/SysTick\_interface.h}}
+
+
+This file contains the interfacing information for the Systick module.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_sys_tick__interface_8h_abc8b094de6fdada914d30ea3df099502}{BUSY\+\_\+\+TICK\+\_\+\+TIME}}~(1000)
+\begin{DoxyCompactList}\small\item\em Set the time you want to count when using the busy wait function. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_sys_tick__interface_8h_ade19761cee9e365eed75787eb739dc00}{SINGLE\+\_\+\+INTERVAL\+\_\+\+TICK\+\_\+\+TIME}}~(1000)
+\begin{DoxyCompactList}\small\item\em Set the time you want to count when using the single interval function. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_sys_tick__interface_8h_a2c359c6330c0a281f506a4ce7cf6cc97}{PERIODIC\+\_\+\+INTERVAL\+\_\+\+TICK\+\_\+\+TIME}}~(1000)
+\begin{DoxyCompactList}\small\item\em Set the time you want to count when using the periodic interval function. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__delay__units_gab96fecf39055ba51e702bb3ecb54896c}{MILLI\+\_\+\+SEC}}~(1)
+\begin{DoxyCompactList}\small\item\em Delay in milli seconds. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__delay__units_ga598e73c929bb74a1047ed1445728e777}{MICRO\+\_\+\+SEC}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__delay__units_ga8bc5e463885769f21393880576c25f6b}{SEC}}~(3)
+\begin{DoxyCompactList}\small\item\em Delay in seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a4e8fe0bd8178e76ab2e78536014006fb}{MSys\+Tick\+\_\+v\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize the Systick module. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a348ed480bf5ecebe9f0f08cc6fc9fbf4}{MSys\+Tick\+\_\+v\+Set\+Busy\+Wait}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks)
+\begin{DoxyCompactList}\small\item\em Synchronous delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_ac96b194cccd96fbf6b233a6b14e3d680}{MSys\+Tick\+\_\+v\+Delay}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Tick\+Type)
+\begin{DoxyCompactList}\small\item\em Synchronous delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSys\+Tick\+\_\+v\+Delay\+Micro\+Sec}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks)
+\begin{DoxyCompactList}\small\item\em Synchronous delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks)
+\begin{DoxyCompactList}\small\item\em Synchronous delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a03c3d971653533d421d39fa094393dba}{MSys\+Tick\+\_\+v\+Delay\+Sec}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks)
+\begin{DoxyCompactList}\small\item\em Synchronous delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a3cafdfe46ddf474da42fb8726c36485a}{MSys\+Tick\+\_\+v\+Set\+Single\+Interval}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks, void($\ast$A\+\_\+\+Fptr)(void))
+\begin{DoxyCompactList}\small\item\em Asynchronous 1-\/cycle delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a460c9d69948f5e22aa24d57ea778b952}{MSys\+Tick\+\_\+v\+Set\+Periodic\+Interval}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}) A\+\_\+u32\+Ticks, void($\ast$A\+\_\+\+Fptr)(void))
+\begin{DoxyCompactList}\small\item\em Asynchronous repetitive delay function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a9c9a6f3425756cab6a1fbb3b20a23b70}{MSys\+Tick\+\_\+v\+Stop\+Interval}} (void)
+\begin{DoxyCompactList}\small\item\em Stop the interval delay function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{_sys_tick__interface_8h_a45ee3f2564c8000bc7cf233e96d1c69e}{MSys\+Tick\+\_\+u32\+Get\+Elapsed\+Time}} (void)
+\begin{DoxyCompactList}\small\item\em Return the elapsed time since the start of the countdown. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{_sys_tick__interface_8h_aa51d26a36ec48495d2c3e8373d2a1a51}{MSys\+Tick\+\_\+u32\+Get\+Remaining\+Time}} (void)
+\begin{DoxyCompactList}\small\item\em Return the remaining time in the systick register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a7251bfe242375bc64ba056925ad386df}{MSys\+Tick\+\_\+v\+Enable}} (void)
+\begin{DoxyCompactList}\small\item\em Enable the Systick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_acccf8e71a97d029223e58bd5ab1ae9be}{MSys\+Tick\+\_\+v\+Disable}} (void)
+\begin{DoxyCompactList}\small\item\em Disable the Systick timer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_sys_tick__interface_8h_a0c426902b052e85b0fb0759a40bd5308}{MSys\+Tick\+\_\+v\+Enable\+Exception}} (void)
+\begin{DoxyCompactList}\small\item\em Enable the Systick Exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the interfacing information for the Systick module. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09/04/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_sys_tick__interface_8h_source}{Sys\+Tick\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_sys_tick__interface_8h_abc8b094de6fdada914d30ea3df099502}\label{_sys_tick__interface_8h_abc8b094de6fdada914d30ea3df099502}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!BUSY\_TICK\_TIME@{BUSY\_TICK\_TIME}}
+\index{BUSY\_TICK\_TIME@{BUSY\_TICK\_TIME}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{BUSY\_TICK\_TIME}{BUSY\_TICK\_TIME}}
+{\footnotesize\ttfamily \#define BUSY\+\_\+\+TICK\+\_\+\+TIME~(1000)}
+
+
+
+Set the time you want to count when using the busy wait function. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__interface_8h_source_l00113}{113}} of file \mbox{\hyperlink{_sys_tick__interface_8h_source}{Sys\+Tick\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_ade19761cee9e365eed75787eb739dc00}\label{_sys_tick__interface_8h_ade19761cee9e365eed75787eb739dc00}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!SINGLE\_INTERVAL\_TICK\_TIME@{SINGLE\_INTERVAL\_TICK\_TIME}}
+\index{SINGLE\_INTERVAL\_TICK\_TIME@{SINGLE\_INTERVAL\_TICK\_TIME}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{SINGLE\_INTERVAL\_TICK\_TIME}{SINGLE\_INTERVAL\_TICK\_TIME}}
+{\footnotesize\ttfamily \#define SINGLE\+\_\+\+INTERVAL\+\_\+\+TICK\+\_\+\+TIME~(1000)}
+
+
+
+Set the time you want to count when using the single interval function. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__interface_8h_source_l00119}{119}} of file \mbox{\hyperlink{_sys_tick__interface_8h_source}{Sys\+Tick\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_a2c359c6330c0a281f506a4ce7cf6cc97}\label{_sys_tick__interface_8h_a2c359c6330c0a281f506a4ce7cf6cc97}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!PERIODIC\_INTERVAL\_TICK\_TIME@{PERIODIC\_INTERVAL\_TICK\_TIME}}
+\index{PERIODIC\_INTERVAL\_TICK\_TIME@{PERIODIC\_INTERVAL\_TICK\_TIME}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{PERIODIC\_INTERVAL\_TICK\_TIME}{PERIODIC\_INTERVAL\_TICK\_TIME}}
+{\footnotesize\ttfamily \#define PERIODIC\+\_\+\+INTERVAL\+\_\+\+TICK\+\_\+\+TIME~(1000)}
+
+
+
+Set the time you want to count when using the periodic interval function. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__interface_8h_source_l00125}{125}} of file \mbox{\hyperlink{_sys_tick__interface_8h_source}{Sys\+Tick\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a4e8fe0bd8178e76ab2e78536014006fb}\label{_sys_tick__interface_8h_a4e8fe0bd8178e76ab2e78536014006fb}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vInit@{MSysTick\_vInit}}
+\index{MSysTick\_vInit@{MSysTick\_vInit}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vInit()}{MSysTick\_vInit()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the Systick module. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00035}{35}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036 \{}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \textcolor{comment}{// Reset timer value.}}
+\DoxyCodeLine{00039     \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>VAL = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041     \textcolor{comment}{// Choose the input CLK source.}}
+\DoxyCodeLine{00042 \textcolor{preprocessor}{    \#if CLK\_SOURCE == AHB\_DividedBy8}}
+\DoxyCodeLine{00043         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}{CLKSOURCE}});}
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{00045 \textcolor{preprocessor}{    \#elif CLK\_SOURCE == AHB}}
+\DoxyCodeLine{00046         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}{CLKSOURCE}});}
+\DoxyCodeLine{00047 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049     \textcolor{comment}{// SysTick exception request enable.}}
+\DoxyCodeLine{00050 \textcolor{preprocessor}{    \#if Exception\_Request == Dont\_AssertRequest}}
+\DoxyCodeLine{00051         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}} ) ;}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053 \textcolor{preprocessor}{    \#elif Exception\_Request == AssertRequest}}
+\DoxyCodeLine{00054         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}} ) ;}
+\DoxyCodeLine{00055 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_sys_tick__private_8h_source_l00091}{CLKSOURCE}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_a348ed480bf5ecebe9f0f08cc6fc9fbf4}\label{_sys_tick__interface_8h_a348ed480bf5ecebe9f0f08cc6fc9fbf4}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vSetBusyWait@{MSysTick\_vSetBusyWait}}
+\index{MSysTick\_vSetBusyWait@{MSysTick\_vSetBusyWait}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vSetBusyWait()}{MSysTick\_vSetBusyWait()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Set\+Busy\+Wait (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks }\end{DoxyParamCaption})}
+
+
+
+Synchronous delay function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_sys_tick__interface_8h_ac96b194cccd96fbf6b233a6b14e3d680}\label{_sys_tick__interface_8h_ac96b194cccd96fbf6b233a6b14e3d680}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vDelay@{MSysTick\_vDelay}}
+\index{MSysTick\_vDelay@{MSysTick\_vDelay}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vDelay()}{MSysTick\_vDelay()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Tick\+Type }\end{DoxyParamCaption})}
+
+
+
+Synchronous delay function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay for \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Tick\+Type} & Type of the delay \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}\label{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vDelayMicroSec@{MSysTick\_vDelayMicroSec}}
+\index{MSysTick\_vDelayMicroSec@{MSysTick\_vDelayMicroSec}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vDelayMicroSec()}{MSysTick\_vDelayMicroSec()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Delay\+Micro\+Sec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks }\end{DoxyParamCaption})}
+
+
+
+Synchronous delay function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay in micro seconds for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}\label{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vDelayMilliSec@{MSysTick\_vDelayMilliSec}}
+\index{MSysTick\_vDelayMilliSec@{MSysTick\_vDelayMilliSec}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vDelayMilliSec()}{MSysTick\_vDelayMilliSec()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks }\end{DoxyParamCaption})}
+
+
+
+Synchronous delay function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay in milli seconds for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a03c3d971653533d421d39fa094393dba}\label{_sys_tick__interface_8h_a03c3d971653533d421d39fa094393dba}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vDelaySec@{MSysTick\_vDelaySec}}
+\index{MSysTick\_vDelaySec@{MSysTick\_vDelaySec}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vDelaySec()}{MSysTick\_vDelaySec()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Delay\+Sec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks }\end{DoxyParamCaption})}
+
+
+
+Synchronous delay function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay in seconds for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a3cafdfe46ddf474da42fb8726c36485a}\label{_sys_tick__interface_8h_a3cafdfe46ddf474da42fb8726c36485a}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vSetSingleInterval@{MSysTick\_vSetSingleInterval}}
+\index{MSysTick\_vSetSingleInterval@{MSysTick\_vSetSingleInterval}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vSetSingleInterval()}{MSysTick\_vSetSingleInterval()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Set\+Single\+Interval (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks,  }\item[{void($\ast$)(void)}]{A\+\_\+\+Fptr }\end{DoxyParamCaption})}
+
+
+
+Asynchronous 1-\/cycle delay function. 
+
+This function counts down the ticks number, and when it reaches 0, it stops, unlike {\ttfamily MSys\+Tick\+\_\+v\+Set\+Periodic\+Interval} 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay for \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+Fptr} & Callback function to call when the countdown has finished \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a460c9d69948f5e22aa24d57ea778b952}\label{_sys_tick__interface_8h_a460c9d69948f5e22aa24d57ea778b952}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vSetPeriodicInterval@{MSysTick\_vSetPeriodicInterval}}
+\index{MSysTick\_vSetPeriodicInterval@{MSysTick\_vSetPeriodicInterval}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vSetPeriodicInterval()}{MSysTick\_vSetPeriodicInterval()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Set\+Periodic\+Interval (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})}]{A\+\_\+u32\+Ticks,  }\item[{void($\ast$)(void)}]{A\+\_\+\+Fptr }\end{DoxyParamCaption})}
+
+
+
+Asynchronous repetitive delay function. 
+
+This function counts down the ticks number, and when it reaches 0, it starts the countdown again 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay for \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+Fptr} & Callback function to call when the countdown has finished \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_sys_tick__interface_8h_a3cafdfe46ddf474da42fb8726c36485a}{MSys\+Tick\+\_\+v\+Set\+Single\+Interval}} for a 1-\/cycle delay function 
+
+\mbox{\hyperlink{_sys_tick__interface_8h_a348ed480bf5ecebe9f0f08cc6fc9fbf4}{MSys\+Tick\+\_\+v\+Set\+Busy\+Wait}} for a synchronous delay function 
+
+\mbox{\hyperlink{_sys_tick__interface_8h_a9c9a6f3425756cab6a1fbb3b20a23b70}{MSys\+Tick\+\_\+v\+Stop\+Interval}} to stop the interval delay function 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_sys_tick__interface_8h_a9c9a6f3425756cab6a1fbb3b20a23b70}\label{_sys_tick__interface_8h_a9c9a6f3425756cab6a1fbb3b20a23b70}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vStopInterval@{MSysTick\_vStopInterval}}
+\index{MSysTick\_vStopInterval@{MSysTick\_vStopInterval}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vStopInterval()}{MSysTick\_vStopInterval()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Stop\+Interval (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Stop the interval delay function. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_sys_tick__interface_8h_a460c9d69948f5e22aa24d57ea778b952}{MSys\+Tick\+\_\+v\+Set\+Periodic\+Interval}} for a interval delay function 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00302}{302}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00303 \{}
+\DoxyCodeLine{00304 }
+\DoxyCodeLine{00305     \textcolor{comment}{// Disable the IRQ.}}
+\DoxyCodeLine{00306     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}} ) ;}
+\DoxyCodeLine{00307 }
+\DoxyCodeLine{00308     \textcolor{comment}{// Stop the timer.}}
+\DoxyCodeLine{00309     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}} ) ;}
+\DoxyCodeLine{00310 }
+\DoxyCodeLine{00311     \textcolor{comment}{// Clear the LOAD and VAL registers}}
+\DoxyCodeLine{00312     \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>LOAD = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00313     \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>VAL = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00314 }
+\DoxyCodeLine{00315 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_a45ee3f2564c8000bc7cf233e96d1c69e}\label{_sys_tick__interface_8h_a45ee3f2564c8000bc7cf233e96d1c69e}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_u32GetElapsedTime@{MSysTick\_u32GetElapsedTime}}
+\index{MSysTick\_u32GetElapsedTime@{MSysTick\_u32GetElapsedTime}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_u32GetElapsedTime()}{MSysTick\_u32GetElapsedTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} MSys\+Tick\+\_\+u32\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Return the elapsed time since the start of the countdown. 
+
+\begin{DoxyReturn}{Returns}
+Return the elapsed time since the start of the countdown 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00320}{320}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00321 \{}
+\DoxyCodeLine{00322     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}}) L\_u32ElapsedTime = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00323 }
+\DoxyCodeLine{00324     L\_u32ElapsedTime = (\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>LOAD -\/ \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>VAL);}
+\DoxyCodeLine{00325 }
+\DoxyCodeLine{00326     \textcolor{keywordflow}{return} L\_u32ElapsedTime;}
+\DoxyCodeLine{00327 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_aa51d26a36ec48495d2c3e8373d2a1a51}\label{_sys_tick__interface_8h_aa51d26a36ec48495d2c3e8373d2a1a51}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_u32GetRemainingTime@{MSysTick\_u32GetRemainingTime}}
+\index{MSysTick\_u32GetRemainingTime@{MSysTick\_u32GetRemainingTime}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_u32GetRemainingTime()}{MSysTick\_u32GetRemainingTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} MSys\+Tick\+\_\+u32\+Get\+Remaining\+Time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Return the remaining time in the systick register. 
+
+\begin{DoxyReturn}{Returns}
+The remaining time in the Systick register 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00332}{332}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00333 \{}
+\DoxyCodeLine{00334     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}}) L\_u32RemainingTime = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
+\DoxyCodeLine{00335 }
+\DoxyCodeLine{00336     L\_u32RemainingTime = \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>VAL;}
+\DoxyCodeLine{00337 }
+\DoxyCodeLine{00338     \textcolor{keywordflow}{return} L\_u32RemainingTime;}
+\DoxyCodeLine{00339 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_a7251bfe242375bc64ba056925ad386df}\label{_sys_tick__interface_8h_a7251bfe242375bc64ba056925ad386df}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vEnable@{MSysTick\_vEnable}}
+\index{MSysTick\_vEnable@{MSysTick\_vEnable}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vEnable()}{MSysTick\_vEnable()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enable the Systick timer. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00344}{344}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00345 \{}
+\DoxyCodeLine{00346 }
+\DoxyCodeLine{00347     \textcolor{comment}{// Start Timer.}}
+\DoxyCodeLine{00348     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}{COUNTER\_ENABLE}});}
+\DoxyCodeLine{00349 }
+\DoxyCodeLine{00350 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_sys_tick__private_8h_source_l00108}{COUNTER\+\_\+\+ENABLE}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_acccf8e71a97d029223e58bd5ab1ae9be}\label{_sys_tick__interface_8h_acccf8e71a97d029223e58bd5ab1ae9be}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vDisable@{MSysTick\_vDisable}}
+\index{MSysTick\_vDisable@{MSysTick\_vDisable}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vDisable()}{MSysTick\_vDisable()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Disable the Systick timer. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00355}{355}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00356 \{}
+\DoxyCodeLine{00357 }
+\DoxyCodeLine{00358     \textcolor{comment}{// Disable the peripheral interrupt.}}
+\DoxyCodeLine{00359     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}} ) ;}
+\DoxyCodeLine{00360 }
+\DoxyCodeLine{00361     \textcolor{comment}{// Stop the timer.}}
+\DoxyCodeLine{00362     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}{COUNTER\_ENABLE}});}
+\DoxyCodeLine{00363 }
+\DoxyCodeLine{00364 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00108}{COUNTER\+\_\+\+ENABLE}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+
+\mbox{\Hypertarget{_sys_tick__interface_8h_a0c426902b052e85b0fb0759a40bd5308}\label{_sys_tick__interface_8h_a0c426902b052e85b0fb0759a40bd5308}} 
+\index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vEnableException@{MSysTick\_vEnableException}}
+\index{MSysTick\_vEnableException@{MSysTick\_vEnableException}!SysTick\_interface.h@{SysTick\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MSysTick\_vEnableException()}{MSysTick\_vEnableException()}}
+{\footnotesize\ttfamily void MSys\+Tick\+\_\+v\+Enable\+Exception (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Enable the Systick Exception. 
+
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00027}{27}} of file \mbox{\hyperlink{_sys_tick__program_8c_source}{Sys\+Tick\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028 \{}
+\DoxyCodeLine{00029     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(\mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{SysTick}}-\/>CTRL, \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}});}
+\DoxyCodeLine{00030 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+

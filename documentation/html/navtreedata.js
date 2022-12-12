@@ -33,7 +33,6 @@ var NAVTREE =
       ] ],
       [ "Hardware specifications", "index.html#autotoc_md5", null ]
     ] ],
-    [ "Todo List", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -57,9 +56,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_e_x_t_i__config_8h.html",
-"_m_r_c_c__private_8h.html#a45f4fabf242afcca4671ada764feea36",
-"group__compiler.html"
+"_d_c_m__config_8h.html",
+"_m_r_c_c__private_8h.html#a5587236d8ed0745a4e3c200c93fa9cc6",
+"functions.html",
+"group__nvic__settable__priorities.html#ga4e52bc38abb211c86b23c54cbec2bde2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -2,12 +2,12 @@
 \label{struct_d_c_m___motor_configuration}\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
 
 
-DC Motor configuration structure for motor initialization DC Motor configuration for motor initialization for a certain port and pin Since DC Motors have 2 sides to be controller, we will intiliaze each motor with 2 pins. Taking into consideration that the pins could be on different ports.  
+DC Motor configuration structure for motor initialization.  
 
 
 
 
-{\ttfamily \#include \char`\"{}COTS/\+HAL/\+DCMOTOR/\+DCM\+\_\+private.\+h\char`\"{}}
+{\ttfamily \#include \char`\"{}COTS/\+HAL/\+DCMOTOR/\+DCM\+\_\+interface.\+h\char`\"{}}
 
 \doxysubsection*{Data Fields}
 \begin{DoxyCompactItemize}
@@ -23,9 +23,15 @@ DC Motor configuration structure for motor initialization DC Motor configuration
 
 
 \doxysubsection{Detailed Description}
-DC Motor configuration structure for motor initialization DC Motor configuration for motor initialization for a certain port and pin Since DC Motors have 2 sides to be controller, we will intiliaze each motor with 2 pins. Taking into consideration that the pins could be on different ports. 
+DC Motor configuration structure for motor initialization. 
 
-Definition at line \mbox{\hyperlink{_d_c_m__private_8h_source_l00021}{21}} of file \mbox{\hyperlink{_d_c_m__private_8h_source}{DCM\+\_\+private.\+h}}.
+DC Motor configuration for motor initialization for a certain port and pin.
+
+Since DC Motors have 2 sides to be controller, we will intiliaze each motor with 2 pins.
+
+Taking into consideration that the pins could be on different ports. 
+
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00020}{20}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
 
 
 
@@ -42,11 +48,11 @@ Initialize the DC Motor on a certain port.
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__private_8h_source_l00026}{26}} of file \mbox{\hyperlink{_d_c_m__private_8h_source}{DCM\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00025}{25}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Init\+Motors()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00117}{HDCM\+\_\+v\+Move\+Motors\+Backward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00098}{HDCM\+\_\+v\+Move\+Motors\+Forward()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
 
 \mbox{\Hypertarget{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}\label{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}} 
 \index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side1Pin@{Side1Pin}}
@@ -60,11 +66,11 @@ Initialize the DC Motor on a certain pin.
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__private_8h_source_l00030}{30}} of file \mbox{\hyperlink{_d_c_m__private_8h_source}{DCM\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00029}{29}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Init\+Motors()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00117}{HDCM\+\_\+v\+Move\+Motors\+Backward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00098}{HDCM\+\_\+v\+Move\+Motors\+Forward()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
 
 \mbox{\Hypertarget{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}\label{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}} 
 \index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side2Port@{Side2Port}}
@@ -78,11 +84,11 @@ Initialize the DC Motor on a certain port.
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__private_8h_source_l00034}{34}} of file \mbox{\hyperlink{_d_c_m__private_8h_source}{DCM\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{33}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Init\+Motors()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00117}{HDCM\+\_\+v\+Move\+Motors\+Backward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00098}{HDCM\+\_\+v\+Move\+Motors\+Forward()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
 
 \mbox{\Hypertarget{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}\label{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}} 
 \index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side2Pin@{Side2Pin}}
@@ -96,14 +102,14 @@ Initialize the DC Motor on a certain pin.
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__private_8h_source_l00038}{38}} of file \mbox{\hyperlink{_d_c_m__private_8h_source}{DCM\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{37}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
 
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Init\+Motors()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00117}{HDCM\+\_\+v\+Move\+Motors\+Backward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00098}{HDCM\+\_\+v\+Move\+Motors\+Forward()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
 
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-COTS/\+HAL/\+DCMOTOR/\mbox{\hyperlink{_d_c_m__private_8h}{DCM\+\_\+private.\+h}}\end{DoxyCompactItemize}
+COTS/\+HAL/\+DCMOTOR/\mbox{\hyperlink{_d_c_m__interface_8h}{DCM\+\_\+interface.\+h}}\end{DoxyCompactItemize}

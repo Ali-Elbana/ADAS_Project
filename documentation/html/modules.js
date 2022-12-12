@@ -23,5 +23,21 @@ var modules =
     [ "GPIO Output PINs", "group__gpio__output__pins.html", "group__gpio__output__pins" ],
     [ "GPIO Alternate Functions", "group__gpio__alternate__functions.html", "group__gpio__alternate__functions" ],
     [ "GPIO Addresses", "group__gpio__addresses.html", "group__gpio__addresses" ],
-    [ "GPIO Registers", "group__gpio__registers.html", "group__gpio__registers" ]
+    [ "GPIO Registers", "group__gpio__registers.html", "group__gpio__registers" ],
+    [ "Interrupt priority grouping", "group__interrupt__prioty__grouping.html", "group__interrupt__prioty__grouping" ],
+    [ "Group priorities", "group__group__prioty.html", "group__group__prioty" ],
+    [ "Sub-Group priorities", "group__sub__group__prioty.html", "group__sub__group__prioty" ],
+    [ "NVIC Vector Table", "group__vector__table.html", "group__vector__table" ],
+    [ "NVIC Addresses", "group__nvic__addresses.html", "group__nvic__addresses" ],
+    [ "NVIC Registers", "group__nvic__registers.html", "group__nvic__registers" ],
+    [ "NVIC Settable Priorities", "group__nvic__settable__priorities.html", "group__nvic__settable__priorities" ],
+    [ "ID options", "group___bus.html", "group___bus" ],
+    [ "ID options", "group___peripheral.html", "group___peripheral" ],
+    [ "Systick Interval Mode Configuration", "group__interval__mode.html", "group__interval__mode" ],
+    [ "Delay Units", "group__delay__units.html", "group__delay__units" ],
+    [ "Systick Addresses", "group__systick__addresses.html", "group__systick__addresses" ],
+    [ "Systick Registers", "group__systick__registers.html", "group__systick__registers" ],
+    [ "Systick Register Bits Positions", "group__systick__register__bits.html", "group__systick__register__bits" ],
+    [ "Systick Clock Sources", "group__systick__clock__sources.html", "group__systick__clock__sources" ],
+    [ "Systick Exception (Interrupt) Status", "group__systick__exception__request__enable.html", "group__systick__exception__request__enable" ]
 ];

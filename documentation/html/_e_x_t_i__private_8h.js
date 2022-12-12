@@ -5,5 +5,6 @@ var _e_x_t_i__private_8h =
     [ "MEXTI", "group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2", null ],
     [ "ENABLE", "group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a", null ],
     [ "DISABLE", "group__exti__line__status.html#ga99496f7308834e8b220f7894efa0b6ab", null ],
-    [ "EXTI_MAX_EXTI_NUM", "group__exti__line__settings.html#ga5870b26cac399eb25698f68a8603c645", null ]
+    [ "EXTI_MAX_EXTI_NUM", "group__exti__line__settings.html#ga5870b26cac399eb25698f68a8603c645", null ],
+    [ "EXTI_IRQs", "_e_x_t_i__private_8h.html#a5696d3b03a8cc0e124a164497c129681", null ]
 ];

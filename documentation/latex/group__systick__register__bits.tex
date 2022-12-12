@@ -1,0 +1,80 @@
+\hypertarget{group__systick__register__bits}{}\doxysection{Systick Register Bits Positions}
+\label{group__systick__register__bits}\index{Systick Register Bits Positions@{Systick Register Bits Positions}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_gaf1ecc7ccf2930b69effd1a64a1058d7d}{COUNTFLAG}}~(16)
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}{CLKSOURCE}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}{COUNTER\+\_\+\+ENABLE}}~(0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__systick__register__bits_gaf1ecc7ccf2930b69effd1a64a1058d7d}\label{group__systick__register__bits_gaf1ecc7ccf2930b69effd1a64a1058d7d}} 
+\index{Systick Register Bits Positions@{Systick Register Bits Positions}!COUNTFLAG@{COUNTFLAG}}
+\index{COUNTFLAG@{COUNTFLAG}!Systick Register Bits Positions@{Systick Register Bits Positions}}
+\doxysubsubsection{\texorpdfstring{COUNTFLAG}{COUNTFLAG}}
+{\footnotesize\ttfamily \#define COUNTFLAG~(16)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__private_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+private.\+h}}$>$}
+
+This bit is responsible for keeping an eye on the timer whether it has counted to 0 or no, since the last time this was read It returns 1 if the timer counted to 0, since last time this was read 
+
+Definition at line \mbox{\hyperlink{_sys_tick__private_8h_source_l00085}{85}} of file \mbox{\hyperlink{_sys_tick__private_8h_source}{Sys\+Tick\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}\label{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}} 
+\index{Systick Register Bits Positions@{Systick Register Bits Positions}!CLKSOURCE@{CLKSOURCE}}
+\index{CLKSOURCE@{CLKSOURCE}!Systick Register Bits Positions@{Systick Register Bits Positions}}
+\doxysubsubsection{\texorpdfstring{CLKSOURCE}{CLKSOURCE}}
+{\footnotesize\ttfamily \#define CLKSOURCE~(2)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__private_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+private.\+h}}$>$}
+
+This bit is responsible for selecting the clock source for the Systick peripheral 
+
+Definition at line \mbox{\hyperlink{_sys_tick__private_8h_source_l00091}{91}} of file \mbox{\hyperlink{_sys_tick__private_8h_source}{Sys\+Tick\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}\label{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}} 
+\index{Systick Register Bits Positions@{Systick Register Bits Positions}!TICKINT@{TICKINT}}
+\index{TICKINT@{TICKINT}!Systick Register Bits Positions@{Systick Register Bits Positions}}
+\doxysubsubsection{\texorpdfstring{TICKINT}{TICKINT}}
+{\footnotesize\ttfamily \#define TICKINT~(1)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__private_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+private.\+h}}$>$}
+
+This bit is responsible for controlling the exception request whether to enable or disable the request when reaching zero 
+
+Definition at line \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{97}} of file \mbox{\hyperlink{_sys_tick__private_8h_source}{Sys\+Tick\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}\label{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}} 
+\index{Systick Register Bits Positions@{Systick Register Bits Positions}!COUNTER\_ENABLE@{COUNTER\_ENABLE}}
+\index{COUNTER\_ENABLE@{COUNTER\_ENABLE}!Systick Register Bits Positions@{Systick Register Bits Positions}}
+\doxysubsubsection{\texorpdfstring{COUNTER\_ENABLE}{COUNTER\_ENABLE}}
+{\footnotesize\ttfamily \#define COUNTER\+\_\+\+ENABLE~(0)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__private_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+private.\+h}}$>$}
+
+This bit is responsible for whether to enable the counter or no When this is enabled, the counter loads the reload value from the load register and then starts countdowning. On reaching 0, it sets the COUNTFLAG to 1 and optionally asserts the Systick depending on the value of TICKINT. Then, it loads the reload value again and begins counting. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_sys_tick___type_a91f0aa50edd91c8aa60b21241289f123}{Sys\+Tick\+\_\+\+Type\+::\+VAL}} 
+
+\mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__private_8h_source_l00108}{108}} of file \mbox{\hyperlink{_sys_tick__private_8h_source}{Sys\+Tick\+\_\+private.\+h}}.
+
