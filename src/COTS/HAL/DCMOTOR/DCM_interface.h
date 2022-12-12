@@ -13,9 +13,9 @@
 /**
  * @struct DCM_MotorConfiguration
  * @brief DC Motor configuration structure for motor initialization
- * DC Motor configuration for motor initialization for a certain port and pin.
- * Since DC Motors have 2 sides to be controller, we will intiliaze each motor with 2 pins.
- * Taking into consideration that the pins could be on different ports.
+ * @details DC Motor configuration for motor initialization for a certain port and pin.
+ * @details Since DC Motors have 2 sides to be controller, we will intiliaze each motor with 2 pins.
+ * @details Taking into consideration that the pins could be on different ports.
  */
 typedef struct
 {
