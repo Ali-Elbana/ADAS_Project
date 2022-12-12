@@ -65,7 +65,7 @@ void TMSysTick_vToggleLED_BusyWait(void)
 
 		MGPIOx_vTogglePinValue( LED.Port, LED.Pin ) ;
 
-		MSysTick_vDelay( 15, SEC ) ; // 15 Secs
+		MSysTick_vDelaySec( 15 ) ; // 15 Secs
 
 	}
 
