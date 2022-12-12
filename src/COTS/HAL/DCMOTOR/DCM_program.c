@@ -28,13 +28,7 @@ STATIC P2VAR(DCM_MotorConfiguration) GS_pMotor4;
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-/**
- * @brief Initialize a single motor
- * Initialize a certain GPIO Port & Pin based on the passed motor configuration
- * @param[in] pMotorConfiguration The motor configuration to initialize a a certain GPIO Port & Pin
- * @see DCM_MotorConfiguration
- */
-STATIC FUNC(void) HDCM_vInitSingleMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
+FUNC(void) HDCM_vInitMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
 {
     VAR(MGPIOx_ConfigType) DCMotorSide1Init =
     {
@@ -60,75 +54,20 @@ STATIC FUNC(void) HDCM_vInitSingleMotor(P2VAR(DCM_MotorConfiguration) pMotorConf
     MGPIOx_vInit(&DCMotorSide2Init);
 }
 
-FUNC(void) HDCM_vInitMotors(VAR(void))
+FUNC(void) HDCM_vMoveForward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
 {
-    // Initialize motor 1
-    GS_pMotor1->Side1Port = DCM_MOTOR1_SIDE1_PORT;
-    GS_pMotor1->Side1Pin = DCM_MOTOR1_SIDE1_PIN;
-    GS_pMotor1->Side2Port = DCM_MOTOR1_SIDE2_PORT;
-    GS_pMotor1->Side2Pin = DCM_MOTOR1_SIDE2_PIN;
-
-    HDCM_vInitSingleMotor(GS_pMotor1);
-
-    // Initialize motor 2
-    GS_pMotor2->Side1Port = DCM_MOTOR2_SIDE1_PORT;
-    GS_pMotor2->Side1Pin = DCM_MOTOR2_SIDE1_PIN;
-    GS_pMotor2->Side2Port = DCM_MOTOR2_SIDE2_PORT;
-    GS_pMotor2->Side2Pin = DCM_MOTOR2_SIDE2_PIN;
-
-    HDCM_vInitSingleMotor(GS_pMotor2);
-
-    // Initialize motor 3
-    GS_pMotor3->Side1Port = DCM_MOTOR3_SIDE1_PORT;
-    GS_pMotor3->Side1Pin = DCM_MOTOR3_SIDE1_PIN;
-    GS_pMotor3->Side2Port = DCM_MOTOR3_SIDE2_PORT;
-    GS_pMotor3->Side2Pin = DCM_MOTOR3_SIDE2_PIN;
-
-    HDCM_vInitSingleMotor(GS_pMotor3);
-
-    // Initialize motor 4
-    GS_pMotor4->Side1Port = DCM_MOTOR4_SIDE1_PORT;
-    GS_pMotor4->Side1Pin = DCM_MOTOR4_SIDE1_PIN;
-    GS_pMotor4->Side2Port = DCM_MOTOR4_SIDE2_PORT;
-    GS_pMotor4->Side2Pin = DCM_MOTOR4_SIDE2_PIN;
-
-    HDCM_vInitSingleMotor(GS_pMotor4);
+    MGPIOx_vSetPinValue(pMotorConfiguration->Side1Port, pMotorConfiguration->Side1Pin, GPIOx_HIGH);
+    MGPIOx_vSetPinValue(pMotorConfiguration->Side2Port, pMotorConfiguration->Side2Pin, GPIOx_LOW);
 }
 
-FUNC(void) HDCM_vMoveMotorsForward(VAR(void))
+FUNC(void) HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
 {
-    // Motor 1
-    MGPIOx_vSetPinValue(GS_pMotor1->Side1Port, GS_pMotor1->Side1Pin, GPIOx_HIGH);
-    MGPIOx_vSetPinValue(GS_pMotor1->Side2Port, GS_pMotor1->Side2Pin, GPIOx_LOW);
-
-    // Motor 2
-    MGPIOx_vSetPinValue(GS_pMotor2->Side1Port, GS_pMotor2->Side1Pin, GPIOx_HIGH);
-    MGPIOx_vSetPinValue(GS_pMotor2->Side2Port, GS_pMotor2->Side2Pin, GPIOx_LOW);
-
-    // Motor 3
-    MGPIOx_vSetPinValue(GS_pMotor3->Side1Port, GS_pMotor3->Side1Pin, GPIOx_HIGH);
-    MGPIOx_vSetPinValue(GS_pMotor3->Side2Port, GS_pMotor3->Side2Pin, GPIOx_LOW);
-
-    // Motor 4
-    MGPIOx_vSetPinValue(GS_pMotor4->Side1Port, GS_pMotor4->Side1Pin, GPIOx_HIGH);
-    MGPIOx_vSetPinValue(GS_pMotor4->Side2Port, GS_pMotor4->Side2Pin, GPIOx_LOW);
+    MGPIOx_vSetPinValue(pMotorConfiguration->Side1Port, pMotorConfiguration->Side1Pin, GPIOx_LOW);
+    MGPIOx_vSetPinValue(pMotorConfiguration->Side2Port, pMotorConfiguration->Side2Pin, GPIOx_HIGH);
 }
 
-FUNC(void) HDCM_vMoveMotorsBackward(VAR(void))
+FUNC(void) HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
 {
-    // Motor 1
-    MGPIOx_vSetPinValue(GS_pMotor1->Side1Port, GS_pMotor1->Side1Pin, GPIOx_LOW);
-    MGPIOx_vSetPinValue(GS_pMotor1->Side2Port, GS_pMotor1->Side2Pin, GPIOx_HIGH);
-
-    // Motor 2
-    MGPIOx_vSetPinValue(GS_pMotor2->Side1Port, GS_pMotor2->Side1Pin, GPIOx_LOW);
-    MGPIOx_vSetPinValue(GS_pMotor2->Side2Port, GS_pMotor2->Side2Pin, GPIOx_HIGH);
-
-    // Motor 3
-    MGPIOx_vSetPinValue(GS_pMotor3->Side1Port, GS_pMotor3->Side1Pin, GPIOx_LOW);
-    MGPIOx_vSetPinValue(GS_pMotor3->Side2Port, GS_pMotor3->Side2Pin, GPIOx_HIGH);
-
-    // Motor 4
-    MGPIOx_vSetPinValue(GS_pMotor4->Side1Port, GS_pMotor4->Side1Pin, GPIOx_LOW);
-    MGPIOx_vSetPinValue(GS_pMotor4->Side2Port, GS_pMotor4->Side2Pin, GPIOx_HIGH);
+    MGPIOx_vSetPinValue(pMotorConfiguration->Side1Port, pMotorConfiguration->Side1Pin, GPIOx_LOW);
+    MGPIOx_vSetPinValue(pMotorConfiguration->Side2Port, pMotorConfiguration->Side2Pin, GPIOx_LOW);
 }
