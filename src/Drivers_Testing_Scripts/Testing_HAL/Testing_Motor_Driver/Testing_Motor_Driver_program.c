@@ -15,7 +15,6 @@
 
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
-#include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 #include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 
 #include "Testing_Motor_Driver_private.h"
@@ -31,37 +30,36 @@ void THDC_vTestMotors(void)
     volatile VAR(u32_t) u32DelayCounter = INITIAL_ZERO;
     // Initialize motor 1
     VAR(DCM_MotorConfiguration) GS_pMotor1 = {
-        .Side1Port = GPIO_PORTA,
-        .Side1Pin = GPIOx_PIN0,
-        .Side2Port = GPIO_PORTA,
-        .Side2Pin = GPIOx_PIN1,
+        .u8Port = GPIO_PORTA,
+        .u8Pin1 = GPIOx_PIN0,
+        .u8Pin2 = GPIOx_PIN1,
+        .u8Direction = INITIAL_ZERO
     };
-    // Initialize motor 1
+    // Initialize motor 2
     VAR(DCM_MotorConfiguration) GS_pMotor2 = {
-        .Side1Port = GPIO_PORTA,
-        .Side1Pin = GPIOx_PIN2,
-        .Side2Port = GPIO_PORTA,
-        .Side2Pin = GPIOx_PIN3,
+        .u8Port = GPIO_PORTA,
+        .u8Pin1 = GPIOx_PIN2,
+        .u8Pin2 = GPIOx_PIN3,
+        .u8Direction = INITIAL_ZERO
     };
-    // Initialize motor 1
+    // Initialize motor 3
     VAR(DCM_MotorConfiguration) GS_pMotor3 = {
-        .Side1Port = GPIO_PORTA,
-        .Side1Pin = GPIOx_PIN8,
-        .Side2Port = GPIO_PORTA,
-        .Side2Pin = GPIOx_PIN9,
+        .u8Port = GPIO_PORTA,
+        .u8Pin1 = GPIOx_PIN8,
+        .u8Pin2 = GPIOx_PIN9,
+        .u8Direction = INITIAL_ZERO
     };
-    // Initialize motor 1
+    // Initialize motor 4
     VAR(DCM_MotorConfiguration) GS_pMotor4 = {
-        .Side1Port = GPIO_PORTA,
-        .Side1Pin = GPIOx_PIN10,
-        .Side2Port = GPIO_PORTA,
-        .Side2Pin = GPIOx_PIN11,
+        .u8Port = GPIO_PORTA,
+        .u8Pin1 = GPIOx_PIN10,
+        .u8Pin2 = GPIOx_PIN11,
+        .u8Direction = INITIAL_ZERO
     };
 
     MRCC_vInit();
     MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOAEN);
-    // MGPIOx_vLockedPins();
-    // MSysTick_vInit();
+    MGPIOx_vLockedPins();
     HDCM_vInitMotor(&GS_pMotor1);
     HDCM_vInitMotor(&GS_pMotor2);
     HDCM_vInitMotor(&GS_pMotor3);
@@ -73,15 +71,13 @@ void THDC_vTestMotors(void)
         HDCM_vMoveForward(&GS_pMotor2);
         HDCM_vMoveForward(&GS_pMotor3);
         HDCM_vMoveForward(&GS_pMotor4);
-        // MSysTick_vDelaySec(2);
-        for (u32DelayCounter = 0; u32DelayCounter < 10000000; u32DelayCounter++)
+        for (u32DelayCounter = 0; u32DelayCounter < 5000000; u32DelayCounter++)
             ;
         HDCM_vMoveBackward(&GS_pMotor1);
         HDCM_vMoveBackward(&GS_pMotor2);
         HDCM_vMoveBackward(&GS_pMotor3);
         HDCM_vMoveBackward(&GS_pMotor4);
-        // MSysTick_vDelaySec(2);
-        for (u32DelayCounter = 0; u32DelayCounter < 10000000; u32DelayCounter++)
+        for (u32DelayCounter = 0; u32DelayCounter < 5000000; u32DelayCounter++)
             ;
     }
 }
