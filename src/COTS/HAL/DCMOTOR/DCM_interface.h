@@ -22,19 +22,19 @@ typedef struct
     /**
      * @brief Initialize the DC Motor on a certain port
      */
-    u8_t Side1Port;
+    u8_t u8Port;
     /**
      * @brief Initialize the DC Motor on a certain pin
      */
-    u8_t Side1Pin;
-    /**
-     * @brief Initialize the DC Motor on a certain port
-     */
-    u8_t Side2Port;
+    u8_t u8Pin1;
     /**
      * @brief Initialize the DC Motor on a certain pin
      */
-    u8_t Side2Pin;
+    u8_t u8Pin2;
+    /**
+     * @brief Initialize the DC Motor with a certain direction
+     */
+    u8_t u8Direction;
 } DCM_MotorConfiguration;
 
 /************************************************************************/
