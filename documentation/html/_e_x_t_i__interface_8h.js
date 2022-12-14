@@ -21,11 +21,11 @@ var _e_x_t_i__interface_8h =
     [ "EXTI_RisingEdge", "group__interrupt__trigger__status.html#gababc163d1594cab727397a54b37fb34e", null ],
     [ "EXTI_OnChange", "group__interrupt__trigger__status.html#gaf251e318af9a6ba2e13264a606254bc0", null ],
     [ "MEXTI_vInit", "_e_x_t_i__interface_8h.html#af54debc6d14edcd542b2d03f68b181b8", null ],
-    [ "MEXTI_vInit_WithStruct", "_e_x_t_i__interface_8h.html#a4855e79776f4d6ab5414c92a08a39c05", null ],
+    [ "MEXTI_vInit_WithStruct", "_e_x_t_i__interface_8h.html#ac3c0a131d05ffc06852eb9867ccce3ea", null ],
     [ "MEXTI_vEnableLine", "_e_x_t_i__interface_8h.html#acc0d34262afbbf8fb80fe0bb2cebc918", null ],
     [ "MEXTI_vDisableLine", "_e_x_t_i__interface_8h.html#a7f8e1cf9737221c093c9e47688d479ad", null ],
     [ "MEXTI_vSWITrigger", "_e_x_t_i__interface_8h.html#ae2881aaec96ac2479b9f492786365db2", null ],
     [ "MEXTI_vSetTrigger", "_e_x_t_i__interface_8h.html#a880e5ab4d3ca7fbfcde882970c5ac81b", null ],
-    [ "EXTI_vSetCallback", "_e_x_t_i__interface_8h.html#a27b3d6539ddce7a1efc15743d5f57d92", null ],
+    [ "MEXTI_vSetCallback", "_e_x_t_i__interface_8h.html#a95bab3f9258e4e6a2b3d84eda3362a51", null ],
     [ "MSYSCFG_vSetEXTIPort", "_e_x_t_i__interface_8h.html#a4ff2b0474ed8dbaef5b76d829e71e6ad", null ]
 ];

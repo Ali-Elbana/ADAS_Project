@@ -51,7 +51,7 @@ provides system implementation information, and system control.
 
 This includes configuration, control, and reporting of the system exceptions 
 
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00099}{99}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00100}{100}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 
 
@@ -68,7 +68,7 @@ CPUID base register.
 
 This register contains the the processor part number, version, and implementation information 
 
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00105}{105}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00106}{106}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 \mbox{\Hypertarget{struct_s_c_b___memory_map_type_a7be75fb3553425a3e4de41ed45af4245}\label{struct_s_c_b___memory_map_type_a7be75fb3553425a3e4de41ed45af4245}} 
 \index{SCB\_MemoryMapType@{SCB\_MemoryMapType}!ICSR@{ICSR}}
@@ -82,7 +82,7 @@ Interrupt control and state register.
 
 This register is responsible for enabling the interrupt 
 
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00110}{110}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00111}{111}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 \mbox{\Hypertarget{struct_s_c_b___memory_map_type_a841b17f933d2b37d051b51166a24c171}\label{struct_s_c_b___memory_map_type_a841b17f933d2b37d051b51166a24c171}} 
 \index{SCB\_MemoryMapType@{SCB\_MemoryMapType}!VTOR@{VTOR}}
@@ -94,9 +94,7 @@ Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00110}{110}} of
 
 Vector table offset register. 
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]Docuement this register \end{DoxyRefDesc}
-
+Interrupt control and state register 
 
 Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00116}{116}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
@@ -254,12 +252,10 @@ This registers consists of 3 sub-\/registers\+:
 \begin{DoxyItemize}
 \item Memory Management Fault Status Register (MMFSR)
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]Docuement this register or its sub-\/registers \end{DoxyRefDesc}
-
+System handler control and state register 
 \end{DoxyItemize}
 
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00177}{177}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00176}{176}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 \mbox{\Hypertarget{struct_s_c_b___memory_map_type_ae66acc442a3016ae7770057f120d6278}\label{struct_s_c_b___memory_map_type_ae66acc442a3016ae7770057f120d6278}} 
 \index{SCB\_MemoryMapType@{SCB\_MemoryMapType}!HFSR@{HFSR}}
@@ -277,7 +273,7 @@ This register is read, write to clear.
 
 This means that bits in the register read normally, but writing 1 to any bit clears that bit to 0 
 
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00184}{184}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00183}{183}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 \mbox{\Hypertarget{struct_s_c_b___memory_map_type_a6f2288b724c7ebbafcaecfa40dd0ce00}\label{struct_s_c_b___memory_map_type_a6f2288b724c7ebbafcaecfa40dd0ce00}} 
 \index{SCB\_MemoryMapType@{SCB\_MemoryMapType}!RESERVED@{RESERVED}}
@@ -290,7 +286,7 @@ This is a reserved register
 \end{DoxyNote}
 
 
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00188}{188}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00187}{187}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 \mbox{\Hypertarget{struct_s_c_b___memory_map_type_a120bb9fd3069ae7490d672591e5c3e20}\label{struct_s_c_b___memory_map_type_a120bb9fd3069ae7490d672591e5c3e20}} 
 \index{SCB\_MemoryMapType@{SCB\_MemoryMapType}!MMFAR@{MMFAR}}
@@ -302,11 +298,9 @@ Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00188}{188}} of
 
 Memory management fault address register. 
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Docuement this register \end{DoxyRefDesc}
+Memory management fault address register 
 
-
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00194}{194}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00192}{192}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 \mbox{\Hypertarget{struct_s_c_b___memory_map_type_af49031580ccaef660e066c6ce1f48bde}\label{struct_s_c_b___memory_map_type_af49031580ccaef660e066c6ce1f48bde}} 
 \index{SCB\_MemoryMapType@{SCB\_MemoryMapType}!BFAR@{BFAR}}
@@ -318,11 +312,9 @@ Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00194}{194}} of
 
 Bus fault address register. 
 
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Docuement this register \end{DoxyRefDesc}
+Bus fault address register 
 
-
-Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00200}{200}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
+Definition at line \mbox{\hyperlink{_n_v_i_c__private_8h_source_l00197}{197}} of file \mbox{\hyperlink{_n_v_i_c__private_8h_source}{NVIC\+\_\+private.\+h}}.
 
 
 

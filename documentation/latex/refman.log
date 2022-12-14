@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.11.28)  28 NOV 2022 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.11.25) (preloaded format=pdflatex 2022.11.28)  12 DEC 2022 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,16 +803,15 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 176.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 176.
-[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18
+] [19] [20] [21]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 176.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 17
 6.
 (C:\Users\Abo3a\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [12] [13] [14] [15] [16
-
-]
+) [22] [23] [24] [25] [26]
 Package hyperref Info: Option `pageanchor' set `true' on input line 179.
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -841,57 +840,299 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 13.
 ) [1
 
+
 ] [2
 
 ]
 Chapter 2.
-(modules.tex) [3] [4
-
-]
+(modules.tex [3]) [4]
 Chapter 3.
-(annotated.tex) [5] [6
+(annotated.tex) [5
+
+] [6
 
 ]
 Chapter 4.
-(files.tex) [7] [8
-
-]
+(files.tex [7]) [8]
 Chapter 5.
 (group__bitmath.tex
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 24.
-[9]) (group__bitmathgroup.tex [10]) (group__compiler.tex [11] [12] [13]) (group
-__utilities.tex [14]) (group__typedefs.tex [15] [16]) (group__standardvalues.te
-x [17] [18]) (group__gpio__modes.tex
+[9
+
+]) (group__bitmathgroup.tex [10]) (group__compiler.tex [11] [12] [13]) (group__
+utilities.tex [14]) (group__typedefs.tex [15] [16]) (group__standardvalues.tex 
+[17] [18] [19]) (group__interrupt__lines.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 7.
-[19]) (group__gpio__ports.tex [20]) (group__gpio__output__types.tex [21]) (grou
-p__gpio__pin__speed.tex [22]) (group__gpio__pull__types.tex [23]) (group__gpio_
-_output__values.tex [24]) (group__gpio__output__pins.tex [25] [26] [27] [28] [2
-9]) (group__gpio__alternate__functions.tex [30] [31] [32] [33]) (group__gpio__a
-ddresses.tex [34] [35]) (group__gpio__registers.tex [36]) [37] [38
+[20] [21] [22] [23] [24]) (group__interrupt__trigger__status.tex [25]) (group__
+exti__memory__addresses.tex [26]) (group__exti__registers.tex) (group__exti__li
+ne__status.tex [27]) (group__exti__line__settings.tex) (group__syscfg__memory__
+addresses.tex [28]) (group__syscfg__memory__registers.tex) (group__gpio__modes.
+tex [29] [30]) (group__gpio__ports.tex [31]) (group__gpio__output__types.tex) (
+group__gpio__pin__speed.tex [32] [33]) (group__gpio__pull__types.tex [34]) (gro
+up__gpio__output__values.tex) (group__gpio__output__pins.tex [35] [36] [37] [38
+] [39]) (group__gpio__alternate__functions.tex [40] [41] [42] [43] [44]) (group
+__gpio__addresses.tex [45]) (group__gpio__registers.tex [46]) (group__interrupt
+__prioty__grouping.tex
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 12.
+[47]
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 36.
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+[48]
+Underfull \hbox (badness 10000) detected at line 77
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 119
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 140
+[][][]
+ []
+
+[49] [50]) (group__group__prioty.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 14.
+[51]
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+[52] [53] [54] [55]) (group__sub__group__prioty.tex [56] [57]
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+[58] [59] [60]) (group__vector__table.tex [61] [62] [63] [64] [65] [66] [67] [6
+8] [69] [70] [71] [72] [73] [74] [75] [76] [77]) (group__nvic__addresses.tex [7
+8]) (group__nvic__registers.tex [79]) (group__nvic__settable__priorities.tex [8
+0]) (group___bus.tex [81] [82]) (group___peripheral.tex [83] [84] [85] [86] [87
+] [88] [89] [90] [91] [92]) (group__interval__mode.tex [93]) (group__delay__uni
+ts.tex [94]) (group__systick__addresses.tex) (group__systick__registers.tex [95
+]) (group__systick__register__bits.tex [96]
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+) (group__systick__clock__sources.tex [97]) (group__systick__exception__request
+__enable.tex [98]) [99] [100
 
 ]
 Chapter 6.
-(struct_g_p_i_ox___memory_map_type.tex
+(struct_d_c_m___motor_configuration.tex [101]) (struct_e_x_t_i___config_type.te
+x [102]) (struct_e_x_t_i___type.tex [103] [104]) (struct_g_p_i_ox___memory_map_
+type.tex [105]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <9> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 (Font)              scaled to size 8.09995pt on input line 16.
-[39] [40]) (struct_m_g_p_i_ox___config_type.tex [41]
+[106] [107]) (struct_m_g_p_i_ox___config_type.tex [108]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
 (Font)              Font shape `TS1/phv/m/sl' tried instead on input line 22.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 22.
-[42] [43]) (struct_r_c_c___memory_map_type.tex [44] [45] [46] [47] [48] [49]) [
-50]
-Chapter 7.
-(_r_e_a_d_m_e_8md.tex) (_l_s_t_d___b_i_t_m_a_t_h_8h.tex
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 32.
+[109] [110]) (struct_m_s_y_s_c_f_g___mem_map__t.tex [111]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 71.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 71.
+) (struct_n_v_i_c___memory_map_type.tex [112]
+Underfull \hbox (badness 10000) detected at line 59
+[][][]
+ []
 
+
+Underfull \hbox (badness 10000) detected at line 64
+[][][]
+ []
+
+[113]
+Underfull \hbox (badness 10000) detected at line 77
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 99
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 112
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 129
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 136
+[][][]
+ []
+
+[114]
+Underfull \hbox (badness 10000) detected at line 149
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 166
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 173
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 186
+[][][]
+ []
+
+[115]
+Underfull \hbox (badness 10000) detected at line 203
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 216
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 233
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 238
+[][][]
+ []
+
+) (struct_r_c_c___memory_map_type.tex [116] [117] [118] [119] [120] [121] [122]
+[123] [124]) (struct_s_c_b___memory_map_type.tex [125] [126]
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+[127]
+Underfull \hbox (badness 10000) detected at line 163
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 182
+[][][]
+ []
+
+[128]
+Underfull \hbox (badness 10000) detected at line 201
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 223
+[][][]
+ []
+
+[129]
+Underfull \hbox (badness 10000) detected at line 284
+[][][]
+ []
+
+[130]) (struct_sys_tick___type.tex [131]) [132]
+Chapter 7.
+(_r_e_a_d_m_e_8md.tex) (_d_c_m__config_8h.tex
+Underfull \hbox (badness 10000) detected at line 13
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][][]
+ []
+
+) (_d_c_m__config_8h_source.tex) (_d_c_m__interface_8h.tex [133
+
+]
+Underfull \hbox (badness 10000) detected at line 29
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 49.
+[134]
+Underfull \hbox (badness 10000) detected at line 60
+[][][]
+ []
+
+) (_d_c_m__interface_8h_source.tex [135]) (_d_c_m__private_8h.tex
+Underfull \hbox (badness 10000) detected at line 13
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][][]
+ []
+
+) (_d_c_m__private_8h_source.tex) (_d_c_m__program_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
+
+ []
+
+[136]
 Underfull \hbox (badness 10000) detected at line 32
 [][][]
  []
@@ -906,9 +1147,43 @@ Underfull \hbox (badness 10000) detected at line 38
 [][][]
  []
 
-) (_l_s_t_d___b_i_t_m_a_t_h_8h_source.tex [51
+[137]
+Underfull \hbox (badness 2197) in paragraph at lines 88--89
+[]\T1/phv/m/n/10 , [], [],
+ []
 
-]) (_l_s_t_d___c_o_m_p_i_l_e_r_8h.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[]\T1/phv/m/n/10 References [], [], [], [],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+[]\T1/phv/m/n/10 References [], [], [], [],
+ []
+
+[138]
+Overfull \hbox (48.9586pt too wide) in paragraph at lines 154--155
+[]\T1/phv/m/n/10 References [], [], [], [],
+ []
+
+) (_d_c_m__program_8c_source.tex [139]) (_l_s_t_d___b_i_t_m_a_t_h_8h.tex
+Underfull \hbox (badness 10000) detected at line 32
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][][]
+ []
+
+) (_l_s_t_d___b_i_t_m_a_t_h_8h_source.tex) (_l_s_t_d___c_o_m_p_i_l_e_r_8h.tex [
+140]
 Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
@@ -923,8 +1198,8 @@ Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
-) (_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.tex [52]) (_l_s_t_d___m_c_u___u_t_i_l_i
-_t_i_e_s_8h.tex
+) (_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.tex) (_l_s_t_d___m_c_u___u_t_i_l_i_t_i_
+e_s_8h.tex [141]
 Underfull \hbox (badness 10000) detected at line 18
 [][][]
  []
@@ -940,7 +1215,7 @@ Underfull \hbox (badness 10000) detected at line 24
  []
 
 ) (_l_s_t_d___m_c_u___u_t_i_l_i_t_i_e_s_8h_source.tex) (_l_s_t_d___t_y_p_e_s_8h
-.tex [53]
+.tex [142]
 Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
@@ -955,7 +1230,265 @@ Underfull \hbox (badness 10000) detected at line 40
 [][][]
  []
 
-) (_l_s_t_d___t_y_p_e_s_8h_source.tex [54]) (_l_s_t_d___v_a_l_u_e_s_8h.tex
+) (_l_s_t_d___t_y_p_e_s_8h_source.tex) (_l_s_t_d___v_a_l_u_e_s_8h.tex [143]
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (_l_s_t_d___v_a_l_u_e_s_8h_source.tex) (_e_x_t_i__config_8h.tex [144] [145] [
+146] [147] [148] [149] [150]) (_e_x_t_i__config_8h_source.tex [151] [152]) (_e_
+x_t_i__interface_8h.tex [153] [154]
+Underfull \hbox (badness 10000) detected at line 78
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 81
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][][]
+ []
+
+[155] [156] [157] [158] [159]) (_e_x_t_i__interface_8h_source.tex [160]) (_e_x_
+t_i__private_8h.tex
+Underfull \hbox (badness 10000) detected at line 33
+[][][]
+ []
+
+[161]
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][][]
+ []
+
+) (_e_x_t_i__private_8h_source.tex) (_e_x_t_i__program_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
+
+ []
+
+[162]
+Underfull \hbox (badness 10000) detected at line 54
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 60
+[][][]
+ []
+
+[163] [164] [165] [166]
+Overfull \hbox (27.60228pt too wide) in paragraph at lines 358--359
+[]\T1/phv/m/n/10 References [], [], [], [],
+ []
+
+[167] [168] [169] [170]) (_e_x_t_i__program_8c_source.tex
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 36--36
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 37--37
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[171] [172] [173]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 255--255
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 256--256
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 267--267
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 268--268
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 284--284
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 285--285
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 297--297
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 298--298
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[174]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 310--310
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 311--311
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 343--343
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 344--344
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 356--356
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 357--357
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 372--372
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 373--373
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[175]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 388--388
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 389--389
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 404--404
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 405--405
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 420--420
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 421--421
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 436--436
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 437--437
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 444--444
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 445--445
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 452--452
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 453--453
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[176]) (_s_y_s_c_f_g__private_8h.tex
+Underfull \hbox (badness 10000) detected at line 25
+[][][]
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
@@ -965,12 +1498,7 @@ Underfull \hbox (badness 10000) detected at line 31
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 34
-[][][]
- []
-
-) (_l_s_t_d___v_a_l_u_e_s_8h_source.tex [55]) (_g_p_i_o__config_8h.tex
+) (_s_y_s_c_f_g__private_8h_source.tex [177]) (_g_p_i_o__config_8h.tex
 Underfull \hbox (badness 10000) detected at line 22
 [][][]
  []
@@ -985,8 +1513,8 @@ Underfull \hbox (badness 10000) detected at line 28
 [][][]
  []
 
-[56]) (_g_p_i_o__config_8h_source.tex) (_g_p_i_o__interface_8h.tex [57] [58] [5
-9]
+[178]) (_g_p_i_o__config_8h_source.tex) (_g_p_i_o__interface_8h.tex [179] [180]
+[181]
 Underfull \hbox (badness 1038) in paragraph at lines 125--126
 []\T1/phv/m/n/10 void [] ([]([]) A[]_[]u8[]Port[]ID, []([]) A[]_[]u8[]Pin[]ID, 
 []([]) A[]_[]u8[]
@@ -1002,23 +1530,20 @@ Underfull \hbox (badness 10000) detected at line 151
 [][][]
  []
 
-
+[182]
 Underfull \hbox (badness 10000) detected at line 154
 [][][]
  []
 
-[60]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 182.
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 226.
-[61] [62] [63]
-Underfull \hbox (badness 10000) detected at line 315
+(Font)              scaled to size 8.09995pt on input line 186.
+[183] [184]
+Underfull \hbox (badness 10000) detected at line 319
 [][][]
  []
 
-[64] [65]) (_g_p_i_o__interface_8h_source.tex [66] [67]) (_g_p_i_o__private_8h.
-tex
+[185] [186] [187]) (_g_p_i_o__interface_8h_source.tex [188] [189]) (_g_p_i_o__p
+rivate_8h.tex [190]
 Underfull \hbox (badness 10000) detected at line 33
 [][][]
  []
@@ -1033,12 +1558,12 @@ Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
-) (_g_p_i_o__private_8h_source.tex [68]) (_g_p_i_o__program_8c.tex
+) (_g_p_i_o__private_8h_source.tex) (_g_p_i_o__program_8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--15
 
  []
 
-[69]
+[191]
 Underfull \hbox (badness 10000) detected at line 45
 [][][]
  []
@@ -1053,28 +1578,226 @@ Underfull \hbox (badness 10000) detected at line 51
 [][][]
  []
 
-[70] [71] [72] [73] [74]
-Underfull \hbox (badness 2469) in paragraph at lines 476--477
+[192] [193] [194] [195] [196]
+Underfull \hbox (badness 2469) in paragraph at lines 480--481
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], and
  []
 
-[75]
-Underfull \hbox (badness 1655) in paragraph at lines 587--588
+[197] [198]
+Underfull \hbox (badness 1655) in paragraph at lines 591--592
 []\T1/phv/m/n/10 , [], [], [], [], [], [],
  []
 
-[76]
-Overfull \hbox (42.34352pt too wide) in paragraph at lines 618--619
+
+Overfull \hbox (42.34352pt too wide) in paragraph at lines 622--623
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Overfull \hbox (53.13492pt too wide) in paragraph at lines 618--619
+Overfull \hbox (53.13492pt too wide) in paragraph at lines 622--623
 []\T1/phv/m/n/10 , [], [], [],
  []
 
-) (_g_p_i_o__program_8c_source.tex [77] [78] [79] [80] [81] [82]) (_m_r_c_c__co
-nfig_8h.tex [83]
+[199]) (_g_p_i_o__program_8c_source.tex [200] [201] [202] [203] [204]) (_n_v_i_
+c__config_8h.tex) (_n_v_i_c__config_8h_source.tex) (_n_v_i_c__interface_8h.tex 
+[205] [206] [207] [208] [209]
+Underfull \hbox (badness 10000) detected at line 235
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 238
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 241
+[][][]
+ []
+
+[210]
+Underfull \hbox (badness 10000) detected at line 266
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 284
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 297
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 305
+[][][]
+ []
+
+[211]
+Underfull \hbox (badness 10000) detected at line 318
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 326
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 344
+[][][]
+ []
+
+[212]
+Underfull \hbox (badness 10000) detected at line 381
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 401
+[][][]
+ []
+
+) (_n_v_i_c__interface_8h_source.tex [213] [214]) (_n_v_i_c__private_8h.tex [21
+5]
+Underfull \hbox (badness 10000) detected at line 47
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+) (_n_v_i_c__private_8h_source.tex [216]) (_n_v_i_c__program_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+[217]
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][][]
+ []
+
+[218] [219] [220]) (_n_v_i_c__program_8c_source.tex [221]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 35--35
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 36--36
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 43--43
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 44--44
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 51--51
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 52--52
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 59--59
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 60--60
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 69--69
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 70--70
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 78--78
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 79--79
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[222]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 120--120
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 121--121
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 163--163
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 164--164
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+) (_m_r_c_c__config_8h.tex [223] [224]
 Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
@@ -1089,8 +1812,9 @@ Underfull \hbox (badness 10000) detected at line 132
 [][][]
  []
 
-[84] [85] [86] [87] [88] [89] [90] [91] [92]) (_m_r_c_c__config_8h_source.tex [
-93] [94] [95] [96] [97] [98] [99] [100]) (_m_r_c_c__interface_8h.tex [101]
+[225] [226] [227] [228] [229] [230] [231] [232] [233]) (_m_r_c_c__config_8h_sou
+rce.tex [234] [235] [236] [237] [238] [239] [240] [241]) (_m_r_c_c__interface_8
+h.tex [242] [243]
 Underfull \hbox (badness 10000) detected at line 103
 [][][]
  []
@@ -1100,33 +1824,38 @@ Underfull \hbox (badness 10000) detected at line 106
 [][][]
  []
 
-[102]
+
 Underfull \hbox (badness 10000) detected at line 109
 [][][]
  []
 
-[103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113]
-Underfull \hbox (badness 10000) in paragraph at lines 876--877
+[244] [245] [246] [247] [248]
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 []\T1/phv/m/n/10 References [], [], [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--877
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 876--877
+Underfull \hbox (badness 2635) in paragraph at lines 505--506
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--877
+Underfull \hbox (badness 10000) in paragraph at lines 505--506
 []\T1/phv/m/n/10 , [], [], [],
  []
 
-[114]) (_m_r_c_c__interface_8h_source.tex [115]) (_m_r_c_c__private_8h.tex [116
-] [117] [118] [119] [120]
+
+Overfull \hbox (26.43712pt too wide) in paragraph at lines 505--506
+[]\T1/phv/m/n/10 , [], [], [], [], [],
+ []
+
+[249]) (_m_r_c_c__interface_8h_source.tex [250]) (_m_r_c_c__private_8h.tex [251
+] [252] [253] [254]
 Underfull \hbox (badness 10000) detected at line 467
 [][][]
  []
@@ -1136,31 +1865,31 @@ Underfull \hbox (badness 10000) detected at line 470
 [][][]
  []
 
-
+[255]
 Underfull \hbox (badness 10000) detected at line 473
 [][][]
  []
 
-[121] [122] [123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [
-134] [135] [136] [137]
+[256] [257] [258] [259] [260] [261] [262] [263] [264] [265] [266] [267] [268] [
+269] [270] [271] [272]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 1536.
-[138] [139]
+[273] [274]
 pdfTeX warning (ext4): destination with the same identifier (name{_m_r_c_c__pri
 vate_8h_a44c2896186404cd98f9ec4e88dbdf1c8}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
 l.1623 ...e_8h_a44c2896186404cd98f9ec4e88dbdf1c8}}
-                                                   [140] [141] [142] [143] [144
-] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155] [156] [157]
-) (_m_r_c_c__private_8h_source.tex [158] [159] [160] [161]) (_m_r_c_c__program_
-8c.tex [162]
+                                                   [275] [276] [277] [278] [279
+] [280] [281] [282] [283] [284] [285] [286] [287] [288] [289] [290] [291] [292]
+) (_m_r_c_c__private_8h_source.tex [293] [294] [295] [296]) (_m_r_c_c__program_
+8c.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--15
 
  []
 
-
+[297]
 Underfull \hbox (badness 10000) detected at line 29
 [][][]
  []
@@ -1175,50 +1904,367 @@ Underfull \hbox (badness 10000) detected at line 35
 [][][]
  []
 
-[163] [164] [165] [166] [167]
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+[298] [299] [300] [301] [302]
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 []\T1/phv/m/n/10 References [], [], [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 409--410
+Underfull \hbox (badness 2635) in paragraph at lines 431--432
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 []\T1/phv/m/n/10 , [], [], [],
  []
 
-[168]) (_m_r_c_c__program_8c_source.tex [169] [170] [171] [172] [173] [174]) [1
-75] [176
 
-] (refman.ind [177
+Overfull \hbox (26.43712pt too wide) in paragraph at lines 431--432
+[]\T1/phv/m/n/10 , [], [], [], [], [],
+ []
+
+[303]) (_m_r_c_c__program_8c_source.tex [304] [305] [306] [307] [308] [309]) (_
+sys_tick__config_8h.tex [310]) (_sys_tick__config_8h_source.tex) (_sys_tick__in
+terface_8h.tex [311]
+Underfull \hbox (badness 10000) detected at line 59
+[][][]
+ []
+
+[312]
+Underfull \hbox (badness 10000) detected at line 62
+[][][]
+ []
 
 
-] [178] [179] [180] [181] [182] [183] [184] [185] [186] [187] [188] [189] [190
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
 
-]) (refman.aux)
+[313] [314] [315]
+Underfull \hbox (badness 10000) detected at line 275
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 292
+[][][]
+ []
+
+[316]
+Underfull \hbox (badness 10000) detected at line 330
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 362
+[][][]
+ []
+
+[317]) (_sys_tick__interface_8h_source.tex [318]) (_sys_tick__private_8h.tex [3
+19]
+Underfull \hbox (badness 10000) detected at line 41
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][][]
+ []
+
+) (_sys_tick__private_8h_source.tex) (_sys_tick__program_8c.tex [320]
+Underfull \hbox (badness 10000) in paragraph at lines 8--15
+
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][][]
+ []
+
+[321] [322]
+Underfull \hbox (badness 2990) in paragraph at lines 176--177
+[]\T1/phv/m/n/10 References [], [], [], [], [], [],
+ []
+
+[323]
+Underfull \hbox (badness 2990) in paragraph at lines 243--244
+[]\T1/phv/m/n/10 References [], [], [], [], [], [],
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 292--293
+[]\T1/phv/m/n/10 References [], [], [], [], [], [],
+ []
+
+[324]
+Underfull \hbox (badness 2990) in paragraph at lines 341--342
+[]\T1/phv/m/n/10 References [], [], [], [], [], [],
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 390--391
+[]\T1/phv/m/n/10 References [], [], [], [], [], [],
+ []
+
+[325]
+Underfull \hbox (badness 2213) in paragraph at lines 468--469
+[]\T1/phv/m/n/10 References [], [], [], [], [], and
+ []
+
+[326]
+Underfull \hbox (badness 10000) detected at line 480
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 518
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 550
+[][][]
+ []
+
+[327] [328]
+Overfull \hbox (43.53801pt too wide) in paragraph at lines 676--677
+[]\T1/phv/m/n/10 References [], [], [], [], [], [], [],
+ []
+
+) (_sys_tick__program_8c_source.tex
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 21--21
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 22--22
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 29--29
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 30--30
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[329]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 56--56
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 57--57
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 83--83
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 84--84
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[330]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 136--136
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 137--137
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 172--172
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 173--173
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[331]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 208--208
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 209--209
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 244--244
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 245--245
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 270--270
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 271--271
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[332]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 296--296
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 297--297
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 314--314
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 315--315
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 326--326
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 327--327
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 338--338
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 339--339
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 349--349
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 350--350
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+[333]
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 363--363
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 364--364
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+
+Overfull \hbox (61.35551pt too wide) in paragraph at lines 397--397
+[]\T1/pcr/m/n/7 /**************************************************************
+*****************************************************/[]  
+ []
+
+
+Overfull \hbox (57.15552pt too wide) in paragraph at lines 398--398
+[]\T1/pcr/m/n/7 /**************************************************************
+****************************************************/[]  
+ []
+
+) [334] (refman.ind [335
+
+
+
+] [336] [337] [338] [339] [340] [341] [342] [343] [344] [345] [346] [347] [348]
+[349] [350] [351] [352] [353] [354] [355] [356]) (refman.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 8958DA3BCB7F57AE0A5AAD9D79A67DBD;116774.
+(rerunfilecheck)             Checksum: 6EC5C2B10B73AA667D36AD4EA6D30961;213465.
 
  ) 
 Here is how much of TeX's memory you used:
- 22981 strings out of 475284
- 463187 string characters out of 2790519
- 847645 words of memory out of 3000000
- 40274 multiletter control sequences out of 15000+600000
- 536216 words of font info for 106 fonts, out of 8000000 for 9000
+ 27176 strings out of 475284
+ 603934 string characters out of 2790519
+ 988297 words of memory out of 3000000
+ 41359 multiletter control sequences out of 15000+600000
+ 536953 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,2855b,740s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,16n,117p,3039b,1150s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {D:/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmmi10.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmmi8.pfb><D:/MiKTeX/fonts/type1/public/amsfonts/
@@ -1230,9 +2276,9 @@ fb><D:/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><D:/MiKTeX/fonts/type1/urw/he
 lvetic/uhvb8a.pfb><D:/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><D:/MiKTeX/fo
 nts/type1/urw/helvetic/uhvbo8a.pfb><D:/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.p
 fb><D:/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (208 pages, 2618704 bytes).
+Output written on refman.pdf (384 pages, 4636958 bytes).
 PDF statistics:
- 13596 PDF objects out of 15390 (max. 8388607)
- 3732 named destinations out of 4296 (max. 500000)
- 4889 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 24320 PDF objects out of 26593 (max. 8388607)
+ 6685 named destinations out of 7423 (max. 500000)
+ 8681 words of extra memory for PDF output out of 10000 (max. 10000000)
 

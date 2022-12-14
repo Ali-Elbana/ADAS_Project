@@ -1,118 +1,141 @@
 \begin{theindex}
 
+  \item {\_16GROUP\_NoSub\_Priorities}
+    \subitem {Interrupt priority grouping}, \hyperpage{48}
+  \item {\_2GROUP\_8Sub\_Priorities}
+    \subitem {Interrupt priority grouping}, \hyperpage{49}
+  \item {\_4GROUP\_4Sub\_Priorities}
+    \subitem {Interrupt priority grouping}, \hyperpage{49}
+  \item {\_8GROUP\_2Sub\_Priorities}
+    \subitem {Interrupt priority grouping}, \hyperpage{48}
+
+  \indexspace
+
+  \item {ADC}
+    \subitem {NVIC Vector Table}, \hyperpage{69}
   \item {ADC1EN}
-    \subitem {MRCC\_config.h}, \hyperpage{93}
+    \subitem {MRCC\_config.h}, \hyperpage{234}
   \item {AF\_Type}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{44}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{111}
   \item {AFRHx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{41}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{108}
   \item {AFRLx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{41}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{108}
+  \item {AHB}
+    \subitem {Systick Clock Sources}, \hyperpage{98}
   \item {AHB1ENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{47}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{121}
   \item {AHB1ENR\_CRCEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{104}
+    \subitem {ID options}, \hyperpage{85}
   \item {AHB1ENR\_DMA1EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{104}
+    \subitem {ID options}, \hyperpage{85}
   \item {AHB1ENR\_DMA2EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{104}
+    \subitem {ID options}, \hyperpage{85}
   \item {AHB1ENR\_GPIOAEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{105}
+    \subitem {ID options}, \hyperpage{87}
   \item {AHB1ENR\_GPIOBEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{105}
+    \subitem {ID options}, \hyperpage{87}
   \item {AHB1ENR\_GPIOCEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{105}
+    \subitem {ID options}, \hyperpage{86}
   \item {AHB1ENR\_GPIODEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{105}
+    \subitem {ID options}, \hyperpage{86}
   \item {AHB1ENR\_GPIOEEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{104}
+    \subitem {ID options}, \hyperpage{86}
   \item {AHB1ENR\_GPIOHEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{104}
+    \subitem {ID options}, \hyperpage{86}
   \item {AHB1LPENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{48}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{122}
   \item {AHB1LPENR\_FLITFLPEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{109}
+    \subitem {ID options}, \hyperpage{93}
   \item {AHB1RSTR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{46}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{119}
   \item {AHB2ENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{47}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{121}
   \item {AHB2ENR\_OTGFSEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{105}
+    \subitem {ID options}, \hyperpage{87}
   \item {AHB2LPENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{48}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{122}
   \item {AHB2RSTR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{46}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{119}
+  \item {AHB\_DividedBy8}
+    \subitem {Systick Clock Sources}, \hyperpage{98}
   \item {AHBby16}
-    \subitem {MRCC\_private.h}, \hyperpage{147}
+    \subitem {MRCC\_private.h}, \hyperpage{282}
   \item {AHBby2}
-    \subitem {MRCC\_private.h}, \hyperpage{147}
+    \subitem {MRCC\_private.h}, \hyperpage{282}
   \item {AHBby4}
-    \subitem {MRCC\_private.h}, \hyperpage{147}
+    \subitem {MRCC\_private.h}, \hyperpage{282}
   \item {AHBby8}
-    \subitem {MRCC\_private.h}, \hyperpage{147}
+    \subitem {MRCC\_private.h}, \hyperpage{282}
+  \item {AIRCR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{127}
   \item {APB1ENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{48}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{121}
   \item {APB1ENR\_I2C1EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{106}
+    \subitem {ID options}, \hyperpage{88}
   \item {APB1ENR\_I2C2EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{106}
+    \subitem {ID options}, \hyperpage{88}
   \item {APB1ENR\_I2C3EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{106}
+    \subitem {ID options}, \hyperpage{88}
   \item {APB1ENR\_PWREN}
-    \subitem {MRCC\_interface.h}, \hyperpage{105}
+    \subitem {ID options}, \hyperpage{87}
   \item {APB1ENR\_SPI2EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{106}
+    \subitem {ID options}, \hyperpage{89}
   \item {APB1ENR\_SPI3EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{106}
+    \subitem {ID options}, \hyperpage{89}
   \item {APB1ENR\_TIM2EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{107}
+    \subitem {ID options}, \hyperpage{90}
   \item {APB1ENR\_TIM3EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{107}
+    \subitem {ID options}, \hyperpage{90}
   \item {APB1ENR\_TIM4EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{107}
+    \subitem {ID options}, \hyperpage{90}
   \item {APB1ENR\_TIM5EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{107}
+    \subitem {ID options}, \hyperpage{89}
   \item {APB1ENR\_USART2EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{106}
+    \subitem {ID options}, \hyperpage{88}
   \item {APB1ENR\_WWDGEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{107}
+    \subitem {ID options}, \hyperpage{89}
   \item {APB1LPENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{49}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{123}
   \item {APB1RSTR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{46}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{120}
   \item {APB2ENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{48}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{122}
   \item {APB2ENR\_ADC1EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{109}
+    \subitem {ID options}, \hyperpage{92}
   \item {APB2ENR\_SDIOEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{108}
+    \subitem {ID options}, \hyperpage{92}
   \item {APB2ENR\_SPI1EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{108}
+    \subitem {ID options}, \hyperpage{92}
   \item {APB2ENR\_SPI4EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{108}
+    \subitem {ID options}, \hyperpage{91}
   \item {APB2ENR\_SYSCFGEN}
-    \subitem {MRCC\_interface.h}, \hyperpage{108}
+    \subitem {ID options}, \hyperpage{91}
   \item {APB2ENR\_TIM10EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{108}
+    \subitem {ID options}, \hyperpage{91}
   \item {APB2ENR\_TIM11EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{107}
+    \subitem {ID options}, \hyperpage{90}
   \item {APB2ENR\_TIM1EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{109}
+    \subitem {ID options}, \hyperpage{93}
   \item {APB2ENR\_TIM9EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{108}
+    \subitem {ID options}, \hyperpage{91}
   \item {APB2ENR\_USART1EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{109}
+    \subitem {ID options}, \hyperpage{93}
   \item {APB2ENR\_USART6EN}
-    \subitem {MRCC\_interface.h}, \hyperpage{109}
+    \subitem {ID options}, \hyperpage{92}
   \item {APB2LPENR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{49}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{123}
   \item {APB2RSTR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{46}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{120}
+  \item {AssertRequest}
+    \subitem {Systick Exception (Interrupt) Status}, \hyperpage{99}
 
   \indexspace
 
   \item {BDCR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{124}
+  \item {BFAR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{131}
   \item {Bit Group Manipulation Math Macros}, \hyperpage{10}
     \subitem {CLR\_BITs}, \hyperpage{11}
     \subitem {GET\_BITs}, \hyperpage{11}
@@ -126,20 +149,36 @@
   \item {bool\_t}
     \subitem {Standard types}, \hyperpage{15}
   \item {BSRRx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{41}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{108}
+  \item {BUS\_FAULT}
+    \subitem {NVIC Settable Priorities}, \hyperpage{81}
+  \item {BUSY\_TICK\_TIME}
+    \subitem {SysTick\_interface.h}, \hyperpage{313}
   \item {BYBASED}
-    \subitem {MRCC\_private.h}, \hyperpage{138}
+    \subitem {MRCC\_private.h}, \hyperpage{273}
 
   \indexspace
 
+  \item {CALIB}
+    \subitem {SysTick\_Type}, \hyperpage{132}
+  \item {CCR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{128}
   \item {CFGR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{45}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{119}
+  \item {CFSR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{129}
   \item {CIR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{45}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{119}
+  \item {CLK\_SOURCE}
+    \subitem {GPIO Addresses}, \hyperpage{46}
+  \item {CLKSOURCE}
+    \subitem {Systick Register Bits Positions}, \hyperpage{97}
   \item {CLR\_BIT}
     \subitem {Bit Manipulation Math Macros}, \hyperpage{9}
   \item {CLR\_BITs}
     \subitem {Bit Group Manipulation Math Macros}, \hyperpage{11}
+  \item {CMPCR}
+    \subitem {MSYSCFG\_MemMap\_t}, \hyperpage{112}
   \item {Compiler standard macros}, \hyperpage{12}
     \subitem {CONST}, \hyperpage{14}
     \subitem {CONSTP2CONST}, \hyperpage{13}
@@ -156,166 +195,508 @@
     \subitem {Compiler standard macros}, \hyperpage{13}
   \item {CONSTP2VAR}
     \subitem {Compiler standard macros}, \hyperpage{13}
+  \item {COTS/HAL/DCMOTOR/DCM\_config.h}, \hyperpage{133}
+  \item {COTS/HAL/DCMOTOR/DCM\_interface.h}, \hyperpage{134}, 
+		\hyperpage{136}
+  \item {COTS/HAL/DCMOTOR/DCM\_private.h}, \hyperpage{136}
+  \item {COTS/HAL/DCMOTOR/DCM\_program.c}, \hyperpage{137}, 
+		\hyperpage{139}
+  \item {COTS/LIB/LSTD\_BITMATH.h}, \hyperpage{140}
+  \item {COTS/LIB/LSTD\_COMPILER.h}, \hyperpage{141}
+  \item {COTS/LIB/LSTD\_MCU\_UTILITIES.h}, \hyperpage{142}
+  \item {COTS/LIB/LSTD\_TYPES.h}, \hyperpage{142, 143}
+  \item {COTS/LIB/LSTD\_VALUES.h}, \hyperpage{143, 144}
+  \item {COTS/MCAL/EXTI/EXTI\_config.h}, \hyperpage{145}, 
+		\hyperpage{151}
+  \item {COTS/MCAL/EXTI/EXTI\_interface.h}, \hyperpage{154}, 
+		\hyperpage{160}
+  \item {COTS/MCAL/EXTI/EXTI\_private.h}, \hyperpage{161, 162}
+  \item {COTS/MCAL/EXTI/EXTI\_program.c}, \hyperpage{163}, 
+		\hyperpage{171}
+  \item {COTS/MCAL/EXTI/SYSCFG\_private.h}, \hyperpage{177, 178}
+  \item {COTS/MCAL/GPIO/GPIO\_config.h}, \hyperpage{178, 179}
+  \item {COTS/MCAL/GPIO/GPIO\_interface.h}, \hyperpage{180}, 
+		\hyperpage{188}
+  \item {COTS/MCAL/GPIO/GPIO\_private.h}, \hyperpage{190, 191}
+  \item {COTS/MCAL/GPIO/GPIO\_program.c}, \hyperpage{192}, 
+		\hyperpage{200}
+  \item {COTS/MCAL/NVIC/NVIC\_config.h}, \hyperpage{205}
+  \item {COTS/MCAL/NVIC/NVIC\_interface.h}, \hyperpage{205}, 
+		\hyperpage{213}
+  \item {COTS/MCAL/NVIC/NVIC\_private.h}, \hyperpage{215}, 
+		\hyperpage{217}
+  \item {COTS/MCAL/NVIC/NVIC\_program.c}, \hyperpage{217}, 
+		\hyperpage{221}
+  \item {COTS/MCAL/RCC/MRCC\_config.h}, \hyperpage{224}, 
+		\hyperpage{235}
+  \item {COTS/MCAL/RCC/MRCC\_interface.h}, \hyperpage{242}, 
+		\hyperpage{250}
+  \item {COTS/MCAL/RCC/MRCC\_private.h}, \hyperpage{251}, 
+		\hyperpage{293}
+  \item {COTS/MCAL/RCC/MRCC\_program.c}, \hyperpage{297}, 
+		\hyperpage{304}
+  \item {COTS/MCAL/SysTick/SysTick\_config.h}, \hyperpage{310, 311}
+  \item {COTS/MCAL/SysTick/SysTick\_interface.h}, \hyperpage{311}, 
+		\hyperpage{319}
+  \item {COTS/MCAL/SysTick/SysTick\_private.h}, \hyperpage{319, 320}
+  \item {COTS/MCAL/SysTick/SysTick\_program.c}, \hyperpage{321}, 
+		\hyperpage{329}
+  \item {COUNTER\_ENABLE}
+    \subitem {Systick Register Bits Positions}, \hyperpage{97}
+  \item {COUNTFLAG}
+    \subitem {Systick Register Bits Positions}, \hyperpage{96}
+  \item {CPUID}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{126}
   \item {CR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{45}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{118}
   \item {CRCCLK}
-    \subitem {MRCC\_config.h}, \hyperpage{88}
+    \subitem {MRCC\_config.h}, \hyperpage{229}
   \item {CSR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{124}
   \item {CSS}
-    \subitem {MRCC\_config.h}, \hyperpage{85}
+    \subitem {MRCC\_config.h}, \hyperpage{225}
+  \item {CTRL}
+    \subitem {SysTick\_Type}, \hyperpage{132}
 
   \indexspace
 
+  \item {D:/GProject/ADAS\_Project/README.md}, \hyperpage{133}
   \item {DCKCFGR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{125}
+  \item {DCM\_interface.h}
+    \subitem {HDCM\_vInitMotor}, \hyperpage{134}
+    \subitem {HDCM\_vMoveBackward}, \hyperpage{135}
+    \subitem {HDCM\_vMoveForward}, \hyperpage{135}
+    \subitem {HDCM\_vStopMotor}, \hyperpage{135}
+  \item {DCM\_MotorConfiguration}, \hyperpage{101}
+    \subitem {Side1Pin}, \hyperpage{102}
+    \subitem {Side1Port}, \hyperpage{101}
+    \subitem {Side2Pin}, \hyperpage{102}
+    \subitem {Side2Port}, \hyperpage{102}
+  \item {DCM\_program.c}
+    \subitem {HDCM\_vInitMotor}, \hyperpage{137}
+    \subitem {HDCM\_vMoveBackward}, \hyperpage{138}
+    \subitem {HDCM\_vMoveForward}, \hyperpage{138}
+    \subitem {HDCM\_vStopMotor}, \hyperpage{138}
+  \item {Delay Units}, \hyperpage{94}
+    \subitem {MICRO\_SEC}, \hyperpage{95}
+    \subitem {MILLI\_SEC}, \hyperpage{95}
+    \subitem {SEC}, \hyperpage{95}
   \item {DISABLE}
-    \subitem {MRCC\_private.h}, \hyperpage{138}
+    \subitem {EXTI Lines Status}, \hyperpage{28}
+    \subitem {MRCC\_private.h}, \hyperpage{272}
   \item {DivisionBy2}
-    \subitem {MRCC\_private.h}, \hyperpage{139}
+    \subitem {MRCC\_private.h}, \hyperpage{274}
   \item {DivisionBy3}
-    \subitem {MRCC\_private.h}, \hyperpage{139}
+    \subitem {MRCC\_private.h}, \hyperpage{274}
   \item {DivisionBy4}
-    \subitem {MRCC\_private.h}, \hyperpage{139}
+    \subitem {MRCC\_private.h}, \hyperpage{274}
   \item {DivisionBy5}
-    \subitem {MRCC\_private.h}, \hyperpage{139}
+    \subitem {MRCC\_private.h}, \hyperpage{274}
+  \item {DMA1\_STREAM0}
+    \subitem {NVIC Vector Table}, \hyperpage{67}
+  \item {DMA1\_STREAM1}
+    \subitem {NVIC Vector Table}, \hyperpage{67}
+  \item {DMA1\_STREAM2}
+    \subitem {NVIC Vector Table}, \hyperpage{68}
+  \item {DMA1\_STREAM3}
+    \subitem {NVIC Vector Table}, \hyperpage{68}
+  \item {DMA1\_STREAM4}
+    \subitem {NVIC Vector Table}, \hyperpage{68}
+  \item {DMA1\_STREAM5}
+    \subitem {NVIC Vector Table}, \hyperpage{68}
+  \item {DMA1\_STREAM6}
+    \subitem {NVIC Vector Table}, \hyperpage{69}
+  \item {DMA1\_STREAM7}
+    \subitem {NVIC Vector Table}, \hyperpage{74}
   \item {DMA1CLK}
-    \subitem {MRCC\_config.h}, \hyperpage{88}
+    \subitem {MRCC\_config.h}, \hyperpage{229}
+  \item {DMA2\_STREAM0}
+    \subitem {NVIC Vector Table}, \hyperpage{75}
+  \item {DMA2\_STREAM1}
+    \subitem {NVIC Vector Table}, \hyperpage{75}
+  \item {DMA2\_STREAM2}
+    \subitem {NVIC Vector Table}, \hyperpage{75}
+  \item {DMA2\_STREAM3}
+    \subitem {NVIC Vector Table}, \hyperpage{76}
+  \item {DMA2\_STREAM4}
+    \subitem {NVIC Vector Table}, \hyperpage{76}
+  \item {DMA2\_STREAM5}
+    \subitem {NVIC Vector Table}, \hyperpage{76}
+  \item {DMA2\_STREAM6}
+    \subitem {NVIC Vector Table}, \hyperpage{77}
+  \item {DMA2\_STREAM7}
+    \subitem {NVIC Vector Table}, \hyperpage{77}
   \item {DMA2CLK}
-    \subitem {MRCC\_config.h}, \hyperpage{88}
+    \subitem {MRCC\_config.h}, \hyperpage{229}
+  \item {Dont\_AssertRequest}
+    \subitem {Systick Exception (Interrupt) Status}, \hyperpage{98}
 
   \indexspace
 
+  \item {EMR}
+    \subitem {EXTI\_Type}, \hyperpage{105}
   \item {ENABLE}
-    \subitem {MRCC\_private.h}, \hyperpage{137}
+    \subitem {EXTI Lines Status}, \hyperpage{28}
+    \subitem {MRCC\_private.h}, \hyperpage{272}
   \item {Equal\_0}
-    \subitem {MRCC\_private.h}, \hyperpage{148}
+    \subitem {MRCC\_private.h}, \hyperpage{282}
   \item {Equal\_1}
-    \subitem {MRCC\_private.h}, \hyperpage{148}
+    \subitem {MRCC\_private.h}, \hyperpage{283}
   \item {Equal\_10}
-    \subitem {MRCC\_private.h}, \hyperpage{149}
+    \subitem {MRCC\_private.h}, \hyperpage{284}
   \item {Equal\_11}
-    \subitem {MRCC\_private.h}, \hyperpage{149}
+    \subitem {MRCC\_private.h}, \hyperpage{284}
   \item {Equal\_12}
-    \subitem {MRCC\_private.h}, \hyperpage{150}
+    \subitem {MRCC\_private.h}, \hyperpage{284}
   \item {Equal\_13}
-    \subitem {MRCC\_private.h}, \hyperpage{150}
+    \subitem {MRCC\_private.h}, \hyperpage{285}
   \item {Equal\_14}
-    \subitem {MRCC\_private.h}, \hyperpage{150}
+    \subitem {MRCC\_private.h}, \hyperpage{285}
   \item {Equal\_15}
-    \subitem {MRCC\_private.h}, \hyperpage{150}
+    \subitem {MRCC\_private.h}, \hyperpage{285}
   \item {Equal\_16}
-    \subitem {MRCC\_private.h}, \hyperpage{150}
+    \subitem {MRCC\_private.h}, \hyperpage{285}
   \item {Equal\_17}
-    \subitem {MRCC\_private.h}, \hyperpage{150}
+    \subitem {MRCC\_private.h}, \hyperpage{285}
   \item {Equal\_18}
-    \subitem {MRCC\_private.h}, \hyperpage{151}
+    \subitem {MRCC\_private.h}, \hyperpage{285}
   \item {Equal\_19}
-    \subitem {MRCC\_private.h}, \hyperpage{151}
+    \subitem {MRCC\_private.h}, \hyperpage{286}
   \item {Equal\_2}
-    \subitem {MRCC\_private.h}, \hyperpage{148}
+    \subitem {MRCC\_private.h}, \hyperpage{283}
   \item {Equal\_20}
-    \subitem {MRCC\_private.h}, \hyperpage{151}
+    \subitem {MRCC\_private.h}, \hyperpage{286}
   \item {Equal\_21}
-    \subitem {MRCC\_private.h}, \hyperpage{151}
+    \subitem {MRCC\_private.h}, \hyperpage{286}
   \item {Equal\_22}
-    \subitem {MRCC\_private.h}, \hyperpage{151}
+    \subitem {MRCC\_private.h}, \hyperpage{286}
   \item {Equal\_23}
-    \subitem {MRCC\_private.h}, \hyperpage{151}
+    \subitem {MRCC\_private.h}, \hyperpage{286}
   \item {Equal\_24}
-    \subitem {MRCC\_private.h}, \hyperpage{152}
+    \subitem {MRCC\_private.h}, \hyperpage{286}
   \item {Equal\_25}
-    \subitem {MRCC\_private.h}, \hyperpage{152}
+    \subitem {MRCC\_private.h}, \hyperpage{287}
   \item {Equal\_26}
-    \subitem {MRCC\_private.h}, \hyperpage{152}
+    \subitem {MRCC\_private.h}, \hyperpage{287}
   \item {Equal\_27}
-    \subitem {MRCC\_private.h}, \hyperpage{152}
+    \subitem {MRCC\_private.h}, \hyperpage{287}
   \item {Equal\_28}
-    \subitem {MRCC\_private.h}, \hyperpage{152}
+    \subitem {MRCC\_private.h}, \hyperpage{287}
   \item {Equal\_29}
-    \subitem {MRCC\_private.h}, \hyperpage{152}
+    \subitem {MRCC\_private.h}, \hyperpage{287}
   \item {Equal\_3}
-    \subitem {MRCC\_private.h}, \hyperpage{148}
+    \subitem {MRCC\_private.h}, \hyperpage{283}
   \item {Equal\_30}
-    \subitem {MRCC\_private.h}, \hyperpage{153}
+    \subitem {MRCC\_private.h}, \hyperpage{287}
   \item {Equal\_31}
-    \subitem {MRCC\_private.h}, \hyperpage{153}
+    \subitem {MRCC\_private.h}, \hyperpage{288}
   \item {Equal\_32}
-    \subitem {MRCC\_private.h}, \hyperpage{153}
+    \subitem {MRCC\_private.h}, \hyperpage{288}
   \item {Equal\_33}
-    \subitem {MRCC\_private.h}, \hyperpage{153}
+    \subitem {MRCC\_private.h}, \hyperpage{288}
   \item {Equal\_34}
-    \subitem {MRCC\_private.h}, \hyperpage{153}
+    \subitem {MRCC\_private.h}, \hyperpage{288}
   \item {Equal\_35}
-    \subitem {MRCC\_private.h}, \hyperpage{153}
+    \subitem {MRCC\_private.h}, \hyperpage{288}
   \item {Equal\_36}
-    \subitem {MRCC\_private.h}, \hyperpage{154}
+    \subitem {MRCC\_private.h}, \hyperpage{288}
   \item {Equal\_37}
-    \subitem {MRCC\_private.h}, \hyperpage{154}
+    \subitem {MRCC\_private.h}, \hyperpage{289}
   \item {Equal\_38}
-    \subitem {MRCC\_private.h}, \hyperpage{154}
+    \subitem {MRCC\_private.h}, \hyperpage{289}
   \item {Equal\_39}
-    \subitem {MRCC\_private.h}, \hyperpage{154}
+    \subitem {MRCC\_private.h}, \hyperpage{289}
   \item {Equal\_4}
-    \subitem {MRCC\_private.h}, \hyperpage{148}
+    \subitem {MRCC\_private.h}, \hyperpage{283}
   \item {Equal\_40}
-    \subitem {MRCC\_private.h}, \hyperpage{154}
+    \subitem {MRCC\_private.h}, \hyperpage{289}
   \item {Equal\_41}
-    \subitem {MRCC\_private.h}, \hyperpage{154}
+    \subitem {MRCC\_private.h}, \hyperpage{289}
   \item {Equal\_42}
-    \subitem {MRCC\_private.h}, \hyperpage{155}
+    \subitem {MRCC\_private.h}, \hyperpage{289}
   \item {Equal\_43}
-    \subitem {MRCC\_private.h}, \hyperpage{155}
+    \subitem {MRCC\_private.h}, \hyperpage{290}
   \item {Equal\_44}
-    \subitem {MRCC\_private.h}, \hyperpage{155}
+    \subitem {MRCC\_private.h}, \hyperpage{290}
   \item {Equal\_45}
-    \subitem {MRCC\_private.h}, \hyperpage{155}
+    \subitem {MRCC\_private.h}, \hyperpage{290}
   \item {Equal\_46}
-    \subitem {MRCC\_private.h}, \hyperpage{155}
+    \subitem {MRCC\_private.h}, \hyperpage{290}
   \item {Equal\_47}
-    \subitem {MRCC\_private.h}, \hyperpage{155}
+    \subitem {MRCC\_private.h}, \hyperpage{290}
   \item {Equal\_48}
-    \subitem {MRCC\_private.h}, \hyperpage{156}
+    \subitem {MRCC\_private.h}, \hyperpage{290}
   \item {Equal\_49}
-    \subitem {MRCC\_private.h}, \hyperpage{156}
+    \subitem {MRCC\_private.h}, \hyperpage{291}
   \item {Equal\_5}
-    \subitem {MRCC\_private.h}, \hyperpage{148}
+    \subitem {MRCC\_private.h}, \hyperpage{283}
   \item {Equal\_50}
-    \subitem {MRCC\_private.h}, \hyperpage{156}
+    \subitem {MRCC\_private.h}, \hyperpage{291}
   \item {Equal\_51}
-    \subitem {MRCC\_private.h}, \hyperpage{156}
+    \subitem {MRCC\_private.h}, \hyperpage{291}
   \item {Equal\_52}
-    \subitem {MRCC\_private.h}, \hyperpage{156}
+    \subitem {MRCC\_private.h}, \hyperpage{291}
   \item {Equal\_53}
-    \subitem {MRCC\_private.h}, \hyperpage{156}
+    \subitem {MRCC\_private.h}, \hyperpage{291}
   \item {Equal\_54}
-    \subitem {MRCC\_private.h}, \hyperpage{157}
+    \subitem {MRCC\_private.h}, \hyperpage{291}
   \item {Equal\_55}
-    \subitem {MRCC\_private.h}, \hyperpage{157}
+    \subitem {MRCC\_private.h}, \hyperpage{292}
   \item {Equal\_56}
-    \subitem {MRCC\_private.h}, \hyperpage{157}
+    \subitem {MRCC\_private.h}, \hyperpage{292}
   \item {Equal\_57}
-    \subitem {MRCC\_private.h}, \hyperpage{157}
+    \subitem {MRCC\_private.h}, \hyperpage{292}
   \item {Equal\_58}
-    \subitem {MRCC\_private.h}, \hyperpage{157}
+    \subitem {MRCC\_private.h}, \hyperpage{292}
   \item {Equal\_59}
-    \subitem {MRCC\_private.h}, \hyperpage{157}
+    \subitem {MRCC\_private.h}, \hyperpage{292}
   \item {Equal\_6}
-    \subitem {MRCC\_private.h}, \hyperpage{149}
+    \subitem {MRCC\_private.h}, \hyperpage{283}
   \item {Equal\_60}
-    \subitem {MRCC\_private.h}, \hyperpage{158}
+    \subitem {MRCC\_private.h}, \hyperpage{292}
   \item {Equal\_61}
-    \subitem {MRCC\_private.h}, \hyperpage{158}
+    \subitem {MRCC\_private.h}, \hyperpage{293}
   \item {Equal\_62}
-    \subitem {MRCC\_private.h}, \hyperpage{158}
+    \subitem {MRCC\_private.h}, \hyperpage{293}
   \item {Equal\_63}
-    \subitem {MRCC\_private.h}, \hyperpage{158}
+    \subitem {MRCC\_private.h}, \hyperpage{293}
   \item {Equal\_7}
-    \subitem {MRCC\_private.h}, \hyperpage{149}
+    \subitem {MRCC\_private.h}, \hyperpage{284}
   \item {Equal\_8}
-    \subitem {MRCC\_private.h}, \hyperpage{149}
+    \subitem {MRCC\_private.h}, \hyperpage{284}
   \item {Equal\_9}
-    \subitem {MRCC\_private.h}, \hyperpage{149}
+    \subitem {MRCC\_private.h}, \hyperpage{284}
+  \item {Exception\_Request}
+    \subitem {SysTick\_config.h}, \hyperpage{310}
+  \item {EXTI Line Settings}, \hyperpage{28}
+    \subitem {EXTI\_MAX\_EXTI\_NUM}, \hyperpage{28}
+  \item {EXTI Lines Status}, \hyperpage{28}
+    \subitem {DISABLE}, \hyperpage{28}
+    \subitem {ENABLE}, \hyperpage{28}
+  \item {EXTI Memory Addresses}, \hyperpage{27}
+    \subitem {EXTI\_BASE\_ADDRESS}, \hyperpage{27}
+  \item {EXTI Registers}, \hyperpage{27}
+    \subitem {MEXTI}, \hyperpage{27}
+  \item {EXTI0}
+    \subitem {NVIC Vector Table}, \hyperpage{66}
+  \item {EXTI0\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{169}
+  \item {EXTI1}
+    \subitem {NVIC Vector Table}, \hyperpage{66}
+  \item {EXTI15\_10}
+    \subitem {NVIC Vector Table}, \hyperpage{73}
+  \item {EXTI15\_10\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{171}
+  \item {EXTI16}
+    \subitem {NVIC Vector Table}, \hyperpage{65}
+  \item {EXTI17}
+    \subitem {NVIC Vector Table}, \hyperpage{73}
+  \item {EXTI18}
+    \subitem {NVIC Vector Table}, \hyperpage{74}
+  \item {EXTI1\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{169}
+  \item {EXTI2}
+    \subitem {NVIC Vector Table}, \hyperpage{66}
+  \item {EXTI21}
+    \subitem {NVIC Vector Table}, \hyperpage{65}
+  \item {EXTI22}
+    \subitem {NVIC Vector Table}, \hyperpage{65}
+  \item {EXTI2\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{169}
+  \item {EXTI3}
+    \subitem {NVIC Vector Table}, \hyperpage{67}
+  \item {EXTI3\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{170}
+  \item {EXTI4}
+    \subitem {NVIC Vector Table}, \hyperpage{67}
+  \item {EXTI4\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{170}
+  \item {EXTI9}
+    \subitem {NVIC Vector Table}, \hyperpage{69}
+  \item {EXTI9\_5\_IRQHandler}
+    \subitem {EXTI\_program.c}, \hyperpage{170}
+  \item {EXTI\_BASE\_ADDRESS}
+    \subitem {EXTI Memory Addresses}, \hyperpage{27}
+  \item {EXTI\_config.h}
+    \subitem {EXTI\_LINE0\_EN}, \hyperpage{145}
+    \subitem {EXTI\_LINE0\_TRIGGER}, \hyperpage{145}
+    \subitem {EXTI\_LINE10\_EN}, \hyperpage{149}
+    \subitem {EXTI\_LINE10\_TRIGGER}, \hyperpage{149}
+    \subitem {EXTI\_LINE11\_EN}, \hyperpage{149}
+    \subitem {EXTI\_LINE11\_TRIGGER}, \hyperpage{149}
+    \subitem {EXTI\_LINE12\_EN}, \hyperpage{149}
+    \subitem {EXTI\_LINE12\_TRIGGER}, \hyperpage{150}
+    \subitem {EXTI\_LINE13\_EN}, \hyperpage{150}
+    \subitem {EXTI\_LINE13\_TRIGGER}, \hyperpage{150}
+    \subitem {EXTI\_LINE14\_EN}, \hyperpage{150}
+    \subitem {EXTI\_LINE14\_TRIGGER}, \hyperpage{150}
+    \subitem {EXTI\_LINE15\_EN}, \hyperpage{150}
+    \subitem {EXTI\_LINE15\_TRIGGER}, \hyperpage{151}
+    \subitem {EXTI\_LINE1\_EN}, \hyperpage{146}
+    \subitem {EXTI\_LINE1\_TRIGGER}, \hyperpage{146}
+    \subitem {EXTI\_LINE2\_EN}, \hyperpage{146}
+    \subitem {EXTI\_LINE2\_TRIGGER}, \hyperpage{146}
+    \subitem {EXTI\_LINE3\_EN}, \hyperpage{146}
+    \subitem {EXTI\_LINE3\_TRIGGER}, \hyperpage{147}
+    \subitem {EXTI\_LINE4\_EN}, \hyperpage{147}
+    \subitem {EXTI\_LINE4\_TRIGGER}, \hyperpage{147}
+    \subitem {EXTI\_LINE5\_EN}, \hyperpage{147}
+    \subitem {EXTI\_LINE5\_TRIGGER}, \hyperpage{147}
+    \subitem {EXTI\_LINE6\_EN}, \hyperpage{147}
+    \subitem {EXTI\_LINE6\_TRIGGER}, \hyperpage{148}
+    \subitem {EXTI\_LINE7\_EN}, \hyperpage{148}
+    \subitem {EXTI\_LINE7\_TRIGGER}, \hyperpage{148}
+    \subitem {EXTI\_LINE8\_EN}, \hyperpage{148}
+    \subitem {EXTI\_LINE8\_TRIGGER}, \hyperpage{148}
+    \subitem {EXTI\_LINE9\_EN}, \hyperpage{148}
+    \subitem {EXTI\_LINE9\_TRIGGER}, \hyperpage{149}
+  \item {EXTI\_ConfigType}, \hyperpage{103}
+    \subitem {LineNum}, \hyperpage{103}
+    \subitem {PortNum}, \hyperpage{103}
+    \subitem {TriggerStatus}, \hyperpage{103}
+  \item {EXTI\_FallingEdge}
+    \subitem {Interrupt trigger status}, \hyperpage{26}
+  \item {EXTI\_interface.h}
+    \subitem {MEXTI\_vDisableLine}, \hyperpage{159}
+    \subitem {MEXTI\_vEnableLine}, \hyperpage{158}
+    \subitem {MEXTI\_vInit}, \hyperpage{155}
+    \subitem {MEXTI\_vInit\_WithStruct}, \hyperpage{158}
+    \subitem {MEXTI\_vSetCallback}, \hyperpage{160}
+    \subitem {MEXTI\_vSetTrigger}, \hyperpage{159}
+    \subitem {MEXTI\_vSWITrigger}, \hyperpage{159}
+    \subitem {MSYSCFG\_vSetEXTIPort}, \hyperpage{160}
+  \item {EXTI\_IRQs}
+    \subitem {EXTI\_private.h}, \hyperpage{162}
+  \item {EXTI\_LINE0}
+    \subitem {Interrupt line IDs}, \hyperpage{22}
+  \item {EXTI\_LINE0\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{145}
+  \item {EXTI\_LINE0\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{145}
+  \item {EXTI\_LINE1}
+    \subitem {Interrupt line IDs}, \hyperpage{22}
+  \item {EXTI\_LINE10}
+    \subitem {Interrupt line IDs}, \hyperpage{24}
+  \item {EXTI\_LINE10\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{149}
+  \item {EXTI\_LINE10\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{149}
+  \item {EXTI\_LINE11}
+    \subitem {Interrupt line IDs}, \hyperpage{24}
+  \item {EXTI\_LINE11\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{149}
+  \item {EXTI\_LINE11\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{149}
+  \item {EXTI\_LINE12}
+    \subitem {Interrupt line IDs}, \hyperpage{24}
+  \item {EXTI\_LINE12\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{149}
+  \item {EXTI\_LINE12\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{150}
+  \item {EXTI\_LINE13}
+    \subitem {Interrupt line IDs}, \hyperpage{25}
+  \item {EXTI\_LINE13\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{150}
+  \item {EXTI\_LINE13\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{150}
+  \item {EXTI\_LINE14}
+    \subitem {Interrupt line IDs}, \hyperpage{25}
+  \item {EXTI\_LINE14\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{150}
+  \item {EXTI\_LINE14\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{150}
+  \item {EXTI\_LINE15}
+    \subitem {Interrupt line IDs}, \hyperpage{25}
+  \item {EXTI\_LINE15\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{150}
+  \item {EXTI\_LINE15\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{151}
+  \item {EXTI\_LINE1\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{146}
+  \item {EXTI\_LINE1\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{146}
+  \item {EXTI\_LINE2}
+    \subitem {Interrupt line IDs}, \hyperpage{22}
+  \item {EXTI\_LINE2\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{146}
+  \item {EXTI\_LINE2\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{146}
+  \item {EXTI\_LINE3}
+    \subitem {Interrupt line IDs}, \hyperpage{22}
+  \item {EXTI\_LINE3\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{146}
+  \item {EXTI\_LINE3\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{147}
+  \item {EXTI\_LINE4}
+    \subitem {Interrupt line IDs}, \hyperpage{22}
+  \item {EXTI\_LINE4\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{147}
+  \item {EXTI\_LINE4\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{147}
+  \item {EXTI\_LINE5}
+    \subitem {Interrupt line IDs}, \hyperpage{23}
+  \item {EXTI\_LINE5\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{147}
+  \item {EXTI\_LINE5\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{147}
+  \item {EXTI\_LINE6}
+    \subitem {Interrupt line IDs}, \hyperpage{23}
+  \item {EXTI\_LINE6\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{147}
+  \item {EXTI\_LINE6\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{148}
+  \item {EXTI\_LINE7}
+    \subitem {Interrupt line IDs}, \hyperpage{23}
+  \item {EXTI\_LINE7\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{148}
+  \item {EXTI\_LINE7\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{148}
+  \item {EXTI\_LINE8}
+    \subitem {Interrupt line IDs}, \hyperpage{23}
+  \item {EXTI\_LINE8\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{148}
+  \item {EXTI\_LINE8\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{148}
+  \item {EXTI\_LINE9}
+    \subitem {Interrupt line IDs}, \hyperpage{24}
+  \item {EXTI\_LINE9\_EN}
+    \subitem {EXTI\_config.h}, \hyperpage{148}
+  \item {EXTI\_LINE9\_TRIGGER}
+    \subitem {EXTI\_config.h}, \hyperpage{149}
+  \item {EXTI\_MAX\_EXTI\_NUM}
+    \subitem {EXTI Line Settings}, \hyperpage{28}
+  \item {EXTI\_OnChange}
+    \subitem {Interrupt trigger status}, \hyperpage{26}
+  \item {EXTI\_private.h}
+    \subitem {EXTI\_IRQs}, \hyperpage{162}
+  \item {EXTI\_program.c}
+    \subitem {EXTI0\_IRQHandler}, \hyperpage{169}
+    \subitem {EXTI15\_10\_IRQHandler}, \hyperpage{171}
+    \subitem {EXTI1\_IRQHandler}, \hyperpage{169}
+    \subitem {EXTI2\_IRQHandler}, \hyperpage{169}
+    \subitem {EXTI3\_IRQHandler}, \hyperpage{170}
+    \subitem {EXTI4\_IRQHandler}, \hyperpage{170}
+    \subitem {EXTI9\_5\_IRQHandler}, \hyperpage{170}
+    \subitem {MEXTI\_vDisableLine}, \hyperpage{167}
+    \subitem {MEXTI\_vEnableLine}, \hyperpage{167}
+    \subitem {MEXTI\_vInit}, \hyperpage{164}
+    \subitem {MEXTI\_vInit\_WithStruct}, \hyperpage{167}
+    \subitem {MEXTI\_vSetCallback}, \hyperpage{168}
+    \subitem {MEXTI\_vSetTrigger}, \hyperpage{168}
+    \subitem {MEXTI\_vSWITrigger}, \hyperpage{167}
+    \subitem {MSYSCFG\_vSetEXTIPort}, \hyperpage{164}
+  \item {EXTI\_RisingEdge}
+    \subitem {Interrupt trigger status}, \hyperpage{26}
+  \item {EXTI\_Type}, \hyperpage{104}
+    \subitem {EMR}, \hyperpage{105}
+    \subitem {FTSR}, \hyperpage{105}
+    \subitem {IMR}, \hyperpage{104}
+    \subitem {PR}, \hyperpage{105}
+    \subitem {RTSR}, \hyperpage{105}
+    \subitem {SWIER}, \hyperpage{105}
+  \item {EXTICR}
+    \subitem {MSYSCFG\_MemMap\_t}, \hyperpage{112}
 
   \indexspace
 
@@ -329,6 +710,12 @@
     \subitem {Standard values}, \hyperpage{19}
   \item {FLAG\_SET}
     \subitem {Standard values}, \hyperpage{19}
+  \item {FLASH}
+    \subitem {NVIC Vector Table}, \hyperpage{65}
+  \item {FPU}
+    \subitem {NVIC Vector Table}, \hyperpage{78}
+  \item {FTSR}
+    \subitem {EXTI\_Type}, \hyperpage{105}
   \item {FUNC}
     \subitem {Compiler standard macros}, \hyperpage{12}
 
@@ -338,766 +725,1137 @@
     \subitem {Bit Manipulation Math Macros}, \hyperpage{10}
   \item {GET\_BITs}
     \subitem {Bit Group Manipulation Math Macros}, \hyperpage{11}
-  \item {GPIO Addresses}, \hyperpage{35}
-    \subitem {GPIOA\_BASE\_ADDRESS}, \hyperpage{35}
-    \subitem {GPIOB\_BASE\_ADDRESS}, \hyperpage{35}
-    \subitem {GPIOC\_BASE\_ADDRESS}, \hyperpage{36}
-  \item {GPIO Alternate Functions}, \hyperpage{30}
-    \subitem {GPIOx\_AF0}, \hyperpage{31}
-    \subitem {GPIOx\_AF1}, \hyperpage{31}
-    \subitem {GPIOx\_AF10}, \hyperpage{33}
-    \subitem {GPIOx\_AF11}, \hyperpage{34}
-    \subitem {GPIOx\_AF12}, \hyperpage{34}
-    \subitem {GPIOx\_AF13}, \hyperpage{34}
-    \subitem {GPIOx\_AF14}, \hyperpage{34}
-    \subitem {GPIOx\_AF15}, \hyperpage{35}
-    \subitem {GPIOx\_AF2}, \hyperpage{31}
-    \subitem {GPIOx\_AF3}, \hyperpage{32}
-    \subitem {GPIOx\_AF4}, \hyperpage{32}
-    \subitem {GPIOx\_AF5}, \hyperpage{32}
-    \subitem {GPIOx\_AF6}, \hyperpage{32}
-    \subitem {GPIOx\_AF7}, \hyperpage{33}
-    \subitem {GPIOx\_AF8}, \hyperpage{33}
-    \subitem {GPIOx\_AF9}, \hyperpage{33}
-  \item {GPIO Modes}, \hyperpage{20}
-    \subitem {GPIOx\_MODE\_AF}, \hyperpage{20}
-    \subitem {GPIOx\_MODE\_ANALOG}, \hyperpage{20}
-    \subitem {GPIOx\_MODE\_INPUT}, \hyperpage{20}
-    \subitem {GPIOx\_MODE\_OUTPUT}, \hyperpage{20}
-  \item {GPIO Output PINs}, \hyperpage{26}
-    \subitem {GPIOx\_PIN0}, \hyperpage{26}
-    \subitem {GPIOx\_PIN1}, \hyperpage{26}
-    \subitem {GPIOx\_PIN10}, \hyperpage{29}
-    \subitem {GPIOx\_PIN11}, \hyperpage{29}
-    \subitem {GPIOx\_PIN12}, \hyperpage{29}
-    \subitem {GPIOx\_PIN13}, \hyperpage{29}
-    \subitem {GPIOx\_PIN14}, \hyperpage{30}
-    \subitem {GPIOx\_PIN15}, \hyperpage{30}
-    \subitem {GPIOx\_PIN2}, \hyperpage{27}
-    \subitem {GPIOx\_PIN3}, \hyperpage{27}
-    \subitem {GPIOx\_PIN4}, \hyperpage{27}
-    \subitem {GPIOx\_PIN5}, \hyperpage{27}
-    \subitem {GPIOx\_PIN6}, \hyperpage{28}
-    \subitem {GPIOx\_PIN7}, \hyperpage{28}
-    \subitem {GPIOx\_PIN8}, \hyperpage{28}
-    \subitem {GPIOx\_PIN9}, \hyperpage{28}
-  \item {GPIO Output Types}, \hyperpage{22}
-    \subitem {GPIOx\_OPENDRAIN}, \hyperpage{22}
-    \subitem {GPIOx\_PUSHPULL}, \hyperpage{22}
-  \item {GPIO Output Values}, \hyperpage{25}
-    \subitem {GPIOx\_HIGH}, \hyperpage{25}
-    \subitem {GPIOx\_LOW}, \hyperpage{25}
-  \item {GPIO PIN Speed}, \hyperpage{23}
-    \subitem {GPIOx\_HighSpeed}, \hyperpage{23}
-    \subitem {GPIOx\_LowSpeed}, \hyperpage{23}
-    \subitem {GPIOx\_MediumSpeed}, \hyperpage{23}
-    \subitem {GPIOx\_VeryHighSpeed}, \hyperpage{23}
-  \item {GPIO Ports}, \hyperpage{21}
-    \subitem {GPIO\_PORTA}, \hyperpage{21}
-    \subitem {GPIO\_PORTB}, \hyperpage{21}
-    \subitem {GPIO\_PORTC}, \hyperpage{21}
-  \item {GPIO Pull Types}, \hyperpage{24}
-    \subitem {GPIOx\_NoPull}, \hyperpage{24}
-    \subitem {GPIOx\_PullDown}, \hyperpage{24}
-    \subitem {GPIOx\_PullUp}, \hyperpage{24}
-  \item {GPIO Registers}, \hyperpage{36}
-    \subitem {GPIOA}, \hyperpage{36}
-    \subitem {GPIOB}, \hyperpage{36}
-    \subitem {GPIOC}, \hyperpage{37}
+  \item {GPIO Addresses}, \hyperpage{45}
+    \subitem {CLK\_SOURCE}, \hyperpage{46}
+    \subitem {GPIOA\_BASE\_ADDRESS}, \hyperpage{45}
+    \subitem {GPIOB\_BASE\_ADDRESS}, \hyperpage{46}
+    \subitem {GPIOC\_BASE\_ADDRESS}, \hyperpage{46}
+  \item {GPIO Alternate Functions}, \hyperpage{41}
+    \subitem {GPIOx\_AF0}, \hyperpage{41}
+    \subitem {GPIOx\_AF1}, \hyperpage{41}
+    \subitem {GPIOx\_AF10}, \hyperpage{44}
+    \subitem {GPIOx\_AF11}, \hyperpage{44}
+    \subitem {GPIOx\_AF12}, \hyperpage{44}
+    \subitem {GPIOx\_AF13}, \hyperpage{44}
+    \subitem {GPIOx\_AF14}, \hyperpage{45}
+    \subitem {GPIOx\_AF15}, \hyperpage{45}
+    \subitem {GPIOx\_AF2}, \hyperpage{42}
+    \subitem {GPIOx\_AF3}, \hyperpage{42}
+    \subitem {GPIOx\_AF4}, \hyperpage{42}
+    \subitem {GPIOx\_AF5}, \hyperpage{42}
+    \subitem {GPIOx\_AF6}, \hyperpage{43}
+    \subitem {GPIOx\_AF7}, \hyperpage{43}
+    \subitem {GPIOx\_AF8}, \hyperpage{43}
+    \subitem {GPIOx\_AF9}, \hyperpage{43}
+  \item {GPIO Modes}, \hyperpage{30}
+    \subitem {GPIOx\_MODE\_AF}, \hyperpage{30}
+    \subitem {GPIOx\_MODE\_ANALOG}, \hyperpage{31}
+    \subitem {GPIOx\_MODE\_INPUT}, \hyperpage{30}
+    \subitem {GPIOx\_MODE\_OUTPUT}, \hyperpage{30}
+  \item {GPIO Output PINs}, \hyperpage{36}
+    \subitem {GPIOx\_PIN0}, \hyperpage{37}
+    \subitem {GPIOx\_PIN1}, \hyperpage{37}
+    \subitem {GPIOx\_PIN10}, \hyperpage{39}
+    \subitem {GPIOx\_PIN11}, \hyperpage{39}
+    \subitem {GPIOx\_PIN12}, \hyperpage{39}
+    \subitem {GPIOx\_PIN13}, \hyperpage{40}
+    \subitem {GPIOx\_PIN14}, \hyperpage{40}
+    \subitem {GPIOx\_PIN15}, \hyperpage{40}
+    \subitem {GPIOx\_PIN2}, \hyperpage{37}
+    \subitem {GPIOx\_PIN3}, \hyperpage{37}
+    \subitem {GPIOx\_PIN4}, \hyperpage{37}
+    \subitem {GPIOx\_PIN5}, \hyperpage{38}
+    \subitem {GPIOx\_PIN6}, \hyperpage{38}
+    \subitem {GPIOx\_PIN7}, \hyperpage{38}
+    \subitem {GPIOx\_PIN8}, \hyperpage{38}
+    \subitem {GPIOx\_PIN9}, \hyperpage{39}
+  \item {GPIO Output Types}, \hyperpage{32}
+    \subitem {GPIOx\_OPENDRAIN}, \hyperpage{32}
+    \subitem {GPIOx\_PUSHPULL}, \hyperpage{32}
+  \item {GPIO Output Values}, \hyperpage{35}
+    \subitem {GPIOx\_HIGH}, \hyperpage{35}
+    \subitem {GPIOx\_LOW}, \hyperpage{35}
+  \item {GPIO PIN Speed}, \hyperpage{33}
+    \subitem {GPIOx\_HighSpeed}, \hyperpage{33}
+    \subitem {GPIOx\_LowSpeed}, \hyperpage{33}
+    \subitem {GPIOx\_MediumSpeed}, \hyperpage{33}
+    \subitem {GPIOx\_VeryHighSpeed}, \hyperpage{34}
+  \item {GPIO Ports}, \hyperpage{31}
+    \subitem {GPIO\_PORTA}, \hyperpage{31}
+    \subitem {GPIO\_PORTB}, \hyperpage{31}
+    \subitem {GPIO\_PORTC}, \hyperpage{32}
+  \item {GPIO Pull Types}, \hyperpage{34}
+    \subitem {GPIOx\_NoPull}, \hyperpage{34}
+    \subitem {GPIOx\_PullDown}, \hyperpage{35}
+    \subitem {GPIOx\_PullUp}, \hyperpage{34}
+  \item {GPIO Registers}, \hyperpage{46}
+    \subitem {GPIOA}, \hyperpage{47}
+    \subitem {GPIOB}, \hyperpage{47}
+    \subitem {GPIOC}, \hyperpage{47}
   \item {GPIO\_config.h}
-    \subitem {GPIOA\_PIN\_POS}, \hyperpage{57}
-    \subitem {GPIOB\_PIN\_POS}, \hyperpage{57}
-    \subitem {LCKK\_BIT\_POS}, \hyperpage{57}
+    \subitem {GPIOA\_PIN\_POS}, \hyperpage{179}
+    \subitem {GPIOB\_PIN\_POS}, \hyperpage{179}
+    \subitem {LCKK\_BIT\_POS}, \hyperpage{179}
   \item {GPIO\_interface.h}
-    \subitem {MGPIOx\_u8GetPinValue}, \hyperpage{64}
-    \subitem {MGPIOx\_vInit}, \hyperpage{65}
-    \subitem {MGPIOx\_vLockedPins}, \hyperpage{61}
-    \subitem {MGPIOx\_vSetAlternateFunctionON}, \hyperpage{65}
-    \subitem {MGPIOx\_vSetPinInputPullType}, \hyperpage{62}
-    \subitem {MGPIOx\_vSetPinMode}, \hyperpage{61}
-    \subitem {MGPIOx\_vSetPinOutputSpeed}, \hyperpage{62}
-    \subitem {MGPIOx\_vSetPinOutputType}, \hyperpage{62}
-    \subitem {MGPIOx\_vSetPinValue}, \hyperpage{64}
-    \subitem {MGPIOx\_vSetPortConfigLock}, \hyperpage{65}
-    \subitem {MGPIOx\_vSetResetAtomic}, \hyperpage{64}
-    \subitem {MGPIOx\_vTogglePinValue}, \hyperpage{66}
+    \subitem {MGPIOx\_u8GetPinValue}, \hyperpage{185}
+    \subitem {MGPIOx\_vInit}, \hyperpage{188}
+    \subitem {MGPIOx\_vLockedPins}, \hyperpage{183}
+    \subitem {MGPIOx\_vSetAlternateFunctionON}, \hyperpage{186}
+    \subitem {MGPIOx\_vSetPinInputPullType}, \hyperpage{185}
+    \subitem {MGPIOx\_vSetPinMode}, \hyperpage{183}
+    \subitem {MGPIOx\_vSetPinOutputSpeed}, \hyperpage{184}
+    \subitem {MGPIOx\_vSetPinOutputType}, \hyperpage{184}
+    \subitem {MGPIOx\_vSetPinValue}, \hyperpage{185}
+    \subitem {MGPIOx\_vSetPortConfigLock}, \hyperpage{186}
+    \subitem {MGPIOx\_vSetResetAtomic}, \hyperpage{186}
+    \subitem {MGPIOx\_vTogglePinValue}, \hyperpage{188}
   \item {GPIO\_PORTA}
-    \subitem {GPIO Ports}, \hyperpage{21}
+    \subitem {GPIO Ports}, \hyperpage{31}
   \item {GPIO\_PORTB}
-    \subitem {GPIO Ports}, \hyperpage{21}
+    \subitem {GPIO Ports}, \hyperpage{31}
   \item {GPIO\_PORTC}
-    \subitem {GPIO Ports}, \hyperpage{21}
+    \subitem {GPIO Ports}, \hyperpage{32}
   \item {GPIO\_program.c}
-    \subitem {MGPIOx\_u8GetPinValue}, \hyperpage{73}
-    \subitem {MGPIOx\_vInit}, \hyperpage{76}
-    \subitem {MGPIOx\_vLockedPins}, \hyperpage{70}
-    \subitem {MGPIOx\_vSetAlternateFunctionON}, \hyperpage{75}
-    \subitem {MGPIOx\_vSetPinInputPullType}, \hyperpage{72}
-    \subitem {MGPIOx\_vSetPinMode}, \hyperpage{71}
-    \subitem {MGPIOx\_vSetPinOutputSpeed}, \hyperpage{72}
-    \subitem {MGPIOx\_vSetPinOutputType}, \hyperpage{71}
-    \subitem {MGPIOx\_vSetPinValue}, \hyperpage{73}
-    \subitem {MGPIOx\_vSetResetAtomic}, \hyperpage{74}
-    \subitem {MGPIOx\_vTogglePinValue}, \hyperpage{77}
+    \subitem {MGPIOx\_u8GetPinValue}, \hyperpage{195}
+    \subitem {MGPIOx\_vInit}, \hyperpage{199}
+    \subitem {MGPIOx\_vLockedPins}, \hyperpage{192}
+    \subitem {MGPIOx\_vSetAlternateFunctionON}, \hyperpage{197}
+    \subitem {MGPIOx\_vSetPinInputPullType}, \hyperpage{195}
+    \subitem {MGPIOx\_vSetPinMode}, \hyperpage{193}
+    \subitem {MGPIOx\_vSetPinOutputSpeed}, \hyperpage{194}
+    \subitem {MGPIOx\_vSetPinOutputType}, \hyperpage{194}
+    \subitem {MGPIOx\_vSetPinValue}, \hyperpage{196}
+    \subitem {MGPIOx\_vSetResetAtomic}, \hyperpage{197}
+    \subitem {MGPIOx\_vTogglePinValue}, \hyperpage{199}
   \item {GPIOA}
-    \subitem {GPIO Registers}, \hyperpage{36}
+    \subitem {GPIO Registers}, \hyperpage{47}
   \item {GPIOA\_BASE\_ADDRESS}
-    \subitem {GPIO Addresses}, \hyperpage{35}
+    \subitem {GPIO Addresses}, \hyperpage{45}
   \item {GPIOA\_PIN\_POS}
-    \subitem {GPIO\_config.h}, \hyperpage{57}
+    \subitem {GPIO\_config.h}, \hyperpage{179}
   \item {GPIOACLK}
-    \subitem {MRCC\_config.h}, \hyperpage{89}
+    \subitem {MRCC\_config.h}, \hyperpage{230}
   \item {GPIOB}
-    \subitem {GPIO Registers}, \hyperpage{36}
+    \subitem {GPIO Registers}, \hyperpage{47}
   \item {GPIOB\_BASE\_ADDRESS}
-    \subitem {GPIO Addresses}, \hyperpage{35}
+    \subitem {GPIO Addresses}, \hyperpage{46}
   \item {GPIOB\_PIN\_POS}
-    \subitem {GPIO\_config.h}, \hyperpage{57}
+    \subitem {GPIO\_config.h}, \hyperpage{179}
   \item {GPIOBCLK}
-    \subitem {MRCC\_config.h}, \hyperpage{89}
+    \subitem {MRCC\_config.h}, \hyperpage{230}
   \item {GPIOC}
-    \subitem {GPIO Registers}, \hyperpage{37}
+    \subitem {GPIO Registers}, \hyperpage{47}
   \item {GPIOC\_BASE\_ADDRESS}
-    \subitem {GPIO Addresses}, \hyperpage{36}
+    \subitem {GPIO Addresses}, \hyperpage{46}
   \item {GPIOCCLK}
-    \subitem {MRCC\_config.h}, \hyperpage{89}
+    \subitem {MRCC\_config.h}, \hyperpage{230}
   \item {GPIODCLK}
-    \subitem {MRCC\_config.h}, \hyperpage{89}
+    \subitem {MRCC\_config.h}, \hyperpage{230}
   \item {GPIOECLK}
-    \subitem {MRCC\_config.h}, \hyperpage{89}
+    \subitem {MRCC\_config.h}, \hyperpage{229}
   \item {GPIOHCLK}
-    \subitem {MRCC\_config.h}, \hyperpage{88}
+    \subitem {MRCC\_config.h}, \hyperpage{229}
   \item {GPIOx\_AF0}
-    \subitem {GPIO Alternate Functions}, \hyperpage{31}
+    \subitem {GPIO Alternate Functions}, \hyperpage{41}
   \item {GPIOx\_AF1}
-    \subitem {GPIO Alternate Functions}, \hyperpage{31}
+    \subitem {GPIO Alternate Functions}, \hyperpage{41}
   \item {GPIOx\_AF10}
-    \subitem {GPIO Alternate Functions}, \hyperpage{33}
+    \subitem {GPIO Alternate Functions}, \hyperpage{44}
   \item {GPIOx\_AF11}
-    \subitem {GPIO Alternate Functions}, \hyperpage{34}
+    \subitem {GPIO Alternate Functions}, \hyperpage{44}
   \item {GPIOx\_AF12}
-    \subitem {GPIO Alternate Functions}, \hyperpage{34}
+    \subitem {GPIO Alternate Functions}, \hyperpage{44}
   \item {GPIOx\_AF13}
-    \subitem {GPIO Alternate Functions}, \hyperpage{34}
+    \subitem {GPIO Alternate Functions}, \hyperpage{44}
   \item {GPIOx\_AF14}
-    \subitem {GPIO Alternate Functions}, \hyperpage{34}
+    \subitem {GPIO Alternate Functions}, \hyperpage{45}
   \item {GPIOx\_AF15}
-    \subitem {GPIO Alternate Functions}, \hyperpage{35}
+    \subitem {GPIO Alternate Functions}, \hyperpage{45}
   \item {GPIOx\_AF2}
-    \subitem {GPIO Alternate Functions}, \hyperpage{31}
+    \subitem {GPIO Alternate Functions}, \hyperpage{42}
   \item {GPIOx\_AF3}
-    \subitem {GPIO Alternate Functions}, \hyperpage{32}
+    \subitem {GPIO Alternate Functions}, \hyperpage{42}
   \item {GPIOx\_AF4}
-    \subitem {GPIO Alternate Functions}, \hyperpage{32}
+    \subitem {GPIO Alternate Functions}, \hyperpage{42}
   \item {GPIOx\_AF5}
-    \subitem {GPIO Alternate Functions}, \hyperpage{32}
+    \subitem {GPIO Alternate Functions}, \hyperpage{42}
   \item {GPIOx\_AF6}
-    \subitem {GPIO Alternate Functions}, \hyperpage{32}
+    \subitem {GPIO Alternate Functions}, \hyperpage{43}
   \item {GPIOx\_AF7}
-    \subitem {GPIO Alternate Functions}, \hyperpage{33}
+    \subitem {GPIO Alternate Functions}, \hyperpage{43}
   \item {GPIOx\_AF8}
-    \subitem {GPIO Alternate Functions}, \hyperpage{33}
+    \subitem {GPIO Alternate Functions}, \hyperpage{43}
   \item {GPIOx\_AF9}
-    \subitem {GPIO Alternate Functions}, \hyperpage{33}
+    \subitem {GPIO Alternate Functions}, \hyperpage{43}
   \item {GPIOx\_HIGH}
-    \subitem {GPIO Output Values}, \hyperpage{25}
+    \subitem {GPIO Output Values}, \hyperpage{35}
   \item {GPIOx\_HighSpeed}
-    \subitem {GPIO PIN Speed}, \hyperpage{23}
+    \subitem {GPIO PIN Speed}, \hyperpage{33}
   \item {GPIOx\_LOW}
-    \subitem {GPIO Output Values}, \hyperpage{25}
+    \subitem {GPIO Output Values}, \hyperpage{35}
   \item {GPIOx\_LowSpeed}
-    \subitem {GPIO PIN Speed}, \hyperpage{23}
+    \subitem {GPIO PIN Speed}, \hyperpage{33}
   \item {GPIOx\_MediumSpeed}
-    \subitem {GPIO PIN Speed}, \hyperpage{23}
-  \item {GPIOx\_MemoryMapType}, \hyperpage{39}
-    \subitem {AFRHx}, \hyperpage{41}
-    \subitem {AFRLx}, \hyperpage{41}
-    \subitem {BSRRx}, \hyperpage{41}
-    \subitem {IDRx}, \hyperpage{40}
-    \subitem {LCKRx}, \hyperpage{41}
-    \subitem {MODERx}, \hyperpage{40}
-    \subitem {ODRx}, \hyperpage{40}
-    \subitem {OSPEEDRx}, \hyperpage{40}
-    \subitem {OTYPERx}, \hyperpage{40}
-    \subitem {PUPDRx}, \hyperpage{40}
+    \subitem {GPIO PIN Speed}, \hyperpage{33}
+  \item {GPIOx\_MemoryMapType}, \hyperpage{106}
+    \subitem {AFRHx}, \hyperpage{108}
+    \subitem {AFRLx}, \hyperpage{108}
+    \subitem {BSRRx}, \hyperpage{108}
+    \subitem {IDRx}, \hyperpage{107}
+    \subitem {LCKRx}, \hyperpage{108}
+    \subitem {MODERx}, \hyperpage{107}
+    \subitem {ODRx}, \hyperpage{107}
+    \subitem {OSPEEDRx}, \hyperpage{107}
+    \subitem {OTYPERx}, \hyperpage{107}
+    \subitem {PUPDRx}, \hyperpage{107}
   \item {GPIOx\_MODE\_AF}
-    \subitem {GPIO Modes}, \hyperpage{20}
+    \subitem {GPIO Modes}, \hyperpage{30}
   \item {GPIOx\_MODE\_ANALOG}
-    \subitem {GPIO Modes}, \hyperpage{20}
+    \subitem {GPIO Modes}, \hyperpage{31}
   \item {GPIOx\_MODE\_INPUT}
-    \subitem {GPIO Modes}, \hyperpage{20}
+    \subitem {GPIO Modes}, \hyperpage{30}
   \item {GPIOx\_MODE\_OUTPUT}
-    \subitem {GPIO Modes}, \hyperpage{20}
+    \subitem {GPIO Modes}, \hyperpage{30}
   \item {GPIOx\_NoPull}
-    \subitem {GPIO Pull Types}, \hyperpage{24}
+    \subitem {GPIO Pull Types}, \hyperpage{34}
   \item {GPIOx\_OPENDRAIN}
-    \subitem {GPIO Output Types}, \hyperpage{22}
+    \subitem {GPIO Output Types}, \hyperpage{32}
   \item {GPIOx\_PIN0}
-    \subitem {GPIO Output PINs}, \hyperpage{26}
+    \subitem {GPIO Output PINs}, \hyperpage{37}
   \item {GPIOx\_PIN1}
-    \subitem {GPIO Output PINs}, \hyperpage{26}
+    \subitem {GPIO Output PINs}, \hyperpage{37}
   \item {GPIOx\_PIN10}
-    \subitem {GPIO Output PINs}, \hyperpage{29}
+    \subitem {GPIO Output PINs}, \hyperpage{39}
   \item {GPIOx\_PIN11}
-    \subitem {GPIO Output PINs}, \hyperpage{29}
+    \subitem {GPIO Output PINs}, \hyperpage{39}
   \item {GPIOx\_PIN12}
-    \subitem {GPIO Output PINs}, \hyperpage{29}
+    \subitem {GPIO Output PINs}, \hyperpage{39}
   \item {GPIOx\_PIN13}
-    \subitem {GPIO Output PINs}, \hyperpage{29}
+    \subitem {GPIO Output PINs}, \hyperpage{40}
   \item {GPIOx\_PIN14}
-    \subitem {GPIO Output PINs}, \hyperpage{30}
+    \subitem {GPIO Output PINs}, \hyperpage{40}
   \item {GPIOx\_PIN15}
-    \subitem {GPIO Output PINs}, \hyperpage{30}
+    \subitem {GPIO Output PINs}, \hyperpage{40}
   \item {GPIOx\_PIN2}
-    \subitem {GPIO Output PINs}, \hyperpage{27}
+    \subitem {GPIO Output PINs}, \hyperpage{37}
   \item {GPIOx\_PIN3}
-    \subitem {GPIO Output PINs}, \hyperpage{27}
+    \subitem {GPIO Output PINs}, \hyperpage{37}
   \item {GPIOx\_PIN4}
-    \subitem {GPIO Output PINs}, \hyperpage{27}
+    \subitem {GPIO Output PINs}, \hyperpage{37}
   \item {GPIOx\_PIN5}
-    \subitem {GPIO Output PINs}, \hyperpage{27}
+    \subitem {GPIO Output PINs}, \hyperpage{38}
   \item {GPIOx\_PIN6}
-    \subitem {GPIO Output PINs}, \hyperpage{28}
+    \subitem {GPIO Output PINs}, \hyperpage{38}
   \item {GPIOx\_PIN7}
-    \subitem {GPIO Output PINs}, \hyperpage{28}
+    \subitem {GPIO Output PINs}, \hyperpage{38}
   \item {GPIOx\_PIN8}
-    \subitem {GPIO Output PINs}, \hyperpage{28}
+    \subitem {GPIO Output PINs}, \hyperpage{38}
   \item {GPIOx\_PIN9}
-    \subitem {GPIO Output PINs}, \hyperpage{28}
+    \subitem {GPIO Output PINs}, \hyperpage{39}
   \item {GPIOx\_PullDown}
-    \subitem {GPIO Pull Types}, \hyperpage{24}
+    \subitem {GPIO Pull Types}, \hyperpage{35}
   \item {GPIOx\_PullUp}
-    \subitem {GPIO Pull Types}, \hyperpage{24}
+    \subitem {GPIO Pull Types}, \hyperpage{34}
   \item {GPIOx\_PUSHPULL}
-    \subitem {GPIO Output Types}, \hyperpage{22}
+    \subitem {GPIO Output Types}, \hyperpage{32}
   \item {GPIOx\_VeryHighSpeed}
-    \subitem {GPIO PIN Speed}, \hyperpage{23}
+    \subitem {GPIO PIN Speed}, \hyperpage{34}
+  \item {Group priorities}, \hyperpage{51}
+    \subitem {GROUP\_PRIORITY\_0}, \hyperpage{53}
+    \subitem {GROUP\_PRIORITY\_1}, \hyperpage{53}
+    \subitem {GROUP\_PRIORITY\_10}, \hyperpage{55}
+    \subitem {GROUP\_PRIORITY\_11}, \hyperpage{55}
+    \subitem {GROUP\_PRIORITY\_12}, \hyperpage{56}
+    \subitem {GROUP\_PRIORITY\_13}, \hyperpage{56}
+    \subitem {GROUP\_PRIORITY\_14}, \hyperpage{56}
+    \subitem {GROUP\_PRIORITY\_15}, \hyperpage{56}
+    \subitem {GROUP\_PRIORITY\_2}, \hyperpage{53}
+    \subitem {GROUP\_PRIORITY\_3}, \hyperpage{53}
+    \subitem {GROUP\_PRIORITY\_4}, \hyperpage{54}
+    \subitem {GROUP\_PRIORITY\_5}, \hyperpage{54}
+    \subitem {GROUP\_PRIORITY\_6}, \hyperpage{54}
+    \subitem {GROUP\_PRIORITY\_7}, \hyperpage{54}
+    \subitem {GROUP\_PRIORITY\_8}, \hyperpage{55}
+    \subitem {GROUP\_PRIORITY\_9}, \hyperpage{55}
+    \subitem {NO\_GROUP\_PRIORITY}, \hyperpage{52}
+  \item {GROUP\_0BITS}
+    \subitem {Interrupt priority grouping}, \hyperpage{51}
+  \item {GROUP\_1BITS}
+    \subitem {Interrupt priority grouping}, \hyperpage{51}
+  \item {GROUP\_2BITS}
+    \subitem {Interrupt priority grouping}, \hyperpage{50}
+  \item {GROUP\_3BITS}
+    \subitem {Interrupt priority grouping}, \hyperpage{50}
+  \item {GROUP\_4BITS}
+    \subitem {Interrupt priority grouping}, \hyperpage{50}
+  \item {GROUP\_PRIORITY\_0}
+    \subitem {Group priorities}, \hyperpage{53}
+  \item {GROUP\_PRIORITY\_1}
+    \subitem {Group priorities}, \hyperpage{53}
+  \item {GROUP\_PRIORITY\_10}
+    \subitem {Group priorities}, \hyperpage{55}
+  \item {GROUP\_PRIORITY\_11}
+    \subitem {Group priorities}, \hyperpage{55}
+  \item {GROUP\_PRIORITY\_12}
+    \subitem {Group priorities}, \hyperpage{56}
+  \item {GROUP\_PRIORITY\_13}
+    \subitem {Group priorities}, \hyperpage{56}
+  \item {GROUP\_PRIORITY\_14}
+    \subitem {Group priorities}, \hyperpage{56}
+  \item {GROUP\_PRIORITY\_15}
+    \subitem {Group priorities}, \hyperpage{56}
+  \item {GROUP\_PRIORITY\_2}
+    \subitem {Group priorities}, \hyperpage{53}
+  \item {GROUP\_PRIORITY\_3}
+    \subitem {Group priorities}, \hyperpage{53}
+  \item {GROUP\_PRIORITY\_4}
+    \subitem {Group priorities}, \hyperpage{54}
+  \item {GROUP\_PRIORITY\_5}
+    \subitem {Group priorities}, \hyperpage{54}
+  \item {GROUP\_PRIORITY\_6}
+    \subitem {Group priorities}, \hyperpage{54}
+  \item {GROUP\_PRIORITY\_7}
+    \subitem {Group priorities}, \hyperpage{54}
+  \item {GROUP\_PRIORITY\_8}
+    \subitem {Group priorities}, \hyperpage{55}
+  \item {GROUP\_PRIORITY\_9}
+    \subitem {Group priorities}, \hyperpage{55}
 
   \indexspace
 
+  \item {HDCM\_vInitMotor}
+    \subitem {DCM\_interface.h}, \hyperpage{134}
+    \subitem {DCM\_program.c}, \hyperpage{137}
+  \item {HDCM\_vMoveBackward}
+    \subitem {DCM\_interface.h}, \hyperpage{135}
+    \subitem {DCM\_program.c}, \hyperpage{138}
+  \item {HDCM\_vMoveForward}
+    \subitem {DCM\_interface.h}, \hyperpage{135}
+    \subitem {DCM\_program.c}, \hyperpage{138}
+  \item {HDCM\_vStopMotor}
+    \subitem {DCM\_interface.h}, \hyperpage{135}
+    \subitem {DCM\_program.c}, \hyperpage{138}
+  \item {HFSR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{130}
   \item {HPRE}
-    \subitem {MRCC\_config.h}, \hyperpage{87}
+    \subitem {MRCC\_config.h}, \hyperpage{228}
   \item {HSE}
-    \subitem {MRCC\_private.h}, \hyperpage{138}
+    \subitem {MRCC\_private.h}, \hyperpage{273}
   \item {HSE\_EN}
-    \subitem {MRCC\_config.h}, \hyperpage{85}
+    \subitem {MRCC\_config.h}, \hyperpage{226}
   \item {HSEby10}
-    \subitem {MRCC\_private.h}, \hyperpage{143}
+    \subitem {MRCC\_private.h}, \hyperpage{278}
   \item {HSEby11}
-    \subitem {MRCC\_private.h}, \hyperpage{143}
+    \subitem {MRCC\_private.h}, \hyperpage{278}
   \item {HSEby12}
-    \subitem {MRCC\_private.h}, \hyperpage{144}
+    \subitem {MRCC\_private.h}, \hyperpage{278}
   \item {HSEby13}
-    \subitem {MRCC\_private.h}, \hyperpage{144}
+    \subitem {MRCC\_private.h}, \hyperpage{279}
   \item {HSEby14}
-    \subitem {MRCC\_private.h}, \hyperpage{144}
+    \subitem {MRCC\_private.h}, \hyperpage{279}
   \item {HSEby15}
-    \subitem {MRCC\_private.h}, \hyperpage{144}
+    \subitem {MRCC\_private.h}, \hyperpage{279}
   \item {HSEby16}
-    \subitem {MRCC\_private.h}, \hyperpage{144}
+    \subitem {MRCC\_private.h}, \hyperpage{279}
   \item {HSEby17}
-    \subitem {MRCC\_private.h}, \hyperpage{144}
+    \subitem {MRCC\_private.h}, \hyperpage{279}
   \item {HSEby18}
-    \subitem {MRCC\_private.h}, \hyperpage{145}
+    \subitem {MRCC\_private.h}, \hyperpage{279}
   \item {HSEby19}
-    \subitem {MRCC\_private.h}, \hyperpage{145}
+    \subitem {MRCC\_private.h}, \hyperpage{280}
   \item {HSEby2}
-    \subitem {MRCC\_private.h}, \hyperpage{142}
+    \subitem {MRCC\_private.h}, \hyperpage{277}
   \item {HSEby20}
-    \subitem {MRCC\_private.h}, \hyperpage{145}
+    \subitem {MRCC\_private.h}, \hyperpage{280}
   \item {HSEby21}
-    \subitem {MRCC\_private.h}, \hyperpage{145}
+    \subitem {MRCC\_private.h}, \hyperpage{280}
   \item {HSEby22}
-    \subitem {MRCC\_private.h}, \hyperpage{145}
+    \subitem {MRCC\_private.h}, \hyperpage{280}
   \item {HSEby23}
-    \subitem {MRCC\_private.h}, \hyperpage{145}
+    \subitem {MRCC\_private.h}, \hyperpage{280}
   \item {HSEby24}
-    \subitem {MRCC\_private.h}, \hyperpage{146}
+    \subitem {MRCC\_private.h}, \hyperpage{280}
   \item {HSEby25}
-    \subitem {MRCC\_private.h}, \hyperpage{146}
+    \subitem {MRCC\_private.h}, \hyperpage{281}
   \item {HSEby26}
-    \subitem {MRCC\_private.h}, \hyperpage{146}
+    \subitem {MRCC\_private.h}, \hyperpage{281}
   \item {HSEby27}
-    \subitem {MRCC\_private.h}, \hyperpage{146}
+    \subitem {MRCC\_private.h}, \hyperpage{281}
   \item {HSEby28}
-    \subitem {MRCC\_private.h}, \hyperpage{146}
+    \subitem {MRCC\_private.h}, \hyperpage{281}
   \item {HSEby29}
-    \subitem {MRCC\_private.h}, \hyperpage{146}
+    \subitem {MRCC\_private.h}, \hyperpage{281}
   \item {HSEby3}
-    \subitem {MRCC\_private.h}, \hyperpage{142}
+    \subitem {MRCC\_private.h}, \hyperpage{277}
   \item {HSEby30}
-    \subitem {MRCC\_private.h}, \hyperpage{147}
+    \subitem {MRCC\_private.h}, \hyperpage{281}
   \item {HSEby31}
-    \subitem {MRCC\_private.h}, \hyperpage{147}
+    \subitem {MRCC\_private.h}, \hyperpage{282}
   \item {HSEby4}
-    \subitem {MRCC\_private.h}, \hyperpage{142}
+    \subitem {MRCC\_private.h}, \hyperpage{277}
   \item {HSEby5}
-    \subitem {MRCC\_private.h}, \hyperpage{142}
+    \subitem {MRCC\_private.h}, \hyperpage{277}
   \item {HSEby6}
-    \subitem {MRCC\_private.h}, \hyperpage{143}
+    \subitem {MRCC\_private.h}, \hyperpage{277}
   \item {HSEby7}
-    \subitem {MRCC\_private.h}, \hyperpage{143}
+    \subitem {MRCC\_private.h}, \hyperpage{278}
   \item {HSEby8}
-    \subitem {MRCC\_private.h}, \hyperpage{143}
+    \subitem {MRCC\_private.h}, \hyperpage{278}
   \item {HSEby9}
-    \subitem {MRCC\_private.h}, \hyperpage{143}
+    \subitem {MRCC\_private.h}, \hyperpage{278}
   \item {HSEBYP}
-    \subitem {MRCC\_config.h}, \hyperpage{85}
+    \subitem {MRCC\_config.h}, \hyperpage{226}
   \item {HSI}
-    \subitem {MRCC\_private.h}, \hyperpage{140}
+    \subitem {MRCC\_private.h}, \hyperpage{275}
   \item {HSI\_EN}
-    \subitem {MRCC\_config.h}, \hyperpage{85}
+    \subitem {MRCC\_config.h}, \hyperpage{226}
 
   \indexspace
 
+  \item {I2C1\_ER}
+    \subitem {NVIC Vector Table}, \hyperpage{71}
+  \item {I2C1\_EV}
+    \subitem {NVIC Vector Table}, \hyperpage{71}
   \item {I2C1EN}
-    \subitem {MRCC\_config.h}, \hyperpage{90}
+    \subitem {MRCC\_config.h}, \hyperpage{231}
+  \item {I2C2\_ER}
+    \subitem {NVIC Vector Table}, \hyperpage{72}
+  \item {I2C2\_EV}
+    \subitem {NVIC Vector Table}, \hyperpage{72}
   \item {I2C2EN}
-    \subitem {MRCC\_config.h}, \hyperpage{90}
+    \subitem {MRCC\_config.h}, \hyperpage{231}
+  \item {I2C3\_ER}
+    \subitem {NVIC Vector Table}, \hyperpage{78}
+  \item {I2C3\_EV}
+    \subitem {NVIC Vector Table}, \hyperpage{77}
   \item {I2C3EN}
-    \subitem {MRCC\_config.h}, \hyperpage{90}
+    \subitem {MRCC\_config.h}, \hyperpage{231}
   \item {I2S\_CKIN}
-    \subitem {MRCC\_private.h}, \hyperpage{140}
+    \subitem {MRCC\_private.h}, \hyperpage{274}
   \item {I2SSRC}
-    \subitem {MRCC\_config.h}, \hyperpage{87}
+    \subitem {MRCC\_config.h}, \hyperpage{227}
+  \item {IABRx}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{116}
+  \item {ICERx}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{114}
+  \item {ICPRx}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{115}
+  \item {ICSR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{127}
+  \item {ID options}, \hyperpage{82}, \hyperpage{84}
+    \subitem {AHB1ENR\_CRCEN}, \hyperpage{85}
+    \subitem {AHB1ENR\_DMA1EN}, \hyperpage{85}
+    \subitem {AHB1ENR\_DMA2EN}, \hyperpage{85}
+    \subitem {AHB1ENR\_GPIOAEN}, \hyperpage{87}
+    \subitem {AHB1ENR\_GPIOBEN}, \hyperpage{87}
+    \subitem {AHB1ENR\_GPIOCEN}, \hyperpage{86}
+    \subitem {AHB1ENR\_GPIODEN}, \hyperpage{86}
+    \subitem {AHB1ENR\_GPIOEEN}, \hyperpage{86}
+    \subitem {AHB1ENR\_GPIOHEN}, \hyperpage{86}
+    \subitem {AHB1LPENR\_FLITFLPEN}, \hyperpage{93}
+    \subitem {AHB2ENR\_OTGFSEN}, \hyperpage{87}
+    \subitem {APB1ENR\_I2C1EN}, \hyperpage{88}
+    \subitem {APB1ENR\_I2C2EN}, \hyperpage{88}
+    \subitem {APB1ENR\_I2C3EN}, \hyperpage{88}
+    \subitem {APB1ENR\_PWREN}, \hyperpage{87}
+    \subitem {APB1ENR\_SPI2EN}, \hyperpage{89}
+    \subitem {APB1ENR\_SPI3EN}, \hyperpage{89}
+    \subitem {APB1ENR\_TIM2EN}, \hyperpage{90}
+    \subitem {APB1ENR\_TIM3EN}, \hyperpage{90}
+    \subitem {APB1ENR\_TIM4EN}, \hyperpage{90}
+    \subitem {APB1ENR\_TIM5EN}, \hyperpage{89}
+    \subitem {APB1ENR\_USART2EN}, \hyperpage{88}
+    \subitem {APB1ENR\_WWDGEN}, \hyperpage{89}
+    \subitem {APB2ENR\_ADC1EN}, \hyperpage{92}
+    \subitem {APB2ENR\_SDIOEN}, \hyperpage{92}
+    \subitem {APB2ENR\_SPI1EN}, \hyperpage{92}
+    \subitem {APB2ENR\_SPI4EN}, \hyperpage{91}
+    \subitem {APB2ENR\_SYSCFGEN}, \hyperpage{91}
+    \subitem {APB2ENR\_TIM10EN}, \hyperpage{91}
+    \subitem {APB2ENR\_TIM11EN}, \hyperpage{90}
+    \subitem {APB2ENR\_TIM1EN}, \hyperpage{93}
+    \subitem {APB2ENR\_TIM9EN}, \hyperpage{91}
+    \subitem {APB2ENR\_USART1EN}, \hyperpage{93}
+    \subitem {APB2ENR\_USART6EN}, \hyperpage{92}
+    \subitem {RCC\_AHB1}, \hyperpage{82}
+    \subitem {RCC\_AHB1LPENR}, \hyperpage{83}
+    \subitem {RCC\_AHB2}, \hyperpage{82}
+    \subitem {RCC\_APB1}, \hyperpage{83}
+    \subitem {RCC\_APB2}, \hyperpage{83}
   \item {IDRx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{40}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{107}
+  \item {IMR}
+    \subitem {EXTI\_Type}, \hyperpage{104}
   \item {INITIAL\_ZERO}
     \subitem {Standard values}, \hyperpage{19}
   \item {InputType}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{43}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{110}
+  \item {Interrupt line IDs}, \hyperpage{21}
+    \subitem {EXTI\_LINE0}, \hyperpage{22}
+    \subitem {EXTI\_LINE1}, \hyperpage{22}
+    \subitem {EXTI\_LINE10}, \hyperpage{24}
+    \subitem {EXTI\_LINE11}, \hyperpage{24}
+    \subitem {EXTI\_LINE12}, \hyperpage{24}
+    \subitem {EXTI\_LINE13}, \hyperpage{25}
+    \subitem {EXTI\_LINE14}, \hyperpage{25}
+    \subitem {EXTI\_LINE15}, \hyperpage{25}
+    \subitem {EXTI\_LINE2}, \hyperpage{22}
+    \subitem {EXTI\_LINE3}, \hyperpage{22}
+    \subitem {EXTI\_LINE4}, \hyperpage{22}
+    \subitem {EXTI\_LINE5}, \hyperpage{23}
+    \subitem {EXTI\_LINE6}, \hyperpage{23}
+    \subitem {EXTI\_LINE7}, \hyperpage{23}
+    \subitem {EXTI\_LINE8}, \hyperpage{23}
+    \subitem {EXTI\_LINE9}, \hyperpage{24}
+  \item {Interrupt priority grouping}, \hyperpage{47}
+    \subitem {\_16GROUP\_NoSub\_Priorities}, \hyperpage{48}
+    \subitem {\_2GROUP\_8Sub\_Priorities}, \hyperpage{49}
+    \subitem {\_4GROUP\_4Sub\_Priorities}, \hyperpage{49}
+    \subitem {\_8GROUP\_2Sub\_Priorities}, \hyperpage{48}
+    \subitem {GROUP\_0BITS}, \hyperpage{51}
+    \subitem {GROUP\_1BITS}, \hyperpage{51}
+    \subitem {GROUP\_2BITS}, \hyperpage{50}
+    \subitem {GROUP\_3BITS}, \hyperpage{50}
+    \subitem {GROUP\_4BITS}, \hyperpage{50}
+    \subitem {NoGROUP\_16Sub\_Priorities}, \hyperpage{49}
+  \item {Interrupt trigger status}, \hyperpage{26}
+    \subitem {EXTI\_FallingEdge}, \hyperpage{26}
+    \subitem {EXTI\_OnChange}, \hyperpage{26}
+    \subitem {EXTI\_RisingEdge}, \hyperpage{26}
+  \item {IPRx}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{116}
+  \item {ISERx}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{113}
+  \item {ISPRx}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{114}
 
   \indexspace
 
   \item {LCKK\_BIT\_POS}
-    \subitem {GPIO\_config.h}, \hyperpage{57}
+    \subitem {GPIO\_config.h}, \hyperpage{179}
   \item {LCKRx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{41}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{108}
+  \item {LineNum}
+    \subitem {EXTI\_ConfigType}, \hyperpage{103}
+  \item {LOAD}
+    \subitem {SysTick\_Type}, \hyperpage{132}
   \item {LSE}
-    \subitem {MRCC\_private.h}, \hyperpage{140}
+    \subitem {MRCC\_private.h}, \hyperpage{275}
 
   \indexspace
 
+  \item {MAX\_TICKS}
+    \subitem {SysTick\_config.h}, \hyperpage{311}
   \item {MCO1}
-    \subitem {MRCC\_config.h}, \hyperpage{87}
+    \subitem {MRCC\_config.h}, \hyperpage{228}
   \item {MCO1PRE}
-    \subitem {MRCC\_config.h}, \hyperpage{86}
+    \subitem {MRCC\_config.h}, \hyperpage{227}
   \item {MCO2}
-    \subitem {MRCC\_config.h}, \hyperpage{86}
+    \subitem {MRCC\_config.h}, \hyperpage{227}
   \item {MCO2PRE}
-    \subitem {MRCC\_config.h}, \hyperpage{86}
-  \item {MGPIOx\_ConfigType}, \hyperpage{42}
-    \subitem {AF\_Type}, \hyperpage{44}
-    \subitem {InputType}, \hyperpage{43}
-    \subitem {Mode}, \hyperpage{43}
-    \subitem {OutputSpeed}, \hyperpage{43}
-    \subitem {OutputType}, \hyperpage{43}
-    \subitem {Pin}, \hyperpage{42}
-    \subitem {Port}, \hyperpage{42}
+    \subitem {MRCC\_config.h}, \hyperpage{227}
+  \item {MEMORY\_MANAGE}
+    \subitem {NVIC Settable Priorities}, \hyperpage{81}
+  \item {MEMRMP}
+    \subitem {MSYSCFG\_MemMap\_t}, \hyperpage{112}
+  \item {MEXTI}
+    \subitem {EXTI Registers}, \hyperpage{27}
+  \item {MEXTI\_vDisableLine}
+    \subitem {EXTI\_interface.h}, \hyperpage{159}
+    \subitem {EXTI\_program.c}, \hyperpage{167}
+  \item {MEXTI\_vEnableLine}
+    \subitem {EXTI\_interface.h}, \hyperpage{158}
+    \subitem {EXTI\_program.c}, \hyperpage{167}
+  \item {MEXTI\_vInit}
+    \subitem {EXTI\_interface.h}, \hyperpage{155}
+    \subitem {EXTI\_program.c}, \hyperpage{164}
+  \item {MEXTI\_vInit\_WithStruct}
+    \subitem {EXTI\_interface.h}, \hyperpage{158}
+    \subitem {EXTI\_program.c}, \hyperpage{167}
+  \item {MEXTI\_vSetCallback}
+    \subitem {EXTI\_interface.h}, \hyperpage{160}
+    \subitem {EXTI\_program.c}, \hyperpage{168}
+  \item {MEXTI\_vSetTrigger}
+    \subitem {EXTI\_interface.h}, \hyperpage{159}
+    \subitem {EXTI\_program.c}, \hyperpage{168}
+  \item {MEXTI\_vSWITrigger}
+    \subitem {EXTI\_interface.h}, \hyperpage{159}
+    \subitem {EXTI\_program.c}, \hyperpage{167}
+  \item {MGPIOx\_ConfigType}, \hyperpage{109}
+    \subitem {AF\_Type}, \hyperpage{111}
+    \subitem {InputType}, \hyperpage{110}
+    \subitem {Mode}, \hyperpage{110}
+    \subitem {OutputSpeed}, \hyperpage{110}
+    \subitem {OutputType}, \hyperpage{110}
+    \subitem {Pin}, \hyperpage{109}
+    \subitem {Port}, \hyperpage{109}
   \item {MGPIOx\_u8GetPinValue}
-    \subitem {GPIO\_interface.h}, \hyperpage{64}
-    \subitem {GPIO\_program.c}, \hyperpage{73}
+    \subitem {GPIO\_interface.h}, \hyperpage{185}
+    \subitem {GPIO\_program.c}, \hyperpage{195}
   \item {MGPIOx\_vInit}
-    \subitem {GPIO\_interface.h}, \hyperpage{65}
-    \subitem {GPIO\_program.c}, \hyperpage{76}
+    \subitem {GPIO\_interface.h}, \hyperpage{188}
+    \subitem {GPIO\_program.c}, \hyperpage{199}
   \item {MGPIOx\_vLockedPins}
-    \subitem {GPIO\_interface.h}, \hyperpage{61}
-    \subitem {GPIO\_program.c}, \hyperpage{70}
+    \subitem {GPIO\_interface.h}, \hyperpage{183}
+    \subitem {GPIO\_program.c}, \hyperpage{192}
   \item {MGPIOx\_vSetAlternateFunctionON}
-    \subitem {GPIO\_interface.h}, \hyperpage{65}
-    \subitem {GPIO\_program.c}, \hyperpage{75}
+    \subitem {GPIO\_interface.h}, \hyperpage{186}
+    \subitem {GPIO\_program.c}, \hyperpage{197}
   \item {MGPIOx\_vSetPinInputPullType}
-    \subitem {GPIO\_interface.h}, \hyperpage{62}
-    \subitem {GPIO\_program.c}, \hyperpage{72}
+    \subitem {GPIO\_interface.h}, \hyperpage{185}
+    \subitem {GPIO\_program.c}, \hyperpage{195}
   \item {MGPIOx\_vSetPinMode}
-    \subitem {GPIO\_interface.h}, \hyperpage{61}
-    \subitem {GPIO\_program.c}, \hyperpage{71}
+    \subitem {GPIO\_interface.h}, \hyperpage{183}
+    \subitem {GPIO\_program.c}, \hyperpage{193}
   \item {MGPIOx\_vSetPinOutputSpeed}
-    \subitem {GPIO\_interface.h}, \hyperpage{62}
-    \subitem {GPIO\_program.c}, \hyperpage{72}
+    \subitem {GPIO\_interface.h}, \hyperpage{184}
+    \subitem {GPIO\_program.c}, \hyperpage{194}
   \item {MGPIOx\_vSetPinOutputType}
-    \subitem {GPIO\_interface.h}, \hyperpage{62}
-    \subitem {GPIO\_program.c}, \hyperpage{71}
+    \subitem {GPIO\_interface.h}, \hyperpage{184}
+    \subitem {GPIO\_program.c}, \hyperpage{194}
   \item {MGPIOx\_vSetPinValue}
-    \subitem {GPIO\_interface.h}, \hyperpage{64}
-    \subitem {GPIO\_program.c}, \hyperpage{73}
+    \subitem {GPIO\_interface.h}, \hyperpage{185}
+    \subitem {GPIO\_program.c}, \hyperpage{196}
   \item {MGPIOx\_vSetPortConfigLock}
-    \subitem {GPIO\_interface.h}, \hyperpage{65}
+    \subitem {GPIO\_interface.h}, \hyperpage{186}
   \item {MGPIOx\_vSetResetAtomic}
-    \subitem {GPIO\_interface.h}, \hyperpage{64}
-    \subitem {GPIO\_program.c}, \hyperpage{74}
+    \subitem {GPIO\_interface.h}, \hyperpage{186}
+    \subitem {GPIO\_program.c}, \hyperpage{197}
   \item {MGPIOx\_vTogglePinValue}
-    \subitem {GPIO\_interface.h}, \hyperpage{66}
-    \subitem {GPIO\_program.c}, \hyperpage{77}
+    \subitem {GPIO\_interface.h}, \hyperpage{188}
+    \subitem {GPIO\_program.c}, \hyperpage{199}
+  \item {MICRO\_SEC}
+    \subitem {Delay Units}, \hyperpage{95}
+  \item {MILLI\_SEC}
+    \subitem {Delay Units}, \hyperpage{95}
+  \item {MMFAR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{130}
+  \item {MNVIC}
+    \subitem {NVIC Registers}, \hyperpage{80}
+  \item {MNVIC\_STIR}
+    \subitem {NVIC\_private.h}, \hyperpage{216}
+  \item {MNVIC\_u8GetActive}
+    \subitem {NVIC\_interface.h}, \hyperpage{212}
+    \subitem {NVIC\_program.c}, \hyperpage{219}
+  \item {MNVIC\_vClearPendingFlag}
+    \subitem {NVIC\_interface.h}, \hyperpage{211}
+    \subitem {NVIC\_program.c}, \hyperpage{219}
+  \item {MNVIC\_vDisablePeriphral}
+    \subitem {NVIC\_interface.h}, \hyperpage{211}
+    \subitem {NVIC\_program.c}, \hyperpage{219}
+  \item {MNVIC\_vEnablePeriphral}
+    \subitem {NVIC\_interface.h}, \hyperpage{210}
+    \subitem {NVIC\_program.c}, \hyperpage{218}
+  \item {MNVIC\_vSetPendingFlag}
+    \subitem {NVIC\_interface.h}, \hyperpage{211}
+    \subitem {NVIC\_program.c}, \hyperpage{219}
+  \item {MNVIC\_vSetPriority}
+    \subitem {NVIC\_interface.h}, \hyperpage{213}
+    \subitem {NVIC\_program.c}, \hyperpage{220}
+  \item {MNVIC\_vSetPriorityConfig}
+    \subitem {NVIC\_interface.h}, \hyperpage{212}
+    \subitem {NVIC\_program.c}, \hyperpage{220}
   \item {Mode}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{43}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{110}
   \item {MODERx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{40}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{107}
   \item {MRCC\_config.h}
-    \subitem {ADC1EN}, \hyperpage{93}
-    \subitem {CRCCLK}, \hyperpage{88}
-    \subitem {CSS}, \hyperpage{85}
-    \subitem {DMA1CLK}, \hyperpage{88}
-    \subitem {DMA2CLK}, \hyperpage{88}
-    \subitem {GPIOACLK}, \hyperpage{89}
-    \subitem {GPIOBCLK}, \hyperpage{89}
-    \subitem {GPIOCCLK}, \hyperpage{89}
-    \subitem {GPIODCLK}, \hyperpage{89}
-    \subitem {GPIOECLK}, \hyperpage{89}
-    \subitem {GPIOHCLK}, \hyperpage{88}
-    \subitem {HPRE}, \hyperpage{87}
-    \subitem {HSE\_EN}, \hyperpage{85}
-    \subitem {HSEBYP}, \hyperpage{85}
-    \subitem {HSI\_EN}, \hyperpage{85}
-    \subitem {I2C1EN}, \hyperpage{90}
-    \subitem {I2C2EN}, \hyperpage{90}
-    \subitem {I2C3EN}, \hyperpage{90}
-    \subitem {I2SSRC}, \hyperpage{87}
-    \subitem {MCO1}, \hyperpage{87}
-    \subitem {MCO1PRE}, \hyperpage{86}
-    \subitem {MCO2}, \hyperpage{86}
-    \subitem {MCO2PRE}, \hyperpage{86}
-    \subitem {OTGFS}, \hyperpage{89}
-    \subitem {PLL}, \hyperpage{84}
-    \subitem {PLLI2S}, \hyperpage{84}
-    \subitem {PLLM}, \hyperpage{86}
-    \subitem {PLLN}, \hyperpage{86}
-    \subitem {PLLP}, \hyperpage{86}
-    \subitem {PLLQ}, \hyperpage{85}
-    \subitem {PLLSRC}, \hyperpage{85}
-    \subitem {PPRE1}, \hyperpage{87}
-    \subitem {PPRE2}, \hyperpage{87}
-    \subitem {PWREN}, \hyperpage{90}
-    \subitem {RTCPRE}, \hyperpage{87}
-    \subitem {SDIOEN}, \hyperpage{93}
-    \subitem {SPI1EN}, \hyperpage{92}
-    \subitem {SPI2EN}, \hyperpage{91}
-    \subitem {SPI3EN}, \hyperpage{90}
-    \subitem {SPI4EN}, \hyperpage{92}
-    \subitem {SW}, \hyperpage{88}
-    \subitem {SWS}, \hyperpage{88}
-    \subitem {SYSCFGEN}, \hyperpage{92}
-    \subitem {TIM10EN}, \hyperpage{92}
-    \subitem {TIM11EN}, \hyperpage{92}
-    \subitem {TIM1EN}, \hyperpage{93}
-    \subitem {TIM2EN}, \hyperpage{91}
-    \subitem {TIM3EN}, \hyperpage{91}
-    \subitem {TIM4EN}, \hyperpage{91}
-    \subitem {TIM5EN}, \hyperpage{91}
-    \subitem {TIM9EN}, \hyperpage{92}
-    \subitem {USART1EN}, \hyperpage{93}
-    \subitem {USART2EN}, \hyperpage{90}
-    \subitem {USART6EN}, \hyperpage{93}
-    \subitem {WWDGEN}, \hyperpage{91}
+    \subitem {ADC1EN}, \hyperpage{234}
+    \subitem {CRCCLK}, \hyperpage{229}
+    \subitem {CSS}, \hyperpage{225}
+    \subitem {DMA1CLK}, \hyperpage{229}
+    \subitem {DMA2CLK}, \hyperpage{229}
+    \subitem {GPIOACLK}, \hyperpage{230}
+    \subitem {GPIOBCLK}, \hyperpage{230}
+    \subitem {GPIOCCLK}, \hyperpage{230}
+    \subitem {GPIODCLK}, \hyperpage{230}
+    \subitem {GPIOECLK}, \hyperpage{229}
+    \subitem {GPIOHCLK}, \hyperpage{229}
+    \subitem {HPRE}, \hyperpage{228}
+    \subitem {HSE\_EN}, \hyperpage{226}
+    \subitem {HSEBYP}, \hyperpage{226}
+    \subitem {HSI\_EN}, \hyperpage{226}
+    \subitem {I2C1EN}, \hyperpage{231}
+    \subitem {I2C2EN}, \hyperpage{231}
+    \subitem {I2C3EN}, \hyperpage{231}
+    \subitem {I2SSRC}, \hyperpage{227}
+    \subitem {MCO1}, \hyperpage{228}
+    \subitem {MCO1PRE}, \hyperpage{227}
+    \subitem {MCO2}, \hyperpage{227}
+    \subitem {MCO2PRE}, \hyperpage{227}
+    \subitem {OTGFS}, \hyperpage{230}
+    \subitem {PLL}, \hyperpage{225}
+    \subitem {PLLI2S}, \hyperpage{225}
+    \subitem {PLLM}, \hyperpage{227}
+    \subitem {PLLN}, \hyperpage{227}
+    \subitem {PLLP}, \hyperpage{226}
+    \subitem {PLLQ}, \hyperpage{226}
+    \subitem {PLLSRC}, \hyperpage{226}
+    \subitem {PPRE1}, \hyperpage{228}
+    \subitem {PPRE2}, \hyperpage{228}
+    \subitem {PWREN}, \hyperpage{230}
+    \subitem {RTCPRE}, \hyperpage{228}
+    \subitem {SDIOEN}, \hyperpage{233}
+    \subitem {SPI1EN}, \hyperpage{233}
+    \subitem {SPI2EN}, \hyperpage{231}
+    \subitem {SPI3EN}, \hyperpage{231}
+    \subitem {SPI4EN}, \hyperpage{233}
+    \subitem {SW}, \hyperpage{229}
+    \subitem {SWS}, \hyperpage{228}
+    \subitem {SYSCFGEN}, \hyperpage{233}
+    \subitem {TIM10EN}, \hyperpage{233}
+    \subitem {TIM11EN}, \hyperpage{232}
+    \subitem {TIM1EN}, \hyperpage{234}
+    \subitem {TIM2EN}, \hyperpage{232}
+    \subitem {TIM3EN}, \hyperpage{232}
+    \subitem {TIM4EN}, \hyperpage{232}
+    \subitem {TIM5EN}, \hyperpage{232}
+    \subitem {TIM9EN}, \hyperpage{233}
+    \subitem {USART1EN}, \hyperpage{234}
+    \subitem {USART2EN}, \hyperpage{231}
+    \subitem {USART6EN}, \hyperpage{234}
+    \subitem {WWDGEN}, \hyperpage{232}
   \item {MRCC\_interface.h}
-    \subitem {AHB1ENR\_CRCEN}, \hyperpage{104}
-    \subitem {AHB1ENR\_DMA1EN}, \hyperpage{104}
-    \subitem {AHB1ENR\_DMA2EN}, \hyperpage{104}
-    \subitem {AHB1ENR\_GPIOAEN}, \hyperpage{105}
-    \subitem {AHB1ENR\_GPIOBEN}, \hyperpage{105}
-    \subitem {AHB1ENR\_GPIOCEN}, \hyperpage{105}
-    \subitem {AHB1ENR\_GPIODEN}, \hyperpage{105}
-    \subitem {AHB1ENR\_GPIOEEN}, \hyperpage{104}
-    \subitem {AHB1ENR\_GPIOHEN}, \hyperpage{104}
-    \subitem {AHB1LPENR\_FLITFLPEN}, \hyperpage{109}
-    \subitem {AHB2ENR\_OTGFSEN}, \hyperpage{105}
-    \subitem {APB1ENR\_I2C1EN}, \hyperpage{106}
-    \subitem {APB1ENR\_I2C2EN}, \hyperpage{106}
-    \subitem {APB1ENR\_I2C3EN}, \hyperpage{106}
-    \subitem {APB1ENR\_PWREN}, \hyperpage{105}
-    \subitem {APB1ENR\_SPI2EN}, \hyperpage{106}
-    \subitem {APB1ENR\_SPI3EN}, \hyperpage{106}
-    \subitem {APB1ENR\_TIM2EN}, \hyperpage{107}
-    \subitem {APB1ENR\_TIM3EN}, \hyperpage{107}
-    \subitem {APB1ENR\_TIM4EN}, \hyperpage{107}
-    \subitem {APB1ENR\_TIM5EN}, \hyperpage{107}
-    \subitem {APB1ENR\_USART2EN}, \hyperpage{106}
-    \subitem {APB1ENR\_WWDGEN}, \hyperpage{107}
-    \subitem {APB2ENR\_ADC1EN}, \hyperpage{109}
-    \subitem {APB2ENR\_SDIOEN}, \hyperpage{108}
-    \subitem {APB2ENR\_SPI1EN}, \hyperpage{108}
-    \subitem {APB2ENR\_SPI4EN}, \hyperpage{108}
-    \subitem {APB2ENR\_SYSCFGEN}, \hyperpage{108}
-    \subitem {APB2ENR\_TIM10EN}, \hyperpage{108}
-    \subitem {APB2ENR\_TIM11EN}, \hyperpage{107}
-    \subitem {APB2ENR\_TIM1EN}, \hyperpage{109}
-    \subitem {APB2ENR\_TIM9EN}, \hyperpage{108}
-    \subitem {APB2ENR\_USART1EN}, \hyperpage{109}
-    \subitem {APB2ENR\_USART6EN}, \hyperpage{109}
-    \subitem {MRCC\_vDisablePeriphralCLK}, \hyperpage{115}
-    \subitem {MRCC\_vEnablePeriphralCLK}, \hyperpage{114}
-    \subitem {MRCC\_vInit}, \hyperpage{110}
-    \subitem {RCC\_AHB1}, \hyperpage{103}
-    \subitem {RCC\_AHB1LPENR}, \hyperpage{104}
-    \subitem {RCC\_AHB2}, \hyperpage{103}
-    \subitem {RCC\_APB1}, \hyperpage{103}
-    \subitem {RCC\_APB2}, \hyperpage{103}
+    \subitem {MRCC\_vDisablePeriphralCLK}, \hyperpage{249}
+    \subitem {MRCC\_vEnablePeriphralCLK}, \hyperpage{249}
+    \subitem {MRCC\_vInit}, \hyperpage{245}
   \item {MRCC\_private.h}
-    \subitem {AHBby16}, \hyperpage{147}
-    \subitem {AHBby2}, \hyperpage{147}
-    \subitem {AHBby4}, \hyperpage{147}
-    \subitem {AHBby8}, \hyperpage{147}
-    \subitem {BYBASED}, \hyperpage{138}
-    \subitem {DISABLE}, \hyperpage{138}
-    \subitem {DivisionBy2}, \hyperpage{139}
-    \subitem {DivisionBy3}, \hyperpage{139}
-    \subitem {DivisionBy4}, \hyperpage{139}
-    \subitem {DivisionBy5}, \hyperpage{139}
-    \subitem {ENABLE}, \hyperpage{137}
-    \subitem {Equal\_0}, \hyperpage{148}
-    \subitem {Equal\_1}, \hyperpage{148}
-    \subitem {Equal\_10}, \hyperpage{149}
-    \subitem {Equal\_11}, \hyperpage{149}
-    \subitem {Equal\_12}, \hyperpage{150}
-    \subitem {Equal\_13}, \hyperpage{150}
-    \subitem {Equal\_14}, \hyperpage{150}
-    \subitem {Equal\_15}, \hyperpage{150}
-    \subitem {Equal\_16}, \hyperpage{150}
-    \subitem {Equal\_17}, \hyperpage{150}
-    \subitem {Equal\_18}, \hyperpage{151}
-    \subitem {Equal\_19}, \hyperpage{151}
-    \subitem {Equal\_2}, \hyperpage{148}
-    \subitem {Equal\_20}, \hyperpage{151}
-    \subitem {Equal\_21}, \hyperpage{151}
-    \subitem {Equal\_22}, \hyperpage{151}
-    \subitem {Equal\_23}, \hyperpage{151}
-    \subitem {Equal\_24}, \hyperpage{152}
-    \subitem {Equal\_25}, \hyperpage{152}
-    \subitem {Equal\_26}, \hyperpage{152}
-    \subitem {Equal\_27}, \hyperpage{152}
-    \subitem {Equal\_28}, \hyperpage{152}
-    \subitem {Equal\_29}, \hyperpage{152}
-    \subitem {Equal\_3}, \hyperpage{148}
-    \subitem {Equal\_30}, \hyperpage{153}
-    \subitem {Equal\_31}, \hyperpage{153}
-    \subitem {Equal\_32}, \hyperpage{153}
-    \subitem {Equal\_33}, \hyperpage{153}
-    \subitem {Equal\_34}, \hyperpage{153}
-    \subitem {Equal\_35}, \hyperpage{153}
-    \subitem {Equal\_36}, \hyperpage{154}
-    \subitem {Equal\_37}, \hyperpage{154}
-    \subitem {Equal\_38}, \hyperpage{154}
-    \subitem {Equal\_39}, \hyperpage{154}
-    \subitem {Equal\_4}, \hyperpage{148}
-    \subitem {Equal\_40}, \hyperpage{154}
-    \subitem {Equal\_41}, \hyperpage{154}
-    \subitem {Equal\_42}, \hyperpage{155}
-    \subitem {Equal\_43}, \hyperpage{155}
-    \subitem {Equal\_44}, \hyperpage{155}
-    \subitem {Equal\_45}, \hyperpage{155}
-    \subitem {Equal\_46}, \hyperpage{155}
-    \subitem {Equal\_47}, \hyperpage{155}
-    \subitem {Equal\_48}, \hyperpage{156}
-    \subitem {Equal\_49}, \hyperpage{156}
-    \subitem {Equal\_5}, \hyperpage{148}
-    \subitem {Equal\_50}, \hyperpage{156}
-    \subitem {Equal\_51}, \hyperpage{156}
-    \subitem {Equal\_52}, \hyperpage{156}
-    \subitem {Equal\_53}, \hyperpage{156}
-    \subitem {Equal\_54}, \hyperpage{157}
-    \subitem {Equal\_55}, \hyperpage{157}
-    \subitem {Equal\_56}, \hyperpage{157}
-    \subitem {Equal\_57}, \hyperpage{157}
-    \subitem {Equal\_58}, \hyperpage{157}
-    \subitem {Equal\_59}, \hyperpage{157}
-    \subitem {Equal\_6}, \hyperpage{149}
-    \subitem {Equal\_60}, \hyperpage{158}
-    \subitem {Equal\_61}, \hyperpage{158}
-    \subitem {Equal\_62}, \hyperpage{158}
-    \subitem {Equal\_63}, \hyperpage{158}
-    \subitem {Equal\_7}, \hyperpage{149}
-    \subitem {Equal\_8}, \hyperpage{149}
-    \subitem {Equal\_9}, \hyperpage{149}
-    \subitem {HSE}, \hyperpage{138}
-    \subitem {HSEby10}, \hyperpage{143}
-    \subitem {HSEby11}, \hyperpage{143}
-    \subitem {HSEby12}, \hyperpage{144}
-    \subitem {HSEby13}, \hyperpage{144}
-    \subitem {HSEby14}, \hyperpage{144}
-    \subitem {HSEby15}, \hyperpage{144}
-    \subitem {HSEby16}, \hyperpage{144}
-    \subitem {HSEby17}, \hyperpage{144}
-    \subitem {HSEby18}, \hyperpage{145}
-    \subitem {HSEby19}, \hyperpage{145}
-    \subitem {HSEby2}, \hyperpage{142}
-    \subitem {HSEby20}, \hyperpage{145}
-    \subitem {HSEby21}, \hyperpage{145}
-    \subitem {HSEby22}, \hyperpage{145}
-    \subitem {HSEby23}, \hyperpage{145}
-    \subitem {HSEby24}, \hyperpage{146}
-    \subitem {HSEby25}, \hyperpage{146}
-    \subitem {HSEby26}, \hyperpage{146}
-    \subitem {HSEby27}, \hyperpage{146}
-    \subitem {HSEby28}, \hyperpage{146}
-    \subitem {HSEby29}, \hyperpage{146}
-    \subitem {HSEby3}, \hyperpage{142}
-    \subitem {HSEby30}, \hyperpage{147}
-    \subitem {HSEby31}, \hyperpage{147}
-    \subitem {HSEby4}, \hyperpage{142}
-    \subitem {HSEby5}, \hyperpage{142}
-    \subitem {HSEby6}, \hyperpage{143}
-    \subitem {HSEby7}, \hyperpage{143}
-    \subitem {HSEby8}, \hyperpage{143}
-    \subitem {HSEby9}, \hyperpage{143}
-    \subitem {HSI}, \hyperpage{140}
-    \subitem {I2S\_CKIN}, \hyperpage{140}
-    \subitem {LSE}, \hyperpage{140}
-    \subitem {NoCLK0}, \hyperpage{142}
-    \subitem {NoCLK1}, \hyperpage{142}
-    \subitem {NoDivision}, \hyperpage{139}
-    \subitem {NOTBYBASED}, \hyperpage{138}
-    \subitem {PLLCLK}, \hyperpage{139, 140}
-    \subitem {PLLI2SCLK}, \hyperpage{138}
-    \subitem {RCC}, \hyperpage{121}
-    \subitem {RCC\_AHB1ENR\_CRCEN}, \hyperpage{132}
-    \subitem {RCC\_AHB1ENR\_DMA1EN}, \hyperpage{132}
-    \subitem {RCC\_AHB1ENR\_DMA2EN}, \hyperpage{132}
-    \subitem {RCC\_AHB1ENR\_GPIOAEN}, \hyperpage{133}
-    \subitem {RCC\_AHB1ENR\_GPIOBEN}, \hyperpage{133}
-    \subitem {RCC\_AHB1ENR\_GPIOCEN}, \hyperpage{133}
-    \subitem {RCC\_AHB1ENR\_GPIODEN}, \hyperpage{133}
-    \subitem {RCC\_AHB1ENR\_GPIOEEN}, \hyperpage{132}
-    \subitem {RCC\_AHB1ENR\_GPIOHEN}, \hyperpage{132}
-    \subitem {RCC\_AHB1LPENR\_FLITFLPEN}, \hyperpage{137}
-    \subitem {RCC\_AHB2ENR\_OTGFSEN}, \hyperpage{133}
-    \subitem {RCC\_APB1ENR\_I2C1EN}, \hyperpage{134}
-    \subitem {RCC\_APB1ENR\_I2C2EN}, \hyperpage{134}
-    \subitem {RCC\_APB1ENR\_I2C3EN}, \hyperpage{134}
-    \subitem {RCC\_APB1ENR\_PWREN}, \hyperpage{133}
-    \subitem {RCC\_APB1ENR\_SPI2EN}, \hyperpage{134}
-    \subitem {RCC\_APB1ENR\_SPI3EN}, \hyperpage{134}
-    \subitem {RCC\_APB1ENR\_TIM2EN}, \hyperpage{135}
-    \subitem {RCC\_APB1ENR\_TIM3EN}, \hyperpage{135}
-    \subitem {RCC\_APB1ENR\_TIM4EN}, \hyperpage{135}
-    \subitem {RCC\_APB1ENR\_TIM5EN}, \hyperpage{135}
-    \subitem {RCC\_APB1ENR\_USART2EN}, \hyperpage{134}
-    \subitem {RCC\_APB1ENR\_WWDGEN}, \hyperpage{135}
-    \subitem {RCC\_APB2ENR\_ADC1EN}, \hyperpage{137}
-    \subitem {RCC\_APB2ENR\_SDIOEN}, \hyperpage{136}
-    \subitem {RCC\_APB2ENR\_SPI1EN}, \hyperpage{136}
-    \subitem {RCC\_APB2ENR\_SPI4EN}, \hyperpage{136}
-    \subitem {RCC\_APB2ENR\_SYSCFGEN}, \hyperpage{136}
-    \subitem {RCC\_APB2ENR\_TIM10EN}, \hyperpage{136}
-    \subitem {RCC\_APB2ENR\_TIM11EN}, \hyperpage{135}
-    \subitem {RCC\_APB2ENR\_TIM1EN}, \hyperpage{137}
-    \subitem {RCC\_APB2ENR\_TIM9EN}, \hyperpage{136}
-    \subitem {RCC\_APB2ENR\_USART1EN}, \hyperpage{137}
-    \subitem {RCC\_APB2ENR\_USART6EN}, \hyperpage{137}
-    \subitem {RCC\_BASE\_ADDRESS}, \hyperpage{121}
-    \subitem {RCC\_CFGR\_HPRE\_b0}, \hyperpage{130}
-    \subitem {RCC\_CFGR\_HPRE\_b1}, \hyperpage{131}
-    \subitem {RCC\_CFGR\_HPRE\_b2}, \hyperpage{131}
-    \subitem {RCC\_CFGR\_HPRE\_b3}, \hyperpage{131}
-    \subitem {RCC\_CFGR\_I2SSRC}, \hyperpage{128}
-    \subitem {RCC\_CFGR\_MOC1\_b0}, \hyperpage{128}
-    \subitem {RCC\_CFGR\_MOC1\_b1}, \hyperpage{128}
-    \subitem {RCC\_CFGR\_MOC1PRE\_b0}, \hyperpage{128}
-    \subitem {RCC\_CFGR\_MOC1PRE\_b1}, \hyperpage{128}
-    \subitem {RCC\_CFGR\_MOC1PRE\_b2}, \hyperpage{128}
-    \subitem {RCC\_CFGR\_MOC2\_b0}, \hyperpage{127}
-    \subitem {RCC\_CFGR\_MOC2\_b1}, \hyperpage{127}
-    \subitem {RCC\_CFGR\_MOC2PRE\_b0}, \hyperpage{127}
-    \subitem {RCC\_CFGR\_MOC2PRE\_b1}, \hyperpage{127}
-    \subitem {RCC\_CFGR\_MOC2PRE\_b2}, \hyperpage{127}
-    \subitem {RCC\_CFGR\_PPRE1\_b0}, \hyperpage{130}
-    \subitem {RCC\_CFGR\_PPRE1\_b1}, \hyperpage{130}
-    \subitem {RCC\_CFGR\_PPRE1\_b2}, \hyperpage{130}
-    \subitem {RCC\_CFGR\_PPRE2\_b0}, \hyperpage{129}
-    \subitem {RCC\_CFGR\_PPRE2\_b1}, \hyperpage{130}
-    \subitem {RCC\_CFGR\_PPRE2\_b2}, \hyperpage{130}
-    \subitem {RCC\_CFGR\_RTCPRE\_b0}, \hyperpage{129}
-    \subitem {RCC\_CFGR\_RTCPRE\_b1}, \hyperpage{129}
-    \subitem {RCC\_CFGR\_RTCPRE\_b2}, \hyperpage{129}
-    \subitem {RCC\_CFGR\_RTCPRE\_b3}, \hyperpage{129}
-    \subitem {RCC\_CFGR\_RTCPRE\_b4}, \hyperpage{129}
-    \subitem {RCC\_CFGR\_SW\_b0}, \hyperpage{131}
-    \subitem {RCC\_CFGR\_SW\_b1}, \hyperpage{132}
-    \subitem {RCC\_CFGR\_SWS\_b0}, \hyperpage{131}
-    \subitem {RCC\_CFGR\_SWS\_b1}, \hyperpage{131}
-    \subitem {RCC\_CR\_CSSON}, \hyperpage{122}
-    \subitem {RCC\_CR\_HSEBYP}, \hyperpage{122}
-    \subitem {RCC\_CR\_HSEON}, \hyperpage{123}
-    \subitem {RCC\_CR\_HSERDY}, \hyperpage{122}
-    \subitem {RCC\_CR\_HSION}, \hyperpage{123}
-    \subitem {RCC\_CR\_HSIRDY}, \hyperpage{123}
-    \subitem {RCC\_CR\_PLLI2SON}, \hyperpage{122}
-    \subitem {RCC\_CR\_PLLI2SRDY}, \hyperpage{121}
-    \subitem {RCC\_CR\_PLLON}, \hyperpage{122}
-    \subitem {RCC\_CR\_PLLRDY}, \hyperpage{122}
-    \subitem {RCC\_PLLCFGR\_PLLM\_b0}, \hyperpage{126}
-    \subitem {RCC\_PLLCFGR\_PLLM\_b1}, \hyperpage{126}
-    \subitem {RCC\_PLLCFGR\_PLLM\_b2}, \hyperpage{126}
-    \subitem {RCC\_PLLCFGR\_PLLM\_b3}, \hyperpage{126}
-    \subitem {RCC\_PLLCFGR\_PLLM\_b4}, \hyperpage{126}
-    \subitem {RCC\_PLLCFGR\_PLLM\_b5}, \hyperpage{127}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b0}, \hyperpage{124}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b1}, \hyperpage{124}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b2}, \hyperpage{125}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b3}, \hyperpage{125}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b4}, \hyperpage{125}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b5}, \hyperpage{125}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b6}, \hyperpage{125}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b7}, \hyperpage{125}
-    \subitem {RCC\_PLLCFGR\_PLLN\_b8}, \hyperpage{126}
-    \subitem {RCC\_PLLCFGR\_PLLP\_b0}, \hyperpage{124}
-    \subitem {RCC\_PLLCFGR\_PLLP\_b1}, \hyperpage{124}
-    \subitem {RCC\_PLLCFGR\_PLLQ\_b0}, \hyperpage{123}
-    \subitem {RCC\_PLLCFGR\_PLLQ\_b1}, \hyperpage{123}
-    \subitem {RCC\_PLLCFGR\_PLLQ\_b2}, \hyperpage{123}
-    \subitem {RCC\_PLLCFGR\_PLLQ\_b3}, \hyperpage{124}
-    \subitem {RCC\_PLLCFGR\_PLLSRC}, \hyperpage{124}
-    \subitem {SYSCLK}, \hyperpage{138}
-    \subitem {SYSCLKby128}, \hyperpage{141}
-    \subitem {SYSCLKby16}, \hyperpage{141}
-    \subitem {SYSCLKby2}, \hyperpage{140}
-    \subitem {SYSCLKby256}, \hyperpage{141}
-    \subitem {SYSCLKby4}, \hyperpage{140}
-    \subitem {SYSCLKby512}, \hyperpage{141}
-    \subitem {SYSCLKby64}, \hyperpage{141}
-    \subitem {SYSCLKby8}, \hyperpage{141}
+    \subitem {AHBby16}, \hyperpage{282}
+    \subitem {AHBby2}, \hyperpage{282}
+    \subitem {AHBby4}, \hyperpage{282}
+    \subitem {AHBby8}, \hyperpage{282}
+    \subitem {BYBASED}, \hyperpage{273}
+    \subitem {DISABLE}, \hyperpage{272}
+    \subitem {DivisionBy2}, \hyperpage{274}
+    \subitem {DivisionBy3}, \hyperpage{274}
+    \subitem {DivisionBy4}, \hyperpage{274}
+    \subitem {DivisionBy5}, \hyperpage{274}
+    \subitem {ENABLE}, \hyperpage{272}
+    \subitem {Equal\_0}, \hyperpage{282}
+    \subitem {Equal\_1}, \hyperpage{283}
+    \subitem {Equal\_10}, \hyperpage{284}
+    \subitem {Equal\_11}, \hyperpage{284}
+    \subitem {Equal\_12}, \hyperpage{284}
+    \subitem {Equal\_13}, \hyperpage{285}
+    \subitem {Equal\_14}, \hyperpage{285}
+    \subitem {Equal\_15}, \hyperpage{285}
+    \subitem {Equal\_16}, \hyperpage{285}
+    \subitem {Equal\_17}, \hyperpage{285}
+    \subitem {Equal\_18}, \hyperpage{285}
+    \subitem {Equal\_19}, \hyperpage{286}
+    \subitem {Equal\_2}, \hyperpage{283}
+    \subitem {Equal\_20}, \hyperpage{286}
+    \subitem {Equal\_21}, \hyperpage{286}
+    \subitem {Equal\_22}, \hyperpage{286}
+    \subitem {Equal\_23}, \hyperpage{286}
+    \subitem {Equal\_24}, \hyperpage{286}
+    \subitem {Equal\_25}, \hyperpage{287}
+    \subitem {Equal\_26}, \hyperpage{287}
+    \subitem {Equal\_27}, \hyperpage{287}
+    \subitem {Equal\_28}, \hyperpage{287}
+    \subitem {Equal\_29}, \hyperpage{287}
+    \subitem {Equal\_3}, \hyperpage{283}
+    \subitem {Equal\_30}, \hyperpage{287}
+    \subitem {Equal\_31}, \hyperpage{288}
+    \subitem {Equal\_32}, \hyperpage{288}
+    \subitem {Equal\_33}, \hyperpage{288}
+    \subitem {Equal\_34}, \hyperpage{288}
+    \subitem {Equal\_35}, \hyperpage{288}
+    \subitem {Equal\_36}, \hyperpage{288}
+    \subitem {Equal\_37}, \hyperpage{289}
+    \subitem {Equal\_38}, \hyperpage{289}
+    \subitem {Equal\_39}, \hyperpage{289}
+    \subitem {Equal\_4}, \hyperpage{283}
+    \subitem {Equal\_40}, \hyperpage{289}
+    \subitem {Equal\_41}, \hyperpage{289}
+    \subitem {Equal\_42}, \hyperpage{289}
+    \subitem {Equal\_43}, \hyperpage{290}
+    \subitem {Equal\_44}, \hyperpage{290}
+    \subitem {Equal\_45}, \hyperpage{290}
+    \subitem {Equal\_46}, \hyperpage{290}
+    \subitem {Equal\_47}, \hyperpage{290}
+    \subitem {Equal\_48}, \hyperpage{290}
+    \subitem {Equal\_49}, \hyperpage{291}
+    \subitem {Equal\_5}, \hyperpage{283}
+    \subitem {Equal\_50}, \hyperpage{291}
+    \subitem {Equal\_51}, \hyperpage{291}
+    \subitem {Equal\_52}, \hyperpage{291}
+    \subitem {Equal\_53}, \hyperpage{291}
+    \subitem {Equal\_54}, \hyperpage{291}
+    \subitem {Equal\_55}, \hyperpage{292}
+    \subitem {Equal\_56}, \hyperpage{292}
+    \subitem {Equal\_57}, \hyperpage{292}
+    \subitem {Equal\_58}, \hyperpage{292}
+    \subitem {Equal\_59}, \hyperpage{292}
+    \subitem {Equal\_6}, \hyperpage{283}
+    \subitem {Equal\_60}, \hyperpage{292}
+    \subitem {Equal\_61}, \hyperpage{293}
+    \subitem {Equal\_62}, \hyperpage{293}
+    \subitem {Equal\_63}, \hyperpage{293}
+    \subitem {Equal\_7}, \hyperpage{284}
+    \subitem {Equal\_8}, \hyperpage{284}
+    \subitem {Equal\_9}, \hyperpage{284}
+    \subitem {HSE}, \hyperpage{273}
+    \subitem {HSEby10}, \hyperpage{278}
+    \subitem {HSEby11}, \hyperpage{278}
+    \subitem {HSEby12}, \hyperpage{278}
+    \subitem {HSEby13}, \hyperpage{279}
+    \subitem {HSEby14}, \hyperpage{279}
+    \subitem {HSEby15}, \hyperpage{279}
+    \subitem {HSEby16}, \hyperpage{279}
+    \subitem {HSEby17}, \hyperpage{279}
+    \subitem {HSEby18}, \hyperpage{279}
+    \subitem {HSEby19}, \hyperpage{280}
+    \subitem {HSEby2}, \hyperpage{277}
+    \subitem {HSEby20}, \hyperpage{280}
+    \subitem {HSEby21}, \hyperpage{280}
+    \subitem {HSEby22}, \hyperpage{280}
+    \subitem {HSEby23}, \hyperpage{280}
+    \subitem {HSEby24}, \hyperpage{280}
+    \subitem {HSEby25}, \hyperpage{281}
+    \subitem {HSEby26}, \hyperpage{281}
+    \subitem {HSEby27}, \hyperpage{281}
+    \subitem {HSEby28}, \hyperpage{281}
+    \subitem {HSEby29}, \hyperpage{281}
+    \subitem {HSEby3}, \hyperpage{277}
+    \subitem {HSEby30}, \hyperpage{281}
+    \subitem {HSEby31}, \hyperpage{282}
+    \subitem {HSEby4}, \hyperpage{277}
+    \subitem {HSEby5}, \hyperpage{277}
+    \subitem {HSEby6}, \hyperpage{277}
+    \subitem {HSEby7}, \hyperpage{278}
+    \subitem {HSEby8}, \hyperpage{278}
+    \subitem {HSEby9}, \hyperpage{278}
+    \subitem {HSI}, \hyperpage{275}
+    \subitem {I2S\_CKIN}, \hyperpage{274}
+    \subitem {LSE}, \hyperpage{275}
+    \subitem {NoCLK0}, \hyperpage{276}
+    \subitem {NoCLK1}, \hyperpage{277}
+    \subitem {NoDivision}, \hyperpage{274}
+    \subitem {NOTBYBASED}, \hyperpage{273}
+    \subitem {PLLCLK}, \hyperpage{273}, \hyperpage{275}
+    \subitem {PLLI2SCLK}, \hyperpage{273}
+    \subitem {RCC}, \hyperpage{256}
+    \subitem {RCC\_AHB1ENR\_CRCEN}, \hyperpage{267}
+    \subitem {RCC\_AHB1ENR\_DMA1EN}, \hyperpage{267}
+    \subitem {RCC\_AHB1ENR\_DMA2EN}, \hyperpage{267}
+    \subitem {RCC\_AHB1ENR\_GPIOAEN}, \hyperpage{268}
+    \subitem {RCC\_AHB1ENR\_GPIOBEN}, \hyperpage{268}
+    \subitem {RCC\_AHB1ENR\_GPIOCEN}, \hyperpage{268}
+    \subitem {RCC\_AHB1ENR\_GPIODEN}, \hyperpage{267}
+    \subitem {RCC\_AHB1ENR\_GPIOEEN}, \hyperpage{267}
+    \subitem {RCC\_AHB1ENR\_GPIOHEN}, \hyperpage{267}
+    \subitem {RCC\_AHB1LPENR\_FLITFLPEN}, \hyperpage{272}
+    \subitem {RCC\_AHB2ENR\_OTGFSEN}, \hyperpage{268}
+    \subitem {RCC\_APB1ENR\_I2C1EN}, \hyperpage{269}
+    \subitem {RCC\_APB1ENR\_I2C2EN}, \hyperpage{269}
+    \subitem {RCC\_APB1ENR\_I2C3EN}, \hyperpage{268}
+    \subitem {RCC\_APB1ENR\_PWREN}, \hyperpage{268}
+    \subitem {RCC\_APB1ENR\_SPI2EN}, \hyperpage{269}
+    \subitem {RCC\_APB1ENR\_SPI3EN}, \hyperpage{269}
+    \subitem {RCC\_APB1ENR\_TIM2EN}, \hyperpage{270}
+    \subitem {RCC\_APB1ENR\_TIM3EN}, \hyperpage{270}
+    \subitem {RCC\_APB1ENR\_TIM4EN}, \hyperpage{270}
+    \subitem {RCC\_APB1ENR\_TIM5EN}, \hyperpage{270}
+    \subitem {RCC\_APB1ENR\_USART2EN}, \hyperpage{269}
+    \subitem {RCC\_APB1ENR\_WWDGEN}, \hyperpage{269}
+    \subitem {RCC\_APB2ENR\_ADC1EN}, \hyperpage{271}
+    \subitem {RCC\_APB2ENR\_SDIOEN}, \hyperpage{271}
+    \subitem {RCC\_APB2ENR\_SPI1EN}, \hyperpage{271}
+    \subitem {RCC\_APB2ENR\_SPI4EN}, \hyperpage{271}
+    \subitem {RCC\_APB2ENR\_SYSCFGEN}, \hyperpage{271}
+    \subitem {RCC\_APB2ENR\_TIM10EN}, \hyperpage{270}
+    \subitem {RCC\_APB2ENR\_TIM11EN}, \hyperpage{270}
+    \subitem {RCC\_APB2ENR\_TIM1EN}, \hyperpage{272}
+    \subitem {RCC\_APB2ENR\_TIM9EN}, \hyperpage{271}
+    \subitem {RCC\_APB2ENR\_USART1EN}, \hyperpage{272}
+    \subitem {RCC\_APB2ENR\_USART6EN}, \hyperpage{272}
+    \subitem {RCC\_BASE\_ADDRESS}, \hyperpage{256}
+    \subitem {RCC\_CFGR\_HPRE\_b0}, \hyperpage{265}
+    \subitem {RCC\_CFGR\_HPRE\_b1}, \hyperpage{265}
+    \subitem {RCC\_CFGR\_HPRE\_b2}, \hyperpage{266}
+    \subitem {RCC\_CFGR\_HPRE\_b3}, \hyperpage{266}
+    \subitem {RCC\_CFGR\_I2SSRC}, \hyperpage{263}
+    \subitem {RCC\_CFGR\_MOC1\_b0}, \hyperpage{263}
+    \subitem {RCC\_CFGR\_MOC1\_b1}, \hyperpage{263}
+    \subitem {RCC\_CFGR\_MOC1PRE\_b0}, \hyperpage{262}
+    \subitem {RCC\_CFGR\_MOC1PRE\_b1}, \hyperpage{263}
+    \subitem {RCC\_CFGR\_MOC1PRE\_b2}, \hyperpage{263}
+    \subitem {RCC\_CFGR\_MOC2\_b0}, \hyperpage{262}
+    \subitem {RCC\_CFGR\_MOC2\_b1}, \hyperpage{262}
+    \subitem {RCC\_CFGR\_MOC2PRE\_b0}, \hyperpage{262}
+    \subitem {RCC\_CFGR\_MOC2PRE\_b1}, \hyperpage{262}
+    \subitem {RCC\_CFGR\_MOC2PRE\_b2}, \hyperpage{262}
+    \subitem {RCC\_CFGR\_PPRE1\_b0}, \hyperpage{265}
+    \subitem {RCC\_CFGR\_PPRE1\_b1}, \hyperpage{265}
+    \subitem {RCC\_CFGR\_PPRE1\_b2}, \hyperpage{265}
+    \subitem {RCC\_CFGR\_PPRE2\_b0}, \hyperpage{264}
+    \subitem {RCC\_CFGR\_PPRE2\_b1}, \hyperpage{264}
+    \subitem {RCC\_CFGR\_PPRE2\_b2}, \hyperpage{265}
+    \subitem {RCC\_CFGR\_RTCPRE\_b0}, \hyperpage{263}
+    \subitem {RCC\_CFGR\_RTCPRE\_b1}, \hyperpage{264}
+    \subitem {RCC\_CFGR\_RTCPRE\_b2}, \hyperpage{264}
+    \subitem {RCC\_CFGR\_RTCPRE\_b3}, \hyperpage{264}
+    \subitem {RCC\_CFGR\_RTCPRE\_b4}, \hyperpage{264}
+    \subitem {RCC\_CFGR\_SW\_b0}, \hyperpage{266}
+    \subitem {RCC\_CFGR\_SW\_b1}, \hyperpage{266}
+    \subitem {RCC\_CFGR\_SWS\_b0}, \hyperpage{266}
+    \subitem {RCC\_CFGR\_SWS\_b1}, \hyperpage{266}
+    \subitem {RCC\_CR\_CSSON}, \hyperpage{257}
+    \subitem {RCC\_CR\_HSEBYP}, \hyperpage{257}
+    \subitem {RCC\_CR\_HSEON}, \hyperpage{257}
+    \subitem {RCC\_CR\_HSERDY}, \hyperpage{257}
+    \subitem {RCC\_CR\_HSION}, \hyperpage{258}
+    \subitem {RCC\_CR\_HSIRDY}, \hyperpage{258}
+    \subitem {RCC\_CR\_PLLI2SON}, \hyperpage{256}
+    \subitem {RCC\_CR\_PLLI2SRDY}, \hyperpage{256}
+    \subitem {RCC\_CR\_PLLON}, \hyperpage{257}
+    \subitem {RCC\_CR\_PLLRDY}, \hyperpage{257}
+    \subitem {RCC\_PLLCFGR\_PLLM\_b0}, \hyperpage{261}
+    \subitem {RCC\_PLLCFGR\_PLLM\_b1}, \hyperpage{261}
+    \subitem {RCC\_PLLCFGR\_PLLM\_b2}, \hyperpage{261}
+    \subitem {RCC\_PLLCFGR\_PLLM\_b3}, \hyperpage{261}
+    \subitem {RCC\_PLLCFGR\_PLLM\_b4}, \hyperpage{261}
+    \subitem {RCC\_PLLCFGR\_PLLM\_b5}, \hyperpage{261}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b0}, \hyperpage{259}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b1}, \hyperpage{259}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b2}, \hyperpage{259}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b3}, \hyperpage{260}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b4}, \hyperpage{260}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b5}, \hyperpage{260}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b6}, \hyperpage{260}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b7}, \hyperpage{260}
+    \subitem {RCC\_PLLCFGR\_PLLN\_b8}, \hyperpage{260}
+    \subitem {RCC\_PLLCFGR\_PLLP\_b0}, \hyperpage{259}
+    \subitem {RCC\_PLLCFGR\_PLLP\_b1}, \hyperpage{259}
+    \subitem {RCC\_PLLCFGR\_PLLQ\_b0}, \hyperpage{258}
+    \subitem {RCC\_PLLCFGR\_PLLQ\_b1}, \hyperpage{258}
+    \subitem {RCC\_PLLCFGR\_PLLQ\_b2}, \hyperpage{258}
+    \subitem {RCC\_PLLCFGR\_PLLQ\_b3}, \hyperpage{258}
+    \subitem {RCC\_PLLCFGR\_PLLSRC}, \hyperpage{259}
+    \subitem {SYSCLK}, \hyperpage{273}
+    \subitem {SYSCLKby128}, \hyperpage{276}
+    \subitem {SYSCLKby16}, \hyperpage{276}
+    \subitem {SYSCLKby2}, \hyperpage{275}
+    \subitem {SYSCLKby256}, \hyperpage{276}
+    \subitem {SYSCLKby4}, \hyperpage{275}
+    \subitem {SYSCLKby512}, \hyperpage{276}
+    \subitem {SYSCLKby64}, \hyperpage{276}
+    \subitem {SYSCLKby8}, \hyperpage{275}
   \item {MRCC\_program.c}
-    \subitem {MRCC\_vDisablePeriphralCLK}, \hyperpage{168}
-    \subitem {MRCC\_vEnablePeriphralCLK}, \hyperpage{168}
-    \subitem {MRCC\_vInit}, \hyperpage{163}
+    \subitem {MRCC\_vDisablePeriphralCLK}, \hyperpage{303}
+    \subitem {MRCC\_vEnablePeriphralCLK}, \hyperpage{303}
+    \subitem {MRCC\_vInit}, \hyperpage{298}
   \item {MRCC\_vDisablePeriphralCLK}
-    \subitem {MRCC\_interface.h}, \hyperpage{115}
-    \subitem {MRCC\_program.c}, \hyperpage{168}
+    \subitem {MRCC\_interface.h}, \hyperpage{249}
+    \subitem {MRCC\_program.c}, \hyperpage{303}
   \item {MRCC\_vEnablePeriphralCLK}
-    \subitem {MRCC\_interface.h}, \hyperpage{114}
-    \subitem {MRCC\_program.c}, \hyperpage{168}
+    \subitem {MRCC\_interface.h}, \hyperpage{249}
+    \subitem {MRCC\_program.c}, \hyperpage{303}
   \item {MRCC\_vInit}
-    \subitem {MRCC\_interface.h}, \hyperpage{110}
-    \subitem {MRCC\_program.c}, \hyperpage{163}
+    \subitem {MRCC\_interface.h}, \hyperpage{245}
+    \subitem {MRCC\_program.c}, \hyperpage{298}
+  \item {MSCB}
+    \subitem {NVIC Registers}, \hyperpage{80}
+  \item {MSYSCFG}
+    \subitem {SYSCFG Memory Registers}, \hyperpage{29}
+  \item {MSYSCFG\_MemMap\_t}, \hyperpage{111}
+    \subitem {CMPCR}, \hyperpage{112}
+    \subitem {EXTICR}, \hyperpage{112}
+    \subitem {MEMRMP}, \hyperpage{112}
+    \subitem {PMC}, \hyperpage{112}
+  \item {MSYSCFG\_vSetEXTIPort}
+    \subitem {EXTI\_interface.h}, \hyperpage{160}
+    \subitem {EXTI\_program.c}, \hyperpage{164}
+  \item {MSysTick\_u32GetElapsedTime}
+    \subitem {SysTick\_interface.h}, \hyperpage{317}
+    \subitem {SysTick\_program.c}, \hyperpage{327}
+  \item {MSysTick\_u32GetRemainingTime}
+    \subitem {SysTick\_interface.h}, \hyperpage{317}
+    \subitem {SysTick\_program.c}, \hyperpage{327}
+  \item {MSysTick\_vDelay}
+    \subitem {SysTick\_interface.h}, \hyperpage{314}
+    \subitem {SysTick\_program.c}, \hyperpage{323}
+  \item {MSysTick\_vDelayMicroSec}
+    \subitem {SysTick\_interface.h}, \hyperpage{315}
+    \subitem {SysTick\_program.c}, \hyperpage{324}
+  \item {MSysTick\_vDelayMilliSec}
+    \subitem {SysTick\_interface.h}, \hyperpage{315}
+    \subitem {SysTick\_program.c}, \hyperpage{324}
+  \item {MSysTick\_vDelaySec}
+    \subitem {SysTick\_interface.h}, \hyperpage{315}
+    \subitem {SysTick\_program.c}, \hyperpage{325}
+  \item {MSysTick\_vDisable}
+    \subitem {SysTick\_interface.h}, \hyperpage{318}
+    \subitem {SysTick\_program.c}, \hyperpage{328}
+  \item {MSysTick\_vEnable}
+    \subitem {SysTick\_interface.h}, \hyperpage{317}
+    \subitem {SysTick\_program.c}, \hyperpage{328}
+  \item {MSysTick\_vEnableException}
+    \subitem {SysTick\_interface.h}, \hyperpage{318}
+    \subitem {SysTick\_program.c}, \hyperpage{322}
+  \item {MSysTick\_vInit}
+    \subitem {SysTick\_interface.h}, \hyperpage{314}
+    \subitem {SysTick\_program.c}, \hyperpage{322}
+  \item {MSysTick\_vSetBusyWait}
+    \subitem {SysTick\_interface.h}, \hyperpage{314}
+    \subitem {SysTick\_program.c}, \hyperpage{322}
+  \item {MSysTick\_vSetPeriodicInterval}
+    \subitem {SysTick\_interface.h}, \hyperpage{316}
+    \subitem {SysTick\_program.c}, \hyperpage{326}
+  \item {MSysTick\_vSetSingleInterval}
+    \subitem {SysTick\_interface.h}, \hyperpage{315}
+    \subitem {SysTick\_program.c}, \hyperpage{325}
+  \item {MSysTick\_vStopInterval}
+    \subitem {SysTick\_interface.h}, \hyperpage{316}
+    \subitem {SysTick\_program.c}, \hyperpage{326}
   \item {MY\_MS\_DELAY}
     \subitem {Utilities macros}, \hyperpage{15}
 
   \indexspace
 
+  \item {NO\_GROUP\_PRIORITY}
+    \subitem {Group priorities}, \hyperpage{52}
+  \item {NO\_SUB\_PRIORITY}
+    \subitem {Sub-\/Group priorities}, \hyperpage{58}
   \item {NoCLK0}
-    \subitem {MRCC\_private.h}, \hyperpage{142}
+    \subitem {MRCC\_private.h}, \hyperpage{276}
   \item {NoCLK1}
-    \subitem {MRCC\_private.h}, \hyperpage{142}
+    \subitem {MRCC\_private.h}, \hyperpage{277}
   \item {NoDivision}
-    \subitem {MRCC\_private.h}, \hyperpage{139}
+    \subitem {MRCC\_private.h}, \hyperpage{274}
+  \item {NoGROUP\_16Sub\_Priorities}
+    \subitem {Interrupt priority grouping}, \hyperpage{49}
   \item {NOTBYBASED}
-    \subitem {MRCC\_private.h}, \hyperpage{138}
+    \subitem {MRCC\_private.h}, \hyperpage{273}
   \item {NULL}
-    \subitem {Standard values}, \hyperpage{18}
+    \subitem {Standard values}, \hyperpage{19}
+  \item {NVIC Addresses}, \hyperpage{78}
+    \subitem {NVIC\_BASE\_ADDRESS}, \hyperpage{79}
+    \subitem {SCB\_BASE\_ADDRESS}, \hyperpage{79}
+  \item {NVIC Registers}, \hyperpage{79}
+    \subitem {MNVIC}, \hyperpage{80}
+    \subitem {MSCB}, \hyperpage{80}
+  \item {NVIC Settable Priorities}, \hyperpage{80}
+    \subitem {BUS\_FAULT}, \hyperpage{81}
+    \subitem {MEMORY\_MANAGE}, \hyperpage{81}
+    \subitem {PEND\_SV}, \hyperpage{81}
+    \subitem {SV\_CALL}, \hyperpage{81}
+    \subitem {SYSTICK}, \hyperpage{81}
+    \subitem {USAGE\_FAULT}, \hyperpage{82}
+  \item {NVIC Vector Table}, \hyperpage{62}
+    \subitem {ADC}, \hyperpage{69}
+    \subitem {DMA1\_STREAM0}, \hyperpage{67}
+    \subitem {DMA1\_STREAM1}, \hyperpage{67}
+    \subitem {DMA1\_STREAM2}, \hyperpage{68}
+    \subitem {DMA1\_STREAM3}, \hyperpage{68}
+    \subitem {DMA1\_STREAM4}, \hyperpage{68}
+    \subitem {DMA1\_STREAM5}, \hyperpage{68}
+    \subitem {DMA1\_STREAM6}, \hyperpage{69}
+    \subitem {DMA1\_STREAM7}, \hyperpage{74}
+    \subitem {DMA2\_STREAM0}, \hyperpage{75}
+    \subitem {DMA2\_STREAM1}, \hyperpage{75}
+    \subitem {DMA2\_STREAM2}, \hyperpage{75}
+    \subitem {DMA2\_STREAM3}, \hyperpage{76}
+    \subitem {DMA2\_STREAM4}, \hyperpage{76}
+    \subitem {DMA2\_STREAM5}, \hyperpage{76}
+    \subitem {DMA2\_STREAM6}, \hyperpage{77}
+    \subitem {DMA2\_STREAM7}, \hyperpage{77}
+    \subitem {EXTI0}, \hyperpage{66}
+    \subitem {EXTI1}, \hyperpage{66}
+    \subitem {EXTI15\_10}, \hyperpage{73}
+    \subitem {EXTI16}, \hyperpage{65}
+    \subitem {EXTI17}, \hyperpage{73}
+    \subitem {EXTI18}, \hyperpage{74}
+    \subitem {EXTI2}, \hyperpage{66}
+    \subitem {EXTI21}, \hyperpage{65}
+    \subitem {EXTI22}, \hyperpage{65}
+    \subitem {EXTI3}, \hyperpage{67}
+    \subitem {EXTI4}, \hyperpage{67}
+    \subitem {EXTI9}, \hyperpage{69}
+    \subitem {FLASH}, \hyperpage{65}
+    \subitem {FPU}, \hyperpage{78}
+    \subitem {I2C1\_ER}, \hyperpage{71}
+    \subitem {I2C1\_EV}, \hyperpage{71}
+    \subitem {I2C2\_ER}, \hyperpage{72}
+    \subitem {I2C2\_EV}, \hyperpage{72}
+    \subitem {I2C3\_ER}, \hyperpage{78}
+    \subitem {I2C3\_EV}, \hyperpage{77}
+    \subitem {OTG\_FS}, \hyperpage{76}
+    \subitem {RCC}, \hyperpage{66}
+    \subitem {SDIO}, \hyperpage{74}
+    \subitem {SPI1}, \hyperpage{72}
+    \subitem {SPI2}, \hyperpage{72}
+    \subitem {SPI3}, \hyperpage{75}
+    \subitem {SPI4}, \hyperpage{78}
+    \subitem {TIM1\_BRK\_TIM9}, \hyperpage{69}
+    \subitem {TIM1\_CC}, \hyperpage{70}
+    \subitem {TIM1\_TRG\_COM\_TIM11}, \hyperpage{70}
+    \subitem {TIM1\_UP\_TIM10}, \hyperpage{70}
+    \subitem {TIM2}, \hyperpage{70}
+    \subitem {TIM3}, \hyperpage{71}
+    \subitem {TIM4}, \hyperpage{71}
+    \subitem {TIM5}, \hyperpage{74}
+    \subitem {USART1}, \hyperpage{73}
+    \subitem {USART2}, \hyperpage{73}
+    \subitem {USART6}, \hyperpage{77}
+    \subitem {WWDG}, \hyperpage{64}
+  \item {NVIC\_BASE\_ADDRESS}
+    \subitem {NVIC Addresses}, \hyperpage{79}
+  \item {NVIC\_GetPriority}
+    \subitem {NVIC\_interface.h}, \hyperpage{213}
+    \subitem {NVIC\_program.c}, \hyperpage{221}
+  \item {NVIC\_interface.h}
+    \subitem {MNVIC\_u8GetActive}, \hyperpage{212}
+    \subitem {MNVIC\_vClearPendingFlag}, \hyperpage{211}
+    \subitem {MNVIC\_vDisablePeriphral}, \hyperpage{211}
+    \subitem {MNVIC\_vEnablePeriphral}, \hyperpage{210}
+    \subitem {MNVIC\_vSetPendingFlag}, \hyperpage{211}
+    \subitem {MNVIC\_vSetPriority}, \hyperpage{213}
+    \subitem {MNVIC\_vSetPriorityConfig}, \hyperpage{212}
+    \subitem {NVIC\_GetPriority}, \hyperpage{213}
+  \item {NVIC\_MemoryMapType}, \hyperpage{113}
+    \subitem {IABRx}, \hyperpage{116}
+    \subitem {ICERx}, \hyperpage{114}
+    \subitem {ICPRx}, \hyperpage{115}
+    \subitem {IPRx}, \hyperpage{116}
+    \subitem {ISERx}, \hyperpage{113}
+    \subitem {ISPRx}, \hyperpage{114}
+    \subitem {RESERVED0x}, \hyperpage{113}
+    \subitem {RESERVED2x}, \hyperpage{115}
+    \subitem {RESERVED3x}, \hyperpage{115}
+    \subitem {RESERVED4x}, \hyperpage{116}
+    \subitem {RSERVED1x}, \hyperpage{114}
+  \item {NVIC\_private.h}
+    \subitem {MNVIC\_STIR}, \hyperpage{216}
+    \subitem {VECTKEY\_PASSWORD}, \hyperpage{216}
+  \item {NVIC\_program.c}
+    \subitem {MNVIC\_u8GetActive}, \hyperpage{219}
+    \subitem {MNVIC\_vClearPendingFlag}, \hyperpage{219}
+    \subitem {MNVIC\_vDisablePeriphral}, \hyperpage{219}
+    \subitem {MNVIC\_vEnablePeriphral}, \hyperpage{218}
+    \subitem {MNVIC\_vSetPendingFlag}, \hyperpage{219}
+    \subitem {MNVIC\_vSetPriority}, \hyperpage{220}
+    \subitem {MNVIC\_vSetPriorityConfig}, \hyperpage{220}
+    \subitem {NVIC\_GetPriority}, \hyperpage{221}
+    \subitem {REGISTER\_SIZE}, \hyperpage{218}
 
   \indexspace
 
   \item {ODRx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{40}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{107}
   \item {OSPEEDRx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{40}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{107}
+  \item {OTG\_FS}
+    \subitem {NVIC Vector Table}, \hyperpage{76}
   \item {OTGFS}
-    \subitem {MRCC\_config.h}, \hyperpage{89}
+    \subitem {MRCC\_config.h}, \hyperpage{230}
   \item {OTYPERx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{40}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{107}
   \item {OutputSpeed}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{43}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{110}
   \item {OutputType}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{43}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{110}
 
   \indexspace
 
@@ -1107,316 +1865,350 @@
     \subitem {Compiler standard macros}, \hyperpage{14}
   \item {P2VAR}
     \subitem {Compiler standard macros}, \hyperpage{13}
+  \item {PEND\_SV}
+    \subitem {NVIC Settable Priorities}, \hyperpage{81}
+  \item {PERIODIC\_INTERVAL\_MODE}
+    \subitem {Systick Interval Mode Configuration}, \hyperpage{94}
+  \item {PERIODIC\_INTERVAL\_TICK\_TIME}
+    \subitem {SysTick\_interface.h}, \hyperpage{313}
   \item {Pin}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{42}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{109}
   \item {PLL}
-    \subitem {MRCC\_config.h}, \hyperpage{84}
+    \subitem {MRCC\_config.h}, \hyperpage{225}
   \item {PLLCFGR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{45}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{118}
   \item {PLLCLK}
-    \subitem {MRCC\_private.h}, \hyperpage{139, 140}
+    \subitem {MRCC\_private.h}, \hyperpage{273}, \hyperpage{275}
   \item {PLLI2S}
-    \subitem {MRCC\_config.h}, \hyperpage{84}
+    \subitem {MRCC\_config.h}, \hyperpage{225}
   \item {PLLI2SCFGR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{125}
   \item {PLLI2SCLK}
-    \subitem {MRCC\_private.h}, \hyperpage{138}
+    \subitem {MRCC\_private.h}, \hyperpage{273}
   \item {PLLM}
-    \subitem {MRCC\_config.h}, \hyperpage{86}
+    \subitem {MRCC\_config.h}, \hyperpage{227}
   \item {PLLN}
-    \subitem {MRCC\_config.h}, \hyperpage{86}
+    \subitem {MRCC\_config.h}, \hyperpage{227}
   \item {PLLP}
-    \subitem {MRCC\_config.h}, \hyperpage{86}
+    \subitem {MRCC\_config.h}, \hyperpage{226}
   \item {PLLQ}
-    \subitem {MRCC\_config.h}, \hyperpage{85}
+    \subitem {MRCC\_config.h}, \hyperpage{226}
   \item {PLLSRC}
-    \subitem {MRCC\_config.h}, \hyperpage{85}
+    \subitem {MRCC\_config.h}, \hyperpage{226}
+  \item {PMC}
+    \subitem {MSYSCFG\_MemMap\_t}, \hyperpage{112}
   \item {Port}
-    \subitem {MGPIOx\_ConfigType}, \hyperpage{42}
+    \subitem {MGPIOx\_ConfigType}, \hyperpage{109}
+  \item {PortNum}
+    \subitem {EXTI\_ConfigType}, \hyperpage{103}
   \item {PPRE1}
-    \subitem {MRCC\_config.h}, \hyperpage{87}
+    \subitem {MRCC\_config.h}, \hyperpage{228}
   \item {PPRE2}
-    \subitem {MRCC\_config.h}, \hyperpage{87}
+    \subitem {MRCC\_config.h}, \hyperpage{228}
+  \item {PR}
+    \subitem {EXTI\_Type}, \hyperpage{105}
+  \item {PRESSED}
+    \subitem {Standard values}, \hyperpage{20}
   \item {PUPDRx}
-    \subitem {GPIOx\_MemoryMapType}, \hyperpage{40}
+    \subitem {GPIOx\_MemoryMapType}, \hyperpage{107}
   \item {PWREN}
-    \subitem {MRCC\_config.h}, \hyperpage{90}
+    \subitem {MRCC\_config.h}, \hyperpage{230}
 
   \indexspace
 
   \item {RCC}
-    \subitem {MRCC\_private.h}, \hyperpage{121}
+    \subitem {MRCC\_private.h}, \hyperpage{256}
+    \subitem {NVIC Vector Table}, \hyperpage{66}
   \item {RCC\_AHB1}
-    \subitem {MRCC\_interface.h}, \hyperpage{103}
+    \subitem {ID options}, \hyperpage{82}
   \item {RCC\_AHB1ENR\_CRCEN}
-    \subitem {MRCC\_private.h}, \hyperpage{132}
+    \subitem {MRCC\_private.h}, \hyperpage{267}
   \item {RCC\_AHB1ENR\_DMA1EN}
-    \subitem {MRCC\_private.h}, \hyperpage{132}
+    \subitem {MRCC\_private.h}, \hyperpage{267}
   \item {RCC\_AHB1ENR\_DMA2EN}
-    \subitem {MRCC\_private.h}, \hyperpage{132}
+    \subitem {MRCC\_private.h}, \hyperpage{267}
   \item {RCC\_AHB1ENR\_GPIOAEN}
-    \subitem {MRCC\_private.h}, \hyperpage{133}
+    \subitem {MRCC\_private.h}, \hyperpage{268}
   \item {RCC\_AHB1ENR\_GPIOBEN}
-    \subitem {MRCC\_private.h}, \hyperpage{133}
+    \subitem {MRCC\_private.h}, \hyperpage{268}
   \item {RCC\_AHB1ENR\_GPIOCEN}
-    \subitem {MRCC\_private.h}, \hyperpage{133}
+    \subitem {MRCC\_private.h}, \hyperpage{268}
   \item {RCC\_AHB1ENR\_GPIODEN}
-    \subitem {MRCC\_private.h}, \hyperpage{133}
+    \subitem {MRCC\_private.h}, \hyperpage{267}
   \item {RCC\_AHB1ENR\_GPIOEEN}
-    \subitem {MRCC\_private.h}, \hyperpage{132}
+    \subitem {MRCC\_private.h}, \hyperpage{267}
   \item {RCC\_AHB1ENR\_GPIOHEN}
-    \subitem {MRCC\_private.h}, \hyperpage{132}
+    \subitem {MRCC\_private.h}, \hyperpage{267}
   \item {RCC\_AHB1LPENR}
-    \subitem {MRCC\_interface.h}, \hyperpage{104}
+    \subitem {ID options}, \hyperpage{83}
   \item {RCC\_AHB1LPENR\_FLITFLPEN}
-    \subitem {MRCC\_private.h}, \hyperpage{137}
+    \subitem {MRCC\_private.h}, \hyperpage{272}
   \item {RCC\_AHB2}
-    \subitem {MRCC\_interface.h}, \hyperpage{103}
+    \subitem {ID options}, \hyperpage{82}
   \item {RCC\_AHB2ENR\_OTGFSEN}
-    \subitem {MRCC\_private.h}, \hyperpage{133}
+    \subitem {MRCC\_private.h}, \hyperpage{268}
   \item {RCC\_APB1}
-    \subitem {MRCC\_interface.h}, \hyperpage{103}
+    \subitem {ID options}, \hyperpage{83}
   \item {RCC\_APB1ENR\_I2C1EN}
-    \subitem {MRCC\_private.h}, \hyperpage{134}
+    \subitem {MRCC\_private.h}, \hyperpage{269}
   \item {RCC\_APB1ENR\_I2C2EN}
-    \subitem {MRCC\_private.h}, \hyperpage{134}
+    \subitem {MRCC\_private.h}, \hyperpage{269}
   \item {RCC\_APB1ENR\_I2C3EN}
-    \subitem {MRCC\_private.h}, \hyperpage{134}
+    \subitem {MRCC\_private.h}, \hyperpage{268}
   \item {RCC\_APB1ENR\_PWREN}
-    \subitem {MRCC\_private.h}, \hyperpage{133}
+    \subitem {MRCC\_private.h}, \hyperpage{268}
   \item {RCC\_APB1ENR\_SPI2EN}
-    \subitem {MRCC\_private.h}, \hyperpage{134}
+    \subitem {MRCC\_private.h}, \hyperpage{269}
   \item {RCC\_APB1ENR\_SPI3EN}
-    \subitem {MRCC\_private.h}, \hyperpage{134}
+    \subitem {MRCC\_private.h}, \hyperpage{269}
   \item {RCC\_APB1ENR\_TIM2EN}
-    \subitem {MRCC\_private.h}, \hyperpage{135}
+    \subitem {MRCC\_private.h}, \hyperpage{270}
   \item {RCC\_APB1ENR\_TIM3EN}
-    \subitem {MRCC\_private.h}, \hyperpage{135}
+    \subitem {MRCC\_private.h}, \hyperpage{270}
   \item {RCC\_APB1ENR\_TIM4EN}
-    \subitem {MRCC\_private.h}, \hyperpage{135}
+    \subitem {MRCC\_private.h}, \hyperpage{270}
   \item {RCC\_APB1ENR\_TIM5EN}
-    \subitem {MRCC\_private.h}, \hyperpage{135}
+    \subitem {MRCC\_private.h}, \hyperpage{270}
   \item {RCC\_APB1ENR\_USART2EN}
-    \subitem {MRCC\_private.h}, \hyperpage{134}
+    \subitem {MRCC\_private.h}, \hyperpage{269}
   \item {RCC\_APB1ENR\_WWDGEN}
-    \subitem {MRCC\_private.h}, \hyperpage{135}
+    \subitem {MRCC\_private.h}, \hyperpage{269}
   \item {RCC\_APB2}
-    \subitem {MRCC\_interface.h}, \hyperpage{103}
+    \subitem {ID options}, \hyperpage{83}
   \item {RCC\_APB2ENR\_ADC1EN}
-    \subitem {MRCC\_private.h}, \hyperpage{137}
+    \subitem {MRCC\_private.h}, \hyperpage{271}
   \item {RCC\_APB2ENR\_SDIOEN}
-    \subitem {MRCC\_private.h}, \hyperpage{136}
+    \subitem {MRCC\_private.h}, \hyperpage{271}
   \item {RCC\_APB2ENR\_SPI1EN}
-    \subitem {MRCC\_private.h}, \hyperpage{136}
+    \subitem {MRCC\_private.h}, \hyperpage{271}
   \item {RCC\_APB2ENR\_SPI4EN}
-    \subitem {MRCC\_private.h}, \hyperpage{136}
+    \subitem {MRCC\_private.h}, \hyperpage{271}
   \item {RCC\_APB2ENR\_SYSCFGEN}
-    \subitem {MRCC\_private.h}, \hyperpage{136}
+    \subitem {MRCC\_private.h}, \hyperpage{271}
   \item {RCC\_APB2ENR\_TIM10EN}
-    \subitem {MRCC\_private.h}, \hyperpage{136}
+    \subitem {MRCC\_private.h}, \hyperpage{270}
   \item {RCC\_APB2ENR\_TIM11EN}
-    \subitem {MRCC\_private.h}, \hyperpage{135}
+    \subitem {MRCC\_private.h}, \hyperpage{270}
   \item {RCC\_APB2ENR\_TIM1EN}
-    \subitem {MRCC\_private.h}, \hyperpage{137}
+    \subitem {MRCC\_private.h}, \hyperpage{272}
   \item {RCC\_APB2ENR\_TIM9EN}
-    \subitem {MRCC\_private.h}, \hyperpage{136}
+    \subitem {MRCC\_private.h}, \hyperpage{271}
   \item {RCC\_APB2ENR\_USART1EN}
-    \subitem {MRCC\_private.h}, \hyperpage{137}
+    \subitem {MRCC\_private.h}, \hyperpage{272}
   \item {RCC\_APB2ENR\_USART6EN}
-    \subitem {MRCC\_private.h}, \hyperpage{137}
+    \subitem {MRCC\_private.h}, \hyperpage{272}
   \item {RCC\_BASE\_ADDRESS}
-    \subitem {MRCC\_private.h}, \hyperpage{121}
+    \subitem {MRCC\_private.h}, \hyperpage{256}
   \item {RCC\_CFGR\_HPRE\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{130}
+    \subitem {MRCC\_private.h}, \hyperpage{265}
   \item {RCC\_CFGR\_HPRE\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{131}
+    \subitem {MRCC\_private.h}, \hyperpage{265}
   \item {RCC\_CFGR\_HPRE\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{131}
+    \subitem {MRCC\_private.h}, \hyperpage{266}
   \item {RCC\_CFGR\_HPRE\_b3}
-    \subitem {MRCC\_private.h}, \hyperpage{131}
+    \subitem {MRCC\_private.h}, \hyperpage{266}
   \item {RCC\_CFGR\_I2SSRC}
-    \subitem {MRCC\_private.h}, \hyperpage{128}
+    \subitem {MRCC\_private.h}, \hyperpage{263}
   \item {RCC\_CFGR\_MOC1\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{128}
+    \subitem {MRCC\_private.h}, \hyperpage{263}
   \item {RCC\_CFGR\_MOC1\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{128}
+    \subitem {MRCC\_private.h}, \hyperpage{263}
   \item {RCC\_CFGR\_MOC1PRE\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{128}
+    \subitem {MRCC\_private.h}, \hyperpage{262}
   \item {RCC\_CFGR\_MOC1PRE\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{128}
+    \subitem {MRCC\_private.h}, \hyperpage{263}
   \item {RCC\_CFGR\_MOC1PRE\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{128}
+    \subitem {MRCC\_private.h}, \hyperpage{263}
   \item {RCC\_CFGR\_MOC2\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{127}
+    \subitem {MRCC\_private.h}, \hyperpage{262}
   \item {RCC\_CFGR\_MOC2\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{127}
+    \subitem {MRCC\_private.h}, \hyperpage{262}
   \item {RCC\_CFGR\_MOC2PRE\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{127}
+    \subitem {MRCC\_private.h}, \hyperpage{262}
   \item {RCC\_CFGR\_MOC2PRE\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{127}
+    \subitem {MRCC\_private.h}, \hyperpage{262}
   \item {RCC\_CFGR\_MOC2PRE\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{127}
+    \subitem {MRCC\_private.h}, \hyperpage{262}
   \item {RCC\_CFGR\_PPRE1\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{130}
+    \subitem {MRCC\_private.h}, \hyperpage{265}
   \item {RCC\_CFGR\_PPRE1\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{130}
+    \subitem {MRCC\_private.h}, \hyperpage{265}
   \item {RCC\_CFGR\_PPRE1\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{130}
+    \subitem {MRCC\_private.h}, \hyperpage{265}
   \item {RCC\_CFGR\_PPRE2\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{129}
+    \subitem {MRCC\_private.h}, \hyperpage{264}
   \item {RCC\_CFGR\_PPRE2\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{130}
+    \subitem {MRCC\_private.h}, \hyperpage{264}
   \item {RCC\_CFGR\_PPRE2\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{130}
+    \subitem {MRCC\_private.h}, \hyperpage{265}
   \item {RCC\_CFGR\_RTCPRE\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{129}
+    \subitem {MRCC\_private.h}, \hyperpage{263}
   \item {RCC\_CFGR\_RTCPRE\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{129}
+    \subitem {MRCC\_private.h}, \hyperpage{264}
   \item {RCC\_CFGR\_RTCPRE\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{129}
+    \subitem {MRCC\_private.h}, \hyperpage{264}
   \item {RCC\_CFGR\_RTCPRE\_b3}
-    \subitem {MRCC\_private.h}, \hyperpage{129}
+    \subitem {MRCC\_private.h}, \hyperpage{264}
   \item {RCC\_CFGR\_RTCPRE\_b4}
-    \subitem {MRCC\_private.h}, \hyperpage{129}
+    \subitem {MRCC\_private.h}, \hyperpage{264}
   \item {RCC\_CFGR\_SW\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{131}
+    \subitem {MRCC\_private.h}, \hyperpage{266}
   \item {RCC\_CFGR\_SW\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{132}
+    \subitem {MRCC\_private.h}, \hyperpage{266}
   \item {RCC\_CFGR\_SWS\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{131}
+    \subitem {MRCC\_private.h}, \hyperpage{266}
   \item {RCC\_CFGR\_SWS\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{131}
+    \subitem {MRCC\_private.h}, \hyperpage{266}
   \item {RCC\_CR\_CSSON}
-    \subitem {MRCC\_private.h}, \hyperpage{122}
+    \subitem {MRCC\_private.h}, \hyperpage{257}
   \item {RCC\_CR\_HSEBYP}
-    \subitem {MRCC\_private.h}, \hyperpage{122}
+    \subitem {MRCC\_private.h}, \hyperpage{257}
   \item {RCC\_CR\_HSEON}
-    \subitem {MRCC\_private.h}, \hyperpage{123}
+    \subitem {MRCC\_private.h}, \hyperpage{257}
   \item {RCC\_CR\_HSERDY}
-    \subitem {MRCC\_private.h}, \hyperpage{122}
+    \subitem {MRCC\_private.h}, \hyperpage{257}
   \item {RCC\_CR\_HSION}
-    \subitem {MRCC\_private.h}, \hyperpage{123}
+    \subitem {MRCC\_private.h}, \hyperpage{258}
   \item {RCC\_CR\_HSIRDY}
-    \subitem {MRCC\_private.h}, \hyperpage{123}
+    \subitem {MRCC\_private.h}, \hyperpage{258}
   \item {RCC\_CR\_PLLI2SON}
-    \subitem {MRCC\_private.h}, \hyperpage{122}
+    \subitem {MRCC\_private.h}, \hyperpage{256}
   \item {RCC\_CR\_PLLI2SRDY}
-    \subitem {MRCC\_private.h}, \hyperpage{121}
+    \subitem {MRCC\_private.h}, \hyperpage{256}
   \item {RCC\_CR\_PLLON}
-    \subitem {MRCC\_private.h}, \hyperpage{122}
+    \subitem {MRCC\_private.h}, \hyperpage{257}
   \item {RCC\_CR\_PLLRDY}
-    \subitem {MRCC\_private.h}, \hyperpage{122}
-  \item {RCC\_MemoryMapType}, \hyperpage{44}
-    \subitem {AHB1ENR}, \hyperpage{47}
-    \subitem {AHB1LPENR}, \hyperpage{48}
-    \subitem {AHB1RSTR}, \hyperpage{46}
-    \subitem {AHB2ENR}, \hyperpage{47}
-    \subitem {AHB2LPENR}, \hyperpage{48}
-    \subitem {AHB2RSTR}, \hyperpage{46}
-    \subitem {APB1ENR}, \hyperpage{48}
-    \subitem {APB1LPENR}, \hyperpage{49}
-    \subitem {APB1RSTR}, \hyperpage{46}
-    \subitem {APB2ENR}, \hyperpage{48}
-    \subitem {APB2LPENR}, \hyperpage{49}
-    \subitem {APB2RSTR}, \hyperpage{46}
-    \subitem {BDCR}, \hyperpage{50}
-    \subitem {CFGR}, \hyperpage{45}
-    \subitem {CIR}, \hyperpage{45}
-    \subitem {CR}, \hyperpage{45}
-    \subitem {CSR}, \hyperpage{50}
-    \subitem {DCKCFGR}, \hyperpage{50}
-    \subitem {PLLCFGR}, \hyperpage{45}
-    \subitem {PLLI2SCFGR}, \hyperpage{50}
-    \subitem {Reserved1}, \hyperpage{46}
-    \subitem {Reserved10}, \hyperpage{49}
-    \subitem {Reserved11}, \hyperpage{49}
-    \subitem {Reserved12}, \hyperpage{49}
-    \subitem {Reserved13}, \hyperpage{50}
-    \subitem {Reserved14}, \hyperpage{50}
-    \subitem {Reserved2}, \hyperpage{46}
-    \subitem {Reserved3}, \hyperpage{47}
-    \subitem {Reserved4}, \hyperpage{47}
-    \subitem {Reserved5}, \hyperpage{47}
-    \subitem {Reserved6}, \hyperpage{47}
-    \subitem {Reserved7}, \hyperpage{48}
-    \subitem {Reserved8}, \hyperpage{48}
-    \subitem {Reserved9}, \hyperpage{49}
-    \subitem {SSCGR}, \hyperpage{50}
+    \subitem {MRCC\_private.h}, \hyperpage{257}
+  \item {RCC\_MemoryMapType}, \hyperpage{117}
+    \subitem {AHB1ENR}, \hyperpage{121}
+    \subitem {AHB1LPENR}, \hyperpage{122}
+    \subitem {AHB1RSTR}, \hyperpage{119}
+    \subitem {AHB2ENR}, \hyperpage{121}
+    \subitem {AHB2LPENR}, \hyperpage{122}
+    \subitem {AHB2RSTR}, \hyperpage{119}
+    \subitem {APB1ENR}, \hyperpage{121}
+    \subitem {APB1LPENR}, \hyperpage{123}
+    \subitem {APB1RSTR}, \hyperpage{120}
+    \subitem {APB2ENR}, \hyperpage{122}
+    \subitem {APB2LPENR}, \hyperpage{123}
+    \subitem {APB2RSTR}, \hyperpage{120}
+    \subitem {BDCR}, \hyperpage{124}
+    \subitem {CFGR}, \hyperpage{119}
+    \subitem {CIR}, \hyperpage{119}
+    \subitem {CR}, \hyperpage{118}
+    \subitem {CSR}, \hyperpage{124}
+    \subitem {DCKCFGR}, \hyperpage{125}
+    \subitem {PLLCFGR}, \hyperpage{118}
+    \subitem {PLLI2SCFGR}, \hyperpage{125}
+    \subitem {Reserved1}, \hyperpage{119}
+    \subitem {Reserved10}, \hyperpage{123}
+    \subitem {Reserved11}, \hyperpage{123}
+    \subitem {Reserved12}, \hyperpage{124}
+    \subitem {Reserved13}, \hyperpage{124}
+    \subitem {Reserved14}, \hyperpage{124}
+    \subitem {Reserved2}, \hyperpage{120}
+    \subitem {Reserved3}, \hyperpage{120}
+    \subitem {Reserved4}, \hyperpage{120}
+    \subitem {Reserved5}, \hyperpage{121}
+    \subitem {Reserved6}, \hyperpage{121}
+    \subitem {Reserved7}, \hyperpage{122}
+    \subitem {Reserved8}, \hyperpage{122}
+    \subitem {Reserved9}, \hyperpage{123}
+    \subitem {SSCGR}, \hyperpage{125}
   \item {RCC\_PLLCFGR\_PLLM\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{126}
+    \subitem {MRCC\_private.h}, \hyperpage{261}
   \item {RCC\_PLLCFGR\_PLLM\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{126}
+    \subitem {MRCC\_private.h}, \hyperpage{261}
   \item {RCC\_PLLCFGR\_PLLM\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{126}
+    \subitem {MRCC\_private.h}, \hyperpage{261}
   \item {RCC\_PLLCFGR\_PLLM\_b3}
-    \subitem {MRCC\_private.h}, \hyperpage{126}
+    \subitem {MRCC\_private.h}, \hyperpage{261}
   \item {RCC\_PLLCFGR\_PLLM\_b4}
-    \subitem {MRCC\_private.h}, \hyperpage{126}
+    \subitem {MRCC\_private.h}, \hyperpage{261}
   \item {RCC\_PLLCFGR\_PLLM\_b5}
-    \subitem {MRCC\_private.h}, \hyperpage{127}
+    \subitem {MRCC\_private.h}, \hyperpage{261}
   \item {RCC\_PLLCFGR\_PLLN\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{124}
+    \subitem {MRCC\_private.h}, \hyperpage{259}
   \item {RCC\_PLLCFGR\_PLLN\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{124}
+    \subitem {MRCC\_private.h}, \hyperpage{259}
   \item {RCC\_PLLCFGR\_PLLN\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{125}
+    \subitem {MRCC\_private.h}, \hyperpage{259}
   \item {RCC\_PLLCFGR\_PLLN\_b3}
-    \subitem {MRCC\_private.h}, \hyperpage{125}
+    \subitem {MRCC\_private.h}, \hyperpage{260}
   \item {RCC\_PLLCFGR\_PLLN\_b4}
-    \subitem {MRCC\_private.h}, \hyperpage{125}
+    \subitem {MRCC\_private.h}, \hyperpage{260}
   \item {RCC\_PLLCFGR\_PLLN\_b5}
-    \subitem {MRCC\_private.h}, \hyperpage{125}
+    \subitem {MRCC\_private.h}, \hyperpage{260}
   \item {RCC\_PLLCFGR\_PLLN\_b6}
-    \subitem {MRCC\_private.h}, \hyperpage{125}
+    \subitem {MRCC\_private.h}, \hyperpage{260}
   \item {RCC\_PLLCFGR\_PLLN\_b7}
-    \subitem {MRCC\_private.h}, \hyperpage{125}
+    \subitem {MRCC\_private.h}, \hyperpage{260}
   \item {RCC\_PLLCFGR\_PLLN\_b8}
-    \subitem {MRCC\_private.h}, \hyperpage{126}
+    \subitem {MRCC\_private.h}, \hyperpage{260}
   \item {RCC\_PLLCFGR\_PLLP\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{124}
+    \subitem {MRCC\_private.h}, \hyperpage{259}
   \item {RCC\_PLLCFGR\_PLLP\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{124}
+    \subitem {MRCC\_private.h}, \hyperpage{259}
   \item {RCC\_PLLCFGR\_PLLQ\_b0}
-    \subitem {MRCC\_private.h}, \hyperpage{123}
+    \subitem {MRCC\_private.h}, \hyperpage{258}
   \item {RCC\_PLLCFGR\_PLLQ\_b1}
-    \subitem {MRCC\_private.h}, \hyperpage{123}
+    \subitem {MRCC\_private.h}, \hyperpage{258}
   \item {RCC\_PLLCFGR\_PLLQ\_b2}
-    \subitem {MRCC\_private.h}, \hyperpage{123}
+    \subitem {MRCC\_private.h}, \hyperpage{258}
   \item {RCC\_PLLCFGR\_PLLQ\_b3}
-    \subitem {MRCC\_private.h}, \hyperpage{124}
+    \subitem {MRCC\_private.h}, \hyperpage{258}
   \item {RCC\_PLLCFGR\_PLLSRC}
-    \subitem {MRCC\_private.h}, \hyperpage{124}
-  \item {README.md}, \hyperpage{51}
+    \subitem {MRCC\_private.h}, \hyperpage{259}
+  \item {REGISTER\_SIZE}
+    \subitem {NVIC\_program.c}, \hyperpage{218}
+  \item {RELEASED}
+    \subitem {Standard values}, \hyperpage{20}
+  \item {RESERVED}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{130}
+  \item {RESERVED0x}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{113}
   \item {Reserved1}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{46}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{119}
   \item {Reserved10}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{49}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{123}
   \item {Reserved11}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{49}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{123}
   \item {Reserved12}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{49}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{124}
   \item {Reserved13}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{124}
   \item {Reserved14}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{124}
   \item {Reserved2}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{46}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{120}
+  \item {RESERVED2x}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{115}
   \item {Reserved3}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{47}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{120}
+  \item {RESERVED3x}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{115}
   \item {Reserved4}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{47}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{120}
+  \item {RESERVED4x}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{116}
   \item {Reserved5}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{47}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{121}
   \item {Reserved6}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{47}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{121}
   \item {Reserved7}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{48}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{122}
   \item {Reserved8}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{48}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{122}
   \item {Reserved9}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{49}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{123}
+  \item {RSERVED1x}
+    \subitem {NVIC\_MemoryMapType}, \hyperpage{114}
   \item {RTCPRE}
-    \subitem {MRCC\_config.h}, \hyperpage{87}
+    \subitem {MRCC\_config.h}, \hyperpage{228}
+  \item {RTSR}
+    \subitem {EXTI\_Type}, \hyperpage{105}
+  \item {RUN}
+    \subitem {Standard values}, \hyperpage{20}
 
   \indexspace
 
@@ -1426,41 +2218,74 @@
     \subitem {Standard types}, \hyperpage{17}
   \item {s8\_t}
     \subitem {Standard types}, \hyperpage{16}
+  \item {SCB\_BASE\_ADDRESS}
+    \subitem {NVIC Addresses}, \hyperpage{79}
+  \item {SCB\_MemoryMapType}, \hyperpage{125}
+    \subitem {AIRCR}, \hyperpage{127}
+    \subitem {BFAR}, \hyperpage{131}
+    \subitem {CCR}, \hyperpage{128}
+    \subitem {CFSR}, \hyperpage{129}
+    \subitem {CPUID}, \hyperpage{126}
+    \subitem {HFSR}, \hyperpage{130}
+    \subitem {ICSR}, \hyperpage{127}
+    \subitem {MMFAR}, \hyperpage{130}
+    \subitem {RESERVED}, \hyperpage{130}
+    \subitem {SCR}, \hyperpage{127}
+    \subitem {SHCSR}, \hyperpage{129}
+    \subitem {SHPR1}, \hyperpage{128}
+    \subitem {SHPR2}, \hyperpage{128}
+    \subitem {SHPR3}, \hyperpage{129}
+    \subitem {VTOR}, \hyperpage{127}
+  \item {SCR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{127}
+  \item {SDIO}
+    \subitem {NVIC Vector Table}, \hyperpage{74}
   \item {SDIOEN}
-    \subitem {MRCC\_config.h}, \hyperpage{93}
+    \subitem {MRCC\_config.h}, \hyperpage{233}
+  \item {SEC}
+    \subitem {Delay Units}, \hyperpage{95}
   \item {SET\_BIT}
     \subitem {Bit Manipulation Math Macros}, \hyperpage{9}
   \item {SET\_BITs}
     \subitem {Bit Group Manipulation Math Macros}, \hyperpage{11}
+  \item {SHCSR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{129}
+  \item {SHPR1}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{128}
+  \item {SHPR2}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{128}
+  \item {SHPR3}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{129}
+  \item {Side1Pin}
+    \subitem {DCM\_MotorConfiguration}, \hyperpage{102}
+  \item {Side1Port}
+    \subitem {DCM\_MotorConfiguration}, \hyperpage{101}
+  \item {Side2Pin}
+    \subitem {DCM\_MotorConfiguration}, \hyperpage{102}
+  \item {Side2Port}
+    \subitem {DCM\_MotorConfiguration}, \hyperpage{102}
+  \item {SINGLE\_INTERVAL\_MODE}
+    \subitem {Systick Interval Mode Configuration}, \hyperpage{94}
+  \item {SINGLE\_INTERVAL\_TICK\_TIME}
+    \subitem {SysTick\_interface.h}, \hyperpage{313}
+  \item {SPI1}
+    \subitem {NVIC Vector Table}, \hyperpage{72}
   \item {SPI1EN}
-    \subitem {MRCC\_config.h}, \hyperpage{92}
+    \subitem {MRCC\_config.h}, \hyperpage{233}
+  \item {SPI2}
+    \subitem {NVIC Vector Table}, \hyperpage{72}
   \item {SPI2EN}
-    \subitem {MRCC\_config.h}, \hyperpage{91}
+    \subitem {MRCC\_config.h}, \hyperpage{231}
+  \item {SPI3}
+    \subitem {NVIC Vector Table}, \hyperpage{75}
   \item {SPI3EN}
-    \subitem {MRCC\_config.h}, \hyperpage{90}
+    \subitem {MRCC\_config.h}, \hyperpage{231}
+  \item {SPI4}
+    \subitem {NVIC Vector Table}, \hyperpage{78}
   \item {SPI4EN}
-    \subitem {MRCC\_config.h}, \hyperpage{92}
-  \item {src/COTS/LIB/LSTD\_BITMATH.h}, \hyperpage{51, 52}
-  \item {src/COTS/LIB/LSTD\_COMPILER.h}, \hyperpage{52, 53}
-  \item {src/COTS/LIB/LSTD\_MCU\_UTILITIES.h}, \hyperpage{53, 54}
-  \item {src/COTS/LIB/LSTD\_TYPES.h}, \hyperpage{54, 55}
-  \item {src/COTS/LIB/LSTD\_VALUES.h}, \hyperpage{55, 56}
-  \item {src/COTS/MCAL/GPIO/GPIO\_config.h}, \hyperpage{56, 57}
-  \item {src/COTS/MCAL/GPIO/GPIO\_interface.h}, \hyperpage{57}, 
-		\hyperpage{66}
-  \item {src/COTS/MCAL/GPIO/GPIO\_private.h}, \hyperpage{68, 69}
-  \item {src/COTS/MCAL/GPIO/GPIO\_program.c}, \hyperpage{69}, 
-		\hyperpage{77}
-  \item {src/COTS/MCAL/RCC/MRCC\_config.h}, \hyperpage{83}, 
-		\hyperpage{94}
-  \item {src/COTS/MCAL/RCC/MRCC\_interface.h}, \hyperpage{101}, 
-		\hyperpage{116}
-  \item {src/COTS/MCAL/RCC/MRCC\_private.h}, \hyperpage{116}, 
-		\hyperpage{159}
-  \item {src/COTS/MCAL/RCC/MRCC\_program.c}, \hyperpage{163}, 
-		\hyperpage{169}
+    \subitem {MRCC\_config.h}, \hyperpage{233}
   \item {SSCGR}
-    \subitem {RCC\_MemoryMapType}, \hyperpage{50}
+    \subitem {RCC\_MemoryMapType}, \hyperpage{125}
   \item {Standard types}, \hyperpage{15}
     \subitem {bool\_t}, \hyperpage{15}
     \subitem {fl32\_t}, \hyperpage{17}
@@ -1476,57 +2301,211 @@
     \subitem {FLAG\_CLEARED}, \hyperpage{19}
     \subitem {FLAG\_SET}, \hyperpage{19}
     \subitem {INITIAL\_ZERO}, \hyperpage{19}
-    \subitem {NULL}, \hyperpage{18}
+    \subitem {NULL}, \hyperpage{19}
+    \subitem {PRESSED}, \hyperpage{20}
+    \subitem {RELEASED}, \hyperpage{20}
+    \subitem {RUN}, \hyperpage{20}
+    \subitem {STOP}, \hyperpage{20}
     \subitem {TRUE}, \hyperpage{18}
   \item {STATIC}
     \subitem {Compiler standard macros}, \hyperpage{14}
+  \item {STOP}
+    \subitem {Standard values}, \hyperpage{20}
+  \item {Sub-\/Group priorities}, \hyperpage{57}
+    \subitem {NO\_SUB\_PRIORITY}, \hyperpage{58}
+    \subitem {SUB\_PRIORITY\_0}, \hyperpage{58}
+    \subitem {SUB\_PRIORITY\_1}, \hyperpage{58}
+    \subitem {SUB\_PRIORITY\_10}, \hyperpage{60}
+    \subitem {SUB\_PRIORITY\_11}, \hyperpage{61}
+    \subitem {SUB\_PRIORITY\_12}, \hyperpage{61}
+    \subitem {SUB\_PRIORITY\_13}, \hyperpage{61}
+    \subitem {SUB\_PRIORITY\_14}, \hyperpage{61}
+    \subitem {SUB\_PRIORITY\_15}, \hyperpage{62}
+    \subitem {SUB\_PRIORITY\_2}, \hyperpage{59}
+    \subitem {SUB\_PRIORITY\_3}, \hyperpage{58}
+    \subitem {SUB\_PRIORITY\_4}, \hyperpage{59}
+    \subitem {SUB\_PRIORITY\_5}, \hyperpage{59}
+    \subitem {SUB\_PRIORITY\_6}, \hyperpage{59}
+    \subitem {SUB\_PRIORITY\_7}, \hyperpage{60}
+    \subitem {SUB\_PRIORITY\_8}, \hyperpage{60}
+    \subitem {SUB\_PRIORITY\_9}, \hyperpage{60}
+  \item {SUB\_PRIORITY\_0}
+    \subitem {Sub-\/Group priorities}, \hyperpage{58}
+  \item {SUB\_PRIORITY\_1}
+    \subitem {Sub-\/Group priorities}, \hyperpage{58}
+  \item {SUB\_PRIORITY\_10}
+    \subitem {Sub-\/Group priorities}, \hyperpage{60}
+  \item {SUB\_PRIORITY\_11}
+    \subitem {Sub-\/Group priorities}, \hyperpage{61}
+  \item {SUB\_PRIORITY\_12}
+    \subitem {Sub-\/Group priorities}, \hyperpage{61}
+  \item {SUB\_PRIORITY\_13}
+    \subitem {Sub-\/Group priorities}, \hyperpage{61}
+  \item {SUB\_PRIORITY\_14}
+    \subitem {Sub-\/Group priorities}, \hyperpage{61}
+  \item {SUB\_PRIORITY\_15}
+    \subitem {Sub-\/Group priorities}, \hyperpage{62}
+  \item {SUB\_PRIORITY\_2}
+    \subitem {Sub-\/Group priorities}, \hyperpage{59}
+  \item {SUB\_PRIORITY\_3}
+    \subitem {Sub-\/Group priorities}, \hyperpage{58}
+  \item {SUB\_PRIORITY\_4}
+    \subitem {Sub-\/Group priorities}, \hyperpage{59}
+  \item {SUB\_PRIORITY\_5}
+    \subitem {Sub-\/Group priorities}, \hyperpage{59}
+  \item {SUB\_PRIORITY\_6}
+    \subitem {Sub-\/Group priorities}, \hyperpage{59}
+  \item {SUB\_PRIORITY\_7}
+    \subitem {Sub-\/Group priorities}, \hyperpage{60}
+  \item {SUB\_PRIORITY\_8}
+    \subitem {Sub-\/Group priorities}, \hyperpage{60}
+  \item {SUB\_PRIORITY\_9}
+    \subitem {Sub-\/Group priorities}, \hyperpage{60}
+  \item {SV\_CALL}
+    \subitem {NVIC Settable Priorities}, \hyperpage{81}
   \item {SW}
-    \subitem {MRCC\_config.h}, \hyperpage{88}
+    \subitem {MRCC\_config.h}, \hyperpage{229}
+  \item {SWIER}
+    \subitem {EXTI\_Type}, \hyperpage{105}
   \item {SWS}
-    \subitem {MRCC\_config.h}, \hyperpage{88}
+    \subitem {MRCC\_config.h}, \hyperpage{228}
+  \item {SYSCFG Memory Addresses}, \hyperpage{29}
+    \subitem {SYSCFG\_BASE\_ADDR}, \hyperpage{29}
+  \item {SYSCFG Memory Registers}, \hyperpage{29}
+    \subitem {MSYSCFG}, \hyperpage{29}
+  \item {SYSCFG\_BASE\_ADDR}
+    \subitem {SYSCFG Memory Addresses}, \hyperpage{29}
   \item {SYSCFGEN}
-    \subitem {MRCC\_config.h}, \hyperpage{92}
+    \subitem {MRCC\_config.h}, \hyperpage{233}
   \item {SYSCLK}
-    \subitem {MRCC\_private.h}, \hyperpage{138}
+    \subitem {MRCC\_private.h}, \hyperpage{273}
   \item {SYSCLKby128}
-    \subitem {MRCC\_private.h}, \hyperpage{141}
+    \subitem {MRCC\_private.h}, \hyperpage{276}
   \item {SYSCLKby16}
-    \subitem {MRCC\_private.h}, \hyperpage{141}
+    \subitem {MRCC\_private.h}, \hyperpage{276}
   \item {SYSCLKby2}
-    \subitem {MRCC\_private.h}, \hyperpage{140}
+    \subitem {MRCC\_private.h}, \hyperpage{275}
   \item {SYSCLKby256}
-    \subitem {MRCC\_private.h}, \hyperpage{141}
+    \subitem {MRCC\_private.h}, \hyperpage{276}
   \item {SYSCLKby4}
-    \subitem {MRCC\_private.h}, \hyperpage{140}
+    \subitem {MRCC\_private.h}, \hyperpage{275}
   \item {SYSCLKby512}
-    \subitem {MRCC\_private.h}, \hyperpage{141}
+    \subitem {MRCC\_private.h}, \hyperpage{276}
   \item {SYSCLKby64}
-    \subitem {MRCC\_private.h}, \hyperpage{141}
+    \subitem {MRCC\_private.h}, \hyperpage{276}
   \item {SYSCLKby8}
-    \subitem {MRCC\_private.h}, \hyperpage{141}
+    \subitem {MRCC\_private.h}, \hyperpage{275}
+  \item {SYSTICK}
+    \subitem {NVIC Settable Priorities}, \hyperpage{81}
+  \item {SysTick}
+    \subitem {Systick Registers}, \hyperpage{96}
+  \item {Systick Addresses}, \hyperpage{95}
+    \subitem {SysTick\_BASE\_ADDRESS}, \hyperpage{95}
+  \item {Systick Clock Sources}, \hyperpage{98}
+    \subitem {AHB}, \hyperpage{98}
+    \subitem {AHB\_DividedBy8}, \hyperpage{98}
+  \item {Systick Exception (Interrupt) Status}, \hyperpage{98}
+    \subitem {AssertRequest}, \hyperpage{99}
+    \subitem {Dont\_AssertRequest}, \hyperpage{98}
+  \item {Systick Interval Mode Configuration}, \hyperpage{94}
+    \subitem {PERIODIC\_INTERVAL\_MODE}, \hyperpage{94}
+    \subitem {SINGLE\_INTERVAL\_MODE}, \hyperpage{94}
+  \item {Systick Register Bits Positions}, \hyperpage{96}
+    \subitem {CLKSOURCE}, \hyperpage{97}
+    \subitem {COUNTER\_ENABLE}, \hyperpage{97}
+    \subitem {COUNTFLAG}, \hyperpage{96}
+    \subitem {TICKINT}, \hyperpage{97}
+  \item {Systick Registers}, \hyperpage{96}
+    \subitem {SysTick}, \hyperpage{96}
+  \item {SysTick\_BASE\_ADDRESS}
+    \subitem {Systick Addresses}, \hyperpage{95}
+  \item {SysTick\_config.h}
+    \subitem {Exception\_Request}, \hyperpage{310}
+    \subitem {MAX\_TICKS}, \hyperpage{311}
+  \item {SysTick\_Handler}
+    \subitem {SysTick\_program.c}, \hyperpage{328}
+  \item {SysTick\_interface.h}
+    \subitem {BUSY\_TICK\_TIME}, \hyperpage{313}
+    \subitem {MSysTick\_u32GetElapsedTime}, \hyperpage{317}
+    \subitem {MSysTick\_u32GetRemainingTime}, \hyperpage{317}
+    \subitem {MSysTick\_vDelay}, \hyperpage{314}
+    \subitem {MSysTick\_vDelayMicroSec}, \hyperpage{315}
+    \subitem {MSysTick\_vDelayMilliSec}, \hyperpage{315}
+    \subitem {MSysTick\_vDelaySec}, \hyperpage{315}
+    \subitem {MSysTick\_vDisable}, \hyperpage{318}
+    \subitem {MSysTick\_vEnable}, \hyperpage{317}
+    \subitem {MSysTick\_vEnableException}, \hyperpage{318}
+    \subitem {MSysTick\_vInit}, \hyperpage{314}
+    \subitem {MSysTick\_vSetBusyWait}, \hyperpage{314}
+    \subitem {MSysTick\_vSetPeriodicInterval}, \hyperpage{316}
+    \subitem {MSysTick\_vSetSingleInterval}, \hyperpage{315}
+    \subitem {MSysTick\_vStopInterval}, \hyperpage{316}
+    \subitem {PERIODIC\_INTERVAL\_TICK\_TIME}, \hyperpage{313}
+    \subitem {SINGLE\_INTERVAL\_TICK\_TIME}, \hyperpage{313}
+  \item {SysTick\_program.c}
+    \subitem {MSysTick\_u32GetElapsedTime}, \hyperpage{327}
+    \subitem {MSysTick\_u32GetRemainingTime}, \hyperpage{327}
+    \subitem {MSysTick\_vDelay}, \hyperpage{323}
+    \subitem {MSysTick\_vDelayMicroSec}, \hyperpage{324}
+    \subitem {MSysTick\_vDelayMilliSec}, \hyperpage{324}
+    \subitem {MSysTick\_vDelaySec}, \hyperpage{325}
+    \subitem {MSysTick\_vDisable}, \hyperpage{328}
+    \subitem {MSysTick\_vEnable}, \hyperpage{328}
+    \subitem {MSysTick\_vEnableException}, \hyperpage{322}
+    \subitem {MSysTick\_vInit}, \hyperpage{322}
+    \subitem {MSysTick\_vSetBusyWait}, \hyperpage{322}
+    \subitem {MSysTick\_vSetPeriodicInterval}, \hyperpage{326}
+    \subitem {MSysTick\_vSetSingleInterval}, \hyperpage{325}
+    \subitem {MSysTick\_vStopInterval}, \hyperpage{326}
+    \subitem {SysTick\_Handler}, \hyperpage{328}
+  \item {SysTick\_Type}, \hyperpage{131}
+    \subitem {CALIB}, \hyperpage{132}
+    \subitem {CTRL}, \hyperpage{132}
+    \subitem {LOAD}, \hyperpage{132}
+    \subitem {VAL}, \hyperpage{132}
 
   \indexspace
 
+  \item {TICKINT}
+    \subitem {Systick Register Bits Positions}, \hyperpage{97}
   \item {TIM10EN}
-    \subitem {MRCC\_config.h}, \hyperpage{92}
+    \subitem {MRCC\_config.h}, \hyperpage{233}
   \item {TIM11EN}
-    \subitem {MRCC\_config.h}, \hyperpage{92}
+    \subitem {MRCC\_config.h}, \hyperpage{232}
+  \item {TIM1\_BRK\_TIM9}
+    \subitem {NVIC Vector Table}, \hyperpage{69}
+  \item {TIM1\_CC}
+    \subitem {NVIC Vector Table}, \hyperpage{70}
+  \item {TIM1\_TRG\_COM\_TIM11}
+    \subitem {NVIC Vector Table}, \hyperpage{70}
+  \item {TIM1\_UP\_TIM10}
+    \subitem {NVIC Vector Table}, \hyperpage{70}
   \item {TIM1EN}
-    \subitem {MRCC\_config.h}, \hyperpage{93}
+    \subitem {MRCC\_config.h}, \hyperpage{234}
+  \item {TIM2}
+    \subitem {NVIC Vector Table}, \hyperpage{70}
   \item {TIM2EN}
-    \subitem {MRCC\_config.h}, \hyperpage{91}
+    \subitem {MRCC\_config.h}, \hyperpage{232}
+  \item {TIM3}
+    \subitem {NVIC Vector Table}, \hyperpage{71}
   \item {TIM3EN}
-    \subitem {MRCC\_config.h}, \hyperpage{91}
+    \subitem {MRCC\_config.h}, \hyperpage{232}
+  \item {TIM4}
+    \subitem {NVIC Vector Table}, \hyperpage{71}
   \item {TIM4EN}
-    \subitem {MRCC\_config.h}, \hyperpage{91}
+    \subitem {MRCC\_config.h}, \hyperpage{232}
+  \item {TIM5}
+    \subitem {NVIC Vector Table}, \hyperpage{74}
   \item {TIM5EN}
-    \subitem {MRCC\_config.h}, \hyperpage{91}
+    \subitem {MRCC\_config.h}, \hyperpage{232}
   \item {TIM9EN}
-    \subitem {MRCC\_config.h}, \hyperpage{92}
+    \subitem {MRCC\_config.h}, \hyperpage{233}
   \item {TOGGLE\_BIT}
     \subitem {Bit Manipulation Math Macros}, \hyperpage{10}
   \item {TOGGLE\_BITs}
     \subitem {Bit Group Manipulation Math Macros}, \hyperpage{11}
+  \item {TriggerStatus}
+    \subitem {EXTI\_ConfigType}, \hyperpage{103}
   \item {TRUE}
     \subitem {Standard values}, \hyperpage{18}
 
@@ -1538,23 +2517,39 @@
     \subitem {Standard types}, \hyperpage{16}
   \item {u8\_t}
     \subitem {Standard types}, \hyperpage{16}
+  \item {USAGE\_FAULT}
+    \subitem {NVIC Settable Priorities}, \hyperpage{82}
+  \item {USART1}
+    \subitem {NVIC Vector Table}, \hyperpage{73}
   \item {USART1EN}
-    \subitem {MRCC\_config.h}, \hyperpage{93}
+    \subitem {MRCC\_config.h}, \hyperpage{234}
+  \item {USART2}
+    \subitem {NVIC Vector Table}, \hyperpage{73}
   \item {USART2EN}
-    \subitem {MRCC\_config.h}, \hyperpage{90}
+    \subitem {MRCC\_config.h}, \hyperpage{231}
+  \item {USART6}
+    \subitem {NVIC Vector Table}, \hyperpage{77}
   \item {USART6EN}
-    \subitem {MRCC\_config.h}, \hyperpage{93}
+    \subitem {MRCC\_config.h}, \hyperpage{234}
   \item {Utilities macros}, \hyperpage{15}
     \subitem {MY\_MS\_DELAY}, \hyperpage{15}
 
   \indexspace
 
+  \item {VAL}
+    \subitem {SysTick\_Type}, \hyperpage{132}
   \item {VAR}
     \subitem {Compiler standard macros}, \hyperpage{12}
+  \item {VECTKEY\_PASSWORD}
+    \subitem {NVIC\_private.h}, \hyperpage{216}
+  \item {VTOR}
+    \subitem {SCB\_MemoryMapType}, \hyperpage{127}
 
   \indexspace
 
+  \item {WWDG}
+    \subitem {NVIC Vector Table}, \hyperpage{64}
   \item {WWDGEN}
-    \subitem {MRCC\_config.h}, \hyperpage{91}
+    \subitem {MRCC\_config.h}, \hyperpage{232}
 
 \end{theindex}

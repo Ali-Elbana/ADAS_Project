@@ -1,0 +1,53 @@
+\hypertarget{_sys_tick__private_8h}{}\doxysection{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+private.h File Reference}
+\label{_sys_tick__private_8h}\index{COTS/MCAL/SysTick/SysTick\_private.h@{COTS/MCAL/SysTick/SysTick\_private.h}}
+
+
+This file contains the registers information and addresses for the Systick module.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}}
+\begin{DoxyCompactList}\small\item\em Systick memory map structure declaration for the Systick\textquotesingle{}s registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__systick__addresses_ga511cd340757ef938ab6d7a2cd7f5cde5}{Sys\+Tick\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x\+E000\+E010)
+\item 
+\#define \mbox{\hyperlink{group__systick__registers_gacd96c53beeaff8f603fcda425eb295de}{Sys\+Tick}}~((volatile \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_sys_tick___type}{Sys\+Tick\+\_\+\+Type}}))(\mbox{\hyperlink{group__systick__addresses_ga511cd340757ef938ab6d7a2cd7f5cde5}{Sys\+Tick\+\_\+\+BASE\+\_\+\+ADDRESS}}))
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_gaf1ecc7ccf2930b69effd1a64a1058d7d}{COUNTFLAG}}~(16)
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_ga1c80d256b9c8188cb5aaf267b3303c92}{CLKSOURCE}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_ga85a15b5192e74e56ab2a437c5f8c6898}{TICKINT}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__systick__register__bits_ga4fadf89c5194a5af1a42bba0bd2a8877}{COUNTER\+\_\+\+ENABLE}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__systick__clock__sources_gadd5f66ff13156c11c580ea1ecbe4d56e}{AHB\+\_\+\+Divided\+By8}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__systick__clock__sources_ga942fd4ea5019745b10664642934d6c4f}{AHB}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__systick__exception__request__enable_ga2b134b9547ceef09338eb24fc09e7a9d}{Dont\+\_\+\+Assert\+Request}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__systick__exception__request__enable_ga08bc6a27e8bc51f94ff9e8466dc0cf7a}{Assert\+Request}}~(2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the registers information and addresses for the Systick module. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09/04/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_sys_tick__private_8h_source}{Sys\+Tick\+\_\+private.\+h}}.
+

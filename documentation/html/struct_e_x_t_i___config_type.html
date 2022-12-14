@@ -99,13 +99,16 @@ $(document).ready(function(){initNavTree('struct_e_x_t_i___config_type.html','')
 <p>Interrupt configuration structure to initialize the interrupt with.  
  <a href="struct_e_x_t_i___config_type.html#details">More...</a></p>
 
-<p><code>#include &quot;<a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>&quot;</code></p>
+<p><code>#include &quot;<a class="el" href="_e_x_t_i__interface_8h_source.html">COTS/MCAL/EXTI/EXTI_interface.h</a>&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ab0103928ab78746d72ca7a1edfe59911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">LineNum</a></td></tr>
 <tr class="memdesc:ab0103928ab78746d72ca7a1edfe59911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the interrupt with a certain line ID.  <a href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">More...</a><br /></td></tr>
 <tr class="separator:ab0103928ab78746d72ca7a1edfe59911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03f7ea588ac005a41d3a5bbc6c4a7059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_x_t_i___config_type.html#a03f7ea588ac005a41d3a5bbc6c4a7059">PortNum</a></td></tr>
+<tr class="memdesc:a03f7ea588ac005a41d3a5bbc6c4a7059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the interrupt with a certain PORT.  <a href="struct_e_x_t_i___config_type.html#a03f7ea588ac005a41d3a5bbc6c4a7059">More...</a><br /></td></tr>
+<tr class="separator:a03f7ea588ac005a41d3a5bbc6c4a7059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c425d724824171926cf8660e9662a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9">TriggerStatus</a></td></tr>
 <tr class="memdesc:a45c425d724824171926cf8660e9662a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The trigger status to trigger when the interrupt occurs.  <a href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9">More...</a><br /></td></tr>
 <tr class="separator:a45c425d724824171926cf8660e9662a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +134,28 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_e_x_t_i__interface_8h_source.html#l00023">23</a> of file <a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="_e_x_t_i__program_8c_source.html#l00276">MEXTI_vInit_WithStruct()</a>.</p>
+
+</div>
+</div>
+<a id="a03f7ea588ac005a41d3a5bbc6c4a7059" name="a03f7ea588ac005a41d3a5bbc6c4a7059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f7ea588ac005a41d3a5bbc6c4a7059">&#9670;&#160;</a></span>PortNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a> PortNum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the interrupt with a certain PORT. </p>
+
+<p class="definition">Definition at line <a class="el" href="_e_x_t_i__interface_8h_source.html#l00028">28</a> of file <a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_e_x_t_i__program_8c_source.html#l00276">MEXTI_vInit_WithStruct()</a>.</p>
+
 </div>
 </div>
 <a id="a45c425d724824171926cf8660e9662a9" name="a45c425d724824171926cf8660e9662a9"></a>
@@ -147,12 +172,14 @@ Data Fields</h2></td></tr>
 
 <p>The trigger status to trigger when the interrupt occurs. </p>
 
-<p class="definition">Definition at line <a class="el" href="_e_x_t_i__interface_8h_source.html#l00027">27</a> of file <a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_e_x_t_i__interface_8h_source.html#l00033">33</a> of file <a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_e_x_t_i__program_8c_source.html#l00276">MEXTI_vInit_WithStruct()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/COTS/MCAL/EXTI/<a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a></li>
+<li>COTS/MCAL/EXTI/<a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -160,7 +187,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_e_x_t_i___config_type.html">EXTI_ConfigType</a></li>
-    <li class="footer">Generated on Tue Nov 29 2022 23:59:04 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

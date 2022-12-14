@@ -30,25 +30,25 @@ void MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks);
  * @param[in] A_u32Ticks Number of ticks to delay for
  * @param[in] A_u32TickType Type of the delay
  */
-FUNC(void) MSysTick_vDelay( VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType ) ;
+void MSysTick_vDelay(VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType);
 
 /**
  * @brief Synchronous delay function
  * @param[in] A_u32Ticks Number of ticks to delay in micro seconds for
  */
-FUNC(void) MSysTick_vDelayMicroSec( VAR(u32_t) A_u32Ticks ) ;
+void MSysTick_vDelayMicroSec(VAR(u32_t) A_u32Ticks);
 
 /**
  * @brief Synchronous delay function
  * @param[in] A_u32Ticks Number of ticks to delay in milli seconds for
  */
-FUNC(void) MSysTick_vDelayMilliSec( VAR(u32_t) A_u32Ticks ) ;
+void MSysTick_vDelayMilliSec(VAR(u32_t) A_u32Ticks);
 
 /**
  * @brief Synchronous delay function
  * @param[in] A_u32Ticks Number of ticks to delay in seconds for
  */
-FUNC(void) MSysTick_vDelaySec( VAR(u32_t) A_u32Ticks ) ;
+void MSysTick_vDelaySec(VAR(u32_t) A_u32Ticks);
 
 /**
  * @brief Asynchronous 1-cycle delay function
@@ -100,17 +100,11 @@ void MSysTick_vDisable(void);
 /**
  * @brief Enable the Systick Exception
  */
-void MSysTick_vEnableException(void) ;
+void MSysTick_vEnableException(void);
 
 /************************************************************************/
 /*                          Interfacing macros                          */
 /************************************************************************/
-
-/**
- * @defgroup
- *
- * @{
- */
 
 /**
  * @def BUSY_TICK_TIME
@@ -119,27 +113,40 @@ void MSysTick_vEnableException(void) ;
 #define BUSY_TICK_TIME (1000)
 
 /**
- * @def TICK_TIME
+ * @def SINGLE_INTERVAL_TICK_TIME
  * @brief Set the time you want to count when using the single interval function
  */
 #define SINGLE_INTERVAL_TICK_TIME (1000)
 
 /**
- * @def TICK_TIME
+ * @def PERIODIC_INTERVAL_TICK_TIME
  * @brief @brief Set the time you want to count when using the periodic interval function
  */
 #define PERIODIC_INTERVAL_TICK_TIME (1000)
 
+/**
+ * @defgroup delay_units Delay Units
+ *
+ * @{
+ */
+
+/**
+ * @def MILLI_SEC
+ * @brief Delay in milli seconds
+ */
+#define MILLI_SEC (1)
+
+/**
+ * @def MILLI_SEC
+ * @brief Delay in micro seconds
+ */
+#define MICRO_SEC (2)
+
+/**
+ * @def SEC
+ * @brief Delay in seconds
+ */
+#define SEC (3)
 /** @} */
-
-
-
-#define MILLI_SEC                   1
-
-#define MICRO_SEC                   2
-
-#define SEC                         3
-
-
 
 #endif //_SysTick_interface_H

@@ -1,0 +1,49 @@
+\hypertarget{_d_c_m__interface_8h_source}{}\doxysection{DCM\+\_\+interface.\+h}
+\label{_d_c_m__interface_8h_source}\index{COTS/HAL/DCMOTOR/DCM\_interface.h@{COTS/HAL/DCMOTOR/DCM\_interface.h}}
+\mbox{\hyperlink{_d_c_m__interface_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00009}00009 \textcolor{comment}{/* Header file guard */}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00010}00010 \textcolor{preprocessor}{\#ifndef \_DCM\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00011}00011 \textcolor{preprocessor}{\#define \_DCM\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00013}00013 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00014}00014 \textcolor{comment}{/*                        Include headers                               */}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00015}00015 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00016}00016 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_d_c_m__private_8h}{DCM\_private.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00018}00018 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00019}00019 \textcolor{comment}{/***********************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00028}\mbox{\hyperlink{struct_d_c_m___motor_configuration}{00028}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00033}\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{00033}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}};}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00037}\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{00037}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}};}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00041}\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{00041}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}};}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00045}\mbox{\hyperlink{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}{00045}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}{u8Direction}};}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00047}00047 \} \mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\_MotorConfiguration}};}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00049}00049 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00050}00050 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00051}00051 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00059}\mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{00059}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\_vInitMotor}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\_MotorConfiguration}}) pMotorConfiguration);}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00065}\mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{00065}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\_MotorConfiguration}}) pMotorConfiguration);}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00071}\mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{00071}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\_MotorConfiguration}}) pMotorConfiguration);}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00077}\mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{00077}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\_vStopMotor}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\_MotorConfiguration}}) pMotorConfiguration);}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00079}00079 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00080}00080 \textcolor{comment}{/*                          Interfacing macros                          */}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00081}00081 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00094}\mbox{\hyperlink{group__motor__directions_ga6ddfdda7a062d10cff4a72b76b44aeb8}{00094}} \textcolor{preprocessor}{\#define FORWARD     (CW)}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00101}\mbox{\hyperlink{group__motor__directions_gadf445abfe1b77fa63f89e315ccc2f7f2}{00101}} \textcolor{preprocessor}{\#define BACKWARD (CCW)}}
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_d_c_m__interface_8h_source_l00105}00105 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_DCM\_interface\_H}}
+
+\end{DoxyCode}

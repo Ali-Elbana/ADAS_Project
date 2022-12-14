@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gpiox_5fmemorymaptype_0',['GPIOx_MemoryMapType',['../struct_g_p_i_ox___memory_map_type.html',1,'']]]
+  ['exti_5fconfigtype_0',['EXTI_ConfigType',['../struct_e_x_t_i___config_type.html',1,'']]],
+  ['exti_5ftype_1',['EXTI_Type',['../struct_e_x_t_i___type.html',1,'']]]
 ];

@@ -54,8 +54,6 @@ typedef struct
 
 /**
  * @brief Locks the prohibited GPIO PINs.
- * @param[in] void.
- * @return void.
  */
 void MGPIOx_vLockedPins(void);
 

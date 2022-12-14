@@ -16,7 +16,7 @@ This file contains the source code of the interfacing for the GPIO modules.
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_g_p_i_o__program_8c_a9691f4861ec6e00ce72839a3d72c376f}{MGPIOx\+\_\+v\+Locked\+Pins}} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Locks the prohibited GPIO PINs. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}{MGPIOx\+\_\+v\+Set\+Pin\+Mode}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Mode)
 \item 
 void \mbox{\hyperlink{_g_p_i_o__program_8c_ae96fece4783997728111939101fa9acd}{MGPIOx\+\_\+v\+Set\+Pin\+Output\+Type}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Pin\+ID, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Output\+Type)
@@ -64,7 +64,11 @@ Definition in file \mbox{\hyperlink{_g_p_i_o__program_8c_source}{GPIO\+\_\+progr
 \doxysubsubsection{\texorpdfstring{MGPIOx\_vLockedPins()}{MGPIOx\_vLockedPins()}}
 {\footnotesize\ttfamily void MGPIOx\+\_\+v\+Locked\+Pins (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
+
+
 Locks the prohibited GPIO PINs. 
+
+
 
 Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of file \mbox{\hyperlink{_g_p_i_o__program_8c_source}{GPIO\+\_\+program.\+c}}.
 
@@ -76,15 +80,15 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of 
 \DoxyCodeLine{00028 }
 \DoxyCodeLine{00029     \textcolor{comment}{/* Lock key write sequence */}}
 \DoxyCodeLine{00030 }
-\DoxyCodeLine{00031     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[13,14,15] = {\ucr}1{\ucr} */}}
+\DoxyCodeLine{00031     \textcolor{comment}{/* WR LCKR[16] = '1' + LCKR[13,14,15] = {\ucr}1{\ucr} */}}
 \DoxyCodeLine{00032     L\_u32LockGPIOA = ( (1UL << \mbox{\hyperlink{_g_p_i_o__config_8h_aec9764fb7c7a18a92444892a6333e614}{LCKK\_BIT\_POS}}) | (\mbox{\hyperlink{_g_p_i_o__config_8h_a13e84566d603a1923361df965110c94d}{GPIOA\_PIN\_POS}}) ) ;}
 \DoxyCodeLine{00033 }
 \DoxyCodeLine{00034     \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>LCKRx = L\_u32LockGPIOA ;}
 \DoxyCodeLine{00035 }
-\DoxyCodeLine{00036     \textcolor{comment}{/* WR LCKR[16] = {\ucr}0{\ucr} + LCKR[13,14,15] should not change*/}}
+\DoxyCodeLine{00036     \textcolor{comment}{/* WR LCKR[16] = '0' + LCKR[13,14,15] should not change*/}}
 \DoxyCodeLine{00037     \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>LCKRx = (\mbox{\hyperlink{_g_p_i_o__config_8h_a13e84566d603a1923361df965110c94d}{GPIOA\_PIN\_POS}}) ;}
 \DoxyCodeLine{00038 }
-\DoxyCodeLine{00039     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[13,14,15] should not change*/}}
+\DoxyCodeLine{00039     \textcolor{comment}{/* WR LCKR[16] = '1'+ LCKR[13,14,15] should not change*/}}
 \DoxyCodeLine{00040     \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>LCKRx = L\_u32LockGPIOA ;}
 \DoxyCodeLine{00041 }
 \DoxyCodeLine{00042     \textcolor{comment}{/* RD LCKR */}}
@@ -95,15 +99,15 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of 
 \DoxyCodeLine{00048 }
 \DoxyCodeLine{00049     \textcolor{comment}{/* Lock key write sequence */}}
 \DoxyCodeLine{00050 }
-\DoxyCodeLine{00051     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[2,3,4] = {\ucr}1{\ucr} */}}
+\DoxyCodeLine{00051     \textcolor{comment}{/* WR LCKR[16] = '1' + LCKR[2,3,4] = {\ucr}1{\ucr} */}}
 \DoxyCodeLine{00052     L\_u32LockGPIOB = ( (1UL << \mbox{\hyperlink{_g_p_i_o__config_8h_aec9764fb7c7a18a92444892a6333e614}{LCKK\_BIT\_POS}}) | (\mbox{\hyperlink{_g_p_i_o__config_8h_ab3758da87052ce9d2988dc84b5c9d1eb}{GPIOB\_PIN\_POS}}) ) ;}
 \DoxyCodeLine{00053 }
 \DoxyCodeLine{00054     \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>LCKRx = L\_u32LockGPIOB ;}
 \DoxyCodeLine{00055 }
-\DoxyCodeLine{00056     \textcolor{comment}{/* WR LCKR[16] = {\ucr}0{\ucr} + LCKR[2,3,4] should not change*/}}
+\DoxyCodeLine{00056     \textcolor{comment}{/* WR LCKR[16] = '0' + LCKR[2,3,4] should not change*/}}
 \DoxyCodeLine{00057     \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>LCKRx = (\mbox{\hyperlink{_g_p_i_o__config_8h_ab3758da87052ce9d2988dc84b5c9d1eb}{GPIOB\_PIN\_POS}}) ;}
 \DoxyCodeLine{00058 }
-\DoxyCodeLine{00059     \textcolor{comment}{/* WR LCKR[16] = {\ucr}1{\ucr} + LCKR[2,3,4] should not change*/}}
+\DoxyCodeLine{00059     \textcolor{comment}{/* WR LCKR[16] = '1' + LCKR[2,3,4] should not change*/}}
 \DoxyCodeLine{00060     \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>LCKRx = L\_u32LockGPIOB ;}
 \DoxyCodeLine{00061 }
 \DoxyCodeLine{00062     \textcolor{comment}{/* RD LCKR */}}
@@ -114,7 +118,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00017}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00018}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00019}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}\label{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}} 
 \index{GPIO\_program.c@{GPIO\_program.c}!MGPIOx\_vSetPinMode@{MGPIOx\_vSetPinMode}}
@@ -345,7 +349,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00193}{193}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00051}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_g_p_i_o__program_8c_a3d6ad5ad5f68b519f08d4be6292bf6a2}\label{_g_p_i_o__program_8c_a3d6ad5ad5f68b519f08d4be6292bf6a2}} 
 \index{GPIO\_program.c@{GPIO\_program.c}!MGPIOx\_vSetPinValue@{MGPIOx\_vSetPinValue}}

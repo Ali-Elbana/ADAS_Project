@@ -1,0 +1,115 @@
+\hypertarget{_d_c_m__interface_8h}{}\doxysection{COTS/\+HAL/\+DCMOTOR/\+DCM\+\_\+interface.h File Reference}
+\label{_d_c_m__interface_8h}\index{COTS/HAL/DCMOTOR/DCM\_interface.h@{COTS/HAL/DCMOTOR/DCM\_interface.h}}
+
+
+This file contains the interfacing information for the DC Motor module.  
+
+
+{\ttfamily \#include \char`\"{}DCM\+\_\+private.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}
+\begin{DoxyCompactList}\small\item\em DC Motor configuration structure for motor initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__motor__directions_ga6ddfdda7a062d10cff4a72b76b44aeb8}{FORWARD}}~(\mbox{\hyperlink{group__motor__rotation__direction_gabe61b07c31c2a3e90576eb4c5d95b024}{CW}})
+\begin{DoxyCompactList}\small\item\em Motor forward direction. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__directions_gadf445abfe1b77fa63f89e315ccc2f7f2}{BACKWARD}}~(\mbox{\hyperlink{group__motor__rotation__direction_ga8a460b6555077a64fc97f2e7ef47b843}{CCW}})
+\begin{DoxyCompactList}\small\item\em Motor backward direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\+\_\+v\+Init\+Motor}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
+\begin{DoxyCompactList}\small\item\em Initialize a motor Initialize a motor with a certain GPIO Port \& Pin based on the passed motor configuration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\+\_\+v\+Move\+Forward}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
+\begin{DoxyCompactList}\small\item\em Move a certain motor forward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\+\_\+v\+Move\+Backward}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
+\begin{DoxyCompactList}\small\item\em Move a certain motor backward. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\+\_\+v\+Stop\+Motor}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
+\begin{DoxyCompactList}\small\item\em Stop a certain motor\textquotesingle{}s movement completely. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the interfacing information for the DC Motor module. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Alaa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8/12/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}\label{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vInitMotor@{HDCM\_vInitMotor}}
+\index{HDCM\_vInitMotor@{HDCM\_vInitMotor}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vInitMotor()}{HDCM\_vInitMotor()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Init\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}})}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Initialize a motor Initialize a motor with a certain GPIO Port \& Pin based on the passed motor configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor configuration to be initialized \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}\label{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vMoveForward@{HDCM\_vMoveForward}}
+\index{HDCM\_vMoveForward@{HDCM\_vMoveForward}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vMoveForward()}{HDCM\_vMoveForward()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Move\+Forward (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}})}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Move a certain motor forward. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to move forward \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}\label{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vMoveBackward@{HDCM\_vMoveBackward}}
+\index{HDCM\_vMoveBackward@{HDCM\_vMoveBackward}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vMoveBackward()}{HDCM\_vMoveBackward()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Move\+Backward (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}})}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Move a certain motor backward. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to move backward \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}\label{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vStopMotor@{HDCM\_vStopMotor}}
+\index{HDCM\_vStopMotor@{HDCM\_vStopMotor}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vStopMotor()}{HDCM\_vStopMotor()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Stop\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}})}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Stop a certain motor\textquotesingle{}s movement completely. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to stop \\
+\hline
+\end{DoxyParams}
