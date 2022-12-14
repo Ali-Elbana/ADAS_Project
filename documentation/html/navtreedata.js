@@ -59,7 +59,7 @@ var NAVTREEINDEX =
 "_d_c_m__config_8h.html",
 "_m_r_c_c__private_8h.html#a5587236d8ed0745a4e3c200c93fa9cc6",
 "functions.html",
-"group__nvic__settable__priorities.html#ga4e52bc38abb211c86b23c54cbec2bde2"
+"group__nvic__addresses.html#gaa677236f48778f5c6d5cc28679e9f2c6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

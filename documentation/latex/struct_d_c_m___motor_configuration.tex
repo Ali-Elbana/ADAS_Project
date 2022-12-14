@@ -12,14 +12,14 @@ DC Motor configuration structure for motor initialization.
 \doxysubsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}{Side1\+Port}}
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8\+Port}}
 \begin{DoxyCompactList}\small\item\em Initialize the DC Motor on a certain port. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}{Side1\+Pin}}
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8\+Pin1}}
 \begin{DoxyCompactList}\small\item\em Initialize the DC Motor on a certain pin. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}{Side2\+Port}}
-\begin{DoxyCompactList}\small\item\em Initialize the DC Motor on a certain port. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}{Side2\+Pin}}
-\begin{DoxyCompactList}\small\item\em Initialize the DC Motor on a certain pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8\+Pin2}}
+\begin{DoxyCompactList}\small\item\em Initialize the DC Motor on a certain pin. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}{u8\+Direction}}
+\begin{DoxyCompactList}\small\item\em Initialize the DC Motor with a certain direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -31,52 +31,16 @@ Since DC Motors have 2 sides to be controller, we will intiliaze each motor with
 
 Taking into consideration that the pins could be on different ports. 
 
-Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00020}{20}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00028}{28}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
 
 
 
 \doxysubsection{Field Documentation}
-\mbox{\Hypertarget{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}\label{struct_d_c_m___motor_configuration_a3ec6928bbc3a0d8d4686f824cfd4433d}} 
-\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side1Port@{Side1Port}}
-\index{Side1Port@{Side1Port}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
-\doxysubsubsection{\texorpdfstring{Side1Port}{Side1Port}}
-{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} Side1\+Port}
-
-
-
-Initialize the DC Motor on a certain port. 
-
-
-
-Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00025}{25}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
-
-
-
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
-
-\mbox{\Hypertarget{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}\label{struct_d_c_m___motor_configuration_adb5f294c6b59c4dcfa6fe834f3c603a4}} 
-\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side1Pin@{Side1Pin}}
-\index{Side1Pin@{Side1Pin}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
-\doxysubsubsection{\texorpdfstring{Side1Pin}{Side1Pin}}
-{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} Side1\+Pin}
-
-
-
-Initialize the DC Motor on a certain pin. 
-
-
-
-Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00029}{29}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
-
-
-
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
-
-\mbox{\Hypertarget{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}\label{struct_d_c_m___motor_configuration_a3f8028bcdbcf91d21cda73512b915706}} 
-\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side2Port@{Side2Port}}
-\index{Side2Port@{Side2Port}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
-\doxysubsubsection{\texorpdfstring{Side2Port}{Side2Port}}
-{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} Side2\+Port}
+\mbox{\Hypertarget{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}\label{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}} 
+\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!u8Port@{u8Port}}
+\index{u8Port@{u8Port}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
+\doxysubsubsection{\texorpdfstring{u8Port}{u8Port}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} u8\+Port}
 
 
 
@@ -88,13 +52,13 @@ Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{33}} of 
 
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00029}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00082}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00073}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00091}{HDCM\+\_\+v\+Stop\+Motor()}}.
 
-\mbox{\Hypertarget{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}\label{struct_d_c_m___motor_configuration_a39b0b15418cac09c7294ef132ca66509}} 
-\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!Side2Pin@{Side2Pin}}
-\index{Side2Pin@{Side2Pin}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
-\doxysubsubsection{\texorpdfstring{Side2Pin}{Side2Pin}}
-{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} Side2\+Pin}
+\mbox{\Hypertarget{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}\label{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}} 
+\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!u8Pin1@{u8Pin1}}
+\index{u8Pin1@{u8Pin1}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
+\doxysubsubsection{\texorpdfstring{u8Pin1}{u8Pin1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} u8\+Pin1}
 
 
 
@@ -106,7 +70,43 @@ Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{37}} of 
 
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00031}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00063}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00057}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00069}{HDCM\+\_\+v\+Stop\+Motor()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00029}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00082}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00073}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00091}{HDCM\+\_\+v\+Stop\+Motor()}}.
+
+\mbox{\Hypertarget{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}\label{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}} 
+\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!u8Pin2@{u8Pin2}}
+\index{u8Pin2@{u8Pin2}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
+\doxysubsubsection{\texorpdfstring{u8Pin2}{u8Pin2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} u8\+Pin2}
+
+
+
+Initialize the DC Motor on a certain pin. 
+
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00041}{41}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00029}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00082}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00073}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00091}{HDCM\+\_\+v\+Stop\+Motor()}}.
+
+\mbox{\Hypertarget{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}\label{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}} 
+\index{DCM\_MotorConfiguration@{DCM\_MotorConfiguration}!u8Direction@{u8Direction}}
+\index{u8Direction@{u8Direction}!DCM\_MotorConfiguration@{DCM\_MotorConfiguration}}
+\doxysubsubsection{\texorpdfstring{u8Direction}{u8Direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} u8\+Direction}
+
+
+
+Initialize the DC Motor with a certain direction. 
+
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__interface_8h_source_l00045}{45}} of file \mbox{\hyperlink{_d_c_m__interface_8h_source}{DCM\+\_\+interface.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00029}{HDCM\+\_\+v\+Init\+Motor()}}.
 
 
 

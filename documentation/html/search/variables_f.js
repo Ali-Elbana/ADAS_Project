@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['val_0',['VAL',['../struct_sys_tick___type.html#a91f0aa50edd91c8aa60b21241289f123',1,'SysTick_Type']]],
-  ['vtor_1',['VTOR',['../struct_s_c_b___memory_map_type.html#a841b17f933d2b37d051b51166a24c171',1,'SCB_MemoryMapType']]]
+  ['u8direction_0',['u8Direction',['../struct_d_c_m___motor_configuration.html#a2e20aa333b94d6c54b07fb7d5e46422c',1,'DCM_MotorConfiguration']]],
+  ['u8pin1_1',['u8Pin1',['../struct_d_c_m___motor_configuration.html#a6cdc315159c3cecff102fa5460b0517f',1,'DCM_MotorConfiguration']]],
+  ['u8pin2_2',['u8Pin2',['../struct_d_c_m___motor_configuration.html#acbf48152f1b2bb3d4731c1fdd23dfc79',1,'DCM_MotorConfiguration']]],
+  ['u8port_3',['u8Port',['../struct_d_c_m___motor_configuration.html#a6439a8215e05cda734aef4c58d715032',1,'DCM_MotorConfiguration']]]
 ];

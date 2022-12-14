@@ -1,5 +1,7 @@
 var modules =
 [
+    [ "DC Motor Directions", "group__motor__directions.html", "group__motor__directions" ],
+    [ "DC Motor Rotation Directions", "group__motor__rotation__direction.html", "group__motor__rotation__direction" ],
     [ "Bit Manipulation Math Macros", "group__bitmath.html", "group__bitmath" ],
     [ "Bit Group Manipulation Math Macros", "group__bitmathgroup.html", "group__bitmathgroup" ],
     [ "Compiler standard macros", "group__compiler.html", "group__compiler" ],

@@ -1,7 +1,7 @@
 var struct_d_c_m___motor_configuration =
 [
-    [ "Side1Port", "struct_d_c_m___motor_configuration.html#a3ec6928bbc3a0d8d4686f824cfd4433d", null ],
-    [ "Side1Pin", "struct_d_c_m___motor_configuration.html#adb5f294c6b59c4dcfa6fe834f3c603a4", null ],
-    [ "Side2Port", "struct_d_c_m___motor_configuration.html#a3f8028bcdbcf91d21cda73512b915706", null ],
-    [ "Side2Pin", "struct_d_c_m___motor_configuration.html#a39b0b15418cac09c7294ef132ca66509", null ]
+    [ "u8Port", "struct_d_c_m___motor_configuration.html#a6439a8215e05cda734aef4c58d715032", null ],
+    [ "u8Pin1", "struct_d_c_m___motor_configuration.html#a6cdc315159c3cecff102fa5460b0517f", null ],
+    [ "u8Pin2", "struct_d_c_m___motor_configuration.html#acbf48152f1b2bb3d4731c1fdd23dfc79", null ],
+    [ "u8Direction", "struct_d_c_m___motor_configuration.html#a2e20aa333b94d6c54b07fb7d5e46422c", null ]
 ];
