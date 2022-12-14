@@ -76,23 +76,30 @@ void HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
  */
 void HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
 
+/************************************************************************/
+/*                          Interfacing macros                          */
+/************************************************************************/
 
+/**
+ * @defgroup motor_directions DC Motor Directions
+ *
+ * @{
+ */
 
+/**
+ * @def FORWARD
+ * @brief Motor forward direction
+ *
+ */
+#define FORWARD		(CW)
 
-#define FORWARD		CW
+/**
+ * @def BACKWARD
+ * @brief Motor backward direction
+ *
+ */
+#define BACKWARD (CCW)
 
-#define BACKWARD 	CCW
-
-
-
-
-
-
-
-
-
-
-
-
+/** @} */
 
 #endif //_DCM_interface_H

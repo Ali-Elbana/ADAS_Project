@@ -10,9 +10,25 @@
 #ifndef _DCM_private_H
 #define _DCM_private_H
 
+/**
+ * @defgroup motor_rotation_direction DC Motor Rotation Directions
+ *
+ * @{
+ */
 
-#define  CW		1
-#define  CCW	2
+/**
+ * @def CW
+ * @brief Motor clockwise rotation direction
+ *
+ */
+#define CW (1)
 
+/**
+ * @def CCW
+ * @brief Motor counter-clockwise rotation direction
+ *
+ */
+#define CCW (2)
+/** @} */
 
 #endif //_DCM_private_H
