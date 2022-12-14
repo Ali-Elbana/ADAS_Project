@@ -10,6 +10,14 @@
 #ifndef _DCM_interface_H
 #define _DCM_interface_H
 
+/************************************************************************/
+/*                        Include headers                        	    */
+/************************************************************************/
+#include "DCM_private.h"
+
+/************************************************************************/
+/***********************************************************************/
+
 /**
  * @struct DCM_MotorConfiguration
  * @brief DC Motor configuration structure for motor initialization
@@ -35,6 +43,7 @@ typedef struct
      * @brief Initialize the DC Motor with a certain direction
      */
     u8_t u8Direction;
+
 } DCM_MotorConfiguration;
 
 /************************************************************************/
@@ -66,5 +75,24 @@ void HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
  * @param[in] pMotorConfiguration The motor's configuration to stop
  */
 void HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
+
+
+
+
+#define FORWARD		CW
+
+#define BACKWARD 	CCW
+
+
+
+
+
+
+
+
+
+
+
+
 
 #endif //_DCM_interface_H

@@ -10,4 +10,9 @@
 #ifndef _DCM_private_H
 #define _DCM_private_H
 
+
+#define  CW		1
+#define  CCW	2
+
+
 #endif //_DCM_private_H

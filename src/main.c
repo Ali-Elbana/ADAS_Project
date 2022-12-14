@@ -24,14 +24,14 @@
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
 
-#define TestingGPIO_OutputPushPull STOP
-#define TestingGPIO_OutputOpenDrain STOP
-#define TestingGPIO_Input STOP
-#define TestingPushButton STOP
-#define TestingEXTI_ToggleLED STOP
-#define TestingDCMotor STOP
-#define TestingSTK_ToggleLED_BusyWait STOP
-#define TestingMotorDriver RUN
+#define TestingGPIO_OutputPushPull 		STOP
+#define TestingGPIO_OutputOpenDrain 	STOP
+#define TestingGPIO_Input 				STOP
+#define TestingPushButton 				STOP
+#define TestingEXTI_ToggleLED 			STOP
+#define TestingDCMotor 					STOP
+#define TestingSTK_ToggleLED_BusyWait 	STOP
+#define TestingMotorDriver 				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -40,54 +40,59 @@
 int main(void)
 {
 
-#if TestingGPIO_OutputPushPull == RUN
+	#if TestingGPIO_OutputPushPull == RUN
 
-	TMGPIO_vPushPullOutputPins();
+		TMGPIO_vPushPullOutputPins();
 
-#endif
+	#endif
 
-#if TestingGPIO_Input == RUN
+	#if TestingGPIO_Input == RUN
 
-	TMGPIO_vPullDownInputPins();
+		TMGPIO_vPullDownInputPins();
 
-#endif
+	#endif
 
-#if TestingPushButton == RUN
+	#if TestingPushButton == RUN
 
-	THPushButton_vTogglePIN();
+		THPushButton_vTogglePIN();
 
-#endif
+	#endif
 
-#if TestingDCMotor == RUN
+	#if TestingDCMotor == RUN
 
-	THDC_vMotor();
+		THDC_vMotor();
 
-#endif
+	#endif
 
-#if TestingGPIO_OutputOpenDrain == RUN
+	#if TestingGPIO_OutputOpenDrain == RUN
 
-	TMGPIO_vOpenDrainOutputPIN();
+		TMGPIO_vOpenDrainOutputPIN();
 
-#endif
+	#endif
 
-#if TestingMotorDriver == RUN
+	#if TestingEXTI_ToggleLED == RUN
 
-	THDC_vTestMotors();
+		TMEXTI_vToggleLED();
 
-#endif
+	#endif
 
-#if TestingEXTI_ToggleLED == RUN
+	#if TestingSTK_ToggleLED_BusyWait == RUN
 
-	TMEXTI_vToggleLED();
+		TMSysTick_vToggleLED_BusyWait();
 
-#endif
+	#endif
 
-#if TestingSTK_ToggleLED_BusyWait == RUN
+	#if TestingMotorDriver == RUN
 
-	TMSysTick_vToggleLED_BusyWait();
+		THDC_vTestMotors();
 
-#endif
+	#endif
 
-	while (TRUE)
-		;
+	while (TRUE) ;
+
 }
+
+
+
+
+

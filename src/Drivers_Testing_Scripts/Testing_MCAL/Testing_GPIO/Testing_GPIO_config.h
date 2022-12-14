@@ -7,8 +7,4 @@
 #define _Testing_GPIO_config_H
 
 
-
-
-
-
 #endif //_Testing_GPIO_config_H
