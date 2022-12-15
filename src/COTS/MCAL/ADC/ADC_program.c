@@ -252,10 +252,6 @@ void MADC_vInit( void )
 
 	#endif
 
-//	// Select Regular channel:
-//	// As an example (select ADC1_IN0)
-//	CLR_BIT( ADC->SQR3, SQ1_b0 ) ;
-
 	// EN/DIS SCAN MODE:
 	#if SCAN_MODE == ENABLE
 

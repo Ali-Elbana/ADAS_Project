@@ -76,6 +76,11 @@ void HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
  */
 void HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
 
+// TODO: After developing a timer driver:
+void HDCM_vMotorSpeedCntrl(VAR(u8_t) A_u8SpeedRatio);
+
+
+
 /************************************************************************/
 /*                          Interfacing macros                          */
 /************************************************************************/
