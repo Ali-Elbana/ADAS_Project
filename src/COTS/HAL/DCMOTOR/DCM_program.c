@@ -23,7 +23,7 @@
 #include "DCM_config.h"
 
 /************************************************************************/
-/*                     Functions' implementations                      	*/
+/*                     Functions implementations                      	*/
 /************************************************************************/
 
 FUNC(void) HDCM_vInitMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
@@ -31,21 +31,21 @@ FUNC(void) HDCM_vInitMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
 
     VAR(MGPIOx_ConfigType) DCMotorPin1Init =
     {
-        .Port 			= pMotorConfiguration->u8Port,
-        .Pin   			= pMotorConfiguration->u8Pin1,
-        .Mode      		= GPIOx_MODE_OUTPUT,
-        .OutputType 	= GPIOx_PUSHPULL,
-        .OutputSpeed 	= GPIOx_LowSpeed,
+        .Port 			= pMotorConfiguration->u8Port	,
+        .Pin   			= pMotorConfiguration->u8Pin1	,
+        .Mode      		= GPIOx_MODE_OUTPUT				,
+        .OutputType 	= GPIOx_PUSHPULL				,
+        .OutputSpeed 	= GPIOx_LowSpeed				,
         .InputType 		= GPIOx_NoPull
     };
 
     VAR(MGPIOx_ConfigType) DCMotorPin2Init =
     {
-        .Port 			= pMotorConfiguration->u8Port,
-        .Pin 			= pMotorConfiguration->u8Pin2,
-        .Mode 			= GPIOx_MODE_OUTPUT,
-        .OutputType 	= GPIOx_PUSHPULL,
-        .OutputSpeed 	= GPIOx_LowSpeed,
+        .Port 			= pMotorConfiguration->u8Port	,
+        .Pin 			= pMotorConfiguration->u8Pin2	,
+        .Mode 			= GPIOx_MODE_OUTPUT				,
+        .OutputType 	= GPIOx_PUSHPULL				,
+        .OutputSpeed 	= GPIOx_LowSpeed				,
         .InputType 		= GPIOx_NoPull
     };
 
