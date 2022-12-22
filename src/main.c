@@ -20,6 +20,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Motor_Driver/Testing_Motor_Driver_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_LDR/Testing_LDR_interface.h"
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
@@ -38,8 +39,8 @@
 #define TestingDCMotor					STOP
 #define TestingEXTI_ToggleLED			STOP
 #define TestingSTK_ToggleLED_BusyWait	STOP
-#define TestingADC_ChnagingDelayTime	RUN
-
+#define TestingADC_ChnagingDelayTime	STOP
+#define TestingLDR						RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -102,7 +103,11 @@ int main(void)
 
 	#endif
 
+	#if TestingLDR  == RUN
 
+	TMLDR_vLightLEDsWithLevels(  ) ;
+
+	#endif
 
 
 	while (TRUE) ;

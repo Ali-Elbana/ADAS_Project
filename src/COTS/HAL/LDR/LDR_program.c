@@ -36,11 +36,13 @@ extern VAR(u8_t) LDR_CHANNEL 		;
 void HLDR_vInit( void )
 {
 
+	MRCC_vInit( ) ;
+
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
 
 	//MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
 
-	MGPIOx_vInit( &LDR_Vo  ) ;
+	MGPIOx_vInit( &LDR_Vo ) ;
 
 	MADC_vInit( ) ;
 
