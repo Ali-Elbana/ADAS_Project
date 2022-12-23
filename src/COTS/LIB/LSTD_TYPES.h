@@ -30,6 +30,13 @@ typedef unsigned char bool_t;
 typedef unsigned char u8_t;
 
 /**
+ * @typedef c8_t
+ * Type definition for 8-bit char
+ *
+ */
+typedef char c8_t;
+
+/**
  * @typedef u16_t
  * Type definition for 16-bit unsigned INT
  *

@@ -41,7 +41,7 @@
  * Returns the value of the bit whether it's `1` or `0`
  *
  */
-#define GET_BIT(Reg, bitnum)		(((Reg)>>(bitnum)) & 1)
+#define GET_BIT(Reg, bitnum)	(((Reg)>>(bitnum)) & 1)
 
 /** @} */
 

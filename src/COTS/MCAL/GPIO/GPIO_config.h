@@ -36,4 +36,9 @@
 #define LCKK_BIT_POS (16U)   			   //Position of LCKK bit.
 
 
+#define PORTA_BIT_MANIPULATION 	0xE000
+
+#define PORTB_BIT_MANIPULATION	0x001C
+
+
 #endif //_GPIO_config_H

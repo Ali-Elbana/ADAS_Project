@@ -33,6 +33,7 @@ void TMLDR_vLightLEDsWithLevels(void)
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
 
+	MGPIOx_vLockedPins() ;
 
 	MGPIOx_ConfigType LED1 =
 	{
