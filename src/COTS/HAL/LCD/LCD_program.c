@@ -33,6 +33,7 @@ void HLCD_vInit(void)
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
 
 	MSysTick_vInit( ) ;
 

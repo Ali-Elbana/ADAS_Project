@@ -11,16 +11,24 @@
 #include "LCD_private.h"
 
 
-
-#define HLCD_DATA_PORT	GPIO_PORTB
+#define HLCD_DATA_PORT	GPIO_PORTA
 
 #define HLCD_CTRL_PORT 	GPIO_PORTB
 
-#define HLCD_RS_PIN   	GPIOx_PIN0
+#define HLCD_RS_PIN   	GPIOx_PIN12
 
-#define HLCD_RW_PIN 	GPIOx_PIN1
+#define HLCD_RW_PIN 	GPIOx_PIN13
 
-#define HLCD_EN_PIN 	GPIOx_PIN5
+#define HLCD_EN_PIN 	GPIOx_PIN14
+
+#define D0_PIN GPIOx_PIN1
+#define D1_PIN GPIOx_PIN2
+#define D2_PIN GPIOx_PIN3
+#define D3_PIN GPIOx_PIN4
+#define D4_PIN GPIOx_PIN5
+#define D5_PIN GPIOx_PIN6
+#define D6_PIN GPIOx_PIN7
+#define D7_PIN GPIOx_PIN8
 
 
 #define HLCD_FuctionSet_Cmd 				FuctionSetCmd
@@ -59,14 +67,6 @@
 
 #define LastByteInCGRAM_Pattern		8
 
-#define D0_PIN GPIOx_PIN6
-#define D1_PIN GPIOx_PIN7
-#define D2_PIN GPIOx_PIN8
-#define D3_PIN GPIOx_PIN9
-#define D4_PIN GPIOx_PIN10
-#define D5_PIN GPIOx_PIN12
-#define D6_PIN GPIOx_PIN13
-#define D7_PIN GPIOx_PIN14
 
 
 

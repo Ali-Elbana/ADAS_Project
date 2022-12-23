@@ -17,8 +17,7 @@ void TMGPIO_vPullDownInputPins( void ) 	;
 
 void TMGPIO_vOpenDrainOutputPIN( void ) ;
 
-
-
+void TMGPIO_vOutputPortValue( void ) 	;
 
 
 

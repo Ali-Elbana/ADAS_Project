@@ -21,6 +21,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Motor_Driver/Testing_Motor_Driver_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LDR/Testing_LDR_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_LCD/Testing_LCD_interface.h"
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
@@ -40,7 +41,9 @@
 #define TestingEXTI_ToggleLED			STOP
 #define TestingSTK_ToggleLED_BusyWait	STOP
 #define TestingADC_ChnagingDelayTime	STOP
-#define TestingLDR						RUN
+#define TestingLDR						STOP
+#define TestingLCD						RUN
+#define TestingGPIO_OutputPort			STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -103,9 +106,21 @@ int main(void)
 
 	#endif
 
-	#if TestingLDR  == RUN
+	#if TestingLDR == RUN
 
 	TMLDR_vLightLEDsWithLevels(  ) ;
+
+	#endif
+
+	#if TestingGPIO_OutputPort == RUN
+
+	TMGPIO_vOutputPortValue( ) ;
+
+	#endif
+
+	#if TestingLCD == RUN
+
+	THLCD_vPrintString(  ) ;
 
 	#endif
 

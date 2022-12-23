@@ -189,7 +189,7 @@ void TMGPIO_vOpenDrainOutputPIN( void )
 
 			.Pin 			= GPIOx_PIN0 		,
 
-			.Mode 			= GPIOx_MODE_INPUT ,
+			.Mode 			= GPIOx_MODE_INPUT 	,
 
 			.OutputType 	= GPIOx_PUSHPULL 	,
 
@@ -245,7 +245,104 @@ void TMGPIO_vOpenDrainOutputPIN( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
+void TMGPIO_vOutputPortValue( void )
+{
 
+	MRCC_vInit( ) ;
+
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
+
+	MGPIOx_vLockedPins( ) ;
+
+	MGPIOx_ConfigType D0 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D0_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D1 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D1_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D2 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D2_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D3 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D3_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D4 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D4_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D5 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D5_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D6 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D6_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	MGPIOx_ConfigType D7 =
+	{
+
+		.Port 		= HLCD_DATA_PORT, .Pin = D7_PIN, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
+		.InputType 	= GPIOx_NoPull
+
+	} ;
+
+
+	MGPIOx_vInit( &D0 ) ;
+	MGPIOx_vInit( &D1 ) ;
+	MGPIOx_vInit( &D2 ) ;
+	MGPIOx_vInit( &D3 ) ;
+	MGPIOx_vInit( &D4 ) ;
+	MGPIOx_vInit( &D5 ) ;
+	MGPIOx_vInit( &D6 ) ;
+	MGPIOx_vInit( &D7 ) ;
+
+	GPIO_vSetPortValue( HLCD_DATA_PORT, GPIOA_LOW_NIBBLE_HIGH ) ;
+
+	while (TRUE)
+	{
+
+
+	}
+
+
+}
+
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 
 

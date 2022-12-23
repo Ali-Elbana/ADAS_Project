@@ -26,7 +26,7 @@
  * @brief lock PB2, PB3 and PB4
  *
  */
-#define GPIOB_PIN_POS (0b0000000000011100)  //I want to lock PB2,3,4.
+#define GPIOB_PIN_POS (0b0000100000011100)  //I want to lock PB2,3,4,11.
 
 /**
  * @def LCKK_BIT_POS

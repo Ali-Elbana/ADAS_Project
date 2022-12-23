@@ -567,4 +567,11 @@ void GPIO_vSetPortValue( VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue ) ;
 /** @} */
 
 
+#define GPIOA_LOW_NIBBLE_HIGH	0xFF
+
+#define GPIOA_LOW_NIBBLE_LOW	0x00
+
+
+
+
 #endif //_GPIO_interface_H
