@@ -23,6 +23,8 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LDR/Testing_LDR_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LCD/Testing_LCD_interface.h"
 
+#include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
+
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
@@ -42,8 +44,9 @@
 #define TestingSTK_ToggleLED_BusyWait	STOP
 #define TestingADC_ChnagingDelayTime	STOP
 #define TestingLDR						STOP
-#define TestingLCD						RUN
+#define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
+#define TestingALC						RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -124,8 +127,15 @@ int main(void)
 
 	#endif
 
+	#if TestingALC == RUN
+
+	TSALC_vDispLux(  ) ;
+
+	#endif
+
 
 	while (TRUE) ;
+
 
 }
 

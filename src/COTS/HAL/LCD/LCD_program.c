@@ -30,11 +30,6 @@
 void HLCD_vInit(void)
 {
 
-	MRCC_vInit( ) ;
-
-	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
-	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
-
 	MSysTick_vInit( ) ;
 
 	MSysTick_vDelayMilliSec( 1000 ) ;
@@ -230,7 +225,7 @@ void HLCD_vSendData(VAR(u8_t) A_u8Data)
 void HLCD_vClear(void)
 {
 
-	MSysTick_vDelayMicroSec( 0.5 ) ;
+	MSysTick_vDelayMilliSec( 1 ) ;
 
 	HLCD_vSendCommand( HLCD_DispClear_Cmd ) ;
 

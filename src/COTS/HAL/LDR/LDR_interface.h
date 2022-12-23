@@ -11,15 +11,15 @@
 /*                          Interfacing macros                          */
 /************************************************************************/
 
-#define DARK 		1000
+#define DARK 		3500
 
-#define VERY_DIM	1500
+#define VERY_DIM	3000
 
 #define MODERATE	2000
 
-#define OVERCAST	3000
+#define OVERCAST	1500
 
-#define VERY_BRIGHT	3500
+#define VERY_BRIGHT	1000
 
 /************************************************************************/
 /*                        Functions prototypes                          */
