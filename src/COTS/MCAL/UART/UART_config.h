@@ -10,6 +10,6 @@
 #define __BAUDRATE__ 9600
 #define __PCLK__	 8000000
 
-#define THRESHOLD_VALUE 500000
+#define THRESHOLD_VALUE 5000000
 
 #endif //_UART_config_H

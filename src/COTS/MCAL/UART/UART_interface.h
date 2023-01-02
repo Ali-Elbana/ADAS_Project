@@ -43,7 +43,7 @@ typedef struct
 
 typedef struct
 {
-	u8_t BaudRate			;
+	u32_t BaudRate			;
 
 	u8_t DataWidth			;
 
@@ -88,9 +88,11 @@ void MUSART_vDisable( USART_MemoryMapType *A_USARTx ) ;
 
 void MUSART_vTransmitByte( USART_MemoryMapType *A_USARTx, u8_t A_u8Byte ) ;
 
-void MUSART_vTransmitString( USART_MemoryMapType *A_USARTx, u8_t *A_ptru8String ) ;
+void MUSART_vTransmitString( USART_MemoryMapType *A_USARTx, c8_t *A_ptrc8String ) ;
 
 u8_t MUSART_u8ReceiveByteSynchNonBlocking ( USART_MemoryMapType *A_USARTx ) ;
+
+u8_t MUSART_u8ReceiveByteSynchBlocking ( USART_MemoryMapType *A_USARTx ) ;
 
 u8_t * MUSART_ptrReceiveStringSynchNonBlocking( USART_MemoryMapType *A_USARTx ) ;
 

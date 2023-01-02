@@ -130,15 +130,15 @@ void MUSART_vTransmitByte( USART_MemoryMapType *A_USARTx, u8_t A_u8Byte )
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vTransmitString( USART_MemoryMapType *A_USARTx, u8_t *A_ptru8String )
+void MUSART_vTransmitString( USART_MemoryMapType *A_USARTx, c8_t *A_ptrc8String )
 {
 
 	u8_t loc_u8Iterator = INITIAL_ZERO ;
 
-	while( A_ptru8String[loc_u8Iterator] != '\0' )
+	while( A_ptrc8String[loc_u8Iterator] != '\0' )
 	{
 
-		MUSART_vTransmitByte( A_USARTx, A_ptru8String[loc_u8Iterator] ) ;
+		MUSART_vTransmitByte( A_USARTx, A_ptrc8String[loc_u8Iterator] ) ;
 
 		loc_u8Iterator++ ;
 
@@ -171,6 +171,18 @@ u8_t MUSART_u8ReceiveByteSynchNonBlocking ( USART_MemoryMapType *A_USARTx )
 	}
 
 	return loc_u8Data ;
+
+}
+
+/******************************************************************/
+/******************************************************************/
+
+u8_t MUSART_u8ReceiveByteSynchBlocking ( USART_MemoryMapType *A_USARTx )
+{
+
+	while( GET_BIT(A_USARTx->SR_REG, MUSART_SR_RXNE_BIT) == 0 ) ;
+
+	return A_USARTx->DR_REG ;
 
 }
 
