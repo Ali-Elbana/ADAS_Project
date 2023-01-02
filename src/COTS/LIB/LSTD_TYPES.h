@@ -48,7 +48,21 @@ typedef unsigned short int u16_t;
  * Type definition for 32-bit unsigned INT
  *
  */
-typedef unsigned long int u32_t;
+typedef unsigned int u32_t;
+
+/**
+ * @typedef u64_t
+ * Type definition for 64-bit unsigned INT
+ *
+ */
+typedef unsigned long int u64_t ;
+
+/**
+ * @typedef s64_t
+ * Type definition for 64-bit signed INT
+ *
+ */
+typedef signed long int  s64_t ;
 
 /**
  * @typedef s8_t
@@ -69,21 +83,21 @@ typedef signed short int s16_t;
  * Type definition for 32-bit signed INT
  *
  */
-typedef signed long int s32_t;
+typedef signed int s32_t;
 
 /**
  * @typedef fl32_t
  * Type definition for 32-bit float
  *
  */
-typedef float fl32_t;
+typedef float f32_t;
 
 /**
  * @typedef fl64_t
  * Type definition for 64-bit float
  *
  */
-typedef double fl64_t;
+typedef double f64_t;
 
 /** @} */
 
