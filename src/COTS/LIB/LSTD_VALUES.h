@@ -39,8 +39,7 @@
  * Type definition for NULL
  *
  */
-
-#define NULL ((P2VAR(void))0)
+#define NULL ( (void*)0 )
 #endif /* ifndef NULL */
 
 #ifndef NULL
@@ -103,7 +102,6 @@
 	#define PRESSED (1)
 #endif  /* ifndef PRESSED */
 
-
 /**
  * @def RELEASED
  * Type definition for RELEASED
@@ -112,6 +110,25 @@
 #ifndef RELEASED
 	#define RELEASED (0)
 #endif  /* ifndef RELEASED */
+
+/**
+ * @def SAME_STRING
+ * Type definition for SAME_STRING
+ *
+ */
+#ifndef SAME_STRING
+	#define SAME_STRING (0)
+#endif  /* ifndef SAME_STRING */
+
+/**
+ * @def DIFFERENT_STRING
+ * Type definition for DIFFERENT_STRING
+ *
+ */
+#ifndef DIFFERENT_STRING
+	#define DIFFERENT_STRING (1)
+#endif  /* ifndef DIFFERENT_STRING */
+
 
 
 /** @} */

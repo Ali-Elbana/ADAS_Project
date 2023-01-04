@@ -96,6 +96,10 @@ u8_t MUSART_u8ReceiveByteSynchBlocking ( USART_MemoryMapType *A_USARTx ) ;
 
 u8_t * MUSART_ptrReceiveStringSynchNonBlocking( USART_MemoryMapType *A_USARTx ) ;
 
+void MUSART_vRecieveString( USART_MemoryMapType *A_USARTx, c8_t A_c8YourString[] ) ;
+
+u8_t MUSART_u8CompareString( c8_t *String1, c8_t *String2 ) ;
+
 u8_t MUSART_u8ReadDataRegister( USART_MemoryMapType *A_USARTx ) ;
 
 void MUSART_vClearFlags( USART_MemoryMapType *A_USARTx ) ;

@@ -113,7 +113,4 @@
 
 
 
-
-
-
 #endif //_UART_config_H

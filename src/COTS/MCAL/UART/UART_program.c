@@ -12,6 +12,8 @@
 #include "../../LIB/LSTD_VALUES.h"
 #include "../../LIB/LSTD_BITMATH.h"
 
+#include "string.h"
+
 #include "../RCC/MRCC_interface.h"
 #include "../GPIO/GPIO_interface.h"
 
@@ -291,6 +293,53 @@ u8_t * MUSART_ptrReceiveStringSynchNonBlocking( USART_MemoryMapType *A_USARTx )
 	G_u8String[loc_u8Iterator] = '\0' ;
 
 	return( G_u8String ) ;
+
+}
+
+/******************************************************************/
+/******************************************************************/
+
+void MUSART_vRecieveString( USART_MemoryMapType *A_USARTx, c8_t A_c8YourString[] )
+{
+
+	u32_t L_u32Counter = INITIAL_ZERO ;
+
+	A_c8YourString[L_u32Counter] = MUSART_u8ReceiveByteSynchBlocking( A_USARTx ) ;
+
+	while( A_c8YourString[L_u32Counter] != '\0' )
+	{
+
+		L_u32Counter++ ;
+
+		A_c8YourString[L_u32Counter] = MUSART_u8ReceiveByteSynchBlocking( A_USARTx ) ;
+
+		if( (A_c8YourString[L_u32Counter] == '\n') || (A_c8YourString[L_u32Counter] == '\r') )
+		{
+			A_c8YourString[L_u32Counter] = '\0' ;
+		}
+
+	}
+
+}
+
+/******************************************************************/
+/******************************************************************/
+
+u8_t MUSART_u8CompareString( c8_t *String1, c8_t *String2 )
+{
+
+	u8_t L_u8TheComparingResult = INITIAL_ZERO ;
+
+    if( strcmp( String1, String2 ) == SAME_STRING )
+	{
+    	L_u8TheComparingResult =  SAME_STRING ;
+    }
+    else
+	{
+    	L_u8TheComparingResult = DIFFERENT_STRING ;
+    }
+
+	return L_u8TheComparingResult ;
 
 }
 
