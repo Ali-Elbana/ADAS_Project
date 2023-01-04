@@ -36,6 +36,91 @@ void MUSART_vInit( USART_InitType *A_InitStruct,
 				USART_ClockInitTypeDef *A_ClockInitStruct, USART_MemoryMapType *A_USARTx )
 {
 
+	if( A_USARTx == USART1_REG )
+	{
+
+		MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_USART1EN ) ;
+
+		/*configer Tx1 as alt fun*/
+		MGPIOx_ConfigType TX1 =
+		{
+			.Port 			= USART1_PORT		,	.Pin 		= TX1_PIN		,
+			.Mode 			= GPIOx_MODE_AF		,	.OutputType = GPIOx_PUSHPULL,
+			.OutputSpeed 	= GPIOx_MediumSpeed	,	.InputType 	= GPIOx_NoPull	,
+			.AF_Type 		= GPIOx_AF7
+		} ;
+
+		MGPIOx_vInit( &TX1 ) ;
+
+		/*configer Rx1 as alt fun*/
+		MGPIOx_ConfigType RX1 =
+		{
+			.Port 			= USART1_PORT		, 	.Pin 		= RX1_PIN		,
+			.Mode 			= GPIOx_MODE_AF		, 	.OutputType = GPIOx_PUSHPULL,
+			.OutputSpeed 	= GPIOx_MediumSpeed	, 	.InputType 	= GPIOx_NoPull	,
+			.AF_Type 		= GPIOx_AF7
+		} ;
+
+		MGPIOx_vInit( &RX1 ) ;
+
+	}
+	else if( A_USARTx == USART2_REG )
+	{
+
+		MRCC_vEnablePeriphralCLK( RCC_APB2, APB1ENR_USART2EN ) ;
+
+		/*configer Tx2 as alt fun*/
+		MGPIOx_ConfigType TX2 =
+		{
+			.Port 			= USART2_PORT		,	.Pin 		= TX2_PIN		,
+			.Mode 			= GPIOx_MODE_AF		,	.OutputType = GPIOx_PUSHPULL,
+			.OutputSpeed 	= GPIOx_MediumSpeed	,	.InputType 	= GPIOx_NoPull	,
+			.AF_Type 		= GPIOx_AF7
+		} ;
+
+		MGPIOx_vInit( &TX2 ) ;
+
+		/*configer Rx2 as alt fun*/
+		MGPIOx_ConfigType RX2 =
+		{
+			.Port 			= USART2_PORT		, 	.Pin 		= RX2_PIN		,
+			.Mode 			= GPIOx_MODE_AF		, 	.OutputType = GPIOx_PUSHPULL,
+			.OutputSpeed 	= GPIOx_MediumSpeed	, 	.InputType 	= GPIOx_NoPull	,
+			.AF_Type 		= GPIOx_AF7
+		} ;
+
+		MGPIOx_vInit( &RX2 ) ;
+
+	}
+	else if( A_USARTx == USART6_REG )
+	{
+
+		MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_USART6EN ) ;
+
+		/*configer Tx6 as alt fun*/
+		MGPIOx_ConfigType TX6 =
+		{
+			.Port 			= USART6_PORT		,	.Pin 		= TX6_PIN		,
+			.Mode 			= GPIOx_MODE_AF		,	.OutputType = GPIOx_PUSHPULL,
+			.OutputSpeed 	= GPIOx_MediumSpeed	,	.InputType 	= GPIOx_NoPull	,
+			.AF_Type 		= GPIOx_AF7
+		} ;
+
+		MGPIOx_vInit( &TX6 ) ;
+
+		/*configer Rx6 as alt fun*/
+		MGPIOx_ConfigType RX6 =
+		{
+			.Port 			= USART6_PORT		, 	.Pin 		= RX6_PIN		,
+			.Mode 			= GPIOx_MODE_AF		, 	.OutputType = GPIOx_PUSHPULL,
+			.OutputSpeed 	= GPIOx_MediumSpeed	, 	.InputType 	= GPIOx_NoPull	,
+			.AF_Type 		= GPIOx_AF7
+		} ;
+
+		MGPIOx_vInit( &RX6 ) ;
+
+	}
+
 	// BuadRate/Over-sampling selections:
 	switch( A_InitStruct->Oversampling )
 	{

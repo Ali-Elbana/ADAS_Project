@@ -134,7 +134,7 @@ void MUSART6_vSetCallBack( void (*Fptr) (void) ) ;
 #define ENABLE				1
 #define DISABLE				0
 
-
+#define __BAUDRATE__ 9600
 
 
 
