@@ -26,6 +26,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Motor_Driver/Testing_Motor_Driver_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LDR/Testing_LDR_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LCD/Testing_LCD_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_Bluetooth/Testing_Bluetooth_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
@@ -51,8 +52,8 @@
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
 #define TestingALC						STOP
-#define TestingUART						RUN
-
+#define TestingUART						STOP
+#define TestingBluetooth_RGBLED 	 	RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -145,9 +146,14 @@ int main(void)
 
 	#endif
 
+	#if TestingBluetooth_RGBLED == RUN
+
+	THBluetooth_vLEDColor(  ) ;
+
+	#endif
+
 
 	while (TRUE) ;
-
 
 }
 
