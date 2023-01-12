@@ -29,7 +29,6 @@
 void THBluetooth_vLEDColor( void )
 {
 
-
 	c8_t L_strRecievedColor[6] 	= "0" 			;
 	u8_t L_u8BlueColorCheck		= INITIAL_ZERO	;
 	u8_t L_u8GreenColorCheck	= INITIAL_ZERO	;
@@ -74,7 +73,7 @@ void THBluetooth_vLEDColor( void )
 
 		HBluetooth_vSendString( "\nSelect the LED color: \n" ) ;
 
-		/* Don't forget to enter (Enter) -> "\n" after every string you enterd */
+		/* Don't forget to enter (Enter) -> "\n" after every string you entered */
 		HBluetooth_vReceiveString( L_strRecievedColor ) ;
 
 		L_u8BlueColorCheck 	= HBluetooth_u8CompStrings( L_strRecievedColor, L_strBlueColor  ) ;
