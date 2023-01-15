@@ -39,9 +39,9 @@ typedef struct
 } SPI_MemoryMapType ;
 
 
-#define SPI1 ( (volatile SPI_MemoryMapType*) SPI1_BASE_ADDRESS)
-#define SPI2 ( (volatile SPI_MemoryMapType*) SPI2_BASE_ADDRESS)
-#define SPI3 ( (volatile SPI_MemoryMapType*) SPI3_BASE_ADDRESS)
+#define SPI1 ( ( SPI_MemoryMapType*) SPI1_BASE_ADDRESS)
+#define SPI2 ( ( SPI_MemoryMapType*) SPI2_BASE_ADDRESS)
+#define SPI3 ( ( SPI_MemoryMapType*) SPI3_BASE_ADDRESS)
 
 /************************************************************************/
 /*                        Functions prototypes                          */

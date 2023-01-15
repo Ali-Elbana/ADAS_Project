@@ -16,6 +16,7 @@
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_SysTick/Testing_SysTick_interface.h"
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_ADC/Testing_ADC_interface.h"
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_UART/Testing_UART_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_SPI/Testing_SPI_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
@@ -49,7 +50,8 @@
 #define TestingGPIO_OutputPort			STOP
 #define TestingALC						STOP
 #define TestingUART						STOP
-#define TestingBluetooth_RGBLED 	 	RUN
+#define TestingBluetooth_RGBLED 	 	STOP
+#define TestingSPI_SendChar				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -145,6 +147,12 @@ int main(void)
 	#if TestingBluetooth_RGBLED == RUN
 
 	THBluetooth_vLEDColor(  ) ;
+
+	#endif
+
+	#if TestingSPI_SendChar == RUN
+
+	TMSPI_vSendChar(  ) ;
 
 	#endif
 
