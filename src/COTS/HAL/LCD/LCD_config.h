@@ -11,15 +11,15 @@
 #include "LCD_private.h"
 
 
-#define HLCD_DATA_PORT	GPIO_PORTA
 
 #define HLCD_CTRL_PORT 	GPIO_PORTB
 
 #define HLCD_RS_PIN   	GPIOx_PIN12
-
 #define HLCD_RW_PIN 	GPIOx_PIN13
-
 #define HLCD_EN_PIN 	GPIOx_PIN14
+
+
+#define HLCD_DATA_PORT	GPIO_PORTA
 
 #define D0_PIN GPIOx_PIN1
 #define D1_PIN GPIOx_PIN2

@@ -29,9 +29,16 @@
 FUNC(void) THLCD_vPrintString( void )
 {
 
+	MRCC_vInit( ) ;
+
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+
 	MGPIOx_vLockedPins() ;
 
 	HLCD_vInit() ;
+
+	HLCD_vClear( ) ;
 
 	HLCD_vDispString( " ADAS Project " ) ;
 

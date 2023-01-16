@@ -48,10 +48,10 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						STOP
+#define TestingALC						RUN
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
-#define TestingSPI_SendChar				RUN
+#define TestingSPI_SendChar				STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/

@@ -127,7 +127,6 @@ void HLCD_vInit(void)
 	MGPIOx_vInit( &RW ) ;
 	MGPIOx_vInit( &EN ) ;
 	MGPIOx_vInit( &D0 ) ;
-	MGPIOx_vInit( &D0 ) ;
 	MGPIOx_vInit( &D1 ) ;
 	MGPIOx_vInit( &D2 ) ;
 	MGPIOx_vInit( &D3 ) ;
