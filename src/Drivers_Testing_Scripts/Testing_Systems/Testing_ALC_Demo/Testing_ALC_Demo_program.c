@@ -81,9 +81,8 @@ FUNC( void ) TSALC_vDispLux( void )
 
 			HLCD_vDispNumber( L_u16BrightnessLevel ) ;
 
-			HLCD_vGoTo( HLCD_LINE2, HLCD_Square10 ) ;
+			HLCD_vClearChar( HLCD_LINE2, HLCD_Square10 ) ;
 
-			HLCD_vSendData( ' ' ) ;
 		}
 
 		else if( L_u16BrightnessLevel > DARK )
