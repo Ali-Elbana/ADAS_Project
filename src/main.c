@@ -26,6 +26,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Bluetooth/Testing_Bluetooth_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
+#include "Drivers_Testing_Scripts/Testing_Systems/Testing_ACC_Demo/Testing_ACC_Demo_interface.h"
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
@@ -48,7 +49,8 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						RUN
+#define TestingALC						STOP
+#define TestingACC						RUN
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
@@ -136,6 +138,11 @@ int main(void)
 
 	TSALC_vDispLux(  ) ;
 
+	#endif
+
+	#if TestingACC == RUN
+
+	TSACC_CarControlDemo();
 	#endif
 
 	#if TestingUART == RUN
