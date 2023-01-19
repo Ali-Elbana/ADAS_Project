@@ -64,11 +64,10 @@ VAR(DCM_MotorConfiguration) dcmMotor4 =
     .u8Direction 	= INITIAL_ZERO
 };
 
-
 bool_t UserLoginProcess(void);
+void CarControl(void);
 void ReceiveInputViaBluetooth(P2VAR(c8_t) L_strMessagePlaceholder, P2VAR(c8_t) L_strInfo);
 bool_t ValidateUserInfo(P2VAR(c8_t) L_strUsername, P2VAR(c8_t) L_strPassword);
-FUNC(void) CarControl(void);
 
 FUNC(void) TSACC_CarControlDemo(void)
 {
@@ -127,83 +126,20 @@ FUNC(bool_t) UserLoginProcess(void)
     return bHasLoggedIn;
 }
 
-FUNC(void) ReceiveInputViaBluetooth(P2VAR(c8_t) L_strMessagePlaceholder, P2VAR(c8_t) L_strInfo)
-{
-    HBluetooth_vSendString(L_strMessagePlaceholder);
-    HBluetooth_vReceiveString(L_strInfo);
-}
-
-FUNC(bool_t) ValidateUserInfo(P2VAR(c8_t) L_strUsername, P2VAR(c8_t) L_strPassword)
-{
-    bool_t bHasCorrectInfo = FALSE;
-
-    UserInfo_t L_strUsersInfo[] =
-    {
-        { "Mohamed", "Mohamed" },
-        { "Ahmed", "Ahmed" },
-        { "Value", "Zagazig" }
-    };
-
-    if (!strlen(L_strUsername) || !strlen(L_strPassword))
-    {
-        bHasCorrectInfo = FALSE;
-    }
-    else if ((strlen(L_strUsername) > MAX_INFO_LENGTH) || (strlen(L_strPassword) > MAX_INFO_LENGTH))
-    {
-        bHasCorrectInfo = FALSE;
-    }
-    else
-    {
-        for (u8_t L_intLoopCounter = INITIAL_ZERO; L_intLoopCounter < sizeof L_strUsersInfo; L_intLoopCounter++)
-        {
-            if (L_strUsersInfo[L_intLoopCounter].strUsername[0] == L_strUsername[0])
-            {
-                if (HBluetooth_u8CompStrings(L_strUsername, L_strUsersInfo[L_intLoopCounter].strUsername) == SAME_STRING)
-                {
-                    if (HBluetooth_u8CompStrings(L_strPassword, L_strUsersInfo[L_intLoopCounter].strPassword) == SAME_STRING)
-                    {
-                        bHasCorrectInfo = TRUE;
-                        break;
-                    }
-                    else
-                    {
-                        /* Do nothing */
-                    }
-                }
-                else
-                {
-                    /* Do nothing */
-                }
-            }
-            else
-            {
-                /* Do nothing */
-            }
-        }
-    }
-
-    return bHasCorrectInfo;
-}
-
 FUNC(void) CarControl(void)
 {
-    c8_t L_strRecieveCarControl = "";
+    c8_t L_strRecieveCarControl = 'f';
     HBluetooth_vSendString("\n- Control the car -\n");
     HBluetooth_vSendString("\nw = Move car forward\n");
     HBluetooth_vSendString("\ns = Move car backward\n");
     HBluetooth_vSendString("\na = Move car left\n");
     HBluetooth_vSendString("\nd = Move car right\n");
     HBluetooth_vSendString("\nf = Stop the car\n");
-    ReceiveInputViaBluetooth("\nEnter a control letter\n", L_strRecieveCarControl);
+    ReceiveInputViaBluetooth("\nEnter a control letter\n", &L_strRecieveCarControl);
 
     //   Motors Layout
-    //
-    //
-    //   M1 ----------- M2
-    //
-    //
-    //   M3 ----------- M4
-    //
+    //   M1 ----- M2
+    //   M3 ----- M4
 
     /* Move car forward */
     if (L_strRecieveCarControl == 'w')
@@ -269,4 +205,58 @@ FUNC(void) CarControl(void)
     {
         /* Do nothing */
     }
+}
+
+FUNC(void) ReceiveInputViaBluetooth(P2VAR(c8_t) L_strMessagePlaceholder, P2VAR(c8_t) L_strInfo)
+{
+    HBluetooth_vSendString(L_strMessagePlaceholder);
+    HBluetooth_vReceiveString(L_strInfo);
+}
+
+FUNC(bool_t) ValidateUserInfo(P2VAR(c8_t) L_strUsername, P2VAR(c8_t) L_strPassword)
+{
+    bool_t bHasCorrectInfo = FALSE;
+
+    UserInfo_t L_strUsersInfo[] =
+    {
+        { "Mohamed", "Mohamed" },
+        { "Ahmed", "Ahmed" },
+        { "Value", "Zagazig" }
+    };
+
+    if (!L_strUsername[0] || !L_strPassword[0])
+    {
+        bHasCorrectInfo = FALSE;
+    }
+    else
+    {
+        for (u8_t L_intLoopCounter = INITIAL_ZERO; L_intLoopCounter < sizeof L_strUsersInfo; L_intLoopCounter++)
+        {
+            if (L_strUsersInfo[L_intLoopCounter].strUsername[0] == L_strUsername[0])
+            {
+                if (HBluetooth_u8CompStrings(L_strUsername, L_strUsersInfo[L_intLoopCounter].strUsername) == SAME_STRING)
+                {
+                    if (HBluetooth_u8CompStrings(L_strPassword, L_strUsersInfo[L_intLoopCounter].strPassword) == SAME_STRING)
+                    {
+                        bHasCorrectInfo = TRUE;
+                        break;
+                    }
+                    else
+                    {
+                        /* Do nothing */
+                    }
+                }
+                else
+                {
+                    /* Do nothing */
+                }
+            }
+            else
+            {
+                /* Do nothing */
+            }
+        }
+    }
+
+    return bHasCorrectInfo;
 }
