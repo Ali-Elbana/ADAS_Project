@@ -6,6 +6,11 @@
  * @date 11/9/2022
  */
 
+#include "../../LIB/LSTD_TYPES.h"
+#include "../../LIB/LSTD_COMPILER.h"
+#include "../../LIB/LSTD_VALUES.h"
+#include "../../LIB/LSTD_BITMATH.h"
+
 /* Header file guard */
 #ifndef _GPIO_interface_H
 #define _GPIO_interface_H
