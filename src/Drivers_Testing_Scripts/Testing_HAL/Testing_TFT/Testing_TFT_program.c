@@ -19,6 +19,7 @@
 #include "../../../COTS/HAL/TFT/TFT_interface.h"
 
 #include "../../../Images/MyImage.h"
+#include "../../../Images/MyCat.h"
 
 #include "Testing_TFT_interface.h"
 #include "Testing_TFT_private.h"
@@ -39,7 +40,7 @@ void THTFT_vDispImage( void )
 
 	HTFT_vInit( ) ;
 
-	HTFT_vShowImage( Image, sizeof(Image) / sizeof(Image[0]) ) ;
+	HTFT_vShowImage( Cat_Image, sizeof(Cat_Image) / sizeof(Cat_Image[0]) ) ;
 
 	while( TRUE )
 	{
