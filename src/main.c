@@ -24,6 +24,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LDR/Testing_LDR_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LCD/Testing_LCD_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Bluetooth/Testing_Bluetooth_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_TFT/Testing_TFT_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ACC_Demo/Testing_ACC_Demo_interface.h"
@@ -54,6 +55,7 @@
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
+#define TestingTFT_ShowImage			STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -163,6 +165,11 @@ int main(void)
 
 	#endif
 
+	#if TestingTFT_ShowImage == RUN
+
+		THTFT_vDispImage( ) ;
+
+	#endif
 
 	while (TRUE) ;
 

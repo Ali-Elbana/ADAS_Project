@@ -15,7 +15,7 @@
  *FIRST_CLK_Captured
  *SECOND_CLK_Captured
  */
-#define CPHA_MODE FIRST_CLK_Captured
+#define CPHA_MODE SECOND_CLK_Captured
 
 /**********************************************************************************/
 
@@ -23,7 +23,7 @@
  *CLK_IdleAt0
  *CLK_IdleAt1
  */
-#define CPOL_MODE CLK_IdleAt0
+#define CPOL_MODE CLK_IdleAt1
 
 /**********************************************************************************/
 
@@ -45,7 +45,7 @@
  *CLK_By128
  *CLK_By256
  */
-#define BR_MODE CLK_By8
+#define BR_MODE CLK_By2
 
 /**********************************************************************************/
 

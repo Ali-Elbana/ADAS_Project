@@ -43,7 +43,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTA 			, 	.Pin 		= GPIOx_PIN7 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -51,7 +51,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTA 			, 	.Pin 		= GPIOx_PIN6 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -59,7 +59,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTA 			, 	.Pin 		= GPIOx_PIN5 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -78,7 +78,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTB 			, 	.Pin 		= GPIOx_PIN15 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -86,7 +86,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTB 			, 	.Pin 		= GPIOx_PIN14 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -94,7 +94,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTB 			, 	.Pin 		= GPIOx_PIN13 	 	,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull	 	,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull	 	,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -113,7 +113,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTB 			, 	.Pin 		= GPIOx_PIN5 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -121,7 +121,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTB 			, 	.Pin 		= GPIOx_PIN4 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -129,7 +129,7 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 		{
 			.Port 			= GPIO_PORTB 			, 	.Pin 		= GPIOx_PIN3 		,
 			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-			.OutputSpeed 	= GPIOx_VeryHighSpeed	, 	.InputType 	= GPIOx_NoPull		,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
 			.AF_Type 		= GPIOx_AF5
 		} ;
 
@@ -146,8 +146,25 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 	}
 
 	// CPHA, CPOL.
+	#if CPHA_MODE == FIRST_CLK_Captured
+
+	CLR_BIT( A_SPIx->CR1, CPHA ) ;
+
+	#elif CPHA_MODE == SECOND_CLK_Captured
+
 	SET_BIT( A_SPIx->CR1, CPHA ) ;
+
+	#endif
+
+	#if CPOL_MODE == CLK_IdleAt0
+
 	SET_BIT( A_SPIx->CR1, CPOL ) ;
+
+	#elif CPOL_MODE == CLK_IdleAt1
+
+	SET_BIT( A_SPIx->CR1, CPOL ) ;
+
+	#endif
 
 	// Data format.
 	#if DFF_MODE == EIGHT_BITS
@@ -161,7 +178,15 @@ void MSPI_vInit( SPI_MemoryMapType * A_SPIx, u8_t A_u8RelationShip, u8_t A_u8Dat
 	#endif
 
 	// MSB/LSB first.
+	#if LSBFIRST_MODE == MSB_First
+
 	CLR_BIT( A_SPIx->CR1, LSBFIRST ) ;
+
+	#elif LSBFIRST_MODE == LSB_First
+
+	SET_BIT( A_SPIx->CR1, LSBFIRST ) ;
+
+	#endif
 
 	// Select SW slave management.
 	switch( A_u8RelationShip )
