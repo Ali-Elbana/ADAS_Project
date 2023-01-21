@@ -10,5 +10,6 @@ var _g_p_i_o__program_8c =
     [ "MGPIOx_vSetResetAtomic", "_g_p_i_o__program_8c.html#a29da100159c6f4c0db683e1a12bbe827", null ],
     [ "MGPIOx_vSetAlternateFunctionON", "_g_p_i_o__program_8c.html#a9f4bdac7d7d5430ad1b71bd86ec7fb5a", null ],
     [ "MGPIOx_vInit", "_g_p_i_o__program_8c.html#ae0822bea960c4226977e88ec16f3764e", null ],
-    [ "MGPIOx_vTogglePinValue", "_g_p_i_o__program_8c.html#a36bc9410064c8b745c2ef939c545e8f4", null ]
+    [ "MGPIOx_vTogglePinValue", "_g_p_i_o__program_8c.html#a36bc9410064c8b745c2ef939c545e8f4", null ],
+    [ "GPIO_vSetPortValue", "_g_p_i_o__program_8c.html#a60035aa79276198b838dab805589de45", null ]
 ];

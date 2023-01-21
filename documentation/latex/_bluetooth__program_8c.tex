@@ -1,0 +1,340 @@
+\hypertarget{_bluetooth__program_8c}{}\doxysection{COTS/\+HAL/\+Bluetooth/\+Bluetooth\+\_\+program.c File Reference}
+\label{_bluetooth__program_8c}\index{COTS/HAL/Bluetooth/Bluetooth\_program.c@{COTS/HAL/Bluetooth/Bluetooth\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+RCC/\+MRCC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+UART/\+UART\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bluetooth\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bluetooth\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bluetooth\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_a3226b557ba445cca425a7cbc2f5ec2cf}{HBluetooth\+\_\+v\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_a260685ee69fa2f57043c326cb6a22f14}{HBluetooth\+\_\+v\+Send\+Byte}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Byte)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_bluetooth__program_8c_a0acf4691e98c124ac26bcc8678ee17c9}{HBluetooth\+\_\+u8\+Receive\+Byte}} (void)
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\+\_\+v\+Send\+String}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$A\+\_\+ptrc8\+String)
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_ac18d670545d98a6d8c512f8224c538d6}{HBluetooth\+\_\+v\+Receive\+String}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$A\+\_\+c8\+Your\+String)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_bluetooth__program_8c_a3ec3451bb89f44c6809c4bd31c32067f}{HBluetooth\+\_\+u8\+Comp\+Strings}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$String1, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$String2)
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_a82061f47728bd5851be561cd9822ec45}{HBluetooth\+\_\+v\+Enable}} (void)
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_a0f0fe34b47a3465f204a37d8cfae3b03}{HBluetooth\+\_\+v\+Disable}} (void)
+\item 
+void \mbox{\hyperlink{_bluetooth__program_8c_a3f6c5fb9dc7e3a89045d365551109745}{HBluetooth\+\_\+\+Exchange\+String}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$L\+\_\+str\+Message\+Placeholder, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$L\+\_\+str\+Info)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_bluetooth__program_8c_a8668dc89b8f46681152efd3b7bf8f380}{HBluetooth\+\_\+\+Exchange\+Byte}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$L\+\_\+str\+Message\+Placeholder)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}} \mbox{\hyperlink{_bluetooth__program_8c_adb01254df4e4a0f500d895e7247866e1}{Bluetooth\+\_\+\+Config}}
+\item 
+\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}} \mbox{\hyperlink{_bluetooth__program_8c_a8189a8a6242cec2c6ff985e97bef8d20}{Bluetooth\+\_\+\+CLK}}
+\item 
+\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$ \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_bluetooth__program_8c_a3226b557ba445cca425a7cbc2f5ec2cf}\label{_bluetooth__program_8c_a3226b557ba445cca425a7cbc2f5ec2cf}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_vInit@{HBluetooth\_vInit}}
+\index{HBluetooth\_vInit@{HBluetooth\_vInit}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_vInit()}{HBluetooth\_vInit()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00038}{38}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039 \{}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041     \mbox{\hyperlink{_u_a_r_t__interface_8h_a73bf3b20827ed61d222ae8dfb1eda45c}{MUSART\_vInit}}( \&\mbox{\hyperlink{_bluetooth__program_8c_adb01254df4e4a0f500d895e7247866e1}{Bluetooth\_Config}}, \&\mbox{\hyperlink{_bluetooth__program_8c_a8189a8a6242cec2c6ff985e97bef8d20}{Bluetooth\_CLK}}, \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}} ) ;}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00037}{Bluetooth\+\_\+\+CLK}}, \mbox{\hyperlink{_bluetooth__config_8c_source_l00026}{Bluetooth\+\_\+\+Config}}, \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00037}{MUSART\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a260685ee69fa2f57043c326cb6a22f14}\label{_bluetooth__program_8c_a260685ee69fa2f57043c326cb6a22f14}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_vSendByte@{HBluetooth\_vSendByte}}
+\index{HBluetooth\_vSendByte@{HBluetooth\_vSendByte}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_vSendByte()}{HBluetooth\_vSendByte()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+v\+Send\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Byte }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00048}{48}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049 \{}
+\DoxyCodeLine{00050 }
+\DoxyCodeLine{00051     \mbox{\hyperlink{_u_a_r_t__interface_8h_a2ada5f0990eceabc128d3fcbeb79377c}{MUSART\_vTransmitByte}}( \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}}, A\_u8Byte ) ;}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00203}{MUSART\+\_\+v\+Transmit\+Byte()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a0acf4691e98c124ac26bcc8678ee17c9}\label{_bluetooth__program_8c_a0acf4691e98c124ac26bcc8678ee17c9}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_u8ReceiveByte@{HBluetooth\_u8ReceiveByte}}
+\index{HBluetooth\_u8ReceiveByte@{HBluetooth\_u8ReceiveByte}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_u8ReceiveByte()}{HBluetooth\_u8ReceiveByte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} HBluetooth\+\_\+u8\+Receive\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00058}{58}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059 \{}
+\DoxyCodeLine{00060 }
+\DoxyCodeLine{00061     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} L\_u8ReceivedByte = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063     L\_u8ReceivedByte = \mbox{\hyperlink{_u_a_r_t__interface_8h_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}( \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}} ) ;}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065     \textcolor{keywordflow}{return} L\_u8ReceivedByte ;}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00267}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Blocking()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00134}{HBluetooth\+\_\+\+Exchange\+Byte()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a35b1e6676c7e69e72d56572491cee3b7}\label{_bluetooth__program_8c_a35b1e6676c7e69e72d56572491cee3b7}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_vSendString@{HBluetooth\_vSendString}}
+\index{HBluetooth\_vSendString@{HBluetooth\_vSendString}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_vSendString()}{HBluetooth\_vSendString()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+v\+Send\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{A\+\_\+ptrc8\+String }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00072}{72}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073 \{}
+\DoxyCodeLine{00074 }
+\DoxyCodeLine{00075     \mbox{\hyperlink{_u_a_r_t__interface_8h_aaf5b81f3e000ad569a835ff04fb24014}{MUSART\_vTransmitString}}( \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}}, A\_ptrc8String ) ;}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00220}{MUSART\+\_\+v\+Transmit\+String()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00134}{HBluetooth\+\_\+\+Exchange\+Byte()}}, and \mbox{\hyperlink{_bluetooth__program_8c_source_l00126}{HBluetooth\+\_\+\+Exchange\+String()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_ac18d670545d98a6d8c512f8224c538d6}\label{_bluetooth__program_8c_ac18d670545d98a6d8c512f8224c538d6}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_vReceiveString@{HBluetooth\_vReceiveString}}
+\index{HBluetooth\_vReceiveString@{HBluetooth\_vReceiveString}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_vReceiveString()}{HBluetooth\_vReceiveString()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+v\+Receive\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{A\+\_\+c8\+Your\+String }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00082}{82}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00083 \{}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085     \mbox{\hyperlink{_u_a_r_t__interface_8h_a9012038beeb0224f40e9191a16255dda}{MUSART\_vRecieveString}}( \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}}, A\_c8YourString ) ;}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00302}{MUSART\+\_\+v\+Recieve\+String()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00126}{HBluetooth\+\_\+\+Exchange\+String()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a3ec3451bb89f44c6809c4bd31c32067f}\label{_bluetooth__program_8c_a3ec3451bb89f44c6809c4bd31c32067f}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_u8CompStrings@{HBluetooth\_u8CompStrings}}
+\index{HBluetooth\_u8CompStrings@{HBluetooth\_u8CompStrings}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_u8CompStrings()}{HBluetooth\_u8CompStrings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} HBluetooth\+\_\+u8\+Comp\+Strings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{String1,  }\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{String2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00092}{92}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00093 \{}
+\DoxyCodeLine{00094 }
+\DoxyCodeLine{00095     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} L\_u8Result = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00096 }
+\DoxyCodeLine{00097     L\_u8Result = \mbox{\hyperlink{_u_a_r_t__interface_8h_a963243cdece8f17e1245a78ea097b344}{MUSART\_u8CompareString}}( String1, String2 ) ;}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099     \textcolor{keywordflow}{return} L\_u8Result ;}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00328}{MUSART\+\_\+u8\+Compare\+String()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a82061f47728bd5851be561cd9822ec45}\label{_bluetooth__program_8c_a82061f47728bd5851be561cd9822ec45}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_vEnable@{HBluetooth\_vEnable}}
+\index{HBluetooth\_vEnable@{HBluetooth\_vEnable}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_vEnable()}{HBluetooth\_vEnable()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+v\+Enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00106}{106}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00107 \{}
+\DoxyCodeLine{00108 }
+\DoxyCodeLine{00109     \mbox{\hyperlink{_u_a_r_t__interface_8h_a4b385eba59231a73011eb70b55a8ffee}{MUSART\_vEnable}}( \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}} ) ;}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00187}{MUSART\+\_\+v\+Enable()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a0f0fe34b47a3465f204a37d8cfae3b03}\label{_bluetooth__program_8c_a0f0fe34b47a3465f204a37d8cfae3b03}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_vDisable@{HBluetooth\_vDisable}}
+\index{HBluetooth\_vDisable@{HBluetooth\_vDisable}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_vDisable()}{HBluetooth\_vDisable()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+v\+Disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00116}{116}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00117 \{}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119     \mbox{\hyperlink{_u_a_r_t__interface_8h_acafcd6cc785d2b7d90f66b17a9f95ec2}{MUSART\_vDisable}}( \mbox{\hyperlink{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}{Bluetooth\_UART\_ID}} ) ;}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{Bluetooth\+\_\+\+UART\+\_\+\+ID}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00195}{MUSART\+\_\+v\+Disable()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a3f6c5fb9dc7e3a89045d365551109745}\label{_bluetooth__program_8c_a3f6c5fb9dc7e3a89045d365551109745}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_ExchangeString@{HBluetooth\_ExchangeString}}
+\index{HBluetooth\_ExchangeString@{HBluetooth\_ExchangeString}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_ExchangeString()}{HBluetooth\_ExchangeString()}}
+{\footnotesize\ttfamily void HBluetooth\+\_\+\+Exchange\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{L\+\_\+str\+Message\+Placeholder,  }\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{L\+\_\+str\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00126}{126}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127 \{}
+\DoxyCodeLine{00128     \mbox{\hyperlink{_bluetooth__program_8c_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\_vSendString}}(L\_strMessagePlaceholder);}
+\DoxyCodeLine{00129     \mbox{\hyperlink{_bluetooth__program_8c_ac18d670545d98a6d8c512f8224c538d6}{HBluetooth\_vReceiveString}}(L\_strInfo);}
+\DoxyCodeLine{00130 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__program_8c_source_l00082}{HBluetooth\+\_\+v\+Receive\+String()}}, and \mbox{\hyperlink{_bluetooth__program_8c_source_l00072}{HBluetooth\+\_\+v\+Send\+String()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a8668dc89b8f46681152efd3b7bf8f380}\label{_bluetooth__program_8c_a8668dc89b8f46681152efd3b7bf8f380}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!HBluetooth\_ExchangeByte@{HBluetooth\_ExchangeByte}}
+\index{HBluetooth\_ExchangeByte@{HBluetooth\_ExchangeByte}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{HBluetooth\_ExchangeByte()}{HBluetooth\_ExchangeByte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} HBluetooth\+\_\+\+Exchange\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{L\+\_\+str\+Message\+Placeholder }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__program_8c_source_l00134}{134}} of file \mbox{\hyperlink{_bluetooth__program_8c_source}{Bluetooth\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00135 \{}
+\DoxyCodeLine{00136     \mbox{\hyperlink{_bluetooth__program_8c_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\_vSendString}}(L\_strMessagePlaceholder);}
+\DoxyCodeLine{00137     \textcolor{keywordflow}{return} \mbox{\hyperlink{_bluetooth__program_8c_a0acf4691e98c124ac26bcc8678ee17c9}{HBluetooth\_u8ReceiveByte}}();}
+\DoxyCodeLine{00138 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_bluetooth__program_8c_source_l00058}{HBluetooth\+\_\+u8\+Receive\+Byte()}}, and \mbox{\hyperlink{_bluetooth__program_8c_source_l00072}{HBluetooth\+\_\+v\+Send\+String()}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_bluetooth__program_8c_adb01254df4e4a0f500d895e7247866e1}\label{_bluetooth__program_8c_adb01254df4e4a0f500d895e7247866e1}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!Bluetooth\_Config@{Bluetooth\_Config}}
+\index{Bluetooth\_Config@{Bluetooth\_Config}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{Bluetooth\_Config}{Bluetooth\_Config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}} Bluetooth\+\_\+\+Config\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__config_8c_source_l00026}{26}} of file \mbox{\hyperlink{_bluetooth__config_8c_source}{Bluetooth\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00038}{HBluetooth\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_a8189a8a6242cec2c6ff985e97bef8d20}\label{_bluetooth__program_8c_a8189a8a6242cec2c6ff985e97bef8d20}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!Bluetooth\_CLK@{Bluetooth\_CLK}}
+\index{Bluetooth\_CLK@{Bluetooth\_CLK}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{Bluetooth\_CLK}{Bluetooth\_CLK}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}} Bluetooth\+\_\+\+CLK\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__config_8c_source_l00037}{37}} of file \mbox{\hyperlink{_bluetooth__config_8c_source}{Bluetooth\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00038}{HBluetooth\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}\label{_bluetooth__program_8c_abd970e07de91557e4b1e21d9f562d0e5}} 
+\index{Bluetooth\_program.c@{Bluetooth\_program.c}!Bluetooth\_UART\_ID@{Bluetooth\_UART\_ID}}
+\index{Bluetooth\_UART\_ID@{Bluetooth\_UART\_ID}!Bluetooth\_program.c@{Bluetooth\_program.c}}
+\doxysubsubsection{\texorpdfstring{Bluetooth\_UART\_ID}{Bluetooth\_UART\_ID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}$\ast$ Bluetooth\+\_\+\+UART\+\_\+\+ID\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_bluetooth__config_8c_source_l00042}{42}} of file \mbox{\hyperlink{_bluetooth__config_8c_source}{Bluetooth\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00058}{HBluetooth\+\_\+u8\+Receive\+Byte()}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00116}{HBluetooth\+\_\+v\+Disable()}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00106}{HBluetooth\+\_\+v\+Enable()}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00038}{HBluetooth\+\_\+v\+Init()}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00082}{HBluetooth\+\_\+v\+Receive\+String()}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00048}{HBluetooth\+\_\+v\+Send\+Byte()}}, and \mbox{\hyperlink{_bluetooth__program_8c_source_l00072}{HBluetooth\+\_\+v\+Send\+String()}}.
+

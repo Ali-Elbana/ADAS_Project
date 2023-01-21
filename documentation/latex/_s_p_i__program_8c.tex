@@ -1,0 +1,877 @@
+\hypertarget{_s_p_i__program_8c}{}\doxysection{COTS/\+MCAL/\+SPI/\+SPI\+\_\+program.c File Reference}
+\label{_s_p_i__program_8c}\index{COTS/MCAL/SPI/SPI\_program.c@{COTS/MCAL/SPI/SPI\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+RCC/\+MRCC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SPI\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SPI\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}SPI\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_aa79290b81e038c34c41b93d677a43ef1}{MSPI\+\_\+v\+Init}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Relation\+Ship, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Data\+Direction)
+\item 
+\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} \mbox{\hyperlink{_s_p_i__program_8c_a3977bcb88971f2beebdee4211abb57d1}{MSPI\+\_\+u16\+Transcieve}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Data)
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_afadfb0f7c220a66bb5c7f649d309645b}{MSPI\+\_\+v\+Master\+Transmit}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Data)
+\item 
+\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} \mbox{\hyperlink{_s_p_i__program_8c_ad26a7ddbf0bd295d8e85588593118d4b}{MSPI\+\_\+u16\+Master\+Recieve}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx)
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_af088d8ca70194319f988a237837af450}{MSPI\+\_\+v\+Slave\+Transmit}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Data)
+\item 
+\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} \mbox{\hyperlink{_s_p_i__program_8c_a06327db2ad83e37f34dee41f26e367f8}{MSPI\+\_\+u16\+Slave\+Recieve}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx)
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_a849a0d18181806313d3877669e9fed2c}{MSPI\+\_\+v\+DISABLE}} (\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+SPIx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Relation\+Ship, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Data\+Direction)
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_a99ebbb9e1c201c69b03030ed0e8379c1}{MSPI1\+\_\+v\+Set\+Call\+Back}} (void($\ast$Fptr)(void))
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_a6fa178f09b1bf35a35534d64b4fe5282}{MSPI2\+\_\+v\+Set\+Call\+Back}} (void($\ast$Fptr)(void))
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_ac5e6e05936a4fb4a8c84eca2fe1c448b}{MSPI3\+\_\+v\+Set\+Call\+Back}} (void($\ast$Fptr)(void))
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_a9bbd8c17ce4f49adcca47d11f482aab6}{SPI1\+\_\+\+IRQHandler}} (void)
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_a68d8880cd80cb17a2501487c3d649ea1}{SPI2\+\_\+\+IRQHandler}} (void)
+\item 
+void \mbox{\hyperlink{_s_p_i__program_8c_a82987561e28d02b184ecb0515a5e5d2b}{SPI3\+\_\+\+IRQHandler}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{_s_p_i__program_8c_ab6347b7060cac0dd768db8f9682bc237}{MSPI1\+\_\+\+Call\+Back}} )(void)
+\item 
+void($\ast$ \mbox{\hyperlink{_s_p_i__program_8c_a88b5f8857568f02c2494278d0082dc7b}{MSPI2\+\_\+\+Call\+Back}} )(void)
+\item 
+void($\ast$ \mbox{\hyperlink{_s_p_i__program_8c_a1898bd64eb7e13562a9026db1f7fdccd}{MSPI3\+\_\+\+Call\+Back}} )(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_s_p_i__program_8c_aa79290b81e038c34c41b93d677a43ef1}\label{_s_p_i__program_8c_aa79290b81e038c34c41b93d677a43ef1}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_vInit@{MSPI\_vInit}}
+\index{MSPI\_vInit@{MSPI\_vInit}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_vInit()}{MSPI\_vInit()}}
+{\footnotesize\ttfamily void MSPI\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Relation\+Ship,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Data\+Direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00033}{33}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034 \{}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036     \textcolor{keywordflow}{if}( A\_SPIx == \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}} )}
+\DoxyCodeLine{00037     \{}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga6b7b881b7bc6f120d878a12b847860b8}{APB2ENR\_SPI1EN}} ) ;}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041         \textcolor{comment}{// PINs configurations.}}
+\DoxyCodeLine{00042         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} MOSI1 =}
+\DoxyCodeLine{00043         \{}
+\DoxyCodeLine{00044             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gace1f2998664b32913e0c7f9a76699060}{GPIO\_PORTA}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_gab441403d46ced3f1577194a14069a2d0}{GPIOx\_PIN7}}      ,}
+\DoxyCodeLine{00045             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00046             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00047             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00048         \} ;}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{00050         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} MISO1 =}
+\DoxyCodeLine{00051         \{}
+\DoxyCodeLine{00052             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gace1f2998664b32913e0c7f9a76699060}{GPIO\_PORTA}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_ga2d0996a4344c4825922db05b6bf34b3b}{GPIOx\_PIN6}}      ,}
+\DoxyCodeLine{00053             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00054             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00055             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00056         \} ;}
+\DoxyCodeLine{00057 }
+\DoxyCodeLine{00058         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} SCK1 =}
+\DoxyCodeLine{00059         \{}
+\DoxyCodeLine{00060             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gace1f2998664b32913e0c7f9a76699060}{GPIO\_PORTA}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_gac8ab9dabe136553fbb48c7fe06862934}{GPIOx\_PIN5}}      ,}
+\DoxyCodeLine{00061             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00062             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00063             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00064         \} ;}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&MOSI1 ) ;}
+\DoxyCodeLine{00067         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&MISO1 ) ;}
+\DoxyCodeLine{00068         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&SCK1  ) ;}
+\DoxyCodeLine{00069 }
+\DoxyCodeLine{00070     \}}
+\DoxyCodeLine{00071     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( A\_SPIx == \mbox{\hyperlink{group__vector__table_gaf2c3d8ce359dcfbb2261e07ed42af72b}{SPI2}} )}
+\DoxyCodeLine{00072     \{}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}}, \mbox{\hyperlink{group___peripheral_ga4fc2938b5527086eca53544c47e92fdb}{APB1ENR\_SPI2EN}} ) ;}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076         \textcolor{comment}{// PINs configurations.}}
+\DoxyCodeLine{00077         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} MOSI2 =}
+\DoxyCodeLine{00078         \{}
+\DoxyCodeLine{00079             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_ga8762d4d63fea54051d3765143d0a75fc}{GPIOx\_PIN15}}        ,}
+\DoxyCodeLine{00080             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00081             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00082             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00083         \} ;}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} MISO2 =}
+\DoxyCodeLine{00086         \{}
+\DoxyCodeLine{00087             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_ga994ef956212316de9161da30623eac07}{GPIOx\_PIN14}}        ,}
+\DoxyCodeLine{00088             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00089             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00090             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00091         \} ;}
+\DoxyCodeLine{00092 }
+\DoxyCodeLine{00093         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} SCK2 =}
+\DoxyCodeLine{00094         \{}
+\DoxyCodeLine{00095             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_gaf0d7d102f365587c63616c62e84fd42f}{GPIOx\_PIN13}}        ,}
+\DoxyCodeLine{00096             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00097             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00098             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00099         \} ;}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&MOSI2 ) ;}
+\DoxyCodeLine{00102         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&MISO2 ) ;}
+\DoxyCodeLine{00103         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&SCK2  ) ;}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105     \}}
+\DoxyCodeLine{00106     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( A\_SPIx == \mbox{\hyperlink{group__vector__table_gab2339cbf25502bf562b19208b1b257fc}{SPI3}} )}
+\DoxyCodeLine{00107     \{}
+\DoxyCodeLine{00108 }
+\DoxyCodeLine{00109         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}}, \mbox{\hyperlink{group___peripheral_gafe93de200c69752ce593d903295fedd9}{APB1ENR\_SPI3EN}} ) ;}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111         \textcolor{comment}{// PINs configurations.}}
+\DoxyCodeLine{00112         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} MOSI3 =}
+\DoxyCodeLine{00113         \{}
+\DoxyCodeLine{00114             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_gac8ab9dabe136553fbb48c7fe06862934}{GPIOx\_PIN5}}      ,}
+\DoxyCodeLine{00115             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00116             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00117             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00118         \} ;}
+\DoxyCodeLine{00119 }
+\DoxyCodeLine{00120         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} MISO3 =}
+\DoxyCodeLine{00121         \{}
+\DoxyCodeLine{00122             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_gae89fddd9995edc54ead9f44f21d348ec}{GPIOx\_PIN4}}      ,}
+\DoxyCodeLine{00123             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00124             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00125             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00126         \} ;}
+\DoxyCodeLine{00127 }
+\DoxyCodeLine{00128         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} SCK3 =}
+\DoxyCodeLine{00129         \{}
+\DoxyCodeLine{00130             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}}          ,   .Pin        = \mbox{\hyperlink{group__gpio__output__pins_ga673960489ce24947429db3f907a3fe73}{GPIOx\_PIN3}}      ,}
+\DoxyCodeLine{00131             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{00132             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_gaaeeee0e7cc243a81f32af45e30ce4447}{GPIOx\_VeryHighSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}      ,}
+\DoxyCodeLine{00133             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_ga9e21769f3bb32137699ab10d8128c485}{GPIOx\_AF5}}}
+\DoxyCodeLine{00134         \} ;}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&MOSI3 ) ;}
+\DoxyCodeLine{00137         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&MISO3 ) ;}
+\DoxyCodeLine{00138         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&SCK3  ) ;}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140     \}}
+\DoxyCodeLine{00141 }
+\DoxyCodeLine{00142     \textcolor{keywordflow}{if}( A\_u8RelationShip == \mbox{\hyperlink{_s_p_i__interface_8h_a62ec75d1fe142a85698adfa0e54e39e8}{SPIx\_MSTR}} )}
+\DoxyCodeLine{00143     \{}
+\DoxyCodeLine{00144         \textcolor{comment}{// BUAD RATE.}}
+\DoxyCodeLine{00145         \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}}-\/>CR1 = (A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}} \& ( \string~(\mbox{\hyperlink{_s_p_i__config_8h_ac40e4258f3bd2f0ae244aa7d9169f816}{BR\_MODE}}) << 3 )) | ( \mbox{\hyperlink{_s_p_i__config_8h_ac40e4258f3bd2f0ae244aa7d9169f816}{BR\_MODE}} << 3 )  ;}
+\DoxyCodeLine{00146     \}}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00148     \textcolor{comment}{// CPHA, CPOL.}}
+\DoxyCodeLine{00149     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_ad8529d2df242f4448a2e66aab0eef9a3}{CPHA}} ) ;}
+\DoxyCodeLine{00150     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a0eb64d85804990e6ee5259451c7f5a0d}{CPOL}} ) ;}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152     \textcolor{comment}{// Data format.}}
+\DoxyCodeLine{00153 \textcolor{preprocessor}{    \#if DFF\_MODE == EIGHT\_BITS}}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a52c7b2f42005b75a56920061a1caf64f}{DFF}} ) ;}
+\DoxyCodeLine{00156 }
+\DoxyCodeLine{00157 \textcolor{preprocessor}{    \#elif DFF\_MODE == SIXTEEN\_BITS}}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00159         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a52c7b2f42005b75a56920061a1caf64f}{DFF}} ) ;}
+\DoxyCodeLine{00160 }
+\DoxyCodeLine{00161 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163     \textcolor{comment}{// MSB/LSB first.}}
+\DoxyCodeLine{00164     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a5811613d98580676f67f0dde8125433e}{LSBFIRST}} ) ;}
+\DoxyCodeLine{00165 }
+\DoxyCodeLine{00166     \textcolor{comment}{// Select SW slave management.}}
+\DoxyCodeLine{00167     \textcolor{keywordflow}{switch}( A\_u8RelationShip )}
+\DoxyCodeLine{00168     \{}
+\DoxyCodeLine{00169         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a62ec75d1fe142a85698adfa0e54e39e8}{SPIx\_MSTR}}:}
+\DoxyCodeLine{00170 }
+\DoxyCodeLine{00171             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_ab33258c8c1ecde2d3d0452a8f41799ed}{SSM}} ) ;}
+\DoxyCodeLine{00172             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a5b9615ac5bb07a63e566a69535df389c}{SSI}} ) ;}
+\DoxyCodeLine{00173 }
+\DoxyCodeLine{00174         break ;}
+\DoxyCodeLine{00175 }
+\DoxyCodeLine{00176         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae62a98a7be55c4c5c69217c036889d6f}{SPIx\_SLAVE}}:}
+\DoxyCodeLine{00177 }
+\DoxyCodeLine{00178             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_ab33258c8c1ecde2d3d0452a8f41799ed}{SSM}} ) ;}
+\DoxyCodeLine{00179             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a5b9615ac5bb07a63e566a69535df389c}{SSI}} ) ;}
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00181         break ;}
+\DoxyCodeLine{00182 }
+\DoxyCodeLine{00183     \}}
+\DoxyCodeLine{00184 }
+\DoxyCodeLine{00185     \textcolor{comment}{// Select Motorola or TI Mode:}}
+\DoxyCodeLine{00186     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a16bb5201c0534fcdf25f6a313efc67e5}{FRF}} ) ; \textcolor{comment}{// Motorola}}
+\DoxyCodeLine{00187 }
+\DoxyCodeLine{00188     \textcolor{comment}{// MASTER/SLAVE Mode.}}
+\DoxyCodeLine{00189     \textcolor{keywordflow}{switch}( A\_u8RelationShip )}
+\DoxyCodeLine{00190     \{}
+\DoxyCodeLine{00191         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a62ec75d1fe142a85698adfa0e54e39e8}{SPIx\_MSTR}}:  \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a863870c0ff8cfad017c11d9a9eaa0f6e}{MSTR}} ) ; break ;}
+\DoxyCodeLine{00192 }
+\DoxyCodeLine{00193         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae62a98a7be55c4c5c69217c036889d6f}{SPIx\_SLAVE}}: \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a863870c0ff8cfad017c11d9a9eaa0f6e}{MSTR}} ) ; break ;}
+\DoxyCodeLine{00194     \}}
+\DoxyCodeLine{00195 }
+\DoxyCodeLine{00196     \textcolor{comment}{// Data direction:}}
+\DoxyCodeLine{00197     \textcolor{keywordflow}{switch}( A\_u8RelationShip )}
+\DoxyCodeLine{00198     \{}
+\DoxyCodeLine{00199 }
+\DoxyCodeLine{00200         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a62ec75d1fe142a85698adfa0e54e39e8}{SPIx\_MSTR}}:}
+\DoxyCodeLine{00201 }
+\DoxyCodeLine{00202             \textcolor{keywordflow}{switch}( A\_u8DataDirection )}
+\DoxyCodeLine{00203             \{}
+\DoxyCodeLine{00204 }
+\DoxyCodeLine{00205                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_acf618834848309d015654a653cdfa6ba}{SPIx\_FULL\_DUPLEX}}:}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00208                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}}   ) ;}
+\DoxyCodeLine{00209 }
+\DoxyCodeLine{00210                 break ;}
+\DoxyCodeLine{00211 }
+\DoxyCodeLine{00212                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae3a4da316d963cfc6de696ae478207a2}{SPIx\_SIMPLEX}}    :}
+\DoxyCodeLine{00213 }
+\DoxyCodeLine{00214                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00215 }
+\DoxyCodeLine{00216 \textcolor{preprocessor}{                    \#if SIMPLEX\_MODE == SIMPLEX\_TX}}
+\DoxyCodeLine{00217 }
+\DoxyCodeLine{00218                         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}} ) ;}
+\DoxyCodeLine{00219 }
+\DoxyCodeLine{00220 \textcolor{preprocessor}{                    \#elif SIMPLEX\_MODE == SIMPLEX\_RX}}
+\DoxyCodeLine{00221 }
+\DoxyCodeLine{00222                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}} ) ;}
+\DoxyCodeLine{00223 }
+\DoxyCodeLine{00224 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{00225 }
+\DoxyCodeLine{00226                 break ;}
+\DoxyCodeLine{00227 }
+\DoxyCodeLine{00228                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a644f21e855c0c232aab0c88d75a5858d}{SPIx\_HALF\_DUPLEX}}:}
+\DoxyCodeLine{00229 }
+\DoxyCodeLine{00230 \textcolor{preprocessor}{                    \#if HALF\_DUPLEX\_MODE == HALF\_DUPLEX\_TX}}
+\DoxyCodeLine{00231 }
+\DoxyCodeLine{00232                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00233                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}{BIDIOE}}   ) ;}
+\DoxyCodeLine{00234 }
+\DoxyCodeLine{00235 \textcolor{preprocessor}{                    \#elif HALF\_DUPLEX\_MODE == HALF\_DUPLEX\_RX}}
+\DoxyCodeLine{00236 }
+\DoxyCodeLine{00237                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00238                         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}{BIDIOE}}   ) ;}
+\DoxyCodeLine{00239 }
+\DoxyCodeLine{00240 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{00241 }
+\DoxyCodeLine{00242                 break ;}
+\DoxyCodeLine{00243 }
+\DoxyCodeLine{00244             \}}
+\DoxyCodeLine{00245 }
+\DoxyCodeLine{00246         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00247 }
+\DoxyCodeLine{00248         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae62a98a7be55c4c5c69217c036889d6f}{SPIx\_SLAVE}}:}
+\DoxyCodeLine{00249 }
+\DoxyCodeLine{00250             \textcolor{keywordflow}{switch}( A\_u8DataDirection )}
+\DoxyCodeLine{00251             \{}
+\DoxyCodeLine{00252 }
+\DoxyCodeLine{00253                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_acf618834848309d015654a653cdfa6ba}{SPIx\_FULL\_DUPLEX}}:}
+\DoxyCodeLine{00254 }
+\DoxyCodeLine{00255                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00256                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}}   ) ;}
+\DoxyCodeLine{00257 }
+\DoxyCodeLine{00258                 break ;}
+\DoxyCodeLine{00259 }
+\DoxyCodeLine{00260                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae3a4da316d963cfc6de696ae478207a2}{SPIx\_SIMPLEX}}    :}
+\DoxyCodeLine{00261 }
+\DoxyCodeLine{00262                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00263 }
+\DoxyCodeLine{00264 \textcolor{preprocessor}{                    \#if SIMPLEX\_MODE == SIMPLEX\_TX}}
+\DoxyCodeLine{00265 }
+\DoxyCodeLine{00266                         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}} ) ;}
+\DoxyCodeLine{00267 }
+\DoxyCodeLine{00268 \textcolor{preprocessor}{                    \#elif SIMPLEX\_MODE == SIMPLEX\_RX}}
+\DoxyCodeLine{00269 }
+\DoxyCodeLine{00270                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}} ) ;}
+\DoxyCodeLine{00271 }
+\DoxyCodeLine{00272 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{00273 }
+\DoxyCodeLine{00274                 break ;}
+\DoxyCodeLine{00275 }
+\DoxyCodeLine{00276                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a644f21e855c0c232aab0c88d75a5858d}{SPIx\_HALF\_DUPLEX}}:}
+\DoxyCodeLine{00277 }
+\DoxyCodeLine{00278 \textcolor{preprocessor}{                    \#if HALF\_DUPLEX\_MODE == HALF\_DUPLEX\_TX}}
+\DoxyCodeLine{00279 }
+\DoxyCodeLine{00280                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00281                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}{BIDIOE}}   ) ;}
+\DoxyCodeLine{00282 }
+\DoxyCodeLine{00283 \textcolor{preprocessor}{                    \#elif HALF\_DUPLEX\_MODE == HALF\_DUPLEX\_RX}}
+\DoxyCodeLine{00284 }
+\DoxyCodeLine{00285                         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}} ) ;}
+\DoxyCodeLine{00286                         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}{BIDIOE}}   ) ;}
+\DoxyCodeLine{00287 }
+\DoxyCodeLine{00288 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{00289 }
+\DoxyCodeLine{00290                 break ;}
+\DoxyCodeLine{00291 }
+\DoxyCodeLine{00292             \}}
+\DoxyCodeLine{00293 }
+\DoxyCodeLine{00294         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00295 }
+\DoxyCodeLine{00296     \}}
+\DoxyCodeLine{00297 }
+\DoxyCodeLine{00298     \textcolor{comment}{// Multi-\/master mode:}}
+\DoxyCodeLine{00299 \textcolor{preprocessor}{    \#if MULTI\_MSTR\_MODE == ENABLE}}
+\DoxyCodeLine{00300 }
+\DoxyCodeLine{00301         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a2bfe71fd0e87f9cef5fe3ab76fb45be7}{SSOE}} ) ;}
+\DoxyCodeLine{00302 }
+\DoxyCodeLine{00303 \textcolor{preprocessor}{    \#elif MULTI\_MSTR\_MODE == DISABLE}}
+\DoxyCodeLine{00304 }
+\DoxyCodeLine{00305         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a2bfe71fd0e87f9cef5fe3ab76fb45be7}{SSOE}} ) ;}
+\DoxyCodeLine{00306 }
+\DoxyCodeLine{00307 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{00308 }
+\DoxyCodeLine{00309     \textcolor{comment}{// EN/DIS IRQ:}}
+\DoxyCodeLine{00310 \textcolor{preprocessor}{    \#if TXNEIE\_MODE == ENABLE}}
+\DoxyCodeLine{00311 }
+\DoxyCodeLine{00312         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a01a6ae416abff4627d084305e66faf57}{TXEIE}} ) ;}
+\DoxyCodeLine{00313 }
+\DoxyCodeLine{00314 \textcolor{preprocessor}{    \#elif TXNEIE\_MODE == DISABLE}}
+\DoxyCodeLine{00315 }
+\DoxyCodeLine{00316         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a01a6ae416abff4627d084305e66faf57}{TXEIE}} ) ;}
+\DoxyCodeLine{00317 }
+\DoxyCodeLine{00318 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{00319 }
+\DoxyCodeLine{00320 \textcolor{preprocessor}{    \#if RXNEIE\_MODE == ENABLE}}
+\DoxyCodeLine{00321 }
+\DoxyCodeLine{00322         \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a43370d870087df35f1a02b8d8e2037ac}{RXNEIE}} ) ;}
+\DoxyCodeLine{00323 }
+\DoxyCodeLine{00324 \textcolor{preprocessor}{    \#elif RXNEIE\_MODE == DISABLE}}
+\DoxyCodeLine{00325 }
+\DoxyCodeLine{00326         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a880617fa1f407b35343c4e12f1c0840a}{CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_a43370d870087df35f1a02b8d8e2037ac}{RXNEIE}} ) ;}
+\DoxyCodeLine{00327 }
+\DoxyCodeLine{00328 \textcolor{preprocessor}{    \#endif}}
+\DoxyCodeLine{00329 }
+\DoxyCodeLine{00330     \textcolor{comment}{// EN/DIS SPI.}}
+\DoxyCodeLine{00331     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00332 }
+\DoxyCodeLine{00333 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00206}{APB1\+ENR\+\_\+\+SPI2\+EN}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00199}{APB1\+ENR\+\_\+\+SPI3\+EN}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00283}{APB2\+ENR\+\_\+\+SPI1\+EN}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00023}{BIDIMODE}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00022}{BIDIOE}}, \mbox{\hyperlink{_s_p_i__config_8h_source_l00048}{BR\+\_\+\+MODE}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00011}{CPHA}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00012}{CPOL}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00021}{SPI\+\_\+\+Memory\+Map\+Type\+::\+CR1}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00023}{SPI\+\_\+\+Memory\+Map\+Type\+::\+CR2}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00019}{DFF}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00029}{FRF}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00495}{GPIOx\+\_\+\+AF5}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00180}{GPIOx\+\_\+\+MODE\+\_\+\+AF}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00289}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00431}{GPIOx\+\_\+\+PIN13}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00438}{GPIOx\+\_\+\+PIN14}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00445}{GPIOx\+\_\+\+PIN15}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00361}{GPIOx\+\_\+\+PIN3}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00368}{GPIOx\+\_\+\+PIN4}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00375}{GPIOx\+\_\+\+PIN5}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00382}{GPIOx\+\_\+\+PIN6}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00389}{GPIOx\+\_\+\+PIN7}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00238}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00274}{GPIOx\+\_\+\+Very\+High\+Speed}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00015}{LSBFIRST}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\+\_\+v\+Enable\+Periphral\+CLK()}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00013}{MSTR}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00023}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00065}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB2}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00031}{RXNEIE}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00018}{RXONLY}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00014}{SPE}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00534}{SPI1}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00539}{SPI2}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00584}{SPI3}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00079}{SPIx\+\_\+\+FULL\+\_\+\+DUPLEX}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00078}{SPIx\+\_\+\+HALF\+\_\+\+DUPLEX}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00074}{SPIx\+\_\+\+MSTR}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00077}{SPIx\+\_\+\+SIMPLEX}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00075}{SPIx\+\_\+\+SLAVE}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00016}{SSI}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00017}{SSM}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00028}{SSOE}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00032}{TXEIE}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a3977bcb88971f2beebdee4211abb57d1}\label{_s_p_i__program_8c_a3977bcb88971f2beebdee4211abb57d1}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_u16Transcieve@{MSPI\_u16Transcieve}}
+\index{MSPI\_u16Transcieve@{MSPI\_u16Transcieve}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_u16Transcieve()}{MSPI\_u16Transcieve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} MSPI\+\_\+u16\+Transcieve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx,  }\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00338}{338}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00339 \{}
+\DoxyCodeLine{00340 }
+\DoxyCodeLine{00341     \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}}-\/>DR = A\_u16Data ;}
+\DoxyCodeLine{00342 }
+\DoxyCodeLine{00343     \textcolor{comment}{// Wait for transmission complete.}}
+\DoxyCodeLine{00344     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} )}
+\DoxyCodeLine{00345     \{}
+\DoxyCodeLine{00346         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00347     \}}
+\DoxyCodeLine{00348 }
+\DoxyCodeLine{00349     \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00350     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} )}
+\DoxyCodeLine{00351     \{}
+\DoxyCodeLine{00352         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00353     \}}
+\DoxyCodeLine{00354 }
+\DoxyCodeLine{00355     \textcolor{comment}{// Wait for reception complete.}}
+\DoxyCodeLine{00356     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} )}
+\DoxyCodeLine{00357     \{}
+\DoxyCodeLine{00358         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00359     \}}
+\DoxyCodeLine{00360 }
+\DoxyCodeLine{00361 }
+\DoxyCodeLine{00362     \textcolor{keywordflow}{return} A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_aa9408f79de0236266fecde5ccf6e2246}{DR}} ;}
+\DoxyCodeLine{00363 }
+\DoxyCodeLine{00364 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__private_8h_source_l00042}{BSY}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00027}{SPI\+\_\+\+Memory\+Map\+Type\+::\+DR}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00074}{FLAG\+\_\+\+CLEARED}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00065}{FLAG\+\_\+\+SET}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00035}{RXNE}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00534}{SPI1}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00025}{SPI\+\_\+\+Memory\+Map\+Type\+::\+SR}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00036}{TXE}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_afadfb0f7c220a66bb5c7f649d309645b}\label{_s_p_i__program_8c_afadfb0f7c220a66bb5c7f649d309645b}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_vMasterTransmit@{MSPI\_vMasterTransmit}}
+\index{MSPI\_vMasterTransmit@{MSPI\_vMasterTransmit}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_vMasterTransmit()}{MSPI\_vMasterTransmit()}}
+{\footnotesize\ttfamily void MSPI\+\_\+v\+Master\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx,  }\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00369}{369}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00370 \{}
+\DoxyCodeLine{00371 }
+\DoxyCodeLine{00372     \textcolor{comment}{// Start transmission.}}
+\DoxyCodeLine{00373     \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}}-\/>DR = A\_u16Data ;}
+\DoxyCodeLine{00374 }
+\DoxyCodeLine{00375     \textcolor{comment}{// Wait for transmission complete.}}
+\DoxyCodeLine{00376     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} )}
+\DoxyCodeLine{00377     \{}
+\DoxyCodeLine{00378         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00379     \}}
+\DoxyCodeLine{00380 }
+\DoxyCodeLine{00381     \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00382     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} )}
+\DoxyCodeLine{00383     \{}
+\DoxyCodeLine{00384         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00385     \}}
+\DoxyCodeLine{00386 }
+\DoxyCodeLine{00387 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__private_8h_source_l00042}{BSY}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00074}{FLAG\+\_\+\+CLEARED}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00065}{FLAG\+\_\+\+SET}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00534}{SPI1}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00025}{SPI\+\_\+\+Memory\+Map\+Type\+::\+SR}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00036}{TXE}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_ad26a7ddbf0bd295d8e85588593118d4b}\label{_s_p_i__program_8c_ad26a7ddbf0bd295d8e85588593118d4b}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_u16MasterRecieve@{MSPI\_u16MasterRecieve}}
+\index{MSPI\_u16MasterRecieve@{MSPI\_u16MasterRecieve}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_u16MasterRecieve()}{MSPI\_u16MasterRecieve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} MSPI\+\_\+u16\+Master\+Recieve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00392}{392}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00393 \{}
+\DoxyCodeLine{00394 }
+\DoxyCodeLine{00395     \textcolor{comment}{// Wait for reception complete.}}
+\DoxyCodeLine{00396     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} )}
+\DoxyCodeLine{00397     \{}
+\DoxyCodeLine{00398         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00399     \}}
+\DoxyCodeLine{00400 }
+\DoxyCodeLine{00401     \textcolor{comment}{// Return data register.}}
+\DoxyCodeLine{00402     \textcolor{keywordflow}{return} A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_aa9408f79de0236266fecde5ccf6e2246}{DR}} ;}
+\DoxyCodeLine{00403 }
+\DoxyCodeLine{00404 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__interface_8h_source_l00027}{SPI\+\_\+\+Memory\+Map\+Type\+::\+DR}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00074}{FLAG\+\_\+\+CLEARED}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00035}{RXNE}}, and \mbox{\hyperlink{_s_p_i__interface_8h_source_l00025}{SPI\+\_\+\+Memory\+Map\+Type\+::\+SR}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_af088d8ca70194319f988a237837af450}\label{_s_p_i__program_8c_af088d8ca70194319f988a237837af450}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_vSlaveTransmit@{MSPI\_vSlaveTransmit}}
+\index{MSPI\_vSlaveTransmit@{MSPI\_vSlaveTransmit}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_vSlaveTransmit()}{MSPI\_vSlaveTransmit()}}
+{\footnotesize\ttfamily void MSPI\+\_\+v\+Slave\+Transmit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx,  }\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00409}{409}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00410 \{}
+\DoxyCodeLine{00411 }
+\DoxyCodeLine{00412     \textcolor{comment}{// Start transmission.}}
+\DoxyCodeLine{00413     \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}}-\/>DR = A\_u16Data ;}
+\DoxyCodeLine{00414 }
+\DoxyCodeLine{00415     \textcolor{comment}{// Wait for transmission complete.}}
+\DoxyCodeLine{00416     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} )}
+\DoxyCodeLine{00417     \{}
+\DoxyCodeLine{00418         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00419     \}}
+\DoxyCodeLine{00420 }
+\DoxyCodeLine{00421     \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00422     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} )}
+\DoxyCodeLine{00423     \{}
+\DoxyCodeLine{00424         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00425     \}}
+\DoxyCodeLine{00426 }
+\DoxyCodeLine{00427 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__private_8h_source_l00042}{BSY}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00074}{FLAG\+\_\+\+CLEARED}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00065}{FLAG\+\_\+\+SET}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00534}{SPI1}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00025}{SPI\+\_\+\+Memory\+Map\+Type\+::\+SR}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00036}{TXE}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a06327db2ad83e37f34dee41f26e367f8}\label{_s_p_i__program_8c_a06327db2ad83e37f34dee41f26e367f8}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_u16SlaveRecieve@{MSPI\_u16SlaveRecieve}}
+\index{MSPI\_u16SlaveRecieve@{MSPI\_u16SlaveRecieve}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_u16SlaveRecieve()}{MSPI\_u16SlaveRecieve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} MSPI\+\_\+u16\+Slave\+Recieve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00432}{432}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00433 \{}
+\DoxyCodeLine{00434 }
+\DoxyCodeLine{00435     \textcolor{comment}{// Wait for reception complete.}}
+\DoxyCodeLine{00436     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} )}
+\DoxyCodeLine{00437     \{}
+\DoxyCodeLine{00438         \textcolor{keyword}{asm}(\textcolor{stringliteral}{"{}NOP"{}}) ;}
+\DoxyCodeLine{00439     \}}
+\DoxyCodeLine{00440 }
+\DoxyCodeLine{00441     \textcolor{comment}{// Return data register.}}
+\DoxyCodeLine{00442     \textcolor{keywordflow}{return} A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_aa9408f79de0236266fecde5ccf6e2246}{DR}} ;}
+\DoxyCodeLine{00443 }
+\DoxyCodeLine{00444 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__interface_8h_source_l00027}{SPI\+\_\+\+Memory\+Map\+Type\+::\+DR}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00074}{FLAG\+\_\+\+CLEARED}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00035}{RXNE}}, and \mbox{\hyperlink{_s_p_i__interface_8h_source_l00025}{SPI\+\_\+\+Memory\+Map\+Type\+::\+SR}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a849a0d18181806313d3877669e9fed2c}\label{_s_p_i__program_8c_a849a0d18181806313d3877669e9fed2c}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI\_vDISABLE@{MSPI\_vDISABLE}}
+\index{MSPI\_vDISABLE@{MSPI\_vDISABLE}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI\_vDISABLE()}{MSPI\_vDISABLE()}}
+{\footnotesize\ttfamily void MSPI\+\_\+v\+DISABLE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_p_i___memory_map_type}{SPI\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+SPIx,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Relation\+Ship,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Data\+Direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00449}{449}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00450 \{}
+\DoxyCodeLine{00451 }
+\DoxyCodeLine{00452     \textcolor{keywordflow}{switch}( A\_u8DataDirection )}
+\DoxyCodeLine{00453     \{}
+\DoxyCodeLine{00454 }
+\DoxyCodeLine{00455         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_acf618834848309d015654a653cdfa6ba}{SPIx\_FULL\_DUPLEX}}:}
+\DoxyCodeLine{00456 }
+\DoxyCodeLine{00457             \textcolor{comment}{// Wait for reception complete.}}
+\DoxyCodeLine{00458             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} ) ;}
+\DoxyCodeLine{00459 }
+\DoxyCodeLine{00460             \textcolor{comment}{// Wait for transmission complete.}}
+\DoxyCodeLine{00461             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} ) ;}
+\DoxyCodeLine{00462 }
+\DoxyCodeLine{00463             \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00464             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} ) ;}
+\DoxyCodeLine{00465 }
+\DoxyCodeLine{00466             \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00467             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00468 }
+\DoxyCodeLine{00469         break ;}
+\DoxyCodeLine{00470 }
+\DoxyCodeLine{00471 }
+\DoxyCodeLine{00472         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae3a4da316d963cfc6de696ae478207a2}{SPIx\_SIMPLEX}}    :}
+\DoxyCodeLine{00473 }
+\DoxyCodeLine{00474 \textcolor{preprocessor}{        \#if SIMPLEX\_MODE == SIMPLEX\_TX}}
+\DoxyCodeLine{00475 }
+\DoxyCodeLine{00476             \textcolor{comment}{// Wait for transmission complete.}}
+\DoxyCodeLine{00477             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} ) ;}
+\DoxyCodeLine{00478 }
+\DoxyCodeLine{00479             \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00480             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} ) ;}
+\DoxyCodeLine{00481 }
+\DoxyCodeLine{00482             \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00483             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00484 }
+\DoxyCodeLine{00485 \textcolor{preprocessor}{        \#elif SIMPLEX\_MODE == SIMPLEX\_RX}}
+\DoxyCodeLine{00486 }
+\DoxyCodeLine{00487             \textcolor{keywordflow}{switch}( A\_u8RelationShip )}
+\DoxyCodeLine{00488             \{}
+\DoxyCodeLine{00489 }
+\DoxyCodeLine{00490                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a62ec75d1fe142a85698adfa0e54e39e8}{SPIx\_MSTR}}:}
+\DoxyCodeLine{00491 }
+\DoxyCodeLine{00492                     \textcolor{comment}{// Wait for reception complete.}}
+\DoxyCodeLine{00493                     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} ) ;}
+\DoxyCodeLine{00494 }
+\DoxyCodeLine{00495                     \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00496                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00497 }
+\DoxyCodeLine{00498                 break ;}
+\DoxyCodeLine{00499 }
+\DoxyCodeLine{00500                 \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae62a98a7be55c4c5c69217c036889d6f}{SPIx\_SLAVE}}:}
+\DoxyCodeLine{00501 }
+\DoxyCodeLine{00502                     \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00503                     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00504 }
+\DoxyCodeLine{00505                     \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00506                     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} ) ;}
+\DoxyCodeLine{00507 }
+\DoxyCodeLine{00508                 break ;}
+\DoxyCodeLine{00509 }
+\DoxyCodeLine{00510             \}}
+\DoxyCodeLine{00511 }
+\DoxyCodeLine{00512 \textcolor{preprocessor}{        \#endif}}
+\DoxyCodeLine{00513 }
+\DoxyCodeLine{00514         break ;}
+\DoxyCodeLine{00515 }
+\DoxyCodeLine{00516 }
+\DoxyCodeLine{00517         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a644f21e855c0c232aab0c88d75a5858d}{SPIx\_HALF\_DUPLEX}}:}
+\DoxyCodeLine{00518 }
+\DoxyCodeLine{00519 \textcolor{preprocessor}{            \#if HALF\_DUPLEX\_MODE == HALF\_DUPLEX\_TX}}
+\DoxyCodeLine{00520 }
+\DoxyCodeLine{00521             \textcolor{comment}{// Wait for transmission complete.}}
+\DoxyCodeLine{00522             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} ) ;}
+\DoxyCodeLine{00523 }
+\DoxyCodeLine{00524             \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00525             \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} ) ;}
+\DoxyCodeLine{00526 }
+\DoxyCodeLine{00527             \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00528             \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00529 }
+\DoxyCodeLine{00530 \textcolor{preprocessor}{            \#elif HALF\_DUPLEX\_MODE == HALF\_DUPLEX\_RX}}
+\DoxyCodeLine{00531 }
+\DoxyCodeLine{00532                 \textcolor{keywordflow}{switch}( A\_u8RelationShip )}
+\DoxyCodeLine{00533                 \{}
+\DoxyCodeLine{00534 }
+\DoxyCodeLine{00535                     \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_a62ec75d1fe142a85698adfa0e54e39e8}{SPIx\_MSTR}}:}
+\DoxyCodeLine{00536 }
+\DoxyCodeLine{00537                         \textcolor{comment}{// Wait for reception complete.}}
+\DoxyCodeLine{00538                         \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}} ) == \mbox{\hyperlink{group__standardvalues_ga2553f2666905212b3d10e0792c87938d}{FLAG\_CLEARED}} ) ;}
+\DoxyCodeLine{00539 }
+\DoxyCodeLine{00540                         \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00541                         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00542 }
+\DoxyCodeLine{00543                     break ;}
+\DoxyCodeLine{00544 }
+\DoxyCodeLine{00545                     \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__interface_8h_ae62a98a7be55c4c5c69217c036889d6f}{SPIx\_SLAVE}}:}
+\DoxyCodeLine{00546 }
+\DoxyCodeLine{00547                         \textcolor{comment}{// Disabling the SPIx.}}
+\DoxyCodeLine{00548                         \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_ab50016a07498c1a3c636f66318ae2ffc}{CR1}}, \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}} ) ;}
+\DoxyCodeLine{00549 }
+\DoxyCodeLine{00550                         \textcolor{comment}{// Wait for the last transmission bit.}}
+\DoxyCodeLine{00551                         \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_SPIx-\/>\mbox{\hyperlink{struct_s_p_i___memory_map_type_a38ac9c94a99dadcd50a245ad49d66093}{SR}}, \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}} ) == \mbox{\hyperlink{group__standardvalues_gaeadc670e6fd25b11cefab921983d1f63}{FLAG\_SET}} ) ;}
+\DoxyCodeLine{00552 }
+\DoxyCodeLine{00553                     break ;}
+\DoxyCodeLine{00554 }
+\DoxyCodeLine{00555                 \}}
+\DoxyCodeLine{00556 }
+\DoxyCodeLine{00557 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{00558 }
+\DoxyCodeLine{00559         break ;}
+\DoxyCodeLine{00560 }
+\DoxyCodeLine{00561     \}}
+\DoxyCodeLine{00562 }
+\DoxyCodeLine{00563     \textcolor{keywordflow}{if}( A\_SPIx == \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}} )}
+\DoxyCodeLine{00564     \{}
+\DoxyCodeLine{00565         \mbox{\hyperlink{_m_r_c_c__interface_8h_a3af1d440b894cde7bacd809146001be4}{MRCC\_vDisablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga6b7b881b7bc6f120d878a12b847860b8}{APB2ENR\_SPI1EN}} ) ;}
+\DoxyCodeLine{00566     \}}
+\DoxyCodeLine{00567     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( A\_SPIx == \mbox{\hyperlink{group__vector__table_gaf2c3d8ce359dcfbb2261e07ed42af72b}{SPI2}} )}
+\DoxyCodeLine{00568     \{}
+\DoxyCodeLine{00569         \mbox{\hyperlink{_m_r_c_c__interface_8h_a3af1d440b894cde7bacd809146001be4}{MRCC\_vDisablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}}, \mbox{\hyperlink{group___peripheral_ga4fc2938b5527086eca53544c47e92fdb}{APB1ENR\_SPI2EN}} ) ;}
+\DoxyCodeLine{00570     \}}
+\DoxyCodeLine{00571     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( A\_SPIx == \mbox{\hyperlink{group__vector__table_gab2339cbf25502bf562b19208b1b257fc}{SPI3}} )}
+\DoxyCodeLine{00572     \{}
+\DoxyCodeLine{00573         \mbox{\hyperlink{_m_r_c_c__interface_8h_a3af1d440b894cde7bacd809146001be4}{MRCC\_vDisablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga138c4bafb268d42acaee8cd78a77bb76}{RCC\_APB1}}, \mbox{\hyperlink{group___peripheral_gafe93de200c69752ce593d903295fedd9}{APB1ENR\_SPI3EN}} ) ;}
+\DoxyCodeLine{00574     \}}
+\DoxyCodeLine{00575 }
+\DoxyCodeLine{00576 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00206}{APB1\+ENR\+\_\+\+SPI2\+EN}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00199}{APB1\+ENR\+\_\+\+SPI3\+EN}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00283}{APB2\+ENR\+\_\+\+SPI1\+EN}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00042}{BSY}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00021}{SPI\+\_\+\+Memory\+Map\+Type\+::\+CR1}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00074}{FLAG\+\_\+\+CLEARED}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00065}{FLAG\+\_\+\+SET}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_a3af1d440b894cde7bacd809146001be4}{MRCC\+\_\+v\+Disable\+Periphral\+CLK()}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00065}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB2}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00035}{RXNE}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00014}{SPE}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00534}{SPI1}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00539}{SPI2}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00584}{SPI3}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00079}{SPIx\+\_\+\+FULL\+\_\+\+DUPLEX}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00078}{SPIx\+\_\+\+HALF\+\_\+\+DUPLEX}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00074}{SPIx\+\_\+\+MSTR}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00077}{SPIx\+\_\+\+SIMPLEX}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00075}{SPIx\+\_\+\+SLAVE}}, \mbox{\hyperlink{_s_p_i__interface_8h_source_l00025}{SPI\+\_\+\+Memory\+Map\+Type\+::\+SR}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00036}{TXE}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a99ebbb9e1c201c69b03030ed0e8379c1}\label{_s_p_i__program_8c_a99ebbb9e1c201c69b03030ed0e8379c1}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI1\_vSetCallBack@{MSPI1\_vSetCallBack}}
+\index{MSPI1\_vSetCallBack@{MSPI1\_vSetCallBack}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI1\_vSetCallBack()}{MSPI1\_vSetCallBack()}}
+{\footnotesize\ttfamily void MSPI1\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{Fptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00581}{581}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00582 \{}
+\DoxyCodeLine{00583     \mbox{\hyperlink{_s_p_i__program_8c_ab6347b7060cac0dd768db8f9682bc237}{MSPI1\_CallBack}} = Fptr ;}
+\DoxyCodeLine{00584 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__program_8c_source_l00025}{MSPI1\+\_\+\+Call\+Back}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a6fa178f09b1bf35a35534d64b4fe5282}\label{_s_p_i__program_8c_a6fa178f09b1bf35a35534d64b4fe5282}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI2\_vSetCallBack@{MSPI2\_vSetCallBack}}
+\index{MSPI2\_vSetCallBack@{MSPI2\_vSetCallBack}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI2\_vSetCallBack()}{MSPI2\_vSetCallBack()}}
+{\footnotesize\ttfamily void MSPI2\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{Fptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00589}{589}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00590 \{}
+\DoxyCodeLine{00591     \mbox{\hyperlink{_s_p_i__program_8c_a88b5f8857568f02c2494278d0082dc7b}{MSPI2\_CallBack}} = Fptr ;}
+\DoxyCodeLine{00592 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__program_8c_source_l00026}{MSPI2\+\_\+\+Call\+Back}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_ac5e6e05936a4fb4a8c84eca2fe1c448b}\label{_s_p_i__program_8c_ac5e6e05936a4fb4a8c84eca2fe1c448b}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI3\_vSetCallBack@{MSPI3\_vSetCallBack}}
+\index{MSPI3\_vSetCallBack@{MSPI3\_vSetCallBack}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI3\_vSetCallBack()}{MSPI3\_vSetCallBack()}}
+{\footnotesize\ttfamily void MSPI3\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{Fptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00597}{597}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00598 \{}
+\DoxyCodeLine{00599     \mbox{\hyperlink{_s_p_i__program_8c_a1898bd64eb7e13562a9026db1f7fdccd}{MSPI3\_CallBack}} = Fptr ;}
+\DoxyCodeLine{00600 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__program_8c_source_l00027}{MSPI3\+\_\+\+Call\+Back}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a9bbd8c17ce4f49adcca47d11f482aab6}\label{_s_p_i__program_8c_a9bbd8c17ce4f49adcca47d11f482aab6}} 
+\index{SPI\_program.c@{SPI\_program.c}!SPI1\_IRQHandler@{SPI1\_IRQHandler}}
+\index{SPI1\_IRQHandler@{SPI1\_IRQHandler}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{SPI1\_IRQHandler()}{SPI1\_IRQHandler()}}
+{\footnotesize\ttfamily void SPI1\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00605}{605}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00606 \{}
+\DoxyCodeLine{00607 }
+\DoxyCodeLine{00608     \textcolor{comment}{// CLEAR FLAGS:}}
+\DoxyCodeLine{00609     \mbox{\hyperlink{group__vector__table_gad483be344a28ac800be8f03654a9612f}{SPI1}}-\/>SR = \mbox{\hyperlink{_s_p_i__private_8h_ad7b1de175c86f9be7f8fec20f1a609d2}{SR\_RESET}} ;}
+\DoxyCodeLine{00610 }
+\DoxyCodeLine{00611     \mbox{\hyperlink{_s_p_i__program_8c_ab6347b7060cac0dd768db8f9682bc237}{MSPI1\_CallBack}}() ;}
+\DoxyCodeLine{00612 }
+\DoxyCodeLine{00613 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__program_8c_source_l00025}{MSPI1\+\_\+\+Call\+Back}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00534}{SPI1}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00118}{SR\+\_\+\+RESET}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a68d8880cd80cb17a2501487c3d649ea1}\label{_s_p_i__program_8c_a68d8880cd80cb17a2501487c3d649ea1}} 
+\index{SPI\_program.c@{SPI\_program.c}!SPI2\_IRQHandler@{SPI2\_IRQHandler}}
+\index{SPI2\_IRQHandler@{SPI2\_IRQHandler}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{SPI2\_IRQHandler()}{SPI2\_IRQHandler()}}
+{\footnotesize\ttfamily void SPI2\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00618}{618}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00619 \{}
+\DoxyCodeLine{00620 }
+\DoxyCodeLine{00621     \textcolor{comment}{// CLEAR FLAGS:}}
+\DoxyCodeLine{00622     \mbox{\hyperlink{group__vector__table_gaf2c3d8ce359dcfbb2261e07ed42af72b}{SPI2}}-\/>SR = \mbox{\hyperlink{_s_p_i__private_8h_ad7b1de175c86f9be7f8fec20f1a609d2}{SR\_RESET}} ;}
+\DoxyCodeLine{00623 }
+\DoxyCodeLine{00624     \mbox{\hyperlink{_s_p_i__program_8c_a88b5f8857568f02c2494278d0082dc7b}{MSPI2\_CallBack}}() ;}
+\DoxyCodeLine{00625 }
+\DoxyCodeLine{00626 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__program_8c_source_l00026}{MSPI2\+\_\+\+Call\+Back}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00539}{SPI2}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00118}{SR\+\_\+\+RESET}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a82987561e28d02b184ecb0515a5e5d2b}\label{_s_p_i__program_8c_a82987561e28d02b184ecb0515a5e5d2b}} 
+\index{SPI\_program.c@{SPI\_program.c}!SPI3\_IRQHandler@{SPI3\_IRQHandler}}
+\index{SPI3\_IRQHandler@{SPI3\_IRQHandler}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{SPI3\_IRQHandler()}{SPI3\_IRQHandler()}}
+{\footnotesize\ttfamily void SPI3\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00631}{631}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00632 \{}
+\DoxyCodeLine{00633 }
+\DoxyCodeLine{00634     \textcolor{comment}{// CLEAR FLAGS:}}
+\DoxyCodeLine{00635     \mbox{\hyperlink{group__vector__table_gab2339cbf25502bf562b19208b1b257fc}{SPI3}}-\/>SR = \mbox{\hyperlink{_s_p_i__private_8h_ad7b1de175c86f9be7f8fec20f1a609d2}{SR\_RESET}} ;}
+\DoxyCodeLine{00636 }
+\DoxyCodeLine{00637     \mbox{\hyperlink{_s_p_i__program_8c_a1898bd64eb7e13562a9026db1f7fdccd}{MSPI3\_CallBack}}() ;}
+\DoxyCodeLine{00638 }
+\DoxyCodeLine{00639 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_s_p_i__program_8c_source_l00027}{MSPI3\+\_\+\+Call\+Back}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00584}{SPI3}}, and \mbox{\hyperlink{_s_p_i__private_8h_source_l00118}{SR\+\_\+\+RESET}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_s_p_i__program_8c_ab6347b7060cac0dd768db8f9682bc237}\label{_s_p_i__program_8c_ab6347b7060cac0dd768db8f9682bc237}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI1\_CallBack@{MSPI1\_CallBack}}
+\index{MSPI1\_CallBack@{MSPI1\_CallBack}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI1\_CallBack}{MSPI1\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ MSPI1\+\_\+\+Call\+Back) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00025}{25}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_s_p_i__program_8c_source_l00581}{MSPI1\+\_\+v\+Set\+Call\+Back()}}, and \mbox{\hyperlink{_s_p_i__program_8c_source_l00605}{SPI1\+\_\+\+IRQHandler()}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a88b5f8857568f02c2494278d0082dc7b}\label{_s_p_i__program_8c_a88b5f8857568f02c2494278d0082dc7b}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI2\_CallBack@{MSPI2\_CallBack}}
+\index{MSPI2\_CallBack@{MSPI2\_CallBack}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI2\_CallBack}{MSPI2\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ MSPI2\+\_\+\+Call\+Back) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00026}{26}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_s_p_i__program_8c_source_l00589}{MSPI2\+\_\+v\+Set\+Call\+Back()}}, and \mbox{\hyperlink{_s_p_i__program_8c_source_l00618}{SPI2\+\_\+\+IRQHandler()}}.
+
+\mbox{\Hypertarget{_s_p_i__program_8c_a1898bd64eb7e13562a9026db1f7fdccd}\label{_s_p_i__program_8c_a1898bd64eb7e13562a9026db1f7fdccd}} 
+\index{SPI\_program.c@{SPI\_program.c}!MSPI3\_CallBack@{MSPI3\_CallBack}}
+\index{MSPI3\_CallBack@{MSPI3\_CallBack}!SPI\_program.c@{SPI\_program.c}}
+\doxysubsubsection{\texorpdfstring{MSPI3\_CallBack}{MSPI3\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ MSPI3\+\_\+\+Call\+Back) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__program_8c_source_l00027}{27}} of file \mbox{\hyperlink{_s_p_i__program_8c_source}{SPI\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_s_p_i__program_8c_source_l00597}{MSPI3\+\_\+v\+Set\+Call\+Back()}}, and \mbox{\hyperlink{_s_p_i__program_8c_source_l00631}{SPI3\+\_\+\+IRQHandler()}}.
+

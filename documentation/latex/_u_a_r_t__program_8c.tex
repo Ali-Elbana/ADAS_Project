@@ -1,0 +1,813 @@
+\hypertarget{_u_a_r_t__program_8c}{}\doxysection{COTS/\+MCAL/\+UART/\+UART\+\_\+program.c File Reference}
+\label{_u_a_r_t__program_8c}\index{COTS/MCAL/UART/UART\_program.c@{COTS/MCAL/UART/UART\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+RCC/\+MRCC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}UART\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}UART\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}UART\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a73bf3b20827ed61d222ae8dfb1eda45c}{MUSART\+\_\+v\+Init}} (\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}} $\ast$A\+\_\+\+Init\+Struct, \mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}} $\ast$A\+\_\+\+Clock\+Init\+Struct, \mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a4b385eba59231a73011eb70b55a8ffee}{MUSART\+\_\+v\+Enable}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_acafcd6cc785d2b7d90f66b17a9f95ec2}{MUSART\+\_\+v\+Disable}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a2ada5f0990eceabc128d3fcbeb79377c}{MUSART\+\_\+v\+Transmit\+Byte}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Byte)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_aaf5b81f3e000ad569a835ff04fb24014}{MUSART\+\_\+v\+Transmit\+String}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$A\+\_\+ptrc8\+String)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__program_8c_a4f947717a103374791c627ad6a7d23b1}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Non\+Blocking}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__program_8c_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Blocking}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} $\ast$ \mbox{\hyperlink{_u_a_r_t__program_8c_ae8b4dd1c6f12ebf2614390dd23877801}{MUSART\+\_\+ptr\+Receive\+String\+Synch\+Non\+Blocking}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a9012038beeb0224f40e9191a16255dda}{MUSART\+\_\+v\+Recieve\+String}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} A\+\_\+c8\+Your\+String\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__program_8c_a963243cdece8f17e1245a78ea097b344}{MUSART\+\_\+u8\+Compare\+String}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$String1, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$String2)
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__program_8c_aa3fe2075503bcc8e72eacd6da0b8fcad}{MUSART\+\_\+u8\+Read\+Data\+Register}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a4ab0324766d87def5f6b36bfd1863932}{MUSART\+\_\+v\+Clear\+Flags}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a0d2b121793165ec2fa0091f7bdebd70b}{MUSART\+\_\+v\+Rx\+Int\+Set\+Status}} (\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Status)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a9ef0e7048b326b502767829152cb23f9}{MUSART1\+\_\+v\+Set\+Call\+Back}} (void($\ast$Fptr)(void))
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a85a06b37be14149456c2d8cc53b7f559}{MUSART2\+\_\+v\+Set\+Call\+Back}} (void($\ast$Fptr)(void))
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_aac1d01690bcd0920bd5ced4670cef24f}{MUSART6\+\_\+v\+Set\+Call\+Back}} (void($\ast$Fptr)(void))
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a7139cd4baabbbcbab0c1fe6d7d4ae1cc}{USART1\+\_\+\+IRQHandler}} (void)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a0ca6fd0e6f77921dd1123539857ba0a8}{USART2\+\_\+\+IRQHandler}} (void)
+\item 
+void \mbox{\hyperlink{_u_a_r_t__program_8c_a12c827857d907ad0cccd586fd934d446}{USART6\+\_\+\+IRQHandler}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__program_8c_acaa630488d50c28d4765bae16cb39f1d}{G\+\_\+u8\+String}} \mbox{[}20\mbox{]}
+\item 
+void($\ast$ \mbox{\hyperlink{_u_a_r_t__program_8c_a2d2d47184fafc2121db6b548a9fa44aa}{MUSART1\+\_\+\+Call\+Back}} )(void)
+\item 
+void($\ast$ \mbox{\hyperlink{_u_a_r_t__program_8c_a966af792ea30e49464e9c3b0ca98adb4}{MUSART2\+\_\+\+Call\+Back}} )(void)
+\item 
+void($\ast$ \mbox{\hyperlink{_u_a_r_t__program_8c_aaa766e15eebb9540ab6905a88f267016}{MUSART6\+\_\+\+Call\+Back}} )(void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a73bf3b20827ed61d222ae8dfb1eda45c}\label{_u_a_r_t__program_8c_a73bf3b20827ed61d222ae8dfb1eda45c}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vInit@{MUSART\_vInit}}
+\index{MUSART\_vInit@{MUSART\_vInit}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vInit()}{MUSART\_vInit()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}} $\ast$}]{A\+\_\+\+Init\+Struct,  }\item[{\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}} $\ast$}]{A\+\_\+\+Clock\+Init\+Struct,  }\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00037}{37}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039 \{}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041     \textcolor{keywordflow}{if}( A\_USARTx == \mbox{\hyperlink{_u_a_r_t__interface_8h_a38f9de19e0022108a0536f7b88267d5e}{USART1\_REG}} )}
+\DoxyCodeLine{00042     \{}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga420f9a41acd93e242601bb3a43fbd0f8}{APB2ENR\_USART1EN}} ) ;}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046         \textcolor{comment}{/*configer Tx1 as alt fun*/}}
+\DoxyCodeLine{00047         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} TX1 =}
+\DoxyCodeLine{00048         \{}
+\DoxyCodeLine{00049             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_u_a_r_t__config_8h_a5e41481ac70b9b3954face471a7705b1}{USART1\_PORT}}        ,   .Pin        = \mbox{\hyperlink{_u_a_r_t__config_8h_a1e8125b2e82abc63c65b375cf008b44d}{TX1\_PIN}}        ,}
+\DoxyCodeLine{00050             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00051             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga8dbc220db50dd66e8bde537a1fa5c539}{GPIOx\_MediumSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}  ,}
+\DoxyCodeLine{00052             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_gab6c3d03c1a4962f7505dab5ebf294968}{GPIOx\_AF7}}}
+\DoxyCodeLine{00053         \} ;}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&TX1 ) ;}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057         \textcolor{comment}{/*configer Rx1 as alt fun*/}}
+\DoxyCodeLine{00058         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RX1 =}
+\DoxyCodeLine{00059         \{}
+\DoxyCodeLine{00060             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_u_a_r_t__config_8h_a5e41481ac70b9b3954face471a7705b1}{USART1\_PORT}}        ,   .Pin        = \mbox{\hyperlink{_u_a_r_t__config_8h_ae0a96fcbd05806f45faa9fb11f771b52}{RX1\_PIN}}        ,}
+\DoxyCodeLine{00061             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00062             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga8dbc220db50dd66e8bde537a1fa5c539}{GPIOx\_MediumSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}  ,}
+\DoxyCodeLine{00063             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_gab6c3d03c1a4962f7505dab5ebf294968}{GPIOx\_AF7}}}
+\DoxyCodeLine{00064         \} ;}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&RX1 ) ;}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \}}
+\DoxyCodeLine{00069     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( A\_USARTx == \mbox{\hyperlink{_u_a_r_t__interface_8h_a1a4ecad9a4dcd0594be0f53e2017dc66}{USART2\_REG}} )}
+\DoxyCodeLine{00070     \{}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{00072         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga9485c3e161e4c625e95e5a8f1aa05b30}{APB1ENR\_USART2EN}} ) ;}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074         \textcolor{comment}{/*configer Tx2 as alt fun*/}}
+\DoxyCodeLine{00075         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} TX2 =}
+\DoxyCodeLine{00076         \{}
+\DoxyCodeLine{00077             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_u_a_r_t__config_8h_a0d76a77e48328a48011036cfef7adab8}{USART2\_PORT}}        ,   .Pin        = \mbox{\hyperlink{_u_a_r_t__config_8h_a9d13048abe2c0a2e8a4e1f1b3c244dca}{TX2\_PIN}}        ,}
+\DoxyCodeLine{00078             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00079             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga8dbc220db50dd66e8bde537a1fa5c539}{GPIOx\_MediumSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}  ,}
+\DoxyCodeLine{00080             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_gab6c3d03c1a4962f7505dab5ebf294968}{GPIOx\_AF7}}}
+\DoxyCodeLine{00081         \} ;}
+\DoxyCodeLine{00082 }
+\DoxyCodeLine{00083         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&TX2 ) ;}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085         \textcolor{comment}{/*configer Rx2 as alt fun*/}}
+\DoxyCodeLine{00086         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RX2 =}
+\DoxyCodeLine{00087         \{}
+\DoxyCodeLine{00088             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_u_a_r_t__config_8h_a0d76a77e48328a48011036cfef7adab8}{USART2\_PORT}}        ,   .Pin        = \mbox{\hyperlink{_u_a_r_t__config_8h_ab2d46364ed6adb99c6d07994f6665982}{RX2\_PIN}}        ,}
+\DoxyCodeLine{00089             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00090             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga8dbc220db50dd66e8bde537a1fa5c539}{GPIOx\_MediumSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}  ,}
+\DoxyCodeLine{00091             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_gab6c3d03c1a4962f7505dab5ebf294968}{GPIOx\_AF7}}}
+\DoxyCodeLine{00092         \} ;}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&RX2 ) ;}
+\DoxyCodeLine{00095 }
+\DoxyCodeLine{00096     \}}
+\DoxyCodeLine{00097     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( A\_USARTx == \mbox{\hyperlink{_u_a_r_t__interface_8h_ac07061e10fa07006ad02f7810500ff91}{USART6\_REG}} )}
+\DoxyCodeLine{00098     \{}
+\DoxyCodeLine{00099 }
+\DoxyCodeLine{00100         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga84b80e93e2a2d9aa77ede6763f2f6ba1}{APB2ENR\_USART6EN}} ) ;}
+\DoxyCodeLine{00101 }
+\DoxyCodeLine{00102         \textcolor{comment}{/*configer Tx6 as alt fun*/}}
+\DoxyCodeLine{00103         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} TX6 =}
+\DoxyCodeLine{00104         \{}
+\DoxyCodeLine{00105             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_u_a_r_t__config_8h_aace418d52220f3b5555fc65e55458224}{USART6\_PORT}}        ,   .Pin        = \mbox{\hyperlink{_u_a_r_t__config_8h_ae4750d56f3db7471110f885c74245923}{TX6\_PIN}}        ,}
+\DoxyCodeLine{00106             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00107             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga8dbc220db50dd66e8bde537a1fa5c539}{GPIOx\_MediumSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}  ,}
+\DoxyCodeLine{00108             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_gab6c3d03c1a4962f7505dab5ebf294968}{GPIOx\_AF7}}}
+\DoxyCodeLine{00109         \} ;}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&TX6 ) ;}
+\DoxyCodeLine{00112 }
+\DoxyCodeLine{00113         \textcolor{comment}{/*configer Rx6 as alt fun*/}}
+\DoxyCodeLine{00114         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RX6 =}
+\DoxyCodeLine{00115         \{}
+\DoxyCodeLine{00116             .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_u_a_r_t__config_8h_aace418d52220f3b5555fc65e55458224}{USART6\_PORT}}        ,   .Pin        = \mbox{\hyperlink{_u_a_r_t__config_8h_a02e8e3a15b24a52755d3f1740228cf8e}{RX6\_PIN}}        ,}
+\DoxyCodeLine{00117             .Mode           = \mbox{\hyperlink{group__gpio__modes_ga68830dfd5f7c4ce1bc4993e6dc409dda}{GPIOx\_MODE\_AF}}        ,   .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00118             .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga8dbc220db50dd66e8bde537a1fa5c539}{GPIOx\_MediumSpeed}}    ,   .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}  ,}
+\DoxyCodeLine{00119             .AF\_Type        = \mbox{\hyperlink{group__gpio__alternate__functions_gab6c3d03c1a4962f7505dab5ebf294968}{GPIOx\_AF7}}}
+\DoxyCodeLine{00120         \} ;}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122         \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&RX6 ) ;}
+\DoxyCodeLine{00123 }
+\DoxyCodeLine{00124     \}}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126     \textcolor{comment}{// BuadRate/Over-\/sampling selections:}}
+\DoxyCodeLine{00127     \textcolor{keywordflow}{switch}( A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_a62c8fbf658e9677667a2f82aaae8ad8e}{Oversampling}} )}
+\DoxyCodeLine{00128     \{}
+\DoxyCodeLine{00129 }
+\DoxyCodeLine{00130         \textcolor{keywordflow}{case} \mbox{\hyperlink{_u_a_r_t__interface_8h_af8c5da91760498f5e23684c559d9d0d1}{OVER\_SAMPLING\_16}}:}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132             A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a2261448def1f381fb720aa1696ce6cc7}{BRR\_REG}} = \mbox{\hyperlink{_u_a_r_t__private_8h_aed98b14acfc939985cc9909a6fa64d71}{UART\_BRR\_SAMPLING16}}( \mbox{\hyperlink{_u_a_r_t__config_8h_abfa021cfaa61d4d074a2c13a26e72c73}{\_\_PCLK\_\_}} , A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_afa1b17287553d6f2ed8e4ded8067ce7d}{BaudRate}} ) ;}
+\DoxyCodeLine{00133 }
+\DoxyCodeLine{00134         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136         \textcolor{keywordflow}{case} \mbox{\hyperlink{_u_a_r_t__interface_8h_a6d7508f36c8dde4eed0ab2ad952e344c}{OVER\_SAMPLING\_8}}:}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138             A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a2261448def1f381fb720aa1696ce6cc7}{BRR\_REG}} = \mbox{\hyperlink{_u_a_r_t__private_8h_aed98b14acfc939985cc9909a6fa64d71}{UART\_BRR\_SAMPLING16}}( \mbox{\hyperlink{_u_a_r_t__config_8h_abfa021cfaa61d4d074a2c13a26e72c73}{\_\_PCLK\_\_}} , A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_afa1b17287553d6f2ed8e4ded8067ce7d}{BaudRate}} ) ;}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00141 }
+\DoxyCodeLine{00142     \}}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144     A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}} = ( A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_a62c8fbf658e9677667a2f82aaae8ad8e}{Oversampling}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a291d33518a88ef7cd163b3a6fb4feef8}{MUSART\_CR1\_OVER8\_BIT}} )   |}
+\DoxyCodeLine{00145                         ( A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_a732332f56fabda2390e935a042712ed0}{DataWidth}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a2e075bd040d19bcf801cd2a8ac7946c8}{MUSART\_CR1\_M\_BIT}} )        |}
+\DoxyCodeLine{00146                         ( A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_affc0431b2a8516a92695a7250028bf57}{Parity\_Enable}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a3869b2fa48a3c7ad277eeb32ac8b6f9b}{MUSART\_CR1\_PCE\_BIT}} )    |}
+\DoxyCodeLine{00147                         ( A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_ae83afe06a0ae8c796873deee3203608e}{Parity\_Selection}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a3a17627d8072b5eccf0b0c9d65ca08cb}{MUSART\_CR1\_PS\_BIT}} ) ;}
+\DoxyCodeLine{00148 }
+\DoxyCodeLine{00149     \textcolor{keywordflow}{switch} (A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_ae274fe8182e9785a01cea7354892a9ec}{TransferDirection}})}
+\DoxyCodeLine{00150     \{}
+\DoxyCodeLine{00151         \textcolor{keywordflow}{case} \mbox{\hyperlink{_u_a_r_t__interface_8h_a68e18d9e86deac2cd5519242d9cbacfa}{TX\_ONLY}}:}
+\DoxyCodeLine{00152 }
+\DoxyCodeLine{00153             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a9d1bbbd383d81b3e9d4b657abe2c401a}{MUSART\_CR1\_TE\_BIT}} ) ;}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155         break ;}
+\DoxyCodeLine{00156 }
+\DoxyCodeLine{00157         \textcolor{keywordflow}{case} \mbox{\hyperlink{_s_p_i__private_8h_a74cf94a9df9d9b857d11b2befc9eaf1a}{RX\_ONLY}}:}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00159             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_af075c44b5c18bbf9aded7ff89a966376}{MUSART\_CR1\_RE\_BIT}} ) ;}
+\DoxyCodeLine{00160 }
+\DoxyCodeLine{00161         break ;}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163         \textcolor{keywordflow}{case} \mbox{\hyperlink{_u_a_r_t__interface_8h_ac320fb8cc73d1635bf24181d566e708c}{TX\_RX}}  :}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a9d1bbbd383d81b3e9d4b657abe2c401a}{MUSART\_CR1\_TE\_BIT}} ) ;}
+\DoxyCodeLine{00166             \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_af075c44b5c18bbf9aded7ff89a966376}{MUSART\_CR1\_RE\_BIT}} ) ;}
+\DoxyCodeLine{00167 }
+\DoxyCodeLine{00168         break ;}
+\DoxyCodeLine{00169 }
+\DoxyCodeLine{00170     \}}
+\DoxyCodeLine{00171 }
+\DoxyCodeLine{00172     A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_af226d966a116ce9a6a703070339ee580}{CR2\_REG}} = ( A\_InitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___init_type_aeb52c37ce9ee7768af06e4d90d88d1a2}{StopBits}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a980d75b6894b27927b1f6a1c96f72366}{MUSART\_CR2\_STOP\_BIT}} )              |}
+\DoxyCodeLine{00173                         ( A\_ClockInitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def_a0fdb99d837deb1ce696f2324fd6abc02}{ClockOutput}} << \mbox{\hyperlink{_u_a_r_t__private_8h_aea289c162882585123e7b0295fa4b77b}{MUSART\_CR2\_CLKEN\_BIT}} )       |}
+\DoxyCodeLine{00174                         ( A\_ClockInitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def_a86c0c9aaf06dd093b727020851b18258}{ClockPhase}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a4ec84796cf476540e9a14223500966d6}{MUSART\_CR2\_CPHA\_BIT}} )         |}
+\DoxyCodeLine{00175                         ( A\_ClockInitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def_a196a11a0546d1589d06e484d0d92e093}{ClockPolarity}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a13d03234ac40d29225e0c649e9b0e587}{MUSART\_CR2\_CPOL\_BIT}} )      |}
+\DoxyCodeLine{00176                         ( A\_ClockInitStruct-\/>\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def_a310fd344063c5472789d02c1f5732aa6}{LastBitClockPulse}} << \mbox{\hyperlink{_u_a_r_t__private_8h_a0122e3c65a33534eac8732a2e917845d}{MUSART\_CR2\_LBCL\_BIT}} )  ;}
+\DoxyCodeLine{00177 }
+\DoxyCodeLine{00178     A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}} = 0 ; \textcolor{comment}{// Clear all the flags.}}
+\DoxyCodeLine{00179 }
+\DoxyCodeLine{00180     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a350860889903501c94a59df0ad77dacd}{MUSART\_CR1\_UE\_BIT}} ) ; \textcolor{comment}{// EN the peripheral.}}
+\DoxyCodeLine{00181 }
+\DoxyCodeLine{00182 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00011}{\+\_\+\+\_\+\+PCLK\+\_\+\+\_\+}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00192}{APB1\+ENR\+\_\+\+USART2\+EN}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00311}{APB2\+ENR\+\_\+\+USART1\+EN}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00304}{APB2\+ENR\+\_\+\+USART6\+EN}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00046}{USART\+\_\+\+Init\+Type\+::\+Baud\+Rate}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00026}{USART\+\_\+\+Memory\+Map\+Type\+::\+BRR\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00067}{USART\+\_\+\+Clock\+Init\+Type\+Def\+::\+Clock\+Output}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00071}{USART\+\_\+\+Clock\+Init\+Type\+Def\+::\+Clock\+Phase}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00069}{USART\+\_\+\+Clock\+Init\+Type\+Def\+::\+Clock\+Polarity}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00028}{USART\+\_\+\+Memory\+Map\+Type\+::\+CR1\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00030}{USART\+\_\+\+Memory\+Map\+Type\+::\+CR2\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00048}{USART\+\_\+\+Init\+Type\+::\+Data\+Width}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00509}{GPIOx\+\_\+\+AF7}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00260}{GPIOx\+\_\+\+Medium\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00180}{GPIOx\+\_\+\+MODE\+\_\+\+AF}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00289}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00238}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00073}{USART\+\_\+\+Clock\+Init\+Type\+Def\+::\+Last\+Bit\+Clock\+Pulse}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\+\_\+v\+Enable\+Periphral\+CLK()}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00081}{MUSART\+\_\+\+CR1\+\_\+\+M\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00085}{MUSART\+\_\+\+CR1\+\_\+\+OVER8\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00077}{MUSART\+\_\+\+CR1\+\_\+\+PCE\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00075}{MUSART\+\_\+\+CR1\+\_\+\+PS\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00061}{MUSART\+\_\+\+CR1\+\_\+\+RE\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00063}{MUSART\+\_\+\+CR1\+\_\+\+TE\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00083}{MUSART\+\_\+\+CR1\+\_\+\+UE\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00106}{MUSART\+\_\+\+CR2\+\_\+\+CLKEN\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00102}{MUSART\+\_\+\+CR2\+\_\+\+CPHA\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00104}{MUSART\+\_\+\+CR2\+\_\+\+CPOL\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00100}{MUSART\+\_\+\+CR2\+\_\+\+LBCL\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00108}{MUSART\+\_\+\+CR2\+\_\+\+STOP\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00120}{OVER\+\_\+\+SAMPLING\+\_\+16}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00121}{OVER\+\_\+\+SAMPLING\+\_\+8}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00060}{USART\+\_\+\+Init\+Type\+::\+Oversampling}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00052}{USART\+\_\+\+Init\+Type\+::\+Parity\+\_\+\+Enable}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00054}{USART\+\_\+\+Init\+Type\+::\+Parity\+\_\+\+Selection}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00023}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB2}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00039}{RX1\+\_\+\+PIN}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00062}{RX2\+\_\+\+PIN}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00085}{RX6\+\_\+\+PIN}}, \mbox{\hyperlink{_s_p_i__private_8h_source_l00074}{RX\+\_\+\+ONLY}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00022}{USART\+\_\+\+Memory\+Map\+Type\+::\+SR\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00050}{USART\+\_\+\+Init\+Type\+::\+Stop\+Bits}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00056}{USART\+\_\+\+Init\+Type\+::\+Transfer\+Direction}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00031}{TX1\+\_\+\+PIN}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00055}{TX2\+\_\+\+PIN}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00078}{TX6\+\_\+\+PIN}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00123}{TX\+\_\+\+ONLY}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00125}{TX\+\_\+\+RX}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00015}{UART\+\_\+\+BRR\+\_\+\+SAMPLING16}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00023}{USART1\+\_\+\+PORT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00039}{USART1\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00048}{USART2\+\_\+\+PORT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00040}{USART2\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00071}{USART6\+\_\+\+PORT}}, and \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00041}{USART6\+\_\+\+REG}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00038}{HBluetooth\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a4b385eba59231a73011eb70b55a8ffee}\label{_u_a_r_t__program_8c_a4b385eba59231a73011eb70b55a8ffee}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vEnable@{MUSART\_vEnable}}
+\index{MUSART\_vEnable@{MUSART\_vEnable}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vEnable()}{MUSART\_vEnable()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00187}{187}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00188 \{}
+\DoxyCodeLine{00189     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a350860889903501c94a59df0ad77dacd}{MUSART\_CR1\_UE\_BIT}} ) ;}
+\DoxyCodeLine{00190 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00028}{USART\+\_\+\+Memory\+Map\+Type\+::\+CR1\+\_\+\+REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00083}{MUSART\+\_\+\+CR1\+\_\+\+UE\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00106}{HBluetooth\+\_\+v\+Enable()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_acafcd6cc785d2b7d90f66b17a9f95ec2}\label{_u_a_r_t__program_8c_acafcd6cc785d2b7d90f66b17a9f95ec2}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vDisable@{MUSART\_vDisable}}
+\index{MUSART\_vDisable@{MUSART\_vDisable}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vDisable()}{MUSART\_vDisable()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00195}{195}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00196 \{}
+\DoxyCodeLine{00197     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a350860889903501c94a59df0ad77dacd}{MUSART\_CR1\_UE\_BIT}} ) ;}
+\DoxyCodeLine{00198 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00028}{USART\+\_\+\+Memory\+Map\+Type\+::\+CR1\+\_\+\+REG}}, and \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00083}{MUSART\+\_\+\+CR1\+\_\+\+UE\+\_\+\+BIT}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00116}{HBluetooth\+\_\+v\+Disable()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a2ada5f0990eceabc128d3fcbeb79377c}\label{_u_a_r_t__program_8c_a2ada5f0990eceabc128d3fcbeb79377c}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vTransmitByte@{MUSART\_vTransmitByte}}
+\index{MUSART\_vTransmitByte@{MUSART\_vTransmitByte}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vTransmitByte()}{MUSART\_vTransmitByte()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Transmit\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Byte }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00203}{203}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00204 \{}
+\DoxyCodeLine{00205 }
+\DoxyCodeLine{00206     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a9fb4ebcfe1b22a7b96250ccde22b887e}{MUSART\_SR\_TXE\_BIT}} ) == 0 ) ;}
+\DoxyCodeLine{00207 }
+\DoxyCodeLine{00208     A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a3c8a559f7aa8d7f2d6a4b42e43c8c2a0}{DR\_REG}} = A\_u8Byte ;}
+\DoxyCodeLine{00209 }
+\DoxyCodeLine{00210     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a1d10221aebb6e8592fbca9ffe0af7913}{MUSART\_SR\_TC\_BIT}} ) == 0 ) ;}
+\DoxyCodeLine{00211 }
+\DoxyCodeLine{00212     \textcolor{comment}{// Clear the TC flag:}}
+\DoxyCodeLine{00213     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a1d10221aebb6e8592fbca9ffe0af7913}{MUSART\_SR\_TC\_BIT}} ) ;}
+\DoxyCodeLine{00214 }
+\DoxyCodeLine{00215 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00024}{USART\+\_\+\+Memory\+Map\+Type\+::\+DR\+\_\+\+REG}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00045}{MUSART\+\_\+\+SR\+\_\+\+TC\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00047}{MUSART\+\_\+\+SR\+\_\+\+TXE\+\_\+\+BIT}}, and \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00022}{USART\+\_\+\+Memory\+Map\+Type\+::\+SR\+\_\+\+REG}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00048}{HBluetooth\+\_\+v\+Send\+Byte()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00220}{MUSART\+\_\+v\+Transmit\+String()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_aaf5b81f3e000ad569a835ff04fb24014}\label{_u_a_r_t__program_8c_aaf5b81f3e000ad569a835ff04fb24014}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vTransmitString@{MUSART\_vTransmitString}}
+\index{MUSART\_vTransmitString@{MUSART\_vTransmitString}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vTransmitString()}{MUSART\_vTransmitString()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Transmit\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{A\+\_\+ptrc8\+String }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00220}{220}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00221 \{}
+\DoxyCodeLine{00222 }
+\DoxyCodeLine{00223     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8Iterator = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00224 }
+\DoxyCodeLine{00225     \textcolor{keywordflow}{while}( A\_ptrc8String[loc\_u8Iterator] != \textcolor{charliteral}{'\(\backslash\)0'} )}
+\DoxyCodeLine{00226     \{}
+\DoxyCodeLine{00227 }
+\DoxyCodeLine{00228         \mbox{\hyperlink{_u_a_r_t__program_8c_a2ada5f0990eceabc128d3fcbeb79377c}{MUSART\_vTransmitByte}}( A\_USARTx, A\_ptrc8String[loc\_u8Iterator] ) ;}
+\DoxyCodeLine{00229 }
+\DoxyCodeLine{00230         loc\_u8Iterator++ ;}
+\DoxyCodeLine{00231 }
+\DoxyCodeLine{00232     \}}
+\DoxyCodeLine{00233 }
+\DoxyCodeLine{00234 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00203}{MUSART\+\_\+v\+Transmit\+Byte()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00072}{HBluetooth\+\_\+v\+Send\+String()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a4f947717a103374791c627ad6a7d23b1}\label{_u_a_r_t__program_8c_a4f947717a103374791c627ad6a7d23b1}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_u8ReceiveByteSynchNonBlocking@{MUSART\_u8ReceiveByteSynchNonBlocking}}
+\index{MUSART\_u8ReceiveByteSynchNonBlocking@{MUSART\_u8ReceiveByteSynchNonBlocking}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8ReceiveByteSynchNonBlocking()}{MUSART\_u8ReceiveByteSynchNonBlocking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Non\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00239}{239}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00240 \{}
+\DoxyCodeLine{00241 }
+\DoxyCodeLine{00242     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}  loc\_u8Data    = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00243 }
+\DoxyCodeLine{00244     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} loc\_u8TimeOut = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00245 }
+\DoxyCodeLine{00246     \textcolor{keywordflow}{while}( (\mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}(A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a115169432cbecb0767d67a593fabd84b}{MUSART\_SR\_RXNE\_BIT}}) == 0) \&\& (loc\_u8TimeOut < \mbox{\hyperlink{_u_a_r_t__config_8h_a66e200a1d83033041bf1c6244e3e0504}{THRESHOLD\_VALUE}}) )}
+\DoxyCodeLine{00247     \{}
+\DoxyCodeLine{00248         loc\_u8TimeOut++;}
+\DoxyCodeLine{00249     \}}
+\DoxyCodeLine{00250 }
+\DoxyCodeLine{00251     \textcolor{keywordflow}{if} ( loc\_u8TimeOut == \mbox{\hyperlink{_u_a_r_t__config_8h_a66e200a1d83033041bf1c6244e3e0504}{THRESHOLD\_VALUE}} )}
+\DoxyCodeLine{00252     \{}
+\DoxyCodeLine{00253         loc\_u8Data = 255 ; \textcolor{comment}{// To detect the error.}}
+\DoxyCodeLine{00254     \}}
+\DoxyCodeLine{00255     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00256     \{}
+\DoxyCodeLine{00257         loc\_u8Data = A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a3c8a559f7aa8d7f2d6a4b42e43c8c2a0}{DR\_REG}} ;}
+\DoxyCodeLine{00258     \}}
+\DoxyCodeLine{00259 }
+\DoxyCodeLine{00260     \textcolor{keywordflow}{return} loc\_u8Data ;}
+\DoxyCodeLine{00261 }
+\DoxyCodeLine{00262 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00024}{USART\+\_\+\+Memory\+Map\+Type\+::\+DR\+\_\+\+REG}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00043}{MUSART\+\_\+\+SR\+\_\+\+RXNE\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00022}{USART\+\_\+\+Memory\+Map\+Type\+::\+SR\+\_\+\+REG}}, and \mbox{\hyperlink{_u_a_r_t__config_8h_source_l00013}{THRESHOLD\+\_\+\+VALUE}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00279}{MUSART\+\_\+ptr\+Receive\+String\+Synch\+Non\+Blocking()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a1c7805c08b1ccfe84258b0791bde3a8f}\label{_u_a_r_t__program_8c_a1c7805c08b1ccfe84258b0791bde3a8f}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_u8ReceiveByteSynchBlocking@{MUSART\_u8ReceiveByteSynchBlocking}}
+\index{MUSART\_u8ReceiveByteSynchBlocking@{MUSART\_u8ReceiveByteSynchBlocking}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8ReceiveByteSynchBlocking()}{MUSART\_u8ReceiveByteSynchBlocking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00267}{267}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00268 \{}
+\DoxyCodeLine{00269 }
+\DoxyCodeLine{00270     \textcolor{keywordflow}{while}( \mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}(A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, \mbox{\hyperlink{_u_a_r_t__private_8h_a115169432cbecb0767d67a593fabd84b}{MUSART\_SR\_RXNE\_BIT}}) == 0 ) ;}
+\DoxyCodeLine{00271 }
+\DoxyCodeLine{00272     \textcolor{keywordflow}{return} A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a3c8a559f7aa8d7f2d6a4b42e43c8c2a0}{DR\_REG}} ;}
+\DoxyCodeLine{00273 }
+\DoxyCodeLine{00274 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00024}{USART\+\_\+\+Memory\+Map\+Type\+::\+DR\+\_\+\+REG}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00043}{MUSART\+\_\+\+SR\+\_\+\+RXNE\+\_\+\+BIT}}, and \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00022}{USART\+\_\+\+Memory\+Map\+Type\+::\+SR\+\_\+\+REG}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00058}{HBluetooth\+\_\+u8\+Receive\+Byte()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00302}{MUSART\+\_\+v\+Recieve\+String()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_ae8b4dd1c6f12ebf2614390dd23877801}\label{_u_a_r_t__program_8c_ae8b4dd1c6f12ebf2614390dd23877801}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_ptrReceiveStringSynchNonBlocking@{MUSART\_ptrReceiveStringSynchNonBlocking}}
+\index{MUSART\_ptrReceiveStringSynchNonBlocking@{MUSART\_ptrReceiveStringSynchNonBlocking}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_ptrReceiveStringSynchNonBlocking()}{MUSART\_ptrReceiveStringSynchNonBlocking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} $\ast$ MUSART\+\_\+ptr\+Receive\+String\+Synch\+Non\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00279}{279}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00280 \{}
+\DoxyCodeLine{00281 }
+\DoxyCodeLine{00282     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8Iterator = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00283 }
+\DoxyCodeLine{00284     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8DataCome ;}
+\DoxyCodeLine{00285 }
+\DoxyCodeLine{00286     \textcolor{keywordflow}{while}( ( loc\_u8DataCome = \mbox{\hyperlink{_u_a_r_t__program_8c_a4f947717a103374791c627ad6a7d23b1}{MUSART\_u8ReceiveByteSynchNonBlocking}}(A\_USARTx) ) != 13 )}
+\DoxyCodeLine{00287     \{}
+\DoxyCodeLine{00288         \mbox{\hyperlink{_u_a_r_t__program_8c_acaa630488d50c28d4765bae16cb39f1d}{G\_u8String}}[ loc\_u8Iterator ] = loc\_u8DataCome ;}
+\DoxyCodeLine{00289 }
+\DoxyCodeLine{00290         loc\_u8Iterator++;}
+\DoxyCodeLine{00291     \}}
+\DoxyCodeLine{00292 }
+\DoxyCodeLine{00293     \mbox{\hyperlink{_u_a_r_t__program_8c_acaa630488d50c28d4765bae16cb39f1d}{G\_u8String}}[loc\_u8Iterator] = \textcolor{charliteral}{'\(\backslash\)0'} ;}
+\DoxyCodeLine{00294 }
+\DoxyCodeLine{00295     \textcolor{keywordflow}{return}( \mbox{\hyperlink{_u_a_r_t__program_8c_acaa630488d50c28d4765bae16cb39f1d}{G\_u8String}} ) ;}
+\DoxyCodeLine{00296 }
+\DoxyCodeLine{00297 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00028}{G\+\_\+u8\+String}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00239}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Non\+Blocking()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a9012038beeb0224f40e9191a16255dda}\label{_u_a_r_t__program_8c_a9012038beeb0224f40e9191a16255dda}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vRecieveString@{MUSART\_vRecieveString}}
+\index{MUSART\_vRecieveString@{MUSART\_vRecieveString}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vRecieveString()}{MUSART\_vRecieveString()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Recieve\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}}]{A\+\_\+c8\+Your\+String\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00302}{302}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00303 \{}
+\DoxyCodeLine{00304 }
+\DoxyCodeLine{00305     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} L\_u32Counter = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00306 }
+\DoxyCodeLine{00307     A\_c8YourString[L\_u32Counter] = \mbox{\hyperlink{_u_a_r_t__program_8c_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}( A\_USARTx ) ;}
+\DoxyCodeLine{00308 }
+\DoxyCodeLine{00309     \textcolor{keywordflow}{while}( A\_c8YourString[L\_u32Counter] != \textcolor{charliteral}{'\(\backslash\)0'} )}
+\DoxyCodeLine{00310     \{}
+\DoxyCodeLine{00311 }
+\DoxyCodeLine{00312         L\_u32Counter++ ;}
+\DoxyCodeLine{00313 }
+\DoxyCodeLine{00314         A\_c8YourString[L\_u32Counter] = \mbox{\hyperlink{_u_a_r_t__program_8c_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}( A\_USARTx ) ;}
+\DoxyCodeLine{00315 }
+\DoxyCodeLine{00316         \textcolor{keywordflow}{if}( (A\_c8YourString[L\_u32Counter] == \textcolor{charliteral}{'\(\backslash\)n'}) || (A\_c8YourString[L\_u32Counter] == \textcolor{charliteral}{'\(\backslash\)r'}) )}
+\DoxyCodeLine{00317         \{}
+\DoxyCodeLine{00318             A\_c8YourString[L\_u32Counter] = \textcolor{charliteral}{'\(\backslash\)0'} ;}
+\DoxyCodeLine{00319         \}}
+\DoxyCodeLine{00320 }
+\DoxyCodeLine{00321     \}}
+\DoxyCodeLine{00322 }
+\DoxyCodeLine{00323 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00267}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Blocking()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00082}{HBluetooth\+\_\+v\+Receive\+String()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a963243cdece8f17e1245a78ea097b344}\label{_u_a_r_t__program_8c_a963243cdece8f17e1245a78ea097b344}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_u8CompareString@{MUSART\_u8CompareString}}
+\index{MUSART\_u8CompareString@{MUSART\_u8CompareString}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8CompareString()}{MUSART\_u8CompareString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Compare\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{String1,  }\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{String2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00328}{328}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00329 \{}
+\DoxyCodeLine{00330 }
+\DoxyCodeLine{00331     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} L\_u8TheComparingResult = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00332 }
+\DoxyCodeLine{00333     \textcolor{keywordflow}{if}( strcmp( String1, String2 ) == \mbox{\hyperlink{group__standardvalues_ga7b8c0d456045358dc5197792205b20be}{SAME\_STRING}} )}
+\DoxyCodeLine{00334     \{}
+\DoxyCodeLine{00335         L\_u8TheComparingResult =  \mbox{\hyperlink{group__standardvalues_ga7b8c0d456045358dc5197792205b20be}{SAME\_STRING}} ;}
+\DoxyCodeLine{00336     \}}
+\DoxyCodeLine{00337     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00338     \{}
+\DoxyCodeLine{00339         L\_u8TheComparingResult = \mbox{\hyperlink{group__standardvalues_gaa956229c39573f53bbcc5e20f445d6c8}{DIFFERENT\_STRING}} ;}
+\DoxyCodeLine{00340     \}}
+\DoxyCodeLine{00341 }
+\DoxyCodeLine{00342     \textcolor{keywordflow}{return} L\_u8TheComparingResult ;}
+\DoxyCodeLine{00343 }
+\DoxyCodeLine{00344 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00129}{DIFFERENT\+\_\+\+STRING}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00120}{SAME\+\_\+\+STRING}}.
+
+
+
+Referenced by \mbox{\hyperlink{_bluetooth__program_8c_source_l00092}{HBluetooth\+\_\+u8\+Comp\+Strings()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_aa3fe2075503bcc8e72eacd6da0b8fcad}\label{_u_a_r_t__program_8c_aa3fe2075503bcc8e72eacd6da0b8fcad}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_u8ReadDataRegister@{MUSART\_u8ReadDataRegister}}
+\index{MUSART\_u8ReadDataRegister@{MUSART\_u8ReadDataRegister}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8ReadDataRegister()}{MUSART\_u8ReadDataRegister()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Read\+Data\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00349}{349}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00350 \{}
+\DoxyCodeLine{00351     \textcolor{keywordflow}{return} A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a3c8a559f7aa8d7f2d6a4b42e43c8c2a0}{DR\_REG}} ;}
+\DoxyCodeLine{00352 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00024}{USART\+\_\+\+Memory\+Map\+Type\+::\+DR\+\_\+\+REG}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a4ab0324766d87def5f6b36bfd1863932}\label{_u_a_r_t__program_8c_a4ab0324766d87def5f6b36bfd1863932}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vClearFlags@{MUSART\_vClearFlags}}
+\index{MUSART\_vClearFlags@{MUSART\_vClearFlags}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vClearFlags()}{MUSART\_vClearFlags()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Clear\+Flags (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00357}{357}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00358 \{}
+\DoxyCodeLine{00359     A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}} = 0 ;}
+\DoxyCodeLine{00360 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00022}{USART\+\_\+\+Memory\+Map\+Type\+::\+SR\+\_\+\+REG}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a0d2b121793165ec2fa0091f7bdebd70b}\label{_u_a_r_t__program_8c_a0d2b121793165ec2fa0091f7bdebd70b}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART\_vRxIntSetStatus@{MUSART\_vRxIntSetStatus}}
+\index{MUSART\_vRxIntSetStatus@{MUSART\_vRxIntSetStatus}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vRxIntSetStatus()}{MUSART\_vRxIntSetStatus()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Rx\+Int\+Set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Status }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00365}{365}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00366 \{}
+\DoxyCodeLine{00367 }
+\DoxyCodeLine{00368     \textcolor{keywordflow}{switch}(A\_u8Status)}
+\DoxyCodeLine{00369     \{}
+\DoxyCodeLine{00370 }
+\DoxyCodeLine{00371         \textcolor{keywordflow}{case} \mbox{\hyperlink{_a_d_c__private_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}} : \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, (\mbox{\hyperlink{_u_a_r_t__private_8h_a5507a61546d8ae77e5baf30e501a1026}{MUSART\_CR1\_RXNEIE\_BIT}}) ); break ;}
+\DoxyCodeLine{00372 }
+\DoxyCodeLine{00373         \textcolor{keywordflow}{case} \mbox{\hyperlink{_a_d_c__private_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}}: \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, (\mbox{\hyperlink{_u_a_r_t__private_8h_a5507a61546d8ae77e5baf30e501a1026}{MUSART\_CR1\_RXNEIE\_BIT}}) ); break ;}
+\DoxyCodeLine{00374 }
+\DoxyCodeLine{00375     \}}
+\DoxyCodeLine{00376 }
+\DoxyCodeLine{00377 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00028}{USART\+\_\+\+Memory\+Map\+Type\+::\+CR1\+\_\+\+REG}}, \mbox{\hyperlink{_a_d_c__private_8h_source_l00428}{DISABLE}}, \mbox{\hyperlink{_a_d_c__private_8h_source_l00427}{ENABLE}}, \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00067}{MUSART\+\_\+\+CR1\+\_\+\+RXNEIE\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a9ef0e7048b326b502767829152cb23f9}\label{_u_a_r_t__program_8c_a9ef0e7048b326b502767829152cb23f9}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART1\_vSetCallBack@{MUSART1\_vSetCallBack}}
+\index{MUSART1\_vSetCallBack@{MUSART1\_vSetCallBack}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART1\_vSetCallBack()}{MUSART1\_vSetCallBack()}}
+{\footnotesize\ttfamily void MUSART1\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{Fptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00382}{382}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00383 \{}
+\DoxyCodeLine{00384     \mbox{\hyperlink{_u_a_r_t__program_8c_a2d2d47184fafc2121db6b548a9fa44aa}{MUSART1\_CallBack}} = Fptr ;}
+\DoxyCodeLine{00385 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00030}{MUSART1\+\_\+\+Call\+Back}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a85a06b37be14149456c2d8cc53b7f559}\label{_u_a_r_t__program_8c_a85a06b37be14149456c2d8cc53b7f559}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART2\_vSetCallBack@{MUSART2\_vSetCallBack}}
+\index{MUSART2\_vSetCallBack@{MUSART2\_vSetCallBack}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART2\_vSetCallBack()}{MUSART2\_vSetCallBack()}}
+{\footnotesize\ttfamily void MUSART2\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{Fptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00390}{390}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00391 \{}
+\DoxyCodeLine{00392     \mbox{\hyperlink{_u_a_r_t__program_8c_a966af792ea30e49464e9c3b0ca98adb4}{MUSART2\_CallBack}} = Fptr ;}
+\DoxyCodeLine{00393 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00031}{MUSART2\+\_\+\+Call\+Back}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_aac1d01690bcd0920bd5ced4670cef24f}\label{_u_a_r_t__program_8c_aac1d01690bcd0920bd5ced4670cef24f}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART6\_vSetCallBack@{MUSART6\_vSetCallBack}}
+\index{MUSART6\_vSetCallBack@{MUSART6\_vSetCallBack}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART6\_vSetCallBack()}{MUSART6\_vSetCallBack()}}
+{\footnotesize\ttfamily void MUSART6\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{Fptr }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00398}{398}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00399 \{}
+\DoxyCodeLine{00400     \mbox{\hyperlink{_u_a_r_t__program_8c_aaa766e15eebb9540ab6905a88f267016}{MUSART6\_CallBack}} = Fptr ;}
+\DoxyCodeLine{00401 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00032}{MUSART6\+\_\+\+Call\+Back}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a7139cd4baabbbcbab0c1fe6d7d4ae1cc}\label{_u_a_r_t__program_8c_a7139cd4baabbbcbab0c1fe6d7d4ae1cc}} 
+\index{UART\_program.c@{UART\_program.c}!USART1\_IRQHandler@{USART1\_IRQHandler}}
+\index{USART1\_IRQHandler@{USART1\_IRQHandler}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{USART1\_IRQHandler()}{USART1\_IRQHandler()}}
+{\footnotesize\ttfamily void USART1\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00406}{406}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00407 \{}
+\DoxyCodeLine{00408 }
+\DoxyCodeLine{00409     \mbox{\hyperlink{_u_a_r_t__interface_8h_a38f9de19e0022108a0536f7b88267d5e}{USART1\_REG}}-\/>SR\_REG = 0 ;}
+\DoxyCodeLine{00410 }
+\DoxyCodeLine{00411     \mbox{\hyperlink{_u_a_r_t__program_8c_a2d2d47184fafc2121db6b548a9fa44aa}{MUSART1\_CallBack}}( ) ;}
+\DoxyCodeLine{00412 }
+\DoxyCodeLine{00413 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00030}{MUSART1\+\_\+\+Call\+Back}}, and \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00039}{USART1\+\_\+\+REG}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a0ca6fd0e6f77921dd1123539857ba0a8}\label{_u_a_r_t__program_8c_a0ca6fd0e6f77921dd1123539857ba0a8}} 
+\index{UART\_program.c@{UART\_program.c}!USART2\_IRQHandler@{USART2\_IRQHandler}}
+\index{USART2\_IRQHandler@{USART2\_IRQHandler}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{USART2\_IRQHandler()}{USART2\_IRQHandler()}}
+{\footnotesize\ttfamily void USART2\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00418}{418}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00419 \{}
+\DoxyCodeLine{00420 }
+\DoxyCodeLine{00421     \mbox{\hyperlink{_u_a_r_t__interface_8h_a1a4ecad9a4dcd0594be0f53e2017dc66}{USART2\_REG}} -\/> SR\_REG = 0 ;}
+\DoxyCodeLine{00422 }
+\DoxyCodeLine{00423     \mbox{\hyperlink{_u_a_r_t__program_8c_a966af792ea30e49464e9c3b0ca98adb4}{MUSART2\_CallBack}}( ) ;}
+\DoxyCodeLine{00424 }
+\DoxyCodeLine{00425 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00031}{MUSART2\+\_\+\+Call\+Back}}, and \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00040}{USART2\+\_\+\+REG}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a12c827857d907ad0cccd586fd934d446}\label{_u_a_r_t__program_8c_a12c827857d907ad0cccd586fd934d446}} 
+\index{UART\_program.c@{UART\_program.c}!USART6\_IRQHandler@{USART6\_IRQHandler}}
+\index{USART6\_IRQHandler@{USART6\_IRQHandler}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{USART6\_IRQHandler()}{USART6\_IRQHandler()}}
+{\footnotesize\ttfamily void USART6\+\_\+\+IRQHandler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00430}{430}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00431 \{}
+\DoxyCodeLine{00432 }
+\DoxyCodeLine{00433     \mbox{\hyperlink{_u_a_r_t__interface_8h_ac07061e10fa07006ad02f7810500ff91}{USART6\_REG}}-\/>SR\_REG = 0 ;}
+\DoxyCodeLine{00434 }
+\DoxyCodeLine{00435     \mbox{\hyperlink{_u_a_r_t__program_8c_aaa766e15eebb9540ab6905a88f267016}{MUSART6\_CallBack}}( ) ;}
+\DoxyCodeLine{00436 }
+\DoxyCodeLine{00437 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00032}{MUSART6\+\_\+\+Call\+Back}}, and \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00041}{USART6\+\_\+\+REG}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_u_a_r_t__program_8c_acaa630488d50c28d4765bae16cb39f1d}\label{_u_a_r_t__program_8c_acaa630488d50c28d4765bae16cb39f1d}} 
+\index{UART\_program.c@{UART\_program.c}!G\_u8String@{G\_u8String}}
+\index{G\_u8String@{G\_u8String}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{G\_u8String}{G\_u8String}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} G\+\_\+u8\+String\mbox{[}20\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00028}{28}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00279}{MUSART\+\_\+ptr\+Receive\+String\+Synch\+Non\+Blocking()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a2d2d47184fafc2121db6b548a9fa44aa}\label{_u_a_r_t__program_8c_a2d2d47184fafc2121db6b548a9fa44aa}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART1\_CallBack@{MUSART1\_CallBack}}
+\index{MUSART1\_CallBack@{MUSART1\_CallBack}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART1\_CallBack}{MUSART1\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ MUSART1\+\_\+\+Call\+Back) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00030}{30}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00382}{MUSART1\+\_\+v\+Set\+Call\+Back()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00406}{USART1\+\_\+\+IRQHandler()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_a966af792ea30e49464e9c3b0ca98adb4}\label{_u_a_r_t__program_8c_a966af792ea30e49464e9c3b0ca98adb4}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART2\_CallBack@{MUSART2\_CallBack}}
+\index{MUSART2\_CallBack@{MUSART2\_CallBack}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART2\_CallBack}{MUSART2\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ MUSART2\+\_\+\+Call\+Back) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00031}{31}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00390}{MUSART2\+\_\+v\+Set\+Call\+Back()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00418}{USART2\+\_\+\+IRQHandler()}}.
+
+\mbox{\Hypertarget{_u_a_r_t__program_8c_aaa766e15eebb9540ab6905a88f267016}\label{_u_a_r_t__program_8c_aaa766e15eebb9540ab6905a88f267016}} 
+\index{UART\_program.c@{UART\_program.c}!MUSART6\_CallBack@{MUSART6\_CallBack}}
+\index{MUSART6\_CallBack@{MUSART6\_CallBack}!UART\_program.c@{UART\_program.c}}
+\doxysubsubsection{\texorpdfstring{MUSART6\_CallBack}{MUSART6\_CallBack}}
+{\footnotesize\ttfamily void($\ast$ MUSART6\+\_\+\+Call\+Back) (void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00032}{32}} of file \mbox{\hyperlink{_u_a_r_t__program_8c_source}{UART\+\_\+program.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00398}{MUSART6\+\_\+v\+Set\+Call\+Back()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00430}{USART6\+\_\+\+IRQHandler()}}.
+

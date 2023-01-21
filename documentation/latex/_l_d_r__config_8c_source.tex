@@ -1,0 +1,58 @@
+\hypertarget{_l_d_r__config_8c_source}{}\doxysection{LDR\+\_\+config.\+c}
+\label{_l_d_r__config_8c_source}\index{COTS/HAL/LDR/LDR\_config.c@{COTS/HAL/LDR/LDR\_config.c}}
+\mbox{\hyperlink{_l_d_r__config_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00002}00002 \textcolor{comment}{ * LDR\_config.c}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00004}00004 \textcolor{comment}{ *  Created on: Dec 22, 2022}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00005}00005 \textcolor{comment}{ *      Author: Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00006}00006 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00008}00008 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00009}00009 \textcolor{comment}{/*                        Include headers                               */}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00010}00010 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00012}00012 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_TYPES.h"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00013}00013 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_COMPILER.h"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00014}00014 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_VALUES.h"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00015}00015 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_BITMATH.h"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00017}00017 \textcolor{preprocessor}{\#include "{}../../MCAL/GPIO/GPIO\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00018}00018 \textcolor{preprocessor}{\#include "{}../../MCAL/ADC/ADC\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00020}00020 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_l_d_r__config_8h}{LDR\_config.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00022}00022 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00023}00023 \textcolor{comment}{/*                     Configuration parameters                         */}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00024}00024 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00026}\mbox{\hyperlink{_l_d_r__config_8c_a0c23507a2dc6ddad5a84d5da434eeff6}{00026}} \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} \mbox{\hyperlink{_l_d_r__config_8c_a0c23507a2dc6ddad5a84d5da434eeff6}{LDR\_Vo}} =}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00029}00029     .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}           = \mbox{\hyperlink{_l_d_r__config_8h_aedeb721d4d55d63ff3acb0f3a11ea540}{LDR\_Vo\_PORT}}        ,}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00031}00031     .Pin            = \mbox{\hyperlink{_l_d_r__config_8h_a88024d277641da10134e8116462e2529}{LDR\_Vo\_PIN}}      ,}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00033}00033     .Mode           = \mbox{\hyperlink{group__gpio__modes_gaa234a69e2b2cf024a771929e7f1cb54e}{GPIOx\_MODE\_ANALOG}} ,}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00035}00035 \} ;}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00038}00038 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00039}00039 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00041}\mbox{\hyperlink{_l_d_r__config_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}{00041}} \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) \mbox{\hyperlink{_l_d_r__config_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}{LDR\_CHANNEL}} = \mbox{\hyperlink{_a_d_c__interface_8h_ab7cb08b296fa07b6310ad727694dcf20}{CHANNEL0}} ;}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00043}00043 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00044}00044 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_l_d_r__config_8c_source_l00052}00052 }
+
+\end{DoxyCode}

@@ -1,0 +1,112 @@
+\hypertarget{_l_d_r__program_8c}{}\doxysection{COTS/\+HAL/\+LDR/\+LDR\+\_\+program.c File Reference}
+\label{_l_d_r__program_8c}\index{COTS/HAL/LDR/LDR\_program.c@{COTS/HAL/LDR/LDR\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+RCC/\+MRCC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+ADC/\+ADC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LDR\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LDR\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LDR\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_d_r__program_8c_a0c1e4e0b87cf427990bf8d6a1f86f71f}{HLDR\+\_\+v\+Init}} (void)
+\item 
+\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} \mbox{\hyperlink{_l_d_r__program_8c_af6717b8fdaf7bbd1eefd10e63db382c9}{HLDR\+\_\+u16\+Digital\+Output\+Value}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} \mbox{\hyperlink{_l_d_r__program_8c_a0c23507a2dc6ddad5a84d5da434eeff6}{LDR\+\_\+\+Vo}}
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_l_d_r__program_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}{LDR\+\_\+\+CHANNEL}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_l_d_r__program_8c_a0c1e4e0b87cf427990bf8d6a1f86f71f}\label{_l_d_r__program_8c_a0c1e4e0b87cf427990bf8d6a1f86f71f}} 
+\index{LDR\_program.c@{LDR\_program.c}!HLDR\_vInit@{HLDR\_vInit}}
+\index{HLDR\_vInit@{HLDR\_vInit}!LDR\_program.c@{LDR\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLDR\_vInit()}{HLDR\_vInit()}}
+{\footnotesize\ttfamily void HLDR\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_d_r__program_8c_source_l00036}{36}} of file \mbox{\hyperlink{_l_d_r__program_8c_source}{LDR\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037 \{}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039     \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\_vInit}}( \&\mbox{\hyperlink{_l_d_r__program_8c_a0c23507a2dc6ddad5a84d5da434eeff6}{LDR\_Vo}} ) ;}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041     \mbox{\hyperlink{_a_d_c__interface_8h_af1a488a0e8573d75ace08adefec357d8}{MADC\_vInit}}( ) ;}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_d_r__config_8c_source_l00026}{LDR\+\_\+\+Vo}}, \mbox{\hyperlink{_a_d_c__program_8c_source_l00030}{MADC\+\_\+v\+Init()}}, and \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_l_d_r__program_8c_af6717b8fdaf7bbd1eefd10e63db382c9}\label{_l_d_r__program_8c_af6717b8fdaf7bbd1eefd10e63db382c9}} 
+\index{LDR\_program.c@{LDR\_program.c}!HLDR\_u16DigitalOutputValue@{HLDR\_u16DigitalOutputValue}}
+\index{HLDR\_u16DigitalOutputValue@{HLDR\_u16DigitalOutputValue}!LDR\_program.c@{LDR\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLDR\_u16DigitalOutputValue()}{HLDR\_u16DigitalOutputValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} HLDR\+\_\+u16\+Digital\+Output\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_d_r__program_8c_source_l00048}{48}} of file \mbox{\hyperlink{_l_d_r__program_8c_source}{LDR\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049 \{}
+\DoxyCodeLine{00050 }
+\DoxyCodeLine{00051     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}}) L\_u16DigitalResult = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053     L\_u16DigitalResult = \mbox{\hyperlink{_a_d_c__interface_8h_ad34b6ade8bfd3b81620521f33d31ff39}{MADC\_u16ConvertToDigital}}( \mbox{\hyperlink{_l_d_r__program_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}{LDR\_CHANNEL}} ) ;}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055     \textcolor{keywordflow}{return} L\_u16DigitalResult ;}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_d_r__config_8c_source_l00041}{LDR\+\_\+\+CHANNEL}}, \mbox{\hyperlink{_a_d_c__interface_8h_ad34b6ade8bfd3b81620521f33d31ff39}{MADC\+\_\+u16\+Convert\+To\+Digital()}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_l_d_r__program_8c_a0c23507a2dc6ddad5a84d5da434eeff6}\label{_l_d_r__program_8c_a0c23507a2dc6ddad5a84d5da434eeff6}} 
+\index{LDR\_program.c@{LDR\_program.c}!LDR\_Vo@{LDR\_Vo}}
+\index{LDR\_Vo@{LDR\_Vo}!LDR\_program.c@{LDR\_program.c}}
+\doxysubsubsection{\texorpdfstring{LDR\_Vo}{LDR\_Vo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} LDR\+\_\+\+Vo\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_l_d_r__config_8c_source_l00026}{26}} of file \mbox{\hyperlink{_l_d_r__config_8c_source}{LDR\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_d_r__program_8c_source_l00036}{HLDR\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_l_d_r__program_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}\label{_l_d_r__program_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}} 
+\index{LDR\_program.c@{LDR\_program.c}!LDR\_CHANNEL@{LDR\_CHANNEL}}
+\index{LDR\_CHANNEL@{LDR\_CHANNEL}!LDR\_program.c@{LDR\_program.c}}
+\doxysubsubsection{\texorpdfstring{LDR\_CHANNEL}{LDR\_CHANNEL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} LDR\+\_\+\+CHANNEL\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_l_d_r__config_8c_source_l00041}{41}} of file \mbox{\hyperlink{_l_d_r__config_8c_source}{LDR\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_d_r__program_8c_source_l00048}{HLDR\+\_\+u16\+Digital\+Output\+Value()}}.
+

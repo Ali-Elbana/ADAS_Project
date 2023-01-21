@@ -51,6 +51,8 @@ var _g_p_i_o__interface_8h =
     [ "GPIOx_AF13", "group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92", null ],
     [ "GPIOx_AF14", "group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db", null ],
     [ "GPIOx_AF15", "group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52", null ],
+    [ "GPIOA_LOW_NIBBLE_HIGH", "_g_p_i_o__interface_8h.html#a9d859616aeb3e958a080361b697407e0", null ],
+    [ "GPIOA_LOW_NIBBLE_LOW", "_g_p_i_o__interface_8h.html#a17cc313ed43b01fdb370bc4a5da084da", null ],
     [ "MGPIOx_vLockedPins", "_g_p_i_o__interface_8h.html#a9691f4861ec6e00ce72839a3d72c376f", null ],
     [ "MGPIOx_vSetPinMode", "_g_p_i_o__interface_8h.html#afc362fef8b827f868df511979deeabe7", null ],
     [ "MGPIOx_vSetPinOutputType", "_g_p_i_o__interface_8h.html#aa257a3acb91828ecf11477c882cc8a47", null ],
@@ -62,5 +64,6 @@ var _g_p_i_o__interface_8h =
     [ "MGPIOx_vSetAlternateFunctionON", "_g_p_i_o__interface_8h.html#a7e88babca6499dd8eb11315215bac806", null ],
     [ "MGPIOx_vSetPortConfigLock", "_g_p_i_o__interface_8h.html#aa08db93858812ffc7e233d590dd049eb", null ],
     [ "MGPIOx_vInit", "_g_p_i_o__interface_8h.html#a6903496555fd7b13cc21ad6465c2c8b8", null ],
-    [ "MGPIOx_vTogglePinValue", "_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c", null ]
+    [ "MGPIOx_vTogglePinValue", "_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c", null ],
+    [ "GPIO_vSetPortValue", "_g_p_i_o__interface_8h.html#a70103a27ed8080a8d819d5a7ff61b606", null ]
 ];

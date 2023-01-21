@@ -36,6 +36,8 @@ void \mbox{\hyperlink{_g_p_i_o__program_8c_a9f4bdac7d7d5430ad1b71bd86ec7fb5a}{MG
 void \mbox{\hyperlink{_g_p_i_o__program_8c_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\+\_\+v\+Init}} (\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} $\ast$A\+\_\+x\+Pin\+Config)
 \item 
 void \mbox{\hyperlink{_g_p_i_o__program_8c_a36bc9410064c8b745c2ef939c545e8f4}{MGPIOx\+\_\+v\+Toggle\+Pin\+Value}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Pin\+ID)
+\item 
+void \mbox{\hyperlink{_g_p_i_o__program_8c_a60035aa79276198b838dab805589de45}{GPIO\+\_\+v\+Set\+Port\+Value}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Port\+Value)
 \end{DoxyCompactItemize}
 
 
@@ -118,7 +120,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}\label{_g_p_i_o__program_8c_a2aa50bedad3f84f3ddc1d373f6a1677f}} 
 \index{GPIO\_program.c@{GPIO\_program.c}!MGPIOx\_vSetPinMode@{MGPIOx\_vSetPinMode}}
@@ -157,7 +159,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00070}{70}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
 
 
 
@@ -219,7 +221,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00096}{96}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00223}{GPIOx\+\_\+\+OPENDRAIN}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00230}{GPIOx\+\_\+\+PUSHPULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00231}{GPIOx\+\_\+\+OPENDRAIN}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00238}{GPIOx\+\_\+\+PUSHPULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 
 
@@ -262,7 +264,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00141}{141}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
 
 
 
@@ -305,7 +307,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00167}{167}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
 
 
 
@@ -349,7 +351,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00193}{193}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00044}{GET\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_g_p_i_o__program_8c_a3d6ad5ad5f68b519f08d4be6292bf6a2}\label{_g_p_i_o__program_8c_a3d6ad5ad5f68b519f08d4be6292bf6a2}} 
 \index{GPIO\_program.c@{GPIO\_program.c}!MGPIOx\_vSetPinValue@{MGPIOx\_vSetPinValue}}
@@ -407,7 +409,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00220}{220}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00310}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00317}{GPIOx\+\_\+\+LOW}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00318}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00325}{GPIOx\+\_\+\+LOW}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_g_p_i_o__program_8c_a29da100159c6f4c0db683e1a12bbe827}\label{_g_p_i_o__program_8c_a29da100159c6f4c0db683e1a12bbe827}} 
 \index{GPIO\_program.c@{GPIO\_program.c}!MGPIOx\_vSetResetAtomic@{MGPIOx\_vSetResetAtomic}}
@@ -477,7 +479,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00265}{265}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00310}{GPIOx\+\_\+\+HIGH}}, and \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00317}{GPIOx\+\_\+\+LOW}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00318}{GPIOx\+\_\+\+HIGH}}, and \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00325}{GPIOx\+\_\+\+LOW}}.
 
 \mbox{\Hypertarget{_g_p_i_o__program_8c_a9f4bdac7d7d5430ad1b71bd86ec7fb5a}\label{_g_p_i_o__program_8c_a9f4bdac7d7d5430ad1b71bd86ec7fb5a}} 
 \index{GPIO\_program.c@{GPIO\_program.c}!MGPIOx\_vSetAlternateFunctionON@{MGPIOx\_vSetAlternateFunctionON}}
@@ -588,7 +590,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00322}{322}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00332}{GPIOx\+\_\+\+PIN0}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00339}{GPIOx\+\_\+\+PIN1}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00402}{GPIOx\+\_\+\+PIN10}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00409}{GPIOx\+\_\+\+PIN11}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00416}{GPIOx\+\_\+\+PIN12}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00423}{GPIOx\+\_\+\+PIN13}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00430}{GPIOx\+\_\+\+PIN14}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00437}{GPIOx\+\_\+\+PIN15}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00346}{GPIOx\+\_\+\+PIN2}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00353}{GPIOx\+\_\+\+PIN3}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00360}{GPIOx\+\_\+\+PIN4}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00367}{GPIOx\+\_\+\+PIN5}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00374}{GPIOx\+\_\+\+PIN6}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00381}{GPIOx\+\_\+\+PIN7}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00388}{GPIOx\+\_\+\+PIN8}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00395}{GPIOx\+\_\+\+PIN9}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00066}{CLR\+\_\+\+BITs}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00340}{GPIOx\+\_\+\+PIN0}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00347}{GPIOx\+\_\+\+PIN1}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00410}{GPIOx\+\_\+\+PIN10}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00417}{GPIOx\+\_\+\+PIN11}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00424}{GPIOx\+\_\+\+PIN12}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00431}{GPIOx\+\_\+\+PIN13}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00438}{GPIOx\+\_\+\+PIN14}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00445}{GPIOx\+\_\+\+PIN15}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00354}{GPIOx\+\_\+\+PIN2}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00361}{GPIOx\+\_\+\+PIN3}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00368}{GPIOx\+\_\+\+PIN4}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00375}{GPIOx\+\_\+\+PIN5}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00382}{GPIOx\+\_\+\+PIN6}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00389}{GPIOx\+\_\+\+PIN7}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00396}{GPIOx\+\_\+\+PIN8}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00403}{GPIOx\+\_\+\+PIN9}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00059}{SET\+\_\+\+BITs}}.
 
 
 
@@ -655,5 +657,38 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00434}{434}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00194}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00201}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00208}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00037}{TOGGLE\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00037}{TOGGLE\+\_\+\+BIT}}.
+
+\mbox{\Hypertarget{_g_p_i_o__program_8c_a60035aa79276198b838dab805589de45}\label{_g_p_i_o__program_8c_a60035aa79276198b838dab805589de45}} 
+\index{GPIO\_program.c@{GPIO\_program.c}!GPIO\_vSetPortValue@{GPIO\_vSetPortValue}}
+\index{GPIO\_vSetPortValue@{GPIO\_vSetPortValue}!GPIO\_program.c@{GPIO\_program.c}}
+\doxysubsubsection{\texorpdfstring{GPIO\_vSetPortValue()}{GPIO\_vSetPortValue()}}
+{\footnotesize\ttfamily void GPIO\+\_\+v\+Set\+Port\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Port\+Value }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00457}{457}} of file \mbox{\hyperlink{_g_p_i_o__program_8c_source}{GPIO\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00458 \{}
+\DoxyCodeLine{00459 }
+\DoxyCodeLine{00460     \textcolor{keywordflow}{switch}(A\_u8PortID)}
+\DoxyCodeLine{00461     \{}
+\DoxyCodeLine{00462 }
+\DoxyCodeLine{00463         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__gpio__ports_gace1f2998664b32913e0c7f9a76699060}{GPIO\_PORTA}} : \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>ODRx = ( ((\mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>ODRx \& \mbox{\hyperlink{_g_p_i_o__config_8h_a9d96fa9df375defe1b227c0bbe29b4c6}{PORTA\_BIT\_MANIPULATION}}) | (A\_u16PortValue)) << 1 ) ; \textcolor{keywordflow}{break}; \textcolor{comment}{//Start writing from PIN1 to PIN8.}}
+\DoxyCodeLine{00464 }
+\DoxyCodeLine{00465         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}} : \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>ODRx = ( ((\mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>ODRx \& \mbox{\hyperlink{_g_p_i_o__config_8h_a7256abf66d8c2b306d014d6b50bccab1}{PORTB\_BIT\_MANIPULATION}}) | (A\_u16PortValue)) << 5 ) ; \textcolor{keywordflow}{break}; \textcolor{comment}{//Start writing from PIN5 to PIN12.}}
+\DoxyCodeLine{00466 }
+\DoxyCodeLine{00467         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__gpio__ports_ga1f67e53aff58af920fc394ec5d86faeb}{GPIO\_PORTC}} : \mbox{\hyperlink{group__gpio__registers_ga2dca03332d620196ba943bc2346eaa08}{GPIOC}}-\/>ODRx ; \textcolor{keywordflow}{break}; \textcolor{comment}{// You shouldn't write on this port.}}
+\DoxyCodeLine{00468 }
+\DoxyCodeLine{00469         default :  \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00470     \}}
+\DoxyCodeLine{00471 }
+\DoxyCodeLine{00472 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00202}{GPIO\+\_\+\+PORTA}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00209}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00216}{GPIO\+\_\+\+PORTC}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00126}{GPIOC}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00039}{PORTA\+\_\+\+BIT\+\_\+\+MANIPULATION}}, and \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00041}{PORTB\+\_\+\+BIT\+\_\+\+MANIPULATION}}.
 

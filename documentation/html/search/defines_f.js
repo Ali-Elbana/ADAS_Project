@@ -1,11 +1,18 @@
 var searchData=
 [
-  ['tim10en_0',['TIM10EN',['../_m_r_c_c__config_8h.html#a3053eb99263385b85b7e19bec54305aa',1,'MRCC_config.h']]],
-  ['tim11en_1',['TIM11EN',['../_m_r_c_c__config_8h.html#ab442574264657cde41ab8eb3dd71d6ed',1,'MRCC_config.h']]],
-  ['tim1en_2',['TIM1EN',['../_m_r_c_c__config_8h.html#a17c885a91c193f32502e7e4815913611',1,'MRCC_config.h']]],
-  ['tim2en_3',['TIM2EN',['../_m_r_c_c__config_8h.html#abbceb243e8305e9efff7f67d8043f414',1,'MRCC_config.h']]],
-  ['tim3en_4',['TIM3EN',['../_m_r_c_c__config_8h.html#acae94df24840ec677afedb7b95bbfd0e',1,'MRCC_config.h']]],
-  ['tim4en_5',['TIM4EN',['../_m_r_c_c__config_8h.html#a9975cc53efd1925ef0865b60f00d73a6',1,'MRCC_config.h']]],
-  ['tim5en_6',['TIM5EN',['../_m_r_c_c__config_8h.html#ae51a33646e7f3654bb22616773d8bc1d',1,'MRCC_config.h']]],
-  ['tim9en_7',['TIM9EN',['../_m_r_c_c__config_8h.html#a64fae74ec20e36f4b72ed88f84bccfe3',1,'MRCC_config.h']]]
+  ['periodic_5finterval_5ftick_5ftime_0',['PERIODIC_INTERVAL_TICK_TIME',['../_sys_tick__interface_8h.html#a2c359c6330c0a281f506a4ce7cf6cc97',1,'SysTick_interface.h']]],
+  ['pll_1',['PLL',['../_m_r_c_c__config_8h.html#a4ca8c7fe9892e150e5422bf40ec7fda2',1,'MRCC_config.h']]],
+  ['pllclk_2',['PLLCLK',['../_m_r_c_c__private_8h.html#a44c2896186404cd98f9ec4e88dbdf1c8',1,'PLLCLK():&#160;MRCC_private.h'],['../_m_r_c_c__private_8h.html#a44c2896186404cd98f9ec4e88dbdf1c8',1,'PLLCLK():&#160;MRCC_private.h']]],
+  ['plli2s_3',['PLLI2S',['../_m_r_c_c__config_8h.html#ac7d554290c0ba74bc7d01f1d61a9e681',1,'MRCC_config.h']]],
+  ['plli2sclk_4',['PLLI2SCLK',['../_m_r_c_c__private_8h.html#ac0e78c63de6d71325d131c75a1a9180c',1,'MRCC_private.h']]],
+  ['pllm_5',['PLLM',['../_m_r_c_c__config_8h.html#acbfff191678f1d57d6fcc997b1474c46',1,'MRCC_config.h']]],
+  ['plln_6',['PLLN',['../_m_r_c_c__config_8h.html#a7abf0e7508f234041c336a88760fd0d2',1,'MRCC_config.h']]],
+  ['pllp_7',['PLLP',['../_m_r_c_c__config_8h.html#a13a4d0b95d03583df51a0d5483da27f8',1,'MRCC_config.h']]],
+  ['pllq_8',['PLLQ',['../_m_r_c_c__config_8h.html#a88c9577ebd8731df35ea298209102810',1,'MRCC_config.h']]],
+  ['pllsrc_9',['PLLSRC',['../_m_r_c_c__config_8h.html#af966b87aba1fa36c0eac3d989e283ce0',1,'MRCC_config.h']]],
+  ['porta_5fbit_5fmanipulation_10',['PORTA_BIT_MANIPULATION',['../_g_p_i_o__config_8h.html#a9d96fa9df375defe1b227c0bbe29b4c6',1,'GPIO_config.h']]],
+  ['portb_5fbit_5fmanipulation_11',['PORTB_BIT_MANIPULATION',['../_g_p_i_o__config_8h.html#a7256abf66d8c2b306d014d6b50bccab1',1,'GPIO_config.h']]],
+  ['ppre1_12',['PPRE1',['../_m_r_c_c__config_8h.html#a81ac3a0ed565da12fa92246ff591e6ac',1,'MRCC_config.h']]],
+  ['ppre2_13',['PPRE2',['../_m_r_c_c__config_8h.html#a91107dd195dd2639d0768e02861c9a9b',1,'MRCC_config.h']]],
+  ['pwren_14',['PWREN',['../_m_r_c_c__config_8h.html#a199280c524fafc4d41b2777c623efc88',1,'MRCC_config.h']]]
 ];

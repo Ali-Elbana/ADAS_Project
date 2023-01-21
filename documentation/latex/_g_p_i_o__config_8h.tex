@@ -10,10 +10,14 @@ This file contains the GPIO configurations.
 \item 
 \#define \mbox{\hyperlink{_g_p_i_o__config_8h_a13e84566d603a1923361df965110c94d}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}~(0b1110000000000000)
 \begin{DoxyCompactList}\small\item\em lock PA13, PA14 and PA15 \end{DoxyCompactList}\item 
-\#define \mbox{\hyperlink{_g_p_i_o__config_8h_ab3758da87052ce9d2988dc84b5c9d1eb}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}~(0b0000000000011100)
+\#define \mbox{\hyperlink{_g_p_i_o__config_8h_ab3758da87052ce9d2988dc84b5c9d1eb}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}~(0b0000100000011100)
 \begin{DoxyCompactList}\small\item\em lock PB2, PB3 and PB4 \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{_g_p_i_o__config_8h_aec9764fb7c7a18a92444892a6333e614}{LCKK\+\_\+\+BIT\+\_\+\+POS}}~(16U)
-\begin{DoxyCompactList}\small\item\em Position of LCKK bit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Position of LCKK bit. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_g_p_i_o__config_8h_a9d96fa9df375defe1b227c0bbe29b4c6}{PORTA\+\_\+\+BIT\+\_\+\+MANIPULATION}}~0x\+E000
+\item 
+\#define \mbox{\hyperlink{_g_p_i_o__config_8h_a7256abf66d8c2b306d014d6b50bccab1}{PORTB\+\_\+\+BIT\+\_\+\+MANIPULATION}}~0x001C
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -53,7 +57,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{22}} of f
 \index{GPIO\_config.h@{GPIO\_config.h}!GPIOB\_PIN\_POS@{GPIOB\_PIN\_POS}}
 \index{GPIOB\_PIN\_POS@{GPIOB\_PIN\_POS}!GPIO\_config.h@{GPIO\_config.h}}
 \doxysubsubsection{\texorpdfstring{GPIOB\_PIN\_POS}{GPIOB\_PIN\_POS}}
-{\footnotesize\ttfamily \#define GPIOB\+\_\+\+PIN\+\_\+\+POS~(0b0000000000011100)}
+{\footnotesize\ttfamily \#define GPIOB\+\_\+\+PIN\+\_\+\+POS~(0b0000100000011100)}
 
 
 
@@ -76,4 +80,24 @@ Position of LCKK bit.
 
 
 Definition at line \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{36}} of file \mbox{\hyperlink{_g_p_i_o__config_8h_source}{GPIO\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{_g_p_i_o__config_8h_a9d96fa9df375defe1b227c0bbe29b4c6}\label{_g_p_i_o__config_8h_a9d96fa9df375defe1b227c0bbe29b4c6}} 
+\index{GPIO\_config.h@{GPIO\_config.h}!PORTA\_BIT\_MANIPULATION@{PORTA\_BIT\_MANIPULATION}}
+\index{PORTA\_BIT\_MANIPULATION@{PORTA\_BIT\_MANIPULATION}!GPIO\_config.h@{GPIO\_config.h}}
+\doxysubsubsection{\texorpdfstring{PORTA\_BIT\_MANIPULATION}{PORTA\_BIT\_MANIPULATION}}
+{\footnotesize\ttfamily \#define PORTA\+\_\+\+BIT\+\_\+\+MANIPULATION~0x\+E000}
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00039}{39}} of file \mbox{\hyperlink{_g_p_i_o__config_8h_source}{GPIO\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{_g_p_i_o__config_8h_a7256abf66d8c2b306d014d6b50bccab1}\label{_g_p_i_o__config_8h_a7256abf66d8c2b306d014d6b50bccab1}} 
+\index{GPIO\_config.h@{GPIO\_config.h}!PORTB\_BIT\_MANIPULATION@{PORTB\_BIT\_MANIPULATION}}
+\index{PORTB\_BIT\_MANIPULATION@{PORTB\_BIT\_MANIPULATION}!GPIO\_config.h@{GPIO\_config.h}}
+\doxysubsubsection{\texorpdfstring{PORTB\_BIT\_MANIPULATION}{PORTB\_BIT\_MANIPULATION}}
+{\footnotesize\ttfamily \#define PORTB\+\_\+\+BIT\+\_\+\+MANIPULATION~0x001C}
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00041}{41}} of file \mbox{\hyperlink{_g_p_i_o__config_8h_source}{GPIO\+\_\+config.\+h}}.
 

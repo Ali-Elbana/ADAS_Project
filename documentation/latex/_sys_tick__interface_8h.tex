@@ -159,7 +159,11 @@ Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00035}{35}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_sys_tick__private_8h_source_l00091}{CLKSOURCE}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+References \mbox{\hyperlink{_sys_tick__private_8h_source_l00091}{CLKSOURCE}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00030}{HLCD\+\_\+v\+Init()}}.
 
 \mbox{\Hypertarget{_sys_tick__interface_8h_a348ed480bf5ecebe9f0f08cc6fc9fbf4}\label{_sys_tick__interface_8h_a348ed480bf5ecebe9f0f08cc6fc9fbf4}} 
 \index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vSetBusyWait@{MSysTick\_vSetBusyWait}}
@@ -223,6 +227,10 @@ Synchronous delay function.
 \mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Ticks} & Number of ticks to delay in milli seconds for \\
 \hline
 \end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00224}{HLCD\+\_\+v\+Clear()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00415}{HLCD\+\_\+v\+Disp\+Cursor\+With\+Blinking()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00443}{HLCD\+\_\+v\+Disp\+Shift\+Left\+String()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00030}{HLCD\+\_\+v\+Init()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00429}{HLCD\+\_\+v\+Set\+Cursor\+Blinking\+OFF()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00400}{HLCD\+\_\+v\+Set\+Disp\+OFF()}}, and \mbox{\hyperlink{_l_c_d__program_8c_source_l00385}{HLCD\+\_\+v\+Set\+Shift\+Left\+On()}}.
+
 \mbox{\Hypertarget{_sys_tick__interface_8h_a03c3d971653533d421d39fa094393dba}\label{_sys_tick__interface_8h_a03c3d971653533d421d39fa094393dba}} 
 \index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vDelaySec@{MSysTick\_vDelaySec}}
 \index{MSysTick\_vDelaySec@{MSysTick\_vDelaySec}!SysTick\_interface.h@{SysTick\_interface.h}}
@@ -315,7 +323,7 @@ Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00302}{302}} o
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_sys_tick__private_8h_source_l00097}{TICKINT}}.
 
 \mbox{\Hypertarget{_sys_tick__interface_8h_a45ee3f2564c8000bc7cf233e96d1c69e}\label{_sys_tick__interface_8h_a45ee3f2564c8000bc7cf233e96d1c69e}} 
 \index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_u32GetElapsedTime@{MSysTick\_u32GetElapsedTime}}
@@ -347,7 +355,7 @@ Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00320}{320}} o
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_sys_tick__interface_8h_aa51d26a36ec48495d2c3e8373d2a1a51}\label{_sys_tick__interface_8h_aa51d26a36ec48495d2c3e8373d2a1a51}} 
 \index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_u32GetRemainingTime@{MSysTick\_u32GetRemainingTime}}
@@ -379,7 +387,7 @@ Definition at line \mbox{\hyperlink{_sys_tick__program_8c_source_l00332}{332}} o
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_sys_tick__private_8h_source_l00070}{Sys\+Tick}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_sys_tick__interface_8h_a7251bfe242375bc64ba056925ad386df}\label{_sys_tick__interface_8h_a7251bfe242375bc64ba056925ad386df}} 
 \index{SysTick\_interface.h@{SysTick\_interface.h}!MSysTick\_vEnable@{MSysTick\_vEnable}}

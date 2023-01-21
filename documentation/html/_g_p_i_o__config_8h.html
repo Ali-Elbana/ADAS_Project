@@ -106,12 +106,16 @@ Macros</h2></td></tr>
 <tr class="memitem:a13e84566d603a1923361df965110c94d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__config_8h.html#a13e84566d603a1923361df965110c94d">GPIOA_PIN_POS</a>&#160;&#160;&#160;(0b1110000000000000)</td></tr>
 <tr class="memdesc:a13e84566d603a1923361df965110c94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">lock PA13, PA14 and PA15  <a href="_g_p_i_o__config_8h.html#a13e84566d603a1923361df965110c94d">More...</a><br /></td></tr>
 <tr class="separator:a13e84566d603a1923361df965110c94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3758da87052ce9d2988dc84b5c9d1eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__config_8h.html#ab3758da87052ce9d2988dc84b5c9d1eb">GPIOB_PIN_POS</a>&#160;&#160;&#160;(0b0000000000011100)</td></tr>
+<tr class="memitem:ab3758da87052ce9d2988dc84b5c9d1eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__config_8h.html#ab3758da87052ce9d2988dc84b5c9d1eb">GPIOB_PIN_POS</a>&#160;&#160;&#160;(0b0000100000011100)</td></tr>
 <tr class="memdesc:ab3758da87052ce9d2988dc84b5c9d1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">lock PB2, PB3 and PB4  <a href="_g_p_i_o__config_8h.html#ab3758da87052ce9d2988dc84b5c9d1eb">More...</a><br /></td></tr>
 <tr class="separator:ab3758da87052ce9d2988dc84b5c9d1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec9764fb7c7a18a92444892a6333e614"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__config_8h.html#aec9764fb7c7a18a92444892a6333e614">LCKK_BIT_POS</a>&#160;&#160;&#160;(16U)</td></tr>
 <tr class="memdesc:aec9764fb7c7a18a92444892a6333e614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position of LCKK bit.  <a href="_g_p_i_o__config_8h.html#aec9764fb7c7a18a92444892a6333e614">More...</a><br /></td></tr>
 <tr class="separator:aec9764fb7c7a18a92444892a6333e614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d96fa9df375defe1b227c0bbe29b4c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__config_8h.html#a9d96fa9df375defe1b227c0bbe29b4c6">PORTA_BIT_MANIPULATION</a>&#160;&#160;&#160;0xE000</td></tr>
+<tr class="separator:a9d96fa9df375defe1b227c0bbe29b4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7256abf66d8c2b306d014d6b50bccab1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__config_8h.html#a7256abf66d8c2b306d014d6b50bccab1">PORTB_BIT_MANIPULATION</a>&#160;&#160;&#160;0x001C</td></tr>
+<tr class="separator:a7256abf66d8c2b306d014d6b50bccab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file contains the GPIO configurations. </p>
@@ -146,7 +150,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define GPIOB_PIN_POS&#160;&#160;&#160;(0b0000000000011100)</td>
+          <td class="memname">#define GPIOB_PIN_POS&#160;&#160;&#160;(0b0000100000011100)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -175,13 +179,45 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a9d96fa9df375defe1b227c0bbe29b4c6" name="a9d96fa9df375defe1b227c0bbe29b4c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d96fa9df375defe1b227c0bbe29b4c6">&#9670;&#160;</a></span>PORTA_BIT_MANIPULATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORTA_BIT_MANIPULATION&#160;&#160;&#160;0xE000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_g_p_i_o__config_8h_source.html#l00039">39</a> of file <a class="el" href="_g_p_i_o__config_8h_source.html">GPIO_config.h</a>.</p>
+
+</div>
+</div>
+<a id="a7256abf66d8c2b306d014d6b50bccab1" name="a7256abf66d8c2b306d014d6b50bccab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7256abf66d8c2b306d014d6b50bccab1">&#9670;&#160;</a></span>PORTB_BIT_MANIPULATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PORTB_BIT_MANIPULATION&#160;&#160;&#160;0x001C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_g_p_i_o__config_8h_source.html#l00041">41</a> of file <a class="el" href="_g_p_i_o__config_8h_source.html">GPIO_config.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_7491c6db81a5c0dd574a8291d8a3e0d7.html">GPIO</a></li><li class="navelem"><a class="el" href="_g_p_i_o__config_8h.html">GPIO_config.h</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Jan 21 2023 15:01:00 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

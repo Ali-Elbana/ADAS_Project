@@ -112,7 +112,11 @@ struct \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+T
 \#define \mbox{\hyperlink{group__gpio__alternate__functions_ga5f30c724dc478433a443b52b3ad2a6db}{GPIOx\+\_\+\+AF14}}~(14)
 \begin{DoxyCompactList}\small\item\em GPIO Alternate function 14. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{group__gpio__alternate__functions_ga2af2f39b86aad620e5a7b1fce2620a52}{GPIOx\+\_\+\+AF15}}~(15)
-\begin{DoxyCompactList}\small\item\em GPIO Alternate function 15. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em GPIO Alternate function 15. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_g_p_i_o__interface_8h_a9d859616aeb3e958a080361b697407e0}{GPIOA\+\_\+\+LOW\+\_\+\+NIBBLE\+\_\+\+HIGH}}~0x\+FF
+\item 
+\#define \mbox{\hyperlink{_g_p_i_o__interface_8h_a17cc313ed43b01fdb370bc4a5da084da}{GPIOA\+\_\+\+LOW\+\_\+\+NIBBLE\+\_\+\+LOW}}~0x00
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -139,7 +143,9 @@ void \mbox{\hyperlink{_g_p_i_o__interface_8h_aa08db93858812ffc7e233d590dd049eb}{
 void \mbox{\hyperlink{_g_p_i_o__interface_8h_a6903496555fd7b13cc21ad6465c2c8b8}{MGPIOx\+\_\+v\+Init}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}}) A\+\_\+x\+Pin\+Config)
 \begin{DoxyCompactList}\small\item\em Initialize the GPIO with a certain configuration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}{MGPIOx\+\_\+v\+Toggle\+Pin\+Value}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Pin\+ID)
-\begin{DoxyCompactList}\small\item\em Toggles a certain\textquotesingle{}s pin\textquotesingle{}s value on a certain port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Toggles a certain\textquotesingle{}s pin\textquotesingle{}s value on a certain port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_g_p_i_o__interface_8h_a70103a27ed8080a8d819d5a7ff61b606}{GPIO\+\_\+v\+Set\+Port\+Value}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Port\+ID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}) A\+\_\+u16\+Port\+Value)
+\begin{DoxyCompactList}\small\item\em Sets a certain port\textquotesingle{}s output value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -157,6 +163,29 @@ Ali El Bana \& Mo Alaa
 
 
 Definition in file \mbox{\hyperlink{_g_p_i_o__interface_8h_source}{GPIO\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_a9d859616aeb3e958a080361b697407e0}\label{_g_p_i_o__interface_8h_a9d859616aeb3e958a080361b697407e0}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!GPIOA\_LOW\_NIBBLE\_HIGH@{GPIOA\_LOW\_NIBBLE\_HIGH}}
+\index{GPIOA\_LOW\_NIBBLE\_HIGH@{GPIOA\_LOW\_NIBBLE\_HIGH}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA\_LOW\_NIBBLE\_HIGH}{GPIOA\_LOW\_NIBBLE\_HIGH}}
+{\footnotesize\ttfamily \#define GPIOA\+\_\+\+LOW\+\_\+\+NIBBLE\+\_\+\+HIGH~0x\+FF}
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00570}{570}} of file \mbox{\hyperlink{_g_p_i_o__interface_8h_source}{GPIO\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_a17cc313ed43b01fdb370bc4a5da084da}\label{_g_p_i_o__interface_8h_a17cc313ed43b01fdb370bc4a5da084da}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!GPIOA\_LOW\_NIBBLE\_LOW@{GPIOA\_LOW\_NIBBLE\_LOW}}
+\index{GPIOA\_LOW\_NIBBLE\_LOW@{GPIOA\_LOW\_NIBBLE\_LOW}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{GPIOA\_LOW\_NIBBLE\_LOW}{GPIOA\_LOW\_NIBBLE\_LOW}}
+{\footnotesize\ttfamily \#define GPIOA\+\_\+\+LOW\+\_\+\+NIBBLE\+\_\+\+LOW~0x00}
+
+
+
+Definition at line \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00572}{572}} of file \mbox{\hyperlink{_g_p_i_o__interface_8h_source}{GPIO\+\_\+interface.\+h}}.
 
 
 
@@ -221,7 +250,7 @@ Definition at line \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00024}{24}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00112}{GPIOA}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00022}{GPIOA\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_g_p_i_o__private_8h_source_l00119}{GPIOB}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00029}{GPIOB\+\_\+\+PIN\+\_\+\+POS}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_g_p_i_o__config_8h_source_l00036}{LCKK\+\_\+\+BIT\+\_\+\+POS}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}\label{_g_p_i_o__interface_8h_afc362fef8b827f868df511979deeabe7}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetPinMode@{MGPIOx\_vSetPinMode}}
@@ -340,7 +369,7 @@ Sets a certain pin\textquotesingle{}s output value on a speific port.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00082}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00073}{HDCM\+\_\+v\+Move\+Forward()}}, and \mbox{\hyperlink{_d_c_m__program_8c_source_l00091}{HDCM\+\_\+v\+Stop\+Motor()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00082}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00073}{HDCM\+\_\+v\+Move\+Forward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00091}{HDCM\+\_\+v\+Stop\+Motor()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}.
 
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_a8372b7233448858c9b80d9ef73555a55}\label{_g_p_i_o__interface_8h_a8372b7233448858c9b80d9ef73555a55}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vSetResetAtomic@{MGPIOx\_vSetResetAtomic}}
@@ -412,7 +441,7 @@ Initialize the GPIO with a certain configuration.
 \end{DoxyParams}
 
 
-Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00029}{HDCM\+\_\+v\+Init\+Motor()}}.
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00029}{HDCM\+\_\+v\+Init\+Motor()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00030}{HLCD\+\_\+v\+Init()}}, \mbox{\hyperlink{_l_d_r__program_8c_source_l00036}{HLDR\+\_\+v\+Init()}}, \mbox{\hyperlink{_s_p_i__program_8c_source_l00033}{MSPI\+\_\+v\+Init()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00037}{MUSART\+\_\+v\+Init()}}.
 
 \mbox{\Hypertarget{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}\label{_g_p_i_o__interface_8h_aeb229c6e980c1ffe03123a18f1242a0c}} 
 \index{GPIO\_interface.h@{GPIO\_interface.h}!MGPIOx\_vTogglePinValue@{MGPIOx\_vTogglePinValue}}
@@ -431,3 +460,24 @@ Toggles a certain\textquotesingle{}s pin\textquotesingle{}s value on a certain p
 \mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Pin\+ID} & The pin to toggle its value \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{_g_p_i_o__interface_8h_a70103a27ed8080a8d819d5a7ff61b606}\label{_g_p_i_o__interface_8h_a70103a27ed8080a8d819d5a7ff61b606}} 
+\index{GPIO\_interface.h@{GPIO\_interface.h}!GPIO\_vSetPortValue@{GPIO\_vSetPortValue}}
+\index{GPIO\_vSetPortValue@{GPIO\_vSetPortValue}!GPIO\_interface.h@{GPIO\_interface.h}}
+\doxysubsubsection{\texorpdfstring{GPIO\_vSetPortValue()}{GPIO\_vSetPortValue()}}
+{\footnotesize\ttfamily void GPIO\+\_\+v\+Set\+Port\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Port\+ID,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}})}]{A\+\_\+u16\+Port\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets a certain port\textquotesingle{}s output value. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Port\+ID} & The port to out the value on \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u16\+Port\+Value} & The value to set on the port \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}.
+

@@ -28,7 +28,9 @@ void \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HD
 void \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\+\_\+v\+Move\+Backward}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
 \begin{DoxyCompactList}\small\item\em Move a certain motor backward. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\+\_\+v\+Stop\+Motor}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
-\begin{DoxyCompactList}\small\item\em Stop a certain motor\textquotesingle{}s movement completely. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stop a certain motor\textquotesingle{}s movement completely. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_c_m__interface_8h_a54505eb4c5f0e208c12932694831baed}{HDCM\+\_\+v\+Motor\+Speed\+Cntrl}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Speed\+Ratio)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -68,6 +70,10 @@ Initialize a motor Initialize a motor with a certain GPIO Port \& Pin based on t
 \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} 
 \end{DoxySeeAlso}
+
+
+Referenced by \mbox{\hyperlink{_car_control__program_8c_source_l00061}{HCar\+Control\+\_\+v\+Init\+Car()}}.
+
 \mbox{\Hypertarget{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}\label{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}} 
 \index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vMoveForward@{HDCM\_vMoveForward}}
 \index{HDCM\_vMoveForward@{HDCM\_vMoveForward}!DCM\_interface.h@{DCM\_interface.h}}
@@ -83,6 +89,10 @@ Move a certain motor forward.
 \mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to move forward \\
 \hline
 \end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_car_control__program_8c_source_l00069}{HCar\+Control\+\_\+v\+Move\+Forward()}}, \mbox{\hyperlink{_car_control__program_8c_source_l00093}{HCar\+Control\+\_\+v\+Turn\+Left()}}, and \mbox{\hyperlink{_car_control__program_8c_source_l00085}{HCar\+Control\+\_\+v\+Turn\+Right()}}.
+
 \mbox{\Hypertarget{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}\label{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}} 
 \index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vMoveBackward@{HDCM\_vMoveBackward}}
 \index{HDCM\_vMoveBackward@{HDCM\_vMoveBackward}!DCM\_interface.h@{DCM\_interface.h}}
@@ -98,6 +108,10 @@ Move a certain motor backward.
 \mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to move backward \\
 \hline
 \end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_car_control__program_8c_source_l00077}{HCar\+Control\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_car_control__program_8c_source_l00093}{HCar\+Control\+\_\+v\+Turn\+Left()}}, and \mbox{\hyperlink{_car_control__program_8c_source_l00085}{HCar\+Control\+\_\+v\+Turn\+Right()}}.
+
 \mbox{\Hypertarget{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}\label{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}} 
 \index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vStopMotor@{HDCM\_vStopMotor}}
 \index{HDCM\_vStopMotor@{HDCM\_vStopMotor}!DCM\_interface.h@{DCM\_interface.h}}
@@ -113,3 +127,13 @@ Stop a certain motor\textquotesingle{}s movement completely.
 \mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to stop \\
 \hline
 \end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_car_control__program_8c_source_l00101}{HCar\+Control\+\_\+v\+Stop\+Car()}}.
+
+\mbox{\Hypertarget{_d_c_m__interface_8h_a54505eb4c5f0e208c12932694831baed}\label{_d_c_m__interface_8h_a54505eb4c5f0e208c12932694831baed}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vMotorSpeedCntrl@{HDCM\_vMotorSpeedCntrl}}
+\index{HDCM\_vMotorSpeedCntrl@{HDCM\_vMotorSpeedCntrl}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vMotorSpeedCntrl()}{HDCM\_vMotorSpeedCntrl()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Motor\+Speed\+Cntrl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Speed\+Ratio }\end{DoxyParamCaption})}
+

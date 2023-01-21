@@ -263,7 +263,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   87</span>    <span class="comment">// Enable EXTI on a line.</span></div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR = 0;</div>
 <div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR |= (<a class="code hl_define" href="group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a">ENABLE</a> &lt;&lt; L_u8ShiftedOffset);</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR |= (<a class="code hl_define" href="_a_d_c__private_8h.html#a514ad415fb6125ba296793df7d1a468a">ENABLE</a> &lt;&lt; L_u8ShiftedOffset);</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span><span class="comment">// Set EXTI Triggered status on a line.</span></div>
 <div class="line"><span class="lineno">   93</span><span class="preprocessor">#if EXTI_LINE0_TRIGGER == EXTI_RisingEdge</span></div>
@@ -430,12 +430,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  269</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">  270</span> </div>
 <div class="line"><span class="lineno">  271</span>}</div>
+<div class="ttc" id="a_a_d_c__private_8h_html_a514ad415fb6125ba296793df7d1a468a"><div class="ttname"><a href="_a_d_c__private_8h.html#a514ad415fb6125ba296793df7d1a468a">ENABLE</a></div><div class="ttdeci">#define ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="_a_d_c__private_8h_source.html#l00427">ADC_private.h:427</a></div></div>
 <div class="ttc" id="agroup__bitmath_html_ga6ec8b9eaa50956e59aedcd2c050298d3"><div class="ttname"><a href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a></div><div class="ttdeci">#define SET_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">LSTD_BITMATH.h:23</a></div></div>
-<div class="ttc" id="agroup__exti__line__status_html_ga514ad415fb6125ba296793df7d1a468a"><div class="ttname"><a href="group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a">ENABLE</a></div><div class="ttdeci">#define ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__private_8h_source.html#l00085">EXTI_private.h:85</a></div></div>
 <div class="ttc" id="agroup__exti__registers_html_gade59853bea97901ef8816f8d8623cdf2"><div class="ttname"><a href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a></div><div class="ttdeci">#define MEXTI</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__private_8h_source.html#l00071">EXTI_private.h:71</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">LSTD_VALUES.h:57</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">LSTD_VALUES.h:56</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__private_8h_source.html#l00085">ENABLE</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
+<p class="reference">References <a class="el" href="_a_d_c__private_8h_source.html#l00427">ENABLE</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
 
 </div>
 </div>
@@ -716,9 +716,9 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  387</span> </div>
 <div class="line"><span class="lineno">  388</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_ga5d9011faf4106bf40c74ff617b1e4973"><div class="ttname"><a href="group__interrupt__lines.html#ga5d9011faf4106bf40c74ff617b1e4973">EXTI_LINE0</a></div><div class="ttdeci">#define EXTI_LINE0</div><div class="ttdoc">Line 0.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00104">EXTI_interface.h:104</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">LSTD_VALUES.h:43</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">LSTD_VALUES.h:42</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00104">EXTI_LINE0</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00104">EXTI_LINE0</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -752,7 +752,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  404</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_gaaba6df92e2a71ffd93baec85cd0f9e89"><div class="ttname"><a href="group__interrupt__lines.html#gaaba6df92e2a71ffd93baec85cd0f9e89">EXTI_LINE1</a></div><div class="ttdeci">#define EXTI_LINE1</div><div class="ttdoc">Line 1.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00110">EXTI_interface.h:110</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00110">EXTI_LINE1</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00110">EXTI_LINE1</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -786,7 +786,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  420</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_gaa2510982e59ba9c313eada9cdc76aa08"><div class="ttname"><a href="group__interrupt__lines.html#gaa2510982e59ba9c313eada9cdc76aa08">EXTI_LINE2</a></div><div class="ttdeci">#define EXTI_LINE2</div><div class="ttdoc">Line 2.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00116">EXTI_interface.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00116">EXTI_LINE2</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00116">EXTI_LINE2</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -820,7 +820,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  436</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_ga9534db63b2c5e59646d415e13325c028"><div class="ttname"><a href="group__interrupt__lines.html#ga9534db63b2c5e59646d415e13325c028">EXTI_LINE3</a></div><div class="ttdeci">#define EXTI_LINE3</div><div class="ttdoc">Line 3.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00122">EXTI_interface.h:122</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00122">EXTI_LINE3</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00122">EXTI_LINE3</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -854,7 +854,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  452</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_ga148019fb5e5bbf3dbb6cc5eb74541df0"><div class="ttname"><a href="group__interrupt__lines.html#ga148019fb5e5bbf3dbb6cc5eb74541df0">EXTI_LINE4</a></div><div class="ttdeci">#define EXTI_LINE4</div><div class="ttdoc">Line 4.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00128">EXTI_interface.h:128</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00128">EXTI_LINE4</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00128">EXTI_LINE4</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
 
 </div>
 </div>
@@ -910,7 +910,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_5fb87216867aef742b0165cc60e7ad53.html">EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__program_8c.html">EXTI_program.c</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Jan 21 2023 15:01:00 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

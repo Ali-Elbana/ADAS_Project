@@ -138,112 +138,123 @@ $(document).ready(function(){initNavTree('_g_p_i_o__interface_8h_source.html',''
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c">  141</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c">MGPIOx_vTogglePinValue</a>(<a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8PortID, <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8PinID);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">/************************************************************************/</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">/*                          Interfacing macros                          */</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">/************************************************************************/</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#gad653959c0619374559a3ef878315a87d">  158</a></span><span class="preprocessor">#define GPIOx_MODE_INPUT (0b00)</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#ga4972d73d7eb99665462f063f0264138f">  165</a></span><span class="preprocessor">#define GPIOx_MODE_OUTPUT (0b01)</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#ga68830dfd5f7c4ce1bc4993e6dc409dda">  172</a></span><span class="preprocessor">#define GPIOx_MODE_AF (0b10)</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#gaa234a69e2b2cf024a771929e7f1cb54e">  179</a></span><span class="preprocessor">#define GPIOx_MODE_ANALOG (0b11)</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="group__gpio__ports.html#gace1f2998664b32913e0c7f9a76699060">  194</a></span><span class="preprocessor">#define GPIO_PORTA (0)</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923">  201</a></span><span class="preprocessor">#define GPIO_PORTB (1)</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="group__gpio__ports.html#ga1f67e53aff58af920fc394ec5d86faeb">  208</a></span><span class="preprocessor">#define GPIO_PORTC (2)</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="group__gpio__output__types.html#gae72919755d4c0875acfed6f678486329">  223</a></span><span class="preprocessor">#define GPIOx_OPENDRAIN (1)</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno"><a class="line" href="group__gpio__output__types.html#ga5343b590d444a2b8a37f7507366869ea">  230</a></span><span class="preprocessor">#define GPIOx_PUSHPULL (2)</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#ga0c2f1d04e61f1ea65a8e68751013e2b2">  245</a></span><span class="preprocessor">#define GPIOx_LowSpeed (0b00)</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#ga8dbc220db50dd66e8bde537a1fa5c539">  252</a></span><span class="preprocessor">#define GPIOx_MediumSpeed (0b01)</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#ga74ec6384b34245c8e97ce6e028872b44">  259</a></span><span class="preprocessor">#define GPIOx_HighSpeed (0b10)</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#gaaeeee0e7cc243a81f32af45e30ce4447">  266</a></span><span class="preprocessor">#define GPIOx_VeryHighSpeed (0b11)</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="group__gpio__pull__types.html#gaf4cf4bb06c94c525f63f7c84377d48f8">  281</a></span><span class="preprocessor">#define GPIOx_NoPull (0b00)</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="group__gpio__pull__types.html#ga76fd5ecbcc083cc92f448ff4bab5f9ce">  288</a></span><span class="preprocessor">#define GPIOx_PullUp (0b01)</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="group__gpio__pull__types.html#gacc24f327614c0148d3f0af59d8bad2f8">  295</a></span><span class="preprocessor">#define GPIOx_PullDown (0b10)</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="group__gpio__output__values.html#gad4850c5b570986c1a0b8111114fbbfdc">  310</a></span><span class="preprocessor">#define GPIOx_HIGH (1)</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="group__gpio__output__values.html#ga024aaae1f1031a1886437ac9089ddab9">  317</a></span><span class="preprocessor">#define GPIOx_LOW (2)</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga0555a2d75b515e59c007ea1981dbdabc">  332</a></span><span class="preprocessor">#define GPIOx_PIN0 (0)</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga4396ba448ed90c7fb9db8218574c2cb9">  339</a></span><span class="preprocessor">#define GPIOx_PIN1 (1)</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga761496d60fa0d24fad0ba2bd677b6b1e">  346</a></span><span class="preprocessor">#define GPIOx_PIN2 (2)</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga673960489ce24947429db3f907a3fe73">  353</a></span><span class="preprocessor">#define GPIOx_PIN3 (3)</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gae89fddd9995edc54ead9f44f21d348ec">  360</a></span><span class="preprocessor">#define GPIOx_PIN4 (4)</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gac8ab9dabe136553fbb48c7fe06862934">  367</a></span><span class="preprocessor">#define GPIOx_PIN5 (5)</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga2d0996a4344c4825922db05b6bf34b3b">  374</a></span><span class="preprocessor">#define GPIOx_PIN6 (6)</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gab441403d46ced3f1577194a14069a2d0">  381</a></span><span class="preprocessor">#define GPIOx_PIN7 (7)</span></div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91">  388</a></span><span class="preprocessor">#define GPIOx_PIN8 (8)</span></div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga5f7c3f8fbd957501ef6e6799909b7474">  395</a></span><span class="preprocessor">#define GPIOx_PIN9 (9)</span></div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga05197bf08ff254157acaf1fa16260873">  402</a></span><span class="preprocessor">#define GPIOx_PIN10 (10)</span></div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga7d19430f2fca4df12e35f7d8c81b2341">  409</a></span><span class="preprocessor">#define GPIOx_PIN11 (11)</span></div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga177981236c6aa829d1e60226a401290d">  416</a></span><span class="preprocessor">#define GPIOx_PIN12 (12)</span></div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gaf0d7d102f365587c63616c62e84fd42f">  423</a></span><span class="preprocessor">#define GPIOx_PIN13 (13)</span></div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga994ef956212316de9161da30623eac07">  430</a></span><span class="preprocessor">#define GPIOx_PIN14 (14)</span></div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga8762d4d63fea54051d3765143d0a75fc">  437</a></span><span class="preprocessor">#define GPIOx_PIN15 (15)</span></div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gab51bc32bfd8375fcc33c347c945654ab">  452</a></span><span class="preprocessor">#define GPIOx_AF0 (0)</span></div>
-<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
-<div class="line"><a id="l00459" name="l00459"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gae7a091c8afd3bcfbcd05980b22be4cfb">  459</a></span><span class="preprocessor">#define GPIOx_AF1 (1)</span></div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga2e5bc5321250c96b720ca25bdc50fb2c">  466</a></span><span class="preprocessor">#define GPIOx_AF2 (2)</span></div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
-<div class="line"><a id="l00473" name="l00473"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga70805e6ffce753a9c2845334a97ece79">  473</a></span><span class="preprocessor">#define GPIOx_AF3 (3)</span></div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span> </div>
-<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga518a9cdab14db515469a3b79a3bcb498">  480</a></span><span class="preprocessor">#define GPIOx_AF4 (4)</span></div>
-<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga9e21769f3bb32137699ab10d8128c485">  487</a></span><span class="preprocessor">#define GPIOx_AF5 (5)</span></div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga1915c7d75ae6917d870928ca0cce7e5f">  494</a></span><span class="preprocessor">#define GPIOx_AF6 (6)</span></div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gab6c3d03c1a4962f7505dab5ebf294968">  501</a></span><span class="preprocessor">#define GPIOx_AF7 (7)</span></div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga8c11bf59cac7dda3ac8da73e70eac000">  508</a></span><span class="preprocessor">#define GPIOx_AF8 (8)</span></div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span> </div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga9dd9d5c2ad3695c2194485165be529a2">  515</a></span><span class="preprocessor">#define GPIOx_AF9 (9)</span></div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gaec9a524f2894a9872038bef534bf94ee">  522</a></span><span class="preprocessor">#define GPIOx_AF10 (10)</span></div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gaa2f3651491f1ee2845fba7447ef57a3d">  529</a></span><span class="preprocessor">#define GPIOx_AF11 (11)</span></div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span> </div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gac8cbc080fe90d1b4a2068bab138d5e4d">  536</a></span><span class="preprocessor">#define GPIOx_AF12 (12)</span></div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span> </div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92">  543</a></span><span class="preprocessor">#define GPIOx_AF13 (13)</span></div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db">  550</a></span><span class="preprocessor">#define GPIOx_AF14 (14)</span></div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52">  557</a></span><span class="preprocessor">#define GPIOx_AF15 (15)</span></div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="preprocessor">#endif </span><span class="comment">//_GPIO_interface_H</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="_g_p_i_o__interface_8h.html#a70103a27ed8080a8d819d5a7ff61b606">  148</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_g_p_i_o__interface_8h.html#a70103a27ed8080a8d819d5a7ff61b606">GPIO_vSetPortValue</a>( <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8PortID, <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a>) A_u16PortValue ) ;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">/************************************************************************/</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">/*                          Interfacing macros                          */</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">/************************************************************************/</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#gad653959c0619374559a3ef878315a87d">  166</a></span><span class="preprocessor">#define GPIOx_MODE_INPUT (0b00)</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#ga4972d73d7eb99665462f063f0264138f">  173</a></span><span class="preprocessor">#define GPIOx_MODE_OUTPUT (0b01)</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#ga68830dfd5f7c4ce1bc4993e6dc409dda">  180</a></span><span class="preprocessor">#define GPIOx_MODE_AF (0b10)</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="group__gpio__modes.html#gaa234a69e2b2cf024a771929e7f1cb54e">  187</a></span><span class="preprocessor">#define GPIOx_MODE_ANALOG (0b11)</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="group__gpio__ports.html#gace1f2998664b32913e0c7f9a76699060">  202</a></span><span class="preprocessor">#define GPIO_PORTA (0)</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923">  209</a></span><span class="preprocessor">#define GPIO_PORTB (1)</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="group__gpio__ports.html#ga1f67e53aff58af920fc394ec5d86faeb">  216</a></span><span class="preprocessor">#define GPIO_PORTC (2)</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno"><a class="line" href="group__gpio__output__types.html#gae72919755d4c0875acfed6f678486329">  231</a></span><span class="preprocessor">#define GPIOx_OPENDRAIN (1)</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="group__gpio__output__types.html#ga5343b590d444a2b8a37f7507366869ea">  238</a></span><span class="preprocessor">#define GPIOx_PUSHPULL (2)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#ga0c2f1d04e61f1ea65a8e68751013e2b2">  253</a></span><span class="preprocessor">#define GPIOx_LowSpeed (0b00)</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#ga8dbc220db50dd66e8bde537a1fa5c539">  260</a></span><span class="preprocessor">#define GPIOx_MediumSpeed (0b01)</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#ga74ec6384b34245c8e97ce6e028872b44">  267</a></span><span class="preprocessor">#define GPIOx_HighSpeed (0b10)</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="group__gpio__pin__speed.html#gaaeeee0e7cc243a81f32af45e30ce4447">  274</a></span><span class="preprocessor">#define GPIOx_VeryHighSpeed (0b11)</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="group__gpio__pull__types.html#gaf4cf4bb06c94c525f63f7c84377d48f8">  289</a></span><span class="preprocessor">#define GPIOx_NoPull (0b00)</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="group__gpio__pull__types.html#ga76fd5ecbcc083cc92f448ff4bab5f9ce">  296</a></span><span class="preprocessor">#define GPIOx_PullUp (0b01)</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="group__gpio__pull__types.html#gacc24f327614c0148d3f0af59d8bad2f8">  303</a></span><span class="preprocessor">#define GPIOx_PullDown (0b10)</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="group__gpio__output__values.html#gad4850c5b570986c1a0b8111114fbbfdc">  318</a></span><span class="preprocessor">#define GPIOx_HIGH (1)</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="group__gpio__output__values.html#ga024aaae1f1031a1886437ac9089ddab9">  325</a></span><span class="preprocessor">#define GPIOx_LOW (2)</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga0555a2d75b515e59c007ea1981dbdabc">  340</a></span><span class="preprocessor">#define GPIOx_PIN0 (0)</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga4396ba448ed90c7fb9db8218574c2cb9">  347</a></span><span class="preprocessor">#define GPIOx_PIN1 (1)</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga761496d60fa0d24fad0ba2bd677b6b1e">  354</a></span><span class="preprocessor">#define GPIOx_PIN2 (2)</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga673960489ce24947429db3f907a3fe73">  361</a></span><span class="preprocessor">#define GPIOx_PIN3 (3)</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gae89fddd9995edc54ead9f44f21d348ec">  368</a></span><span class="preprocessor">#define GPIOx_PIN4 (4)</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gac8ab9dabe136553fbb48c7fe06862934">  375</a></span><span class="preprocessor">#define GPIOx_PIN5 (5)</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga2d0996a4344c4825922db05b6bf34b3b">  382</a></span><span class="preprocessor">#define GPIOx_PIN6 (6)</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gab441403d46ced3f1577194a14069a2d0">  389</a></span><span class="preprocessor">#define GPIOx_PIN7 (7)</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91">  396</a></span><span class="preprocessor">#define GPIOx_PIN8 (8)</span></div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga5f7c3f8fbd957501ef6e6799909b7474">  403</a></span><span class="preprocessor">#define GPIOx_PIN9 (9)</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span> </div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga05197bf08ff254157acaf1fa16260873">  410</a></span><span class="preprocessor">#define GPIOx_PIN10 (10)</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga7d19430f2fca4df12e35f7d8c81b2341">  417</a></span><span class="preprocessor">#define GPIOx_PIN11 (11)</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga177981236c6aa829d1e60226a401290d">  424</a></span><span class="preprocessor">#define GPIOx_PIN12 (12)</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#gaf0d7d102f365587c63616c62e84fd42f">  431</a></span><span class="preprocessor">#define GPIOx_PIN13 (13)</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga994ef956212316de9161da30623eac07">  438</a></span><span class="preprocessor">#define GPIOx_PIN14 (14)</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="group__gpio__output__pins.html#ga8762d4d63fea54051d3765143d0a75fc">  445</a></span><span class="preprocessor">#define GPIOx_PIN15 (15)</span></div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gab51bc32bfd8375fcc33c347c945654ab">  460</a></span><span class="preprocessor">#define GPIOx_AF0 (0)</span></div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span> </div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gae7a091c8afd3bcfbcd05980b22be4cfb">  467</a></span><span class="preprocessor">#define GPIOx_AF1 (1)</span></div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga2e5bc5321250c96b720ca25bdc50fb2c">  474</a></span><span class="preprocessor">#define GPIOx_AF2 (2)</span></div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span> </div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga70805e6ffce753a9c2845334a97ece79">  481</a></span><span class="preprocessor">#define GPIOx_AF3 (3)</span></div>
+<div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span> </div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga518a9cdab14db515469a3b79a3bcb498">  488</a></span><span class="preprocessor">#define GPIOx_AF4 (4)</span></div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span> </div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga9e21769f3bb32137699ab10d8128c485">  495</a></span><span class="preprocessor">#define GPIOx_AF5 (5)</span></div>
+<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga1915c7d75ae6917d870928ca0cce7e5f">  502</a></span><span class="preprocessor">#define GPIOx_AF6 (6)</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gab6c3d03c1a4962f7505dab5ebf294968">  509</a></span><span class="preprocessor">#define GPIOx_AF7 (7)</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga8c11bf59cac7dda3ac8da73e70eac000">  516</a></span><span class="preprocessor">#define GPIOx_AF8 (8)</span></div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span> </div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga9dd9d5c2ad3695c2194485165be529a2">  523</a></span><span class="preprocessor">#define GPIOx_AF9 (9)</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gaec9a524f2894a9872038bef534bf94ee">  530</a></span><span class="preprocessor">#define GPIOx_AF10 (10)</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span> </div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gaa2f3651491f1ee2845fba7447ef57a3d">  537</a></span><span class="preprocessor">#define GPIOx_AF11 (11)</span></div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#gac8cbc080fe90d1b4a2068bab138d5e4d">  544</a></span><span class="preprocessor">#define GPIOx_AF12 (12)</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92">  551</a></span><span class="preprocessor">#define GPIOx_AF13 (13)</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span> </div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db">  558</a></span><span class="preprocessor">#define GPIOx_AF14 (14)</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno"><a class="line" href="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52">  565</a></span><span class="preprocessor">#define GPIOx_AF15 (15)</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno"><a class="line" href="_g_p_i_o__interface_8h.html#a9d859616aeb3e958a080361b697407e0">  570</a></span><span class="preprocessor">#define GPIOA_LOW_NIBBLE_HIGH   0xFF</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span> </div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno"><a class="line" href="_g_p_i_o__interface_8h.html#a17cc313ed43b01fdb370bc4a5da084da">  572</a></span><span class="preprocessor">#define GPIOA_LOW_NIBBLE_LOW    0x00</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span> </div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="preprocessor">#endif </span><span class="comment">//_GPIO_interface_H</span></div>
 <div class="ttc" id="a_g_p_i_o__interface_8h_html_a6903496555fd7b13cc21ad6465c2c8b8"><div class="ttname"><a href="_g_p_i_o__interface_8h.html#a6903496555fd7b13cc21ad6465c2c8b8">MGPIOx_vInit</a></div><div class="ttdeci">void MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig)</div><div class="ttdoc">Initialize the GPIO with a certain configuration.</div></div>
+<div class="ttc" id="a_g_p_i_o__interface_8h_html_a70103a27ed8080a8d819d5a7ff61b606"><div class="ttname"><a href="_g_p_i_o__interface_8h.html#a70103a27ed8080a8d819d5a7ff61b606">GPIO_vSetPortValue</a></div><div class="ttdeci">void GPIO_vSetPortValue(VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue)</div><div class="ttdoc">Sets a certain port's output value.</div></div>
 <div class="ttc" id="a_g_p_i_o__interface_8h_html_a7e88babca6499dd8eb11315215bac806"><div class="ttname"><a href="_g_p_i_o__interface_8h.html#a7e88babca6499dd8eb11315215bac806">MGPIOx_vSetAlternateFunctionON</a></div><div class="ttdeci">void MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8AFID)</div><div class="ttdoc">Applys an alternative function on a certain pin.</div></div>
 <div class="ttc" id="a_g_p_i_o__interface_8h_html_a8372b7233448858c9b80d9ef73555a55"><div class="ttname"><a href="_g_p_i_o__interface_8h.html#a8372b7233448858c9b80d9ef73555a55">MGPIOx_vSetResetAtomic</a></div><div class="ttdeci">void MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)</div><div class="ttdoc">Resets a certain pin's output value on a speific port.</div></div>
 <div class="ttc" id="a_g_p_i_o__interface_8h_html_a9691f4861ec6e00ce72839a3d72c376f"><div class="ttname"><a href="_g_p_i_o__interface_8h.html#a9691f4861ec6e00ce72839a3d72c376f">MGPIOx_vLockedPins</a></div><div class="ttdeci">void MGPIOx_vLockedPins(void)</div><div class="ttdoc">Locks the prohibited GPIO PINs.</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__program_8c_source.html#l00024">GPIO_program.c:24</a></div></div>
@@ -258,6 +269,7 @@ $(document).ready(function(){initNavTree('_g_p_i_o__interface_8h_source.html',''
 <div class="ttc" id="agroup__compiler_html_ga30c6e83ff2cac859ff6d852ea99fa3f1"><div class="ttname"><a href="group__compiler.html#ga30c6e83ff2cac859ff6d852ea99fa3f1">P2VAR</a></div><div class="ttdeci">#define P2VAR(ptrtype)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00037">LSTD_COMPILER.h:37</a></div></div>
 <div class="ttc" id="agroup__compiler_html_gaf36fbf9b72d48ddc34a627487ef0bba9"><div class="ttname"><a href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a></div><div class="ttdeci">#define VAR(vartype)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">LSTD_COMPILER.h:23</a></div></div>
 <div class="ttc" id="agroup__typedefs_html_ga8127f1441872f9f912b20a65f40d4d24"><div class="ttname"><a href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a></div><div class="ttdeci">unsigned char u8_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00030">LSTD_TYPES.h:30</a></div></div>
+<div class="ttc" id="agroup__typedefs_html_gac9b933f433c9cde06e3f0467a098556b"><div class="ttname"><a href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a></div><div class="ttdeci">unsigned short int u16_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00044">LSTD_TYPES.h:44</a></div></div>
 <div class="ttc" id="astruct_m_g_p_i_ox___config_type_html"><div class="ttname"><a href="struct_m_g_p_i_ox___config_type.html">MGPIOx_ConfigType</a></div><div class="ttdoc">MDIO Configuration structure for a speific PIN initialization.</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__interface_8h_source.html#l00018">GPIO_interface.h:19</a></div></div>
 <div class="ttc" id="astruct_m_g_p_i_ox___config_type_html_a3f8b1a7b7115da39c634caa265c9a288"><div class="ttname"><a href="struct_m_g_p_i_ox___config_type.html#a3f8b1a7b7115da39c634caa265c9a288">MGPIOx_ConfigType::Mode</a></div><div class="ttdeci">u8_t Mode</div><div class="ttdoc">Configures a speific GPIO mode.</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__interface_8h_source.html#l00031">GPIO_interface.h:31</a></div></div>
 <div class="ttc" id="astruct_m_g_p_i_ox___config_type_html_a524fd644a012e61e7884de20267b12bd"><div class="ttname"><a href="struct_m_g_p_i_ox___config_type.html#a524fd644a012e61e7884de20267b12bd">MGPIOx_ConfigType::InputType</a></div><div class="ttdeci">u8_t InputType</div><div class="ttdoc">Configures a speific GPIO input type.</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__interface_8h_source.html#l00043">GPIO_interface.h:43</a></div></div>
@@ -272,7 +284,7 @@ $(document).ready(function(){initNavTree('_g_p_i_o__interface_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_7491c6db81a5c0dd574a8291d8a3e0d7.html">GPIO</a></li><li class="navelem"><a class="el" href="_g_p_i_o__interface_8h.html">GPIO_interface.h</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Jan 21 2023 15:01:00 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

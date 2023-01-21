@@ -450,7 +450,27 @@
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00454}00454 \textcolor{comment}{/**************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00455}00455 \textcolor{comment}{/**************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00456}00456 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00457}00457 }
-\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00458}00458 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00457}\mbox{\hyperlink{_g_p_i_o__program_8c_a60035aa79276198b838dab805589de45}{00457}} \mbox{\hyperlink{group__compiler_ga846278437e035619630d1fffd9974e82}{FUNC}}(\textcolor{keywordtype}{void}) \mbox{\hyperlink{_g_p_i_o__program_8c_a60035aa79276198b838dab805589de45}{GPIO\_vSetPortValue}}( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) A\_u8PortID, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}}) A\_u16PortValue )}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00458}00458 \{}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00459}00459 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00460}00460     \textcolor{keywordflow}{switch}(A\_u8PortID)}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00461}00461     \{}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00462}00462 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00463}00463         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__gpio__ports_gace1f2998664b32913e0c7f9a76699060}{GPIO\_PORTA}} : \mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>ODRx = ( ((\mbox{\hyperlink{group__gpio__registers_gac485358099728ddae050db37924dd6b7}{GPIOA}}-\/>ODRx \& \mbox{\hyperlink{_g_p_i_o__config_8h_a9d96fa9df375defe1b227c0bbe29b4c6}{PORTA\_BIT\_MANIPULATION}}) | (A\_u16PortValue)) << 1 ) ; \textcolor{keywordflow}{break}; \textcolor{comment}{//Start writing from PIN1 to PIN8.}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00464}00464 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00465}00465         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}} : \mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>ODRx = ( ((\mbox{\hyperlink{group__gpio__registers_ga68b66ac73be4c836db878a42e1fea3cd}{GPIOB}}-\/>ODRx \& \mbox{\hyperlink{_g_p_i_o__config_8h_a7256abf66d8c2b306d014d6b50bccab1}{PORTB\_BIT\_MANIPULATION}}) | (A\_u16PortValue)) << 5 ) ; \textcolor{keywordflow}{break}; \textcolor{comment}{//Start writing from PIN5 to PIN12.}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00466}00466 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00467}00467         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__gpio__ports_ga1f67e53aff58af920fc394ec5d86faeb}{GPIO\_PORTC}} : \mbox{\hyperlink{group__gpio__registers_ga2dca03332d620196ba943bc2346eaa08}{GPIOC}}-\/>ODRx ; \textcolor{keywordflow}{break}; \textcolor{comment}{// You shouldn't write on this port.}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00468}00468 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00469}00469         default :  \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00470}00470     \}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00471}00471 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00472}00472 \}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00473}00473 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00474}00474 \textcolor{comment}{/**************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00475}00475 \textcolor{comment}{/**************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00476}00476 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00477}00477 }
+\DoxyCodeLine{\Hypertarget{_g_p_i_o__program_8c_source_l00478}00478 }
 
 \end{DoxyCode}

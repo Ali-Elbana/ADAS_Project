@@ -159,7 +159,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00042}{42}} of 
 \DoxyCodeLine{00087     \textcolor{comment}{// Enable EXTI on a line.}}
 \DoxyCodeLine{00088     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = 0;}
 \DoxyCodeLine{00089 }
-\DoxyCodeLine{00090     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR |= (\mbox{\hyperlink{group__exti__line__status_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
+\DoxyCodeLine{00090     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR |= (\mbox{\hyperlink{_a_d_c__private_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
 \DoxyCodeLine{00091 }
 \DoxyCodeLine{00092 \textcolor{comment}{// Set EXTI Triggered status on a line.}}
 \DoxyCodeLine{00093 \textcolor{preprocessor}{\#if EXTI\_LINE0\_TRIGGER == EXTI\_RisingEdge}}
@@ -330,7 +330,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00042}{42}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00085}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_a_d_c__private_8h_source_l00427}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_acc081412bea6e4187f804bb1d82210a5}\label{_e_x_t_i__program_8c_acc081412bea6e4187f804bb1d82210a5}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}}
@@ -546,7 +546,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00377}{377}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00104}{EXTI\+\_\+\+LINE0}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00043}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00104}{EXTI\+\_\+\+LINE0}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_a49cfdd46eb8d0ef3e1987514aa9343dc}\label{_e_x_t_i__program_8c_a49cfdd46eb8d0ef3e1987514aa9343dc}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI1\_IRQHandler@{EXTI1\_IRQHandler}}
@@ -575,7 +575,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00393}{393}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00110}{EXTI\+\_\+\+LINE1}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00043}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00110}{EXTI\+\_\+\+LINE1}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_ab5a1d9e9c8ef50e0cb9ddb5745a20a14}\label{_e_x_t_i__program_8c_ab5a1d9e9c8ef50e0cb9ddb5745a20a14}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI2\_IRQHandler@{EXTI2\_IRQHandler}}
@@ -604,7 +604,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00409}{409}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00116}{EXTI\+\_\+\+LINE2}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00043}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00116}{EXTI\+\_\+\+LINE2}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_a30c045de96d18ec9c67a7b9e4350920f}\label{_e_x_t_i__program_8c_a30c045de96d18ec9c67a7b9e4350920f}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI3\_IRQHandler@{EXTI3\_IRQHandler}}
@@ -633,7 +633,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00425}{425}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00122}{EXTI\+\_\+\+LINE3}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00043}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00122}{EXTI\+\_\+\+LINE3}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_a290cb997018c8d85d4b965b4a242842f}\label{_e_x_t_i__program_8c_a290cb997018c8d85d4b965b4a242842f}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI4\_IRQHandler@{EXTI4\_IRQHandler}}
@@ -662,7 +662,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00441}{441}} of
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00128}{EXTI\+\_\+\+LINE4}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00043}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+References \mbox{\hyperlink{_e_x_t_i__interface_8h_source_l00128}{EXTI\+\_\+\+LINE4}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00042}{NULL}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
 
 \mbox{\Hypertarget{_e_x_t_i__program_8c_a7b2096b8b2643286dc3a7e5110e5ae85}\label{_e_x_t_i__program_8c_a7b2096b8b2643286dc3a7e5110e5ae85}} 
 \index{EXTI\_program.c@{EXTI\_program.c}!EXTI9\_5\_IRQHandler@{EXTI9\_5\_IRQHandler}}

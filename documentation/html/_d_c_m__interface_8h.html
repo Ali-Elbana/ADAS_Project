@@ -133,6 +133,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a3165c909bf3a628b59eb97dc27b36002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_c_m__interface_8h.html#a3165c909bf3a628b59eb97dc27b36002">HDCM_vStopMotor</a> (<a class="el" href="group__compiler.html#ga30c6e83ff2cac859ff6d852ea99fa3f1">P2VAR</a>(<a class="el" href="struct_d_c_m___motor_configuration.html">DCM_MotorConfiguration</a>) pMotorConfiguration)</td></tr>
 <tr class="memdesc:a3165c909bf3a628b59eb97dc27b36002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a certain motor's movement completely.  <a href="_d_c_m__interface_8h.html#a3165c909bf3a628b59eb97dc27b36002">More...</a><br /></td></tr>
 <tr class="separator:a3165c909bf3a628b59eb97dc27b36002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54505eb4c5f0e208c12932694831baed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_c_m__interface_8h.html#a54505eb4c5f0e208c12932694831baed">HDCM_vMotorSpeedCntrl</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8SpeedRatio)</td></tr>
+<tr class="separator:a54505eb4c5f0e208c12932694831baed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file contains the interfacing information for the DC Motor module. </p>
@@ -167,6 +169,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_d_c_m___motor_configuration.html" title="DC Motor configuration structure for motor initialization.">DCM_MotorConfiguration</a> </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="_car_control__program_8c_source.html#l00061">HCarControl_vInitCar()</a>.</p>
+
 </div>
 </div>
 <a id="aff110757165493eab42865f08f94010e" name="aff110757165493eab42865f08f94010e"></a>
@@ -192,6 +196,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="reference">Referenced by <a class="el" href="_car_control__program_8c_source.html#l00069">HCarControl_vMoveForward()</a>, <a class="el" href="_car_control__program_8c_source.html#l00093">HCarControl_vTurnLeft()</a>, and <a class="el" href="_car_control__program_8c_source.html#l00085">HCarControl_vTurnRight()</a>.</p>
 
 </div>
 </div>
@@ -219,6 +225,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="_car_control__program_8c_source.html#l00077">HCarControl_vMoveBackward()</a>, <a class="el" href="_car_control__program_8c_source.html#l00093">HCarControl_vTurnLeft()</a>, and <a class="el" href="_car_control__program_8c_source.html#l00085">HCarControl_vTurnRight()</a>.</p>
+
 </div>
 </div>
 <a id="a3165c909bf3a628b59eb97dc27b36002" name="a3165c909bf3a628b59eb97dc27b36002"></a>
@@ -245,6 +253,26 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p class="reference">Referenced by <a class="el" href="_car_control__program_8c_source.html#l00101">HCarControl_vStopCar()</a>.</p>
+
+</div>
+</div>
+<a id="a54505eb4c5f0e208c12932694831baed" name="a54505eb4c5f0e208c12932694831baed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54505eb4c5f0e208c12932694831baed">&#9670;&#160;</a></span>HDCM_vMotorSpeedCntrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HDCM_vMotorSpeedCntrl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>)&#160;</td>
+          <td class="paramname"><em>A_u8SpeedRatio</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->
@@ -253,7 +281,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_5b9f402d8cd57bcc858ed2703dcc50fe.html">HAL</a></li><li class="navelem"><a class="el" href="dir_39747b045b67bbc7fd218691b253bdc6.html">DCMOTOR</a></li><li class="navelem"><a class="el" href="_d_c_m__interface_8h.html">DCM_interface.h</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Jan 21 2023 15:01:00 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

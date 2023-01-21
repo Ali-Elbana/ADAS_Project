@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['u16_5ft_0',['u16_t',['../group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b',1,'LSTD_TYPES.h']]],
-  ['u32_5ft_1',['u32_t',['../group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071',1,'LSTD_TYPES.h']]],
-  ['u8_5ft_2',['u8_t',['../group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24',1,'LSTD_TYPES.h']]]
+  ['s16_5ft_0',['s16_t',['../group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478',1,'LSTD_TYPES.h']]],
+  ['s32_5ft_1',['s32_t',['../group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5',1,'LSTD_TYPES.h']]],
+  ['s64_5ft_2',['s64_t',['../group__typedefs.html#ga0c3aba789a99a7cca62e204546c75c9e',1,'LSTD_TYPES.h']]],
+  ['s8_5ft_3',['s8_t',['../group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5',1,'LSTD_TYPES.h']]]
 ];

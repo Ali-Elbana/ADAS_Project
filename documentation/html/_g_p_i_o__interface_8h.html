@@ -261,6 +261,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ga2af2f39b86aad620e5a7b1fce2620a52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52">GPIOx_AF15</a>&#160;&#160;&#160;(15)</td></tr>
 <tr class="memdesc:ga2af2f39b86aad620e5a7b1fce2620a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO Alternate function 15.  <a href="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52">More...</a><br /></td></tr>
 <tr class="separator:ga2af2f39b86aad620e5a7b1fce2620a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d859616aeb3e958a080361b697407e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#a9d859616aeb3e958a080361b697407e0">GPIOA_LOW_NIBBLE_HIGH</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:a9d859616aeb3e958a080361b697407e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cc313ed43b01fdb370bc4a5da084da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#a17cc313ed43b01fdb370bc4a5da084da">GPIOA_LOW_NIBBLE_LOW</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:a17cc313ed43b01fdb370bc4a5da084da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -300,6 +304,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aeb229c6e980c1ffe03123a18f1242a0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c">MGPIOx_vTogglePinValue</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8PortID, <a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8PinID)</td></tr>
 <tr class="memdesc:aeb229c6e980c1ffe03123a18f1242a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a certain's pin's value on a certain port.  <a href="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c">More...</a><br /></td></tr>
 <tr class="separator:aeb229c6e980c1ffe03123a18f1242a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70103a27ed8080a8d819d5a7ff61b606"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_g_p_i_o__interface_8h.html#a70103a27ed8080a8d819d5a7ff61b606">GPIO_vSetPortValue</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) A_u8PortID, <a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a>) A_u16PortValue)</td></tr>
+<tr class="memdesc:a70103a27ed8080a8d819d5a7ff61b606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a certain port's output value.  <a href="_g_p_i_o__interface_8h.html#a70103a27ed8080a8d819d5a7ff61b606">More...</a><br /></td></tr>
+<tr class="separator:a70103a27ed8080a8d819d5a7ff61b606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file contains the interfacing information for the GPIO module. </p>
@@ -308,7 +315,40 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>11/9/2022 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="_g_p_i_o__interface_8h_source.html">GPIO_interface.h</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a9d859616aeb3e958a080361b697407e0" name="a9d859616aeb3e958a080361b697407e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d859616aeb3e958a080361b697407e0">&#9670;&#160;</a></span>GPIOA_LOW_NIBBLE_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOA_LOW_NIBBLE_HIGH&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_g_p_i_o__interface_8h_source.html#l00570">570</a> of file <a class="el" href="_g_p_i_o__interface_8h_source.html">GPIO_interface.h</a>.</p>
+
+</div>
+</div>
+<a id="a17cc313ed43b01fdb370bc4a5da084da" name="a17cc313ed43b01fdb370bc4a5da084da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cc313ed43b01fdb370bc4a5da084da">&#9670;&#160;</a></span>GPIOA_LOW_NIBBLE_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GPIOA_LOW_NIBBLE_LOW&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_g_p_i_o__interface_8h_source.html#l00572">572</a> of file <a class="el" href="_g_p_i_o__interface_8h_source.html">GPIO_interface.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a9691f4861ec6e00ce72839a3d72c376f" name="a9691f4861ec6e00ce72839a3d72c376f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9691f4861ec6e00ce72839a3d72c376f">&#9670;&#160;</a></span>MGPIOx_vLockedPins()</h2>
 
@@ -374,10 +414,10 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__compiler_html_gaf36fbf9b72d48ddc34a627487ef0bba9"><div class="ttname"><a href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a></div><div class="ttdeci">#define VAR(vartype)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">LSTD_COMPILER.h:23</a></div></div>
 <div class="ttc" id="agroup__gpio__registers_html_ga68b66ac73be4c836db878a42e1fea3cd"><div class="ttname"><a href="group__gpio__registers.html#ga68b66ac73be4c836db878a42e1fea3cd">GPIOB</a></div><div class="ttdeci">#define GPIOB</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__private_8h_source.html#l00119">GPIO_private.h:119</a></div></div>
 <div class="ttc" id="agroup__gpio__registers_html_gac485358099728ddae050db37924dd6b7"><div class="ttname"><a href="group__gpio__registers.html#gac485358099728ddae050db37924dd6b7">GPIOA</a></div><div class="ttdeci">#define GPIOA</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__private_8h_source.html#l00112">GPIO_private.h:112</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">LSTD_VALUES.h:57</a></div></div>
-<div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned long int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00044">LSTD_TYPES.h:44</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">LSTD_VALUES.h:56</a></div></div>
+<div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00051">LSTD_TYPES.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_g_p_i_o__private_8h_source.html#l00112">GPIOA</a>, <a class="el" href="_g_p_i_o__config_8h_source.html#l00022">GPIOA_PIN_POS</a>, <a class="el" href="_g_p_i_o__private_8h_source.html#l00119">GPIOB</a>, <a class="el" href="_g_p_i_o__config_8h_source.html#l00029">GPIOB_PIN_POS</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_g_p_i_o__config_8h_source.html#l00036">LCKK_BIT_POS</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
+<p class="reference">References <a class="el" href="_g_p_i_o__private_8h_source.html#l00112">GPIOA</a>, <a class="el" href="_g_p_i_o__config_8h_source.html#l00022">GPIOA_PIN_POS</a>, <a class="el" href="_g_p_i_o__private_8h_source.html#l00119">GPIOB</a>, <a class="el" href="_g_p_i_o__config_8h_source.html#l00029">GPIOB_PIN_POS</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_g_p_i_o__config_8h_source.html#l00036">LCKK_BIT_POS</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
 
 </div>
 </div>
@@ -637,7 +677,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_d_c_m__program_8c_source.html#l00082">HDCM_vMoveBackward()</a>, <a class="el" href="_d_c_m__program_8c_source.html#l00073">HDCM_vMoveForward()</a>, and <a class="el" href="_d_c_m__program_8c_source.html#l00091">HDCM_vStopMotor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_d_c_m__program_8c_source.html#l00082">HDCM_vMoveBackward()</a>, <a class="el" href="_d_c_m__program_8c_source.html#l00073">HDCM_vMoveForward()</a>, <a class="el" href="_d_c_m__program_8c_source.html#l00091">HDCM_vStopMotor()</a>, <a class="el" href="_l_c_d__program_8c_source.html#l00162">HLCD_vSendCommand()</a>, and <a class="el" href="_l_c_d__program_8c_source.html#l00193">HLCD_vSendData()</a>.</p>
 
 </div>
 </div>
@@ -779,7 +819,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="_d_c_m__program_8c_source.html#l00029">HDCM_vInitMotor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_d_c_m__program_8c_source.html#l00029">HDCM_vInitMotor()</a>, <a class="el" href="_l_c_d__program_8c_source.html#l00030">HLCD_vInit()</a>, <a class="el" href="_l_d_r__program_8c_source.html#l00036">HLDR_vInit()</a>, <a class="el" href="_s_p_i__program_8c_source.html#l00033">MSPI_vInit()</a>, and <a class="el" href="_u_a_r_t__program_8c_source.html#l00037">MUSART_vInit()</a>.</p>
 
 </div>
 </div>
@@ -820,13 +860,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a70103a27ed8080a8d819d5a7ff61b606" name="a70103a27ed8080a8d819d5a7ff61b606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70103a27ed8080a8d819d5a7ff61b606">&#9670;&#160;</a></span>GPIO_vSetPortValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GPIO_vSetPortValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>)&#160;</td>
+          <td class="paramname"><em>A_u8PortID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a>)&#160;</td>
+          <td class="paramname"><em>A_u16PortValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets a certain port's output value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A_u8PortID</td><td>The port to out the value on </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">A_u16PortValue</td><td>The value to set on the port </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="_l_c_d__program_8c_source.html#l00162">HLCD_vSendCommand()</a>, and <a class="el" href="_l_c_d__program_8c_source.html#l00193">HLCD_vSendData()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_7491c6db81a5c0dd574a8291d8a3e0d7.html">GPIO</a></li><li class="navelem"><a class="el" href="_g_p_i_o__interface_8h.html">GPIO_interface.h</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Jan 21 2023 15:01:00 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

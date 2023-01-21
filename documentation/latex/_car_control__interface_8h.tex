@@ -1,0 +1,164 @@
+\hypertarget{_car_control__interface_8h}{}\doxysection{COTS/\+HAL/\+Car\+Control/\+Car\+Control\+\_\+interface.h File Reference}
+\label{_car_control__interface_8h}\index{COTS/HAL/CarControl/CarControl\_interface.h@{COTS/HAL/CarControl/CarControl\_interface.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_car_control__interface_8h_a211542b499e16f904908cc6869dad534}{HCar\+Control\+\_\+v\+Init\+Car}} (void)
+\item 
+void \mbox{\hyperlink{_car_control__interface_8h_a281305f29d5eea64ccbc2e6b343efc5c}{HCar\+Control\+\_\+v\+Move\+Forward}} (void)
+\item 
+void \mbox{\hyperlink{_car_control__interface_8h_a3abf4df970563899ee3c387d671e492a}{HCar\+Control\+\_\+v\+Move\+Backward}} (void)
+\item 
+void \mbox{\hyperlink{_car_control__interface_8h_a55cfb71f9cfb9403746004fa2238c407}{HCar\+Control\+\_\+v\+Turn\+Right}} (void)
+\item 
+void \mbox{\hyperlink{_car_control__interface_8h_a8f0af6e6530782d1c065e89678ff119f}{HCar\+Control\+\_\+v\+Turn\+Left}} (void)
+\item 
+void \mbox{\hyperlink{_car_control__interface_8h_abf5c5c97c2dcfc444c2b32e4bf72877e}{HCar\+Control\+\_\+v\+Stop\+Car}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_car_control__interface_8h_a211542b499e16f904908cc6869dad534}\label{_car_control__interface_8h_a211542b499e16f904908cc6869dad534}} 
+\index{CarControl\_interface.h@{CarControl\_interface.h}!HCarControl\_vInitCar@{HCarControl\_vInitCar}}
+\index{HCarControl\_vInitCar@{HCarControl\_vInitCar}!CarControl\_interface.h@{CarControl\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HCarControl\_vInitCar()}{HCarControl\_vInitCar()}}
+{\footnotesize\ttfamily void HCar\+Control\+\_\+v\+Init\+Car (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_car_control__program_8c_source_l00061}{61}} of file \mbox{\hyperlink{_car_control__program_8c_source}{Car\+Control\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062 \{}
+\DoxyCodeLine{00063     \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\_vInitMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_abdfd5c5688258b5d50e00439242dd8fd}{dcmMotor1}});}
+\DoxyCodeLine{00064     \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\_vInitMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_a4c6da4b1a8490a66c4094a79f521a3d1}{dcmMotor2}});}
+\DoxyCodeLine{00065     \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\_vInitMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_ad349c5877e4431210f36d060cd01fa51}{dcmMotor3}});}
+\DoxyCodeLine{00066     \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\_vInitMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_a5ea4b70082c9907451825cd097f0f6a4}{dcmMotor4}});}
+\DoxyCodeLine{00067 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_control__program_8c_source_l00022}{dcm\+Motor1}}, \mbox{\hyperlink{_car_control__program_8c_source_l00031}{dcm\+Motor2}}, \mbox{\hyperlink{_car_control__program_8c_source_l00040}{dcm\+Motor3}}, \mbox{\hyperlink{_car_control__program_8c_source_l00049}{dcm\+Motor4}}, and \mbox{\hyperlink{_d_c_m__interface_8h_abb7950e9d50ca2626641fd453a588fd7}{HDCM\+\_\+v\+Init\+Motor()}}.
+
+\mbox{\Hypertarget{_car_control__interface_8h_a281305f29d5eea64ccbc2e6b343efc5c}\label{_car_control__interface_8h_a281305f29d5eea64ccbc2e6b343efc5c}} 
+\index{CarControl\_interface.h@{CarControl\_interface.h}!HCarControl\_vMoveForward@{HCarControl\_vMoveForward}}
+\index{HCarControl\_vMoveForward@{HCarControl\_vMoveForward}!CarControl\_interface.h@{CarControl\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HCarControl\_vMoveForward()}{HCarControl\_vMoveForward()}}
+{\footnotesize\ttfamily void HCar\+Control\+\_\+v\+Move\+Forward (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_car_control__program_8c_source_l00069}{69}} of file \mbox{\hyperlink{_car_control__program_8c_source}{Car\+Control\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070 \{}
+\DoxyCodeLine{00071     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_abdfd5c5688258b5d50e00439242dd8fd}{dcmMotor1}});}
+\DoxyCodeLine{00072     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_a4c6da4b1a8490a66c4094a79f521a3d1}{dcmMotor2}});}
+\DoxyCodeLine{00073     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_ad349c5877e4431210f36d060cd01fa51}{dcmMotor3}});}
+\DoxyCodeLine{00074     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_a5ea4b70082c9907451825cd097f0f6a4}{dcmMotor4}});}
+\DoxyCodeLine{00075 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_control__program_8c_source_l00022}{dcm\+Motor1}}, \mbox{\hyperlink{_car_control__program_8c_source_l00031}{dcm\+Motor2}}, \mbox{\hyperlink{_car_control__program_8c_source_l00040}{dcm\+Motor3}}, \mbox{\hyperlink{_car_control__program_8c_source_l00049}{dcm\+Motor4}}, and \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\+\_\+v\+Move\+Forward()}}.
+
+\mbox{\Hypertarget{_car_control__interface_8h_a3abf4df970563899ee3c387d671e492a}\label{_car_control__interface_8h_a3abf4df970563899ee3c387d671e492a}} 
+\index{CarControl\_interface.h@{CarControl\_interface.h}!HCarControl\_vMoveBackward@{HCarControl\_vMoveBackward}}
+\index{HCarControl\_vMoveBackward@{HCarControl\_vMoveBackward}!CarControl\_interface.h@{CarControl\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HCarControl\_vMoveBackward()}{HCarControl\_vMoveBackward()}}
+{\footnotesize\ttfamily void HCar\+Control\+\_\+v\+Move\+Backward (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_car_control__program_8c_source_l00077}{77}} of file \mbox{\hyperlink{_car_control__program_8c_source}{Car\+Control\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078 \{}
+\DoxyCodeLine{00079     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_abdfd5c5688258b5d50e00439242dd8fd}{dcmMotor1}});}
+\DoxyCodeLine{00080     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_a4c6da4b1a8490a66c4094a79f521a3d1}{dcmMotor2}});}
+\DoxyCodeLine{00081     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_ad349c5877e4431210f36d060cd01fa51}{dcmMotor3}});}
+\DoxyCodeLine{00082     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_a5ea4b70082c9907451825cd097f0f6a4}{dcmMotor4}});}
+\DoxyCodeLine{00083 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_control__program_8c_source_l00022}{dcm\+Motor1}}, \mbox{\hyperlink{_car_control__program_8c_source_l00031}{dcm\+Motor2}}, \mbox{\hyperlink{_car_control__program_8c_source_l00040}{dcm\+Motor3}}, \mbox{\hyperlink{_car_control__program_8c_source_l00049}{dcm\+Motor4}}, and \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\+\_\+v\+Move\+Backward()}}.
+
+\mbox{\Hypertarget{_car_control__interface_8h_a55cfb71f9cfb9403746004fa2238c407}\label{_car_control__interface_8h_a55cfb71f9cfb9403746004fa2238c407}} 
+\index{CarControl\_interface.h@{CarControl\_interface.h}!HCarControl\_vTurnRight@{HCarControl\_vTurnRight}}
+\index{HCarControl\_vTurnRight@{HCarControl\_vTurnRight}!CarControl\_interface.h@{CarControl\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HCarControl\_vTurnRight()}{HCarControl\_vTurnRight()}}
+{\footnotesize\ttfamily void HCar\+Control\+\_\+v\+Turn\+Right (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_car_control__program_8c_source_l00085}{85}} of file \mbox{\hyperlink{_car_control__program_8c_source}{Car\+Control\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00086 \{}
+\DoxyCodeLine{00087     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_abdfd5c5688258b5d50e00439242dd8fd}{dcmMotor1}});}
+\DoxyCodeLine{00088     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_a4c6da4b1a8490a66c4094a79f521a3d1}{dcmMotor2}});}
+\DoxyCodeLine{00089     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_ad349c5877e4431210f36d060cd01fa51}{dcmMotor3}});}
+\DoxyCodeLine{00090     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_a5ea4b70082c9907451825cd097f0f6a4}{dcmMotor4}});}
+\DoxyCodeLine{00091 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_control__program_8c_source_l00022}{dcm\+Motor1}}, \mbox{\hyperlink{_car_control__program_8c_source_l00031}{dcm\+Motor2}}, \mbox{\hyperlink{_car_control__program_8c_source_l00040}{dcm\+Motor3}}, \mbox{\hyperlink{_car_control__program_8c_source_l00049}{dcm\+Motor4}}, \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\+\_\+v\+Move\+Backward()}}, and \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\+\_\+v\+Move\+Forward()}}.
+
+\mbox{\Hypertarget{_car_control__interface_8h_a8f0af6e6530782d1c065e89678ff119f}\label{_car_control__interface_8h_a8f0af6e6530782d1c065e89678ff119f}} 
+\index{CarControl\_interface.h@{CarControl\_interface.h}!HCarControl\_vTurnLeft@{HCarControl\_vTurnLeft}}
+\index{HCarControl\_vTurnLeft@{HCarControl\_vTurnLeft}!CarControl\_interface.h@{CarControl\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HCarControl\_vTurnLeft()}{HCarControl\_vTurnLeft()}}
+{\footnotesize\ttfamily void HCar\+Control\+\_\+v\+Turn\+Left (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_car_control__program_8c_source_l00093}{93}} of file \mbox{\hyperlink{_car_control__program_8c_source}{Car\+Control\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00094 \{}
+\DoxyCodeLine{00095     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_abdfd5c5688258b5d50e00439242dd8fd}{dcmMotor1}});}
+\DoxyCodeLine{00096     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_a4c6da4b1a8490a66c4094a79f521a3d1}{dcmMotor2}});}
+\DoxyCodeLine{00097     \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(\&\mbox{\hyperlink{_car_control__program_8c_ad349c5877e4431210f36d060cd01fa51}{dcmMotor3}});}
+\DoxyCodeLine{00098     \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(\&\mbox{\hyperlink{_car_control__program_8c_a5ea4b70082c9907451825cd097f0f6a4}{dcmMotor4}});}
+\DoxyCodeLine{00099 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_control__program_8c_source_l00022}{dcm\+Motor1}}, \mbox{\hyperlink{_car_control__program_8c_source_l00031}{dcm\+Motor2}}, \mbox{\hyperlink{_car_control__program_8c_source_l00040}{dcm\+Motor3}}, \mbox{\hyperlink{_car_control__program_8c_source_l00049}{dcm\+Motor4}}, \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\+\_\+v\+Move\+Backward()}}, and \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\+\_\+v\+Move\+Forward()}}.
+
+\mbox{\Hypertarget{_car_control__interface_8h_abf5c5c97c2dcfc444c2b32e4bf72877e}\label{_car_control__interface_8h_abf5c5c97c2dcfc444c2b32e4bf72877e}} 
+\index{CarControl\_interface.h@{CarControl\_interface.h}!HCarControl\_vStopCar@{HCarControl\_vStopCar}}
+\index{HCarControl\_vStopCar@{HCarControl\_vStopCar}!CarControl\_interface.h@{CarControl\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HCarControl\_vStopCar()}{HCarControl\_vStopCar()}}
+{\footnotesize\ttfamily void HCar\+Control\+\_\+v\+Stop\+Car (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_car_control__program_8c_source_l00101}{101}} of file \mbox{\hyperlink{_car_control__program_8c_source}{Car\+Control\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00102 \{}
+\DoxyCodeLine{00103     \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\_vStopMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_abdfd5c5688258b5d50e00439242dd8fd}{dcmMotor1}});}
+\DoxyCodeLine{00104     \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\_vStopMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_a4c6da4b1a8490a66c4094a79f521a3d1}{dcmMotor2}});}
+\DoxyCodeLine{00105     \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\_vStopMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_ad349c5877e4431210f36d060cd01fa51}{dcmMotor3}});}
+\DoxyCodeLine{00106     \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\_vStopMotor}}(\&\mbox{\hyperlink{_car_control__program_8c_a5ea4b70082c9907451825cd097f0f6a4}{dcmMotor4}});}
+\DoxyCodeLine{00107 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_control__program_8c_source_l00022}{dcm\+Motor1}}, \mbox{\hyperlink{_car_control__program_8c_source_l00031}{dcm\+Motor2}}, \mbox{\hyperlink{_car_control__program_8c_source_l00040}{dcm\+Motor3}}, \mbox{\hyperlink{_car_control__program_8c_source_l00049}{dcm\+Motor4}}, and \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\+\_\+v\+Stop\+Motor()}}.
+

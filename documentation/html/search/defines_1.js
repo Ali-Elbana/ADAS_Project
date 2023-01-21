@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['busy_5ftick_5ftime_0',['BUSY_TICK_TIME',['../_sys_tick__interface_8h.html#abc8b094de6fdada914d30ea3df099502',1,'SysTick_interface.h']]],
-  ['bybased_1',['BYBASED',['../_m_r_c_c__private_8h.html#a320a7fbdb817dc5624052e215c830a5e',1,'MRCC_private.h']]]
+  ['adc_0',['ADC',['../_a_d_c__private_8h.html#a54d148b91f3d356713f7e367a2243bea',1,'ADC_private.h']]],
+  ['adc1en_1',['ADC1EN',['../_m_r_c_c__config_8h.html#a3cae351a44d8f23703cf0abe7e10f7f3',1,'MRCC_config.h']]],
+  ['adc_5fbase_5faddress_2',['ADC_BASE_ADDRESS',['../_a_d_c__private_8h.html#a30733dac1d9f9ef820d794565f410cb1',1,'ADC_private.h']]],
+  ['adc_5fon_3',['ADC_ON',['../_a_d_c__config_8h.html#aada7c87131a3f0228b01f1e9057d9d18',1,'ADC_config.h']]],
+  ['adc_5fprescaler_4',['ADC_PRESCALER',['../_a_d_c__config_8h.html#ab1d0703f6d84b37cbaa587a1a4515dd4',1,'ADC_config.h']]],
+  ['adcpre0_5',['ADCPRE0',['../_a_d_c__private_8h.html#aba9f394e30e0273dd88d1f47c7f7e4c9',1,'ADC_private.h']]],
+  ['adcpre1_6',['ADCPRE1',['../_a_d_c__private_8h.html#ab9ab78ad5a6ea9f5e251bfe6951001cf',1,'ADC_private.h']]],
+  ['adon_7',['ADON',['../_a_d_c__private_8h.html#a2cf569abdea563827a0aaf4da522646d',1,'ADC_private.h']]],
+  ['ahbby16_8',['AHBby16',['../_m_r_c_c__private_8h.html#a715635ff12c213fb671b25900dfb1b3f',1,'MRCC_private.h']]],
+  ['ahbby2_9',['AHBby2',['../_m_r_c_c__private_8h.html#a4995b1421490c3dd6833ad6cc0aa416e',1,'MRCC_private.h']]],
+  ['ahbby4_10',['AHBby4',['../_m_r_c_c__private_8h.html#ac2fab56b8d93de1f831486e39fd4e7bd',1,'MRCC_private.h']]],
+  ['ahbby8_11',['AHBby8',['../_m_r_c_c__private_8h.html#a35fe15794267b338424a9779a48bd1b7',1,'MRCC_private.h']]],
+  ['align_12',['ALIGN',['../_a_d_c__private_8h.html#ae4ff5a07c6ff43ed11a3887ef7d524f2',1,'ADC_private.h']]],
+  ['analog_5fwdt_13',['ANALOG_WDT',['../_a_d_c__config_8h.html#a1c378a2c76f9a214f6f951f6d4115315',1,'ADC_config.h']]],
+  ['awd_14',['AWD',['../_a_d_c__private_8h.html#a3f30137eb9b0c968e7ff5d7a0eef2409',1,'ADC_private.h']]],
+  ['awd_5fchannel_15',['AWD_CHANNEL',['../_a_d_c__config_8h.html#a0f72c09c17969c3045d9a28a43715e64',1,'ADC_config.h']]],
+  ['awdch0_16',['AWDCH0',['../_a_d_c__private_8h.html#a1b94ec9099fd25e457e2b39c103ef499',1,'ADC_private.h']]],
+  ['awdch1_17',['AWDCH1',['../_a_d_c__private_8h.html#a1c970c17df0347bd9d44c344bef04391',1,'ADC_private.h']]],
+  ['awdch2_18',['AWDCH2',['../_a_d_c__private_8h.html#a4a0b844fc930563f7c6cd18cb05206f2',1,'ADC_private.h']]],
+  ['awdch3_19',['AWDCH3',['../_a_d_c__private_8h.html#a77f8817d6dd3a7e82688a9dbeb41b380',1,'ADC_private.h']]],
+  ['awdch4_20',['AWDCH4',['../_a_d_c__private_8h.html#a2b16c23d241d6ba210946effbb5db0d7',1,'ADC_private.h']]],
+  ['awden_21',['AWDEN',['../_a_d_c__private_8h.html#affb7c9a66e4691944fa35169b630f3b1',1,'ADC_private.h']]],
+  ['awdie_22',['AWDIE',['../_a_d_c__private_8h.html#a6a534bc8f2dc00686551a96dd3b3ebe2',1,'ADC_private.h']]],
+  ['awdie_5fmode_23',['AWDIE_MODE',['../_a_d_c__config_8h.html#a0dd545a22d69495c4df4d60f5c416abd',1,'ADC_config.h']]],
+  ['awdsgl_24',['AWDSGL',['../_a_d_c__private_8h.html#a3a510402f98ce310aae8b3e833c0c637',1,'ADC_private.h']]],
+  ['awdsgl_5fmode_25',['AWDSGL_MODE',['../_a_d_c__config_8h.html#a7a09e593f21fd226a7cb07d4fb2489d6',1,'ADC_config.h']]]
 ];

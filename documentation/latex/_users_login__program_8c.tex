@@ -1,0 +1,60 @@
+\hypertarget{_users_login__program_8c}{}\doxysection{COTS/\+Services/\+Users\+Login/\+Users\+Login\+\_\+program.c File Reference}
+\label{_users_login__program_8c}\index{COTS/Services/UsersLogin/UsersLogin\_program.c@{COTS/Services/UsersLogin/UsersLogin\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+HAL/\+Bluetooth/\+Bluetooth\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Users\+Login\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Users\+Login\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Users\+Login\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__typedefs_ga04dd5074964518403bf944f2b240a5f8}{bool\+\_\+t}} \mbox{\hyperlink{_users_login__program_8c_a89ebebd0fc9c11bde3d7c166ebb97770}{Users\+Login\+\_\+v\+User\+Login\+Process}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_users_login__program_8c_a89ebebd0fc9c11bde3d7c166ebb97770}\label{_users_login__program_8c_a89ebebd0fc9c11bde3d7c166ebb97770}} 
+\index{UsersLogin\_program.c@{UsersLogin\_program.c}!UsersLogin\_vUserLoginProcess@{UsersLogin\_vUserLoginProcess}}
+\index{UsersLogin\_vUserLoginProcess@{UsersLogin\_vUserLoginProcess}!UsersLogin\_program.c@{UsersLogin\_program.c}}
+\doxysubsubsection{\texorpdfstring{UsersLogin\_vUserLoginProcess()}{UsersLogin\_vUserLoginProcess()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga04dd5074964518403bf944f2b240a5f8}{bool\+\_\+t}} Users\+Login\+\_\+v\+User\+Login\+Process (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_users_login__program_8c_source_l00065}{65}} of file \mbox{\hyperlink{_users_login__program_8c_source}{Users\+Login\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066 \{}
+\DoxyCodeLine{00067     \mbox{\hyperlink{group__typedefs_ga04dd5074964518403bf944f2b240a5f8}{bool\_t}} bHasLoggedIn = \mbox{\hyperlink{group__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1}{FALSE}};}
+\DoxyCodeLine{00068     \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} L\_strRecieveUsername[\mbox{\hyperlink{_users_login__private_8h_af769ae3cf79ab88a66ec5cf3a0794057}{MAX\_INFO\_LENGTH}}] = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00069     \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} L\_strRecievePassword[\mbox{\hyperlink{_users_login__private_8h_af769ae3cf79ab88a66ec5cf3a0794057}{MAX\_INFO\_LENGTH}}] = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071     \textcolor{keywordflow}{do}}
+\DoxyCodeLine{00072     \{}
+\DoxyCodeLine{00073         \mbox{\hyperlink{_bluetooth__interface_8h_a18bb820fa714dc5dc967b8999a6604ad}{HBluetooth\_ExchangeString}}(\textcolor{stringliteral}{"{}\(\backslash\)nEnter username (max: 10 letters): \(\backslash\)n"{}}, L\_strRecieveUsername);}
+\DoxyCodeLine{00074         \mbox{\hyperlink{_bluetooth__interface_8h_a18bb820fa714dc5dc967b8999a6604ad}{HBluetooth\_ExchangeString}}(\textcolor{stringliteral}{"{}\(\backslash\)nEnter password (max: 10 letters): \(\backslash\)n"{}}, L\_strRecievePassword);}
+\DoxyCodeLine{00075         bHasLoggedIn = UsersLogin\_boolValidateUserInfo(L\_strRecieveUsername, L\_strRecievePassword);}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077         \textcolor{keywordflow}{if} (bHasLoggedIn)}
+\DoxyCodeLine{00078         \{}
+\DoxyCodeLine{00079             \mbox{\hyperlink{_bluetooth__interface_8h_a27d3df585710dff1d22c6d2a907e5101}{HBluetooth\_vSendString}}(\textcolor{stringliteral}{"{}\(\backslash\)nLogged in successfully.\(\backslash\)n"{}});}
+\DoxyCodeLine{00080         \}}
+\DoxyCodeLine{00081         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00082         \{}
+\DoxyCodeLine{00083             \mbox{\hyperlink{_bluetooth__interface_8h_a27d3df585710dff1d22c6d2a907e5101}{HBluetooth\_vSendString}}(\textcolor{stringliteral}{"{}\(\backslash\)nCouldn't login, invalid login information.\(\backslash\)n"{}});}
+\DoxyCodeLine{00084         \}}
+\DoxyCodeLine{00085 }
+\DoxyCodeLine{00086     \} \textcolor{keywordflow}{while} (!bHasLoggedIn);}
+\DoxyCodeLine{00087 }
+\DoxyCodeLine{00088     \textcolor{keywordflow}{return} bHasLoggedIn;}
+\DoxyCodeLine{00089 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00033}{FALSE}}, \mbox{\hyperlink{_bluetooth__interface_8h_a18bb820fa714dc5dc967b8999a6604ad}{HBluetooth\+\_\+\+Exchange\+String()}}, \mbox{\hyperlink{_bluetooth__interface_8h_a27d3df585710dff1d22c6d2a907e5101}{HBluetooth\+\_\+v\+Send\+String()}}, and \mbox{\hyperlink{_users_login__private_8h_source_l00004}{MAX\+\_\+\+INFO\+\_\+\+LENGTH}}.
+
