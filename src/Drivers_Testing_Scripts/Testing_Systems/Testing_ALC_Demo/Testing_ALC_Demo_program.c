@@ -30,6 +30,17 @@
 FUNC( void ) TSALC_vDispLux( void )
 {
 
+	MGPIOx_ConfigType LED1 =
+	{
+
+		.Port 			= GPIO_PORTB		, 	.Pin 		= GPIOx_PIN0		,
+		.Mode 			= GPIOx_MODE_OUTPUT	, 	.OutputType = GPIOx_PUSHPULL	,
+		.OutputSpeed 	= GPIOx_LowSpeed	,	.InputType 	= GPIOx_NoPull
+
+	} ;
+
+	VAR(u16_t) L_u16BrightnessLevel = INITIAL_ZERO ;
+
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
@@ -39,17 +50,7 @@ FUNC( void ) TSALC_vDispLux( void )
 
 	HLCD_vInit() ;
 
-	MGPIOx_ConfigType LED1 =
-	{
-
-		.Port 		= GPIO_PORTB, .Pin = GPIOx_PIN0, .Mode = GPIOx_MODE_OUTPUT, .OutputType = GPIOx_PUSHPULL, .OutputSpeed = GPIOx_LowSpeed,
-		.InputType 	= GPIOx_NoPull
-
-	} ;
-
 	MGPIOx_vInit( &LED1 ) ;
-
-	VAR(u16_t) L_u16BrightnessLevel = INITIAL_ZERO ;
 
 	HLDR_vInit( ) ;
 
@@ -68,7 +69,6 @@ FUNC( void ) TSALC_vDispLux( void )
 
 		HLCD_vDispNumber( L_u16BrightnessLevel ) ;
 
-
 		if( L_u16BrightnessLevel < VERY_DIM )
 		{
 			MGPIOx_vSetPinValue( LED1.Port, LED1.Pin, GPIOx_LOW ) ;
@@ -82,7 +82,6 @@ FUNC( void ) TSALC_vDispLux( void )
 			HLCD_vDispNumber( L_u16BrightnessLevel ) ;
 
 			HLCD_vClearChar( HLCD_LINE2, HLCD_Square10 ) ;
-
 		}
 
 		else if( L_u16BrightnessLevel > DARK )
