@@ -425,7 +425,7 @@ typedef struct
 /************************************************************************/
 
 #define ENABLE  1
-#define DISABLE 0
+#define DISABLE 2
 
 #define _12_BITS  0
 #define _10_BITS  1

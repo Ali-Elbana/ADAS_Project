@@ -31,7 +31,6 @@ typedef struct
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-
 void MADC_vInit( void ) ;
 
 u16_t MADC_u16ConvertToDigital( VAR(u8_t) A_u8ChannelNum ) ;
@@ -61,8 +60,6 @@ u16_t MADC_u16GetADCData( void ) ;
 void MADC_vInitStruct( P2VAR(MADC_ConfigType) A_ADCConfig ) ;
 
 void MADC_vSetCallBack( void (*MEXTI_vpPointerTo_ISR_function) (void) ) ;
-
-
 
 /************************************************************************/
 /*                          Interfacing macros                          */

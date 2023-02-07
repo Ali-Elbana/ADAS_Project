@@ -30,13 +30,9 @@ typedef struct
 
 	u32_t EGR 		;
 
-	u32_t CCMR1_OC 	;
+	u32_t CCMR1 	;
 
-	u32_t CCMR1_IC 	;
-
-	u32_t CCMR2_OC 	;
-
-	u32_t CCMR2_IC 	;
+	u32_t CCMR2 	;
 
 	u32_t CCER 		;
 
@@ -177,26 +173,49 @@ typedef struct
 /*                     TIM1_CCMR1 register bits                         */
 /************************************************************************/
 
+// General:
+#define CC2S1	9
+#define CC2S0	8
+#define CC1S1	1
+#define CC1S0	0
+
+// Output Capture mode:
 #define OC2CE	15
 #define OC2M2	14
 #define OC2M1	13
 #define OC2M0	12
 #define OC2PE	11
 #define OC2FE	10
-#define CC2S1	9
-#define CC2S0	8
 #define OC1CE	7
 #define OC1M2	6
 #define OC1M1	5
 #define OC1M0	4
 #define OC1PE	3
 #define OC1FE	2
-#define CC1S1	1
-#define CC1S0	0
+
+// Input Capture mode:
+#define	IC2F3 	15
+#define	IC2F2 	14
+#define	IC2F1 	13
+#define	IC2F0 	12
+#define IC2PSC1	11
+#define IC2PSC0	10
+#define	IC1F3 	7
+#define	IC1F2 	6
+#define	IC1F1 	5
+#define	IC1F0 	4
+#define IC1PSC1	3
+#define IC1PSC0	2
 
 /************************************************************************/
 /*                     TIM1_CCMR2 register bits                         */
 /************************************************************************/
+
+// General:
+#define CC4S1	9
+#define CC4S0	8
+#define CC3S1	1
+#define CC3S0	0
 
 // For Output compare mode:
 #define OC4CE	15
@@ -205,16 +224,12 @@ typedef struct
 #define OC4M0	12
 #define OC4PE	11
 #define OC4FE	10
-#define CC2S1	9
-#define CC4S0	8
 #define OC3CE	7
 #define OC3M2	6
 #define OC3M1	5
 #define OC3M0	4
 #define OC3PE	3
 #define OC3FE	2
-#define CC3S1	1
-#define CC3S0	0
 
 // For Input capture mode:
 #define IC4F3	15
@@ -223,16 +238,12 @@ typedef struct
 #define IC4F0	12
 #define IC4PSC1	11
 #define IC4PSC0	10
-#define CC2S1	9
-#define CC4S0	8
 #define IC3F3	7
 #define IC3F2	6
 #define IC3F1	5
 #define IC3F0	4
 #define IC3PSC1	3
 #define IC3PSC0	2
-#define CC3S1	1
-#define CC3S0	0
 
 /************************************************************************/
 /*                     TIM1_CCER2 register bits                         */
@@ -254,7 +265,7 @@ typedef struct
 #define CC1E	0
 
 /************************************************************************/
-/*                     TIM1_CCER2 register bits                         */
+/*                     TIM1_BDTR register bits                          */
 /************************************************************************/
 
 #define MOE		15
@@ -293,17 +304,173 @@ typedef struct
 /*                        Config.h Macros                               */
 /************************************************************************/
 
-#define ENABLE  1
-#define DISABLE 0
+#define ENABLE  				2
+#define DISABLE 				1
 
+#define ANY_EVENT 				1
+#define OVF_UDF  				2
 
+#define UP  					1
+#define DOWN					2
 
+#define NOT_BUFFERED  			1
+#define BUFFERED				2
 
+#define ONE_TCK					1
+#define TWO_TCK					2
+#define FOUR_TCK				3
 
+#define	NOT_PRELOADED			1
+#define	PRELOADED    			2
 
+#define	COMG_ONLY				2
 
+#define	CCx_EVENT   			1
+#define UPDATE_EVENT			2
 
+#define RST						1
+#define UPDATE          		3
+#define COMP_PULSE      		4
+#define COMP1           		5
+#define COMP2           		6
+#define COMP3           		7
+#define COMP4           		8
 
+#define	CH1						1
+#define	CH1_2_3					2
+
+#define LOW 					1
+#define HIGH					2
+
+#define ENCODER1				3
+#define ENCODER2				4
+#define ENCODER3				5
+#define GATED  					6
+#define TRIGGER					7
+#define EXT_CLK					8
+
+#define ITR0            		1
+#define ITR1            		2
+#define ITR2            		3
+#define ITR3            		4
+#define TI1F_ED         		5
+#define TI1FP1          		6
+#define TI1FP2          		7
+#define ETRF            		8
+
+#define NO_ACTION				1
+#define TRGI					2
+
+#define	NO_FLTR         		1
+#define FCK_N2          		2
+#define	FCK_N4          		3
+#define	FCK_N8          		4
+#define	FDTS2_N6        		5
+#define	FDTS2_N8        		6
+#define	FDTS4_N6        		7
+#define	FDTS4_N8        		8
+#define	FDTS8_N6        		9
+#define	FDTS8_N8        		10
+#define	FDTS16_N5       		11
+#define	FDTS16_N6       		12
+#define FDTS16_N8       		13
+#define FDTS32_N5       		14
+#define FDTS32_N6       		15
+#define FDTS32_N8       		16
+
+#define	OFF             		1
+#define BY2             		2
+#define	BY4             		3
+#define	BY8             		4
+
+#define NON_INVERTED			1
+#define INVERTED    			2
+
+#define RE_INIT					2
+
+#define	CC_GENERATED			2
+
+#define CC_UPDATED				2
+
+#define	TRG_ENABLED				2
+
+#define BRK_GENERATED			2
+
+#define CC1_OUTPUT      		1
+#define CC1_INPUT_TI1   		2
+#define CC1_INPUT_TI2   		3
+#define CC1_INPUT_TRC   		4
+
+#define NO_PRESCALER    		1
+#define EVERY_2_EVENTS  		2
+#define EVERY_4_EVENTS  		3
+#define EVERY_8_EVENTS  		4
+
+#define CC2_OUTPUT      		1
+#define CC2_INPUT_TI1   		2
+#define CC2_INPUT_TI2   		3
+#define CC2_INPUT_TRC   		4
+
+#define NORMALLY				1
+#define INPUT_TRIGGER			2
+
+#define  FROZEN             	1
+#define  OC1REF_HIGH         	2
+#define  OC1REF_LOW          	3
+#define  OC1REF_TOGGLE       	4
+#define  OC1REF_FORCED_LOW   	5
+#define  OC1REF_FORCED_HIGH  	6
+#define  PWM1                	7
+#define  PWM2                	8
+
+#define OC1Ref_NOTEFFECTED		1
+#define OC1Ref_CLEARED    		2
+
+#define OC2Ref_NOTEFFECTED		1
+#define OC2Ref_CLEARED    		2
+
+#define OC2REF_HIGH             2
+#define OC2REF_LOW              3
+#define OC2REF_TOGGLE           4
+#define OC2REF_FORCED_LOW       5
+#define OC2REF_FORCED_HIGH      6
+
+#define CC3_OUTPUT              1
+#define CC3_INPUT_TI3           2
+#define CC3_INPUT_TI4           3
+#define CC3_INPUT_TRC           4
+
+#define CC4_OUTPUT              1
+#define CC4_INPUT_TI4           2
+#define CC4_INPUT_TI3           3
+#define CC4_INPUT_TRC           4
+
+#define OC3REF_HIGH             2
+#define OC3REF_LOW              3
+#define OC3REF_TOGGLE           4
+#define OC3REF_FORCED_LOW       5
+#define OC3REF_FORCED_HIGH      6
+
+#define OC4REF_HIGH             2
+#define OC4REF_LOW              3
+#define OC4REF_TOGGLE           4
+#define OC4REF_FORCED_LOW       5
+#define OC4REF_FORCED_HIGH      6
+
+#define OC3Ref_NOTEFFECTED		1
+#define OC3Ref_CLEARED    		2
+
+#define OC4Ref_NOTEFFECTED		1
+#define OC4Ref_CLEARED    		2
+
+#define ACTIVE_HIGH             1
+#define ACTIVE_LOW              2
+
+#define OC_DISABLE				1
+#define OC_ENABLE 				2
+
+#define SW                      1
+#define AUTO                    2
 
 
 #endif //_TIM1_private_H
