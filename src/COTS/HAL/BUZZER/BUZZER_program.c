@@ -8,6 +8,7 @@
 /*                        Include headers                        	    */
 /************************************************************************/
 
+#include "../../LIB/LSTD_TYPES.h"
 #include "../../LIB/LSTD_COMPILER.h"
 
 #include "../../MCAL/GPIO/GPIO_interface.h"
@@ -20,43 +21,43 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-void HBUZZER_vInit(void)
+void HBUZZER_vInit(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 {
     VAR(MGPIOx_ConfigType)
-    LED_Cfg =
+    Buzzer_Cfg =
         {
-            .Port = BUZZER_PORT,
-            .Pin = BUZZER_PIN,
+            .Port = pBuzzer_Cfg->u8Port,
+            .Pin = pBuzzer_Cfg->u8Pin,
             .Mode = GPIOx_MODE_OUTPUT,
             .OutputType = GPIOx_PUSHPULL,
             .OutputSpeed = GPIOx_LowSpeed,
             .InputType = GPIOx_NoPull};
 
-    MGPIOx_vInit(&LED_Cfg);
+    MGPIOx_vInit(&Buzzer_Cfg);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HBUZZER_vTurnLightOn(void)
+void HBUZZER_vSoundOn(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 {
-    MGPIOx_vSetPinValue(BUZZER_PORT, BUZZER_PIN, GPIOx_HIGH);
+    MGPIOx_vSetPinValue(pBuzzer_Cfg->u8Port, pBuzzer_Cfg->u8Pin, GPIOx_HIGH);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HBUZZER_vTurnLightOff(void)
+void HBUZZER_vSoundOff(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 {
-    MGPIOx_vTogglePinValue(BUZZER_PORT, BUZZER_PIN);
+    MGPIOx_vSetPinValue(pBuzzer_Cfg->u8Port, pBuzzer_Cfg->u8Pin, GPIOx_LOW);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HBUZZER_vToggleLight(void)
+void HBUZZER_vToggleSound(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 {
-    MGPIOx_vTogglePinValue(BUZZER_PORT, BUZZER_PIN);
+    MGPIOx_vTogglePinValue(pBuzzer_Cfg->u8Port, pBuzzer_Cfg->u8Pin);
 }
 
 /*******************************************************************************************************************/
