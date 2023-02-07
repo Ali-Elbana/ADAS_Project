@@ -25,6 +25,8 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LCD/Testing_LCD_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Bluetooth/Testing_Bluetooth_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_TFT/Testing_TFT_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_Buzzer/Testing_Buzzer_Driver_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_Buzzer/Testing_Buzzer_Driver_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
@@ -49,11 +51,13 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						RUN
+#define TestingALC						STOP
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
 #define TestingTFT_ShowImage			STOP
+#define TestingLED						STOP
+#define TestingBUZZER					RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -164,8 +168,21 @@ int main(void)
 
 	#endif
 
-	while (TRUE) ;
+	#if TestingLED == RUN
 
+		THLED_vTestLED( ) ;
+
+#endif
+
+#if TestingBUZZER == RUN
+
+		THBuzzer_vTestBuzzer();
+
+#endif
+
+		
+
+			while (TRUE);
 }
 
 
