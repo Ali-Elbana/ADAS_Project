@@ -10,8 +10,6 @@
 
 #include "../../LIB/LSTD_TYPES.h"
 #include "../../LIB/LSTD_COMPILER.h"
-#include "../../LIB/LSTD_VALUES.h"
-#include "../../LIB/LSTD_BITMATH.h"
 
 #include "../../MCAL/GPIO/GPIO_interface.h"
 
@@ -23,17 +21,16 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-void HLED_vInit(void)
+void HLED_vInit(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 {
     VAR(MGPIOx_ConfigType) LED_Cfg =
-    {
-        .Port = LED_PORT,
-        .Pin = LED_PIN,
-        .Mode = GPIOx_MODE_OUTPUT,
-        .OutputType = GPIOx_PUSHPULL,
-        .OutputSpeed = GPIOx_LowSpeed,
-        .InputType = GPIOx_NoPull
-    };
+        {
+            .Port = pLED_Cfg->u8Port,
+            .Pin = pLED_Cfg->u8Pin,
+            .Mode = GPIOx_MODE_OUTPUT,
+            .OutputType = GPIOx_PUSHPULL,
+            .OutputSpeed = GPIOx_LowSpeed,
+            .InputType = GPIOx_NoPull};
 
     MGPIOx_vInit(&LED_Cfg);
 }
@@ -41,25 +38,25 @@ void HLED_vInit(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vTurnLightOn(void)
+void HLED_vTurnLightOn(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 {
-    MGPIOx_vSetPinValue(LED_PORT, LED_PIN, GPIOx_HIGH);
+    MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_HIGH);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vTurnLightOff(void)
+void HLED_vTurnLightOff(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 {
-    MGPIOx_vTogglePinValue(LED_PORT, LED_PIN);
+    MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_LOW);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vToggleLight(void)
+void HLED_vToggleLight(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 {
-    MGPIOx_vTogglePinValue(LED_PORT, LED_PIN);
+    MGPIOx_vTogglePinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin);
 }
 
 /*******************************************************************************************************************/
