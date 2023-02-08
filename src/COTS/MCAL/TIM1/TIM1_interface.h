@@ -36,6 +36,10 @@ void MTIM1_vSetCompareReg4Value( u16_t A_u16CCR4_Value ) ;
 
 u16_t MTIM1_vGetCaptureReg4Value( void ) ;
 
+void MTIM1_vEnableCounter( void ) ;
+
+void MTIM1_vDisableCounter( void ) ;
+
 
 
 

@@ -215,11 +215,11 @@ void MTIM1_vInit( void )
 	// TI1 selection:
 	#if	TI1_SLCT == CH1
 
-	CLR_BIT( TIM1->CR2, CCPC ) ;
+	CLR_BIT( TIM1->CR2, TI1S ) ;
 
 	#elif TI1_SLCT == CH1_2_3
 
-	SET_BIT( TIM1->CR2, CCPC ) ;
+	SET_BIT( TIM1->CR2, TI1S ) ;
 
 	#endif
 
@@ -412,121 +412,6 @@ void MTIM1_vInit( void )
 	#elif MSTR_SLAVE_MODE == TRGI
 
 	SET_BIT( TIM1->SMCR, MSM ) ;
-
-	#endif
-
-	// External trigger filter:
-	#if	EXT_FLTR == NO_FLTR
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FCK_N2
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FCK_N4
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FCK_N8
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS2_N6
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS2_N8
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS4_N6
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS4_N8
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS8_N6
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS8_N8
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS16_N5
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS16_N6
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	CLR_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS16_N8
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS32_N5
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	CLR_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS32_N6
-
-	CLR_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-
-	#elif EXT_FLTR == FDTS32_N8
-
-	SET_BIT( TIM1->SMCR, ETF0 ) ;
-	SET_BIT( TIM1->SMCR, ETF1 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
-	SET_BIT( TIM1->SMCR, ETF2 ) ;
 
 	#endif
 
@@ -1392,11 +1277,6 @@ void MTIM1_vInit( void )
 
 	#endif
 
-	/*_______________________CEN________________________*/
-
-	// Enable the counter:
-	SET_BIT( TIM1->CR1, CEN ) ;
-
 }
 
 /********************************************************************************************************************/
@@ -1522,8 +1402,27 @@ u16_t MTIM1_vGetCaptureReg4Value( void )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
+void MTIM1_vEnableCounter( void )
+{
 
+	// Enable the counter:
+	SET_BIT( TIM1->CR1, CEN ) ;
 
+}
+
+/********************************************************************************************************************/
+/*******************************************************************************************************************/
+
+void MTIM1_vDisableCounter( void )
+{
+
+	// Disable the counter:
+	CLR_BIT( TIM1->CR1, CEN ) ;
+
+}
+
+/********************************************************************************************************************/
+/*******************************************************************************************************************/
 
 
 

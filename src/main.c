@@ -17,6 +17,7 @@
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_ADC/Testing_ADC_interface.h"
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_UART/Testing_UART_interface.h"
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_SPI/Testing_SPI_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_TIM1/Testing_TIM1_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
@@ -49,11 +50,14 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						RUN
+#define TestingALC						STOP
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
 #define TestingTFT_ShowImage			STOP
+#define TestingTIM1_PWM					RUN
+
+
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -161,6 +165,12 @@ int main(void)
 	#if TestingTFT_ShowImage == RUN
 
 		THTFT_vDispImage( ) ;
+
+	#endif
+
+	#if TestingTIM1_PWM == RUN
+
+		TMTIM1_vGeneratePWM( ) ;
 
 	#endif
 
