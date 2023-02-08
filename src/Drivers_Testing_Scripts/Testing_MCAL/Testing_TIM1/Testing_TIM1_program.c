@@ -55,10 +55,10 @@ void TMTIM1_vGeneratePWM( void )
 
 	MSysTick_vInit( ) ;
 
-	MTIM1_vPWMInit( TIM1_CH1 , PWM1     , CENTER3 ,
+	MTIM1_vPWMInit( TIM1_CH1 , PWM1, CENTER3,
 					PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
 
-	MTIM1_vEnableCounter( ) ;
+	//MTIM1_vEnableCounter( ) ;
 
 	//MTIM1_vSetCompareReg1Value( 65000 / 2 ) ;
 
@@ -69,7 +69,7 @@ void TMTIM1_vGeneratePWM( void )
 		{
 			MTIM1_vSetCompareReg1Value( L_u16Iteration ) ;
 
-			MSysTick_vDelayMilliSec( 200 ) ;
+			MSysTick_vDelayMilliSec( 100 ) ;
 		}
 
 	}

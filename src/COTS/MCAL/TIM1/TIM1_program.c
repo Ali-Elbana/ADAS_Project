@@ -1449,6 +1449,7 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		{
 			CLR_BIT( TIM1->CCMR1, CC1S0 ) ;
 			CLR_BIT( TIM1->CCMR1, CC1S1 ) ;
+
 			SET_BIT( TIM1->CCMR1, OC1PE ) ;
 		}
 		break ;
@@ -1457,6 +1458,7 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		{
 			CLR_BIT( TIM1->CCMR1, CC2S0 ) ;
 			CLR_BIT( TIM1->CCMR1, CC2S1 ) ;
+
 			SET_BIT( TIM1->CCMR1, OC2PE ) ;
 		}
 		break ;
@@ -1465,6 +1467,7 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		{
 			CLR_BIT( TIM1->CCMR2, CC3S0 ) ;
 			CLR_BIT( TIM1->CCMR2, CC3S1 ) ;
+
 			SET_BIT( TIM1->CCMR2, OC3PE ) ;
 		}
 		break ;
@@ -1473,6 +1476,7 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		{
 			CLR_BIT( TIM1->CCMR2, CC4S0 ) ;
 			CLR_BIT( TIM1->CCMR2, CC4S1 ) ;
+
 			SET_BIT( TIM1->CCMR2, OC4PE ) ;
 		}
 		break ;
@@ -1803,9 +1807,14 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		break ;
 	}
 
+    // Initialize all the registers:
+    SET_BIT( TIM1->EGR, UG ) ;
+
 	// Enable Capture/Compare output:
 	if( A_u8T1CHx == TIM1_CH1 )
 	{
+		CLR_BIT( TIM1->CCER, CC1P ) ;
+
 		SET_BIT( TIM1->CCER, CC1E ) ;
 	}
     else
@@ -1815,6 +1824,8 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 
 	if( A_u8T1CHx == TIM1_CH2 )
 	{
+		CLR_BIT( TIM1->CCER, CC2P ) ;
+
 		SET_BIT( TIM1->CCER, CC2E ) ;
 	}
     else
@@ -1824,6 +1835,9 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 
   	if( A_u8T1CHx == TIM1_CH3 )
   	{
+
+		CLR_BIT( TIM1->CCER, CC3P ) ;
+
 		SET_BIT( TIM1->CCER, CC3E ) ;
   	}
     else
@@ -1833,6 +1847,9 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 
   	if( A_u8T1CHx == TIM1_CH4 )
   	{
+
+		CLR_BIT( TIM1->CCER, CC4P ) ;
+
 		SET_BIT( TIM1->CCER, CC4E ) ;
   	}
     else
@@ -1840,11 +1857,11 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
     	CLR_BIT( TIM1->CCER, CC4E ) ;
     }
 
-    // Initialize all the registers:
-    SET_BIT( TIM1->EGR, UG ) ;
-
     // Enable timer main output:
     SET_BIT( TIM1->BDTR, MOE ) ;
+
+	// Enable the counter:
+	SET_BIT( TIM1->CR1, CEN ) ;
 
 }
 

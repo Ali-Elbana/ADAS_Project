@@ -48,7 +48,7 @@ void MTIM1_vDisableCounter( void ) ;
 /*                          Interfacing macros                          */
 /************************************************************************/
 
-#define  PSC_VALUE              14
+#define  PSC_VALUE              0
 #define  ARR_VALUE              65530
 #define  CR_VALUE              	0
 
