@@ -18,7 +18,7 @@ void MTIM1_vSetPrescalerValue( u16_t A_u16PSC_Value ) ;
 
 void MTIM1_vSetAutoReloadValue( u16_t A_u16ARR_Value ) ;
 
-void MTIM1_vSetRepetitionValue( u16_t A_u16RCR_Value ) ;
+void MTIM1_vSetRepetitionValue( u8_t A_u8RCR_Value ) ;
 
 void MTIM1_vSetCompareReg1Value( u16_t A_u16CCR1_Value ) ;
 
@@ -36,11 +36,40 @@ void MTIM1_vSetCompareReg4Value( u16_t A_u16CCR4_Value ) ;
 
 u16_t MTIM1_vGetCaptureReg4Value( void ) ;
 
+void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
+					u16_t A_u16PSC_Value, u16_t A_u16ARR_Value, u16_t A_u16CCRx_Value ) ;
+
 void MTIM1_vEnableCounter( void ) ;
 
 void MTIM1_vDisableCounter( void ) ;
 
 
+/************************************************************************/
+/*                          Interfacing macros                          */
+/************************************************************************/
+
+#define  PSC_VALUE              14
+#define  ARR_VALUE              65530
+#define  CR_VALUE              	0
+
+#define TIM1_CH1 1
+#define TIM1_CH2 2
+#define TIM1_CH3 3
+#define TIM1_CH4 4
+
+#define  FROZEN             	1
+#define  OC1REF_HIGH         	2
+#define  OC1REF_LOW          	3
+#define  OC1REF_TOGGLE       	4
+#define  OC1REF_FORCED_LOW   	5
+#define  OC1REF_FORCED_HIGH  	6
+#define  PWM1                	7
+#define  PWM2                	8
+
+#define EDGE                    1
+#define CENTER1                 2
+#define CENTER2                 3
+#define CENTER3                 4
 
 
 #endif //_TIM1_interface_H

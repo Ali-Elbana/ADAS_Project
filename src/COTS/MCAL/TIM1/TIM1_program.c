@@ -1312,10 +1312,10 @@ void MTIM1_vSetAutoReloadValue( u16_t A_u16ARR_Value )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-void MTIM1_vSetRepetitionValue( u16_t A_u16RCR_Value )
+void MTIM1_vSetRepetitionValue( u8_t A_u8RCR_Value )
 {
 
-	TIM1->RCR = A_u16RCR_Value ;
+	TIM1->RCR = A_u8RCR_Value ;
 
 }
 
@@ -1396,6 +1396,455 @@ u16_t MTIM1_vGetCaptureReg4Value( void )
 {
 
 	return TIM1->CCR4 ;
+
+}
+
+/********************************************************************************************************************/
+/*******************************************************************************************************************/
+
+void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
+					u16_t A_u16PSC_Value, u16_t A_u16ARR_Value, u16_t A_u16CCRx_Value )
+{
+
+	// EN TIM1 CLK:
+	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN ) ;
+
+	// Auto-reload preload enable:
+	SET_BIT( TIM1->CR1, ARPE ) ;
+
+	// Set counter direction as up-counter:
+	CLR_BIT( TIM1->CR1, DIR ) ;
+
+	// Compare - OC1REF signal is used as trigger output (TRGO):
+	CLR_BIT( TIM1->CR2, MMS0 ) ;
+	CLR_BIT( TIM1->CR2, MMS1 ) ;
+	SET_BIT( TIM1->CR2, MMS2 ) ;
+
+	// Select master mode Compare:
+	SET_BIT( TIM1->SMCR, MSM ) ;
+
+	// Set timer Prescaler, bus clock = 8 MHz, fCK_PSC / (PSC[15:0] + 1)
+	// CK_CNT = F / (PSC+1) -> FREQ Hz -> time base = 1/FREQ
+	TIM1->PSC = A_u16PSC_Value ;
+
+	// Set timer auto reload value:
+	TIM1->ARR = A_u16ARR_Value ;
+
+	// Set timer compare value:
+	switch( A_u8T1CHx )
+	{
+		case TIM1_CH1: TIM1->CCR1 = A_u16CCRx_Value ; break ;
+
+		case TIM1_CH2: TIM1->CCR2 = A_u16CCRx_Value ; break ;
+
+		case TIM1_CH3: TIM1->CCR3 = A_u16CCRx_Value ; break ;
+
+		case TIM1_CH4: TIM1->CCR4 = A_u16CCRx_Value ; break ;
+	}
+
+	// Set Capture/Compare CHx as output & preload enable:
+	switch( A_u8T1CHx )
+	{
+		case TIM1_CH1:
+		{
+			CLR_BIT( TIM1->CCMR1, CC1S0 ) ;
+			CLR_BIT( TIM1->CCMR1, CC1S1 ) ;
+			SET_BIT( TIM1->CCMR1, OC1PE ) ;
+		}
+		break ;
+
+		case TIM1_CH2:
+		{
+			CLR_BIT( TIM1->CCMR1, CC2S0 ) ;
+			CLR_BIT( TIM1->CCMR1, CC2S1 ) ;
+			SET_BIT( TIM1->CCMR1, OC2PE ) ;
+		}
+		break ;
+
+		case TIM1_CH3:
+		{
+			CLR_BIT( TIM1->CCMR2, CC3S0 ) ;
+			CLR_BIT( TIM1->CCMR2, CC3S1 ) ;
+			SET_BIT( TIM1->CCMR2, OC3PE ) ;
+		}
+		break ;
+
+		case TIM1_CH4:
+		{
+			CLR_BIT( TIM1->CCMR2, CC4S0 ) ;
+			CLR_BIT( TIM1->CCMR2, CC4S1 ) ;
+			SET_BIT( TIM1->CCMR2, OC4PE ) ;
+		}
+		break ;
+
+	}
+
+	// Select Output Compare PWM mode:
+	switch( A_u8T1CHx )
+	{
+		case TIM1_CH1:
+		{
+			switch( A_u8PWM_Mode )
+			{
+
+				case FROZEN:
+				{
+					CLR_BIT( TIM1->CCMR1, OC1M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case OC1REF_HIGH:
+				{
+					SET_BIT( TIM1->CCMR1, OC1M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case OC1REF_LOW:
+				{
+					CLR_BIT( TIM1->CCMR1, OC1M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case OC1REF_TOGGLE:
+				{
+					SET_BIT( TIM1->CCMR1, OC1M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_LOW:
+				{
+					CLR_BIT( TIM1->CCMR1, OC1M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_HIGH:
+				{
+					SET_BIT( TIM1->CCMR1, OC1M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC1M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case PWM1:
+				{
+					CLR_BIT( TIM1->CCMR1, OC1M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+
+				case PWM2:
+				{
+					SET_BIT( TIM1->CCMR1, OC1M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC1M2 ) ;
+				}
+				break ;
+			}
+		}
+		break ;
+
+		case TIM1_CH2:
+		{
+			switch( A_u8PWM_Mode )
+			{
+
+				case FROZEN:
+				{
+					CLR_BIT( TIM1->CCMR1, OC2M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case OC1REF_HIGH:
+				{
+					SET_BIT( TIM1->CCMR1, OC2M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case OC1REF_LOW:
+				{
+					CLR_BIT( TIM1->CCMR1, OC2M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case OC1REF_TOGGLE:
+				{
+					SET_BIT( TIM1->CCMR1, OC2M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M1 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_LOW:
+				{
+					CLR_BIT( TIM1->CCMR1, OC2M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_HIGH:
+				{
+					SET_BIT( TIM1->CCMR1, OC2M0 ) ;
+					CLR_BIT( TIM1->CCMR1, OC2M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case PWM1:
+				{
+					CLR_BIT( TIM1->CCMR1, OC2M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+
+				case PWM2:
+				{
+					SET_BIT( TIM1->CCMR1, OC2M0 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M1 ) ;
+					SET_BIT( TIM1->CCMR1, OC2M2 ) ;
+				}
+				break ;
+			}
+		}
+		break ;
+
+		case TIM1_CH3:
+		{
+			switch( A_u8PWM_Mode )
+			{
+
+				case FROZEN:
+				{
+					CLR_BIT( TIM1->CCMR2, OC3M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case OC1REF_HIGH:
+				{
+					SET_BIT( TIM1->CCMR2, OC3M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case OC1REF_LOW:
+				{
+					CLR_BIT( TIM1->CCMR2, OC3M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case OC1REF_TOGGLE:
+				{
+					SET_BIT( TIM1->CCMR2, OC3M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_LOW:
+				{
+					CLR_BIT( TIM1->CCMR2, OC3M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_HIGH:
+				{
+					SET_BIT( TIM1->CCMR2, OC3M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC3M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case PWM1:
+				{
+					CLR_BIT( TIM1->CCMR2, OC3M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+
+				case PWM2:
+				{
+					SET_BIT( TIM1->CCMR2, OC3M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC3M2 ) ;
+				}
+				break ;
+			}
+		}
+		break ;
+
+		case TIM1_CH4:
+		{
+			switch( A_u8PWM_Mode )
+			{
+
+				case FROZEN:
+				{
+					CLR_BIT( TIM1->CCMR2, OC4M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case OC1REF_HIGH:
+				{
+					SET_BIT( TIM1->CCMR2, OC4M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case OC1REF_LOW:
+				{
+					CLR_BIT( TIM1->CCMR2, OC4M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case OC1REF_TOGGLE:
+				{
+					SET_BIT( TIM1->CCMR2, OC4M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M1 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_LOW:
+				{
+					CLR_BIT( TIM1->CCMR2, OC4M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case OC1REF_FORCED_HIGH:
+				{
+					SET_BIT( TIM1->CCMR2, OC4M0 ) ;
+					CLR_BIT( TIM1->CCMR2, OC4M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case PWM1:
+				{
+					CLR_BIT( TIM1->CCMR2, OC4M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+
+				case PWM2:
+				{
+					SET_BIT( TIM1->CCMR2, OC4M0 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M1 ) ;
+					SET_BIT( TIM1->CCMR2, OC4M2 ) ;
+				}
+				break ;
+			}
+		}
+		break ;
+	}
+
+	// Center-aligned mode selection:
+	switch( A_u8CenterMode )
+	{
+		case EDGE:
+		{
+			CLR_BIT( TIM1->CR1, CMS0 ) ;
+			CLR_BIT( TIM1->CR1, CMS1 ) ;
+		}
+		break ;
+
+		case CENTER1:
+		{
+			SET_BIT( TIM1->CR1, CMS0 ) ;
+			CLR_BIT( TIM1->CR1, CMS1 ) ;
+		}
+		break ;
+
+		case CENTER2:
+		{
+			CLR_BIT( TIM1->CR1, CMS0 ) ;
+			SET_BIT( TIM1->CR1, CMS1 ) ;
+		}
+		break ;
+
+		case CENTER3:
+		{
+			SET_BIT( TIM1->CR1, CMS0 ) ;
+			SET_BIT( TIM1->CR1, CMS1 ) ;
+		}
+		break ;
+	}
+
+	// Enable Capture/Compare output:
+	if( A_u8T1CHx == TIM1_CH1 )
+	{
+		SET_BIT( TIM1->CCER, CC1E ) ;
+	}
+    else
+    {
+		CLR_BIT( TIM1->CCER, CC1E ) ;
+    }
+
+	if( A_u8T1CHx == TIM1_CH2 )
+	{
+		SET_BIT( TIM1->CCER, CC2E ) ;
+	}
+    else
+    {
+    	CLR_BIT( TIM1->CCER, CC2E ) ;
+    }
+
+  	if( A_u8T1CHx == TIM1_CH3 )
+  	{
+		SET_BIT( TIM1->CCER, CC3E ) ;
+  	}
+    else
+    {
+    	CLR_BIT( TIM1->CCER, CC3E ) ;
+    }
+
+  	if( A_u8T1CHx == TIM1_CH4 )
+  	{
+		SET_BIT( TIM1->CCER, CC4E ) ;
+  	}
+    else
+    {
+    	CLR_BIT( TIM1->CCER, CC4E ) ;
+    }
+
+    // Initialize all the registers:
+    SET_BIT( TIM1->EGR, UG ) ;
+
+    // Enable timer main output:
+    SET_BIT( TIM1->BDTR, MOE ) ;
 
 }
 
