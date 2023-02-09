@@ -12,6 +12,7 @@
 #include "../../LIB/LSTD_COMPILER.h"
 
 #include "../../MCAL/GPIO/GPIO_interface.h"
+#include "../../MCAL/SysTick/SysTick_interface.h"
 
 #include "LED_private.h"
 #include "LED_interface.h"
@@ -61,3 +62,16 @@ void HLED_vToggleLight(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
+
+void HLED_vBlinkLED( P2VAR(LED_LEDConfiguration) pLED_Cfg, VAR(u32_t) A_u32MilliSecs )
+{
+
+	MGPIOx_vTogglePinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin);
+
+	MSysTick_vDelayMilliSec( A_u32MilliSecs ) ;
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+

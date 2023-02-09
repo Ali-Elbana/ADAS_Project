@@ -8,6 +8,14 @@
 #ifndef _TESTING_LED_DRIVER_INTERFACE_H_
 #define _TESTING_LED_DRIVER_INTERFACE_H_
 
+/************************************************************************/
+/*                        Functions prototypes                          */
+/************************************************************************/
+
 void THLED_vTestLED(void);
+
+void THLED_vBlinkLED( void ) ;
+
+
 
 #endif //_TESTING_LED_DRIVER_INTERFACE_H_

@@ -25,8 +25,9 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LCD/Testing_LCD_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Bluetooth/Testing_Bluetooth_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_TFT/Testing_TFT_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_LED/Testing_LED_Driver_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Buzzer/Testing_Buzzer_Driver_interface.h"
-#include "Drivers_Testing_Scripts/Testing_HAL/Testing_Buzzer/Testing_Buzzer_Driver_interface.h"
+
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
@@ -57,7 +58,9 @@
 #define TestingSPI_SendChar				STOP
 #define TestingTFT_ShowImage			STOP
 #define TestingLED						STOP
-#define TestingBUZZER					RUN
+#define TestingBUZZER					STOP
+#define TestingLEDBlinking				RUN
+
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -68,49 +71,49 @@ int main(void)
 
 	#if TestingGPIO_OutputPushPull == RUN
 
-		TMGPIO_vPushPullOutputPins();
+	TMGPIO_vPushPullOutputPins();
 
 	#endif
 
 	#if TestingGPIO_Input == RUN
 
-		TMGPIO_vPullDownInputPins();
+	TMGPIO_vPullDownInputPins();
 
 	#endif
 
 	#if TestingPushButton == RUN
 
-		THPushButton_vTogglePIN();
+	THPushButton_vTogglePIN();
 
 	#endif
 
 	#if TestingDCMotor == RUN
 
-		THDC_vMotor();
+	THDC_vMotor();
 
 	#endif
 
 	#if TestingGPIO_OutputOpenDrain == RUN
 
-		TMGPIO_vOpenDrainOutputPIN();
+	TMGPIO_vOpenDrainOutputPIN();
 
 	#endif
 
 	#if TestingEXTI_ToggleLED == RUN
 
-		TMEXTI_vToggleLED();
+	TMEXTI_vToggleLED();
 
 	#endif
 
 	#if TestingSTK_ToggleLED_BusyWait == RUN
 
-		TMSysTick_vToggleLED_BusyWait();
+	TMSysTick_vToggleLED_BusyWait();
 
 	#endif
 
 	#if TestingMotorDriver == RUN
 
-		THDC_vTestMotors();
+	THDC_vTestMotors();
 
 	#endif
 
@@ -164,25 +167,31 @@ int main(void)
 
 	#if TestingTFT_ShowImage == RUN
 
-		THTFT_vDispImage( ) ;
+	THTFT_vDispImage( ) ;
 
 	#endif
 
 	#if TestingLED == RUN
 
-		THLED_vTestLED( ) ;
+	THLED_vTestLED( ) ;
 
-#endif
+	#endif
 
-#if TestingBUZZER == RUN
+	#if TestingBUZZER == RUN
 
-		THBuzzer_vTestBuzzer();
+	THBuzzer_vTestBuzzer();
 
-#endif
+	#endif
 
-		
+	#if TestingLEDBlinking == RUN
 
-			while (TRUE);
+	THLED_vBlinkLED( ) ;
+
+	#endif
+
+
+	while( TRUE ) ;
+
 }
 
 

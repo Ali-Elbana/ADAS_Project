@@ -54,4 +54,12 @@ void HLED_vTurnLightOff(P2VAR(LED_LEDConfiguration) pLED_Cfg);
  */
 void HLED_vToggleLight(P2VAR(LED_LEDConfiguration) pLED_Cfg);
 
+/**
+ * @brief This function is used to blink the LED
+ * @param[in] pLED_Cfg LED configuration
+ * @param[in] A_u32MilliSecs number of milli seconds to blink the LED
+ */
+void HLED_vBlinkLED( P2VAR(LED_LEDConfiguration) pLED_Cfg, VAR(u32_t) A_u32MilliSecs );
+
+
 #endif //_LED_INTERFACE_H
