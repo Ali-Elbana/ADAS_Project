@@ -16,8 +16,8 @@
 #include "../../LIB/LSTD_VALUES.h"
 #include "../../LIB/LSTD_BITMATH.h"
 
-#include "MRCC_private.h"
 #include "MRCC_interface.h"
+#include "MRCC_private.h"
 #include "MRCC_config.h"
 
 
