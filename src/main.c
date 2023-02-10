@@ -17,6 +17,7 @@
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_ADC/Testing_ADC_interface.h"
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_UART/Testing_UART_interface.h"
 #include "Drivers_Testing_Scripts/Testing_MCAL/Testing_SPI/Testing_SPI_interface.h"
+#include "Drivers_Testing_Scripts/Testing_MCAL/Testing_TIM1/Testing_TIM1_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_PushButtonSwitch/Testing_PushButtonSwitch_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_DC_Motor/Testing_DC_Motor_interface.h"
@@ -59,7 +60,10 @@
 #define TestingTFT_ShowImage			STOP
 #define TestingLED						STOP
 #define TestingBUZZER					STOP
-#define TestingLEDBlinking				RUN
+#define TestingLEDBlinking				STOP
+#define TestingTIM1_PWM					RUN
+
+
 
 
 /************************************************************************/
@@ -171,6 +175,7 @@ int main(void)
 
 	#endif
 
+
 	#if TestingLED == RUN
 
 	THLED_vTestLED( ) ;
@@ -189,8 +194,13 @@ int main(void)
 
 	#endif
 
+	#if TestingTIM1_PWM == RUN
 
-	while( TRUE ) ;
+		TMTIM1_vGeneratePWM( ) ;
+
+	#endif
+
+	while (TRUE) ;
 
 }
 

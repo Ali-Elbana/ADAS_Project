@@ -348,8 +348,8 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 				case GPIOx_PIN13:
 				case GPIOx_PIN14:
 				case GPIOx_PIN15:
-					CLR_BITs(GPIOA->AFRHx, 0b1111, A_u8PinID, 4);
-					SET_BITs(GPIOA->AFRHx, A_u8AFID, A_u8PinID, 4);
+					CLR_BITs(GPIOA->AFRHx, 0b1111, (A_u8PinID - 8), 4);
+					SET_BITs(GPIOA->AFRHx, A_u8AFID, (A_u8PinID - 8), 4);
 					break;
 			}
 			break;
@@ -377,8 +377,8 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 				case GPIOx_PIN13:
 				case GPIOx_PIN14:
 				case GPIOx_PIN15:
-					CLR_BITs(GPIOB->AFRHx, 0b1111, A_u8PinID-8, 4);
-					SET_BITs(GPIOB->AFRHx, A_u8AFID, A_u8PinID-8, 4);
+					CLR_BITs(GPIOB->AFRHx, 0b1111, (A_u8PinID - 8), 4);
+					SET_BITs(GPIOB->AFRHx, A_u8AFID, (A_u8PinID - 8), 4);
 					break;
 			}
 			break;
@@ -406,8 +406,8 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 				case GPIOx_PIN13:
 				case GPIOx_PIN14:
 				case GPIOx_PIN15:
-					CLR_BITs(GPIOC->AFRHx, 0b1111, A_u8PinID, 4);
-					SET_BITs(GPIOC->AFRHx, A_u8AFID, A_u8PinID, 4);
+					CLR_BITs(GPIOC->AFRHx, 0b1111, (A_u8PinID - 8), 4);
+					SET_BITs(GPIOC->AFRHx, A_u8AFID, (A_u8PinID - 8), 4);
 					break;
 			}
 			break;

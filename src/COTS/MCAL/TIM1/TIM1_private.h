@@ -18,52 +18,52 @@
 typedef struct
 {
 
-	u32_t CR1 		;
+	volatile u32_t CR1 		;
 
-	u32_t CR2 		;
+	volatile u32_t CR2 		;
 
-	u32_t SMCR 		;
+	volatile u32_t SMCR 	;
 
-	u32_t DIER 		;
+	volatile u32_t DIER 	;
 
-	u32_t SR 		;
+	volatile u32_t SR 		;
 
-	u32_t EGR 		;
+	volatile u32_t EGR 		;
 
-	u32_t CCMR1 	;
+	volatile u32_t CCMR1 	;
 
-	u32_t CCMR2 	;
+	volatile u32_t CCMR2 	;
 
-	u32_t CCER 		;
+	volatile u32_t CCER 	;
 
-	u32_t CNT 		;
+	volatile u32_t CNT 		;
 
-	u32_t PSC 		;
+	volatile u32_t PSC 		;
 
-	u32_t ARR 		;
+	volatile u32_t ARR 		;
 
-	u32_t RCR 		;
+	volatile u32_t RCR 		;
 
-	u32_t CCR1 		;
+	volatile u32_t CCR1 	;
 
-	u32_t CCR2 		;
+	volatile u32_t CCR2 	;
 
-	u32_t CCR3 		;
+	volatile u32_t CCR3 	;
 
-	u32_t CCR4 		;
+	volatile u32_t CCR4 	;
 
-	u32_t BDTR 		;
+	volatile u32_t BDTR 	;
 
-	u32_t DCR		;
+	volatile u32_t DCR		;
 
-	u32_t DMAR		;
+	volatile u32_t DMAR		;
 
 } TIM1_MemoryMapType ;
 
 
 #define TIM1_BASE_ADDRESS 0x40010000
 
-#define TIM1 ( ( volatile P2VAR(TIM1_MemoryMapType) ) (TIM1_BASE_ADDRESS) )
+#define TIM1 ( ( volatile TIM1_MemoryMapType* ) (TIM1_BASE_ADDRESS) )
 
 /************************************************************************/
 /*                      TIM1_CR1 register bits                          */
@@ -312,6 +312,12 @@ typedef struct
 
 #define UP  					1
 #define DOWN					2
+
+#define EDGE                    1
+#define CENTER1                 2
+#define CENTER2                 3
+#define CENTER3                 4
+
 
 #define NOT_BUFFERED  			1
 #define BUFFERED				2

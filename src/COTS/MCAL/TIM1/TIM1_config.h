@@ -22,7 +22,7 @@
  *ANY_EVENT
  *OVF_UDF
  */
-#define UPDATE_SRC OVF_UDF
+#define UPDATE_SRC ANY_EVENT
 
 /**********************************************************************************/
 
@@ -75,7 +75,7 @@
  *NOT_PRELOADED
  *PRELOADED
  */
-#define CCP_CTRL PRELOADED
+#define CCP_CTRL NOT_PRELOADED
 
 /**********************************************************************************/
 
@@ -83,7 +83,7 @@
  *COMG_ONLY
  *ANY_EVENT
  */
-#define CCU_SLCT ANY_EVENT
+#define CCU_SLCT COMG_ONLY
 
 /**********************************************************************************/
 
@@ -105,7 +105,7 @@
  *COMP3
  *COMP4
  */
-#define MMS RST
+#define MMS COMP1
 
 /**********************************************************************************/
 
@@ -199,7 +199,7 @@
  *TI1FP2
  *ETRF
  */
-#define TS TI1F_ED
+#define TS ITR0
 
 /**********************************************************************************/
 
@@ -207,7 +207,7 @@
  *NO_ACTION
  *TRGI
  */
-#define MSTR_SLAVE_MODE NO_ACTION
+#define MSTR_SLAVE_MODE TRGI
 
 /**********************************************************************************/
 
@@ -353,7 +353,7 @@
  *CC2_INPUT_TI2
  *CC2_INPUT_TRC
  */
-#define CC2S CC2_INPUT_TI1
+#define CC2S CC2_OUTPUT
 
 /**********************************************************************************/
 
@@ -417,7 +417,7 @@
  *ENABLE
  *DISABLE
  */
-#define OC2P_EN ENABLE
+#define OC2P_EN DISABLE
 
 /**********************************************************************************/
 
@@ -451,7 +451,7 @@
  *CC3_INPUT_TI4
  *CC3_INPUT_TRC
  */
-#define CC3S CC3_INPUT_TI1
+#define CC3S CC3_OUTPUT
 
 /**********************************************************************************/
 
@@ -471,7 +471,7 @@
  *CC4_INPUT_TI3
  *CC4_INPUT_TRC
  */
-#define CC4S CC4_INPUT_TI1
+#define CC4S CC4_OUTPUT
 
 /**********************************************************************************/
 
@@ -489,7 +489,7 @@
  *NORMALLY
  *INPUT_TRIGGER
  */
-#define OC3F_EN NO_ACTION
+#define OC3F_EN NORMALLY
 
 /**********************************************************************************/
 
@@ -497,7 +497,7 @@
  *ENABLE
  *DISABLE
  */
-#define OC3P_EN ENABLE
+#define OC3P_EN DISABLE
 
 /**********************************************************************************/
 
@@ -511,7 +511,7 @@
  *PWM1
  *PWM2
  */
-#define OC3M PWM1
+#define OC3M FROZEN
 
 /**********************************************************************************/
 
@@ -527,7 +527,7 @@
  *NORMALLY
  *INPUT_TRIGGER
  */
-#define OC4F_EN NO_ACTION
+#define OC4F_EN NORMALLY
 
 /**********************************************************************************/
 
@@ -535,7 +535,7 @@
  *ENABLE
  *DISABLE
  */
-#define OC4P_EN ENABLE
+#define OC4P_EN DISABLE
 
 /**********************************************************************************/
 
@@ -583,7 +583,7 @@
  *ENABLE
  *DISABLE
  */
-#define CC1N_EN DISABLE
+#define CC1N_EN ENABLE
 
 /**********************************************************************************/
 
@@ -697,7 +697,7 @@
  *SW
  *AUTO
  */
-#define AO_EN AUTO
+#define AO_EN SW
 
 /**********************************************************************************/
 
