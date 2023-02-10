@@ -15,10 +15,6 @@
 
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
-
-//#include "../../../COTS/MCAL/GPIO/GPIO_private.h"
-
-#include "../../../COTS/MCAL/NVIC/NVIC_interface.h"
 #include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 #include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
 
