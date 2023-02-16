@@ -35,29 +35,21 @@ void TMTIM1_vGeneratePWM( void )
 
 	MGPIOx_vLockedPins( ) ;
 
-	MGPIOx_ConfigType T1_CH1 =
-	{
-		.Port 			= GPIO_PORTA 			, 	.Pin 		= GPIOx_PIN8 		,
-		.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
-		.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
-		.AF_Type 		= GPIOx_AF1
-	} ;
-
-	MGPIOx_vInit( &T1_CH1 ) ;
-
 	MSysTick_vInit( ) ;
 
-	MTIM1_vPWMInit( TIM1_CH1 , PWM1, CENTER3,
-					PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
+	MTIM1_vGeneratePWM( TIM1_CH3, PWM1, CENTER1,
+						PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
+
+	MTIM1_vEnableCounter( ) ;
 
 	while( TRUE )
 	{
 
-		for( u16_t L_u16Iteration = 0; L_u16Iteration < 1000; L_u16Iteration += 7 )
+		for( u16_t L_u16Iteration = 0; L_u16Iteration < ARR_VALUE; L_u16Iteration += 100 )
 		{
-			MTIM1_vSetCompareReg1Value( L_u16Iteration ) ;
+			MTIM1_vSetCompareReg3Value( L_u16Iteration ) ;
 
-			MSysTick_vDelayMilliSec( 50 ) ;
+			MSysTick_vDelayMilliSec( 30 ) ;
 		}
 
 	}

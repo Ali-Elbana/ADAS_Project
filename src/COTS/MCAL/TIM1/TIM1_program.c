@@ -13,6 +13,7 @@
 #include "../../LIB/LSTD_BITMATH.h"
 
 #include "../RCC/MRCC_interface.h"
+#include "../GPIO/GPIO_interface.h"
 
 #include "TIM1_interface.h"
 #include "TIM1_private.h"
@@ -1402,7 +1403,7 @@ u16_t MTIM1_vGetCaptureReg4Value( void )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
+void MTIM1_vGeneratePWM( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 					u16_t A_u16PSC_Value, u16_t A_u16ARR_Value, u16_t A_u16CCRx_Value )
 {
 
@@ -1816,6 +1817,16 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		CLR_BIT( TIM1->CCER, CC1P ) ;
 
 		SET_BIT( TIM1->CCER, CC1E ) ;
+
+		MGPIOx_ConfigType T1_CH1 =
+		{
+			.Port 			= T1CHx_PORT 			, 	.Pin 		= T1CH1_PIN 		,
+			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
+			.AF_Type 		= GPIOx_AF1
+		} ;
+
+		MGPIOx_vInit( &T1_CH1 ) ;
 	}
     else
     {
@@ -1827,6 +1838,16 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 		CLR_BIT( TIM1->CCER, CC2P ) ;
 
 		SET_BIT( TIM1->CCER, CC2E ) ;
+
+		MGPIOx_ConfigType T1_CH2 =
+		{
+			.Port 			= T1CHx_PORT 			, 	.Pin 		= T1CH2_PIN 		,
+			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
+			.AF_Type 		= GPIOx_AF1
+		} ;
+
+		MGPIOx_vInit( &T1_CH2 ) ;
 	}
     else
     {
@@ -1835,10 +1856,19 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 
   	if( A_u8T1CHx == TIM1_CH3 )
   	{
-
 		CLR_BIT( TIM1->CCER, CC3P ) ;
 
 		SET_BIT( TIM1->CCER, CC3E ) ;
+
+		MGPIOx_ConfigType T1_CH3 =
+		{
+			.Port 			= T1CHx_PORT 			, 	.Pin 		= T1CH3_PIN 		,
+			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
+			.AF_Type 		= GPIOx_AF1
+		} ;
+
+		MGPIOx_vInit( &T1_CH3 ) ;
   	}
     else
     {
@@ -1847,10 +1877,19 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 
   	if( A_u8T1CHx == TIM1_CH4 )
   	{
-
 		CLR_BIT( TIM1->CCER, CC4P ) ;
 
 		SET_BIT( TIM1->CCER, CC4E ) ;
+
+		MGPIOx_ConfigType T1_CH4 =
+		{
+			.Port 			= T1CHx_PORT 			, 	.Pin 		= T1CH4_PIN 		,
+			.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
+			.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
+			.AF_Type 		= GPIOx_AF1
+		} ;
+
+		MGPIOx_vInit( &T1_CH4 ) ;
   	}
     else
     {
@@ -1860,8 +1899,79 @@ void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
     // Enable timer main output:
     SET_BIT( TIM1->BDTR, MOE ) ;
 
-	// Enable the counter:
-	SET_BIT( TIM1->CR1, CEN ) ;
+}
+
+/********************************************************************************************************************/
+/*******************************************************************************************************************/
+
+void MTIM1_vReadPWM( u16_t A_u16PSC_Value, u16_t A_u16ARR_Value )
+{
+
+	// Enable ICU PINs:
+	MGPIOx_ConfigType T1_CH1 =
+	{
+		.Port 			= T1CHx_PORT 			, 	.Pin 		= T1CH1_PIN 		,
+		.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
+		.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
+		.AF_Type 		= GPIOx_AF1
+	} ;
+
+	MGPIOx_ConfigType T1_CH2 =
+	{
+		.Port 			= T1CHx_PORT 			, 	.Pin 		= T1CH2_PIN 		,
+		.Mode 			= GPIOx_MODE_AF 		, 	.OutputType = GPIOx_PUSHPULL 	,
+		.OutputSpeed 	= GPIOx_LowSpeed		, 	.InputType 	= GPIOx_NoPull		,
+		.AF_Type 		= GPIOx_AF1
+	} ;
+
+	MGPIOx_vInit( &T1_CH1 ) ;
+	MGPIOx_vInit( &T1_CH2 ) ;
+
+	// Set counter direction as up-counter:
+	CLR_BIT( TIM1->CR1, DIR ) ;
+
+	// Set timer Prescaler, bus clock = 8 MHz, fCK_PSC / (PSC[15:0] + 1)
+	// CK_CNT = F / (PSC+1) -> FREQ Hz -> time base = 1/FREQ
+	TIM1->PSC = A_u16PSC_Value ;
+
+	// Set timer auto reload value:
+	TIM1->ARR = A_u16ARR_Value ;
+
+	// TIM1 IC1 Configurations:
+	// Select TI1 for CCR1:
+	SET_BIT( TIM1->CCMR1, CC1S0 ) ;
+	CLR_BIT( TIM1->CCMR1, CC1S1 ) ;
+
+	// Select active Rising edge for TI1FP1:
+	CLR_BIT( TIM1->CCER, CC1P 	) ;
+	CLR_BIT( TIM1->CCER, CC1NP 	) ;
+
+	// TIM1 IC2 Configurations:
+	// Select TI1 for CCR2:
+	CLR_BIT( TIM1->CCMR1, CC2S0 ) ;
+	SET_BIT( TIM1->CCMR1, CC2S1 ) ;
+
+	// Select active Falling edge for TI1FP1:
+	SET_BIT( TIM1->CCER, CC2P 	) ;
+	CLR_BIT( TIM1->CCER, CC2NP 	) ;
+
+	// TIM1 Trigger Configurations:
+	// Select TI1FP1 as trigger input:
+	SET_BIT( TIM1->SMCR, TS0 ) ;
+	CLR_BIT( TIM1->SMCR, TS1 ) ;
+	SET_BIT( TIM1->SMCR, TS2 ) ;
+
+	// Configure Slave mode in reset mode:
+	CLR_BIT( TIM1->SMCR, SMS0 ) ;
+	CLR_BIT( TIM1->SMCR, SMS1 ) ;
+	SET_BIT( TIM1->SMCR, SMS2 ) ;
+
+	// Enable the Captures:
+	// Enable CC1:
+	SET_BIT( TIM1->CCER, CC1E ) ;
+
+	// Enable CC2:
+	SET_BIT( TIM1->CCER, CC2E ) ;
 
 }
 
@@ -1889,8 +1999,6 @@ void MTIM1_vDisableCounter( void )
 
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
-
-
 
 
 

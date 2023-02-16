@@ -36,8 +36,10 @@ void MTIM1_vSetCompareReg4Value( u16_t A_u16CCR4_Value ) ;
 
 u16_t MTIM1_vGetCaptureReg4Value( void ) ;
 
-void MTIM1_vPWMInit( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
+void MTIM1_vGeneratePWM( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 					u16_t A_u16PSC_Value, u16_t A_u16ARR_Value, u16_t A_u16CCRx_Value ) ;
+
+void MTIM1_vReadPWM( u16_t A_u16PSC_Value, u16_t A_u16ARR_Value ) ;
 
 void MTIM1_vEnableCounter( void ) ;
 
@@ -48,8 +50,14 @@ void MTIM1_vDisableCounter( void ) ;
 /*                          Interfacing macros                          */
 /************************************************************************/
 
+#define T1CHx_PORT 				GPIO_PORTA
+#define T1CH1_PIN				GPIOx_PIN8
+#define T1CH2_PIN				GPIOx_PIN9
+#define T1CH3_PIN				GPIOx_PIN10
+#define T1CH4_PIN				GPIOx_PIN11
+
 #define  PSC_VALUE              7
-#define  ARR_VALUE              1000
+#define  ARR_VALUE              4000
 #define  CR_VALUE              	0
 
 #define TIM1_CH1 1
