@@ -15,6 +15,7 @@
 
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
+#include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
 
 #include "../../../COTS/HAL/LDR/LDR_interface.h"
 #include "../../../COTS/HAL/LCD/LCD_interface.h"
@@ -30,15 +31,6 @@
 FUNC( void ) TSALC_vDispLux( void )
 {
 
-	MGPIOx_ConfigType LED1 =
-	{
-
-		.Port 			= GPIO_PORTB		, 	.Pin 		= GPIOx_PIN0		,
-		.Mode 			= GPIOx_MODE_OUTPUT	, 	.OutputType = GPIOx_PUSHPULL	,
-		.OutputSpeed 	= GPIOx_LowSpeed	,	.InputType 	= GPIOx_NoPull
-
-	} ;
-
 	VAR(u16_t) L_u16BrightnessLevel = INITIAL_ZERO ;
 
 	MRCC_vInit( ) ;
@@ -48,54 +40,32 @@ FUNC( void ) TSALC_vDispLux( void )
 
 	MGPIOx_vLockedPins() ;
 
-	HLCD_vInit() ;
-
-	MGPIOx_vInit( &LED1 ) ;
+	HLCD_vInit( ) ;
 
 	HLDR_vInit( ) ;
 
+	MTIM1_vGeneratePWM( TIM1_CH2, PWM1, CENTER1,
+						PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
+
+	MTIM1_vEnableCounter( ) ;
+
 	HLCD_vDispString( "LUX:" ) ;
-
-	HLCD_vGoTo( HLCD_LINE2, HLCD_Square1 ) ;
-
-	HLCD_vDispString( "Steps:" ) ;
 
 	while( TRUE )
 	{
 
 		L_u16BrightnessLevel = HLDR_u16DigitalOutputValue( ) ;
 
-		HLCD_vGoTo( HLCD_LINE2, HLCD_Square7 ) ;
+		HLCD_vGoTo( HLCD_LINE1, HLCD_Square5 ) ;
 
 		HLCD_vDispNumber( L_u16BrightnessLevel ) ;
 
-		if( L_u16BrightnessLevel < VERY_DIM )
-		{
-			MGPIOx_vSetPinValue( LED1.Port, LED1.Pin, GPIOx_LOW ) ;
+		MTIM1_vSetCompareReg2Value( L_u16BrightnessLevel ) ;
 
-			HLCD_vGoTo( HLCD_LINE1, HLCD_Square5 ) ;
-
-			HLCD_vDispString( "VERY BRIGHT" ) ;
-
-			HLCD_vGoTo( HLCD_LINE2, HLCD_Square7 ) ;
-
-			HLCD_vDispNumber( L_u16BrightnessLevel ) ;
-
-			HLCD_vClearChar( HLCD_LINE2, HLCD_Square10 ) ;
-		}
-
-		else if( L_u16BrightnessLevel > DARK )
-		{
-			MGPIOx_vSetPinValue( LED1.Port, LED1.Pin, GPIOx_HIGH ) ;
-
-			HLCD_vGoTo( HLCD_LINE1, HLCD_Square5 ) ;
-
-			HLCD_vDispString( "VERY DARK  " ) ;
-
-			HLCD_vGoTo( HLCD_LINE2, HLCD_Square7 ) ;
-
-			HLCD_vDispNumber( L_u16BrightnessLevel ) ;
-		}
+		HLCD_vClearChar( HLCD_LINE1, HLCD_Square5 ) ;
+		HLCD_vClearChar( HLCD_LINE1, HLCD_Square6 ) ;
+		HLCD_vClearChar( HLCD_LINE1, HLCD_Square7 ) ;
+		HLCD_vClearChar( HLCD_LINE1, HLCD_Square8 ) ;
 
 	}
 
