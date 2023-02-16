@@ -13,7 +13,7 @@
 
 void TMTIM1_vGeneratePWM( void ) ;
 
-
+void TMTIM1_vMeasurePWM( void )  ;
 
 
 #endif //_Testing_TIM1_interface_H

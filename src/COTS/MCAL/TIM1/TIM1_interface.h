@@ -22,24 +22,24 @@ void MTIM1_vSetRepetitionValue( u8_t A_u8RCR_Value ) ;
 
 void MTIM1_vSetCompareReg1Value( u16_t A_u16CCR1_Value ) ;
 
-u16_t MTIM1_vGetCaptureReg1Value( void ) ;
+u16_t MTIM1_u16GetCaptureReg1Value( void ) ;
 
 void MTIM1_vSetCompareReg2Value( u16_t A_u16CCR2_Value ) ;
 
-u16_t MTIM1_vGetCaptureReg2Value( void ) ;
+u16_t MTIM1_u16GetCaptureReg2Value( void ) ;
 
 void MTIM1_vSetCompareReg3Value( u16_t A_u16CCR3_Value ) ;
 
-u16_t MTIM1_vGetCaptureReg3Value( void ) ;
+u16_t MTIM1_u16GetCaptureReg3Value( void ) ;
 
 void MTIM1_vSetCompareReg4Value( u16_t A_u16CCR4_Value ) ;
 
-u16_t MTIM1_vGetCaptureReg4Value( void ) ;
+u16_t MTIM1_u16GetCaptureReg4Value( void ) ;
 
 void MTIM1_vGeneratePWM( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 					u16_t A_u16PSC_Value, u16_t A_u16ARR_Value, u16_t A_u16CCRx_Value ) ;
 
-void MTIM1_vReadPWM( u16_t A_u16PSC_Value, u16_t A_u16ARR_Value ) ;
+void MTIM1_vReadPWM( void ) ;
 
 void MTIM1_vEnableCounter( void ) ;
 

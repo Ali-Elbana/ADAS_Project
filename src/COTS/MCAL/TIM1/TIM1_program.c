@@ -1333,7 +1333,7 @@ void MTIM1_vSetCompareReg1Value( u16_t A_u16CCR1_Value )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-u16_t MTIM1_vGetCaptureReg1Value( void )
+u16_t MTIM1_u16GetCaptureReg1Value( void )
 {
 
 	return TIM1->CCR1 ;
@@ -1353,7 +1353,7 @@ void MTIM1_vSetCompareReg2Value( u16_t A_u16CCR2_Value )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-u16_t MTIM1_vGetCaptureReg2Value( void )
+u16_t MTIM1_u16GetCaptureReg2Value( void )
 {
 
 	return TIM1->CCR2 ;
@@ -1373,7 +1373,7 @@ void MTIM1_vSetCompareReg3Value( u16_t A_u16CCR3_Value )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-u16_t MTIM1_vGetCaptureReg3Value( void )
+u16_t MTIM1_u16GetCaptureReg3Value( void )
 {
 
 	return TIM1->CCR3 ;
@@ -1393,7 +1393,7 @@ void MTIM1_vSetCompareReg4Value( u16_t A_u16CCR4_Value )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-u16_t MTIM1_vGetCaptureReg4Value( void )
+u16_t MTIM1_u16GetCaptureReg4Value( void )
 {
 
 	return TIM1->CCR4 ;
@@ -1904,7 +1904,7 @@ void MTIM1_vGeneratePWM( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-void MTIM1_vReadPWM( u16_t A_u16PSC_Value, u16_t A_u16ARR_Value )
+void MTIM1_vReadPWM( void )
 {
 
 	// Enable ICU PINs:
@@ -1926,16 +1926,6 @@ void MTIM1_vReadPWM( u16_t A_u16PSC_Value, u16_t A_u16ARR_Value )
 
 	MGPIOx_vInit( &T1_CH1 ) ;
 	MGPIOx_vInit( &T1_CH2 ) ;
-
-	// Set counter direction as up-counter:
-	CLR_BIT( TIM1->CR1, DIR ) ;
-
-	// Set timer Prescaler, bus clock = 8 MHz, fCK_PSC / (PSC[15:0] + 1)
-	// CK_CNT = F / (PSC+1) -> FREQ Hz -> time base = 1/FREQ
-	TIM1->PSC = A_u16PSC_Value ;
-
-	// Set timer auto reload value:
-	TIM1->ARR = A_u16ARR_Value ;
 
 	// TIM1 IC1 Configurations:
 	// Select TI1 for CCR1:

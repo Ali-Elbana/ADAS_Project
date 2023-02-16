@@ -61,10 +61,8 @@
 #define TestingLED						STOP
 #define TestingBUZZER					STOP
 #define TestingLEDBlinking				STOP
-#define TestingTIM1_PWM					RUN
-
-
-
+#define TestingTIM1_PWM_Out				STOP
+#define TestingTIM1_PWM_In				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -194,11 +192,18 @@ int main(void)
 
 	#endif
 
-	#if TestingTIM1_PWM == RUN
+	#if TestingTIM1_PWM_Out == RUN
 
 		TMTIM1_vGeneratePWM( ) ;
 
 	#endif
+
+	#if TestingTIM1_PWM_In == RUN
+
+		TMTIM1_vMeasurePWM( ) ;
+
+	#endif
+
 
 	while (TRUE) ;
 
