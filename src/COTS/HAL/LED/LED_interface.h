@@ -24,6 +24,7 @@ typedef struct
      * @brief Initialize the LED on a certain pin
      */
     u8_t u8Pin;
+
 } LED_LEDConfiguration;
 
 /************************************************************************/

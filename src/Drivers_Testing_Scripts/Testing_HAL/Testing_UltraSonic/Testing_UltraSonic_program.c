@@ -18,6 +18,7 @@
 #include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
 
 #include "../../../COTS/HAL/UltraSonic/UltraSonic_interface.h"
+#include "../../../COTS/HAL/LED/LED_interface.h"
 #include "../../../COTS/HAL/BUZZER/BUZZER_interface.h"
 
 #include "Testing_UltraSonic_interface.h"
@@ -42,12 +43,20 @@ void TULTSNC_vMeasureDistance( void )
     BUZZER =
         {
             .u8Port = GPIO_PORTA ,
+            .u8Pin  = GPIOx_PIN5
+        };
+
+    VAR(LED_LEDConfiguration)
+    MOTOR =
+        {
+            .u8Port = GPIO_PORTA ,
             .u8Pin  = GPIOx_PIN0
         };
 
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
 
 	// EN TIM1 CLK:
 	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN ) ;
@@ -58,7 +67,9 @@ void TULTSNC_vMeasureDistance( void )
 
 	HULTSNC_vInit( &TRIG ) ;
 
-	HBUZZER_vInit(&BUZZER) ;
+	HBUZZER_vInit( &BUZZER ) ;
+
+	HLED_vInit( &MOTOR ) ;
 
     while (TRUE)
     {
@@ -67,20 +78,27 @@ void TULTSNC_vMeasureDistance( void )
 
     	HBUZZER_vSoundOff( &BUZZER ) ;
 
+    	HLED_vTurnLightOn( &MOTOR ) ;
+
     	HULTSNC_vTrigger( &TRIG ) ;
 
     	L_f32Distance = HULTSNC_f32GetDistance(  ) ;
 
-    	if( L_f32Distance < 10 )
+    	while( L_f32Distance < 10 )
     	{
+
+    		HLED_vTurnLightOff( &MOTOR ) ;
+
     		HBUZZER_vSoundOn( &BUZZER ) ;
+
+        	HULTSNC_vTrigger( &TRIG ) ;
+
+        	L_f32Distance = HULTSNC_f32GetDistance(  ) ;
+
     	}
 
-    	else
-    	{
     		HBUZZER_vSoundOff( &BUZZER ) ;
-    	}
-
+    		HLED_vTurnLightOn( &MOTOR ) ;
     }
 
 }
