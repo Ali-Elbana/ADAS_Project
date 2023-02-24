@@ -39,7 +39,7 @@ void TMTIM1_vGeneratePWM( void )
 
 	MSysTick_vInit( ) ;
 
-	MTIM1_vGeneratePWM( TIM1_CH3, PWM1, CENTER1,
+	MTIM1_vGeneratePWM( TIM1_CH3, PWM1, EDGE,
 						PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
 
 	MTIM1_vEnableCounter( ) ;
@@ -94,13 +94,67 @@ void TMTIM1_vMeasurePWM( void )
 
 		MTIM1_vSetCompareReg3Value( 2000 ) ;
 
-		f32_t L_u16TON 			= MTIM1_u16GetCaptureReg2Value( ) 	;
-		u16_t L_u16DutyCycle 	= ( (float)( L_u16TON / ARR_VALUE ) * 100 )	;
+		f32_t L_f32TON 			= MTIM1_u16GetCaptureReg2Value( ) 	;
 
-		if( L_u16DutyCycle == 50 )
+		f32_t L_f32DutyCycle 	= ( (float)( L_f32TON / ARR_VALUE ) * 100 )	;
+
+		f32_t L_f32Period		= MTIM1_u16GetCaptureReg1Value( ) 	;
+
+		if( L_f32DutyCycle == 50 )
 		{
 			HLED_vTurnLightOn(&LED);
 		}
+
+	}
+
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
+
+void TMTIM1_vMeasurePulseTime( void )
+{
+
+	MGPIOx_ConfigType Pulse =
+	{
+		.Port 			= GPIO_PORTA		, .Pin 		 	= GPIOx_PIN12	 ,
+		.Mode 		 	= GPIOx_MODE_OUTPUT	, .OutputType	= GPIOx_PUSHPULL ,
+		.OutputSpeed 	= GPIOx_LowSpeed	, .InputType 	= GPIOx_NoPull
+	} ;
+
+	MRCC_vInit( ) ;
+
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+
+	// EN TIM1 CLK:
+	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN ) ;
+
+	MGPIOx_vLockedPins( ) ;
+
+	MGPIOx_vInit( &Pulse ) ;
+
+	MSysTick_vInit( ) ;
+
+	MTIM1_vSetPrescalerValue( PSC_VALUE ) ;
+
+	MTIM1_vSetAutoReloadValue( ARR_VALUE ) ;
+
+	MTIM1_vReadPWM( ) ;
+
+	MTIM1_vEnableCounter( ) ;
+
+	while( TRUE )
+	{
+
+		MGPIOx_vSetResetAtomic( Pulse.Port, Pulse.Pin, GPIOx_HIGH ) ;
+
+		MSysTick_vDelayMicroSec( 10 ) ;
+
+		MGPIOx_vSetResetAtomic( Pulse.Port , Pulse.Pin , GPIOx_HIGH  ) ;
+
+		u16_t L_u16Counts1	= MTIM1_u16GetCaptureReg1Value( ) 	;
+
+		u16_t L_u16Counts2 	= MTIM1_u16GetCaptureReg2Value( ) 	;
 
 	}
 

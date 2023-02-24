@@ -53,7 +53,7 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						RUN
+#define TestingALC						STOP
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
@@ -62,7 +62,8 @@
 #define TestingBUZZER					STOP
 #define TestingLEDBlinking				STOP
 #define TestingTIM1_PWM_Out				STOP
-#define TestingTIM1_PWM_In				STOP
+#define TestingTIM1_PWM_In				RUN
+#define TestingTIM1_MeasurePulseTime	STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -201,6 +202,12 @@ int main(void)
 	#if TestingTIM1_PWM_In == RUN
 
 		TMTIM1_vMeasurePWM( ) ;
+
+	#endif
+
+	#if TestingTIM1_MeasurePulseTime == RUN
+
+		TMTIM1_vMeasurePulseTime( ) ;
 
 	#endif
 

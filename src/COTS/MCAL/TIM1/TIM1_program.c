@@ -1941,9 +1941,9 @@ void MTIM1_vReadPWM( void )
 	CLR_BIT( TIM1->CCMR1, CC2S0 ) ;
 	SET_BIT( TIM1->CCMR1, CC2S1 ) ;
 
-	// Select active Falling edge for TI1FP1:
+	// Select active Falling edge for TI1FP2:
 	SET_BIT( TIM1->CCER, CC2P 	) ;
-	CLR_BIT( TIM1->CCER, CC2NP 	) ;
+	SET_BIT( TIM1->CCER, CC2NP 	) ;
 
 	// TIM1 Trigger Configurations:
 	// Select TI1FP1 as trigger input:
