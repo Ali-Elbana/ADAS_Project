@@ -28,7 +28,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_TFT/Testing_TFT_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LED/Testing_LED_Driver_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Buzzer/Testing_Buzzer_Driver_interface.h"
-
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_UltraSonic/Testing_UltraSonic_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
@@ -63,7 +63,8 @@
 #define TestingLEDBlinking				STOP
 #define TestingTIM1_PWM_Out				STOP
 #define TestingTIM1_PWM_In				STOP
-#define TestingTIM1_MeasurePulseTime	RUN
+#define TestingTIM1_MeasurePulseTime	STOP
+#define TestingUltraSonic				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -208,6 +209,12 @@ int main(void)
 	#if TestingTIM1_MeasurePulseTime == RUN
 
 		TMTIM1_vMeasurePulseTime( ) ;
+
+	#endif
+
+	#if TestingUltraSonic == RUN
+
+		TULTSNC_vMeasureDistance( ) ;
 
 	#endif
 
