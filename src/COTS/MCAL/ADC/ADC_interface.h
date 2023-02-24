@@ -7,24 +7,16 @@
 #define _ADC_interface_H
 
 
-
-
-
-
-
-
-
-
-typedef struct
-{
-
-
-	u8_t Port ;
-
-
-
-
-} MADC_ConfigType ;
+//typedef struct
+//{
+//
+//
+//	u8_t Port ;
+//
+//
+//
+//
+//} MADC_ConfigType ;
 
 
 /************************************************************************/
@@ -57,7 +49,7 @@ void MADC_vSelectResolution( VAR(u8_t) A_u8Resolution ) ;
 
 u16_t MADC_u16GetADCData( void ) ;
 
-void MADC_vInitStruct( P2VAR(MADC_ConfigType) A_ADCConfig ) ;
+//void MADC_vInitStruct( P2VAR(MADC_ConfigType) A_ADCConfig ) ;
 
 void MADC_vSetCallBack( void (*MEXTI_vpPointerTo_ISR_function) (void) ) ;
 

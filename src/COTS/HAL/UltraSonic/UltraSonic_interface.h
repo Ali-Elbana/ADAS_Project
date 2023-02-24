@@ -7,31 +7,26 @@
 #define _UltraSonic_interface_H
 
 /************************************************************************/
-/*                        Functions prototypes                          */
-/************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************************************************************************/
 /*                          Interfacing macros                          */
 /************************************************************************/
 
+typedef struct
+{
+    u8_t u8Port ;
 
+    u8_t u8Pin  ;
 
+} HULTSNC_ConfigType ;
 
+/************************************************************************/
+/*                        Functions prototypes                          */
+/************************************************************************/
 
+void HULTSNC_vInit( P2VAR(HULTSNC_ConfigType) TRIG_psCfg ) 		;
+
+void HULTSNC_vTrigger( P2VAR(HULTSNC_ConfigType) TRIG_psCfg ) 	;
+
+f32_t HULTSNC_f32GetDistance( void ) 							;
 
 
 

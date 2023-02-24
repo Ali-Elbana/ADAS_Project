@@ -135,9 +135,9 @@ void TMTIM1_vMeasurePulseTime( void )
 
 	MSysTick_vInit( ) ;
 
-	MTIM1_vSetPrescalerValue( PSC_VALUE ) ;
+	MTIM1_vSetPrescalerValue( 7 ) ;
 
-	MTIM1_vSetAutoReloadValue( ARR_VALUE ) ;
+	MTIM1_vSetAutoReloadValue( 10000 ) ;
 
 	MTIM1_vReadPWM( ) ;
 
@@ -146,11 +146,21 @@ void TMTIM1_vMeasurePulseTime( void )
 	while( TRUE )
 	{
 
+		//MTIM1_vSetCounterValue( 0x0000 ) ;
+
+		MGPIOx_vSetResetAtomic( Pulse.Port, Pulse.Pin, GPIOx_LOW ) ;
+
+		MSysTick_vDelayMicroSec( 2 ) ;
+
 		MGPIOx_vSetResetAtomic( Pulse.Port, Pulse.Pin, GPIOx_HIGH ) ;
 
-		MSysTick_vDelayMicroSec( 10 ) ;
+		//MTIM1_vEnableCounter( ) ;
 
-		MGPIOx_vSetResetAtomic( Pulse.Port , Pulse.Pin , GPIOx_HIGH  ) ;
+		MSysTick_vDelayMicroSec( 1000 ) ;
+
+		//MTIM1_vDisableCounter( ) ;
+
+		MGPIOx_vSetResetAtomic( Pulse.Port , Pulse.Pin , GPIOx_LOW  ) ;
 
 		u16_t L_u16Counts1	= MTIM1_u16GetCaptureReg1Value( ) 	;
 

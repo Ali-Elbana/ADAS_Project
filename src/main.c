@@ -62,8 +62,8 @@
 #define TestingBUZZER					STOP
 #define TestingLEDBlinking				STOP
 #define TestingTIM1_PWM_Out				STOP
-#define TestingTIM1_PWM_In				RUN
-#define TestingTIM1_MeasurePulseTime	STOP
+#define TestingTIM1_PWM_In				STOP
+#define TestingTIM1_MeasurePulseTime	RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
