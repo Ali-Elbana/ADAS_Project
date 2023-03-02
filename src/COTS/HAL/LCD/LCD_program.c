@@ -171,7 +171,7 @@ void HLCD_vSendCommand( VAR(u8_t) A_u8Cmd )
 	MSysTick_vDelayMilliSec( 1 ) ;
 
 	// Put the command on the data bus.
-	GPIO_vSetPortValue( HLCD_DATA_PORT, A_u8Cmd ) ;
+	GPIO_vSetNibbleLowValue( HLCD_DATA_PORT, A_u8Cmd ) ;
 
 	MSysTick_vDelayMilliSec( 1 ) ;
 
@@ -202,7 +202,7 @@ void HLCD_vSendData(VAR(u8_t) A_u8Data)
 	MSysTick_vDelayMilliSec( 1 ) ;
 
 	// Put the data on the data bus.
-	GPIO_vSetPortValue( HLCD_DATA_PORT, A_u8Data ) ;
+	GPIO_vSetNibbleLowValue( HLCD_DATA_PORT, A_u8Data ) ;
 
 	MSysTick_vDelayMilliSec( 1 ) ;
 

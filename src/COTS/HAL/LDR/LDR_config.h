@@ -10,7 +10,7 @@
 /*                        Configuration macros                          */
 /************************************************************************/
 
-#define LDR_Vo_PORT GPIO_PORTA
+#define LDR_Vo_PORT GPIO_PORTB
 
 #define LDR_Vo_PIN GPIOx_PIN0
 

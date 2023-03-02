@@ -53,7 +53,7 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						STOP
+#define TestingALC						RUN
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
@@ -64,7 +64,7 @@
 #define TestingTIM1_PWM_Out				STOP
 #define TestingTIM1_PWM_In				STOP
 #define TestingTIM1_MeasurePulseTime	STOP
-#define TestingUltraSonic				RUN
+#define TestingUltraSonic				STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/

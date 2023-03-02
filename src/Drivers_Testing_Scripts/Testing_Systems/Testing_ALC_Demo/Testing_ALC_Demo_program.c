@@ -44,12 +44,16 @@ FUNC( void ) TSALC_vDispLux( void )
 
 	HLDR_vInit( ) ;
 
-	MTIM1_vGeneratePWM( TIM1_CH2, PWM1, CENTER1,
+	MTIM1_vGeneratePWM( TIM1_CH3, PWM1, CENTER1,
 						PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
 
 	MTIM1_vEnableCounter( ) ;
 
 	HLCD_vDispString( "LUX:" ) ;
+
+	HLCD_vGoTo( HLCD_LINE2, HLCD_Square1 ) ;
+
+	HLCD_vDispString( "Speed:" ) ;
 
 	while( TRUE )
 	{
@@ -60,7 +64,7 @@ FUNC( void ) TSALC_vDispLux( void )
 
 		HLCD_vDispNumber( L_u16BrightnessLevel ) ;
 
-		MTIM1_vSetCompareReg2Value( L_u16BrightnessLevel ) ;
+		MTIM1_vSetCompareReg3Value( L_u16BrightnessLevel ) ;
 
 		HLCD_vClearChar( HLCD_LINE1, HLCD_Square5 ) ;
 		HLCD_vClearChar( HLCD_LINE1, HLCD_Square6 ) ;

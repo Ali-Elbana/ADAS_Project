@@ -150,7 +150,7 @@ void MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID);
  * @param[in] A_u8PortID The port to out the value on
  * @param[in] A_u16PortValue The value to set on the port
  */
-void GPIO_vSetPortValue( VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue ) ;
+void GPIO_vSetNibbleLowValue( VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue ) ;
 
 
 /************************************************************************/
