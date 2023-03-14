@@ -49,16 +49,16 @@ FUNC( void ) TSALC_vDispLux( void )
 
 	MSysTick_vInit( ) ;
 
-	HLCD_vInit( ) ;
-
-	HLDR_vInit( ) ;
-
 	MTIM1_vGeneratePWM( TIM1_CH3, PWM1, CENTER1,
 						PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
 
 	MTIM1_vReadPWM( ) ;
 
 	MTIM1_vEnableCounter( ) ;
+
+	HLCD_vInit( ) ;
+
+	HLDR_vInit( ) ;
 
 	HLCD_vDispString( "LUX:" ) ;
 
@@ -111,10 +111,6 @@ FUNC( void ) TSALC_vDispLux( void )
 		HLCD_vClearChar( HLCD_LINE2, HLCD_Square8 ) ;
 		HLCD_vClearChar( HLCD_LINE2, HLCD_Square9 ) ;
 		HLCD_vClearChar( HLCD_LINE2, HLCD_Square10 ) ;
-
-		L_f32SpeedValue 		= INITIAL_ZERO ;
-
-		L_f32SpeedRatio 		= INITIAL_ZERO ;
 
 		MSysTick_vDelayMilliSec( 1 ) ;
 

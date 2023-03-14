@@ -137,7 +137,7 @@ void TMTIM1_vMeasurePulseTime( void )
 
 	MTIM1_vSetPrescalerValue( 7 ) ;
 
-	MTIM1_vSetAutoReloadValue( 10000 ) ;
+	MTIM1_vSetAutoReloadValue( 4000 ) ;
 
 	MTIM1_vReadPWM( ) ;
 

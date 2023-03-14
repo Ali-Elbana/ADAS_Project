@@ -110,21 +110,21 @@ void THDC_vChangeMotorSpeed( void )
     while (TRUE)
     {
 
-//    	HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_20_PERCENT ) ;
-//
-//        MSysTick_vDelaySec( DELLAY_SEC ) ;
-//
-//        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_40_PERCENT ) ;
-//
-//        MSysTick_vDelaySec( DELLAY_SEC ) ;
-//
-//        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_60_PERCENT ) ;
-//
-//        MSysTick_vDelaySec( DELLAY_SEC ) ;
-//
-//        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_80_PERCENT ) ;
-//
-//        MSysTick_vDelaySec( DELLAY_SEC ) ;
+    	HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_20_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_40_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_60_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_80_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
 
         HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_100_PERCENT ) ;
 
