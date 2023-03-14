@@ -55,9 +55,9 @@ void MTIM1_vDisableCounter( void ) ;
 #define T1CH3_PIN				GPIOx_PIN10
 #define T1CH4_PIN				GPIOx_PIN11
 
-#define  PSC_VALUE              7
-#define  ARR_VALUE              4000
-#define  CR_VALUE              	0
+#define PSC_VALUE              	7
+#define ARR_VALUE              	4000
+#define CR_VALUE              	0
 
 #define TIM1_CH1 1
 #define TIM1_CH2 2

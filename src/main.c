@@ -52,7 +52,7 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						STOP
+#define TestingALC						RUN
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
@@ -65,7 +65,7 @@
 #define TestingTIM1_MeasurePulseTime	STOP
 #define TestingUltraSonic				STOP
 #define TestingMotorDriver 				STOP
-#define TestingMotor_ChangeSpeed		RUN
+#define TestingMotor_ChangeSpeed		STOP
 
 
 /************************************************************************/
