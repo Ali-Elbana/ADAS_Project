@@ -16,6 +16,7 @@
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
+#include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
 
 #include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 
@@ -76,3 +77,97 @@ void THDC_vTestMotors(void)
 
 /**************************************************************************************/
 /**************************************************************************************/
+
+void THDC_vChangeMotorSpeed( void )
+{
+
+	#define DELLAY_SEC	5
+
+    MRCC_vInit() ;
+
+    MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOAEN) ;
+
+    MGPIOx_vLockedPins() ;
+
+    MSysTick_vInit( ) ;
+
+    // Initialize motor 1
+    VAR(DCM_MotorConfiguration) GS_pMotor1 =
+    {
+        .u8Port			= GPIO_PORTA	,
+        .u8Pin1 		= GPIOx_PIN3	,
+        .u8Pin2 		= GPIOx_PIN4	,
+        .u8Direction 	= FORWARD		,
+		.u8SpeedPin		= TIM1_CH3		,
+		.u8SpeedRatio	= SPEED_10_PERCENT
+    };
+
+
+    HDCM_vInitMotor(&GS_pMotor1);
+
+    MTIM1_vEnableCounter(  ) ;
+
+    while (TRUE)
+    {
+
+    	HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_20_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_40_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_60_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_80_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+        HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_100_PERCENT ) ;
+
+        MSysTick_vDelaySec( DELLAY_SEC ) ;
+
+    }
+
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

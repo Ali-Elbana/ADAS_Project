@@ -44,6 +44,13 @@ typedef struct
      */
     u8_t u8Direction;
 
+
+    u8_t u8SpeedPin;
+
+
+    u8_t u8SpeedRatio ;
+
+
 } DCM_MotorConfiguration;
 
 /************************************************************************/
@@ -76,10 +83,8 @@ void HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
  */
 void HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
 
-// TODO: After developing a timer driver:
-void HDCM_vMotorSpeedCntrl(VAR(u8_t) A_u8SpeedRatio);
 
-
+void HDCM_vMotorSpeedCntrl( P2VAR(DCM_MotorConfiguration) pMotorConfiguration, VAR(u16_t) A_u16SpeedRatio ) ;
 
 /************************************************************************/
 /*                          Interfacing macros                          */
@@ -106,5 +111,19 @@ void HDCM_vMotorSpeedCntrl(VAR(u8_t) A_u8SpeedRatio);
 #define BACKWARD (CCW)
 
 /** @} */
+
+
+#define SPEED_0_PERCENT		0
+#define SPEED_10_PERCENT	10
+#define SPEED_20_PERCENT	20
+#define SPEED_30_PERCENT	30
+#define SPEED_40_PERCENT	40
+#define SPEED_50_PERCENT	50
+#define SPEED_60_PERCENT	60
+#define SPEED_70_PERCENT	70
+#define SPEED_80_PERCENT	80
+#define SPEED_90_PERCENT	90
+#define SPEED_100_PERCENT	100
+
 
 #endif //_DCM_interface_H

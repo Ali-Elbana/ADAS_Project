@@ -43,8 +43,6 @@ void HULTSNC_vInit( P2VAR(HULTSNC_ConfigType) TRIG_psCfg )
 
 	MTIM1_vReadPWM( ) ;
 
-	MTIM1_vEnableCounter( ) ;
-
 }
 
 /**************************************************************************************************************/

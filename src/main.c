@@ -64,7 +64,9 @@
 #define TestingTIM1_PWM_In				STOP
 #define TestingTIM1_MeasurePulseTime	STOP
 #define TestingUltraSonic				STOP
-#define TestingMotorDriver 				RUN
+#define TestingMotorDriver 				STOP
+#define TestingMotor_ChangeSpeed		RUN
+
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -218,6 +220,11 @@ int main(void)
 
 	#endif
 
+	#if TestingMotor_ChangeSpeed == RUN
+
+		THDC_vChangeMotorSpeed( ) ;
+
+	#endif
 
 	while (TRUE) ;
 

@@ -67,6 +67,8 @@ void TULTSNC_vMeasureDistance( void )
 
 	HULTSNC_vInit( &TRIG ) ;
 
+	MTIM1_vEnableCounter( ) ;
+
 	HBUZZER_vInit( &BUZZER ) ;
 
 	HLED_vInit( &MOTOR ) ;

@@ -14,4 +14,6 @@
 
 void THDC_vTestMotors(void);
 
+void THDC_vChangeMotorSpeed( void ) ;
+
 #endif //_Testing_Motor_Driver_interface_H
