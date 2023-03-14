@@ -29,6 +29,7 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_LED/Testing_LED_Driver_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Buzzer/Testing_Buzzer_Driver_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_UltraSonic/Testing_UltraSonic_interface.h"
+#include "Drivers_Testing_Scripts/Testing_HAL/Testing_Car_Movement/Testing_Car_Movement_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
@@ -65,8 +66,8 @@
 #define TestingTIM1_MeasurePulseTime	STOP
 #define TestingUltraSonic				STOP
 #define TestingMotorDriver 				STOP
-#define TestingMotor_ChangeSpeed		RUN
-
+#define TestingMotor_ChangeSpeed		STOP
+#define TestingCar_Movement				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -225,6 +226,13 @@ int main(void)
 		THDC_vChangeMotorSpeed( ) ;
 
 	#endif
+
+	#if TestingCar_Movement == RUN
+
+		THCarMov_vTestCarMovement( ) ;
+
+	#endif
+
 
 	while (TRUE) ;
 

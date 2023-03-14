@@ -16,7 +16,6 @@
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 
-
 #include "Testing_DC_Motor_interface.h"
 #include "Testing_DC_Motor_private.h"
 #include "Testing_DC_Motor_config.h"

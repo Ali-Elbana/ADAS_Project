@@ -11,9 +11,19 @@
 /*                        Functions prototypes                          */
 /************************************************************************/
 
+void HCarMove_vInit( void ) ;
 
+void HCarMove_vSpeedRatio( VAR(u16_t) A_u16SpeedRatio ) ;
 
+void HCarMove_vForward( void ) ;
 
+void HCarMove_vBackward( void ) ;
+
+void HCarMove_vRight( void ) ;
+
+void HCarMove_vLeft( void ) ;
+
+void HCarMove_vStop( void ) ;
 
 
 
