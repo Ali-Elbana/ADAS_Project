@@ -43,7 +43,6 @@
 #define TestingEXTI_ToggleLED 			STOP
 #define TestingDCMotor 					STOP
 #define TestingSTK_ToggleLED_BusyWait 	STOP
-#define TestingMotorDriver 				STOP
 #define TestingGPIO_Input  				STOP
 #define TestingPushButton				STOP
 #define TestingDCMotor					STOP
@@ -53,7 +52,7 @@
 #define TestingLDR						STOP
 #define TestingLCD						STOP
 #define TestingGPIO_OutputPort			STOP
-#define TestingALC						RUN
+#define TestingALC						STOP
 #define TestingUART						STOP
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
@@ -65,6 +64,7 @@
 #define TestingTIM1_PWM_In				STOP
 #define TestingTIM1_MeasurePulseTime	STOP
 #define TestingUltraSonic				STOP
+#define TestingMotorDriver 				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/

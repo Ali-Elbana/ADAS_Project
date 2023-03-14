@@ -330,7 +330,7 @@ void TMGPIO_vOutputPortValue( void )
 	MGPIOx_vInit( &D6 ) ;
 	MGPIOx_vInit( &D7 ) ;
 
-	GPIO_vSetPortValue( HLCD_DATA_PORT, GPIOA_LOW_NIBBLE_HIGH ) ;
+	GPIO_vSetNibbleLowValue( HLCD_DATA_PORT, GPIOA_LOW_NIBBLE_HIGH ) ;
 
 	while (TRUE)
 	{
