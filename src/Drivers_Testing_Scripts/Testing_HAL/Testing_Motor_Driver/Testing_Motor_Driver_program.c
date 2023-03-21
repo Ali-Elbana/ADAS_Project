@@ -17,6 +17,7 @@
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 #include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
+#include "../../../COTS/MCAL/SPI/SPI_interface.h"
 
 #include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 
@@ -85,7 +86,8 @@ void THDC_vChangeMotorSpeed( void )
 
     MRCC_vInit() ;
 
-    MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOAEN) ;
+    MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+    MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN  ) ;
 
     MGPIOx_vLockedPins() ;
 
@@ -98,7 +100,7 @@ void THDC_vChangeMotorSpeed( void )
         .u8Pin1 		= GPIOx_PIN3	,
         .u8Pin2 		= GPIOx_PIN4	,
         .u8Direction 	= FORWARD		,
-		.u8SpeedPin		= TIM1_CH3		,
+		.u8SpeedPin		= TIM1_CH4		,
 		.u8SpeedRatio	= SPEED_10_PERCENT
     };
 
@@ -107,26 +109,38 @@ void THDC_vChangeMotorSpeed( void )
 
     MTIM1_vEnableCounter(  ) ;
 
+    MSPI_vInit( SPI2, SPIx_MSTR, SPIx_FULL_DUPLEX ) ;
+
     while (TRUE)
     {
 
     	HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_20_PERCENT ) ;
 
+    	MSPI_vMasterTransmit( SPI2, MTIM1_u16GetCaptureReg4Value( ) ) ;
+
         MSysTick_vDelaySec( DELLAY_SEC ) ;
 
         HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_40_PERCENT ) ;
+
+        MSPI_vMasterTransmit( SPI2, MTIM1_u16GetCaptureReg4Value( ) ) ;
 
         MSysTick_vDelaySec( DELLAY_SEC ) ;
 
         HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_60_PERCENT ) ;
 
+        MSPI_vMasterTransmit( SPI2, MTIM1_u16GetCaptureReg4Value( ) ) ;
+
         MSysTick_vDelaySec( DELLAY_SEC ) ;
 
         HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_80_PERCENT ) ;
 
+        MSPI_vMasterTransmit( SPI2, MTIM1_u16GetCaptureReg4Value( ) ) ;
+
         MSysTick_vDelaySec( DELLAY_SEC ) ;
 
         HDCM_vMotorSpeedCntrl( &GS_pMotor1, SPEED_100_PERCENT ) ;
+
+        MSPI_vMasterTransmit( SPI2, MTIM1_u16GetCaptureReg4Value( ) ) ;
 
         MSysTick_vDelaySec( DELLAY_SEC ) ;
 

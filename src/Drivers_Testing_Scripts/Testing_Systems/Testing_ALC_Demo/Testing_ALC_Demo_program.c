@@ -16,6 +16,7 @@
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
+#include "../../../COTS/MCAL/SPI/SPI_interface.h"
 #include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 
 #include "../../../COTS/HAL/LDR/LDR_interface.h"
@@ -34,16 +35,19 @@ FUNC( void ) TSALC_vDispLux( void )
 
 	VAR(u16_t) L_u16BrightnessLevel = INITIAL_ZERO ;
 
-	VAR(f32_t) L_f32SpeedValue 		= INITIAL_ZERO ;
+	VAR(u16_t) L_u16SpeedRatio		= INITIAL_ZERO ;
 
-	VAR(f32_t) L_f32SpeedRatio 		= INITIAL_ZERO ;
-
-	VAR(f32_t) L_f32Period 			= INITIAL_ZERO ;
+//	VAR(f32_t) L_f32SpeedValue 		= INITIAL_ZERO ;
+//
+//	VAR(f32_t) L_f32SpeedRatio 		= INITIAL_ZERO ;
+//
+//	VAR(f32_t) L_f32Period 			= INITIAL_ZERO ;
 
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN ) ;
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN  ) ;
 
 	MGPIOx_vLockedPins() ;
 
@@ -52,13 +56,13 @@ FUNC( void ) TSALC_vDispLux( void )
 	MTIM1_vGeneratePWM( TIM1_CH3, PWM1, CENTER1,
 						PSC_VALUE, ARR_VALUE, CR_VALUE ) ;
 
-	MTIM1_vReadPWM( ) ;
-
 	MTIM1_vEnableCounter( ) ;
 
 	HLCD_vInit( ) ;
 
 	HLDR_vInit( ) ;
+
+	MSPI_vInit( SPI3, SPIx_SLAVE, SPIx_FULL_DUPLEX ) ;
 
 	HLCD_vDispString( "LUX:" ) ;
 
@@ -78,18 +82,20 @@ FUNC( void ) TSALC_vDispLux( void )
 
 		MTIM1_vSetCompareReg3Value( L_u16BrightnessLevel ) ;
 
-		/* Display Motors Speed Ratio */
-		L_f32SpeedValue = MTIM1_u16GetCaptureReg2Value( ) 	;
-
-		L_f32SpeedRatio = ( (float)( L_f32SpeedValue / ARR_VALUE ) * 100 )	;
-
-		L_f32Period = MTIM1_u16GetCaptureReg1Value( ) 	;
-
+//		/* Display Motors Speed Ratio */
+//		L_f32SpeedValue = MTIM1_u16GetCaptureReg2Value( ) 	;
+//
+//		L_f32SpeedRatio = ( (float)( L_f32SpeedValue / ARR_VALUE ) * 100 )	;
+//
+//		L_f32Period = MTIM1_u16GetCaptureReg1Value( ) 	;
+//
 		HLCD_vGoTo( HLCD_LINE2, HLCD_Square7 ) ;
 
-		HLCD_vDispNumber( (u16_t)L_f32SpeedRatio ) ;
+		//L_u16SpeedRatio = MSPI_u16SlaveRecieve( SPI3 ) ;
 
-		if( L_f32SpeedRatio < 100 )
+		HLCD_vDispNumber( L_u16SpeedRatio ) ;
+
+		if( L_u16SpeedRatio < 100 )
 		{
 			HLCD_vGoTo( HLCD_LINE2, HLCD_Square9 ) ;
 			HLCD_vSendData( '%' ) ;

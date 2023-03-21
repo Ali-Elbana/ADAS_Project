@@ -149,7 +149,7 @@ void HDCM_vMotorSpeedCntrl( P2VAR(DCM_MotorConfiguration) pMotorConfiguration, V
 
 		case TIM1_CH4: MTIM1_vSetCompareReg4Value( A_u16SpeedRatio ) ; break ;
 
-		default:  MTIM1_vSetCompareReg3Value( A_u16SpeedRatio ) ;
+		default:  break ;
 
 	}
 

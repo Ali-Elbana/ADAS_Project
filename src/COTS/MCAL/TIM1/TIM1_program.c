@@ -1407,9 +1407,6 @@ void MTIM1_vGeneratePWM( u8_t A_u8T1CHx, u8_t A_u8PWM_Mode, u8_t A_u8CenterMode,
 					u16_t A_u16PSC_Value, u16_t A_u16ARR_Value, u16_t A_u16CCRx_Value )
 {
 
-	// EN TIM1 CLK:
-	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN ) ;
-
 	// Auto-reload preload enable:
 	SET_BIT( TIM1->CR1, ARPE ) ;
 

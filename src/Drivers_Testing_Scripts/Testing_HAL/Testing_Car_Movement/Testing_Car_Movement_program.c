@@ -37,7 +37,8 @@ void THCarMov_vTestCarMovement( void )
 
 	MRCC_vInit() ;
 
-	MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOAEN) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN ) ;
+	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN  ) ;
 
 	MGPIOx_vLockedPins() ;
 
@@ -47,7 +48,7 @@ void THCarMov_vTestCarMovement( void )
 
 	MTIM1_vEnableCounter(  ) ;
 
-	HCarMove_vSpeedRatio( SPEED_10_PERCENT ) ;
+	HCarMove_vSpeedRatio( SPEED_50_PERCENT ) ;
 
     while (TRUE)
     {
