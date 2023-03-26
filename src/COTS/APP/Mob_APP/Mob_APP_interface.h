@@ -6,8 +6,13 @@
 #ifndef _Mob_APP_interface_H
 #define _Mob_APP_interface_H
 
+/************************************************************************/
+/*                        Functions prototypes                          */
+/************************************************************************/
 
+void AMobApp_vInit( void ) ;
 
+void AMobApp_vCntrlCar( void ) ;
 
 
 
