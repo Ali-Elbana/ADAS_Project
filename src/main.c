@@ -31,6 +31,8 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_UltraSonic/Testing_UltraSonic_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Car_Movement/Testing_Car_Movement_interface.h"
 
+#include "Drivers_Testing_Scripts/Testing_APP/Testing_MobApp/Testing_MobApp_interface.h"
+
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
 /************************************************************************/
@@ -67,7 +69,8 @@
 #define TestingUltraSonic				STOP
 #define TestingMotorDriver 				STOP
 #define TestingMotor_ChangeSpeed		STOP
-#define TestingCar_Movement				RUN
+#define TestingCar_Movement				STOP
+#define TestingMobApp_MovesCar			RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -233,6 +236,11 @@ int main(void)
 
 	#endif
 
+	#if	TestingMobApp_MovesCar == RUN
+
+		TAMob_vMovesCar( ) ;
+
+	#endif
 
 	while (TRUE) ;
 
