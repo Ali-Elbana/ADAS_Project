@@ -10,11 +10,11 @@
 #define MOTOR1_PORT	GPIO_PORTA
 #define MOTOR2_PORT GPIO_PORTA
 
-#define IN1_PIN		GPIOx_PIN3
-#define IN2_PIN		GPIOx_PIN4
+#define IN1_PIN		GPIOx_PIN0
+#define IN2_PIN		GPIOx_PIN1
 
-#define IN3_PIN		GPIOx_PIN5
-#define IN4_PIN		GPIOx_PIN6
+#define IN3_PIN		GPIOx_PIN2
+#define IN4_PIN		GPIOx_PIN3
 
 
 // Initialize motor 1
@@ -23,7 +23,6 @@ VAR(DCM_MotorConfiguration) Motor1 =
     .u8Port			= MOTOR1_PORT	,
     .u8Pin1 		= IN1_PIN		,
     .u8Pin2 		= IN2_PIN		,
-    .u8Direction 	= FORWARD		,
 	.u8SpeedPin		= TIM1_CH4		,
 	.u8SpeedRatio	= SPEED_10_PERCENT
 };
@@ -34,7 +33,6 @@ VAR(DCM_MotorConfiguration) Motor3 =
     .u8Port			= MOTOR2_PORT	,
     .u8Pin1 		= IN3_PIN		,
     .u8Pin2 		= IN4_PIN		,
-    .u8Direction 	= FORWARD		,
 	.u8SpeedPin		= TIM1_CH4		,
 	.u8SpeedRatio	= SPEED_10_PERCENT
 };

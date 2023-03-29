@@ -35,22 +35,24 @@ void TAMob_vMovesCar( void )
 
 	MRCC_vInit( ) ;
 
-	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN  ) ;
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN  ) ;
-	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN  ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN  ) ;
+	MRCC_vEnablePeriphralCLK( RCC_APB2, APB2ENR_TIM1EN   ) ;
 
-	MGPIOx_vLockedPins() ;
+	MGPIOx_vLockedPins( ) ;
 
-	HCarMove_vSpeedRatio( SPEED_50_PERCENT ) ;
+	HCarMove_vInit( ) ;
 
-	MTIM1_vEnableCounter(  ) ;
+	MTIM1_vEnableCounter( ) ;
+
+	HCarMove_vSpeedRatio( SPEED_60_PERCENT ) ;
 
 	AMobApp_vInit( ) ;
 
-	AMobApp_vCntrlCar( ) ;
-
 	while( TRUE )
 	{
+
+		AMobApp_vCntrlCar( ) ;
 
 	}
 
