@@ -10,9 +10,6 @@
 #ifndef _DCM_config_H
 #define _DCM_config_H
 
-
-
-
-
+#define MAX_SPEED 100
 
 #endif //_DCM_config_H

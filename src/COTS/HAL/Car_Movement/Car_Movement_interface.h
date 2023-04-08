@@ -25,6 +25,7 @@ void HCarMove_vLeft( void ) ;
 
 void HCarMove_vStop( void ) ;
 
+u32_t HCarMove_u32GetCarSpeed( void ) ;
 
 
 #endif //_Car_Movement_interface_H

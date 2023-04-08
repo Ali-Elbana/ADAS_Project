@@ -83,8 +83,9 @@ void HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
  */
 void HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
 
+void HDCM_vMotorSpeedCntrl( P2VAR(DCM_MotorConfiguration) pMotorConfiguration, VAR(u16_t) A_u16SpeedValue ) ;
 
-void HDCM_vMotorSpeedCntrl( P2VAR(DCM_MotorConfiguration) pMotorConfiguration, VAR(u16_t) A_u16SpeedRatio ) ;
+u32_t HDCM_vGetSpeedValue( P2VAR(DCM_MotorConfiguration) pMotorConfiguration ) ;
 
 /************************************************************************/
 /*                          Interfacing macros                          */

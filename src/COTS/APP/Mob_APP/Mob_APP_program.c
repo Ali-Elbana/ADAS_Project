@@ -17,6 +17,7 @@
 #include "../../MCAL/GPIO/GPIO_interface.h"
 
 #include "../../HAL/Bluetooth/Bluetooth_interface.h"
+#include "../../HAL/DCMOTOR/DCM_interface.h"
 #include "../../HAL/Car_Movement/Car_Movement_interface.h"
 
 #include "Mob_APP_interface.h"
@@ -61,6 +62,8 @@ void AMobApp_vInit( void )
 void AMobApp_vCntrlCar( void )
 {
 
+	u32_t L_u32SpeedValue = INITIAL_ZERO ;
+
 	do
 	{
 
@@ -81,17 +84,39 @@ void AMobApp_vCntrlCar( void )
 
 			case 'e': HCarMove_vStop( ) 	; break ;
 
-			case 10:
-			case 20:
-			case 30:
-			case 40:
-			case 50:
-			case 60:
-			case 70:
-			case 80:
-			case 90:
-			case 100:
-					HCarMove_vSpeedRatio( L_c8RecievedButton ) ; break ;
+			case '+':
+
+				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				if( L_u32SpeedValue >= SPEED_100_PERCENT )
+				{
+					L_u32SpeedValue = SPEED_100_PERCENT ;
+				}
+				else
+				{
+					L_u32SpeedValue += SPEED_10_PERCENT ;
+
+					HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
+				}
+
+			break ;
+
+			case '-':
+
+				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				if( L_u32SpeedValue <= SPEED_0_PERCENT )
+				{
+					L_u32SpeedValue = SPEED_0_PERCENT ;
+				}
+				else
+				{
+					L_u32SpeedValue -= SPEED_10_PERCENT ;
+
+					HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
+				}
+
+			break ;
 
 			default: /* Do Nothing */ break ;
 
