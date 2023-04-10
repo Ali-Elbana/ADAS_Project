@@ -8,6 +8,9 @@
 /*                        Include headers                        	    */
 /************************************************************************/
 
+#include "stdlib.h"
+#include "string.h"
+
 #include "../../LIB/LSTD_TYPES.h"
 #include "../../LIB/LSTD_COMPILER.h"
 #include "../../LIB/LSTD_VALUES.h"
@@ -40,7 +43,8 @@ u8_t L_u8RightCheck			= INITIAL_ZERO	;
 u8_t L_u8LeftCheck			= INITIAL_ZERO	;
 u8_t L_u8StopCheck			= INITIAL_ZERO	;
 
-c8_t L_c8RecievedButton = INITIAL_ZERO ;
+static c8_t GS_c8RecievedButton = INITIAL_ZERO ;
+static u32_t GS_u32SpeedValue 	= INITIAL_ZERO ;
 
 /************************************************************************/
 /*                     Functions implementations                      	*/
@@ -58,62 +62,135 @@ void AMobApp_vInit( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
+void AMobApp_vSendSpeedValue( u8_t A_u8SpeedValue )
+{
+
+	char L_strSpeedIndc[6] = "*S" ;
+
+	char L_strSpeedStr[4] ;
+
+	// Convert the speed value from integer to string and store it in speedStr.
+	itoa( A_u8SpeedValue, L_strSpeedStr, DECIMAL ) ;
+
+	// Concatenate "*S" with the speed value string to result a string like that "*S100".
+	strcat( L_strSpeedIndc, L_strSpeedStr ) ;
+
+	// Concatenate speed value string with "*" to result a string like that "*S100*"
+	strcat( L_strSpeedIndc, "*" ) ;
+
+	// Then send this string through bluetooth to the speed indicator.
+	HBluetooth_vSendString( L_strSpeedIndc ) ;
+
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
 
 void AMobApp_vCntrlCar( void )
 {
 
-	u32_t L_u32SpeedValue = INITIAL_ZERO ;
-
 	do
 	{
 
-		L_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
+		GS_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
 
-		switch( L_c8RecievedButton )
+		switch( GS_c8RecievedButton )
 		{
 
-			case 'f': HCarMove_vForward( ) 	; break ;
+			case 'f':
 
-			case 'b': HCarMove_vBackward( ) ; break ;
+				HCarMove_vForward( ) ;
 
-			case 'r': HCarMove_vRight( ) 	; break ;
+				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
-			case 'l': HCarMove_vLeft( ) 	; break ;
+				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
 
-			case 's': HCarMove_vStop( ) 	; break ;
+			break ;
 
-			case 'e': HCarMove_vStop( ) 	; break ;
+			case 'b':
+
+				HCarMove_vBackward( ) ;
+
+				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
+
+			break ;
+
+			case 'r':
+
+				HCarMove_vRight( ) ;
+
+				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
+
+			break ;
+
+			case 'l':
+
+				HCarMove_vLeft( ) ;
+
+				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
+
+			break ;
+
+			case 's':
+
+				HCarMove_vStop( ) ;
+
+				HBluetooth_vSendString( "*S0*" ) ;
+
+			break ;
+
+			case 'e':
+
+				HCarMove_vStop( ) ;
+
+				HBluetooth_vSendString( "*S0*" ) ;
+
+			break ;
 
 			case '+':
 
-				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
-				if( L_u32SpeedValue >= SPEED_100_PERCENT )
+				if( GS_u32SpeedValue >= SPEED_100_PERCENT )
 				{
-					L_u32SpeedValue = SPEED_100_PERCENT ;
+					GS_u32SpeedValue = SPEED_100_PERCENT ;
+
+					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
 				}
 				else
 				{
-					L_u32SpeedValue += SPEED_10_PERCENT ;
+					GS_u32SpeedValue += SPEED_10_PERCENT ;
 
-					HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
+					HCarMove_vSpeedRatio( GS_u32SpeedValue ) ;
+
+					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
 				}
 
 			break ;
 
 			case '-':
 
-				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
-				if( L_u32SpeedValue <= SPEED_0_PERCENT )
+				if( GS_u32SpeedValue <= SPEED_0_PERCENT )
 				{
-					L_u32SpeedValue = SPEED_0_PERCENT ;
+					GS_u32SpeedValue = SPEED_0_PERCENT ;
+
+					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
 				}
 				else
 				{
-					L_u32SpeedValue -= SPEED_10_PERCENT ;
+					GS_u32SpeedValue -= SPEED_10_PERCENT ;
 
-					HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
+					HCarMove_vSpeedRatio( GS_u32SpeedValue ) ;
+
+					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
 				}
 
 			break ;
@@ -122,7 +199,7 @@ void AMobApp_vCntrlCar( void )
 
 		}
 
-	}while( L_c8RecievedButton != 'e' ) ;
+	}while( GS_c8RecievedButton != 'e' ) ;
 
 }
 

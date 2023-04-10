@@ -7,7 +7,7 @@
 #define _Mob_APP_config_H
 
 
-
+#define DECIMAL 10
 
 
 

@@ -12,8 +12,9 @@
 
 void AMobApp_vInit( void ) ;
 
-void AMobApp_vCntrlCar( void ) ;
+void AMobApp_vSendSpeedValue( u8_t A_u8SpeedValue ) ;
 
+void AMobApp_vCntrlCar( void ) ;
 
 
 #endif //_Mob_APP_interface_H
