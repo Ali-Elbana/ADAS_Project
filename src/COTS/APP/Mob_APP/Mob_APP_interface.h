@@ -12,7 +12,7 @@
 
 void AMobApp_vInit( void ) ;
 
-void AMobApp_vSendSpeedValue( u8_t A_u8SpeedValue ) ;
+void AMobApp_vSendSpeedValue( u32_t A_u32SpeedValue ) ;
 
 void AMobApp_vCntrlCar( void ) ;
 

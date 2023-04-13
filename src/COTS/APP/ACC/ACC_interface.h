@@ -14,9 +14,10 @@
 
 void AACC_vInit( void ) ;
 
-void AACC_vStopsCar( void ) ;
+void AACC_vModeON( void ) ;
 
 
+#define ACC_SAFE_DIST 10 //(cm)
 
 
 #endif //_ACC_interface_H

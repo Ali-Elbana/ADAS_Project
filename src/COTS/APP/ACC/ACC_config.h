@@ -8,7 +8,4 @@
 
 
 
-#define ACC_SAFE_DIST 10 //(cm)
-
-
 #endif //_ACC_config_H

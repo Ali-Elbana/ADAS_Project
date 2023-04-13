@@ -20,6 +20,7 @@
 
 #include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 #include "../../../COTS/HAL/Car_Movement/Car_Movement_interface.h"
+#include "../../../COTS/HAL/UltraSonic/UltraSonic_interface.h"
 
 #include "../../../COTS/APP/Mob_APP/Mob_APP_interface.h"
 #include "../../../COTS/APP/ACC/ACC_interface.h"
@@ -35,6 +36,13 @@
 void TAMob_vMovesCar( void )
 {
 
+    VAR(HULTSNC_ConfigType)
+    TRIG =
+        {
+            .u8Port = GPIO_PORTB,
+            .u8Pin  = GPIOx_PIN8
+        };
+
 	MRCC_vInit( ) ;
 
 	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN  ) ;
@@ -49,7 +57,7 @@ void TAMob_vMovesCar( void )
 
 	HCarMove_vSpeedRatio( SPEED_70_PERCENT ) ;
 
-	AACC_vInit( ) ;
+	HULTSNC_vInit( &TRIG ) ;
 
 	MTIM1_vEnableCounter( ) ;
 

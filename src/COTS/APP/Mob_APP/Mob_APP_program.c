@@ -16,9 +16,12 @@
 #include "../../LIB/LSTD_VALUES.h"
 #include "../../LIB/LSTD_BITMATH.h"
 
+#include "../../MCAL/GPIO/GPIO_interface.h"
+
 #include "../../HAL/Bluetooth/Bluetooth_interface.h"
 #include "../../HAL/DCMOTOR/DCM_interface.h"
 #include "../../HAL/Car_Movement/Car_Movement_interface.h"
+#include "../../HAL/UltraSonic/UltraSonic_interface.h"
 
 #include "../ACC/ACC_interface.h"
 
@@ -45,15 +48,15 @@ void AMobApp_vInit( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
-void AMobApp_vSendSpeedValue( u8_t A_u8SpeedValue )
+void AMobApp_vSendSpeedValue( u32_t A_u32SpeedValue )
 {
 
-	char L_strSpeedIndc[6] = "*S" ;
+	char L_strSpeedIndc[9] = "*S" ;
 
-	char L_strSpeedStr[4] ;
+	char L_strSpeedStr[6] ;
 
 	// Convert the speed value from integer to string and store it in speedStr.
-	itoa( A_u8SpeedValue, L_strSpeedStr, DECIMAL ) ;
+	itoa( A_u32SpeedValue, L_strSpeedStr, DECIMAL ) ;
 
 	// Concatenate "*S" with the speed value string to result a string like that "*S100".
 	strcat( L_strSpeedIndc, L_strSpeedStr ) ;
@@ -72,6 +75,16 @@ void AMobApp_vSendSpeedValue( u8_t A_u8SpeedValue )
 void AMobApp_vCntrlCar( void )
 {
 
+
+    VAR(HULTSNC_ConfigType)
+    trig =
+        {
+            .u8Port = GPIO_PORTB,
+            .u8Pin  = GPIOx_PIN8
+        };
+
+	f32_t L_f32Distance = INITIAL_ZERO ;
+
 	do
 	{
 
@@ -80,10 +93,37 @@ void AMobApp_vCntrlCar( void )
 		switch( GS_c8RecievedButton )
 		{
 
-
 			case 'a':
 
-				AACC_vStopsCar( ) ;
+				do
+				{
+
+					HULTSNC_vTrigger( &trig ) ;
+
+					L_f32Distance = HULTSNC_f32GetDistance(  ) ;
+
+					if( L_f32Distance < ACC_SAFE_DIST )
+					{
+						HCarMove_vStop( ) ;
+
+						HBluetooth_vSendString( "*S0*" ) ;
+
+						HULTSNC_vTrigger( &trig ) ;
+
+						L_f32Distance = HULTSNC_f32GetDistance(  ) ;
+					}
+					else if( L_f32Distance >= 10 )
+					{
+						HCarMove_vForward( ) ;
+
+						GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+						AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
+					}
+
+					GS_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
+
+				}while( GS_c8RecievedButton == 'a' ) ;
 
 			break ;
 
