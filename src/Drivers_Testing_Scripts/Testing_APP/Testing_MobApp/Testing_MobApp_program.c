@@ -16,11 +16,13 @@
 #include "../../../COTS/MCAL/RCC/MRCC_interface.h"
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../../COTS/MCAL/TIM1/TIM1_interface.h"
+#include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
 
 #include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 #include "../../../COTS/HAL/Car_Movement/Car_Movement_interface.h"
 
 #include "../../../COTS/APP/Mob_APP/Mob_APP_interface.h"
+#include "../../../COTS/APP/ACC/ACC_interface.h"
 
 #include "Testing_MobApp_interface.h"
 #include "Testing_MobApp_private.h"
@@ -41,11 +43,15 @@ void TAMob_vMovesCar( void )
 
 	MGPIOx_vLockedPins( ) ;
 
+	MSysTick_vInit( ) ;
+
 	HCarMove_vInit( ) ;
 
-	MTIM1_vEnableCounter( ) ;
+	HCarMove_vSpeedRatio( SPEED_70_PERCENT ) ;
 
-	HCarMove_vSpeedRatio( SPEED_60_PERCENT ) ;
+	AACC_vInit( ) ;
+
+	MTIM1_vEnableCounter( ) ;
 
 	AMobApp_vInit( ) ;
 

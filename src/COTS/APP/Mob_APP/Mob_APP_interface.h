@@ -17,4 +17,8 @@ void AMobApp_vSendSpeedValue( u8_t A_u8SpeedValue ) ;
 void AMobApp_vCntrlCar( void ) ;
 
 
+
+#define DECIMAL 10
+
+
 #endif //_Mob_APP_interface_H

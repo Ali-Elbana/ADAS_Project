@@ -37,9 +37,9 @@ void HULTSNC_vInit( P2VAR(HULTSNC_ConfigType) TRIG_psCfg )
 
     MGPIOx_vInit( &TRIG_Cfg ) ;
 
-	MTIM1_vSetPrescalerValue( 7 ) ;
+	//MTIM1_vSetPrescalerValue( 7 ) ;
 
-	MTIM1_vSetAutoReloadValue( 60000 ) ;
+	//MTIM1_vSetAutoReloadValue( 60000 ) ;
 
 	MTIM1_vReadPWM( ) ;
 
