@@ -1,20 +1,20 @@
-/* FILENAME: ACC_interface  
+/* FILENAME: Traditional_Mode_interface  
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Thu 04/13/2023
+*  DATE:   Mon 04/17/2023
 */
-#ifndef _ACC_interface_H
-#define _ACC_interface_H
+#ifndef _Traditional_Mode_interface_H
+#define _Traditional_Mode_interface_H
 
 
 /************************************************************************/
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-
-//void AACC_vInit( void ) ;
-
-void AACC_vModeON( void ) ;
+void ATraditional_vModeON( void ) ;
 
 
-#endif //_ACC_interface_H
+#endif //_Traditional_Mode_interface_H
+
+
+

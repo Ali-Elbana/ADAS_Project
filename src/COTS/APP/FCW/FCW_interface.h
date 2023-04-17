@@ -1,20 +1,17 @@
-/* FILENAME: ACC_interface  
+/* FILENAME: FCW_interface  
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Thu 04/13/2023
+*  DATE:   Mon 04/17/2023
 */
-#ifndef _ACC_interface_H
-#define _ACC_interface_H
+#ifndef _FCW_interface_H
+#define _FCW_interface_H
 
 
 /************************************************************************/
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-
-//void AACC_vInit( void ) ;
-
-void AACC_vModeON( void ) ;
+void AFCW_vModeON( void ) ;
 
 
-#endif //_ACC_interface_H
+#endif //_FCW_interface_H

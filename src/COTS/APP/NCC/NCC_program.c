@@ -1,8 +1,9 @@
-/* FILENAME: ACC_program 
+/* FILENAME: NCC_program 
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Thu 04/13/2023
+*  DATE:   Mon 04/17/2023
 */
+
 
 /************************************************************************/
 /*                        Include headers                        	    */
@@ -13,58 +14,33 @@
 #include "../../LIB/LSTD_VALUES.h"
 #include "../../LIB/LSTD_BITMATH.h"
 
-#include "../../MCAL/GPIO/GPIO_interface.h"
-
 #include "../../HAL/Bluetooth/Bluetooth_interface.h"
 #include "../../HAL/DCMOTOR/DCM_interface.h"
 #include "../../HAL/Car_Movement/Car_Movement_interface.h"
-#include "../../HAL/UltraSonic/UltraSonic_interface.h"
 
 #include "../Mob_APP/Mob_APP_interface.h"
 
-#include "ACC_interface.h"
-#include "ACC_private.h"
-#include "ACC_config.h"
-
-
-static VAR(HULTSNC_ConfigType)
-TRIG =
-      {
-         .u8Port = GPIO_PORTB ,
-         .u8Pin  = GPIOx_PIN8
-      };
+#include "NCC_interface.h"
+#include "NCC_private.h"
+#include "NCC_config.h"
 
 /**************************************************************************************/
 /**************************************************************************************/
 
-void AACC_vModeON( void )
+void ANCC_vModeON( void )
 {
 
 	u32_t L_u32SpeedValue 		= INITIAL_ZERO ;
-	f32_t L_f32Distance 		= INITIAL_ZERO ;
 	c8_t  L_c8RecievedButton 	= INITIAL_ZERO ;
 
 	do
 	{
 
-		HULTSNC_vTrigger( &TRIG ) ;
+		HCarMove_vForward( ) ;
 
-		L_f32Distance = HULTSNC_f32GetDistance(  ) ;
+		L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
-		if( L_f32Distance < ACC_SAFE_DIST )
-		{
-			HCarMove_vStop( ) ;
-
-			HBluetooth_vSendString( SPEED0_STR ) ;
-		}
-		else if( L_f32Distance >= ACC_SAFE_DIST )
-		{
-			HCarMove_vForward( ) ;
-
-			L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-			AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-		}
+		AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
 
 		L_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
 
@@ -158,6 +134,10 @@ void AACC_vModeON( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
+
+
+
+
 
 
 

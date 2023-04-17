@@ -22,15 +22,17 @@
 #include "../../HAL/DCMOTOR/DCM_interface.h"
 #include "../../HAL/Car_Movement/Car_Movement_interface.h"
 #include "../../HAL/UltraSonic/UltraSonic_interface.h"
+#include "../../HAL/BUZZER/BUZZER_interface.h"
 
+#include "../Traditional_Mode/Traditional_Mode_interface.h"
+#include "../NCC/NCC_interface.h"
 #include "../ACC/ACC_interface.h"
+#include "../FCW/FCW_interface.h"
+#include "../Exit_State/Exit_State_interface.h"
 
 #include "Mob_APP_interface.h"
 #include "Mob_APP_private.h"
 #include "Mob_APP_config.h"
-
-static c8_t GS_c8RecievedButton = INITIAL_ZERO ;
-static u32_t GS_u32SpeedValue 	= INITIAL_ZERO ;
 
 /************************************************************************/
 /*                     Functions implementations                      	*/
@@ -75,166 +77,73 @@ void AMobApp_vSendSpeedValue( u32_t A_u32SpeedValue )
 void AMobApp_vCntrlCar( void )
 {
 
-
-    VAR(HULTSNC_ConfigType)
-    trig =
-        {
-            .u8Port = GPIO_PORTB,
-            .u8Pin  = GPIOx_PIN8
-        };
-
-	f32_t L_f32Distance = INITIAL_ZERO ;
+	c8_t L_c8RecievedState = INITIAL_ZERO ;
 
 	do
 	{
 
-		GS_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
+		L_c8RecievedState = HBluetooth_u8ReceiveByte( ) ;
 
-		switch( GS_c8RecievedButton )
+		switch( L_c8RecievedState )
 		{
 
-			case 'a':
+			case TRAD_MODE_CHAR	: ATraditional_vModeON( ) ; break ;
 
-				do
-				{
+			case NCC_MODE_CHAR	: ANCC_vModeON( ) 		  ; break ;
 
-					HULTSNC_vTrigger( &trig ) ;
+			case ACC_MODE_CHAR	: AACC_vModeON( )         ; break ;
 
-					L_f32Distance = HULTSNC_f32GetDistance(  ) ;
+			case FCW_MODE_CHAR	: AFCW_vModeON( )         ;	break ;
 
-					if( L_f32Distance < ACC_SAFE_DIST )
-					{
-						HCarMove_vStop( ) ;
+			case EXIT_SYS_CHAR	: AExit_vCriteriaON( )    ;	break ;
 
-						HBluetooth_vSendString( "*S0*" ) ;
-
-						HULTSNC_vTrigger( &trig ) ;
-
-						L_f32Distance = HULTSNC_f32GetDistance(  ) ;
-					}
-					else if( L_f32Distance >= 10 )
-					{
-						HCarMove_vForward( ) ;
-
-						GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-						AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-					}
-
-					GS_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
-
-				}while( GS_c8RecievedButton == 'a' ) ;
-
-			break ;
-
-			case 'f':
-
-				HCarMove_vForward( ) ;
-
-				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-
-			break ;
-
-			case 'b':
-
-				HCarMove_vBackward( ) ;
-
-				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-
-			break ;
-
-			case 'r':
-
-				HCarMove_vRight( ) ;
-
-				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-
-			break ;
-
-			case 'l':
-
-				HCarMove_vLeft( ) ;
-
-				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-
-			break ;
-
-			case 's':
-
-				HCarMove_vStop( ) ;
-
-				HBluetooth_vSendString( "*S0*" ) ;
-
-			break ;
-
-			case 'e':
-
-				HCarMove_vStop( ) ;
-
-				HBluetooth_vSendString( "*S0*" ) ;
-
-			break ;
-
-			case '+':
-
-				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				if( GS_u32SpeedValue >= SPEED_100_PERCENT )
-				{
-					GS_u32SpeedValue = SPEED_100_PERCENT ;
-
-					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-				}
-				else
-				{
-					GS_u32SpeedValue += SPEED_10_PERCENT ;
-
-					HCarMove_vSpeedRatio( GS_u32SpeedValue ) ;
-
-					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-				}
-
-			break ;
-
-			case '-':
-
-				GS_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				if( GS_u32SpeedValue <= SPEED_0_PERCENT )
-				{
-					GS_u32SpeedValue = SPEED_0_PERCENT ;
-
-					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-				}
-				else
-				{
-					GS_u32SpeedValue -= SPEED_10_PERCENT ;
-
-					HCarMove_vSpeedRatio( GS_u32SpeedValue ) ;
-
-					AMobApp_vSendSpeedValue( GS_u32SpeedValue ) ;
-				}
-
-			break ;
-
-			default: /* Do Nothing */ break ;
+			default: /* Do Nothing */ 		  			  ;	break ;
 
 		}
 
-	}while( GS_c8RecievedButton != 'e' ) ;
+	}while( L_c8RecievedState != EXIT_SYS_CHAR ) ;
 
 }
 
 /**************************************************************************************/
 /**************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,6 @@
 #ifndef _ACC_config_H
 #define _ACC_config_H
 
-
+#define ACC_SAFE_DIST 10 //(cm)
 
 #endif //_ACC_config_H

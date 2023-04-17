@@ -1,7 +1,7 @@
-/* FILENAME: ACC_program 
+/* FILENAME: FCW_program 
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Thu 04/13/2023
+*  DATE:   Mon 04/17/2023
 */
 
 /************************************************************************/
@@ -16,16 +16,16 @@
 #include "../../MCAL/GPIO/GPIO_interface.h"
 
 #include "../../HAL/Bluetooth/Bluetooth_interface.h"
+#include "../../HAL/BUZZER/BUZZER_interface.h"
 #include "../../HAL/DCMOTOR/DCM_interface.h"
 #include "../../HAL/Car_Movement/Car_Movement_interface.h"
 #include "../../HAL/UltraSonic/UltraSonic_interface.h"
 
 #include "../Mob_APP/Mob_APP_interface.h"
 
-#include "ACC_interface.h"
-#include "ACC_private.h"
-#include "ACC_config.h"
-
+#include "FCW_interface.h"
+#include "FCW_private.h"
+#include "FCW_config.h"
 
 static VAR(HULTSNC_ConfigType)
 TRIG =
@@ -34,10 +34,17 @@ TRIG =
          .u8Pin  = GPIOx_PIN8
       };
 
+static VAR(BUZZER_BuzzerConfiguration)
+    Buzzer =
+    {
+        .u8Port = GPIO_PORTB ,
+        .u8Pin  = GPIOx_PIN5
+	} ;
+
 /**************************************************************************************/
 /**************************************************************************************/
 
-void AACC_vModeON( void )
+void AFCW_vModeON( void )
 {
 
 	u32_t L_u32SpeedValue 		= INITIAL_ZERO ;
@@ -51,25 +58,39 @@ void AACC_vModeON( void )
 
 		L_f32Distance = HULTSNC_f32GetDistance(  ) ;
 
-		if( L_f32Distance < ACC_SAFE_DIST )
+		if( L_f32Distance < FCW_SAFE_DIST )
 		{
-			HCarMove_vStop( ) ;
-
-			HBluetooth_vSendString( SPEED0_STR ) ;
+			HBUZZER_vSoundOn( &Buzzer ) ;
 		}
-		else if( L_f32Distance >= ACC_SAFE_DIST )
+		else if( L_f32Distance >= FCW_SAFE_DIST )
 		{
-			HCarMove_vForward( ) ;
-
-			L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-			AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+			HBUZZER_vSoundOff( &Buzzer ) ;
 		}
 
 		L_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
 
 		switch( L_c8RecievedButton )
 		{
+
+			case FORW_CHAR:
+
+				HCarMove_vForward( ) ;
+
+				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+
+			break ;
+
+			case BACKW_CHAR:
+
+				HCarMove_vBackward( ) ;
+
+				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+
+				AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+
+			break ;
 
 			case RIGHT_CHAR:
 
@@ -100,6 +121,8 @@ void AACC_vModeON( void )
 			break ;
 
 			case EXIT_MODE_CHAR:
+
+				HBUZZER_vSoundOff( &Buzzer ) ;
 
 				HCarMove_vStop( ) ;
 
@@ -158,6 +181,13 @@ void AACC_vModeON( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
+
+
+
+
+
+
+
 
 
 
