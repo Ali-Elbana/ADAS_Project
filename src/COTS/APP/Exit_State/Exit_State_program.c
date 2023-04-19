@@ -36,6 +36,8 @@ static VAR(BUZZER_BuzzerConfiguration)
 void AExit_vCriteriaON( void )
 {
 
+	HBluetooth_vSendString( "\nActivate Exit Criteria\n" ) ;
+
 	HCarMove_vStop( ) ;
 
 	HBUZZER_vSoundOff( &Buzzer ) ;

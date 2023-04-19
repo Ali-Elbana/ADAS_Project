@@ -51,6 +51,10 @@ void AFCW_vModeON( void )
 	f32_t L_f32Distance 		= INITIAL_ZERO ;
 	c8_t  L_c8RecievedButton 	= INITIAL_ZERO ;
 
+	HBUZZER_vInit( &Buzzer ) ;
+
+	HBluetooth_vSendString( "\nFCW Mode ON\n" ) ;
+
 	do
 	{
 
@@ -62,9 +66,13 @@ void AFCW_vModeON( void )
 		{
 			HBUZZER_vSoundOn( &Buzzer ) ;
 		}
-		else if( L_f32Distance >= FCW_SAFE_DIST )
+		else if( L_f32Distance >= FCW_SAFE_DIST + HYSTRS_VALUE )
 		{
 			HBUZZER_vSoundOff( &Buzzer ) ;
+		}
+		else
+		{
+			/* Do Nothing */
 		}
 
 		L_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;

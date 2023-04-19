@@ -44,6 +44,8 @@ void AACC_vModeON( void )
 	f32_t L_f32Distance 		= INITIAL_ZERO ;
 	c8_t  L_c8RecievedButton 	= INITIAL_ZERO ;
 
+	HBluetooth_vSendString( "\nACC Mode ON\n" ) ;
+
 	do
 	{
 
@@ -57,13 +59,17 @@ void AACC_vModeON( void )
 
 			HBluetooth_vSendString( SPEED0_STR ) ;
 		}
-		else if( L_f32Distance >= ACC_SAFE_DIST )
+		else if( L_f32Distance >= ACC_SAFE_DIST + HYSTRS_VALUE )
 		{
 			HCarMove_vForward( ) ;
 
 			L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
 			AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+		}
+		else
+		{
+			/* Do Nothing */
 		}
 
 		L_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;

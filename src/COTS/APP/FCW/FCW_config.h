@@ -7,7 +7,7 @@
 #define _FCW_config_H
 
 
-#define FCW_SAFE_DIST 20
+#define FCW_SAFE_DIST 80 //(cm)
 
 
 

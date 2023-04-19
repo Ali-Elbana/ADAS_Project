@@ -55,7 +55,7 @@ void TAMob_vMovesCar( void )
 
 	HCarMove_vInit( ) ;
 
-	HCarMove_vSpeedRatio( SPEED_70_PERCENT ) ;
+	HCarMove_vSpeedRatio( SPEED_50_PERCENT ) ;
 
 	HULTSNC_vInit( &TRIG ) ;
 

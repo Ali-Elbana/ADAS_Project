@@ -97,7 +97,7 @@ void AMobApp_vCntrlCar( void )
 
 			case EXIT_SYS_CHAR	: AExit_vCriteriaON( )    ;	break ;
 
-			default: /* Do Nothing */ 		  			  ;	break ;
+			default				: ATraditional_vModeON( ) ;	break ;
 
 		}
 

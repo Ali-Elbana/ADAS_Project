@@ -32,6 +32,8 @@ void ATraditional_vModeON( void )
 	u32_t L_u32SpeedValue 		= INITIAL_ZERO ;
 	c8_t  L_c8RecievedButton 	= INITIAL_ZERO ;
 
+	HBluetooth_vSendString( "\nTraditional Mode ON\n" ) ;
+
 	do
 	{
 
