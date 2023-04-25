@@ -163,7 +163,7 @@ void TMUART_vRxIRQ( void )
 
 		L_strRecievedColor = MUSART_u8ReadDataRegister( USART1_REG ) ;
 
-		if( L_strRecievedColor == 'r' )
+		if( L_strRecievedColor == 'b' )
 		{
 			HLED_vToggleLight( &BLUE ) ;
 		}
@@ -183,12 +183,12 @@ void TMUART_vRxIRQ( void )
 	MGPIOx_vLockedPins() ;
 
 	HLED_vInit( &GREEN ) ;
-	HLED_vInit( &BLUE    ) ;
+	HLED_vInit( &BLUE  ) ;
 
 	// Initialization of USART1:
 	MUSART_vInit( &MyUART1, &MyUARTCLK, USART1_REG ) ;
 
-	// RXNEIE Enabled:
+	// RXNEIE Pending Flag Enabled:
 	MUSART_vRxIntSetStatus( USART1_REG, ENABLE ) ;
 
 	// USART1 IRQ Active Flag Enabled:
@@ -197,7 +197,7 @@ void TMUART_vRxIRQ( void )
 	MUSART1_vSetCallBack( &Toggle_BLUELED ) ;
 
 	HLED_vTurnLightOff( &GREEN ) ;
-	HLED_vTurnLightOff( &BLUE    ) ;
+	HLED_vTurnLightOff( &BLUE  ) ;
 
 	MUSART_vTransmitString( USART1_REG, "\nWelcome\n" ) ;
 

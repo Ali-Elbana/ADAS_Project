@@ -57,8 +57,9 @@
 #define TestingGPIO_OutputPort			STOP
 #define TestingALC						STOP
 #define TestingUART						STOP
-#define TestingUART_RxIRQ				RUN
+#define TestingUART_RxIRQ				STOP
 #define TestingBluetooth_RGBLED 	 	STOP
+#define TestingBluetooth_RxIRQ 			RUN
 #define TestingSPI_SendChar				STOP
 #define TestingTFT_ShowImage			STOP
 #define TestingLED						STOP
@@ -245,7 +246,13 @@ int main(void)
 
 	#if TestingUART_RxIRQ == RUN
 
-		TMUART_vRxIRQ(  ) ;
+		TMUART_vRxIRQ( ) ;
+
+	#endif
+
+	#if TestingBluetooth_RxIRQ == RUN
+
+		THBluetooth_vAsynchToggleLED( ) ;
 
 	#endif
 

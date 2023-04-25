@@ -13,6 +13,6 @@
 
 void THBluetooth_vLEDColor( void ) ;
 
-
+void THBluetooth_vAsynchToggleLED( void ) ;
 
 #endif //_Testing_Bluetooth_interface_H

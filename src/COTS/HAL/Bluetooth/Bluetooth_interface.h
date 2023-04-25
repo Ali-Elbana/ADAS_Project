@@ -16,6 +16,8 @@ void HBluetooth_vSendByte( u8_t A_u8Byte ) ;
 
 u8_t HBluetooth_u8ReceiveByte( void ) ;
 
+void HBluetooth_u8AsynchReceiveByte( void (*Fptr) (void) ) ;
+
 void HBluetooth_vSendString( c8_t *A_ptrc8String ) ;
 
 void HBluetooth_vReceiveString( c8_t A_c8YourString[] ) ;
@@ -26,7 +28,7 @@ void HBluetooth_vEnable( void ) ;
 
 void HBluetooth_vDisable( void ) ;
 
-
+u8_t HBluetooth_u8GetDataRegister( void ) ;
 
 
 #endif //_Bluetooth_interface_H

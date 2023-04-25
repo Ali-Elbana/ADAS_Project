@@ -406,7 +406,10 @@ void MUSART6_vSetCallBack( void (*Fptr) (void) )
 void USART1_IRQHandler(void)
 {
 
-	MUSART1_CallBack( ) ;
+	if( MUSART1_CallBack != NULL )
+	{
+		MUSART1_CallBack( ) ;
+	}
 
 }
 

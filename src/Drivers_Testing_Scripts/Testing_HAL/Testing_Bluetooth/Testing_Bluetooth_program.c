@@ -17,6 +17,7 @@
 #include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
 
 #include "../../../COTS/HAL/Bluetooth/Bluetooth_interface.h"
+#include "../../../COTS/HAL/LED/LED_interface.h"
 
 #include "Testing_Bluetooth_interface.h"
 #include "Testing_Bluetooth_private.h"
@@ -112,6 +113,85 @@ void THBluetooth_vLEDColor( void )
 
 /**************************************************************************************/
 /**************************************************************************************/
+
+void THBluetooth_vAsynchToggleLED( void )
+{
+
+	c8_t  L_c8RecievedButton = INITIAL_ZERO ;
+
+	LED_LEDConfiguration GREEN =
+	{
+		.u8Port = GPIO_PORTA ,
+		.u8Pin 	= GPIOx_PIN0
+	} ;
+
+	LED_LEDConfiguration BLUE =
+	{
+		.u8Port = GPIO_PORTA ,
+		.u8Pin 	= GPIOx_PIN1
+	} ;
+
+	LED_LEDConfiguration YELLOW =
+	{
+		.u8Port = GPIO_PORTA ,
+		.u8Pin 	= GPIOx_PIN2
+	} ;
+
+	MRCC_vInit( ) ;
+
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOAEN  ) ;
+	MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOBEN  ) ;
+
+	MGPIOx_vLockedPins( ) ;
+
+	HLED_vInit( &GREEN  ) ;
+	HLED_vInit( &BLUE   ) ;
+	HLED_vInit( &YELLOW ) ;
+
+	HLED_vTurnLightOff( &GREEN  ) ;
+	HLED_vTurnLightOff( &BLUE   ) ;
+	HLED_vTurnLightOff( &YELLOW ) ;
+
+	// Initialization of Bluetooth Module
+	HBluetooth_vInit( ) ;
+
+	void ToggleBlueYellowLEDs( void )
+	{
+
+		L_c8RecievedButton = HBluetooth_u8GetDataRegister( ) ;
+
+		switch( L_c8RecievedButton )
+		{
+
+			case 'b': HLED_vToggleLight( &BLUE   ) ; break ;
+
+			case 'y': HLED_vToggleLight( &YELLOW ) ; break ;
+
+			default : HBluetooth_vSendString( "\nUnknown Character\n" ) ; break ;
+
+		}
+
+	}
+
+	HBluetooth_u8AsynchReceiveByte( &ToggleBlueYellowLEDs ) ;
+
+	while( TRUE )
+	{
+
+		HLED_vBlinkLED( &GREEN, 200 ) ;
+
+	}
+
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+
+
+
+
 
 
 

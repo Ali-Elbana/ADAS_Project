@@ -14,6 +14,7 @@
 #include "../../LIB/LSTD_BITMATH.h"
 
 #include "../../MCAL/RCC/MRCC_interface.h"
+#include "../../MCAL/NVIC/NVIC_interface.h"
 #include "../../MCAL/GPIO/GPIO_interface.h"
 #include "../../MCAL/UART/UART_interface.h"
 
@@ -32,13 +33,26 @@ extern USART_ClockInitTypeDef 	Bluetooth_CLK		;
 extern USART_MemoryMapType * 	Bluetooth_UART_ID 	;
 
 /************************************************************************/
+/*                        Global variables                        		*/
+/************************************************************************/
+
+
+
+/************************************************************************/
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
 void HBluetooth_vInit( void )
 {
 
+	// Initialization of USART1:
 	MUSART_vInit( &Bluetooth_Config, &Bluetooth_CLK, Bluetooth_UART_ID ) ;
+
+	// RXNEIE Pending Flag Enabled:
+	MUSART_vRxIntSetStatus( Bluetooth_UART_ID, ENABLE ) ;
+
+	// USART1 IRQ Active Flag Enabled:
+	MNVIC_vEnablePeriphral( USART1 ) ;
 
 }
 
@@ -63,6 +77,16 @@ u8_t HBluetooth_u8ReceiveByte( void )
 	L_u8ReceivedByte = MUSART_u8ReceiveByteSynchBlocking( Bluetooth_UART_ID ) ;
 
 	return L_u8ReceivedByte ;
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+void HBluetooth_u8AsynchReceiveByte( void (*Fptr) (void) )
+{
+
+	MUSART1_vSetCallBack( Fptr ) ;
 
 }
 
@@ -122,6 +146,26 @@ void HBluetooth_vDisable( void )
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
+
+u8_t HBluetooth_u8GetDataRegister( void )
+{
+
+	u8_t L_u8ReceivedByte = INITIAL_ZERO ;
+
+	L_u8ReceivedByte = MUSART_u8ReadDataRegister( USART1_REG ) ;
+
+	return L_u8ReceivedByte ;
+
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+
+
+
+
+
 
 
 
