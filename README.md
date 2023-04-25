@@ -16,7 +16,7 @@ Adaptive cruise control (ACC) is an enhancement of conventional cruise control. 
 
 Adaptive light control is a system that changes the brightness of the car's headlights automatically based on the environment's light as well as the cars that are coming in the opposite way. The lighter the environment, the darker the headlights.
 
-### Driver Health Care
+### Driver Drowsiness Detection
 
 Driver health care is a system that is responsible for the detection of the driver's sleepiness and give the suitable alters to warn the driver as well as the other cars in real-time using Image Processing and Machine Learning techniques.
 
