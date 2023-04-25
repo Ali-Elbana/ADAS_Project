@@ -67,7 +67,7 @@ FUNC(void) HDCM_vInitMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
     }
 
     // Give an initial speed to the DC Motor:
-    HDCM_vMotorSpeedCntrl( pMotorConfiguration, pMotorConfiguration->u8SpeedRatio ) ;
+    HDCM_vMotorSpeedCntrl( pMotorConfiguration, pMotorConfiguration->u32SpeedRatio ) ;
 
 }
 

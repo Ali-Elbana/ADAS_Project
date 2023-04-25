@@ -406,8 +406,6 @@ void MUSART6_vSetCallBack( void (*Fptr) (void) )
 void USART1_IRQHandler(void)
 {
 
-	USART1_REG->SR_REG = 0 ;
-
 	MUSART1_CallBack( ) ;
 
 }

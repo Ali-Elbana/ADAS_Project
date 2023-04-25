@@ -57,6 +57,7 @@
 #define TestingGPIO_OutputPort			STOP
 #define TestingALC						STOP
 #define TestingUART						STOP
+#define TestingUART_RxIRQ				RUN
 #define TestingBluetooth_RGBLED 	 	STOP
 #define TestingSPI_SendChar				STOP
 #define TestingTFT_ShowImage			STOP
@@ -70,7 +71,7 @@
 #define TestingMotorDriver 				STOP
 #define TestingMotor_ChangeSpeed		STOP
 #define TestingCar_Movement				STOP
-#define TestingMobApp_MovesCar			RUN
+#define TestingMobApp_MovesCar			STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -239,6 +240,12 @@ int main(void)
 	#if	TestingMobApp_MovesCar == RUN
 
 		TAMob_vMovesCar( ) ;
+
+	#endif
+
+	#if TestingUART_RxIRQ == RUN
+
+		TMUART_vRxIRQ(  ) ;
 
 	#endif
 

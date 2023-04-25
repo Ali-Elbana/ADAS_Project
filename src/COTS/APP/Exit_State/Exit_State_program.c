@@ -17,6 +17,7 @@
 
 #include "../../HAL/BUZZER/BUZZER_interface.h"
 #include "../../HAL/Car_Movement/Car_Movement_interface.h"
+#include "../../HAL/Bluetooth/Bluetooth_interface.h"
 
 #include "Exit_State_interface.h"
 #include "Exit_State_private.h"

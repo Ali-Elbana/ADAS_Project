@@ -48,7 +48,7 @@ typedef struct
     u8_t u8SpeedPin;
 
 
-    u8_t u8SpeedRatio ;
+    u32_t u32SpeedRatio ;
 
 
 } DCM_MotorConfiguration;
@@ -115,16 +115,16 @@ u32_t HDCM_vGetSpeedValue( P2VAR(DCM_MotorConfiguration) pMotorConfiguration ) ;
 
 
 #define SPEED_0_PERCENT		0
-#define SPEED_10_PERCENT	1000
-#define SPEED_20_PERCENT	2000
-#define SPEED_30_PERCENT	3000
-#define SPEED_40_PERCENT	4000
-#define SPEED_50_PERCENT	5000
-#define SPEED_60_PERCENT	6000
-#define SPEED_70_PERCENT	7000
-#define SPEED_80_PERCENT	8000
-#define SPEED_90_PERCENT	9000
-#define SPEED_100_PERCENT	10000
+#define SPEED_10_PERCENT	1000U
+#define SPEED_20_PERCENT	2000U
+#define SPEED_30_PERCENT	3000U
+#define SPEED_40_PERCENT	4000U
+#define SPEED_50_PERCENT	5000U
+#define SPEED_60_PERCENT	6000U
+#define SPEED_70_PERCENT	7000U
+#define SPEED_80_PERCENT	8000U
+#define SPEED_90_PERCENT	9000U
+#define SPEED_100_PERCENT	10000U
 
 
 #endif //_DCM_interface_H

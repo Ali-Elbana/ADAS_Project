@@ -13,5 +13,6 @@
 
 void TMUART_vRGBLED( void ) ;
 
+void TMUART_vRxIRQ( void ) ;
 
 #endif //_Testing_UART_interface_H

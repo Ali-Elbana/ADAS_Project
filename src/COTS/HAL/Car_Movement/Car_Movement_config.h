@@ -24,7 +24,7 @@ VAR(DCM_MotorConfiguration) Motor1 =
     .u8Pin1 		= IN1_PIN		,
     .u8Pin2 		= IN2_PIN		,
 	.u8SpeedPin		= TIM1_CH4		,
-	.u8SpeedRatio	= SPEED_0_PERCENT
+	.u32SpeedRatio	= SPEED_0_PERCENT
 };
 
 // Initialize motor 3
@@ -34,7 +34,7 @@ VAR(DCM_MotorConfiguration) Motor3 =
     .u8Pin1 		= IN3_PIN		,
     .u8Pin2 		= IN4_PIN		,
 	.u8SpeedPin		= TIM1_CH4		,
-	.u8SpeedRatio	= SPEED_0_PERCENT
+	.u32SpeedRatio	= SPEED_0_PERCENT
 };
 
 

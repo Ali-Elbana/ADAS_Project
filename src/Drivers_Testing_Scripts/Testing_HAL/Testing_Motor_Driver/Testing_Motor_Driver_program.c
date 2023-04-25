@@ -101,7 +101,7 @@ void THDC_vChangeMotorSpeed( void )
         .u8Pin2 		= GPIOx_PIN4	,
         .u8Direction 	= FORWARD		,
 		.u8SpeedPin		= TIM1_CH4		,
-		.u8SpeedRatio	= SPEED_10_PERCENT
+		.u32SpeedRatio	= SPEED_10_PERCENT
     };
 
 

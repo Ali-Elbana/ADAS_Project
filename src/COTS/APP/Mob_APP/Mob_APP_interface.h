@@ -7,8 +7,8 @@
 #define _Mob_APP_interface_H
 
 
-#define DECIMAL 10
-#define SPEED0_STR "*S0*"
+#define DECIMAL 	10
+#define SPEED0_STR 	"*S0*"
 
 #define TRAD_MODE_CHAR 	'T'
 #define NCC_MODE_CHAR 	'N'
