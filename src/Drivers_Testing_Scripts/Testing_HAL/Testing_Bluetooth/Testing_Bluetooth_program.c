@@ -167,6 +167,8 @@ void THBluetooth_vAsynchToggleLED( void )
 
 			case 'y': HLED_vToggleLight( &YELLOW ) ; break ;
 
+			case 'e': HBluetooth_vSendString( "\nExit from blinking state\n" ) ; break ;
+
 			default : HBluetooth_vSendString( "\nUnknown Character\n" ) ; break ;
 
 		}
@@ -178,7 +180,10 @@ void THBluetooth_vAsynchToggleLED( void )
 	while( TRUE )
 	{
 
-		HLED_vBlinkLED( &GREEN, 200 ) ;
+		while( L_c8RecievedButton != 'e' )
+		{
+			HLED_vBlinkLED( &GREEN, 200 ) ;
+		}
 
 	}
 

@@ -96,6 +96,8 @@ void ATraditional_vModeON( void )
 
 				HBluetooth_vSendString( SPEED0_STR ) ;
 
+				HBluetooth_vSendString( "\nTraditional Mode Off\n" ) ;
+
 			break ;
 
 			case INC_SPEED_CHAR:

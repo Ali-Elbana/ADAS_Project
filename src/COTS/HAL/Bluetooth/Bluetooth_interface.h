@@ -28,6 +28,10 @@ void HBluetooth_vEnable( void ) ;
 
 void HBluetooth_vDisable( void ) ;
 
+void HBluetooth_vEnableAsynchReceive( void ) ;
+
+void HBluetooth_vDisableAsynchReceive( void ) ;
+
 u8_t HBluetooth_u8GetDataRegister( void ) ;
 
 

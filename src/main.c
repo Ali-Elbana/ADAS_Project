@@ -59,7 +59,7 @@
 #define TestingUART						STOP
 #define TestingUART_RxIRQ				STOP
 #define TestingBluetooth_RGBLED 	 	STOP
-#define TestingBluetooth_RxIRQ 			RUN
+#define TestingBluetooth_RxIRQ 			STOP
 #define TestingSPI_SendChar				STOP
 #define TestingTFT_ShowImage			STOP
 #define TestingLED						STOP
@@ -72,7 +72,7 @@
 #define TestingMotorDriver 				STOP
 #define TestingMotor_ChangeSpeed		STOP
 #define TestingCar_Movement				STOP
-#define TestingMobApp_MovesCar			STOP
+#define TestingMobApp_MovesCar			RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -238,12 +238,6 @@ int main(void)
 
 	#endif
 
-	#if	TestingMobApp_MovesCar == RUN
-
-		TAMob_vMovesCar( ) ;
-
-	#endif
-
 	#if TestingUART_RxIRQ == RUN
 
 		TMUART_vRxIRQ( ) ;
@@ -255,6 +249,13 @@ int main(void)
 		THBluetooth_vAsynchToggleLED( ) ;
 
 	#endif
+
+	#if	TestingMobApp_MovesCar == RUN
+
+		TAMob_vMovesCar( ) ;
+
+	#endif
+
 
 	while (TRUE) ;
 

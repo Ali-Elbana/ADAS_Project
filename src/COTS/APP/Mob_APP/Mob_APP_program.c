@@ -79,8 +79,19 @@ void AMobApp_vCntrlCar( void )
 
 	c8_t L_c8RecievedState = INITIAL_ZERO ;
 
+	HBluetooth_vSendString( "\nCar is ready to be controlled\n" ) ;
+
 	do
 	{
+
+		HBluetooth_vDisableAsynchReceive( ) ;
+
+		HBluetooth_vSendString( "\nSelect one of these modes:\n" ) ;
+		HBluetooth_vSendString( "\n1-Traditional Mode\n" ) ;
+		HBluetooth_vSendString( "\n2-NCC Mode\n" ) ;
+		HBluetooth_vSendString( "\n3-ACC Mode\n" ) ;
+		HBluetooth_vSendString( "\n4-FCW Mode\n" ) ;
+		HBluetooth_vSendString( "\n5-Exit Mode\n" ) ;
 
 		L_c8RecievedState = HBluetooth_u8ReceiveByte( ) ;
 

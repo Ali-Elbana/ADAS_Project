@@ -83,6 +83,8 @@ void ANCC_vModeON( void )
 
 				HBluetooth_vSendString( SPEED0_STR ) ;
 
+				HBluetooth_vSendString( "\nNCC Mode Off\n" ) ;
+
 			break ;
 
 			case INC_SPEED_CHAR:
