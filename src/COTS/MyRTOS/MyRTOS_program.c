@@ -34,7 +34,7 @@ u8_t TaskTiming[ MAX_TASK_NUM ]		= { INITIAL_ZERO } ;
 /************************************************************************/
 
 Error_enState RTOS_u8CreateTask( void A_CopyHandler(void), u8_t A_u8Periodicity,
-						u8_t A_u8Priority, u8_t A_u8FirstDelay )
+								 u8_t A_u8Priority		 , u8_t A_u8FirstDelay )
 {
 
 	Error_enState L_enuTaskErrorState = NO_ERROR ;
@@ -206,7 +206,7 @@ Error_enState RTOS_u8ResumeTask( u8_t A_u8Priority )
 void RTOS_vStartOS( void )
 {
 
-	MSysTick_vSetPeriodicInterval( RTOS_TICK_TIME, Scheduler ) ;
+	MSysTick_vSetPeriodicInterval( RTOS_TICK_TIME, &Scheduler ) ;
 
 	while(TRUE) ;
 

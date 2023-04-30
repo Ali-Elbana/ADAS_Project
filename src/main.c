@@ -46,6 +46,7 @@
 #define TestingEXTI_ToggleLED 			STOP
 #define TestingDCMotor 					STOP
 #define TestingSTK_ToggleLED_BusyWait 	STOP
+#define TestingSTK_ToggleLED_IRQ		RUN
 #define TestingGPIO_Input  				STOP
 #define TestingPushButton				STOP
 #define TestingDCMotor					STOP
@@ -72,7 +73,7 @@
 #define TestingMotorDriver 				STOP
 #define TestingMotor_ChangeSpeed		STOP
 #define TestingCar_Movement				STOP
-#define TestingMobApp_MovesCar			RUN
+#define TestingMobApp_MovesCar			STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -120,6 +121,12 @@ int main(void)
 	#if TestingSTK_ToggleLED_BusyWait == RUN
 
 	TMSysTick_vToggleLED_BusyWait();
+
+	#endif
+
+	#if TestingSTK_ToggleLED_IRQ == RUN
+
+	TMSysTick_vToggleLED_IRQ( ) ;
 
 	#endif
 
