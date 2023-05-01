@@ -31,6 +31,8 @@
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_UltraSonic/Testing_UltraSonic_interface.h"
 #include "Drivers_Testing_Scripts/Testing_HAL/Testing_Car_Movement/Testing_Car_Movement_interface.h"
 
+#include "Drivers_Testing_Scripts/Testing_RTOS/Testing_RTOS_interface.h"
+
 #include "Drivers_Testing_Scripts/Testing_APP/Testing_MobApp/Testing_MobApp_interface.h"
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
@@ -46,7 +48,7 @@
 #define TestingEXTI_ToggleLED 			STOP
 #define TestingDCMotor 					STOP
 #define TestingSTK_ToggleLED_BusyWait 	STOP
-#define TestingSTK_ToggleLED_IRQ		RUN
+#define TestingSTK_ToggleLED_IRQ		STOP
 #define TestingGPIO_Input  				STOP
 #define TestingPushButton				STOP
 #define TestingDCMotor					STOP
@@ -74,6 +76,7 @@
 #define TestingMotor_ChangeSpeed		STOP
 #define TestingCar_Movement				STOP
 #define TestingMobApp_MovesCar			STOP
+#define TestingRTOS_BlinkLEDs			RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -263,6 +266,11 @@ int main(void)
 
 	#endif
 
+	#if TestingRTOS_BlinkLEDs == RUN
+
+		TRTOS_vBlinkLEDs( ) ;
+
+	#endif
 
 	while (TRUE) ;
 

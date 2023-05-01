@@ -1,17 +1,17 @@
-/* FILENAME: Testing_UART_interface  
+/* FILENAME: Testing_RTOS_interface  
 *  Author:  Ali El Bana
 *  Version:  V1.0
-*  DATE:   Mon 01/02/2023
+*  DATE:   Mon 05/01/2023
 */
-#ifndef _Testing_UART_interface_H
-#define _Testing_UART_interface_H
+#ifndef _Testing_RTOS_interface_H
+#define _Testing_RTOS_interface_H
+
 
 /************************************************************************/
 /*                        Functions prototypes                          */
 /************************************************************************/
 
-void TMUART_vRGBLED( void ) ;
+void TRTOS_vBlinkLEDs( void ) ;
 
-void TMUART_vRxIRQ( void ) ;
 
-#endif //_Testing_UART_interface_H
+#endif //_Testing_RTOS_interface_H

@@ -6,6 +6,8 @@
 #ifndef _RTOS_interface_H
 #define _RTOS_interface_H
 
+#include "MyRTOS_config.h"
+
 /************************************************************************/
 /*                        Functions prototypes                          */
 /************************************************************************/
