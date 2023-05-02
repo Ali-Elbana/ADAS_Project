@@ -208,8 +208,6 @@ void RTOS_vStartOS( void )
 
 	MSysTick_vSetPeriodicInterval( RTOS_TICK_TIME, &Scheduler ) ;
 
-	while(TRUE) ;
-
 }
 
 /******************************************************************************************************/

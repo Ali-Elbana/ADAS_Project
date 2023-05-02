@@ -47,7 +47,7 @@ void TRTOS_vBlinkLEDs( void )
 
 	void ToggleGreenLED( void )
 	{
-		HLED_vToggleLight( &BLUE ) ;
+		HLED_vToggleLight( &GREEN ) ;
 	}
 
 	void ToggleBlueLED( void )
@@ -65,7 +65,10 @@ void TRTOS_vBlinkLEDs( void )
 	HLED_vInit( &GREEN ) ;
 	HLED_vInit( &BLUE  ) ;
 
+	/* Periodicity = 1 Ticktime, Priority = 0, First delay = 0 */
 	RTOS_u8CreateTask( &ToggleGreenLED, 1 /* 100ms */, 0, 0 ) ;
+
+	/* Periodicity = 2 Ticktime, Priority = 1, First delay = 0 */
 	RTOS_u8CreateTask( &ToggleBlueLED , 2 /* 200ms */, 1, 0 ) ;
 
 	RTOS_vStartOS( ) ;

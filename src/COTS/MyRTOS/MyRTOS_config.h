@@ -37,7 +37,7 @@ typedef enum
 #define MIN_TASK_NUM		0
 
 /* Define your Tick time */
-#define RTOS_TICK_TIME      50000U /* 50 MilliSecond */
+#define RTOS_TICK_TIME      100000U /* 100 MilliSecond */
 
 
 #endif //_RTOS_config_H
