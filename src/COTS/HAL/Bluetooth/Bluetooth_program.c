@@ -48,12 +48,6 @@ void HBluetooth_vInit( void )
 	// Initialization of USART1:
 	MUSART_vInit( &Bluetooth_Config, &Bluetooth_CLK, Bluetooth_UART_ID ) ;
 
-	// RXNEIE Pending Flag Enabled:
-	MUSART_vRxIntSetStatus( Bluetooth_UART_ID, ENABLE ) ;
-
-	// USART1 IRQ Active Flag Enabled:
-	MNVIC_vEnablePeriphral( USART1 ) ;
-
 }
 
 /*******************************************************************************************************************/
@@ -150,7 +144,7 @@ void HBluetooth_vDisable( void )
 u8_t HBluetooth_u8GetDataRegister( void )
 {
 
-	u8_t L_u8ReceivedByte = INITIAL_ZERO ;
+	u8_t volatile L_u8ReceivedByte = INITIAL_ZERO ;
 
 	L_u8ReceivedByte = MUSART_u8ReadDataRegister( USART1_REG ) ;
 
@@ -167,6 +161,9 @@ void HBluetooth_vEnableAsynchReceive( void )
 	// RXNEIE Pending Flag Enabled:
 	MUSART_vRxIntSetStatus( Bluetooth_UART_ID, ENABLE ) ;
 
+	// USART1 IRQ Active Flag Enabled:
+	MNVIC_vEnablePeriphral( USART1 ) ;
+
 }
 
 /*******************************************************************************************************************/
@@ -177,6 +174,9 @@ void HBluetooth_vDisableAsynchReceive( void )
 
 	// RXNEIE Pending Flag Enabled:
 	MUSART_vRxIntSetStatus( Bluetooth_UART_ID, DISABLE ) ;
+
+	// USART1 IRQ Active Flag Enabled:
+	MNVIC_vDisablePeriphral( USART1 ) ;
 
 }
 

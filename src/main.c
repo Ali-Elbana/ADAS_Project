@@ -37,6 +37,8 @@
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
+#include "Design_Patterns/State_Machine/EX1_MotorStates/EX1_MotorStates_interface.h"
+
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
@@ -76,7 +78,8 @@
 #define TestingMotor_ChangeSpeed		STOP
 #define TestingCar_Movement				STOP
 #define TestingMobApp_MovesCar			STOP
-#define TestingRTOS_BlinkLEDs			RUN
+#define TestingRTOS_BlinkLEDs			STOP
+#define MotorStateMachine				RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -269,6 +272,12 @@ int main(void)
 	#if TestingRTOS_BlinkLEDs == RUN
 
 		TRTOS_vBlinkLEDs( ) ;
+
+	#endif
+
+	#if MotorStateMachine == RUN
+
+		DPMotorStates_vExecution( ) ;
 
 	#endif
 

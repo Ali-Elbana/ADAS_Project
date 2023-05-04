@@ -100,7 +100,9 @@ void MSysTick_vDisable(void);
 /**
  * @brief Enable the Systick Exception
  */
-void MSysTick_vEnableException(void);
+void MSysTick_vEnableException(void) ;
+
+void MSysTick_vDisableException(void) ;
 
 /************************************************************************/
 /*                          Interfacing macros                          */

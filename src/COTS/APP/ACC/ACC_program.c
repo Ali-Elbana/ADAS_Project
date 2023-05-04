@@ -34,9 +34,9 @@ TRIG =
          .u8Pin  = GPIOx_PIN8
       };
 
-u32_t L_u32SpeedValue 		= INITIAL_ZERO ;
-f32_t L_f32Distance 		= INITIAL_ZERO ;
-c8_t  L_c8RecievedButton 	= INITIAL_ZERO ;
+u32_t L_u32SpeedValue 				= INITIAL_ZERO ;
+f32_t L_f32Distance 				= INITIAL_ZERO ;
+c8_t  volatile L_c8RecievedButton 	= INITIAL_ZERO ;
 
 /**************************************************************************************/
 /**************************************************************************************/
@@ -106,6 +106,8 @@ void ACC_ALTFs( void )
 		default: /* Do Nothing */ break ;
 	}
 
+	HBluetooth_vSendString( "\nOut from ACC_ALTFs\n" ) ;
+
 }
 
 /**************************************************************************************/
@@ -129,14 +131,20 @@ void AACC_vModeON( void )
 
 		L_f32Distance = HULTSNC_f32GetDistance(  ) ;
 
+		HBluetooth_vSendString( "\nSpeed has been recorded\n" ) ;
+
 		if( L_f32Distance < ACC_SAFE_DIST )
 		{
+			HBluetooth_vSendString( "\nLess than 50cm condition\n" ) ;
+
 			HCarMove_vStop( ) ;
 
 			HBluetooth_vSendString( SPEED0_STR ) ;
 		}
 		else if( L_f32Distance >= ACC_SAFE_DIST + HYSTRS_VALUE )
 		{
+			HBluetooth_vSendString( "\nBigger than 50cm condition\n" ) ;
+
 			HCarMove_vForward( ) ;
 
 			L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
@@ -146,9 +154,13 @@ void AACC_vModeON( void )
 		else
 		{
 			/* Do Nothing */
+
+			HBluetooth_vSendString( "\nOn else condition\n" ) ;
 		}
 
 	}
+
+	HBluetooth_vSendString( "\nOut from AACC_vModeON\n" ) ;
 
 }
 
