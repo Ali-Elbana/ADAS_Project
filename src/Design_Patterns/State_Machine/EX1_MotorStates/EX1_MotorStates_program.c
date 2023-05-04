@@ -69,7 +69,7 @@ static void Motor_vTransitions( void )
 
 				default:
 
-					GS_enuMotorCurrentState = OFF ;
+					/* Do nothing */
 
 				break ;
 
@@ -90,7 +90,7 @@ static void Motor_vTransitions( void )
 
 				default:
 
-					GS_enuMotorCurrentState = OFF ;
+					/* Do nothing */
 
 				break ;
 
@@ -166,6 +166,8 @@ void DPMotorStates_vExecution( void )
 
 			case ON:
 
+				HBluetooth_vSendString( "\nON STATE\n" ) ;
+
 				/*  Turn off Red LED */
 				HLED_vTurnLightOff( &RED ) ;
 
@@ -178,6 +180,8 @@ void DPMotorStates_vExecution( void )
 			break ;
 			/*****************************************************************/
 			case OFF:
+
+				HBluetooth_vSendString( "\nOFF STATE\n" ) ;
 
 				/*  Turn off Green LED */
 				HLED_vTurnLightOff( &GREEN ) ;
