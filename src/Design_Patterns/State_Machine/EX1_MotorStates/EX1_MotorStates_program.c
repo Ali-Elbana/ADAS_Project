@@ -26,13 +26,6 @@
 #include "EX1_MotorStates_private.h"
 #include "EX1_MotorStates_config.h"
 
-typedef enum
-{
-	OFF ,
-	ON
-
-} tMotor_enuStates ;
-
 static tMotor_enuStates GS_enuMotorCurrentState = OFF 			;
 
 c8_t volatile Gv_c8RecievedButton 				= INITIAL_ZERO 	;

@@ -7,8 +7,12 @@
 #define _EX1_MotorStates_config_H
 
 
+typedef enum
+{
+	OFF ,
+	ON
 
-
+} tMotor_enuStates ;
 
 
 #endif //_EX1_MotorStates_config_H
