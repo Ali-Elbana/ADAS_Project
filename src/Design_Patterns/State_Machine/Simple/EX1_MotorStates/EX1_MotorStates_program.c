@@ -8,19 +8,19 @@
 /*                        Include headers                        	    */
 /************************************************************************/
 
-#include "../../../COTS/LIB/LSTD_BITMATH.h"
-#include "../../../COTS/LIB/LSTD_TYPES.h"
-#include "../../../COTS/LIB/LSTD_COMPILER.h"
-#include "../../../COTS/LIB/LSTD_VALUES.h"
-#include "../../../COTS/LIB/LSTD_BITMATH.h"
+#include "../../../../COTS/LIB/LSTD_BITMATH.h"
+#include "../../../../COTS/LIB/LSTD_TYPES.h"
+#include "../../../../COTS/LIB/LSTD_COMPILER.h"
+#include "../../../../COTS/LIB/LSTD_VALUES.h"
+#include "../../../../COTS/LIB/LSTD_BITMATH.h"
 
-#include "../../../COTS/MCAL/RCC/MRCC_interface.h"
-#include "../../../COTS/MCAL/GPIO/GPIO_interface.h"
-#include "../../../COTS/MCAL/SysTick/SysTick_interface.h"
+#include "../../../../COTS/MCAL/RCC/MRCC_interface.h"
+#include "../../../../COTS/MCAL/GPIO/GPIO_interface.h"
+#include "../../../../COTS/MCAL/SysTick/SysTick_interface.h"
 
-#include "../../../COTS/HAL/Bluetooth/Bluetooth_interface.h"
-#include "../../../COTS/HAL/LED/LED_interface.h"
-#include "../../../COTS/HAL/DCMOTOR/DCM_interface.h"
+#include "../../../../COTS/HAL/Bluetooth/Bluetooth_interface.h"
+#include "../../../../COTS/HAL/LED/LED_interface.h"
+#include "../../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 
 #include "EX1_MotorStates_interface.h"
 #include "EX1_MotorStates_private.h"

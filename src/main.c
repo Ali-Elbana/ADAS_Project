@@ -37,7 +37,7 @@
 
 #include "Drivers_Testing_Scripts/Testing_Systems/Testing_ALC_Demo/Testing_ALC_Demo_interface.h"
 
-#include "Design_Patterns/State_Machine/EX1_MotorStates/EX1_MotorStates_interface.h"
+#include "Design_Patterns/State_Machine/Simple/EX1_MotorStates/EX1_MotorStates_interface.h"
 
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
