@@ -3,8 +3,8 @@
 *  Version:  V1.0
 *  DATE:   Tue 05/09/2023
 */
-#ifndef _EX1_MotorStates_private_H
-#define _EX1_MotorStates_private_H
+#ifndef _EX1_MotorStates2_private_H
+#define _EX1_MotorStates2_private_H
 
 
 

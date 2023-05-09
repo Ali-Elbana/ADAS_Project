@@ -39,6 +39,8 @@
 
 #include "Design_Patterns/State_Machine/Simple/EX1_MotorStates/EX1_MotorStates_interface.h"
 
+#include "Design_Patterns/State_Machine/Hierarchical/EX1_MotorStates2/EX1_MotorStates2_interface.h"
+
 /************************************************************************/
 /*              	Testing Scripts Software Switches                   */
 /************************************************************************/
@@ -79,7 +81,8 @@
 #define TestingCar_Movement				STOP
 #define TestingMobApp_MovesCar			STOP
 #define TestingRTOS_BlinkLEDs			STOP
-#define MotorStateMachine				RUN
+#define MotorStateMachine				STOP
+#define MotorHSM						RUN
 
 /************************************************************************/
 /*                          Application                        		   	*/
@@ -278,6 +281,12 @@ int main(void)
 	#if MotorStateMachine == RUN
 
 		DPMotorStates_vExecution( ) ;
+
+	#endif
+
+	#if MotorHSM == RUN
+
+		DPExecute_vHMotorStates( ) ;
 
 	#endif
 
