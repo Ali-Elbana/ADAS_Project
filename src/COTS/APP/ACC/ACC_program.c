@@ -26,6 +26,9 @@
 #include "ACC_private.h"
 #include "ACC_config.h"
 
+u32_t L_u32SpeedValue 				= INITIAL_ZERO ;
+f32_t L_f32Distance 				= INITIAL_ZERO ;
+c8_t volatile G_c8RecievedButton 	= INITIAL_ZERO ;
 
 static VAR(HULTSNC_ConfigType)
 TRIG =
@@ -34,9 +37,14 @@ TRIG =
          .u8Pin  = GPIOx_PIN8
       };
 
-u32_t L_u32SpeedValue 				= INITIAL_ZERO ;
-f32_t L_f32Distance 				= INITIAL_ZERO ;
-c8_t  volatile L_c8RecievedButton 	= INITIAL_ZERO ;
+/**************************************************************************************/
+/**************************************************************************************/
+
+/* This is a call back RX function */
+static void Button_vCurrentData( void )
+{
+	G_c8RecievedButton = HBluetooth_u8GetDataRegister( ) ;
+}
 
 /**************************************************************************************/
 /**************************************************************************************/

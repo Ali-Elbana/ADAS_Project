@@ -25,7 +25,7 @@
 #include "EX1_MotorStates2_interface.h"
 #include "EX1_MotorStates2_private.h"
 
-c8_t volatile GV_c8RecievedButton = INITIAL_ZERO 	;
+c8_t volatile GV_c8RecievedButton = INITIAL_ZERO ;
 
 LED_LEDConfiguration GREEN =
 {

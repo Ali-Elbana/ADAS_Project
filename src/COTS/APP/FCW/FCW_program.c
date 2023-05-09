@@ -27,6 +27,8 @@
 #include "FCW_private.h"
 #include "FCW_config.h"
 
+c8_t volatile G_c8RecievedButton = INITIAL_ZERO ;
+
 static VAR(HULTSNC_ConfigType)
 TRIG =
       {
@@ -44,14 +46,27 @@ static VAR(BUZZER_BuzzerConfiguration)
 /**************************************************************************************/
 /**************************************************************************************/
 
+/* This is a call back RX function */
+static void Button_vCurrentData( void )
+{
+	G_c8RecievedButton = HBluetooth_u8GetDataRegister( ) ;
+}
+
+/**************************************************************************************/
+/**************************************************************************************/
+
 void AFCW_vModeON( void )
 {
 
 	u32_t L_u32SpeedValue 		= INITIAL_ZERO ;
 	f32_t L_f32Distance 		= INITIAL_ZERO ;
-	c8_t  L_c8RecievedButton 	= INITIAL_ZERO ;
+	G_c8RecievedButton 			= INITIAL_ZERO ;
 
 	HBUZZER_vInit( &Buzzer ) ;
+
+	HBluetooth_vEnableAsynchReceive( ) ;
+
+	HBluetooth_u8AsynchReceiveByte( &Button_vCurrentData ) ;
 
 	HBluetooth_vSendString( "\nFCW Mode ON\n" ) ;
 
@@ -75,9 +90,7 @@ void AFCW_vModeON( void )
 			/* Do Nothing */
 		}
 
-		L_c8RecievedButton = HBluetooth_u8ReceiveByte( ) ;
-
-		switch( L_c8RecievedButton )
+		switch( G_c8RecievedButton )
 		{
 
 			case FORW_CHAR:
@@ -183,7 +196,7 @@ void AFCW_vModeON( void )
 			default: /* Do Nothing */ break ;
 		}
 
-	}while( L_c8RecievedButton != EXIT_MODE_CHAR ) ;
+	}while( G_c8RecievedButton != EXIT_MODE_CHAR ) ;
 
 }
 
