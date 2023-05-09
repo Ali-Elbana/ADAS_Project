@@ -172,10 +172,10 @@ void HBluetooth_vEnableAsynchReceive( void )
 void HBluetooth_vDisableAsynchReceive( void )
 {
 
-	// RXNEIE Pending Flag Enabled:
+	// RXNEIE Pending Flag Disabled:
 	MUSART_vRxIntSetStatus( Bluetooth_UART_ID, DISABLE ) ;
 
-	// USART1 IRQ Active Flag Enabled:
+	// USART1 IRQ Active Flag Disabled:
 	MNVIC_vDisablePeriphral( USART1 ) ;
 
 }

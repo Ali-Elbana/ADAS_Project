@@ -137,12 +137,6 @@ void DPTransition_vState( HStateMachine* A_strcHSM )
 
 				break ;
 
-				case GREEN_LED:
-
-					A_strcHSM->led_state = RED_LED ;
-
-				break ;
-
 				default:
 
 					/* Do nothing */
@@ -216,12 +210,6 @@ void DPTransition_vState( HStateMachine* A_strcHSM )
 						break ;
 
 					}
-
-				break ;
-
-				case RED_LED:
-
-					A_strcHSM->led_state = GREEN_LED ;
 
 				break ;
 

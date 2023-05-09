@@ -79,10 +79,12 @@
 #define TestingMotorDriver 				STOP
 #define TestingMotor_ChangeSpeed		STOP
 #define TestingCar_Movement				STOP
-#define TestingMobApp_MovesCar			STOP
+
+#define TestingMobApp_MovesCar			RUN
+
 #define TestingRTOS_BlinkLEDs			STOP
 #define MotorStateMachine				STOP
-#define MotorHSM						RUN
+#define MotorHSM						STOP
 
 /************************************************************************/
 /*                          Application                        		   	*/
