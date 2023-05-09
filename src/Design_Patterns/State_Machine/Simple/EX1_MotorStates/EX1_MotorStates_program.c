@@ -20,7 +20,6 @@
 
 #include "../../../../COTS/HAL/Bluetooth/Bluetooth_interface.h"
 #include "../../../../COTS/HAL/LED/LED_interface.h"
-#include "../../../../COTS/HAL/DCMOTOR/DCM_interface.h"
 
 #include "EX1_MotorStates_interface.h"
 #include "EX1_MotorStates_private.h"
@@ -161,7 +160,7 @@ void DPMotorStates_vExecution( void )
 
 				HBluetooth_vSendString( "\nON STATE\n" ) ;
 
-				/*  Turn off Red LED */
+				/* Turn off Red LED */
 				HLED_vTurnLightOff( &RED ) ;
 
 				/* Turn on motor */
