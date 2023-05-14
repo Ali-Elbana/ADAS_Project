@@ -26,9 +26,10 @@
 #include "ACC_private.h"
 #include "ACC_config.h"
 
-u32_t L_u32SpeedValue 				= INITIAL_ZERO ;
-f32_t L_f32Distance 				= INITIAL_ZERO ;
-c8_t volatile G_c8ACCRecievedButton = INITIAL_ZERO ;
+u32_t L_u32SpeedValue 				= INITIAL_ZERO 	;
+f32_t L_f32Distance 				= INITIAL_ZERO 	;
+c8_t volatile G_c8ACCRecievedButton = INITIAL_ZERO 	;
+u8_t volatile Gv_u8InISR		 	= FALSE			;
 
 static VAR(HULTSNC_ConfigType)
 TRIG =
@@ -43,7 +44,9 @@ TRIG =
 /* This is a call back RX function */
 static void Button_vCurrentData( void )
 {
-	G_c8ACCRecievedButton = HBluetooth_u8GetDataRegister( ) ;
+	G_c8ACCRecievedButton 	= HBluetooth_u8GetDataRegister( ) 	;
+
+	Gv_u8InISR		 		= TRUE								;
 }
 
 /**************************************************************************************/
@@ -52,7 +55,8 @@ static void Button_vCurrentData( void )
 void AACC_vModeON( void )
 {
 
-	G_c8ACCRecievedButton = INITIAL_ZERO ;
+	G_c8ACCRecievedButton 		= INITIAL_ZERO 	;
+	Gv_u8InISR		 			= FALSE			;
 
 	HBluetooth_vSendString( "\nACC Mode ON\n" ) ;
 
@@ -86,64 +90,75 @@ void AACC_vModeON( void )
 			/* Do Nothing */
 		}
 
-		switch( G_c8ACCRecievedButton )
+		if( Gv_u8InISR == TRUE )
 		{
 
-			case EXIT_MODE_CHAR:
+			Gv_u8InISR = FALSE ;
 
-				HCarMove_vStop( ) ;
+			switch( G_c8ACCRecievedButton )
+			{
 
-				HBluetooth_vSendString( SPEED0_STR ) ;
+				case EXIT_MODE_CHAR:
 
-				HBluetooth_vSendString( "\nACC Mode Off\n" ) ;
+					HCarMove_vStop( ) ;
 
-				HBluetooth_u8AsynchReceiveByte( NULL ) ;
+					HBluetooth_vSendString( SPEED0_STR ) ;
 
-			break ;
+					HBluetooth_vSendString( "\nACC Mode Off\n" ) ;
 
-			case INC_SPEED_CHAR:
+					HBluetooth_u8AsynchReceiveByte( NULL ) ;
 
-				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+				break ;
 
-				if( L_u32SpeedValue >= SPEED_100_PERCENT )
-				{
-					L_u32SpeedValue = SPEED_100_PERCENT ;
+				case INC_SPEED_CHAR:
 
-					AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-				}
-				else
-				{
-					L_u32SpeedValue += SPEED_10_PERCENT ;
+					L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
-					HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
+					if( L_u32SpeedValue >= SPEED_100_PERCENT )
+					{
+						L_u32SpeedValue = SPEED_100_PERCENT ;
 
-					AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-				}
+						AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+					}
+					else
+					{
+						L_u32SpeedValue += SPEED_10_PERCENT ;
 
-			break ;
+						HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
 
-			case DEC_SPEED_CHAR:
+						AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+					}
 
-				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
+				break ;
 
-				if( L_u32SpeedValue <= SPEED_0_PERCENT )
-				{
-					L_u32SpeedValue = SPEED_0_PERCENT ;
+				case DEC_SPEED_CHAR:
 
-					AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-				}
-				else
-				{
-					L_u32SpeedValue -= SPEED_10_PERCENT ;
+					L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
 
-					HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
+					if( L_u32SpeedValue <= SPEED_0_PERCENT )
+					{
+						L_u32SpeedValue = SPEED_0_PERCENT ;
 
-					AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-				}
+						AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+					}
+					else
+					{
+						L_u32SpeedValue -= SPEED_10_PERCENT ;
 
-			break ;
+						HCarMove_vSpeedRatio( L_u32SpeedValue ) ;
 
-			default: /* Do Nothing */ break ;
+						AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
+					}
+
+				break ;
+
+				default: /* Do Nothing */ break ;
+			}
+
+		}
+		else
+		{
+			/* Do nothing */
 		}
 
 	}while( G_c8ACCRecievedButton != EXIT_MODE_CHAR ) ;
