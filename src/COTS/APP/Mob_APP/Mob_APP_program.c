@@ -77,11 +77,11 @@ void AMobApp_vSendSpeedValue( u32_t A_u32SpeedValue )
 void AMobApp_vCntrlCar( void )
 {
 
-	c8_t L_c8RecievedState = INITIAL_ZERO ;
+	c8_t L_c8RecievedState = TRAD_MODE_CHAR ;
 
 	HBluetooth_vSendString( "\nCar is ready to be controlled\n" ) ;
 
-	do
+	while( TRUE )
 	{
 
 		HBluetooth_vDisableAsynchReceive( ) ;
@@ -106,13 +106,11 @@ void AMobApp_vCntrlCar( void )
 
 			case FCW_MODE_CHAR	: AFCW_vModeON( )         ;	break ;
 
-			case EXIT_SYS_CHAR	: AExit_vCriteriaON( )    ;	break ;
-
 			default				: ATraditional_vModeON( ) ;	break ;
 
 		}
 
-	}while( L_c8RecievedState != EXIT_SYS_CHAR ) ;
+	}
 
 }
 

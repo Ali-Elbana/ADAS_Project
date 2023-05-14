@@ -67,20 +67,14 @@ void AACC_vModeON( void )
 
 		L_f32Distance = HULTSNC_f32GetDistance(  ) ;
 
-		HBluetooth_vSendString( "\nSpeed has been recorded\n" ) ;
-
 		if( L_f32Distance < ACC_SAFE_DIST )
 		{
-			HBluetooth_vSendString( "\nLess than 50cm condition\n" ) ;
-
 			HCarMove_vStop( ) ;
 
 			HBluetooth_vSendString( SPEED0_STR ) ;
 		}
 		else if( L_f32Distance >= ACC_SAFE_DIST + HYSTRS_VALUE )
 		{
-			HBluetooth_vSendString( "\nBigger than 50cm condition\n" ) ;
-
 			HCarMove_vForward( ) ;
 
 			L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
@@ -90,8 +84,6 @@ void AACC_vModeON( void )
 		else
 		{
 			/* Do Nothing */
-
-			HBluetooth_vSendString( "\nOn else condition\n" ) ;
 		}
 
 		switch( G_c8ACCRecievedButton )
@@ -155,8 +147,6 @@ void AACC_vModeON( void )
 		}
 
 	}while( G_c8ACCRecievedButton != EXIT_MODE_CHAR ) ;
-
-	HBluetooth_vSendString( "\nOut from AACC_vModeON\n" ) ;
 
 }
 
