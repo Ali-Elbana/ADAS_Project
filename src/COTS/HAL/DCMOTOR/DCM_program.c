@@ -19,6 +19,8 @@
 #include "../../MCAL/SysTick/SysTick_interface.h"
 #include "../../MCAL/TIM1/TIM1_interface.h"
 
+#include "../../HAL/UltraSonic/UltraSonic_interface.h"
+
 #include "DCM_interface.h"
 #include "DCM_private.h"
 #include "DCM_config.h"
@@ -104,8 +106,17 @@ FUNC(void) HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration)
 void HDCM_vMotorSpeedCntrl( P2VAR(DCM_MotorConfiguration) pMotorConfiguration, VAR(u16_t) A_u16SpeedValue )
 {
 
+    VAR(HULTSNC_ConfigType)
+    TRIG =
+        {
+            .u8Port = GPIO_PORTB,
+            .u8Pin  = GPIOx_PIN8
+        };
+
 	MTIM1_vGeneratePWM( pMotorConfiguration->u8SpeedPin, PWM1, CENTER1,
 							PSC_VALUE, MAX_SPEED, CR_VALUE ) ;
+
+    HULTSNC_vInit( &TRIG ) ;
 
 	switch( pMotorConfiguration->u8SpeedPin )
 	{
@@ -143,7 +154,7 @@ u32_t HDCM_vGetSpeedValue( P2VAR(DCM_MotorConfiguration) pMotorConfiguration )
 
 		case TIM1_CH4: L_u32SpeedValue = MTIM1_u16GetCaptureReg4Value( ) ; break ;
 
-		default:  break ;
+		default: /* Do nothing */  break ;
 
 	}
 
