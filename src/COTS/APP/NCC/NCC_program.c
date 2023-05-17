@@ -49,34 +49,6 @@ void ANCC_vModeON( void )
 		switch( L_c8RecievedButton )
 		{
 
-			case RIGHT_CHAR:
-
-				HCarMove_vRight( ) ;
-
-				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-
-			break ;
-
-			case LEFT_CHAR:
-
-				HCarMove_vLeft( ) ;
-
-				L_u32SpeedValue = HCarMove_u32GetCarSpeed(  ) ;
-
-				AMobApp_vSendSpeedValue( L_u32SpeedValue ) ;
-
-			break ;
-
-			case STOP_CHAR:
-
-				HCarMove_vStop( ) ;
-
-				HBluetooth_vSendString( SPEED0_STR ) ;
-
-			break ;
-
 			case EXIT_MODE_CHAR:
 
 				HCarMove_vStop( ) ;
