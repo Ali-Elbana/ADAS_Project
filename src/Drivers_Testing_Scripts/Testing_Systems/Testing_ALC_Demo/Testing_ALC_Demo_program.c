@@ -59,22 +59,28 @@ FUNC( void ) TSALC_vDispLux( void )
 	while( TRUE )
 	{
 
-		/* Display Brightness number */
+		/* Get ADC conversion */
 		L_u16BrightnessLevel = HLDR_u16DigitalOutputValue( ) ;
 
+		/* Go to the first line and square5 on the LCD */
 		HLCD_vGoTo( HLCD_LINE1, HLCD_Square5 ) ;
 
+		/* Display brightness number */
 		HLCD_vDispNumber( L_u16BrightnessLevel ) ;
 
+		/* Out the conversion value on the TIM1_CH3 */
 		MTIM1_vSetCompareReg3Value( L_u16BrightnessLevel ) ;
 
+		/* Delay 1ms */
 		MSysTick_vDelayMilliSec( 1 ) ;
 
+		/* Clear the old ADC conversion value */
 		HLCD_vClearChar( HLCD_LINE1, HLCD_Square5 ) ;
 		HLCD_vClearChar( HLCD_LINE1, HLCD_Square6 ) ;
 		HLCD_vClearChar( HLCD_LINE1, HLCD_Square7 ) ;
 		HLCD_vClearChar( HLCD_LINE1, HLCD_Square8 ) ;
 
+		/* Delay 1ms */
 		MSysTick_vDelayMilliSec( 1 ) ;
 
 	}
