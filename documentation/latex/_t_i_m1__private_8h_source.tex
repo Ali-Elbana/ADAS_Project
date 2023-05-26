@@ -1,0 +1,483 @@
+\hypertarget{_t_i_m1__private_8h_source}{}\doxysection{TIM1\+\_\+private.\+h}
+\label{_t_i_m1__private_8h_source}\index{COTS/MCAL/TIM1/TIM1\_private.h@{COTS/MCAL/TIM1/TIM1\_private.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: TIM1\_private  }}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00004}00004 \textcolor{comment}{*  DATE:   Tue 01/24/2023}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_TIM1\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_TIM1\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00009}00009 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00010}00010 \textcolor{comment}{/*                        Peripherals declaration                       */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00011}00011 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00018}\mbox{\hyperlink{struct_t_i_m1___memory_map_type}{00018}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00021}00021     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CR1         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00023}00023     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CR2         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00025}00025     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} SMCR    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00027}00027     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} DIER    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00029}00029     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} SR      ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00031}00031     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} EGR         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00033}00033     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCMR1   ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00035}00035     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCMR2   ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00037}00037     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCER    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00039}00039     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CNT         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00041}00041     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} PSC         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00043}00043     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} ARR         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00045}00045     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} RCR         ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00047}00047     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCR1    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00049}00049     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCR2    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00051}00051     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCR3    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00053}00053     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} CCR4    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00055}00055     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} BDTR    ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00057}00057     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} DCR     ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00059}00059     \textcolor{keyword}{volatile} \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} DMAR        ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00061}00061 \} \mbox{\hyperlink{struct_t_i_m1___memory_map_type}{TIM1\_MemoryMapType}} ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00064}00064 \textcolor{preprocessor}{\#define TIM1\_BASE\_ADDRESS 0x40010000}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00066}00066 \textcolor{preprocessor}{\#define TIM1 ( ( volatile TIM1\_MemoryMapType* ) (TIM1\_BASE\_ADDRESS) )}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00068}00068 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00069}00069 \textcolor{comment}{/*                      TIM1\_CR1 register bits                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00070}00070 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00072}00072 \textcolor{preprocessor}{\#define CKD1    9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00073}00073 \textcolor{preprocessor}{\#define CKD0    8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00074}00074 \textcolor{preprocessor}{\#define ARPE    7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00075}00075 \textcolor{preprocessor}{\#define CMS1    6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00076}00076 \textcolor{preprocessor}{\#define CMS0    5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00077}00077 \textcolor{preprocessor}{\#define DIR     4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00078}00078 \textcolor{preprocessor}{\#define OPM     3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00079}00079 \textcolor{preprocessor}{\#define URS     2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00080}00080 \textcolor{preprocessor}{\#define UDIS    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00081}00081 \textcolor{preprocessor}{\#define CEN     0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00083}00083 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00084}00084 \textcolor{comment}{/*                      TIM1\_CR2 register bits                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00085}00085 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00087}00087 \textcolor{preprocessor}{\#define OIS4    14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00088}00088 \textcolor{preprocessor}{\#define OIS3N   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00089}00089 \textcolor{preprocessor}{\#define OIS3    12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00090}00090 \textcolor{preprocessor}{\#define OIS2N   11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00091}00091 \textcolor{preprocessor}{\#define OIS2    10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00092}00092 \textcolor{preprocessor}{\#define OIS1N   9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00093}00093 \textcolor{preprocessor}{\#define OIS1    8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00094}00094 \textcolor{preprocessor}{\#define TI1S    7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00095}00095 \textcolor{preprocessor}{\#define MMS2    6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00096}00096 \textcolor{preprocessor}{\#define MMS1    5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00097}00097 \textcolor{preprocessor}{\#define MMS0    4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00098}00098 \textcolor{preprocessor}{\#define CCDS    3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00099}00099 \textcolor{preprocessor}{\#define CCUS    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00100}00100 \textcolor{preprocessor}{\#define CCPC    0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00102}00102 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00103}00103 \textcolor{comment}{/*                     TIM1\_SMCR register bits                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00104}00104 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00106}00106 \textcolor{preprocessor}{\#define ETP     15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00107}00107 \textcolor{preprocessor}{\#define ECE     14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00108}00108 \textcolor{preprocessor}{\#define ETPS1   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00109}00109 \textcolor{preprocessor}{\#define ETPS0   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00110}00110 \textcolor{preprocessor}{\#define ETF3    11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00111}00111 \textcolor{preprocessor}{\#define ETF2    10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00112}00112 \textcolor{preprocessor}{\#define ETF1    9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00113}00113 \textcolor{preprocessor}{\#define ETF0    8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00114}00114 \textcolor{preprocessor}{\#define MSM     7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00115}00115 \textcolor{preprocessor}{\#define TS2     6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00116}00116 \textcolor{preprocessor}{\#define TS1     5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00117}00117 \textcolor{preprocessor}{\#define TS0     4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00118}00118 \textcolor{preprocessor}{\#define SMS2    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00119}00119 \textcolor{preprocessor}{\#define SMS1    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00120}00120 \textcolor{preprocessor}{\#define SMS0    0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00122}00122 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00123}00123 \textcolor{comment}{/*                     TIM1\_DIER register bits                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00124}00124 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00126}00126 \textcolor{preprocessor}{\#define TDE     14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00127}00127 \textcolor{preprocessor}{\#define COMDE   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00128}00128 \textcolor{preprocessor}{\#define CC4DE   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00129}00129 \textcolor{preprocessor}{\#define CC3DE   11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00130}00130 \textcolor{preprocessor}{\#define CC2DE   10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00131}00131 \textcolor{preprocessor}{\#define CC1DE   9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00132}00132 \textcolor{preprocessor}{\#define UDE     8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00133}00133 \textcolor{preprocessor}{\#define BIE     7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00134}00134 \textcolor{preprocessor}{\#define TIE     6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00135}00135 \textcolor{preprocessor}{\#define COMIE   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00136}00136 \textcolor{preprocessor}{\#define CC4IE   4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00137}00137 \textcolor{preprocessor}{\#define CC3IE   3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00138}00138 \textcolor{preprocessor}{\#define CC2IE   2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00139}00139 \textcolor{preprocessor}{\#define CC1IE   1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00140}00140 \textcolor{preprocessor}{\#define UIE     0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00142}00142 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00143}00143 \textcolor{comment}{/*                     TIM1\_SR register bits                            */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00144}00144 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00146}00146 \textcolor{preprocessor}{\#define CC4OF   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00147}00147 \textcolor{preprocessor}{\#define CC3OF   11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00148}00148 \textcolor{preprocessor}{\#define CC2OF   10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00149}00149 \textcolor{preprocessor}{\#define CC1OF   9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00150}00150 \textcolor{preprocessor}{\#define BIF     7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00151}00151 \textcolor{preprocessor}{\#define TIF     6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00152}00152 \textcolor{preprocessor}{\#define COMIF   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00153}00153 \textcolor{preprocessor}{\#define CC4IF   4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00154}00154 \textcolor{preprocessor}{\#define CC3IF   3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00155}00155 \textcolor{preprocessor}{\#define CC2IF   2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00156}00156 \textcolor{preprocessor}{\#define CC1IF   1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00157}00157 \textcolor{preprocessor}{\#define UIF     0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00159}00159 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00160}00160 \textcolor{comment}{/*                     TIM1\_EGR register bits                           */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00161}00161 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00163}00163 \textcolor{preprocessor}{\#define BG      7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00164}00164 \textcolor{preprocessor}{\#define TG      6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00165}00165 \textcolor{preprocessor}{\#define COMG    5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00166}00166 \textcolor{preprocessor}{\#define CC4G    4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00167}00167 \textcolor{preprocessor}{\#define CC3G    3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00168}00168 \textcolor{preprocessor}{\#define CC2G    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00169}00169 \textcolor{preprocessor}{\#define CC1G    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00170}00170 \textcolor{preprocessor}{\#define UG      0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00172}00172 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00173}00173 \textcolor{comment}{/*                     TIM1\_CCMR1 register bits                         */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00174}00174 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00176}00176 \textcolor{comment}{// General:}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00177}00177 \textcolor{preprocessor}{\#define CC2S1   9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00178}00178 \textcolor{preprocessor}{\#define CC2S0   8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00179}00179 \textcolor{preprocessor}{\#define CC1S1   1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00180}00180 \textcolor{preprocessor}{\#define CC1S0   0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00182}00182 \textcolor{comment}{// Output Capture mode:}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00183}00183 \textcolor{preprocessor}{\#define OC2CE   15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00184}00184 \textcolor{preprocessor}{\#define OC2M2   14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00185}00185 \textcolor{preprocessor}{\#define OC2M1   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00186}00186 \textcolor{preprocessor}{\#define OC2M0   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00187}00187 \textcolor{preprocessor}{\#define OC2PE   11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00188}00188 \textcolor{preprocessor}{\#define OC2FE   10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00189}00189 \textcolor{preprocessor}{\#define OC1CE   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00190}00190 \textcolor{preprocessor}{\#define OC1M2   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00191}00191 \textcolor{preprocessor}{\#define OC1M1   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00192}00192 \textcolor{preprocessor}{\#define OC1M0   4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00193}00193 \textcolor{preprocessor}{\#define OC1PE   3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00194}00194 \textcolor{preprocessor}{\#define OC1FE   2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00196}00196 \textcolor{comment}{// Input Capture mode:}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00197}00197 \textcolor{preprocessor}{\#define IC2F3   15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00198}00198 \textcolor{preprocessor}{\#define IC2F2   14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00199}00199 \textcolor{preprocessor}{\#define IC2F1   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00200}00200 \textcolor{preprocessor}{\#define IC2F0   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00201}00201 \textcolor{preprocessor}{\#define IC2PSC1 11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00202}00202 \textcolor{preprocessor}{\#define IC2PSC0 10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00203}00203 \textcolor{preprocessor}{\#define IC1F3   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00204}00204 \textcolor{preprocessor}{\#define IC1F2   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00205}00205 \textcolor{preprocessor}{\#define IC1F1   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00206}00206 \textcolor{preprocessor}{\#define IC1F0   4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00207}00207 \textcolor{preprocessor}{\#define IC1PSC1 3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00208}00208 \textcolor{preprocessor}{\#define IC1PSC0 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00209}00209 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00210}00210 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00211}00211 \textcolor{comment}{/*                     TIM1\_CCMR2 register bits                         */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00212}00212 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00213}00213 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00214}00214 \textcolor{comment}{// General:}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00215}00215 \textcolor{preprocessor}{\#define CC4S1   9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00216}00216 \textcolor{preprocessor}{\#define CC4S0   8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00217}00217 \textcolor{preprocessor}{\#define CC3S1   1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00218}00218 \textcolor{preprocessor}{\#define CC3S0   0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00219}00219 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00220}00220 \textcolor{comment}{// For Output compare mode:}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00221}00221 \textcolor{preprocessor}{\#define OC4CE   15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00222}00222 \textcolor{preprocessor}{\#define OC4M2   14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00223}00223 \textcolor{preprocessor}{\#define OC4M1   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00224}00224 \textcolor{preprocessor}{\#define OC4M0   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00225}00225 \textcolor{preprocessor}{\#define OC4PE   11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00226}00226 \textcolor{preprocessor}{\#define OC4FE   10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00227}00227 \textcolor{preprocessor}{\#define OC3CE   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00228}00228 \textcolor{preprocessor}{\#define OC3M2   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00229}00229 \textcolor{preprocessor}{\#define OC3M1   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00230}00230 \textcolor{preprocessor}{\#define OC3M0   4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00231}00231 \textcolor{preprocessor}{\#define OC3PE   3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00232}00232 \textcolor{preprocessor}{\#define OC3FE   2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00233}00233 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00234}00234 \textcolor{comment}{// For Input capture mode:}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00235}00235 \textcolor{preprocessor}{\#define IC4F3   15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00236}00236 \textcolor{preprocessor}{\#define IC4F2   14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00237}00237 \textcolor{preprocessor}{\#define IC4F1   13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00238}00238 \textcolor{preprocessor}{\#define IC4F0   12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00239}00239 \textcolor{preprocessor}{\#define IC4PSC1 11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00240}00240 \textcolor{preprocessor}{\#define IC4PSC0 10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00241}00241 \textcolor{preprocessor}{\#define IC3F3   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00242}00242 \textcolor{preprocessor}{\#define IC3F2   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00243}00243 \textcolor{preprocessor}{\#define IC3F1   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00244}00244 \textcolor{preprocessor}{\#define IC3F0   4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00245}00245 \textcolor{preprocessor}{\#define IC3PSC1 3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00246}00246 \textcolor{preprocessor}{\#define IC3PSC0 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00247}00247 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00248}00248 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00249}00249 \textcolor{comment}{/*                     TIM1\_CCER2 register bits                         */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00250}00250 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00251}00251 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00252}00252 \textcolor{preprocessor}{\#define CC4P    13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00253}00253 \textcolor{preprocessor}{\#define CC4E    12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00254}00254 \textcolor{preprocessor}{\#define CC3NP   11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00255}00255 \textcolor{preprocessor}{\#define CC3NE   10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00256}00256 \textcolor{preprocessor}{\#define CC3P    9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00257}00257 \textcolor{preprocessor}{\#define CC3E    8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00258}00258 \textcolor{preprocessor}{\#define CC2NP   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00259}00259 \textcolor{preprocessor}{\#define CC2NE   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00260}00260 \textcolor{preprocessor}{\#define CC2P    5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00261}00261 \textcolor{preprocessor}{\#define CC2E    4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00262}00262 \textcolor{preprocessor}{\#define CC1NP   3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00263}00263 \textcolor{preprocessor}{\#define CC1NE   2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00264}00264 \textcolor{preprocessor}{\#define CC1P    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00265}00265 \textcolor{preprocessor}{\#define CC1E    0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00266}00266 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00267}00267 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00268}00268 \textcolor{comment}{/*                     TIM1\_BDTR register bits                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00269}00269 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00270}00270 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00271}00271 \textcolor{preprocessor}{\#define MOE     15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00272}00272 \textcolor{preprocessor}{\#define AOE     14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00273}00273 \textcolor{preprocessor}{\#define BKP     13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00274}00274 \textcolor{preprocessor}{\#define BKE     12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00275}00275 \textcolor{preprocessor}{\#define OSSR    11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00276}00276 \textcolor{preprocessor}{\#define OSSI    10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00277}00277 \textcolor{preprocessor}{\#define LOCK1   9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00278}00278 \textcolor{preprocessor}{\#define LOCK0   8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00279}00279 \textcolor{preprocessor}{\#define DTG7    7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00280}00280 \textcolor{preprocessor}{\#define DTG6    6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00281}00281 \textcolor{preprocessor}{\#define DTG5    5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00282}00282 \textcolor{preprocessor}{\#define DTG4    4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00283}00283 \textcolor{preprocessor}{\#define DTG3    3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00284}00284 \textcolor{preprocessor}{\#define DTG2    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00285}00285 \textcolor{preprocessor}{\#define DTG1    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00286}00286 \textcolor{preprocessor}{\#define DTG0    0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00287}00287 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00288}00288 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00289}00289 \textcolor{comment}{/*                     TIM1\_DCR register bits                           */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00290}00290 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00291}00291 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00292}00292 \textcolor{preprocessor}{\#define DBL4    12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00293}00293 \textcolor{preprocessor}{\#define DBL3    11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00294}00294 \textcolor{preprocessor}{\#define DBL2    10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00295}00295 \textcolor{preprocessor}{\#define DBL1    9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00296}00296 \textcolor{preprocessor}{\#define DBL0    8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00297}00297 \textcolor{preprocessor}{\#define DBA4    4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00298}00298 \textcolor{preprocessor}{\#define DBA3    3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00299}00299 \textcolor{preprocessor}{\#define DBA2    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00300}00300 \textcolor{preprocessor}{\#define DBA1    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00301}00301 \textcolor{preprocessor}{\#define DBA0    0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00302}00302 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00303}00303 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00304}00304 \textcolor{comment}{/*                        Config.h Macros                               */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00305}00305 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00306}00306 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00307}00307 \textcolor{preprocessor}{\#define ENABLE                  2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00308}00308 \textcolor{preprocessor}{\#define DISABLE                 1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00309}00309 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00310}00310 \textcolor{preprocessor}{\#define ANY\_EVENT               1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00311}00311 \textcolor{preprocessor}{\#define OVF\_UDF                 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00312}00312 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00313}00313 \textcolor{preprocessor}{\#define UP                      1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00314}00314 \textcolor{preprocessor}{\#define DOWN                    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00315}00315 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00316}00316 \textcolor{preprocessor}{\#define EDGE                    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00317}00317 \textcolor{preprocessor}{\#define CENTER1                 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00318}00318 \textcolor{preprocessor}{\#define CENTER2                 3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00319}00319 \textcolor{preprocessor}{\#define CENTER3                 4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00320}00320 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00321}00321 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00322}00322 \textcolor{preprocessor}{\#define NOT\_BUFFERED            1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00323}00323 \textcolor{preprocessor}{\#define BUFFERED                2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00324}00324 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00325}00325 \textcolor{preprocessor}{\#define ONE\_TCK                 1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00326}00326 \textcolor{preprocessor}{\#define TWO\_TCK                 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00327}00327 \textcolor{preprocessor}{\#define FOUR\_TCK                3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00328}00328 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00329}00329 \textcolor{preprocessor}{\#define NOT\_PRELOADED           1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00330}00330 \textcolor{preprocessor}{\#define PRELOADED               2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00331}00331 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00332}00332 \textcolor{preprocessor}{\#define COMG\_ONLY               2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00333}00333 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00334}00334 \textcolor{preprocessor}{\#define CCx\_EVENT               1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00335}00335 \textcolor{preprocessor}{\#define UPDATE\_EVENT            2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00336}00336 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00337}00337 \textcolor{preprocessor}{\#define RST                     1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00338}00338 \textcolor{preprocessor}{\#define UPDATE                  3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00339}00339 \textcolor{preprocessor}{\#define COMP\_PULSE              4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00340}00340 \textcolor{preprocessor}{\#define COMP1                   5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00341}00341 \textcolor{preprocessor}{\#define COMP2                   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00342}00342 \textcolor{preprocessor}{\#define COMP3                   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00343}00343 \textcolor{preprocessor}{\#define COMP4                   8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00344}00344 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00345}00345 \textcolor{preprocessor}{\#define CH1                     1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00346}00346 \textcolor{preprocessor}{\#define CH1\_2\_3                 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00347}00347 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00348}00348 \textcolor{preprocessor}{\#define LOW                     1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00349}00349 \textcolor{preprocessor}{\#define HIGH                    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00350}00350 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00351}00351 \textcolor{preprocessor}{\#define ENCODER1                3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00352}00352 \textcolor{preprocessor}{\#define ENCODER2                4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00353}00353 \textcolor{preprocessor}{\#define ENCODER3                5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00354}00354 \textcolor{preprocessor}{\#define GATED                   6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00355}00355 \textcolor{preprocessor}{\#define TRIGGER                 7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00356}00356 \textcolor{preprocessor}{\#define EXT\_CLK                 8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00357}00357 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00358}00358 \textcolor{preprocessor}{\#define ITR0                    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00359}00359 \textcolor{preprocessor}{\#define ITR1                    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00360}00360 \textcolor{preprocessor}{\#define ITR2                    3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00361}00361 \textcolor{preprocessor}{\#define ITR3                    4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00362}00362 \textcolor{preprocessor}{\#define TI1F\_ED                 5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00363}00363 \textcolor{preprocessor}{\#define TI1FP1                  6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00364}00364 \textcolor{preprocessor}{\#define TI1FP2                  7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00365}00365 \textcolor{preprocessor}{\#define ETRF                    8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00366}00366 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00367}00367 \textcolor{preprocessor}{\#define NO\_ACTION               1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00368}00368 \textcolor{preprocessor}{\#define TRGI                    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00369}00369 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00370}00370 \textcolor{preprocessor}{\#define NO\_FLTR                 1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00371}00371 \textcolor{preprocessor}{\#define FCK\_N2                  2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00372}00372 \textcolor{preprocessor}{\#define FCK\_N4                  3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00373}00373 \textcolor{preprocessor}{\#define FCK\_N8                  4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00374}00374 \textcolor{preprocessor}{\#define FDTS2\_N6                5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00375}00375 \textcolor{preprocessor}{\#define FDTS2\_N8                6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00376}00376 \textcolor{preprocessor}{\#define FDTS4\_N6                7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00377}00377 \textcolor{preprocessor}{\#define FDTS4\_N8                8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00378}00378 \textcolor{preprocessor}{\#define FDTS8\_N6                9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00379}00379 \textcolor{preprocessor}{\#define FDTS8\_N8                10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00380}00380 \textcolor{preprocessor}{\#define FDTS16\_N5               11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00381}00381 \textcolor{preprocessor}{\#define FDTS16\_N6               12}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00382}00382 \textcolor{preprocessor}{\#define FDTS16\_N8               13}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00383}00383 \textcolor{preprocessor}{\#define FDTS32\_N5               14}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00384}00384 \textcolor{preprocessor}{\#define FDTS32\_N6               15}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00385}00385 \textcolor{preprocessor}{\#define FDTS32\_N8               16}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00386}00386 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00387}00387 \textcolor{preprocessor}{\#define OFF                     1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00388}00388 \textcolor{preprocessor}{\#define BY2                     2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00389}00389 \textcolor{preprocessor}{\#define BY4                     3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00390}00390 \textcolor{preprocessor}{\#define BY8                     4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00391}00391 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00392}00392 \textcolor{preprocessor}{\#define NON\_INVERTED            1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00393}00393 \textcolor{preprocessor}{\#define INVERTED                2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00394}00394 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00395}00395 \textcolor{preprocessor}{\#define RE\_INIT                 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00396}00396 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00397}00397 \textcolor{preprocessor}{\#define CC\_GENERATED            2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00398}00398 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00399}00399 \textcolor{preprocessor}{\#define CC\_UPDATED              2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00400}00400 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00401}00401 \textcolor{preprocessor}{\#define TRG\_ENABLED             2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00402}00402 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00403}00403 \textcolor{preprocessor}{\#define BRK\_GENERATED           2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00404}00404 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00405}00405 \textcolor{preprocessor}{\#define CC1\_OUTPUT              1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00406}00406 \textcolor{preprocessor}{\#define CC1\_INPUT\_TI1           2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00407}00407 \textcolor{preprocessor}{\#define CC1\_INPUT\_TI2           3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00408}00408 \textcolor{preprocessor}{\#define CC1\_INPUT\_TRC           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00409}00409 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00410}00410 \textcolor{preprocessor}{\#define NO\_PRESCALER            1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00411}00411 \textcolor{preprocessor}{\#define EVERY\_2\_EVENTS          2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00412}00412 \textcolor{preprocessor}{\#define EVERY\_4\_EVENTS          3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00413}00413 \textcolor{preprocessor}{\#define EVERY\_8\_EVENTS          4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00414}00414 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00415}00415 \textcolor{preprocessor}{\#define CC2\_OUTPUT              1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00416}00416 \textcolor{preprocessor}{\#define CC2\_INPUT\_TI1           2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00417}00417 \textcolor{preprocessor}{\#define CC2\_INPUT\_TI2           3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00418}00418 \textcolor{preprocessor}{\#define CC2\_INPUT\_TRC           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00419}00419 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00420}00420 \textcolor{preprocessor}{\#define NORMALLY                1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00421}00421 \textcolor{preprocessor}{\#define INPUT\_TRIGGER           2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00422}00422 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00423}00423 \textcolor{preprocessor}{\#define  FROZEN                 1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00424}00424 \textcolor{preprocessor}{\#define  OC1REF\_HIGH            2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00425}00425 \textcolor{preprocessor}{\#define  OC1REF\_LOW             3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00426}00426 \textcolor{preprocessor}{\#define  OC1REF\_TOGGLE          4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00427}00427 \textcolor{preprocessor}{\#define  OC1REF\_FORCED\_LOW      5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00428}00428 \textcolor{preprocessor}{\#define  OC1REF\_FORCED\_HIGH     6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00429}00429 \textcolor{preprocessor}{\#define  PWM1                   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00430}00430 \textcolor{preprocessor}{\#define  PWM2                   8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00431}00431 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00432}00432 \textcolor{preprocessor}{\#define OC1Ref\_NOTEFFECTED      1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00433}00433 \textcolor{preprocessor}{\#define OC1Ref\_CLEARED          2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00434}00434 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00435}00435 \textcolor{preprocessor}{\#define OC2Ref\_NOTEFFECTED      1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00436}00436 \textcolor{preprocessor}{\#define OC2Ref\_CLEARED          2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00437}00437 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00438}00438 \textcolor{preprocessor}{\#define OC2REF\_HIGH             2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00439}00439 \textcolor{preprocessor}{\#define OC2REF\_LOW              3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00440}00440 \textcolor{preprocessor}{\#define OC2REF\_TOGGLE           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00441}00441 \textcolor{preprocessor}{\#define OC2REF\_FORCED\_LOW       5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00442}00442 \textcolor{preprocessor}{\#define OC2REF\_FORCED\_HIGH      6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00443}00443 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00444}00444 \textcolor{preprocessor}{\#define CC3\_OUTPUT              1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00445}00445 \textcolor{preprocessor}{\#define CC3\_INPUT\_TI3           2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00446}00446 \textcolor{preprocessor}{\#define CC3\_INPUT\_TI4           3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00447}00447 \textcolor{preprocessor}{\#define CC3\_INPUT\_TRC           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00448}00448 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00449}00449 \textcolor{preprocessor}{\#define CC4\_OUTPUT              1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00450}00450 \textcolor{preprocessor}{\#define CC4\_INPUT\_TI4           2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00451}00451 \textcolor{preprocessor}{\#define CC4\_INPUT\_TI3           3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00452}00452 \textcolor{preprocessor}{\#define CC4\_INPUT\_TRC           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00453}00453 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00454}00454 \textcolor{preprocessor}{\#define OC3REF\_HIGH             2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00455}00455 \textcolor{preprocessor}{\#define OC3REF\_LOW              3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00456}00456 \textcolor{preprocessor}{\#define OC3REF\_TOGGLE           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00457}00457 \textcolor{preprocessor}{\#define OC3REF\_FORCED\_LOW       5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00458}00458 \textcolor{preprocessor}{\#define OC3REF\_FORCED\_HIGH      6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00459}00459 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00460}00460 \textcolor{preprocessor}{\#define OC4REF\_HIGH             2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00461}00461 \textcolor{preprocessor}{\#define OC4REF\_LOW              3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00462}00462 \textcolor{preprocessor}{\#define OC4REF\_TOGGLE           4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00463}00463 \textcolor{preprocessor}{\#define OC4REF\_FORCED\_LOW       5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00464}00464 \textcolor{preprocessor}{\#define OC4REF\_FORCED\_HIGH      6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00465}00465 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00466}00466 \textcolor{preprocessor}{\#define OC3Ref\_NOTEFFECTED      1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00467}00467 \textcolor{preprocessor}{\#define OC3Ref\_CLEARED          2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00468}00468 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00469}00469 \textcolor{preprocessor}{\#define OC4Ref\_NOTEFFECTED      1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00470}00470 \textcolor{preprocessor}{\#define OC4Ref\_CLEARED          2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00471}00471 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00472}00472 \textcolor{preprocessor}{\#define ACTIVE\_HIGH             1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00473}00473 \textcolor{preprocessor}{\#define ACTIVE\_LOW              2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00474}00474 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00475}00475 \textcolor{preprocessor}{\#define OC\_DISABLE              1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00476}00476 \textcolor{preprocessor}{\#define OC\_ENABLE               2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00477}00477 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00478}00478 \textcolor{preprocessor}{\#define SW                      1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00479}00479 \textcolor{preprocessor}{\#define AUTO                    2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00480}00480 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00481}00481 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__private_8h_source_l00482}00482 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_TIM1\_private\_H}}
+
+\end{DoxyCode}

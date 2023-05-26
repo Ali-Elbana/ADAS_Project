@@ -294,8 +294,8 @@ u32_t NVIC_GetPriority(VAR(s8_t) A_s8INTID);
  */
 #define SUB_PRIORITY_1 (1)
 /**
- * @def SUB_PRIORITY_3
- * @brief Priority: 3
+ * @def SUB_PRIORITY_2
+ * @brief Priority: 2
  */
 #define SUB_PRIORITY_2 (2)
 /**
@@ -598,7 +598,7 @@ u32_t NVIC_GetPriority(VAR(s8_t) A_s8INTID);
  */
 #define DMA2_STREAM2 (58)
 /**
- * @def DMA2_STREAM5
+ * @def DMA2_STREAM3
  * @brief DMA2 (Direct Memory Access 2) Steam 3 global interrupt
  */
 #define DMA2_STREAM3 (59)
@@ -638,7 +638,7 @@ u32_t NVIC_GetPriority(VAR(s8_t) A_s8INTID);
  */
 #define I2C3_EV (72)
 /**
- * @def I2C3_EV
+ * @def I2C3_ER
  * @brief I2C3 (Inter-integrated Circuit 3) error interrupt
  */
 #define I2C3_ER (73)

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['crcclk_0',['CRCCLK',['../_m_r_c_c__config_8h.html#ac158bc823b3de65d8ea74e30e576d82f',1,'MRCC_config.h']]],
-  ['css_1',['CSS',['../_m_r_c_c__config_8h.html#a168a8532b94e763575750deda4a4b198',1,'MRCC_config.h']]]
+  ['disable_0',['DISABLE',['../_u_a_r_t__interface_8h.html#a99496f7308834e8b220f7894efa0b6ab',1,'UART_interface.h']]]
 ];

@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['lckk_5fbit_5fpos_0',['LCKK_BIT_POS',['../_g_p_i_o__config_8h.html#aec9764fb7c7a18a92444892a6333e614',1,'GPIO_config.h']]],
-  ['lckrx_1',['LCKRx',['../struct_g_p_i_ox___memory_map_type.html#a3342cf1e8177885584f8f6526f961a27',1,'GPIOx_MemoryMapType']]],
-  ['linenum_2',['LineNum',['../struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911',1,'EXTI_ConfigType']]],
-  ['load_3',['LOAD',['../struct_sys_tick___type.html#aa41fd086580200059da755429a0c7bb9',1,'SysTick_Type']]],
-  ['lse_4',['LSE',['../_m_r_c_c__private_8h.html#a4f9fdd4cc37e5b4fa134aadbbd7616cd',1,'MRCC_private.h']]],
-  ['lstd_5fbitmath_2eh_5',['LSTD_BITMATH.h',['../_l_s_t_d___b_i_t_m_a_t_h_8h.html',1,'']]],
-  ['lstd_5fcompiler_2eh_6',['LSTD_COMPILER.h',['../_l_s_t_d___c_o_m_p_i_l_e_r_8h.html',1,'']]],
-  ['lstd_5fmcu_5futilities_2eh_7',['LSTD_MCU_UTILITIES.h',['../_l_s_t_d___m_c_u___u_t_i_l_i_t_i_e_s_8h.html',1,'']]],
-  ['lstd_5ftypes_2eh_8',['LSTD_TYPES.h',['../_l_s_t_d___t_y_p_e_s_8h.html',1,'']]],
-  ['lstd_5fvalues_2eh_9',['LSTD_VALUES.h',['../_l_s_t_d___v_a_l_u_e_s_8h.html',1,'']]]
+  ['jdr1_0',['JDR1',['../struct_a_d_c___memory_map_type.html#a0223e3aa60db3e24c1319db867ec5d7b',1,'ADC_MemoryMapType']]],
+  ['jdr2_1',['JDR2',['../struct_a_d_c___memory_map_type.html#a76516bde404049dace0245548cc66fa7',1,'ADC_MemoryMapType']]],
+  ['jdr3_2',['JDR3',['../struct_a_d_c___memory_map_type.html#aa23070953ff5d87edda4870d4bb0ca41',1,'ADC_MemoryMapType']]],
+  ['jdr4_3',['JDR4',['../struct_a_d_c___memory_map_type.html#a5e001acb77afed55b3d3239387baa575',1,'ADC_MemoryMapType']]],
+  ['jofr1_4',['JOFR1',['../struct_a_d_c___memory_map_type.html#a3ee28d29c9f9b2bfeef5f6f5ab2faa38',1,'ADC_MemoryMapType']]],
+  ['jofr2_5',['JOFR2',['../struct_a_d_c___memory_map_type.html#a5f8f9f5199e4ad3484bed35179a29b65',1,'ADC_MemoryMapType']]],
+  ['jofr3_6',['JOFR3',['../struct_a_d_c___memory_map_type.html#ad49c8d8557d432ca608a6d6a2bd35b46',1,'ADC_MemoryMapType']]],
+  ['jofr4_7',['JOFR4',['../struct_a_d_c___memory_map_type.html#af378188c941daf9993f90047a2f95bb5',1,'ADC_MemoryMapType']]],
+  ['jsqr_8',['JSQR',['../struct_a_d_c___memory_map_type.html#a78752ddeafb81062503ef49c1421be1f',1,'ADC_MemoryMapType']]]
 ];

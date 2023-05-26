@@ -1,0 +1,53 @@
+\hypertarget{_bluetooth__config_8c_source}{}\doxysection{Bluetooth\+\_\+config.\+c}
+\label{_bluetooth__config_8c_source}\index{COTS/HAL/Bluetooth/Bluetooth\_config.c@{COTS/HAL/Bluetooth/Bluetooth\_config.c}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00002}00002 \textcolor{comment}{ * Bluetooth\_config.c}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00003}00003 \textcolor{comment}{ *}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00004}00004 \textcolor{comment}{ *  Created on: Jan 5, 2023}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00005}00005 \textcolor{comment}{ *      Author: Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00006}00006 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00007}00007 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00008}00008 \textcolor{comment}{/*                        Include headers                               */}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00009}00009 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00011}00011 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_TYPES.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00012}00012 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_COMPILER.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00013}00013 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_VALUES.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00014}00014 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_BITMATH.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00016}00016 \textcolor{preprocessor}{\#include "{}../../MCAL/RCC/MRCC\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00017}00017 \textcolor{preprocessor}{\#include "{}../../MCAL/GPIO/GPIO\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00018}00018 \textcolor{preprocessor}{\#include "{}../../MCAL/UART/UART\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00020}00020 \textcolor{preprocessor}{\#include "{}Bluetooth\_config.h"{}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00022}00022 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00023}00023 \textcolor{comment}{/*                     Configuration parameters                         */}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00024}00024 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00026}00026 \mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\_InitType}} Bluetooth\_Config =}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00028}00028     .\mbox{\hyperlink{struct_u_s_a_r_t___init_type_afa1b17287553d6f2ed8e4ded8067ce7d}{BaudRate}}            = \mbox{\hyperlink{_u_a_r_t__interface_8h_a6d446b35159115d4080e505601938aac}{\_\_BAUDRATE\_\_}} ,   .DataWidth          = \mbox{\hyperlink{group__uart__bit__sizes_gaee68d10bce9651f8903872f9e1e8753c}{MODE\_8BIT}} ,}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00030}00030     .StopBits            = \mbox{\hyperlink{group__uart__stop__bits_ga22de6895caca557a97364a36572ca319}{STOP\_BIT\_1}}     ,   .Parity\_Enable      = DISABLE   ,}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00032}00032     .Parity\_Selection    = \mbox{\hyperlink{group__uart__parity_ga30a963ff1432e4cfbdd83e74045ef142}{EVEN\_PARITY}}   ,   .TransferDirection  = \mbox{\hyperlink{group__uart__operating__modes_gac320fb8cc73d1635bf24181d566e708c}{TX\_RX}}        ,}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00034}00034     .HardwareFlowControl = DISABLE      ,   .Oversampling       = \mbox{\hyperlink{group__uart__over__sampling_gaf8c5da91760498f5e23684c559d9d0d1}{OVER\_SAMPLING\_16}}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00035}00035 \} ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00037}00037 \mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\_ClockInitTypeDef}} Bluetooth\_CLK = \{ DISABLE, 0, 0, 0 \} ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00039}00039 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00040}00040 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00042}00042 \mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} * Bluetooth\_UART\_ID = \mbox{\hyperlink{group__uart__registers_ga38f9de19e0022108a0536f7b88267d5e}{USART1\_REG}} ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00044}00044 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00045}00045 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__config_8c_source_l00047}00047 }
+
+\end{DoxyCode}

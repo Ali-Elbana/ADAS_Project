@@ -283,7 +283,7 @@ typedef struct
  */
 #define MEMORY_MANAGE (-3)
 /**
- * @def MEMORY_MANAGE
+ * @def BUS_FAULT
  * Pre-fetch fault, memory access fault
  *
  */

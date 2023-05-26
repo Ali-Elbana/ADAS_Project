@@ -29,7 +29,7 @@ var NAVTREE =
       [ "Description", "index.html#autotoc_md1", [
         [ "Adaptive Cruise Control", "index.html#autotoc_md2", null ],
         [ "Adaptive Light Control", "index.html#autotoc_md3", null ],
-        [ "Driver Health Care", "index.html#autotoc_md4", null ]
+        [ "Driver Drowsiness Detection", "index.html#autotoc_md4", null ]
       ] ],
       [ "Hardware specifications", "index.html#autotoc_md5", null ]
     ] ],
@@ -56,10 +56,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_d_c_m__config_8h.html",
-"_m_r_c_c__private_8h.html#a5587236d8ed0745a4e3c200c93fa9cc6",
-"functions.html",
-"group__nvic__addresses.html#gaa677236f48778f5c6d5cc28679e9f2c6"
+"_a_c_c__config_8h_source.html",
+"dir_1d922b7e9f15be1767fb4b3bd4b1250d.html",
+"group__interrupt__lines.html#gafc75ecdd4cf7265d434f18320fb874ad",
+"struct_g_p_i_ox___memory_map_type.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

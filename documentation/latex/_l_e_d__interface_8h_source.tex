@@ -1,0 +1,40 @@
+\hypertarget{_l_e_d__interface_8h_source}{}\doxysection{LED\+\_\+interface.\+h}
+\label{_l_e_d__interface_8h_source}\index{COTS/HAL/LED/LED\_interface.h@{COTS/HAL/LED/LED\_interface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: LED\_interface.h}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00002}00002 \textcolor{comment}{ *  Author:  Mohamed Alaa}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00003}00003 \textcolor{comment}{ *  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00004}00004 \textcolor{comment}{ *  DATE:   1/27/2022}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00005}00005 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_LED\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_LED\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00009}00009 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00010}00010 \textcolor{comment}{/***********************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00017}\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{00017}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00018}00018 \{}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00022}\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{00022}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}};}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00026}\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{00026}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}};}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00028}00028 \} \mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}};}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00030}00030 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00031}00031 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00032}00032 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00038}00038 \textcolor{keywordtype}{void} HLED\_vInit(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00044}00044 \textcolor{keywordtype}{void} HLED\_vTurnLightOn(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00050}00050 \textcolor{keywordtype}{void} HLED\_vTurnLightOff(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00056}00056 \textcolor{keywordtype}{void} HLED\_vToggleLight(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00063}00063 \textcolor{keywordtype}{void} HLED\_vBlinkLED( \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}}) A\_u32MilliSecs );}
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__interface_8h_source_l00066}00066 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_LED\_INTERFACE\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,48 @@
+\hypertarget{_mob___a_p_p__interface_8h_source}{}\doxysection{Mob\+\_\+\+APP\+\_\+interface.\+h}
+\label{_mob___a_p_p__interface_8h_source}\index{COTS/APP/Mob\_APP/Mob\_APP\_interface.h@{COTS/APP/Mob\_APP/Mob\_APP\_interface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: Mob\_APP\_interface  }}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00004}00004 \textcolor{comment}{*  DATE:   Sun 03/26/2023}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_Mob\_APP\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_Mob\_APP\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00010}00010 \textcolor{preprocessor}{\#define DECIMAL     10}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00011}00011 \textcolor{preprocessor}{\#define SPEED0\_STR  "{}*S0*"{}}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00013}00013 \textcolor{preprocessor}{\#define TRAD\_MODE\_CHAR  'T'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00014}00014 \textcolor{preprocessor}{\#define NCC\_MODE\_CHAR   'N'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00015}00015 \textcolor{preprocessor}{\#define ACC\_MODE\_CHAR   'A'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00016}00016 \textcolor{preprocessor}{\#define FCW\_MODE\_CHAR   'F'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00017}00017 \textcolor{preprocessor}{\#define EXIT\_SYS\_CHAR   'E'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00019}00019 \textcolor{preprocessor}{\#define FORW\_CHAR       'f'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00020}00020 \textcolor{preprocessor}{\#define BACKW\_CHAR      'b'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00021}00021 \textcolor{preprocessor}{\#define RIGHT\_CHAR      'r'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00022}00022 \textcolor{preprocessor}{\#define LEFT\_CHAR       'l'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00023}00023 \textcolor{preprocessor}{\#define STOP\_CHAR       's'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00024}00024 \textcolor{preprocessor}{\#define EXIT\_MODE\_CHAR  'e'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00025}00025 \textcolor{preprocessor}{\#define INC\_SPEED\_CHAR  '+'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00026}00026 \textcolor{preprocessor}{\#define DEC\_SPEED\_CHAR  '-\/'}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00028}00028 \textcolor{preprocessor}{\#define HYSTRS\_VALUE    3}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00030}00030 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00031}00031 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00032}00032 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00034}00034 \textcolor{keywordtype}{void} AMobApp\_vInit( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00036}00036 \textcolor{keywordtype}{void} AMobApp\_vSendSpeedValue( \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} A\_u32SpeedValue ) ;}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00038}00038 \textcolor{keywordtype}{void} AMobApp\_vCntrlCar( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_mob___a_p_p__interface_8h_source_l00042}00042 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_Mob\_APP\_interface\_H}}
+
+\end{DoxyCode}

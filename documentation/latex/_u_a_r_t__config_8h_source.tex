@@ -1,0 +1,122 @@
+\hypertarget{_u_a_r_t__config_8h_source}{}\doxysection{UART\+\_\+config.\+h}
+\label{_u_a_r_t__config_8h_source}\index{COTS/MCAL/UART/UART\_config.h@{COTS/MCAL/UART/UART\_config.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: UART\_config  }}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00004}00004 \textcolor{comment}{*  DATE:   Fri 10/14/2022}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_UART\_config\_H}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_UART\_config\_H}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00011}00011 \textcolor{preprocessor}{\#define \_\_PCLK\_\_        8000000}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00013}00013 \textcolor{preprocessor}{\#define THRESHOLD\_VALUE 5000000}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00015}00015 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00016}00016 \textcolor{comment}{/*                            USART1 configurations                               */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00017}00017 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00019}00019 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00020}00020 \textcolor{comment}{ *GPIO\_PORTA}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00021}00021 \textcolor{comment}{ *GPIO\_PORTB}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00022}00022 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00023}00023 \textcolor{preprocessor}{\#define USART1\_PORT GPIO\_PORTB}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00025}00025 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00027}00027 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00028}00028 \textcolor{comment}{ *GPIOx\_PIN9}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00029}00029 \textcolor{comment}{ *GPIOx\_PIN6}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00030}00030 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00031}00031 \textcolor{preprocessor}{\#define TX1\_PIN GPIOx\_PIN6}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00033}00033 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00035}00035 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00036}00036 \textcolor{comment}{ *GPIOx\_PIN10}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00037}00037 \textcolor{comment}{ *GPIOx\_PIN7}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00038}00038 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00039}00039 \textcolor{preprocessor}{\#define RX1\_PIN GPIOx\_PIN7}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00041}00041 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00042}00042 \textcolor{comment}{/*                            USART2 configurations                               */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00043}00043 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00045}00045 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00046}00046 \textcolor{comment}{ *GPIO\_PORTA}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00047}00047 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00048}00048 \textcolor{preprocessor}{\#define USART2\_PORT GPIO\_PORTA}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00050}00050 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00052}00052 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00053}00053 \textcolor{comment}{ *GPIOx\_PIN2}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00054}00054 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00055}00055 \textcolor{preprocessor}{\#define TX2\_PIN GPIOx\_PIN2}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00057}00057 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00059}00059 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00060}00060 \textcolor{comment}{ *GPIOx\_PIN3}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00061}00061 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00062}00062 \textcolor{preprocessor}{\#define RX2\_PIN GPIOx\_PIN3}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00064}00064 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00065}00065 \textcolor{comment}{/*                            USART3 configurations                               */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00066}00066 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00068}00068 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00069}00069 \textcolor{comment}{ *GPIO\_PORTA}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00070}00070 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00071}00071 \textcolor{preprocessor}{\#define USART6\_PORT GPIO\_PORTA}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00073}00073 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00075}00075 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00076}00076 \textcolor{comment}{ *GPIOx\_PIN2}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00077}00077 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00078}00078 \textcolor{preprocessor}{\#define TX6\_PIN GPIOx\_PIN11}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00080}00080 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00082}00082 \textcolor{comment}{/*options:}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00083}00083 \textcolor{comment}{ *GPIOx\_PIN3}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00084}00084 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00085}00085 \textcolor{preprocessor}{\#define RX6\_PIN GPIOx\_PIN12}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00087}00087 \textcolor{comment}{/**********************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__config_8h_source_l00116}00116 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_UART\_config\_H}}
+
+\end{DoxyCode}

@@ -56,7 +56,7 @@ void MSysTick_vDelaySec(VAR(u32_t) A_u32Ticks);
  * @param[in] A_u32Ticks Number of ticks to delay for
  * @param[in] A_Fptr Callback function to call when the countdown has finished
  */
-void MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, void (*A_Fptr)(void));
+void MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(void));
 
 /**
  * @brief Asynchronous repetitive delay function
@@ -67,7 +67,7 @@ void MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, void (*A_Fptr)(void));
  * @see MSysTick_vSetBusyWait for a synchronous delay function
  * @see MSysTick_vStopInterval to stop the interval delay function
  */
-void MSysTick_vSetPeriodicInterval(VAR(u32_t) A_u32Ticks, void (*A_Fptr)(void));
+void MSysTick_vSetPeriodicInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(void));
 
 /**
  * @brief Stop the interval delay function
@@ -102,6 +102,9 @@ void MSysTick_vDisable(void);
  */
 void MSysTick_vEnableException(void) ;
 
+/**
+ * @brief Disable the Systick Exception
+ */
 void MSysTick_vDisableException(void) ;
 
 /************************************************************************/
@@ -139,7 +142,7 @@ void MSysTick_vDisableException(void) ;
 #define MILLI_SEC (1)
 
 /**
- * @def MILLI_SEC
+ * @def MICRO_SEC
  * @brief Delay in micro seconds
  */
 #define MICRO_SEC (2)

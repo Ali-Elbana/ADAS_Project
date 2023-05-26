@@ -1,0 +1,427 @@
+\hypertarget{_u_a_r_t__interface_8h}{}\doxysection{COTS/\+MCAL/\+UART/\+UART\+\_\+interface.h File Reference}
+\label{_u_a_r_t__interface_8h}\index{COTS/MCAL/UART/UART\_interface.h@{COTS/MCAL/UART/UART\_interface.h}}
+
+
+This file contains the interfacing information of UART driver.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}
+\begin{DoxyCompactList}\small\item\em USART declaration structure for its registers. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}}
+\begin{DoxyCompactList}\small\item\em USART Clock declaration structure for. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}}
+\begin{DoxyCompactList}\small\item\em USART Clock declaration structure for its registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__uart__addresses_gab4fe2cb41dcc9d652b033f2e0a89d44b}{USART1\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x40011000)
+\item 
+\#define \mbox{\hyperlink{group__uart__addresses_ga4845766e4b9aa8b3c91bbf4a71652106}{USART2\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x40004400)
+\item 
+\#define \mbox{\hyperlink{group__uart__addresses_ga9df7340f186b0dea97f421c10936f608}{USART6\+\_\+\+BASE\+\_\+\+ADDRESS}}~(0x40011400)
+\item 
+\#define \mbox{\hyperlink{group__uart__registers_ga38f9de19e0022108a0536f7b88267d5e}{USART1\+\_\+\+REG}}~((\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$)\mbox{\hyperlink{group__uart__addresses_gab4fe2cb41dcc9d652b033f2e0a89d44b}{USART1\+\_\+\+BASE\+\_\+\+ADDRESS}})
+\item 
+\#define \mbox{\hyperlink{group__uart__registers_ga1a4ecad9a4dcd0594be0f53e2017dc66}{USART2\+\_\+\+REG}}~((\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$)\mbox{\hyperlink{group__uart__addresses_ga4845766e4b9aa8b3c91bbf4a71652106}{USART2\+\_\+\+BASE\+\_\+\+ADDRESS}})
+\item 
+\#define \mbox{\hyperlink{group__uart__registers_gac07061e10fa07006ad02f7810500ff91}{USART6\+\_\+\+REG}}~((\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}} $\ast$)\mbox{\hyperlink{group__uart__addresses_ga9df7340f186b0dea97f421c10936f608}{USART6\+\_\+\+BASE\+\_\+\+ADDRESS}})
+\item 
+\#define \mbox{\hyperlink{group__uart__over__sampling_gaf8c5da91760498f5e23684c559d9d0d1}{OVER\+\_\+\+SAMPLING\+\_\+16}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__uart__over__sampling_ga6d7508f36c8dde4eed0ab2ad952e344c}{OVER\+\_\+\+SAMPLING\+\_\+8}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__uart__operating__modes_ga68e18d9e86deac2cd5519242d9cbacfa}{TX\+\_\+\+ONLY}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__uart__operating__modes_ga74cf94a9df9d9b857d11b2befc9eaf1a}{RX\+\_\+\+ONLY}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__uart__operating__modes_gac320fb8cc73d1635bf24181d566e708c}{TX\+\_\+\+RX}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__uart__parity_ga30a963ff1432e4cfbdd83e74045ef142}{EVEN\+\_\+\+PARITY}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__uart__parity_ga898d7631f24dd6b1deebf808a2214ea2}{ODD\+\_\+\+PARITY}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__uart__bit__sizes_gaee68d10bce9651f8903872f9e1e8753c}{MODE\+\_\+8\+BIT}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__uart__bit__sizes_ga034730cadeba4657ae21a0bbb35bcb16}{MODE\+\_\+9\+BIT}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__uart__stop__bits_ga22de6895caca557a97364a36572ca319}{STOP\+\_\+\+BIT\+\_\+1}}~(0)
+\item 
+\#define \mbox{\hyperlink{group__uart__stop__bits_ga85d5bd1feb713cdf0f59068366e8ab99}{STOP\+\_\+\+BIT\+\_\+0\+\_\+5}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__uart__stop__bits_gafa1ce323ca9ac6fe9181f9f25eeb7953}{STOP\+\_\+\+BIT\+\_\+2}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__uart__stop__bits_gaac9febcb73e8885a7d2ef78d6396a4e0}{STOP\+\_\+\+BIT\+\_\+1\+\_\+5}}~(3)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__interface_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}}~1
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__interface_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}}~0
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__interface_8h_a6d446b35159115d4080e505601938aac}{\+\_\+\+\_\+\+BAUDRATE\+\_\+\+\_\+}}~9600
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_ac597abeb412173c08bc61f38cc9929ef}{MUSART\+\_\+v\+Init}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}}) A\+\_\+\+Init\+Struct, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}}) A\+\_\+\+Clock\+Init\+Struct, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Sets a certain pin\textquotesingle{}s output value on a speific port. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_a657675cf8557659e4ed063a219d58b83}{MUSART\+\_\+v\+Enable}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Enables the USART peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_ab58d8534ad0b67856a17f6ec5ced8115}{MUSART\+\_\+v\+Disable}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Disables the USART peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_a01200a0c19cfcc79d3f47adb6ba9cc2b}{MUSART\+\_\+v\+Transmit\+Byte}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Byte)
+\begin{DoxyCompactList}\small\item\em Transmits a byte using the USART peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_afb8484dbe78b2b920d55ed7612b7095a}{MUSART\+\_\+v\+Transmit\+String}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}) A\+\_\+ptrc8\+String)
+\begin{DoxyCompactList}\small\item\em Transmits a string using the USART peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a9c55f4bee8a90362015a21216647143a}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Non\+Blocking}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Receives a byte using the USART peripheral (non-\/blocking) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}{MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Blocking}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Receives a byte using the USART peripheral (blocking) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} $\ast$ \mbox{\hyperlink{_u_a_r_t__interface_8h_a0301641266329ac8b4d31392aae8d81a}{MUSART\+\_\+ptr\+Receive\+String\+Synch\+Non\+Blocking}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Receives a string using the USART peripheral (non-\/blocking) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_af106a2c478c533b05923c46e85872fc3}{MUSART\+\_\+v\+Recieve\+String}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} A\+\_\+c8\+Your\+String\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Receives a string using the USART peripheral (blocking) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a14cc7aa021d13b0f33f180ae7d90e44d}{MUSART\+\_\+u8\+Compare\+String}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}) String1, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}) String2)
+\begin{DoxyCompactList}\small\item\em Compares two strings using the USART peripheral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_ab4fa6caaa510b35919441e0195b300da}{MUSART\+\_\+u8\+Read\+Data\+Register}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Reads the status register of the USART peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_ae76fead853d3a82a5ae2534a597ce184}{MUSART\+\_\+v\+Clear\+Flags}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx)
+\begin{DoxyCompactList}\small\item\em Clears the status register of the USART peripheral. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_ad99e4c4ef135bdb0996597181d991a66}{MUSART\+\_\+v\+Rx\+Int\+Set\+Status}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}}) A\+\_\+\+USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Status)
+\begin{DoxyCompactList}\small\item\em Set the status of the RX interrupt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_a1678fc67fdd85e3c9a50b71f62833c30}{MUSART1\+\_\+v\+Set\+Call\+Back}} (\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(void, Fptr)(void))
+\begin{DoxyCompactList}\small\item\em Set UART1 RX callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_a403c20ffe63acf998d9fa6d4071993bd}{MUSART2\+\_\+v\+Set\+Call\+Back}} (\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(void, Fptr)(void))
+\begin{DoxyCompactList}\small\item\em Set UART2 RX callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_u_a_r_t__interface_8h_abbee2b24f7a86b68eac12384184049eb}{MUSART6\+\_\+v\+Set\+Call\+Back}} (\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(void, Fptr)(void))
+\begin{DoxyCompactList}\small\item\em Set UART6 RX callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the interfacing information of UART driver. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+10/14/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_u_a_r_t__interface_8h_source}{UART\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a514ad415fb6125ba296793df7d1a468a}\label{_u_a_r_t__interface_8h_a514ad415fb6125ba296793df7d1a468a}} 
+\index{UART\_interface.h@{UART\_interface.h}!ENABLE@{ENABLE}}
+\index{ENABLE@{ENABLE}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{ENABLE}{ENABLE}}
+{\footnotesize\ttfamily \#define ENABLE~1}
+
+Enable Status 
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00400}{400}} of file \mbox{\hyperlink{_u_a_r_t__interface_8h_source}{UART\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a99496f7308834e8b220f7894efa0b6ab}\label{_u_a_r_t__interface_8h_a99496f7308834e8b220f7894efa0b6ab}} 
+\index{UART\_interface.h@{UART\_interface.h}!DISABLE@{DISABLE}}
+\index{DISABLE@{DISABLE}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{DISABLE}{DISABLE}}
+{\footnotesize\ttfamily \#define DISABLE~0}
+
+Disable Status 
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00406}{406}} of file \mbox{\hyperlink{_u_a_r_t__interface_8h_source}{UART\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a6d446b35159115d4080e505601938aac}\label{_u_a_r_t__interface_8h_a6d446b35159115d4080e505601938aac}} 
+\index{UART\_interface.h@{UART\_interface.h}!\_\_BAUDRATE\_\_@{\_\_BAUDRATE\_\_}}
+\index{\_\_BAUDRATE\_\_@{\_\_BAUDRATE\_\_}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{\_\_BAUDRATE\_\_}{\_\_BAUDRATE\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+BAUDRATE\+\_\+\+\_\+~9600}
+
+Default baud rate of the UART peripheral 
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__interface_8h_source_l00412}{412}} of file \mbox{\hyperlink{_u_a_r_t__interface_8h_source}{UART\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_ac597abeb412173c08bc61f38cc9929ef}\label{_u_a_r_t__interface_8h_ac597abeb412173c08bc61f38cc9929ef}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vInit@{MUSART\_vInit}}
+\index{MUSART\_vInit@{MUSART\_vInit}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vInit()}{MUSART\_vInit()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\+\_\+\+Init\+Type}})}]{A\+\_\+\+Init\+Struct,  }\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\+\_\+\+Clock\+Init\+Type\+Def}})}]{A\+\_\+\+Clock\+Init\+Struct,  }\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Sets a certain pin\textquotesingle{}s output value on a speific port. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+Init\+Struct} & Pointer to a structure that contains the configuration information for the specified USART peripheral. \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+Clock\+Init\+Struct} & Pointer to a structure that contains the configuration information for the specified USART peripheral. \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a657675cf8557659e4ed063a219d58b83}\label{_u_a_r_t__interface_8h_a657675cf8557659e4ed063a219d58b83}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vEnable@{MUSART\_vEnable}}
+\index{MUSART\_vEnable@{MUSART\_vEnable}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vEnable()}{MUSART\_vEnable()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Enable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Enables the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_ab58d8534ad0b67856a17f6ec5ced8115}\label{_u_a_r_t__interface_8h_ab58d8534ad0b67856a17f6ec5ced8115}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vDisable@{MUSART\_vDisable}}
+\index{MUSART\_vDisable@{MUSART\_vDisable}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vDisable()}{MUSART\_vDisable()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Disable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Disables the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a01200a0c19cfcc79d3f47adb6ba9cc2b}\label{_u_a_r_t__interface_8h_a01200a0c19cfcc79d3f47adb6ba9cc2b}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vTransmitByte@{MUSART\_vTransmitByte}}
+\index{MUSART\_vTransmitByte@{MUSART\_vTransmitByte}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vTransmitByte()}{MUSART\_vTransmitByte()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Transmit\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Byte }\end{DoxyParamCaption})}
+
+
+
+Transmits a byte using the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Byte} & Byte to be transmitted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_afb8484dbe78b2b920d55ed7612b7095a}\label{_u_a_r_t__interface_8h_afb8484dbe78b2b920d55ed7612b7095a}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vTransmitString@{MUSART\_vTransmitString}}
+\index{MUSART\_vTransmitString@{MUSART\_vTransmitString}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vTransmitString()}{MUSART\_vTransmitString()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Transmit\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}})}]{A\+\_\+ptrc8\+String }\end{DoxyParamCaption})}
+
+
+
+Transmits a string using the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+ptrc8\+String} & Pointer to the string to be transmitted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a9c55f4bee8a90362015a21216647143a}\label{_u_a_r_t__interface_8h_a9c55f4bee8a90362015a21216647143a}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_u8ReceiveByteSynchNonBlocking@{MUSART\_u8ReceiveByteSynchNonBlocking}}
+\index{MUSART\_u8ReceiveByteSynchNonBlocking@{MUSART\_u8ReceiveByteSynchNonBlocking}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8ReceiveByteSynchNonBlocking()}{MUSART\_u8ReceiveByteSynchNonBlocking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Non\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Receives a byte using the USART peripheral (non-\/blocking) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Received byte from the USART peripheral 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}\label{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_u8ReceiveByteSynchBlocking@{MUSART\_u8ReceiveByteSynchBlocking}}
+\index{MUSART\_u8ReceiveByteSynchBlocking@{MUSART\_u8ReceiveByteSynchBlocking}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8ReceiveByteSynchBlocking()}{MUSART\_u8ReceiveByteSynchBlocking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Receive\+Byte\+Synch\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Receives a byte using the USART peripheral (blocking) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Received byte from the USART peripheral 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a0301641266329ac8b4d31392aae8d81a}\label{_u_a_r_t__interface_8h_a0301641266329ac8b4d31392aae8d81a}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_ptrReceiveStringSynchNonBlocking@{MUSART\_ptrReceiveStringSynchNonBlocking}}
+\index{MUSART\_ptrReceiveStringSynchNonBlocking@{MUSART\_ptrReceiveStringSynchNonBlocking}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_ptrReceiveStringSynchNonBlocking()}{MUSART\_ptrReceiveStringSynchNonBlocking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} $\ast$ MUSART\+\_\+ptr\+Receive\+String\+Synch\+Non\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Receives a string using the USART peripheral (non-\/blocking) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the received string from the USART peripheral 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_af106a2c478c533b05923c46e85872fc3}\label{_u_a_r_t__interface_8h_af106a2c478c533b05923c46e85872fc3}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vRecieveString@{MUSART\_vRecieveString}}
+\index{MUSART\_vRecieveString@{MUSART\_vRecieveString}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vRecieveString()}{MUSART\_vRecieveString()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Recieve\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}}]{A\+\_\+c8\+Your\+String\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Receives a string using the USART peripheral (blocking) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+c8\+Your\+String} & Pointer to the string to be transmitted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a14cc7aa021d13b0f33f180ae7d90e44d}\label{_u_a_r_t__interface_8h_a14cc7aa021d13b0f33f180ae7d90e44d}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_u8CompareString@{MUSART\_u8CompareString}}
+\index{MUSART\_u8CompareString@{MUSART\_u8CompareString}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8CompareString()}{MUSART\_u8CompareString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Compare\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}})}]{String1,  }\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}})}]{String2 }\end{DoxyParamCaption})}
+
+
+
+Compares two strings using the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em String1} & Pointer to the first string \\
+\hline
+\mbox{\texttt{ in}}  & {\em String2} & Pointer to the second string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SAME\+\_\+\+STRING if the strings are equal, DIFFERENT\+\_\+\+STRING if not 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__standardvalues_ga7b8c0d456045358dc5197792205b20be}{SAME\+\_\+\+STRING}} \mbox{\hyperlink{group__standardvalues_gaa956229c39573f53bbcc5e20f445d6c8}{DIFFERENT\+\_\+\+STRING}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_ab4fa6caaa510b35919441e0195b300da}\label{_u_a_r_t__interface_8h_ab4fa6caaa510b35919441e0195b300da}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_u8ReadDataRegister@{MUSART\_u8ReadDataRegister}}
+\index{MUSART\_u8ReadDataRegister@{MUSART\_u8ReadDataRegister}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_u8ReadDataRegister()}{MUSART\_u8ReadDataRegister()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} MUSART\+\_\+u8\+Read\+Data\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Reads the status register of the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Status register value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_ae76fead853d3a82a5ae2534a597ce184}\label{_u_a_r_t__interface_8h_ae76fead853d3a82a5ae2534a597ce184}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vClearFlags@{MUSART\_vClearFlags}}
+\index{MUSART\_vClearFlags@{MUSART\_vClearFlags}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vClearFlags()}{MUSART\_vClearFlags()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Clear\+Flags (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx }\end{DoxyParamCaption})}
+
+
+
+Clears the status register of the USART peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_ad99e4c4ef135bdb0996597181d991a66}\label{_u_a_r_t__interface_8h_ad99e4c4ef135bdb0996597181d991a66}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART\_vRxIntSetStatus@{MUSART\_vRxIntSetStatus}}
+\index{MUSART\_vRxIntSetStatus@{MUSART\_vRxIntSetStatus}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_vRxIntSetStatus()}{MUSART\_vRxIntSetStatus()}}
+{\footnotesize\ttfamily void MUSART\+\_\+v\+Rx\+Int\+Set\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\+\_\+\+Memory\+Map\+Type}})}]{A\+\_\+\+USARTx,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Status }\end{DoxyParamCaption})}
+
+
+
+Set the status of the RX interrupt. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+\+USARTx} & Pointer to USARTx registers map \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u8\+Status} & Status of the RX interrupt (ENABLE/\+DISABLE) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_u_a_r_t__interface_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a1678fc67fdd85e3c9a50b71f62833c30}\label{_u_a_r_t__interface_8h_a1678fc67fdd85e3c9a50b71f62833c30}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART1\_vSetCallBack@{MUSART1\_vSetCallBack}}
+\index{MUSART1\_vSetCallBack@{MUSART1\_vSetCallBack}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART1\_vSetCallBack()}{MUSART1\_vSetCallBack()}}
+{\footnotesize\ttfamily void MUSART1\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(void, Fptr)(void)}]{ }\end{DoxyParamCaption})}
+
+
+
+Set UART1 RX callback function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Fptr} & Pointer to the callback function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_a403c20ffe63acf998d9fa6d4071993bd}\label{_u_a_r_t__interface_8h_a403c20ffe63acf998d9fa6d4071993bd}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART2\_vSetCallBack@{MUSART2\_vSetCallBack}}
+\index{MUSART2\_vSetCallBack@{MUSART2\_vSetCallBack}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART2\_vSetCallBack()}{MUSART2\_vSetCallBack()}}
+{\footnotesize\ttfamily void MUSART2\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(void, Fptr)(void)}]{ }\end{DoxyParamCaption})}
+
+
+
+Set UART2 RX callback function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Fptr} & Pointer to the callback function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_u_a_r_t__interface_8h_abbee2b24f7a86b68eac12384184049eb}\label{_u_a_r_t__interface_8h_abbee2b24f7a86b68eac12384184049eb}} 
+\index{UART\_interface.h@{UART\_interface.h}!MUSART6\_vSetCallBack@{MUSART6\_vSetCallBack}}
+\index{MUSART6\_vSetCallBack@{MUSART6\_vSetCallBack}!UART\_interface.h@{UART\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MUSART6\_vSetCallBack()}{MUSART6\_vSetCallBack()}}
+{\footnotesize\ttfamily void MUSART6\+\_\+v\+Set\+Call\+Back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2\+FUNC}}(void, Fptr)(void)}]{ }\end{DoxyParamCaption})}
+
+
+
+Set UART6 RX callback function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Fptr} & Pointer to the callback function \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,74 @@
+\hypertarget{_ultra_sonic__interface_8h}{}\doxysection{COTS/\+HAL/\+Ultra\+Sonic/\+Ultra\+Sonic\+\_\+interface.h File Reference}
+\label{_ultra_sonic__interface_8h}\index{COTS/HAL/UltraSonic/UltraSonic\_interface.h@{COTS/HAL/UltraSonic/UltraSonic\_interface.h}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\+\_\+\+Config\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ultra_sonic__interface_8h_aab80f540d5e1e8e5d04b78ec74932d3f}{HULTSNC\+\_\+v\+Init}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\+\_\+\+Config\+Type}}) TRIG\+\_\+ps\+Cfg)
+\item 
+void \mbox{\hyperlink{_ultra_sonic__interface_8h_ac181727b4165f6ec2ddc42b43f9f4529}{HULTSNC\+\_\+v\+Trigger}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\+\_\+\+Config\+Type}}) TRIG\+\_\+ps\+Cfg)
+\item 
+\mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\+\_\+t}} \mbox{\hyperlink{_ultra_sonic__interface_8h_ad93d70bd64b874554813ab9e0f18f496}{HULTSNC\+\_\+f32\+Get\+Distance}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_ultra_sonic__interface_8h_aab80f540d5e1e8e5d04b78ec74932d3f}\label{_ultra_sonic__interface_8h_aab80f540d5e1e8e5d04b78ec74932d3f}} 
+\index{UltraSonic\_interface.h@{UltraSonic\_interface.h}!HULTSNC\_vInit@{HULTSNC\_vInit}}
+\index{HULTSNC\_vInit@{HULTSNC\_vInit}!UltraSonic\_interface.h@{UltraSonic\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HULTSNC\_vInit()}{HULTSNC\_vInit()}}
+{\footnotesize\ttfamily void HULTSNC\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\+\_\+\+Config\+Type}})}]{TRIG\+\_\+ps\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00106}{HDCM\+\_\+v\+Motor\+Speed\+Cntrl()}}.
+
+\mbox{\Hypertarget{_ultra_sonic__interface_8h_ac181727b4165f6ec2ddc42b43f9f4529}\label{_ultra_sonic__interface_8h_ac181727b4165f6ec2ddc42b43f9f4529}} 
+\index{UltraSonic\_interface.h@{UltraSonic\_interface.h}!HULTSNC\_vTrigger@{HULTSNC\_vTrigger}}
+\index{HULTSNC\_vTrigger@{HULTSNC\_vTrigger}!UltraSonic\_interface.h@{UltraSonic\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HULTSNC\_vTrigger()}{HULTSNC\_vTrigger()}}
+{\footnotesize\ttfamily void HULTSNC\+\_\+v\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\+\_\+\+Config\+Type}})}]{TRIG\+\_\+ps\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Referenced by \mbox{\hyperlink{_a_c_c__program_8c_source_l00055}{AACC\+\_\+v\+Mode\+ON()}}, and \mbox{\hyperlink{_f_c_w__program_8c_source_l00061}{AFCW\+\_\+v\+Mode\+ON()}}.
+
+\mbox{\Hypertarget{_ultra_sonic__interface_8h_ad93d70bd64b874554813ab9e0f18f496}\label{_ultra_sonic__interface_8h_ad93d70bd64b874554813ab9e0f18f496}} 
+\index{UltraSonic\_interface.h@{UltraSonic\_interface.h}!HULTSNC\_f32GetDistance@{HULTSNC\_f32GetDistance}}
+\index{HULTSNC\_f32GetDistance@{HULTSNC\_f32GetDistance}!UltraSonic\_interface.h@{UltraSonic\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HULTSNC\_f32GetDistance()}{HULTSNC\_f32GetDistance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\+\_\+t}} HULTSNC\+\_\+f32\+Get\+Distance (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_ultra_sonic__program_8c_source_l00069}{69}} of file \mbox{\hyperlink{_ultra_sonic__program_8c_source}{Ultra\+Sonic\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070 \{}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{00072     \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} L\_f32PulseTime   = \mbox{\hyperlink{_t_i_m1__interface_8h_adbf6113e53efb60e70431d75c28bc608}{MTIM1\_u16GetCaptureReg2Value}}( )   ;}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074     \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} L\_f32Period      = \mbox{\hyperlink{_t_i_m1__interface_8h_a921863171a42d7e1e68830939d775056}{MTIM1\_u16GetCaptureReg1Value}}( )   ;}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076     \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} \mbox{\hyperlink{_a_c_c__program_8c_abc45d39c6173105c02afca7694933f90}{L\_f32Distance}}       = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}}                      ;}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \mbox{\hyperlink{_a_c_c__program_8c_abc45d39c6173105c02afca7694933f90}{L\_f32Distance}} = (float)( L\_f32PulseTime * 0.0174 ) ;}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080     \textcolor{keywordflow}{return} \mbox{\hyperlink{_a_c_c__program_8c_abc45d39c6173105c02afca7694933f90}{L\_f32Distance}} ;}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_a_c_c__program_8c_source_l00030}{L\+\_\+f32\+Distance}}, \mbox{\hyperlink{_t_i_m1__program_8c_source_l01336}{MTIM1\+\_\+u16\+Get\+Capture\+Reg1\+Value()}}, and \mbox{\hyperlink{_t_i_m1__program_8c_source_l01356}{MTIM1\+\_\+u16\+Get\+Capture\+Reg2\+Value()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_a_c_c__program_8c_source_l00055}{AACC\+\_\+v\+Mode\+ON()}}, and \mbox{\hyperlink{_f_c_w__program_8c_source_l00061}{AFCW\+\_\+v\+Mode\+ON()}}.
+

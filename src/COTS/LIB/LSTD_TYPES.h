@@ -86,14 +86,14 @@ typedef signed short int s16_t;
 typedef signed int s32_t;
 
 /**
- * @typedef fl32_t
+ * @typedef f32_t
  * Type definition for 32-bit float
  *
  */
 typedef float f32_t;
 
 /**
- * @typedef fl64_t
+ * @typedef f64_t
  * Type definition for 64-bit float
  *
  */

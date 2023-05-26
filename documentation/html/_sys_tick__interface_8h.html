@@ -117,6 +117,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:gab96fecf39055ba51e702bb3ecb54896c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay in milli seconds.  <a href="group__delay__units.html#gab96fecf39055ba51e702bb3ecb54896c">More...</a><br /></td></tr>
 <tr class="separator:gab96fecf39055ba51e702bb3ecb54896c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga598e73c929bb74a1047ed1445728e777"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__delay__units.html#ga598e73c929bb74a1047ed1445728e777">MICRO_SEC</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="memdesc:ga598e73c929bb74a1047ed1445728e777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay in micro seconds.  <a href="group__delay__units.html#ga598e73c929bb74a1047ed1445728e777">More...</a><br /></td></tr>
 <tr class="separator:ga598e73c929bb74a1047ed1445728e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8bc5e463885769f21393880576c25f6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__delay__units.html#ga8bc5e463885769f21393880576c25f6b">SEC</a>&#160;&#160;&#160;(3)</td></tr>
 <tr class="memdesc:ga8bc5e463885769f21393880576c25f6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delay in seconds.  <a href="group__delay__units.html#ga8bc5e463885769f21393880576c25f6b">More...</a><br /></td></tr>
@@ -142,12 +143,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a03c3d971653533d421d39fa094393dba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a03c3d971653533d421d39fa094393dba">MSysTick_vDelaySec</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) A_u32Ticks)</td></tr>
 <tr class="memdesc:a03c3d971653533d421d39fa094393dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous delay function.  <a href="_sys_tick__interface_8h.html#a03c3d971653533d421d39fa094393dba">More...</a><br /></td></tr>
 <tr class="separator:a03c3d971653533d421d39fa094393dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cafdfe46ddf474da42fb8726c36485a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a3cafdfe46ddf474da42fb8726c36485a">MSysTick_vSetSingleInterval</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) A_u32Ticks, void(*A_Fptr)(void))</td></tr>
-<tr class="memdesc:a3cafdfe46ddf474da42fb8726c36485a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous 1-cycle delay function.  <a href="_sys_tick__interface_8h.html#a3cafdfe46ddf474da42fb8726c36485a">More...</a><br /></td></tr>
-<tr class="separator:a3cafdfe46ddf474da42fb8726c36485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a460c9d69948f5e22aa24d57ea778b952"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a460c9d69948f5e22aa24d57ea778b952">MSysTick_vSetPeriodicInterval</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) A_u32Ticks, void(*A_Fptr)(void))</td></tr>
-<tr class="memdesc:a460c9d69948f5e22aa24d57ea778b952"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous repetitive delay function.  <a href="_sys_tick__interface_8h.html#a460c9d69948f5e22aa24d57ea778b952">More...</a><br /></td></tr>
-<tr class="separator:a460c9d69948f5e22aa24d57ea778b952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac25d52e28d687ad7d870a0c055b18d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#ac25d52e28d687ad7d870a0c055b18d6c">MSysTick_vSetSingleInterval</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) A_u32Ticks, <a class="el" href="group__compiler.html#ga93522904f3ee5ba154d6688d847f73b1">P2FUNC</a>(void, A_Fptr)(void))</td></tr>
+<tr class="memdesc:ac25d52e28d687ad7d870a0c055b18d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous 1-cycle delay function.  <a href="_sys_tick__interface_8h.html#ac25d52e28d687ad7d870a0c055b18d6c">More...</a><br /></td></tr>
+<tr class="separator:ac25d52e28d687ad7d870a0c055b18d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0a733d140ce5dc6d66b35f8ecb797b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a8c0a733d140ce5dc6d66b35f8ecb797b">MSysTick_vSetPeriodicInterval</a> (<a class="el" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) A_u32Ticks, <a class="el" href="group__compiler.html#ga93522904f3ee5ba154d6688d847f73b1">P2FUNC</a>(void, A_Fptr)(void))</td></tr>
+<tr class="memdesc:a8c0a733d140ce5dc6d66b35f8ecb797b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous repetitive delay function.  <a href="_sys_tick__interface_8h.html#a8c0a733d140ce5dc6d66b35f8ecb797b">More...</a><br /></td></tr>
+<tr class="separator:a8c0a733d140ce5dc6d66b35f8ecb797b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c9a6f3425756cab6a1fbb3b20a23b70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a9c9a6f3425756cab6a1fbb3b20a23b70">MSysTick_vStopInterval</a> (void)</td></tr>
 <tr class="memdesc:a9c9a6f3425756cab6a1fbb3b20a23b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the interval delay function.  <a href="_sys_tick__interface_8h.html#a9c9a6f3425756cab6a1fbb3b20a23b70">More...</a><br /></td></tr>
 <tr class="separator:a9c9a6f3425756cab6a1fbb3b20a23b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +167,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0c426902b052e85b0fb0759a40bd5308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a0c426902b052e85b0fb0759a40bd5308">MSysTick_vEnableException</a> (void)</td></tr>
 <tr class="memdesc:a0c426902b052e85b0fb0759a40bd5308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the Systick Exception.  <a href="_sys_tick__interface_8h.html#a0c426902b052e85b0fb0759a40bd5308">More...</a><br /></td></tr>
 <tr class="separator:a0c426902b052e85b0fb0759a40bd5308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4402d4fad36c22569b8587202ac24630"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sys_tick__interface_8h.html#a4402d4fad36c22569b8587202ac24630">MSysTick_vDisableException</a> (void)</td></tr>
+<tr class="memdesc:a4402d4fad36c22569b8587202ac24630"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the Systick Exception.  <a href="_sys_tick__interface_8h.html#a4402d4fad36c22569b8587202ac24630">More...</a><br /></td></tr>
+<tr class="separator:a4402d4fad36c22569b8587202ac24630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file contains the interfacing information for the Systick module. </p>
@@ -189,7 +193,7 @@ Functions</h2></td></tr>
 
 <p>Set the time you want to count when using the busy wait function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__interface_8h_source.html#l00113">113</a> of file <a class="el" href="_sys_tick__interface_8h_source.html">SysTick_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__interface_8h_source.html#l00118">118</a> of file <a class="el" href="_sys_tick__interface_8h_source.html">SysTick_interface.h</a>.</p>
 
 </div>
 </div>
@@ -207,7 +211,7 @@ Functions</h2></td></tr>
 
 <p>Set the time you want to count when using the single interval function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__interface_8h_source.html#l00119">119</a> of file <a class="el" href="_sys_tick__interface_8h_source.html">SysTick_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__interface_8h_source.html#l00124">124</a> of file <a class="el" href="_sys_tick__interface_8h_source.html">SysTick_interface.h</a>.</p>
 
 </div>
 </div>
@@ -225,7 +229,7 @@ Functions</h2></td></tr>
 
 <p>Set the time you want to count when using the periodic interval function. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__interface_8h_source.html#l00125">125</a> of file <a class="el" href="_sys_tick__interface_8h_source.html">SysTick_interface.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__interface_8h_source.html#l00130">130</a> of file <a class="el" href="_sys_tick__interface_8h_source.html">SysTick_interface.h</a>.</p>
 
 </div>
 </div>
@@ -248,37 +252,36 @@ Functions</h2></td></tr>
 
 <p>Initialize the Systick module. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00035">35</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    <span class="comment">// Reset timer value.</span></div>
-<div class="line"><span class="lineno">   39</span>    <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00027">27</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment">// Reset timer value.</span></div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span><span class="comment">// Choose the input CLK source.</span></div>
+<div class="line"><span class="lineno">   34</span><span class="preprocessor">#if CLK_SOURCE == AHB_DividedBy8</span></div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga1c80d256b9c8188cb5aaf267b3303c92">CLKSOURCE</a>);</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span><span class="preprocessor">#elif CLK_SOURCE == AHB</span></div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga1c80d256b9c8188cb5aaf267b3303c92">CLKSOURCE</a>);</div>
+<div class="line"><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>    <span class="comment">// Choose the input CLK source.</span></div>
-<div class="line"><span class="lineno">   42</span><span class="preprocessor">    #if CLK_SOURCE == AHB_DividedBy8</span></div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga1c80d256b9c8188cb5aaf267b3303c92">CLKSOURCE</a>);</div>
+<div class="line"><span class="lineno">   41</span><span class="comment">// SysTick exception request enable.</span></div>
+<div class="line"><span class="lineno">   42</span><span class="preprocessor">#if Exception_Request == Dont_AssertRequest</span></div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
 <div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span><span class="preprocessor">    #elif CLK_SOURCE == AHB</span></div>
-<div class="line"><span class="lineno">   46</span>        <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga1c80d256b9c8188cb5aaf267b3303c92">CLKSOURCE</a>);</div>
-<div class="line"><span class="lineno">   47</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">// SysTick exception request enable.</span></div>
-<div class="line"><span class="lineno">   50</span><span class="preprocessor">    #if Exception_Request == Dont_AssertRequest</span></div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>( <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a> ) ;</div>
-<div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span><span class="preprocessor">    #elif Exception_Request == AssertRequest</span></div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a> ) ;</div>
-<div class="line"><span class="lineno">   55</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>}</div>
+<div class="line"><span class="lineno">   45</span><span class="preprocessor">#elif Exception_Request == AssertRequest</span></div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
+<div class="line"><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="lineno">   48</span>}</div>
 <div class="ttc" id="agroup__bitmath_html_ga6ec8b9eaa50956e59aedcd2c050298d3"><div class="ttname"><a href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a></div><div class="ttdeci">#define SET_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">LSTD_BITMATH.h:23</a></div></div>
 <div class="ttc" id="agroup__bitmath_html_gaf19b6fac717c58884e62ee37a2e89786"><div class="ttname"><a href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a></div><div class="ttdeci">#define CLR_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">LSTD_BITMATH.h:30</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">LSTD_VALUES.h:57</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">LSTD_VALUES.h:56</a></div></div>
 <div class="ttc" id="agroup__systick__register__bits_html_ga1c80d256b9c8188cb5aaf267b3303c92"><div class="ttname"><a href="group__systick__register__bits.html#ga1c80d256b9c8188cb5aaf267b3303c92">CLKSOURCE</a></div><div class="ttdeci">#define CLKSOURCE</div><div class="ttdef"><b>Definition:</b> <a href="_sys_tick__private_8h_source.html#l00091">SysTick_private.h:91</a></div></div>
 <div class="ttc" id="agroup__systick__register__bits_html_ga85a15b5192e74e56ab2a437c5f8c6898"><div class="ttname"><a href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a></div><div class="ttdeci">#define TICKINT</div><div class="ttdef"><b>Definition:</b> <a href="_sys_tick__private_8h_source.html#l00097">SysTick_private.h:97</a></div></div>
 <div class="ttc" id="agroup__systick__registers_html_gacd96c53beeaff8f603fcda425eb295de"><div class="ttname"><a href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a></div><div class="ttdeci">#define SysTick</div><div class="ttdef"><b>Definition:</b> <a href="_sys_tick__private_8h_source.html#l00070">SysTick_private.h:70</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_sys_tick__private_8h_source.html#l00091">CLKSOURCE</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
+<p class="reference">References <a class="el" href="_sys_tick__private_8h_source.html#l00091">CLKSOURCE</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
 
 </div>
 </div>
@@ -423,8 +426,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3cafdfe46ddf474da42fb8726c36485a" name="a3cafdfe46ddf474da42fb8726c36485a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cafdfe46ddf474da42fb8726c36485a">&#9670;&#160;</a></span>MSysTick_vSetSingleInterval()</h2>
+<a id="ac25d52e28d687ad7d870a0c055b18d6c" name="ac25d52e28d687ad7d870a0c055b18d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac25d52e28d687ad7d870a0c055b18d6c">&#9670;&#160;</a></span>MSysTick_vSetSingleInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,8 +441,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>A_Fptr</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__compiler.html#ga93522904f3ee5ba154d6688d847f73b1">P2FUNC</a>(void, A_Fptr)(void)&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -460,8 +463,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a460c9d69948f5e22aa24d57ea778b952" name="a460c9d69948f5e22aa24d57ea778b952"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a460c9d69948f5e22aa24d57ea778b952">&#9670;&#160;</a></span>MSysTick_vSetPeriodicInterval()</h2>
+<a id="a8c0a733d140ce5dc6d66b35f8ecb797b" name="a8c0a733d140ce5dc6d66b35f8ecb797b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0a733d140ce5dc6d66b35f8ecb797b">&#9670;&#160;</a></span>MSysTick_vSetPeriodicInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,8 +478,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(void)&#160;</td>
-          <td class="paramname"><em>A_Fptr</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__compiler.html#ga93522904f3ee5ba154d6688d847f73b1">P2FUNC</a>(void, A_Fptr)(void)&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -494,7 +497,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="_sys_tick__interface_8h.html#a3cafdfe46ddf474da42fb8726c36485a" title="Asynchronous 1-cycle delay function.">MSysTick_vSetSingleInterval</a> for a 1-cycle delay function </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_sys_tick__interface_8h.html#ac25d52e28d687ad7d870a0c055b18d6c" title="Asynchronous 1-cycle delay function.">MSysTick_vSetSingleInterval</a> for a 1-cycle delay function </dd>
 <dd>
 <a class="el" href="_sys_tick__interface_8h.html#a348ed480bf5ecebe9f0f08cc6fc9fbf4" title="Synchronous delay function.">MSysTick_vSetBusyWait</a> for a synchronous delay function </dd>
 <dd>
@@ -519,24 +522,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stop the interval delay function. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="_sys_tick__interface_8h.html#a460c9d69948f5e22aa24d57ea778b952" title="Asynchronous repetitive delay function.">MSysTick_vSetPeriodicInterval</a> for a interval delay function </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="_sys_tick__interface_8h.html#a8c0a733d140ce5dc6d66b35f8ecb797b" title="Asynchronous repetitive delay function.">MSysTick_vSetPeriodicInterval</a> for a interval delay function </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00302">302</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  303</span>{</div>
-<div class="line"><span class="lineno">  304</span> </div>
-<div class="line"><span class="lineno">  305</span>    <span class="comment">// Disable the IRQ.</span></div>
-<div class="line"><span class="lineno">  306</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a> ) ;</div>
-<div class="line"><span class="lineno">  307</span> </div>
-<div class="line"><span class="lineno">  308</span>    <span class="comment">// Stop the timer.</span></div>
-<div class="line"><span class="lineno">  309</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a> ) ;</div>
-<div class="line"><span class="lineno">  310</span> </div>
-<div class="line"><span class="lineno">  311</span>    <span class="comment">// Clear the LOAD and VAL registers</span></div>
-<div class="line"><span class="lineno">  312</span>    <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;LOAD = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
-<div class="line"><span class="lineno">  313</span>    <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
-<div class="line"><span class="lineno">  314</span> </div>
-<div class="line"><span class="lineno">  315</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00291">291</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  292</span>{</div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span>    <span class="comment">// Disable the IRQ.</span></div>
+<div class="line"><span class="lineno">  295</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
+<div class="line"><span class="lineno">  296</span> </div>
+<div class="line"><span class="lineno">  297</span>    <span class="comment">// Stop the timer.</span></div>
+<div class="line"><span class="lineno">  298</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>    <span class="comment">// Clear the LOAD and VAL registers</span></div>
+<div class="line"><span class="lineno">  301</span>    <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;LOAD = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
+<div class="line"><span class="lineno">  302</span>    <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
+<div class="line"><span class="lineno">  303</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
 
 </div>
 </div>
@@ -559,18 +561,19 @@ Functions</h2></td></tr>
 <p>Return the elapsed time since the start of the countdown. </p>
 <dl class="section return"><dt>Returns</dt><dd>Return the elapsed time since the start of the countdown </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00320">320</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  321</span>{</div>
-<div class="line"><span class="lineno">  322</span>    <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) L_u32ElapsedTime = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
-<div class="line"><span class="lineno">  323</span> </div>
-<div class="line"><span class="lineno">  324</span>    L_u32ElapsedTime = (<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;LOAD - <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL);</div>
-<div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>    <span class="keywordflow">return</span> L_u32ElapsedTime;</div>
-<div class="line"><span class="lineno">  327</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00309">309</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  310</span>{</div>
+<div class="line"><span class="lineno">  311</span>    <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>)</div>
+<div class="line"><span class="lineno">  312</span>    L_u32ElapsedTime = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>    L_u32ElapsedTime = (<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;LOAD - <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL);</div>
+<div class="line"><span class="lineno">  315</span> </div>
+<div class="line"><span class="lineno">  316</span>    <span class="keywordflow">return</span> L_u32ElapsedTime;</div>
+<div class="line"><span class="lineno">  317</span>}</div>
 <div class="ttc" id="agroup__compiler_html_gaf36fbf9b72d48ddc34a627487ef0bba9"><div class="ttname"><a href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a></div><div class="ttdeci">#define VAR(vartype)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">LSTD_COMPILER.h:23</a></div></div>
-<div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned long int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00044">LSTD_TYPES.h:44</a></div></div>
+<div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00051">LSTD_TYPES.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
 
 </div>
 </div>
@@ -593,16 +596,17 @@ Functions</h2></td></tr>
 <p>Return the remaining time in the systick register. </p>
 <dl class="section return"><dt>Returns</dt><dd>The remaining time in the Systick register </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00332">332</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  333</span>{</div>
-<div class="line"><span class="lineno">  334</span>    <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>) L_u32RemainingTime = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
-<div class="line"><span class="lineno">  335</span> </div>
-<div class="line"><span class="lineno">  336</span>    L_u32RemainingTime = <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL;</div>
-<div class="line"><span class="lineno">  337</span> </div>
-<div class="line"><span class="lineno">  338</span>    <span class="keywordflow">return</span> L_u32RemainingTime;</div>
-<div class="line"><span class="lineno">  339</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00323">323</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  324</span>{</div>
+<div class="line"><span class="lineno">  325</span>    <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a>)</div>
+<div class="line"><span class="lineno">  326</span>    L_u32RemainingTime = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
+<div class="line"><span class="lineno">  327</span> </div>
+<div class="line"><span class="lineno">  328</span>    L_u32RemainingTime = <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;VAL;</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>    <span class="keywordflow">return</span> L_u32RemainingTime;</div>
+<div class="line"><span class="lineno">  331</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
 
 </div>
 </div>
@@ -624,13 +628,12 @@ Functions</h2></td></tr>
 
 <p>Enable the Systick timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00344">344</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  345</span>{</div>
-<div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>    <span class="comment">// Start Timer.</span></div>
-<div class="line"><span class="lineno">  348</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga4fadf89c5194a5af1a42bba0bd2a8877">COUNTER_ENABLE</a>);</div>
-<div class="line"><span class="lineno">  349</span> </div>
-<div class="line"><span class="lineno">  350</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00336">336</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  337</span>{</div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>    <span class="comment">// Start Timer.</span></div>
+<div class="line"><span class="lineno">  340</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga4fadf89c5194a5af1a42bba0bd2a8877">COUNTER_ENABLE</a>);</div>
+<div class="line"><span class="lineno">  341</span>}</div>
 <div class="ttc" id="agroup__systick__register__bits_html_ga4fadf89c5194a5af1a42bba0bd2a8877"><div class="ttname"><a href="group__systick__register__bits.html#ga4fadf89c5194a5af1a42bba0bd2a8877">COUNTER_ENABLE</a></div><div class="ttdeci">#define COUNTER_ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="_sys_tick__private_8h_source.html#l00108">SysTick_private.h:108</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_sys_tick__private_8h_source.html#l00108">COUNTER_ENABLE</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>.</p>
@@ -655,16 +658,15 @@ Functions</h2></td></tr>
 
 <p>Disable the Systick timer. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00355">355</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  356</span>{</div>
-<div class="line"><span class="lineno">  357</span> </div>
-<div class="line"><span class="lineno">  358</span>    <span class="comment">// Disable the peripheral interrupt.</span></div>
-<div class="line"><span class="lineno">  359</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>( <a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a> ) ;</div>
-<div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>    <span class="comment">// Stop the timer.</span></div>
-<div class="line"><span class="lineno">  362</span>    <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga4fadf89c5194a5af1a42bba0bd2a8877">COUNTER_ENABLE</a>);</div>
-<div class="line"><span class="lineno">  363</span> </div>
-<div class="line"><span class="lineno">  364</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00346">346</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  347</span>{</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>    <span class="comment">// Disable the peripheral interrupt.</span></div>
+<div class="line"><span class="lineno">  350</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
+<div class="line"><span class="lineno">  351</span> </div>
+<div class="line"><span class="lineno">  352</span>    <span class="comment">// Stop the timer.</span></div>
+<div class="line"><span class="lineno">  353</span>    <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga4fadf89c5194a5af1a42bba0bd2a8877">COUNTER_ENABLE</a>);</div>
+<div class="line"><span class="lineno">  354</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00108">COUNTER_ENABLE</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
 
@@ -688,12 +690,39 @@ Functions</h2></td></tr>
 
 <p>Enable the Systick Exception. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00027">27</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>{</div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00367">367</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  368</span>{</div>
+<div class="line"><span class="lineno">  369</span>    <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
+<div class="line"><span class="lineno">  370</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
+
+</div>
+</div>
+<a id="a4402d4fad36c22569b8587202ac24630" name="a4402d4fad36c22569b8587202ac24630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4402d4fad36c22569b8587202ac24630">&#9670;&#160;</a></span>MSysTick_vDisableException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MSysTick_vDisableException </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable the Systick Exception. </p>
+
+<p class="definition">Definition at line <a class="el" href="_sys_tick__program_8c_source.html#l00359">359</a> of file <a class="el" href="_sys_tick__program_8c_source.html">SysTick_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  360</span>{</div>
+<div class="line"><span class="lineno">  361</span>    <a class="code hl_define" href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a>(<a class="code hl_define" href="group__systick__registers.html#gacd96c53beeaff8f603fcda425eb295de">SysTick</a>-&gt;CTRL, <a class="code hl_define" href="group__systick__register__bits.html#ga85a15b5192e74e56ab2a437c5f8c6898">TICKINT</a>);</div>
+<div class="line"><span class="lineno">  362</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_sys_tick__private_8h_source.html#l00070">SysTick</a>, and <a class="el" href="_sys_tick__private_8h_source.html#l00097">TICKINT</a>.</p>
 
 </div>
 </div>
@@ -703,7 +732,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_bc8d9b300b3d36e275cf505746a03818.html">SysTick</a></li><li class="navelem"><a class="el" href="_sys_tick__interface_8h.html">SysTick_interface.h</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat May 27 2023 00:03:12 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

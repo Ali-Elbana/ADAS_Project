@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nvic_5fmemorymaptype_0',['NVIC_MemoryMapType',['../struct_n_v_i_c___memory_map_type.html',1,'']]]
+  ['gpiox_5fmemorymaptype_0',['GPIOx_MemoryMapType',['../struct_g_p_i_ox___memory_map_type.html',1,'']]]
 ];

@@ -1,0 +1,102 @@
+\hypertarget{_ultra_sonic__program_8c_source}{}\doxysection{Ultra\+Sonic\+\_\+program.\+c}
+\label{_ultra_sonic__program_8c_source}\index{COTS/HAL/UltraSonic/UltraSonic\_program.c@{COTS/HAL/UltraSonic/UltraSonic\_program.c}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00001}00001 \textcolor{comment}{/* FILENAME: UltraSonic\_program }}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00004}00004 \textcolor{comment}{*  DATE:   Fri 02/24/2023}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00006}00006 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00007}00007 \textcolor{comment}{/*                        Include headers                               */}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00008}00008 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00010}00010 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_TYPES.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00011}00011 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_COMPILER.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00012}00012 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_VALUES.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00013}00013 \textcolor{preprocessor}{\#include "{}../../LIB/LSTD\_BITMATH.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00015}00015 \textcolor{preprocessor}{\#include "{}../../MCAL/RCC/MRCC\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00016}00016 \textcolor{preprocessor}{\#include "{}../../MCAL/GPIO/GPIO\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00017}00017 \textcolor{preprocessor}{\#include "{}../../MCAL/SysTick/SysTick\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00018}00018 \textcolor{preprocessor}{\#include "{}../../MCAL/TIM1/TIM1\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00020}00020 \textcolor{preprocessor}{\#include "{}UltraSonic\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00021}00021 \textcolor{preprocessor}{\#include "{}UltraSonic\_private.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00022}00022 \textcolor{preprocessor}{\#include "{}UltraSonic\_config.h"{}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00024}00024 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00025}00025 \textcolor{comment}{/*                     Functions implementations                        */}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00026}00026 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00028}00028 \textcolor{keywordtype}{void} HULTSNC\_vInit( \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\_ConfigType}}) TRIG\_psCfg )}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00031}00031     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) TRIG\_Cfg =}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00032}00032     \{}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00033}00033         .Port           = TRIG\_psCfg-\/>u8Port, .Pin          = TRIG\_psCfg-\/>u8Pin ,}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00034}00034         .Mode           = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}    , .OutputType   = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}  ,}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00035}00035         .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}}  , .InputType    = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00036}00036     \} ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00038}00038     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&TRIG\_Cfg ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00040}00040     MTIM1\_vSetPrescalerValue( 7 ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00042}00042     MTIM1\_vSetAutoReloadValue( 10000 ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00044}00044     MTIM1\_vReadPWM( ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00048}00048 \textcolor{comment}{/**************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00049}00049 \textcolor{comment}{/*************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00051}00051 \textcolor{keywordtype}{void} HULTSNC\_vTrigger( \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\_ConfigType}}) TRIG\_psCfg )}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00054}00054     \mbox{\hyperlink{_g_p_i_o__interface_8h_a29da100159c6f4c0db683e1a12bbe827}{MGPIOx\_vSetResetAtomic}}( TRIG\_psCfg-\/>u8Port, TRIG\_psCfg-\/>u8Pin, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00056}00056     \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSysTick\_vDelayMicroSec}}( 2 ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00058}00058     \mbox{\hyperlink{_g_p_i_o__interface_8h_a29da100159c6f4c0db683e1a12bbe827}{MGPIOx\_vSetResetAtomic}}( TRIG\_psCfg-\/>u8Port, TRIG\_psCfg-\/>u8Pin, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00060}00060     \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSysTick\_vDelayMicroSec}}( 10 ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00062}00062     \mbox{\hyperlink{_g_p_i_o__interface_8h_a29da100159c6f4c0db683e1a12bbe827}{MGPIOx\_vSetResetAtomic}}( TRIG\_psCfg-\/>u8Port, TRIG\_psCfg-\/>u8Pin, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}}  ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00064}00064 \}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00066}00066 \textcolor{comment}{/**************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00067}00067 \textcolor{comment}{/*************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00069}00069 \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} HULTSNC\_f32GetDistance( \textcolor{keywordtype}{void} )}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00070}00070 \{}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00072}00072     \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} L\_f32PulseTime   = MTIM1\_u16GetCaptureReg2Value( )   ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00074}00074     \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} L\_f32Period      = MTIM1\_u16GetCaptureReg1Value( )   ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00076}00076     \mbox{\hyperlink{group__typedefs_gad8e451647f66f06a13c0baefa773a542}{f32\_t}} L\_f32Distance        = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}}                      ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00078}00078     L\_f32Distance = (float)( L\_f32PulseTime * 0.0174 ) ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00080}00080     \textcolor{keywordflow}{return} L\_f32Distance ;}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00082}00082 \}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00084}00084 \textcolor{comment}{/**************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00085}00085 \textcolor{comment}{/*************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_ultra_sonic__program_8c_source_l00096}00096 }
+
+\end{DoxyCode}

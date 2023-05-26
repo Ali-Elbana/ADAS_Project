@@ -1,6 +1,7 @@
 var modules =
 [
     [ "DC Motor Directions", "group__motor__directions.html", "group__motor__directions" ],
+    [ "DC Motor Speeds", "group__motor__speeds.html", "group__motor__speeds" ],
     [ "DC Motor Rotation Directions", "group__motor__rotation__direction.html", "group__motor__rotation__direction" ],
     [ "Bit Manipulation Math Macros", "group__bitmath.html", "group__bitmath" ],
     [ "Bit Group Manipulation Math Macros", "group__bitmathgroup.html", "group__bitmathgroup" ],
@@ -41,5 +42,12 @@ var modules =
     [ "Systick Registers", "group__systick__registers.html", "group__systick__registers" ],
     [ "Systick Register Bits Positions", "group__systick__register__bits.html", "group__systick__register__bits" ],
     [ "Systick Clock Sources", "group__systick__clock__sources.html", "group__systick__clock__sources" ],
-    [ "Systick Exception (Interrupt) Status", "group__systick__exception__request__enable.html", "group__systick__exception__request__enable" ]
+    [ "Systick Exception (Interrupt) Status", "group__systick__exception__request__enable.html", "group__systick__exception__request__enable" ],
+    [ "UART Addresses", "group__uart__addresses.html", "group__uart__addresses" ],
+    [ "UART Registers", "group__uart__registers.html", "group__uart__registers" ],
+    [ "UART Oversampling", "group__uart__over__sampling.html", "group__uart__over__sampling" ],
+    [ "UART Operating Modes", "group__uart__operating__modes.html", "group__uart__operating__modes" ],
+    [ "UART Parity", "group__uart__parity.html", "group__uart__parity" ],
+    [ "UART Bit Sizes", "group__uart__bit__sizes.html", "group__uart__bit__sizes" ],
+    [ "UART Stop Bits", "group__uart__stop__bits.html", "group__uart__stop__bits" ]
 ];

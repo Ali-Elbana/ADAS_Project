@@ -9,5 +9,7 @@ var group__standardvalues =
     [ "RUN", "group__standardvalues.html#ga35f69a612b07bbf1de53bbbd8d877c09", null ],
     [ "STOP", "group__standardvalues.html#gae19b6bb2940d2fbe0a79852b070eeafd", null ],
     [ "PRESSED", "group__standardvalues.html#ga654adff3c664f27f0b29c24af818dd26", null ],
-    [ "RELEASED", "group__standardvalues.html#gad74b7f5218b46c8332cd531df7178d45", null ]
+    [ "RELEASED", "group__standardvalues.html#gad74b7f5218b46c8332cd531df7178d45", null ],
+    [ "SAME_STRING", "group__standardvalues.html#ga7b8c0d456045358dc5197792205b20be", null ],
+    [ "DIFFERENT_STRING", "group__standardvalues.html#gaa956229c39573f53bbcc5e20f445d6c8", null ]
 ];

@@ -90,11 +90,11 @@
     \fancyhead[LE, RO]{\bfseries\thepage}
     \fancyhead[LO]{\bfseries\rightmark}
     \fancyhead[RE]{\bfseries\leftmark}
-    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Wed Dec 14 2022 15\+:44\+:31 for ADAS Graduation Project by Doxygen }
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Sat May 27 2023 00\+:03\+:12 for ADAS Graduation Project by Doxygen }
   }
   \fancypagestyle{plain}{
     \fancyhf{}
-    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Wed Dec 14 2022 15\+:44\+:31 for ADAS Graduation Project by Doxygen }
+    \fancyfoot[LO, RE]{\bfseries\scriptsize Generated on Sat May 27 2023 00\+:03\+:12 for ADAS Graduation Project by Doxygen }
     \renewcommand{\headrulewidth}{0pt}
   }
   \pagestyle{fancyplain}
@@ -165,9 +165,9 @@
   \begin{center}%
   {\Large ADAS Graduation Project}\\
   \vspace*{1cm}
-  {\large Generated on Wed Dec 14 2022 15\+:44\+:31 for ADAS Graduation Project by Doxygen 1.9.5}\\
+  {\large Generated on Sat May 27 2023 00\+:03\+:12 for ADAS Graduation Project by Doxygen 1.9.5}\\
     \vspace*{0.5cm}
-    {\small Wed Dec 14 2022 15:44:31}
+    {\small Sat May 27 2023 00:03:12}
   \end{center}
   \end{titlepage}
   \clearemptydoublepage
@@ -188,6 +188,7 @@
 \input{files}
 \chapter{Module Documentation}
 \input{group__motor__directions}
+\input{group__motor__speeds}
 \input{group__motor__rotation__direction}
 \input{group__bitmath}
 \input{group__bitmathgroup}
@@ -229,19 +230,72 @@
 \input{group__systick__register__bits}
 \input{group__systick__clock__sources}
 \input{group__systick__exception__request__enable}
+\input{group__uart__addresses}
+\input{group__uart__registers}
+\input{group__uart__over__sampling}
+\input{group__uart__operating__modes}
+\input{group__uart__parity}
+\input{group__uart__bit__sizes}
+\input{group__uart__stop__bits}
 \chapter{Data Structure Documentation}
+\input{struct_a_d_c___memory_map_type}
+\input{struct_b_u_z_z_e_r___buzzer_configuration}
 \input{struct_d_c_m___motor_configuration}
 \input{struct_e_x_t_i___config_type}
 \input{struct_e_x_t_i___type}
 \input{struct_g_p_i_ox___memory_map_type}
+\input{struct_h_u_l_t_s_n_c___config_type}
+\input{struct_l_e_d___l_e_d_configuration}
 \input{struct_m_g_p_i_ox___config_type}
 \input{struct_m_s_y_s_c_f_g___mem_map__t}
 \input{struct_n_v_i_c___memory_map_type}
 \input{struct_r_c_c___memory_map_type}
 \input{struct_s_c_b___memory_map_type}
+\input{struct_s_p_i___memory_map_type}
 \input{struct_sys_tick___type}
+\input{struct_task}
+\input{struct_t_i_m1___memory_map_type}
+\input{struct_u_s_a_r_t___clock_init_type_def}
+\input{struct_u_s_a_r_t___init_type}
+\input{struct_u_s_a_r_t___memory_map_type}
 \chapter{File Documentation}
-\input{_r_e_a_d_m_e_8md}
+\input{_a_c_c__config_8h_source}
+\input{_a_c_c__interface_8h_source}
+\input{_a_c_c__private_8h_source}
+\input{_a_c_c__program_8c_source}
+\input{_exit___state__config_8h_source}
+\input{_exit___state__interface_8h_source}
+\input{_exit___state__private_8h_source}
+\input{_exit___state__program_8c_source}
+\input{_f_c_w__config_8h_source}
+\input{_f_c_w__interface_8h_source}
+\input{_f_c_w__private_8h_source}
+\input{_f_c_w__program_8c_source}
+\input{_mob___a_p_p__config_8h_source}
+\input{_mob___a_p_p__interface_8h_source}
+\input{_mob___a_p_p__private_8h_source}
+\input{_mob___a_p_p__program_8c_source}
+\input{_n_c_c__config_8h_source}
+\input{_n_c_c__interface_8h_source}
+\input{_n_c_c__private_8h_source}
+\input{_n_c_c__program_8c_source}
+\input{_traditional___mode__config_8h_source}
+\input{_traditional___mode__interface_8h_source}
+\input{_traditional___mode__private_8h_source}
+\input{_traditional___mode__program_8c_source}
+\input{_bluetooth__config_8c_source}
+\input{_bluetooth__config_8h_source}
+\input{_bluetooth__interface_8h_source}
+\input{_bluetooth__private_8h_source}
+\input{_bluetooth__program_8c_source}
+\input{_b_u_z_z_e_r__config_8h_source}
+\input{_b_u_z_z_e_r__interface_8h_source}
+\input{_b_u_z_z_e_r__private_8h_source}
+\input{_b_u_z_z_e_r__program_8c_source}
+\input{_car___movement__config_8h_source}
+\input{_car___movement__interface_8h_source}
+\input{_car___movement__private_8h_source}
+\input{_car___movement__program_8c_source}
 \input{_d_c_m__config_8h}
 \input{_d_c_m__config_8h_source}
 \input{_d_c_m__interface_8h}
@@ -250,6 +304,28 @@
 \input{_d_c_m__private_8h_source}
 \input{_d_c_m__program_8c}
 \input{_d_c_m__program_8c_source}
+\input{_l_c_d__config_8h_source}
+\input{_l_c_d__interface_8h_source}
+\input{_l_c_d__private_8h_source}
+\input{_l_c_d__program_8c_source}
+\input{_l_d_r__config_8c_source}
+\input{_l_d_r__config_8h_source}
+\input{_l_d_r__interface_8h_source}
+\input{_l_d_r__private_8h_source}
+\input{_l_d_r__program_8c_source}
+\input{_l_e_d__config_8h_source}
+\input{_l_e_d__interface_8h_source}
+\input{_l_e_d__private_8h_source}
+\input{_l_e_d__program_8c_source}
+\input{_t_f_t___config_8c_source}
+\input{_t_f_t__config_8h_source}
+\input{_t_f_t__interface_8h_source}
+\input{_t_f_t__private_8h_source}
+\input{_t_f_t__program_8c_source}
+\input{_ultra_sonic__config_8h_source}
+\input{_ultra_sonic__interface_8h_source}
+\input{_ultra_sonic__private_8h_source}
+\input{_ultra_sonic__program_8c_source}
 \input{_l_s_t_d___b_i_t_m_a_t_h_8h}
 \input{_l_s_t_d___b_i_t_m_a_t_h_8h_source}
 \input{_l_s_t_d___c_o_m_p_i_l_e_r_8h}
@@ -260,7 +336,10 @@
 \input{_l_s_t_d___t_y_p_e_s_8h_source}
 \input{_l_s_t_d___v_a_l_u_e_s_8h}
 \input{_l_s_t_d___v_a_l_u_e_s_8h_source}
-\input{_e_x_t_i__config_8h}
+\input{_a_d_c__config_8h_source}
+\input{_a_d_c__interface_8h_source}
+\input{_a_d_c__private_8h_source}
+\input{_a_d_c__program_8c_source}
 \input{_e_x_t_i__config_8h_source}
 \input{_e_x_t_i__interface_8h}
 \input{_e_x_t_i__interface_8h_source}
@@ -278,7 +357,6 @@
 \input{_g_p_i_o__private_8h_source}
 \input{_g_p_i_o__program_8c}
 \input{_g_p_i_o__program_8c_source}
-\input{_n_v_i_c__config_8h}
 \input{_n_v_i_c__config_8h_source}
 \input{_n_v_i_c__interface_8h}
 \input{_n_v_i_c__interface_8h_source}
@@ -294,7 +372,10 @@
 \input{_m_r_c_c__private_8h_source}
 \input{_m_r_c_c__program_8c}
 \input{_m_r_c_c__program_8c_source}
-\input{_sys_tick__config_8h}
+\input{_s_p_i__config_8h_source}
+\input{_s_p_i__interface_8h_source}
+\input{_s_p_i__private_8h_source}
+\input{_s_p_i__program_8c_source}
 \input{_sys_tick__config_8h_source}
 \input{_sys_tick__interface_8h}
 \input{_sys_tick__interface_8h_source}
@@ -302,6 +383,20 @@
 \input{_sys_tick__private_8h_source}
 \input{_sys_tick__program_8c}
 \input{_sys_tick__program_8c_source}
+\input{_t_i_m1__config_8h_source}
+\input{_t_i_m1__interface_8h_source}
+\input{_t_i_m1__private_8h_source}
+\input{_t_i_m1__program_8c_source}
+\input{_u_a_r_t__config_8h_source}
+\input{_u_a_r_t__interface_8h}
+\input{_u_a_r_t__interface_8h_source}
+\input{_u_a_r_t__private_8h}
+\input{_u_a_r_t__private_8h_source}
+\input{_u_a_r_t__program_8c_source}
+\input{_my_r_t_o_s__config_8h_source}
+\input{_my_r_t_o_s__interface_8h_source}
+\input{_my_r_t_o_s__private_8h_source}
+\input{_my_r_t_o_s__program_8c_source}
 %--- End generated contents ---
 % Index
   \backmatter

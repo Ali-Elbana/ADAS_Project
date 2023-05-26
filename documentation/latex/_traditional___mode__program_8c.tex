@@ -1,0 +1,164 @@
+\hypertarget{_traditional___mode__program_8c}{}\doxysection{COTS/\+APP/\+Traditional\+\_\+\+Mode/\+Traditional\+\_\+\+Mode\+\_\+program.c File Reference}
+\label{_traditional___mode__program_8c}\index{COTS/APP/Traditional\_Mode/Traditional\_Mode\_program.c@{COTS/APP/Traditional\_Mode/Traditional\_Mode\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+HAL/\+Bluetooth/\+Bluetooth\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+HAL/\+DCMOTOR/\+DCM\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+HAL/\+Car\+\_\+\+Movement/\+Car\+\_\+\+Movement\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Mob\+\_\+\+APP/\+Mob\+\_\+\+APP\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Traditional\+\_\+\+Mode\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Traditional\+\_\+\+Mode\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Traditional\+\_\+\+Mode\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_traditional___mode__program_8c_a2a6e94114820916f0c1af4a98df530b8}{ATraditional\+\_\+v\+Mode\+ON}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_traditional___mode__program_8c_a2a6e94114820916f0c1af4a98df530b8}\label{_traditional___mode__program_8c_a2a6e94114820916f0c1af4a98df530b8}} 
+\index{Traditional\_Mode\_program.c@{Traditional\_Mode\_program.c}!ATraditional\_vModeON@{ATraditional\_vModeON}}
+\index{ATraditional\_vModeON@{ATraditional\_vModeON}!Traditional\_Mode\_program.c@{Traditional\_Mode\_program.c}}
+\doxysubsubsection{\texorpdfstring{ATraditional\_vModeON()}{ATraditional\_vModeON()}}
+{\footnotesize\ttfamily void ATraditional\+\_\+v\+Mode\+ON (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_traditional___mode__program_8c_source_l00029}{29}} of file \mbox{\hyperlink{_traditional___mode__program_8c_source}{Traditional\+\_\+\+Mode\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030 \{}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}}       = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00033     \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}}  L\_c8RecievedButton    = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035     \mbox{\hyperlink{_bluetooth__interface_8h_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\_vSendString}}( \textcolor{stringliteral}{"{}\(\backslash\)nTraditional Mode ON\(\backslash\)n"{}} ) ;}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{keywordflow}{do}}
+\DoxyCodeLine{00038     \{}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040         L\_c8RecievedButton = \mbox{\hyperlink{_bluetooth__interface_8h_a0acf4691e98c124ac26bcc8678ee17c9}{HBluetooth\_u8ReceiveByte}}( ) ;}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042         \textcolor{keywordflow}{switch}( L\_c8RecievedButton )}
+\DoxyCodeLine{00043         \{}
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{00045             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_a27ae7247d30c306e22616801770b69ce}{FORW\_CHAR}}:}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047                 \mbox{\hyperlink{_car___movement__interface_8h_a3921ffa6ddc8b8b1091ff9967c25506f}{HCarMove\_vForward}}( ) ;}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049                 \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_car___movement__interface_8h_a85b7d0396a7fbc64cff077419ad41c70}{HCarMove\_u32GetCarSpeed}}(  ) ;}
+\DoxyCodeLine{00050 }
+\DoxyCodeLine{00051                 \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053             break ;}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_ad612c6a4e52a0debbb90d006de779a5f}{BACKW\_CHAR}}:}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057                 \mbox{\hyperlink{_car___movement__interface_8h_a61a5f5336cc46fb29beb41e6ed13685c}{HCarMove\_vBackward}}( ) ;}
+\DoxyCodeLine{00058 }
+\DoxyCodeLine{00059                 \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_car___movement__interface_8h_a85b7d0396a7fbc64cff077419ad41c70}{HCarMove\_u32GetCarSpeed}}(  ) ;}
+\DoxyCodeLine{00060 }
+\DoxyCodeLine{00061                 \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063             break ;}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_ad94220f35df884190ffd9596bdecccdc}{RIGHT\_CHAR}}:}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067                 \mbox{\hyperlink{_car___movement__interface_8h_a89385f7bc74c7911ad7cab26901eaaef}{HCarMove\_vRight}}( ) ;}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069                 \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_car___movement__interface_8h_a85b7d0396a7fbc64cff077419ad41c70}{HCarMove\_u32GetCarSpeed}}(  ) ;}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071                 \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073             break ;}
+\DoxyCodeLine{00074 }
+\DoxyCodeLine{00075             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_a92e00fb11e5d198b7949f5b1b5c3d26c}{LEFT\_CHAR}}:}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077                 \mbox{\hyperlink{_car___movement__interface_8h_abb99600fc4cf58db18f834f9cf0b78f7}{HCarMove\_vLeft}}( ) ;}
+\DoxyCodeLine{00078 }
+\DoxyCodeLine{00079                 \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_car___movement__interface_8h_a85b7d0396a7fbc64cff077419ad41c70}{HCarMove\_u32GetCarSpeed}}(  ) ;}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081                 \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00082 }
+\DoxyCodeLine{00083             break ;}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_a9cabeb8b2886fd6bd67fb8cf4ccb2bc2}{STOP\_CHAR}}:}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087                 \mbox{\hyperlink{_car___movement__interface_8h_aabb18c38d8bdc46f3dfc302ee2ca02f9}{HCarMove\_vStop}}( ) ;}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089                 \mbox{\hyperlink{_bluetooth__interface_8h_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\_vSendString}}( \mbox{\hyperlink{_mob___a_p_p__interface_8h_a54fd47b6b2546a6e908d6d5091138f84}{SPEED0\_STR}} ) ;}
+\DoxyCodeLine{00090 }
+\DoxyCodeLine{00091             break ;}
+\DoxyCodeLine{00092 }
+\DoxyCodeLine{00093             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_af3eb851c1e47d0eae626e38521bc8b01}{EXIT\_MODE\_CHAR}}:}
+\DoxyCodeLine{00094 }
+\DoxyCodeLine{00095                 \mbox{\hyperlink{_car___movement__interface_8h_aabb18c38d8bdc46f3dfc302ee2ca02f9}{HCarMove\_vStop}}( ) ;}
+\DoxyCodeLine{00096 }
+\DoxyCodeLine{00097                 \mbox{\hyperlink{_bluetooth__interface_8h_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\_vSendString}}( \mbox{\hyperlink{_mob___a_p_p__interface_8h_a54fd47b6b2546a6e908d6d5091138f84}{SPEED0\_STR}} ) ;}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099                 \mbox{\hyperlink{_bluetooth__interface_8h_a35b1e6676c7e69e72d56572491cee3b7}{HBluetooth\_vSendString}}( \textcolor{stringliteral}{"{}\(\backslash\)nTraditional Mode Off\(\backslash\)n"{}} ) ;}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101             break ;}
+\DoxyCodeLine{00102 }
+\DoxyCodeLine{00103             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_abd517598a5bf971839a9501b2da56522}{INC\_SPEED\_CHAR}}:}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105                 \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_car___movement__interface_8h_a85b7d0396a7fbc64cff077419ad41c70}{HCarMove\_u32GetCarSpeed}}(  ) ;}
+\DoxyCodeLine{00106 }
+\DoxyCodeLine{00107                 \textcolor{keywordflow}{if}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} >= \mbox{\hyperlink{_d_c_m__interface_8h_a89268c7ea49fe78f02601656198bfcaf}{SPEED\_100\_PERCENT}} )}
+\DoxyCodeLine{00108                 \{}
+\DoxyCodeLine{00109                     \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_d_c_m__interface_8h_a89268c7ea49fe78f02601656198bfcaf}{SPEED\_100\_PERCENT}} ;}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111                     \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00112                 \}}
+\DoxyCodeLine{00113                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00114                 \{}
+\DoxyCodeLine{00115                     \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} += \mbox{\hyperlink{_d_c_m__interface_8h_ac296ff023217cd73073b3a32e0864727}{SPEED\_10\_PERCENT}} ;}
+\DoxyCodeLine{00116 }
+\DoxyCodeLine{00117                     \mbox{\hyperlink{_car___movement__interface_8h_ab4c2b6c3606c837285e80a965c258327}{HCarMove\_vSpeedRatio}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119                     \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00120                 \}}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122             break ;}
+\DoxyCodeLine{00123 }
+\DoxyCodeLine{00124             \textcolor{keywordflow}{case} \mbox{\hyperlink{_mob___a_p_p__interface_8h_a35180f5aa38bc74103e27e7f5d2dcf7c}{DEC\_SPEED\_CHAR}}:}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126                 \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_car___movement__interface_8h_a85b7d0396a7fbc64cff077419ad41c70}{HCarMove\_u32GetCarSpeed}}(  ) ;}
+\DoxyCodeLine{00127 }
+\DoxyCodeLine{00128                 \textcolor{keywordflow}{if}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} <= \mbox{\hyperlink{_d_c_m__interface_8h_ae5ac5eeae3cf04a9d1e585344e54bdeb}{SPEED\_0\_PERCENT}} )}
+\DoxyCodeLine{00129                 \{}
+\DoxyCodeLine{00130                     \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} = \mbox{\hyperlink{_d_c_m__interface_8h_ae5ac5eeae3cf04a9d1e585344e54bdeb}{SPEED\_0\_PERCENT}} ;}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132                     \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00133                 \}}
+\DoxyCodeLine{00134                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00135                 \{}
+\DoxyCodeLine{00136                     \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} -\/= \mbox{\hyperlink{_d_c_m__interface_8h_ac296ff023217cd73073b3a32e0864727}{SPEED\_10\_PERCENT}} ;}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138                     \mbox{\hyperlink{_car___movement__interface_8h_ab4c2b6c3606c837285e80a965c258327}{HCarMove\_vSpeedRatio}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140                     \mbox{\hyperlink{_mob___a_p_p__interface_8h_afa84505ff33e9fae946345fbfd53e0c1}{AMobApp\_vSendSpeedValue}}( \mbox{\hyperlink{_a_c_c__program_8c_ab060293a4b53788427922ead49415bf8}{L\_u32SpeedValue}} ) ;}
+\DoxyCodeLine{00141                 \}}
+\DoxyCodeLine{00142 }
+\DoxyCodeLine{00143             break ;}
+\DoxyCodeLine{00144 }
+\DoxyCodeLine{00145             \textcolor{keywordflow}{default}: \textcolor{comment}{/* Do Nothing */} break ;}
+\DoxyCodeLine{00146         \}}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00148     \}\textcolor{keywordflow}{while}( L\_c8RecievedButton != \mbox{\hyperlink{_mob___a_p_p__interface_8h_af3eb851c1e47d0eae626e38521bc8b01}{EXIT\_MODE\_CHAR}} ) ;}
+\DoxyCodeLine{00149 }
+\DoxyCodeLine{00150 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_mob___a_p_p__program_8c_source_l00053}{AMob\+App\+\_\+v\+Send\+Speed\+Value()}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00020}{BACKW\+\_\+\+CHAR}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00026}{DEC\+\_\+\+SPEED\+\_\+\+CHAR}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00024}{EXIT\+\_\+\+MODE\+\_\+\+CHAR}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00019}{FORW\+\_\+\+CHAR}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00066}{HBluetooth\+\_\+u8\+Receive\+Byte()}}, \mbox{\hyperlink{_bluetooth__program_8c_source_l00090}{HBluetooth\+\_\+v\+Send\+String()}}, \mbox{\hyperlink{_car___movement__program_8c_source_l00117}{HCar\+Move\+\_\+u32\+Get\+Car\+Speed()}}, \mbox{\hyperlink{_car___movement__program_8c_source_l00065}{HCar\+Move\+\_\+v\+Backward()}}, \mbox{\hyperlink{_car___movement__program_8c_source_l00052}{HCar\+Move\+\_\+v\+Forward()}}, \mbox{\hyperlink{_car___movement__program_8c_source_l00091}{HCar\+Move\+\_\+v\+Left()}}, \mbox{\hyperlink{_car___movement__program_8c_source_l00078}{HCar\+Move\+\_\+v\+Right()}}, \mbox{\hyperlink{_car___movement__interface_8h_ab4c2b6c3606c837285e80a965c258327}{HCar\+Move\+\_\+v\+Speed\+Ratio()}}, \mbox{\hyperlink{_car___movement__program_8c_source_l00104}{HCar\+Move\+\_\+v\+Stop()}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00025}{INC\+\_\+\+SPEED\+\_\+\+CHAR}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_a_c_c__program_8c_source_l00029}{L\+\_\+u32\+Speed\+Value}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00022}{LEFT\+\_\+\+CHAR}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00021}{RIGHT\+\_\+\+CHAR}}, \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00011}{SPEED0\+\_\+\+STR}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00117}{SPEED\+\_\+0\+\_\+\+PERCENT}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00127}{SPEED\+\_\+100\+\_\+\+PERCENT}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00118}{SPEED\+\_\+10\+\_\+\+PERCENT}}, and \mbox{\hyperlink{_mob___a_p_p__interface_8h_source_l00023}{STOP\+\_\+\+CHAR}}.
+
+
+
+Referenced by \mbox{\hyperlink{_mob___a_p_p__program_8c_source_l00077}{AMob\+App\+\_\+v\+Cntrl\+Car()}}.
+

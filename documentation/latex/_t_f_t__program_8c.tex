@@ -1,0 +1,415 @@
+\hypertarget{_t_f_t__program_8c}{}\doxysection{COTS/\+HAL/\+TFT/\+TFT\+\_\+program.c File Reference}
+\label{_t_f_t__program_8c}\index{COTS/HAL/TFT/TFT\_program.c@{COTS/HAL/TFT/TFT\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+RCC/\+MRCC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+SPI/\+SPI\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TFT\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TFT\+\_\+private.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TFT\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\+\_\+v\+Write\+CMD}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+CMD)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\+\_\+v\+Write\+Data}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Data)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_a448f5ff7870d1782063d5811df74045a}{HTFT\+\_\+v\+Reset\+Sequence}} (void)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_aa8cde3e6d2f1b571cdeda2de9a401ab9}{HTFT\+\_\+v\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_aa3a749201e2565927ca7d61c9170d77e}{HTFT\+\_\+v\+Show\+Image}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} const $\ast$A\+\_\+u16\+Image, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Image\+Size)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_ae1431eda46b5796806e4bbcb3d198719}{HTFT\+\_\+v\+Set\+XPosition}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+XStart, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+XEnd)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_aa1491a0cf0169d4ea9c874262baed16f}{HTFT\+\_\+v\+Set\+YPosition}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+YStart, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+YEnd)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_a6efa95bf29b59a86c334a75d03667451}{HTFT\+\_\+v\+Fill\+Rectangle}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Color)
+\item 
+void \mbox{\hyperlink{_t_f_t__program_8c_a8380ed62adf77629bc272ac157e68b44}{HTFT\+\_\+v\+Fill\+Background}} (\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Color)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} \mbox{\hyperlink{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\+\_\+\+A0}}
+\item 
+\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\+\_\+\+RST}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}\label{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vWriteCMD@{HTFT\_vWriteCMD}}
+\index{HTFT\_vWriteCMD@{HTFT\_vWriteCMD}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vWriteCMD()}{HTFT\_vWriteCMD()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Write\+CMD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+CMD }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{35}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036 \{}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\_A0}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\_A0}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040     (void)\mbox{\hyperlink{_s_p_i__interface_8h_a3977bcb88971f2beebdee4211abb57d1}{MSPI\_u16Transcieve}}( \mbox{\hyperlink{_t_f_t__config_8h_a5d435f3b69eee16465ee22bb50273a93}{SPI\_SRC}}, A\_u16CMD ) ;}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00330}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_s_p_i__program_8c_source_l00363}{MSPI\+\_\+u16\+Transcieve()}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00032}{MGPIOx\+\_\+\+Config\+Type\+::\+Pin}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00028}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00016}{SPI\+\_\+\+SRC}}, and \mbox{\hyperlink{_t_f_t___config_8c_source_l00014}{TFT\+\_\+\+A0}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00214}{HTFT\+\_\+v\+Fill\+Background()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00194}{HTFT\+\_\+v\+Fill\+Rectangle()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00156}{HTFT\+\_\+v\+Set\+XPosition()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00175}{HTFT\+\_\+v\+Set\+YPosition()}}, and \mbox{\hyperlink{_t_f_t__program_8c_source_l00119}{HTFT\+\_\+v\+Show\+Image()}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}\label{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vWriteData@{HTFT\_vWriteData}}
+\index{HTFT\_vWriteData@{HTFT\_vWriteData}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vWriteData()}{HTFT\_vWriteData()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Write\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{47}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048 \{}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{00050     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\_A0}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\_A0}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052     (void)\mbox{\hyperlink{_s_p_i__interface_8h_a3977bcb88971f2beebdee4211abb57d1}{MSPI\_u16Transcieve}}( \mbox{\hyperlink{_t_f_t__config_8h_a5d435f3b69eee16465ee22bb50273a93}{SPI\_SRC}}, A\_u16Data ) ;}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00323}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_s_p_i__program_8c_source_l00363}{MSPI\+\_\+u16\+Transcieve()}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00032}{MGPIOx\+\_\+\+Config\+Type\+::\+Pin}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00028}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00016}{SPI\+\_\+\+SRC}}, and \mbox{\hyperlink{_t_f_t___config_8c_source_l00014}{TFT\+\_\+\+A0}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00214}{HTFT\+\_\+v\+Fill\+Background()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00194}{HTFT\+\_\+v\+Fill\+Rectangle()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00156}{HTFT\+\_\+v\+Set\+XPosition()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00175}{HTFT\+\_\+v\+Set\+YPosition()}}, and \mbox{\hyperlink{_t_f_t__program_8c_source_l00119}{HTFT\+\_\+v\+Show\+Image()}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_a448f5ff7870d1782063d5811df74045a}\label{_t_f_t__program_8c_a448f5ff7870d1782063d5811df74045a}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vResetSequence@{HTFT\_vResetSequence}}
+\index{HTFT\_vResetSequence@{HTFT\_vResetSequence}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vResetSequence()}{HTFT\_vResetSequence()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Reset\+Sequence (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00059}{59}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00060 \{}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00063 }
+\DoxyCodeLine{00064     \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSysTick\_vDelayMicroSec}}( 150 ) ; \textcolor{comment}{//100us}}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSysTick\_vDelayMicroSec}}( 5 ) ; \textcolor{comment}{//1us}}
+\DoxyCodeLine{00069 }
+\DoxyCodeLine{00070     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{00072     \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSysTick\_vDelayMicroSec}}( 150 ) ; \textcolor{comment}{//100us}}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076     \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSysTick\_vDelayMicroSec}}( 5 ) ; \textcolor{comment}{//1us}}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}, \mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}}.\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a6edaa6c244cf152f48755cc6f0865794}{Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 150 ) ; \textcolor{comment}{//120ms}}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00323}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00330}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_sys_tick__interface_8h_a4fad8ea85f5b15c9bc861b8c93d79672}{MSys\+Tick\+\_\+v\+Delay\+Micro\+Sec()}}, \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00032}{MGPIOx\+\_\+\+Config\+Type\+::\+Pin}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00028}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}, and \mbox{\hyperlink{_t_f_t___config_8c_source_l00022}{TFT\+\_\+\+RST}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_aa8cde3e6d2f1b571cdeda2de9a401ab9}\label{_t_f_t__program_8c_aa8cde3e6d2f1b571cdeda2de9a401ab9}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vInit@{HTFT\_vInit}}
+\index{HTFT\_vInit@{HTFT\_vInit}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vInit()}{HTFT\_vInit()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{87}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088 \{}
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090     \textcolor{comment}{// Set pin directions:}}
+\DoxyCodeLine{00091     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&\mbox{\hyperlink{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\_A0}}  ) ;}
+\DoxyCodeLine{00092     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&\mbox{\hyperlink{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\_RST}} ) ;}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094     \mbox{\hyperlink{_s_p_i__interface_8h_aa79290b81e038c34c41b93d677a43ef1}{MSPI\_vInit}}( \mbox{\hyperlink{_t_f_t__config_8h_a5d435f3b69eee16465ee22bb50273a93}{SPI\_SRC}}, \mbox{\hyperlink{_t_f_t__config_8h_aefb71f37707cdbfb9c453ccfc5f7d681}{SPI\_RELATION}}, \mbox{\hyperlink{_t_f_t__config_8h_a25c61fd1dabdeb53f7b97bcce9b8e5f6}{SPI\_DATA\_DIRECTION}} ) ;}
+\DoxyCodeLine{00095 }
+\DoxyCodeLine{00096     \mbox{\hyperlink{_sys_tick__interface_8h_a4e8fe0bd8178e76ab2e78536014006fb}{MSysTick\_vInit}}( ) ;}
+\DoxyCodeLine{00097 }
+\DoxyCodeLine{00098     \textcolor{comment}{// Rest sequence:}}
+\DoxyCodeLine{00099     \mbox{\hyperlink{_t_f_t__program_8c_a448f5ff7870d1782063d5811df74045a}{HTFT\_vResetSequence}}( ) ;}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101     \textcolor{comment}{// Send SLPOUT CMD (0x11):}}
+\DoxyCodeLine{00102     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_a056f9d26523fa27a788af25e3310b239}{SLPOUT\_CMD}} ) ;}
+\DoxyCodeLine{00103 }
+\DoxyCodeLine{00104     \textcolor{comment}{// Wait 15ms:}}
+\DoxyCodeLine{00105     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 15 ) ;}
+\DoxyCodeLine{00106 }
+\DoxyCodeLine{00107     \textcolor{comment}{// Send color mode CMD -\/> RGB565:}}
+\DoxyCodeLine{00108     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_ad3dee13b651b4ee73504da305833d418}{COLOR\_MODE\_CMD}}  ) ;}
+\DoxyCodeLine{00109     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( \mbox{\hyperlink{_t_f_t__config_8h_a12508889e615cfc10f42120ddd884d14}{RGB565\_CMD}} ) ;}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111     \textcolor{comment}{// DISPON CMD (0X29):}}
+\DoxyCodeLine{00112     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_ab417efc8aa8dc66cb7f8900c56b29bea}{DISPON\_CMD}} ) ;}
+\DoxyCodeLine{00113 }
+\DoxyCodeLine{00114 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_t_f_t__config_8h_source_l00024}{COLOR\+\_\+\+MODE\+\_\+\+CMD}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00021}{DISPON\+\_\+\+CMD}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00059}{HTFT\+\_\+v\+Reset\+Sequence()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00421}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_s_p_i__program_8c_source_l00033}{MSPI\+\_\+v\+Init()}}, \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}, \mbox{\hyperlink{_sys_tick__program_8c_source_l00028}{MSys\+Tick\+\_\+v\+Init()}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00026}{RGB565\+\_\+\+CMD}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00020}{SLPOUT\+\_\+\+CMD}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00018}{SPI\+\_\+\+DATA\+\_\+\+DIRECTION}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00017}{SPI\+\_\+\+RELATION}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00016}{SPI\+\_\+\+SRC}}, \mbox{\hyperlink{_t_f_t___config_8c_source_l00014}{TFT\+\_\+\+A0}}, and \mbox{\hyperlink{_t_f_t___config_8c_source_l00022}{TFT\+\_\+\+RST}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_aa3a749201e2565927ca7d61c9170d77e}\label{_t_f_t__program_8c_aa3a749201e2565927ca7d61c9170d77e}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vShowImage@{HTFT\_vShowImage}}
+\index{HTFT\_vShowImage@{HTFT\_vShowImage}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vShowImage()}{HTFT\_vShowImage()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Show\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} const $\ast$}]{A\+\_\+u16\+Image,  }\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Image\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00119}{119}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00120 \{}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122     \textcolor{comment}{// Set X position:}}
+\DoxyCodeLine{00123     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_a1f66575b1f27934db3866da329eb0ca2}{XPOSITION\_CMD}} ) ;}
+\DoxyCodeLine{00124 }
+\DoxyCodeLine{00125     \textcolor{comment}{// Xstart: 0, Xend: 127}}
+\DoxyCodeLine{00126     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 )     ;}
+\DoxyCodeLine{00127     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 )     ;}
+\DoxyCodeLine{00128     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 )     ;}
+\DoxyCodeLine{00129     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 127 )   ;}
+\DoxyCodeLine{00130 }
+\DoxyCodeLine{00131     \textcolor{comment}{// Set Y position:}}
+\DoxyCodeLine{00132     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_aae6babd6c5f0efc33ac8ae4fce585a3e}{YPOSITION\_CMD}} ) ;}
+\DoxyCodeLine{00133 }
+\DoxyCodeLine{00134     \textcolor{comment}{// Ystart: 0, Yend: 159}}
+\DoxyCodeLine{00135     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 )     ;}
+\DoxyCodeLine{00136     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 )     ;}
+\DoxyCodeLine{00137     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 )     ;}
+\DoxyCodeLine{00138     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 159 )   ;}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140     \textcolor{comment}{// Send image data:}}
+\DoxyCodeLine{00141     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_a22e0ef24e6580a5bae48ba00a7dee83c}{MEMORY\_WRITE\_CMD}} ) ;}
+\DoxyCodeLine{00142 }
+\DoxyCodeLine{00143     \textcolor{keywordflow}{for}( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} PX = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}}; PX < A\_u32ImageSize; PX++ )}
+\DoxyCodeLine{00144     \{}
+\DoxyCodeLine{00145 }
+\DoxyCodeLine{00146         \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16Image[PX] >> 8       ) ; \textcolor{comment}{// MSB}}
+\DoxyCodeLine{00147         \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16Image[PX] \& 0x00FF  ) ; \textcolor{comment}{// LSB}}
+\DoxyCodeLine{00148 }
+\DoxyCodeLine{00149     \}}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00025}{MEMORY\+\_\+\+WRITE\+\_\+\+CMD}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00022}{XPOSITION\+\_\+\+CMD}}, and \mbox{\hyperlink{_t_f_t__config_8h_source_l00023}{YPOSITION\+\_\+\+CMD}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_ae1431eda46b5796806e4bbcb3d198719}\label{_t_f_t__program_8c_ae1431eda46b5796806e4bbcb3d198719}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vSetXPosition@{HTFT\_vSetXPosition}}
+\index{HTFT\_vSetXPosition@{HTFT\_vSetXPosition}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vSetXPosition()}{HTFT\_vSetXPosition()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Set\+XPosition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+XStart,  }\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+XEnd }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00156}{156}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00157 \{}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00159     CurrentXStart   = A\_u16XStart   ;}
+\DoxyCodeLine{00160     CurrentXEnd     = A\_u16XEnd     ;}
+\DoxyCodeLine{00161 }
+\DoxyCodeLine{00162     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_a1f66575b1f27934db3866da329eb0ca2}{XPOSITION\_CMD}} ) ;}
+\DoxyCodeLine{00163 }
+\DoxyCodeLine{00164     \textcolor{comment}{// Xstart: 0, Xend: 127}}
+\DoxyCodeLine{00165     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00166     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16XStart ) ;}
+\DoxyCodeLine{00167     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00168     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16XEnd ) ;}
+\DoxyCodeLine{00169 }
+\DoxyCodeLine{00170 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}, and \mbox{\hyperlink{_t_f_t__config_8h_source_l00022}{XPOSITION\+\_\+\+CMD}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_aa1491a0cf0169d4ea9c874262baed16f}\label{_t_f_t__program_8c_aa1491a0cf0169d4ea9c874262baed16f}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vSetYPosition@{HTFT\_vSetYPosition}}
+\index{HTFT\_vSetYPosition@{HTFT\_vSetYPosition}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vSetYPosition()}{HTFT\_vSetYPosition()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Set\+YPosition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+YStart,  }\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+YEnd }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00175}{175}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00176 \{}
+\DoxyCodeLine{00177 }
+\DoxyCodeLine{00178     CurrentYStart   = A\_u16YStart   ;}
+\DoxyCodeLine{00179     CurrentYEnd     = A\_u16YEnd     ;}
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00181     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_aae6babd6c5f0efc33ac8ae4fce585a3e}{YPOSITION\_CMD}} ) ;}
+\DoxyCodeLine{00182 }
+\DoxyCodeLine{00183     \textcolor{comment}{// Ystart: 0, Yend: 127}}
+\DoxyCodeLine{00184     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00185     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16YStart ) ;}
+\DoxyCodeLine{00186     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00187     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16YEnd ) ;}
+\DoxyCodeLine{00188 }
+\DoxyCodeLine{00189 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}, and \mbox{\hyperlink{_t_f_t__config_8h_source_l00023}{YPOSITION\+\_\+\+CMD}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_a6efa95bf29b59a86c334a75d03667451}\label{_t_f_t__program_8c_a6efa95bf29b59a86c334a75d03667451}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vFillRectangle@{HTFT\_vFillRectangle}}
+\index{HTFT\_vFillRectangle@{HTFT\_vFillRectangle}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vFillRectangle()}{HTFT\_vFillRectangle()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Fill\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Color }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00194}{194}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00195 \{}
+\DoxyCodeLine{00196 }
+\DoxyCodeLine{00197     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} PXLS\_Num = (CurrentXEnd-\/CurrentXStart) * (CurrentYEnd-\/CurrentYStart) ;}
+\DoxyCodeLine{00198 }
+\DoxyCodeLine{00199     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_a22e0ef24e6580a5bae48ba00a7dee83c}{MEMORY\_WRITE\_CMD}} ) ;}
+\DoxyCodeLine{00200 }
+\DoxyCodeLine{00201     \textcolor{keywordflow}{for}( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} PX = 0; PX < PXLS\_Num ; PX++ )}
+\DoxyCodeLine{00202     \{}
+\DoxyCodeLine{00203 }
+\DoxyCodeLine{00204         \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16Color >> 8     ) ; \textcolor{comment}{// MSB}}
+\DoxyCodeLine{00205         \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( A\_u16Color \& 0x00FF  ) ; \textcolor{comment}{// LSB}}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207     \}}
+\DoxyCodeLine{00208 }
+\DoxyCodeLine{00209 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}, and \mbox{\hyperlink{_t_f_t__config_8h_source_l00025}{MEMORY\+\_\+\+WRITE\+\_\+\+CMD}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00214}{HTFT\+\_\+v\+Fill\+Background()}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_a8380ed62adf77629bc272ac157e68b44}\label{_t_f_t__program_8c_a8380ed62adf77629bc272ac157e68b44}} 
+\index{TFT\_program.c@{TFT\_program.c}!HTFT\_vFillBackground@{HTFT\_vFillBackground}}
+\index{HTFT\_vFillBackground@{HTFT\_vFillBackground}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{HTFT\_vFillBackground()}{HTFT\_vFillBackground()}}
+{\footnotesize\ttfamily void HTFT\+\_\+v\+Fill\+Background (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}}]{A\+\_\+u16\+Color }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t__program_8c_source_l00214}{214}} of file \mbox{\hyperlink{_t_f_t__program_8c_source}{TFT\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00215 \{}
+\DoxyCodeLine{00216 }
+\DoxyCodeLine{00217     \textcolor{comment}{// Set X position:}}
+\DoxyCodeLine{00218     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_a1f66575b1f27934db3866da329eb0ca2}{XPOSITION\_CMD}} ) ;}
+\DoxyCodeLine{00219 }
+\DoxyCodeLine{00220     \textcolor{comment}{// Xstart: 0, Xend: 127}}
+\DoxyCodeLine{00221     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00222     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00223     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00224     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 127 ) ;}
+\DoxyCodeLine{00225 }
+\DoxyCodeLine{00226     \textcolor{comment}{// Set Y position:}}
+\DoxyCodeLine{00227     \mbox{\hyperlink{_t_f_t__program_8c_ac3aca154f214f891b5d434f6729b91bc}{HTFT\_vWriteCMD}}( \mbox{\hyperlink{_t_f_t__config_8h_aae6babd6c5f0efc33ac8ae4fce585a3e}{YPOSITION\_CMD}} ) ;}
+\DoxyCodeLine{00228 }
+\DoxyCodeLine{00229     \textcolor{comment}{// Ystart: 0, Yend: 127}}
+\DoxyCodeLine{00230     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00231     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00232     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 0 ) ;}
+\DoxyCodeLine{00233     \mbox{\hyperlink{_t_f_t__program_8c_ae575ee27e899505cf8e540aa96be524a}{HTFT\_vWriteData}}( 159 ) ;}
+\DoxyCodeLine{00234 }
+\DoxyCodeLine{00235     \mbox{\hyperlink{_t_f_t__program_8c_a6efa95bf29b59a86c334a75d03667451}{HTFT\_vFillRectangle}}( A\_u16Color ) ;}
+\DoxyCodeLine{00236 }
+\DoxyCodeLine{00237 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_t_f_t__program_8c_source_l00194}{HTFT\+\_\+v\+Fill\+Rectangle()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}, \mbox{\hyperlink{_t_f_t__config_8h_source_l00022}{XPOSITION\+\_\+\+CMD}}, and \mbox{\hyperlink{_t_f_t__config_8h_source_l00023}{YPOSITION\+\_\+\+CMD}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}\label{_t_f_t__program_8c_a187d2507d5b66ef77a1ed92b1d866134}} 
+\index{TFT\_program.c@{TFT\_program.c}!TFT\_A0@{TFT\_A0}}
+\index{TFT\_A0@{TFT\_A0}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{TFT\_A0}{TFT\_A0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} TFT\+\_\+\+A0\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t___config_8c_source_l00014}{14}} of file \mbox{\hyperlink{_t_f_t___config_8c_source}{TFT\+\_\+\+Config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, and \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}.
+
+\mbox{\Hypertarget{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}\label{_t_f_t__program_8c_ad9f704e45d884e1cb9f2af30de149cc7}} 
+\index{TFT\_program.c@{TFT\_program.c}!TFT\_RST@{TFT\_RST}}
+\index{TFT\_RST@{TFT\_RST}!TFT\_program.c@{TFT\_program.c}}
+\doxysubsubsection{\texorpdfstring{TFT\_RST}{TFT\_RST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} TFT\+\_\+\+RST\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{_t_f_t___config_8c_source_l00022}{22}} of file \mbox{\hyperlink{_t_f_t___config_8c_source}{TFT\+\_\+\+Config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}, and \mbox{\hyperlink{_t_f_t__program_8c_source_l00059}{HTFT\+\_\+v\+Reset\+Sequence()}}.
+

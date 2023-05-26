@@ -1,0 +1,61 @@
+\hypertarget{_l_d_r__config_8c}{}\doxysection{COTS/\+HAL/\+LDR/\+LDR\+\_\+config.c File Reference}
+\label{_l_d_r__config_8c}\index{COTS/HAL/LDR/LDR\_config.c@{COTS/HAL/LDR/LDR\_config.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+ADC/\+ADC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LDR\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} \mbox{\hyperlink{_l_d_r__config_8c_a0c23507a2dc6ddad5a84d5da434eeff6}{LDR\+\_\+\+Vo}}
+\item 
+\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} \mbox{\hyperlink{_l_d_r__config_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}{LDR\+\_\+\+CHANNEL}} = 8
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_l_d_r__config_8c_a0c23507a2dc6ddad5a84d5da434eeff6}\label{_l_d_r__config_8c_a0c23507a2dc6ddad5a84d5da434eeff6}} 
+\index{LDR\_config.c@{LDR\_config.c}!LDR\_Vo@{LDR\_Vo}}
+\index{LDR\_Vo@{LDR\_Vo}!LDR\_config.c@{LDR\_config.c}}
+\doxysubsubsection{\texorpdfstring{LDR\_Vo}{LDR\_Vo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} LDR\+\_\+\+Vo}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    .Port           =   (1)         ,}
+\DoxyCodeLine{}
+\DoxyCodeLine{    .Pin            =   (0)         ,}
+\DoxyCodeLine{}
+\DoxyCodeLine{    .Mode           =  (0b11)  ,}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_l_d_r__config_8c_source_l00026}{26}} of file \mbox{\hyperlink{_l_d_r__config_8c_source}{LDR\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_d_r__program_8c_source_l00036}{HLDR\+\_\+v\+Init()}}.
+
+\mbox{\Hypertarget{_l_d_r__config_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}\label{_l_d_r__config_8c_aa5a37a371d8f0ac854a4e3f94bff2a09}} 
+\index{LDR\_config.c@{LDR\_config.c}!LDR\_CHANNEL@{LDR\_CHANNEL}}
+\index{LDR\_CHANNEL@{LDR\_CHANNEL}!LDR\_config.c@{LDR\_config.c}}
+\doxysubsubsection{\texorpdfstring{LDR\_CHANNEL}{LDR\_CHANNEL}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} LDR\+\_\+\+CHANNEL = 8}
+
+
+
+Definition at line \mbox{\hyperlink{_l_d_r__config_8c_source_l00041}{41}} of file \mbox{\hyperlink{_l_d_r__config_8c_source}{LDR\+\_\+config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_d_r__program_8c_source_l00048}{HLDR\+\_\+u16\+Digital\+Output\+Value()}}.
+

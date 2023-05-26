@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['hdcm_5fvinitmotor_0',['HDCM_vInitMotor',['../_d_c_m__interface_8h.html#abb7950e9d50ca2626641fd453a588fd7',1,'HDCM_vInitMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration):&#160;DCM_interface.h'],['../_d_c_m__program_8c.html#ab932a8d33764b8f9e4db1762ec1dea76',1,'HDCM_vInitMotor(DCM_MotorConfiguration *pMotorConfiguration):&#160;DCM_program.c']]],
-  ['hdcm_5fvmovebackward_1',['HDCM_vMoveBackward',['../_d_c_m__interface_8h.html#a5de2441761aa1bd6ec6c62c7514cc032',1,'HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration):&#160;DCM_interface.h'],['../_d_c_m__program_8c.html#ad81f5a96c1437d2d1a2b52d8ecef46aa',1,'HDCM_vMoveBackward(DCM_MotorConfiguration *pMotorConfiguration):&#160;DCM_program.c']]],
-  ['hdcm_5fvmoveforward_2',['HDCM_vMoveForward',['../_d_c_m__interface_8h.html#aff110757165493eab42865f08f94010e',1,'HDCM_vMoveForward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration):&#160;DCM_interface.h'],['../_d_c_m__program_8c.html#a299e66eb30f20f87b00ec50ff8f99aa5',1,'HDCM_vMoveForward(DCM_MotorConfiguration *pMotorConfiguration):&#160;DCM_program.c']]],
-  ['hdcm_5fvstopmotor_3',['HDCM_vStopMotor',['../_d_c_m__interface_8h.html#a3165c909bf3a628b59eb97dc27b36002',1,'HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration):&#160;DCM_interface.h'],['../_d_c_m__program_8c.html#a8e7c5d959de85f5f4174139ec5f5145a',1,'HDCM_vStopMotor(DCM_MotorConfiguration *pMotorConfiguration):&#160;DCM_program.c']]]
+  ['hdcm_5fvgetspeedvalue_0',['HDCM_vGetSpeedValue',['../_d_c_m__interface_8h.html#a9b5faae8a727eb43586f154cc39d839b',1,'DCM_interface.h']]],
+  ['hdcm_5fvinitmotor_1',['HDCM_vInitMotor',['../_d_c_m__interface_8h.html#abb7950e9d50ca2626641fd453a588fd7',1,'DCM_interface.h']]],
+  ['hdcm_5fvmotorspeedcntrl_2',['HDCM_vMotorSpeedCntrl',['../_d_c_m__interface_8h.html#aff88e1c36ce0f3100c3b6859452a7f1a',1,'DCM_interface.h']]],
+  ['hdcm_5fvmovebackward_3',['HDCM_vMoveBackward',['../_d_c_m__interface_8h.html#a5de2441761aa1bd6ec6c62c7514cc032',1,'DCM_interface.h']]],
+  ['hdcm_5fvmoveforward_4',['HDCM_vMoveForward',['../_d_c_m__interface_8h.html#aff110757165493eab42865f08f94010e',1,'DCM_interface.h']]],
+  ['hdcm_5fvstopmotor_5',['HDCM_vStopMotor',['../_d_c_m__interface_8h.html#a3165c909bf3a628b59eb97dc27b36002',1,'DCM_interface.h']]]
 ];

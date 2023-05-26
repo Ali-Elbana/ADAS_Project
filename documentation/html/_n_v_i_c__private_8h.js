@@ -6,7 +6,6 @@ var _n_v_i_c__private_8h =
     [ "SCB_BASE_ADDRESS", "group__nvic__addresses.html#gaa677236f48778f5c6d5cc28679e9f2c6", null ],
     [ "MSCB", "group__nvic__registers.html#gad64f4ba7787546fc107c2c2993554e91", null ],
     [ "MNVIC", "group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce", null ],
-    [ "MNVIC_STIR", "_n_v_i_c__private_8h.html#a13be8416c2e6532faa1a48365b876ed7", null ],
     [ "VECTKEY_PASSWORD", "_n_v_i_c__private_8h.html#a9c228760273574d427b5d2bbcccc6c22", null ],
     [ "PEND_SV", "group__nvic__settable__priorities.html#ga8553be2a10dccdecaf91ac8f8a2f294d", null ],
     [ "SYSTICK", "group__nvic__settable__priorities.html#gad942404ac7d5ff6c1c65dec93525dcb9", null ],

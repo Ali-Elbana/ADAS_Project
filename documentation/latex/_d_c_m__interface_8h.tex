@@ -17,7 +17,29 @@ struct \mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Co
 \#define \mbox{\hyperlink{group__motor__directions_ga6ddfdda7a062d10cff4a72b76b44aeb8}{FORWARD}}~(\mbox{\hyperlink{group__motor__rotation__direction_gabe61b07c31c2a3e90576eb4c5d95b024}{CW}})
 \begin{DoxyCompactList}\small\item\em Motor forward direction. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{group__motor__directions_gadf445abfe1b77fa63f89e315ccc2f7f2}{BACKWARD}}~(\mbox{\hyperlink{group__motor__rotation__direction_ga8a460b6555077a64fc97f2e7ef47b843}{CCW}})
-\begin{DoxyCompactList}\small\item\em Motor backward direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Motor backward direction. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_gae5ac5eeae3cf04a9d1e585344e54bdeb}{SPEED\+\_\+0\+\_\+\+PERCENT}}~0
+\begin{DoxyCompactList}\small\item\em Motor speed 0\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_gac296ff023217cd73073b3a32e0864727}{SPEED\+\_\+10\+\_\+\+PERCENT}}~1000U
+\begin{DoxyCompactList}\small\item\em Motor speed 10\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga7cb645d6cb6ab47b0b69c1fce5b2f853}{SPEED\+\_\+20\+\_\+\+PERCENT}}~2000U
+\begin{DoxyCompactList}\small\item\em Motor speed 20\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga13eb4732e1a07060a4c943c3bce40539}{SPEED\+\_\+30\+\_\+\+PERCENT}}~3000U
+\begin{DoxyCompactList}\small\item\em Motor speed 30\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_gae33aebfaba65805e468fe5ad991ac75d}{SPEED\+\_\+40\+\_\+\+PERCENT}}~4000U
+\begin{DoxyCompactList}\small\item\em Motor speed 40\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga4e407fa9631b9146b77dc0ed6f9fe99b}{SPEED\+\_\+50\+\_\+\+PERCENT}}~5000U
+\begin{DoxyCompactList}\small\item\em Motor speed 50\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga01d0d7cec4aad7ad1407eac449781ada}{SPEED\+\_\+60\+\_\+\+PERCENT}}~6000U
+\begin{DoxyCompactList}\small\item\em Motor speed 60\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga39cfdf3b19db22054b82f0c208e70c35}{SPEED\+\_\+70\+\_\+\+PERCENT}}~7000U
+\begin{DoxyCompactList}\small\item\em Motor speed 70\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga3a6da91fd7977c5eb7fd350b1f7c60eb}{SPEED\+\_\+80\+\_\+\+PERCENT}}~8000U
+\begin{DoxyCompactList}\small\item\em Motor speed 80\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga856eec191c77c8452e68eec98c6f8b13}{SPEED\+\_\+90\+\_\+\+PERCENT}}~9000U
+\begin{DoxyCompactList}\small\item\em Motor speed 90\%. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group__motor__speeds_ga89268c7ea49fe78f02601656198bfcaf}{SPEED\+\_\+100\+\_\+\+PERCENT}}~10000U
+\begin{DoxyCompactList}\small\item\em Motor speed 100\%. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,7 +50,11 @@ void \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HD
 void \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\+\_\+v\+Move\+Backward}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
 \begin{DoxyCompactList}\small\item\em Move a certain motor backward. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\+\_\+v\+Stop\+Motor}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
-\begin{DoxyCompactList}\small\item\em Stop a certain motor\textquotesingle{}s movement completely. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Stop a certain motor\textquotesingle{}s movement completely. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_d_c_m__interface_8h_aff88e1c36ce0f3100c3b6859452a7f1a}{HDCM\+\_\+v\+Motor\+Speed\+Cntrl}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}}) A\+\_\+u16\+Speed\+Value)
+\begin{DoxyCompactList}\small\item\em Set a certain motor\textquotesingle{}s speed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{_d_c_m__interface_8h_a9b5faae8a727eb43586f154cc39d839b}{HDCM\+\_\+v\+Get\+Speed\+Value}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}}) p\+Motor\+Configuration)
+\begin{DoxyCompactList}\small\item\em Get a certain motor\textquotesingle{}s speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -113,3 +139,38 @@ Stop a certain motor\textquotesingle{}s movement completely.
 \mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to stop \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{_d_c_m__interface_8h_aff88e1c36ce0f3100c3b6859452a7f1a}\label{_d_c_m__interface_8h_aff88e1c36ce0f3100c3b6859452a7f1a}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vMotorSpeedCntrl@{HDCM\_vMotorSpeedCntrl}}
+\index{HDCM\_vMotorSpeedCntrl@{HDCM\_vMotorSpeedCntrl}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vMotorSpeedCntrl()}{HDCM\_vMotorSpeedCntrl()}}
+{\footnotesize\ttfamily void HDCM\+\_\+v\+Motor\+Speed\+Cntrl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}})}]{p\+Motor\+Configuration,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}})}]{A\+\_\+u16\+Speed\+Value }\end{DoxyParamCaption})}
+
+
+
+Set a certain motor\textquotesingle{}s speed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to set its speed \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u16\+Speed\+Value} & The speed value to set the motor to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_d_c_m__interface_8h_a9b5faae8a727eb43586f154cc39d839b}\label{_d_c_m__interface_8h_a9b5faae8a727eb43586f154cc39d839b}} 
+\index{DCM\_interface.h@{DCM\_interface.h}!HDCM\_vGetSpeedValue@{HDCM\_vGetSpeedValue}}
+\index{HDCM\_vGetSpeedValue@{HDCM\_vGetSpeedValue}!DCM\_interface.h@{DCM\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HDCM\_vGetSpeedValue()}{HDCM\_vGetSpeedValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} HDCM\+\_\+v\+Get\+Speed\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}})}]{p\+Motor\+Configuration }\end{DoxyParamCaption})}
+
+
+
+Get a certain motor\textquotesingle{}s speed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to get its speed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The speed value of the motor 
+\end{DoxyReturn}
