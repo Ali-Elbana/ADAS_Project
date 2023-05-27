@@ -84,6 +84,7 @@ void AFCW_vModeON( void )
 		if( L_f32Distance < FCW_SAFE_DIST )
 		{
 			HBUZZER_vSoundOn( &Buzzer ) ;
+			HBluetooth_vSendString( "\nWarning there's an object 80cm away\n" ) ;
 		}
 		else if( L_f32Distance >= FCW_SAFE_DIST + HYSTRS_VALUE )
 		{
