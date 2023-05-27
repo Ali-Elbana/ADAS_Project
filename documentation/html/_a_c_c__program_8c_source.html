@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('_a_c_c__program_8c_source.html',''); i
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">static</span> <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_struct" href="struct_h_u_l_t_s_n_c___config_type.html">HULTSNC_ConfigType</a>)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>TRIG =</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>         .u8Port = <a class="code hl_define" href="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923">GPIO_PORTB</a> ,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>         .<a class="code hl_variable" href="struct_h_u_l_t_s_n_c___config_type.html#a6439a8215e05cda734aef4c58d715032">u8Port</a> = <a class="code hl_define" href="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923">GPIO_PORTB</a> ,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>         .u8Pin  = <a class="code hl_define" href="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91">GPIOx_PIN8</a></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      };</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
@@ -162,9 +162,9 @@ $(document).ready(function(){initNavTree('_a_c_c__program_8c_source.html',''); i
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        HULTSNC_vTrigger( &amp;TRIG ) ;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_function" href="_ultra_sonic__interface_8h.html#a945a8d36a184f5142f9dbc3a41c6cc29">HULTSNC_vTrigger</a>( &amp;TRIG ) ;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        L_f32Distance = HULTSNC_f32GetDistance(  ) ;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        L_f32Distance = <a class="code hl_function" href="_ultra_sonic__interface_8h.html#ad93d70bd64b874554813ab9e0f18f496">HULTSNC_f32GetDistance</a>(  ) ;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">if</span>( L_f32Distance &lt; ACC_SAFE_DIST )</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        {</div>
@@ -286,6 +286,8 @@ $(document).ready(function(){initNavTree('_a_c_c__program_8c_source.html',''); i
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="ttc" id="a_ultra_sonic__interface_8h_html_a945a8d36a184f5142f9dbc3a41c6cc29"><div class="ttname"><a href="_ultra_sonic__interface_8h.html#a945a8d36a184f5142f9dbc3a41c6cc29">HULTSNC_vTrigger</a></div><div class="ttdeci">void HULTSNC_vTrigger(HULTSNC_ConfigType *TRIG_psCfg)</div><div class="ttdoc">This function is responsible for triggering the ultrasonic sensor.</div><div class="ttdef"><b>Definition:</b> <a href="_ultra_sonic__program_8c_source.html#l00051">UltraSonic_program.c:51</a></div></div>
+<div class="ttc" id="a_ultra_sonic__interface_8h_html_ad93d70bd64b874554813ab9e0f18f496"><div class="ttname"><a href="_ultra_sonic__interface_8h.html#ad93d70bd64b874554813ab9e0f18f496">HULTSNC_f32GetDistance</a></div><div class="ttdeci">f32_t HULTSNC_f32GetDistance(void)</div><div class="ttdoc">This function is responsible for getting the distance measured by the ultrasonic sensor.</div><div class="ttdef"><b>Definition:</b> <a href="_ultra_sonic__program_8c_source.html#l00069">UltraSonic_program.c:69</a></div></div>
 <div class="ttc" id="agroup__compiler_html_gaf36fbf9b72d48ddc34a627487ef0bba9"><div class="ttname"><a href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a></div><div class="ttdeci">#define VAR(vartype)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">LSTD_COMPILER.h:23</a></div></div>
 <div class="ttc" id="agroup__gpio__output__pins_html_ga5baac9180cecd3947f641f5464b7fb91"><div class="ttname"><a href="group__gpio__output__pins.html#ga5baac9180cecd3947f641f5464b7fb91">GPIOx_PIN8</a></div><div class="ttdeci">#define GPIOx_PIN8</div><div class="ttdoc">GPIO PIN 8.</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__interface_8h_source.html#l00400">GPIO_interface.h:400</a></div></div>
 <div class="ttc" id="agroup__gpio__ports_html_gaf197726bc9dc7e610c663cf62d196923"><div class="ttname"><a href="group__gpio__ports.html#gaf197726bc9dc7e610c663cf62d196923">GPIO_PORTB</a></div><div class="ttdeci">#define GPIO_PORTB</div><div class="ttdoc">GPIO Port B.</div><div class="ttdef"><b>Definition:</b> <a href="_g_p_i_o__interface_8h_source.html#l00213">GPIO_interface.h:213</a></div></div>
@@ -300,14 +302,15 @@ $(document).ready(function(){initNavTree('_a_c_c__program_8c_source.html',''); i
 <div class="ttc" id="agroup__typedefs_html_ga8127f1441872f9f912b20a65f40d4d24"><div class="ttname"><a href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a></div><div class="ttdeci">unsigned char u8_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00030">LSTD_TYPES.h:30</a></div></div>
 <div class="ttc" id="agroup__typedefs_html_gad8e451647f66f06a13c0baefa773a542"><div class="ttname"><a href="group__typedefs.html#gad8e451647f66f06a13c0baefa773a542">f32_t</a></div><div class="ttdeci">float f32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00093">LSTD_TYPES.h:93</a></div></div>
 <div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00051">LSTD_TYPES.h:51</a></div></div>
-<div class="ttc" id="astruct_h_u_l_t_s_n_c___config_type_html"><div class="ttname"><a href="struct_h_u_l_t_s_n_c___config_type.html">HULTSNC_ConfigType</a></div><div class="ttdef"><b>Definition:</b> <a href="_ultra_sonic__interface_8h_source.html#l00013">UltraSonic_interface.h:14</a></div></div>
+<div class="ttc" id="astruct_h_u_l_t_s_n_c___config_type_html"><div class="ttname"><a href="struct_h_u_l_t_s_n_c___config_type.html">HULTSNC_ConfigType</a></div><div class="ttdoc">Ultrasonic Configurations.</div><div class="ttdef"><b>Definition:</b> <a href="_ultra_sonic__interface_8h_source.html#l00020">UltraSonic_interface.h:21</a></div></div>
+<div class="ttc" id="astruct_h_u_l_t_s_n_c___config_type_html_a6439a8215e05cda734aef4c58d715032"><div class="ttname"><a href="struct_h_u_l_t_s_n_c___config_type.html#a6439a8215e05cda734aef4c58d715032">HULTSNC_ConfigType::u8Port</a></div><div class="ttdeci">u8_t u8Port</div><div class="ttdoc">Trigger Port.</div><div class="ttdef"><b>Definition:</b> <a href="_ultra_sonic__interface_8h_source.html#l00025">UltraSonic_interface.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d4bbb3e6039411c85d738231040299b0.html">APP</a></li><li class="navelem"><a class="el" href="dir_25493b7cead7992913ec4661e876559a.html">ACC</a></li><li class="navelem"><b>ACC_program.c</b></li>
-    <li class="footer">Generated on Sat May 27 2023 00:03:12 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun May 28 2023 01:35:10 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

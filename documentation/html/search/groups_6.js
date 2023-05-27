@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['nvic_20addresses_0',['NVIC Addresses',['../group__nvic__addresses.html',1,'']]],
-  ['nvic_20registers_1',['NVIC Registers',['../group__nvic__registers.html',1,'']]],
-  ['nvic_20settable_20priorities_2',['NVIC Settable Priorities',['../group__nvic__settable__priorities.html',1,'']]],
-  ['nvic_20vector_20table_3',['NVIC Vector Table',['../group__vector__table.html',1,'']]]
+  ['id_20options_0',['ID options',['../group___bus.html',1,'(Global Namespace)'],['../group___peripheral.html',1,'(Global Namespace)']]],
+  ['interrupt_20line_20ids_1',['Interrupt line IDs',['../group__interrupt__lines.html',1,'']]],
+  ['interrupt_20priority_20grouping_2',['Interrupt priority grouping',['../group__interrupt__prioty__grouping.html',1,'']]],
+  ['interrupt_20trigger_20status_3',['Interrupt trigger status',['../group__interrupt__trigger__status.html',1,'']]]
 ];

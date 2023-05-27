@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['single_5finterval_5ftick_5ftime_0',['SINGLE_INTERVAL_TICK_TIME',['../_sys_tick__interface_8h.html#ade19761cee9e365eed75787eb739dc00',1,'SysTick_interface.h']]]
+  ['rcc_0',['RCC',['../_m_r_c_c__private_8h.html#a74944438a086975793d26ae48d5882d4',1,'MRCC_private.h']]],
+  ['rcc_5fbase_5faddress_1',['RCC_BASE_ADDRESS',['../_m_r_c_c__private_8h.html#aa539b1cce2e30fa6c6721693837ff2c1',1,'MRCC_private.h']]]
 ];

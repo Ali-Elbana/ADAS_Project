@@ -38,7 +38,7 @@
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00034}00034 \textcolor{keyword}{static} \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\_ConfigType}})}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00035}00035 TRIG =}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00036}00036       \{}
-\DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00037}00037          .u8Port = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}} ,}
+\DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00037}00037          .\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type_a6439a8215e05cda734aef4c58d715032}{u8Port}} = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}} ,}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00038}00038          .u8Pin  = \mbox{\hyperlink{group__gpio__output__pins_ga5baac9180cecd3947f641f5464b7fb91}{GPIOx\_PIN8}}}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00039}00039       \};}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00040}00040 }
@@ -71,9 +71,9 @@
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00067}00067     \textcolor{keywordflow}{do}}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00068}00068     \{}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00069}00069 }
-\DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00070}00070         HULTSNC\_vTrigger( \&TRIG ) ;}
+\DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00070}00070         \mbox{\hyperlink{_ultra_sonic__interface_8h_a945a8d36a184f5142f9dbc3a41c6cc29}{HULTSNC\_vTrigger}}( \&TRIG ) ;}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00071}00071 }
-\DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00072}00072         L\_f32Distance = HULTSNC\_f32GetDistance(  ) ;}
+\DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00072}00072         L\_f32Distance = \mbox{\hyperlink{_ultra_sonic__interface_8h_ad93d70bd64b874554813ab9e0f18f496}{HULTSNC\_f32GetDistance}}(  ) ;}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00073}00073 }
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00074}00074         \textcolor{keywordflow}{if}( L\_f32Distance < ACC\_SAFE\_DIST )}
 \DoxyCodeLine{\Hypertarget{_a_c_c__program_8c_source_l00075}00075         \{}

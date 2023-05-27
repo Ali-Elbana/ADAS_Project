@@ -1,5 +1,10 @@
 \hypertarget{_b_u_z_z_e_r__program_8c}{}\doxysection{COTS/\+HAL/\+BUZZER/\+BUZZER\+\_\+program.c File Reference}
 \label{_b_u_z_z_e_r__program_8c}\index{COTS/HAL/BUZZER/BUZZER\_program.c@{COTS/HAL/BUZZER/BUZZER\_program.c}}
+
+
+This file contains the logical operations of the buzzer module.  
+
+
 {\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
@@ -10,13 +15,31 @@
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_aa0f35c6332e6a0b643e65b91cefa7916}{HBUZZER\+\_\+v\+Init}} (\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}} $\ast$p\+Buzzer\+\_\+\+Cfg)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is used to initialize the Buzzer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_ae5e31e362e461843b73995fd0814b1e3}{HBUZZER\+\_\+v\+Sound\+On}} (\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}} $\ast$p\+Buzzer\+\_\+\+Cfg)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is used to sound the Buzzer on. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_a17f92d0a2ce07cb97acf7ed875497125}{HBUZZER\+\_\+v\+Sound\+Off}} (\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}} $\ast$p\+Buzzer\+\_\+\+Cfg)
-\item 
+\begin{DoxyCompactList}\small\item\em This function is used to sound the Buzzer off. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_a5134fd7c92dfb07fcdf87c70dc02240f}{HBUZZER\+\_\+v\+Toggle\+Sound}} (\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}} $\ast$p\+Buzzer\+\_\+\+Cfg)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function is used to toggle the sound of the buzzer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the logical operations of the buzzer module. 
+
+\begin{DoxyAuthor}{Author}
+Mohamed Alaa 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12/22/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
+
 
 
 \doxysubsection{Function Documentation}
@@ -28,28 +51,36 @@ void \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_a5134fd7c92dfb07fcdf87c70dc02240f
 
 
 
-Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00024}{24}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
+This function is used to initialize the Buzzer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration structure to initialize the Buzzer with a certain port and pin \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00026}{26}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00025 \{}
-\DoxyCodeLine{00026     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}})}
-\DoxyCodeLine{00027     Buzzer\_Cfg =}
-\DoxyCodeLine{00028         \{}
-\DoxyCodeLine{00029             .Port = pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}},}
-\DoxyCodeLine{00030             .Pin = pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}},}
-\DoxyCodeLine{00031             .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
-\DoxyCodeLine{00032             .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
-\DoxyCodeLine{00033             .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
-\DoxyCodeLine{00034             .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}\};}
-\DoxyCodeLine{00035 }
-\DoxyCodeLine{00036     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&Buzzer\_Cfg);}
-\DoxyCodeLine{00037 \}}
+\DoxyCodeLine{00027 \{}
+\DoxyCodeLine{00028     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) Buzzer\_Cfg =}
+\DoxyCodeLine{00029         \{}
+\DoxyCodeLine{00030             .Port = pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}},}
+\DoxyCodeLine{00031             .Pin = pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}},}
+\DoxyCodeLine{00032             .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
+\DoxyCodeLine{00033             .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00034             .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00035             .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}\};}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&Buzzer\_Cfg);}
+\DoxyCodeLine{00038 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00258}{GPIOx\+\_\+\+Low\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00178}{GPIOx\+\_\+\+MODE\+\_\+\+OUTPUT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00294}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00243}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00421}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00026}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00022}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00257}{GPIOx\+\_\+\+Low\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00177}{GPIOx\+\_\+\+MODE\+\_\+\+OUTPUT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00293}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00242}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00421}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00034}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00030}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_b_u_z_z_e_r__program_8c_ae5e31e362e461843b73995fd0814b1e3}\label{_b_u_z_z_e_r__program_8c_ae5e31e362e461843b73995fd0814b1e3}} 
 \index{BUZZER\_program.c@{BUZZER\_program.c}!HBUZZER\_vSoundOn@{HBUZZER\_vSoundOn}}
@@ -59,18 +90,27 @@ References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00258}{GPIOx\+\_\+\+L
 
 
 
-Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00042}{42}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
+This function is used to sound the Buzzer on. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration to sound on the Buzzer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00043}{43}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00043 \{}
-\DoxyCodeLine{00044     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00045 \}}
+\DoxyCodeLine{00044 \{}
+\DoxyCodeLine{00045     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{00046 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00323}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00026}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, and \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00022}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00322}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00034}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, and \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00030}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}.
 
 \mbox{\Hypertarget{_b_u_z_z_e_r__program_8c_a17f92d0a2ce07cb97acf7ed875497125}\label{_b_u_z_z_e_r__program_8c_a17f92d0a2ce07cb97acf7ed875497125}} 
 \index{BUZZER\_program.c@{BUZZER\_program.c}!HBUZZER\_vSoundOff@{HBUZZER\_vSoundOff}}
@@ -80,18 +120,27 @@ References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00323}{GPIOx\+\_\+\+H
 
 
 
-Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00050}{50}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
+This function is used to sound the Buzzer off. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration to sound off the Buzzer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00051}{51}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00051 \{}
-\DoxyCodeLine{00052     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00053 \}}
+\DoxyCodeLine{00052 \{}
+\DoxyCodeLine{00053     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00054 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00330}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00026}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, and \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00022}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}.
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00329}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00034}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, and \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00030}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}.
 
 \mbox{\Hypertarget{_b_u_z_z_e_r__program_8c_a5134fd7c92dfb07fcdf87c70dc02240f}\label{_b_u_z_z_e_r__program_8c_a5134fd7c92dfb07fcdf87c70dc02240f}} 
 \index{BUZZER\_program.c@{BUZZER\_program.c}!HBUZZER\_vToggleSound@{HBUZZER\_vToggleSound}}
@@ -101,16 +150,25 @@ References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00330}{GPIOx\+\_\+\+L
 
 
 
-Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00058}{58}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
+This function is used to toggle the sound of the buzzer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration to toggle the sound of the Buzzer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source_l00059}{59}} of file \mbox{\hyperlink{_b_u_z_z_e_r__program_8c_source}{BUZZER\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00059 \{}
-\DoxyCodeLine{00060     \mbox{\hyperlink{_g_p_i_o__interface_8h_a36bc9410064c8b745c2ef939c545e8f4}{MGPIOx\_vTogglePinValue}}(pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}});}
-\DoxyCodeLine{00061 \}}
+\DoxyCodeLine{00060 \{}
+\DoxyCodeLine{00061     \mbox{\hyperlink{_g_p_i_o__interface_8h_a36bc9410064c8b745c2ef939c545e8f4}{MGPIOx\_vTogglePinValue}}(pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pBuzzer\_Cfg-\/>\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}});}
+\DoxyCodeLine{00062 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00435}{MGPIOx\+\_\+v\+Toggle\+Pin\+Value()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00026}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, and \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00022}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}.
+References \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00435}{MGPIOx\+\_\+v\+Toggle\+Pin\+Value()}}, \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00034}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Pin}}, and \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_source_l00030}{BUZZER\+\_\+\+Buzzer\+Configuration\+::u8\+Port}}.
 

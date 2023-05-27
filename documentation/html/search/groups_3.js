@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['exti_20line_20settings_0',['EXTI Line Settings',['../group__exti__line__settings.html',1,'']]],
-  ['exti_20lines_20status_1',['EXTI Lines Status',['../group__exti__line__status.html',1,'']]],
-  ['exti_20memory_20addresses_2',['EXTI Memory Addresses',['../group__exti__memory__addresses.html',1,'']]],
-  ['exti_20registers_3',['EXTI Registers',['../group__exti__registers.html',1,'']]]
+  ['dc_20motor_20directions_0',['DC Motor Directions',['../group__motor__directions.html',1,'']]],
+  ['dc_20motor_20rotation_20directions_1',['DC Motor Rotation Directions',['../group__motor__rotation__direction.html',1,'']]],
+  ['dc_20motor_20speeds_2',['DC Motor Speeds',['../group__motor__speeds.html',1,'']]],
+  ['delay_20units_3',['Delay Units',['../group__delay__units.html',1,'']]]
 ];

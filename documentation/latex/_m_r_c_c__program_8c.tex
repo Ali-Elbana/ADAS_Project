@@ -18,9 +18,9 @@ This file contains the source code of the interfacing for the RCC module.
 void \mbox{\hyperlink{_m_r_c_c__program_8c_ab4245d45e035033aece85f81662a9cf0}{MRCC\+\_\+v\+Init}} (void)
 \begin{DoxyCompactList}\small\item\em Initialize the RCC with a certain configurations. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_m_r_c_c__program_8c_adf4049d31c5859572e821de89f05d6df}{MRCC\+\_\+v\+Enable\+Periphral\+CLK}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Bus\+ID, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Periphral\+ID)
-\item 
+\begin{DoxyCompactList}\small\item\em Enabling the CLK on a specific Peripheral. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_m_r_c_c__program_8c_aae7b5bdf39efe155a97b93841422cce5}{MRCC\+\_\+v\+Disable\+Periphral\+CLK}} (\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Bus\+ID, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} A\+\_\+u32\+Periphral\+ID)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Disabling the CLK on a specific Peripheral. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -438,6 +438,17 @@ References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+
 
 
 
+Enabling the CLK on a specific Peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Bus\+ID} & Bus ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Periphral\+ID} & Peripheral ID. \\
+\hline
+\end{DoxyParams}
+
+
 Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00400}{400}} of file \mbox{\hyperlink{_m_r_c_c__program_8c_source}{MRCC\+\_\+program.\+c}}.
 
 
@@ -492,12 +503,31 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00400}{400}} of
 \DoxyCodeLine{00448 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00404}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00051}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00079}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00058}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00065}{RCC\+\_\+\+APB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB2}}, and \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}.
+
+
+
+Referenced by \mbox{\hyperlink{_a_d_c__program_8c_source_l00393}{MADC\+\_\+v\+Enable()}}, \mbox{\hyperlink{_a_d_c__program_8c_source_l00030}{MADC\+\_\+v\+Init()}}, and \mbox{\hyperlink{_u_a_r_t__program_8c_source_l00037}{MUSART\+\_\+v\+Init()}}.
+
 \mbox{\Hypertarget{_m_r_c_c__program_8c_aae7b5bdf39efe155a97b93841422cce5}\label{_m_r_c_c__program_8c_aae7b5bdf39efe155a97b93841422cce5}} 
 \index{MRCC\_program.c@{MRCC\_program.c}!MRCC\_vDisablePeriphralCLK@{MRCC\_vDisablePeriphralCLK}}
 \index{MRCC\_vDisablePeriphralCLK@{MRCC\_vDisablePeriphralCLK}!MRCC\_program.c@{MRCC\_program.c}}
 \doxysubsubsection{\texorpdfstring{MRCC\_vDisablePeriphralCLK()}{MRCC\_vDisablePeriphralCLK()}}
 {\footnotesize\ttfamily void MRCC\+\_\+v\+Disable\+Periphral\+CLK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Bus\+ID,  }\item[{\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}}}]{A\+\_\+u32\+Periphral\+ID }\end{DoxyParamCaption})}
 
+
+
+Disabling the CLK on a specific Peripheral. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Bus\+ID} & Bus ID. \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u32\+Periphral\+ID} & Peripheral ID. \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00453}{453}} of file \mbox{\hyperlink{_m_r_c_c__program_8c_source}{MRCC\+\_\+program.\+c}}.
@@ -556,3 +586,11 @@ Definition at line \mbox{\hyperlink{_m_r_c_c__program_8c_source_l00453}{453}} of
 \DoxyCodeLine{00503 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00030}{CLR\+\_\+\+BIT}}, \mbox{\hyperlink{_n_v_i_c__interface_8h_source_l00404}{RCC}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00051}{RCC\+\_\+\+AHB1}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00079}{RCC\+\_\+\+AHB1\+LPENR}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00058}{RCC\+\_\+\+AHB2}}, \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00065}{RCC\+\_\+\+APB1}}, and \mbox{\hyperlink{_m_r_c_c__interface_8h_source_l00072}{RCC\+\_\+\+APB2}}.
+
+
+
+Referenced by \mbox{\hyperlink{_a_d_c__program_8c_source_l00379}{MADC\+\_\+v\+Disable()}}.
+

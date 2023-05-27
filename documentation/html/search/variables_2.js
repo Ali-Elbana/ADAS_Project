@@ -11,11 +11,12 @@ var searchData=
   ['cmpcr_8',['CMPCR',['../struct_m_s_y_s_c_f_g___mem_map__t.html#a8f1959f782e609544a8022ffd291dca4',1,'MSYSCFG_MemMap_t']]],
   ['cpuid_9',['CPUID',['../struct_s_c_b___memory_map_type.html#a23c80e95b559f9ffb0f2e26aa1ff9a59',1,'SCB_MemoryMapType']]],
   ['cr_10',['CR',['../struct_r_c_c___memory_map_type.html#abab8fac8c1e8464cebada44cc0c95a0e',1,'RCC_MemoryMapType']]],
-  ['cr1_11',['CR1',['../struct_a_d_c___memory_map_type.html#a1b84b4cd1a6d420c4172ebe1a9f29ba9',1,'ADC_MemoryMapType']]],
+  ['cr1_11',['CR1',['../struct_a_d_c___memory_map_type.html#a1b84b4cd1a6d420c4172ebe1a9f29ba9',1,'ADC_MemoryMapType::CR1()'],['../struct_s_p_i___memory_map_type.html#ab50016a07498c1a3c636f66318ae2ffc',1,'SPI_MemoryMapType::CR1()']]],
   ['cr1_5freg_12',['CR1_REG',['../struct_u_s_a_r_t___memory_map_type.html#a259bcc8d1757d6bc77bbff16840f64b1',1,'USART_MemoryMapType']]],
-  ['cr2_13',['CR2',['../struct_a_d_c___memory_map_type.html#a5ca394c394fd2c5fe2b8e5dd6aadb36e',1,'ADC_MemoryMapType']]],
+  ['cr2_13',['CR2',['../struct_a_d_c___memory_map_type.html#a5ca394c394fd2c5fe2b8e5dd6aadb36e',1,'ADC_MemoryMapType::CR2()'],['../struct_s_p_i___memory_map_type.html#a880617fa1f407b35343c4e12f1c0840a',1,'SPI_MemoryMapType::CR2()']]],
   ['cr2_5freg_14',['CR2_REG',['../struct_u_s_a_r_t___memory_map_type.html#af226d966a116ce9a6a703070339ee580',1,'USART_MemoryMapType']]],
   ['cr3_5freg_15',['CR3_REG',['../struct_u_s_a_r_t___memory_map_type.html#add3547c67019a8ea87a5868995d207a5',1,'USART_MemoryMapType']]],
-  ['csr_16',['CSR',['../struct_r_c_c___memory_map_type.html#a3762c7fd395e63fc23f9385119d2a6a0',1,'RCC_MemoryMapType']]],
-  ['ctrl_17',['CTRL',['../struct_sys_tick___type.html#ac17d66221ad72dbebf4527a848136238',1,'SysTick_Type']]]
+  ['crcpr_16',['CRCPR',['../struct_s_p_i___memory_map_type.html#a2bb6466d35c990b64566dedcb2967ac5',1,'SPI_MemoryMapType']]],
+  ['csr_17',['CSR',['../struct_r_c_c___memory_map_type.html#a3762c7fd395e63fc23f9385119d2a6a0',1,'RCC_MemoryMapType']]],
+  ['ctrl_18',['CTRL',['../struct_sys_tick___type.html#ac17d66221ad72dbebf4527a848136238',1,'SysTick_Type']]]
 ];

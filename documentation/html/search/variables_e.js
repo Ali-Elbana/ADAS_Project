@@ -20,5 +20,6 @@ var searchData=
   ['reserved8_17',['Reserved8',['../struct_r_c_c___memory_map_type.html#acac5e0fdbbeb2315b558eb9a409f17c6',1,'RCC_MemoryMapType']]],
   ['reserved9_18',['Reserved9',['../struct_r_c_c___memory_map_type.html#a691232770077a4c690ec4dca92ace10a',1,'RCC_MemoryMapType']]],
   ['rserved1x_19',['RSERVED1x',['../struct_n_v_i_c___memory_map_type.html#a7b4a250cdd672c5d5dd3700de09972d6',1,'NVIC_MemoryMapType']]],
-  ['rtsr_20',['RTSR',['../struct_e_x_t_i___type.html#a163576b305c3d33592299697b43d973d',1,'EXTI_Type']]]
+  ['rtsr_20',['RTSR',['../struct_e_x_t_i___type.html#a163576b305c3d33592299697b43d973d',1,'EXTI_Type']]],
+  ['rxcrcr_21',['RXCRCR',['../struct_s_p_i___memory_map_type.html#a125aa142650722f002ab0e59a194f617',1,'SPI_MemoryMapType']]]
 ];

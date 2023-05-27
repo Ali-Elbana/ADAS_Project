@@ -30,6 +30,6 @@ var searchData=
   ['dma2_5fstream6_27',['DMA2_STREAM6',['../group__vector__table.html#gaa805a63d66104f6f0dc048f9d063ed49',1,'NVIC_interface.h']]],
   ['dma2_5fstream7_28',['DMA2_STREAM7',['../group__vector__table.html#gaf73ac59b037781c5cc0cc3562ffacadc',1,'NVIC_interface.h']]],
   ['dont_5fassertrequest_29',['Dont_AssertRequest',['../group__systick__exception__request__enable.html#ga2b134b9547ceef09338eb24fc09e7a9d',1,'SysTick_private.h']]],
-  ['dr_30',['DR',['../struct_a_d_c___memory_map_type.html#abcbd82166451364e69be1e7e1f514bd9',1,'ADC_MemoryMapType']]],
+  ['dr_30',['DR',['../struct_a_d_c___memory_map_type.html#abcbd82166451364e69be1e7e1f514bd9',1,'ADC_MemoryMapType::DR()'],['../struct_s_p_i___memory_map_type.html#aa9408f79de0236266fecde5ccf6e2246',1,'SPI_MemoryMapType::DR()']]],
   ['dr_5freg_31',['DR_REG',['../struct_u_s_a_r_t___memory_map_type.html#a3c8a559f7aa8d7f2d6a4b42e43c8c2a0',1,'USART_MemoryMapType']]]
 ];

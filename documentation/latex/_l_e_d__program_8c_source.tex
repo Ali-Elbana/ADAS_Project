@@ -26,62 +26,61 @@
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00022}00022 \textcolor{comment}{/*                     Functions' implementations                       */}}
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00023}00023 \textcolor{comment}{/************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00024}00024 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00025}00025 \textcolor{keywordtype}{void} HLED\_vInit(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg)}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00025}00025 \textcolor{keywordtype}{void} HLED\_vInit(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}} * pLED\_Cfg)}
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00026}00026 \{}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00027}00027     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) LED\_Cfg =}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00028}00028         \{}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00029}00029             .Port = pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}},}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00030}00030             .Pin = pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}},}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00031}00031             .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00032}00032             .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00033}00033             .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00034}00034             .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}\};}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00035}00035 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00036}00036     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&LED\_Cfg);}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00037}00037 \}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00038}00038 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00039}00039 \textcolor{comment}{/*******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00040}00040 \textcolor{comment}{/******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00041}00041 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00042}00042 \textcolor{keywordtype}{void} HLED\_vTurnLightOn(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg)}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00043}00043 \{}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00044}00044     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00045}00045 \}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00046}00046 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00047}00047 \textcolor{comment}{/*******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00048}00048 \textcolor{comment}{/******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00049}00049 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00050}00050 \textcolor{keywordtype}{void} HLED\_vTurnLightOff(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg)}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00051}00051 \{}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00052}00052     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00053}00053 \}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00054}00054 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00055}00055 \textcolor{comment}{/*******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00056}00056 \textcolor{comment}{/******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00058}00058 \textcolor{keywordtype}{void} HLED\_vToggleLight(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg)}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00059}00059 \{}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00060}00060     \mbox{\hyperlink{_g_p_i_o__interface_8h_a36bc9410064c8b745c2ef939c545e8f4}{MGPIOx\_vTogglePinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}});}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00061}00061 \}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00062}00062 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00063}00063 \textcolor{comment}{/*******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00064}00064 \textcolor{comment}{/******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00065}00065 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00066}00066 \textcolor{keywordtype}{void} HLED\_vBlinkLED( \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}}) pLED\_Cfg, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}}) A\_u32MilliSecs )}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00067}00067 \{}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00068}00068 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00069}00069     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00070}00070 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00071}00071     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( A\_u32MilliSecs ) ;}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00072}00072 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00073}00073     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00074}00074 }
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00075}00075     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( A\_u32MilliSecs ) ;}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00027}00027     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}})}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00028}00028     LED\_Cfg =}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00029}00029         \{}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00030}00030             .Port = pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}},}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00031}00031             .Pin = pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}},}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00032}00032             .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00033}00033             .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00034}00034             .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00035}00035             .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}\};}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00037}00037     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&LED\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00038}00038 \}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00040}00040 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00041}00041 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00043}00043 \textcolor{keywordtype}{void} HLED\_vTurnLightOn(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}} * pLED\_Cfg)}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00044}00044 \{}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00045}00045     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00048}00048 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00049}00049 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00051}00051 \textcolor{keywordtype}{void} HLED\_vTurnLightOff(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}} * pLED\_Cfg)}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00052}00052 \{}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00053}00053     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00054}00054 \}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00056}00056 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00057}00057 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00059}00059 \textcolor{keywordtype}{void} HLED\_vToggleLight(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}} * pLED\_Cfg)}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00060}00060 \{}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00061}00061     \mbox{\hyperlink{_g_p_i_o__interface_8h_a36bc9410064c8b745c2ef939c545e8f4}{MGPIOx\_vTogglePinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}});}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00062}00062 \}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00064}00064 \textcolor{comment}{/*******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00065}00065 \textcolor{comment}{/******************************************************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00067}00067 \textcolor{keywordtype}{void} HLED\_vBlinkLED(\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration}{LED\_LEDConfiguration}} * pLED\_Cfg, \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} A\_u32MilliSecs)}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00068}00068 \{}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00070}00070     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00072}00072     \mbox{\hyperlink{_sys_tick__interface_8h_a396b023d0e4ee7f9deea6dee69399eb5}{MSysTick\_vDelayMilliSec}}(A\_u32MilliSecs);}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00074}00074     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pLED\_Cfg-\/>\mbox{\hyperlink{struct_l_e_d___l_e_d_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00076}00076     \mbox{\hyperlink{_sys_tick__interface_8h_a396b023d0e4ee7f9deea6dee69399eb5}{MSysTick\_vDelayMilliSec}}(A\_u32MilliSecs);}
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00077}00077 \}}
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00078}00078 }
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00079}00079 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00080}00080 \textcolor{comment}{/******************************************************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_l_e_d__program_8c_source_l00081}00081 }
 
 \end{DoxyCode}

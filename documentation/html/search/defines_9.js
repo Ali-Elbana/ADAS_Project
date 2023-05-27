@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vectkey_5fpassword_0',['VECTKEY_PASSWORD',['../_n_v_i_c__private_8h.html#a9c228760273574d427b5d2bbcccc6c22',1,'NVIC_private.h']]]
+  ['single_5finterval_5ftick_5ftime_0',['SINGLE_INTERVAL_TICK_TIME',['../_sys_tick__interface_8h.html#ade19761cee9e365eed75787eb739dc00',1,'SysTick_interface.h']]]
 ];

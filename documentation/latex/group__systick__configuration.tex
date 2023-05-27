@@ -1,0 +1,97 @@
+\hypertarget{group__systick__configuration}{}\doxysection{Systick Configuration}
+\label{group__systick__configuration}\index{Systick Configuration@{Systick Configuration}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__systick__configuration_ga1cb6265e66aa849a2e04e04a89c04789}{CLK\+\_\+\+SOURCE}}~\mbox{\hyperlink{group__systick__clock__sources_gadd5f66ff13156c11c580ea1ecbe4d56e}{AHB\+\_\+\+Divided\+By8}}
+\item 
+\#define \mbox{\hyperlink{group__systick__configuration_ga90a0c1a7437e1990638930fe8bbf0c31}{Exception\+\_\+\+Request}}~\mbox{\hyperlink{group__systick__exception__request__enable_ga2b134b9547ceef09338eb24fc09e7a9d}{Dont\+\_\+\+Assert\+Request}}
+\item 
+\#define \mbox{\hyperlink{group__systick__configuration_ga7dee2e4ebd814929b352807ce3c18926}{SINGLE\+\_\+\+INTERVAL\+\_\+\+MODE}}~(1)
+\item 
+\#define \mbox{\hyperlink{group__systick__configuration_ga286f850f1a2cec9b96bc322f5abd7af5}{PERIODIC\+\_\+\+INTERVAL\+\_\+\+MODE}}~(2)
+\item 
+\#define \mbox{\hyperlink{group__systick__configuration_gaf525dcb5ad726f160c74b092470c3afb}{MAX\+\_\+\+TICKS}}~(16777216)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__systick__configuration_ga1cb6265e66aa849a2e04e04a89c04789}\label{group__systick__configuration_ga1cb6265e66aa849a2e04e04a89c04789}} 
+\index{Systick Configuration@{Systick Configuration}!CLK\_SOURCE@{CLK\_SOURCE}}
+\index{CLK\_SOURCE@{CLK\_SOURCE}!Systick Configuration@{Systick Configuration}}
+\doxysubsubsection{\texorpdfstring{CLK\_SOURCE}{CLK\_SOURCE}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+SOURCE~\mbox{\hyperlink{group__systick__clock__sources_gadd5f66ff13156c11c580ea1ecbe4d56e}{AHB\+\_\+\+Divided\+By8}}}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__config_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+config.\+h}}$>$}
+
+Clock source for Sys\+Tick \begin{DoxyNote}{Note}
+Accepted values\+: AHB\+\_\+\+Divided\+By8, AHB 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__config_8h_source_l00024}{24}} of file \mbox{\hyperlink{_sys_tick__config_8h_source}{Sys\+Tick\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{group__systick__configuration_ga90a0c1a7437e1990638930fe8bbf0c31}\label{group__systick__configuration_ga90a0c1a7437e1990638930fe8bbf0c31}} 
+\index{Systick Configuration@{Systick Configuration}!Exception\_Request@{Exception\_Request}}
+\index{Exception\_Request@{Exception\_Request}!Systick Configuration@{Systick Configuration}}
+\doxysubsubsection{\texorpdfstring{Exception\_Request}{Exception\_Request}}
+{\footnotesize\ttfamily \#define Exception\+\_\+\+Request~\mbox{\hyperlink{group__systick__exception__request__enable_ga2b134b9547ceef09338eb24fc09e7a9d}{Dont\+\_\+\+Assert\+Request}}}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__config_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+config.\+h}}$>$}
+
+Exception request for Sys\+Tick \begin{DoxyNote}{Note}
+Accepted values\+: Dont\+\_\+\+Assert\+Request, Assert\+Request 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_sys_tick__config_8h_source_l00033}{33}} of file \mbox{\hyperlink{_sys_tick__config_8h_source}{Sys\+Tick\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{group__systick__configuration_ga7dee2e4ebd814929b352807ce3c18926}\label{group__systick__configuration_ga7dee2e4ebd814929b352807ce3c18926}} 
+\index{Systick Configuration@{Systick Configuration}!SINGLE\_INTERVAL\_MODE@{SINGLE\_INTERVAL\_MODE}}
+\index{SINGLE\_INTERVAL\_MODE@{SINGLE\_INTERVAL\_MODE}!Systick Configuration@{Systick Configuration}}
+\doxysubsubsection{\texorpdfstring{SINGLE\_INTERVAL\_MODE}{SINGLE\_INTERVAL\_MODE}}
+{\footnotesize\ttfamily \#define SINGLE\+\_\+\+INTERVAL\+\_\+\+MODE~(1)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__config_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+config.\+h}}$>$}
+
+Single interval mode 
+
+Definition at line \mbox{\hyperlink{_sys_tick__config_8h_source_l00041}{41}} of file \mbox{\hyperlink{_sys_tick__config_8h_source}{Sys\+Tick\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{group__systick__configuration_ga286f850f1a2cec9b96bc322f5abd7af5}\label{group__systick__configuration_ga286f850f1a2cec9b96bc322f5abd7af5}} 
+\index{Systick Configuration@{Systick Configuration}!PERIODIC\_INTERVAL\_MODE@{PERIODIC\_INTERVAL\_MODE}}
+\index{PERIODIC\_INTERVAL\_MODE@{PERIODIC\_INTERVAL\_MODE}!Systick Configuration@{Systick Configuration}}
+\doxysubsubsection{\texorpdfstring{PERIODIC\_INTERVAL\_MODE}{PERIODIC\_INTERVAL\_MODE}}
+{\footnotesize\ttfamily \#define PERIODIC\+\_\+\+INTERVAL\+\_\+\+MODE~(2)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__config_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+config.\+h}}$>$}
+
+Periodic interval mode 
+
+Definition at line \mbox{\hyperlink{_sys_tick__config_8h_source_l00047}{47}} of file \mbox{\hyperlink{_sys_tick__config_8h_source}{Sys\+Tick\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{group__systick__configuration_gaf525dcb5ad726f160c74b092470c3afb}\label{group__systick__configuration_gaf525dcb5ad726f160c74b092470c3afb}} 
+\index{Systick Configuration@{Systick Configuration}!MAX\_TICKS@{MAX\_TICKS}}
+\index{MAX\_TICKS@{MAX\_TICKS}!Systick Configuration@{Systick Configuration}}
+\doxysubsubsection{\texorpdfstring{MAX\_TICKS}{MAX\_TICKS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+TICKS~(16777216)}
+
+
+
+{\ttfamily \#include $<$\mbox{\hyperlink{_sys_tick__config_8h}{COTS/\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+config.\+h}}$>$}
+
+Maximum number of ticks 
+
+Definition at line \mbox{\hyperlink{_sys_tick__config_8h_source_l00053}{53}} of file \mbox{\hyperlink{_sys_tick__config_8h_source}{Sys\+Tick\+\_\+config.\+h}}.
+

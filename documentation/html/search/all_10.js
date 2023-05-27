@@ -31,5 +31,6 @@ var searchData=
   ['rserved1x_28',['RSERVED1x',['../struct_n_v_i_c___memory_map_type.html#a7b4a250cdd672c5d5dd3700de09972d6',1,'NVIC_MemoryMapType']]],
   ['rtsr_29',['RTSR',['../struct_e_x_t_i___type.html#a163576b305c3d33592299697b43d973d',1,'EXTI_Type']]],
   ['run_30',['RUN',['../group__standardvalues.html#ga35f69a612b07bbf1de53bbbd8d877c09',1,'LSTD_VALUES.h']]],
-  ['rx_5fonly_31',['RX_ONLY',['../group__uart__operating__modes.html#ga74cf94a9df9d9b857d11b2befc9eaf1a',1,'UART_interface.h']]]
+  ['rx_5fonly_31',['RX_ONLY',['../group__uart__operating__modes.html#ga74cf94a9df9d9b857d11b2befc9eaf1a',1,'UART_interface.h']]],
+  ['rxcrcr_32',['RXCRCR',['../struct_s_p_i___memory_map_type.html#a125aa142650722f002ab0e59a194f617',1,'SPI_MemoryMapType']]]
 ];

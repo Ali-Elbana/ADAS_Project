@@ -100,12 +100,12 @@ var _n_v_i_c__interface_8h =
     [ "I2C3_ER", "group__vector__table.html#ga16292a4165295cd81f1aa02b3757693f", null ],
     [ "FPU", "group__vector__table.html#gabc7c93f2594e85ece1e1a24f10591428", null ],
     [ "SPI4", "group__vector__table.html#ga2a2e6edef68cfe1946f39a5033da2301", null ],
-    [ "MNVIC_vEnablePeriphral", "_n_v_i_c__interface_8h.html#ae2803f8dc399562d3dd0ffc4147c409c", null ],
-    [ "MNVIC_vDisablePeriphral", "_n_v_i_c__interface_8h.html#a6c8d2e254b3866055f3a6a56b85968c6", null ],
-    [ "MNVIC_vSetPendingFlag", "_n_v_i_c__interface_8h.html#a6ab8b8b781e3e0e9786faf33301a2dad", null ],
-    [ "MNVIC_vClearPendingFlag", "_n_v_i_c__interface_8h.html#a6950f540eeb30d4d2891f2f6bf87220e", null ],
-    [ "MNVIC_u8GetActive", "_n_v_i_c__interface_8h.html#a20c911eec57f58191cdb1705e6f7f34f", null ],
-    [ "MNVIC_vSetPriorityConfig", "_n_v_i_c__interface_8h.html#ad172d11f79d53101b9054c7114f56756", null ],
-    [ "MNVIC_vSetPriority", "_n_v_i_c__interface_8h.html#af25c5527f363448764d8f65b79238b88", null ],
-    [ "NVIC_GetPriority", "_n_v_i_c__interface_8h.html#ad3b1911350db17d52b25477f9b94642a", null ]
+    [ "MNVIC_vEnablePeriphral", "_n_v_i_c__interface_8h.html#a34cd565de1d9b98de8d37cf69893fb4d", null ],
+    [ "MNVIC_vDisablePeriphral", "_n_v_i_c__interface_8h.html#a7e5d39f4f5b477fae79556b5b53f235f", null ],
+    [ "MNVIC_vSetPendingFlag", "_n_v_i_c__interface_8h.html#ad5bcb425a5f5a2f145815bee02af5bd9", null ],
+    [ "MNVIC_vClearPendingFlag", "_n_v_i_c__interface_8h.html#ac507713ac304b76f07267511941db0a0", null ],
+    [ "MNVIC_u8GetActive", "_n_v_i_c__interface_8h.html#a46fc4d62b97d6604e67848ccc555767b", null ],
+    [ "MNVIC_vSetPriorityConfig", "_n_v_i_c__interface_8h.html#a060f3a46ddd39c723516d327c2a70a97", null ],
+    [ "MNVIC_vSetPriority", "_n_v_i_c__interface_8h.html#a2bc11a514b96fd1f36e2ea33d095bd55", null ],
+    [ "NVIC_GetPriority", "_n_v_i_c__interface_8h.html#a8631573a83351d70a0bb3add68c329dd", null ]
 ];

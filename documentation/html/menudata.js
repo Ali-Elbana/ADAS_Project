@@ -95,10 +95,12 @@ var menudata={children:[
 {text:"v",url:"globals_v.html#index_v"},
 {text:"w",url:"globals_w.html#index_w"}]},
 {text:"Functions",url:"globals_func.html",children:[
+{text:"e",url:"globals_func.html#index_e"},
 {text:"g",url:"globals_func.html#index_g"},
 {text:"h",url:"globals_func.html#index_h"},
 {text:"m",url:"globals_func.html#index_m"},
-{text:"n",url:"globals_func.html#index_n"}]},
+{text:"n",url:"globals_func.html#index_n"},
+{text:"s",url:"globals_func.html#index_s"}]},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},

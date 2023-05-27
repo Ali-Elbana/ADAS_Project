@@ -114,8 +114,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ab4245d45e035033aece85f81662a9cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RCC with a certain configurations.  <a href="_m_r_c_c__program_8c.html#ab4245d45e035033aece85f81662a9cf0">More...</a><br /></td></tr>
 <tr class="separator:ab4245d45e035033aece85f81662a9cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4049d31c5859572e821de89f05d6df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_r_c_c__program_8c.html#adf4049d31c5859572e821de89f05d6df">MRCC_vEnablePeriphralCLK</a> (<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32BusID, <a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32PeriphralID)</td></tr>
+<tr class="memdesc:adf4049d31c5859572e821de89f05d6df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enabling the CLK on a specific Peripheral.  <a href="_m_r_c_c__program_8c.html#adf4049d31c5859572e821de89f05d6df">More...</a><br /></td></tr>
 <tr class="separator:adf4049d31c5859572e821de89f05d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae7b5bdf39efe155a97b93841422cce5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_m_r_c_c__program_8c.html#aae7b5bdf39efe155a97b93841422cce5">MRCC_vDisablePeriphralCLK</a> (<a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32BusID, <a class="el" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a> A_u32PeriphralID)</td></tr>
+<tr class="memdesc:aae7b5bdf39efe155a97b93841422cce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disabling the CLK on a specific Peripheral.  <a href="_m_r_c_c__program_8c.html#aae7b5bdf39efe155a97b93841422cce5">More...</a><br /></td></tr>
 <tr class="separator:aae7b5bdf39efe155a97b93841422cce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -545,6 +547,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Enabling the CLK on a specific Peripheral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A_u32BusID</td><td>Bus ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">A_u32PeriphralID</td><td>Peripheral ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p class="definition">Definition at line <a class="el" href="_m_r_c_c__program_8c_source.html#l00400">400</a> of file <a class="el" href="_m_r_c_c__program_8c_source.html">MRCC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  401</span>{</div>
 <div class="line"><span class="lineno">  402</span> </div>
@@ -600,6 +611,10 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup___bus_html_gaa933a7465c80c134626f66bdbe7a87ee"><div class="ttname"><a href="group___bus.html#gaa933a7465c80c134626f66bdbe7a87ee">RCC_AHB2</a></div><div class="ttdeci">#define RCC_AHB2</div><div class="ttdoc">AHB2 Bus.</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00058">MRCC_interface.h:58</a></div></div>
 <div class="ttc" id="agroup___bus_html_gaefd73ec71a770d3b37f9bc0ea55ad130"><div class="ttname"><a href="group___bus.html#gaefd73ec71a770d3b37f9bc0ea55ad130">RCC_AHB1</a></div><div class="ttdeci">#define RCC_AHB1</div><div class="ttdoc">AHB1 Bus.</div><div class="ttdef"><b>Definition:</b> <a href="_m_r_c_c__interface_8h_source.html#l00051">MRCC_interface.h:51</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="_n_v_i_c__interface_8h_source.html#l00404">RCC</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00051">RCC_AHB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00079">RCC_AHB1LPENR</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00058">RCC_AHB2</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00065">RCC_APB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00072">RCC_APB2</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_a_d_c__program_8c_source.html#l00393">MADC_vEnable()</a>, <a class="el" href="_a_d_c__program_8c_source.html#l00030">MADC_vInit()</a>, and <a class="el" href="_u_a_r_t__program_8c_source.html#l00037">MUSART_vInit()</a>.</p>
+
 </div>
 </div>
 <a id="aae7b5bdf39efe155a97b93841422cce5" name="aae7b5bdf39efe155a97b93841422cce5"></a>
@@ -627,6 +642,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Disabling the CLK on a specific Peripheral. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A_u32BusID</td><td>Bus ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">A_u32PeriphralID</td><td>Peripheral ID. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="_m_r_c_c__program_8c_source.html#l00453">453</a> of file <a class="el" href="_m_r_c_c__program_8c_source.html">MRCC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  454</span>{</div>
@@ -680,6 +704,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  502</span> </div>
 <div class="line"><span class="lineno">  503</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_n_v_i_c__interface_8h_source.html#l00404">RCC</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00051">RCC_AHB1</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00079">RCC_AHB1LPENR</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00058">RCC_AHB2</a>, <a class="el" href="_m_r_c_c__interface_8h_source.html#l00065">RCC_APB1</a>, and <a class="el" href="_m_r_c_c__interface_8h_source.html#l00072">RCC_APB2</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_a_d_c__program_8c_source.html#l00379">MADC_vDisable()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -688,7 +716,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_b58645a5aaf8ed5939b0aed386878fd4.html">RCC</a></li><li class="navelem"><a class="el" href="_m_r_c_c__program_8c.html">MRCC_program.c</a></li>
-    <li class="footer">Generated on Sat May 27 2023 00:03:12 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun May 28 2023 01:35:11 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

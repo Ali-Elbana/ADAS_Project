@@ -14,10 +14,10 @@ var _d_c_m__interface_8h =
     [ "SPEED_80_PERCENT", "group__motor__speeds.html#ga3a6da91fd7977c5eb7fd350b1f7c60eb", null ],
     [ "SPEED_90_PERCENT", "group__motor__speeds.html#ga856eec191c77c8452e68eec98c6f8b13", null ],
     [ "SPEED_100_PERCENT", "group__motor__speeds.html#ga89268c7ea49fe78f02601656198bfcaf", null ],
-    [ "HDCM_vInitMotor", "_d_c_m__interface_8h.html#abb7950e9d50ca2626641fd453a588fd7", null ],
-    [ "HDCM_vMoveForward", "_d_c_m__interface_8h.html#aff110757165493eab42865f08f94010e", null ],
-    [ "HDCM_vMoveBackward", "_d_c_m__interface_8h.html#a5de2441761aa1bd6ec6c62c7514cc032", null ],
-    [ "HDCM_vStopMotor", "_d_c_m__interface_8h.html#a3165c909bf3a628b59eb97dc27b36002", null ],
-    [ "HDCM_vMotorSpeedCntrl", "_d_c_m__interface_8h.html#aff88e1c36ce0f3100c3b6859452a7f1a", null ],
-    [ "HDCM_vGetSpeedValue", "_d_c_m__interface_8h.html#a9b5faae8a727eb43586f154cc39d839b", null ]
+    [ "HDCM_vInitMotor", "_d_c_m__interface_8h.html#ab932a8d33764b8f9e4db1762ec1dea76", null ],
+    [ "HDCM_vMoveForward", "_d_c_m__interface_8h.html#a299e66eb30f20f87b00ec50ff8f99aa5", null ],
+    [ "HDCM_vMoveBackward", "_d_c_m__interface_8h.html#ad81f5a96c1437d2d1a2b52d8ecef46aa", null ],
+    [ "HDCM_vStopMotor", "_d_c_m__interface_8h.html#a8e7c5d959de85f5f4174139ec5f5145a", null ],
+    [ "HDCM_vMotorSpeedCntrl", "_d_c_m__interface_8h.html#a71402297742506528410a72e29153924", null ],
+    [ "HDCM_vGetSpeedValue", "_d_c_m__interface_8h.html#a28ad9d52971bd9f79677ea4431b03ec6", null ]
 ];

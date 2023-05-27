@@ -50,7 +50,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00046}00046 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00047}00047 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00048}00048     \textcolor{comment}{// Initialization of USART1:}}
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00049}00049     \mbox{\hyperlink{_u_a_r_t__interface_8h_ac597abeb412173c08bc61f38cc9929ef}{MUSART\_vInit}}( \&Bluetooth\_Config, \&Bluetooth\_CLK, Bluetooth\_UART\_ID ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00049}00049     \mbox{\hyperlink{_u_a_r_t__interface_8h_a73bf3b20827ed61d222ae8dfb1eda45c}{MUSART\_vInit}}( \&Bluetooth\_Config, \&Bluetooth\_CLK, Bluetooth\_UART\_ID ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00050}00050 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00051}00051 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00052}00052 }
@@ -60,7 +60,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00056}00056 \textcolor{keywordtype}{void} HBluetooth\_vSendByte( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8Byte )}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00057}00057 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00058}00058 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00059}00059     \mbox{\hyperlink{_u_a_r_t__interface_8h_a01200a0c19cfcc79d3f47adb6ba9cc2b}{MUSART\_vTransmitByte}}( Bluetooth\_UART\_ID, A\_u8Byte ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00059}00059     \mbox{\hyperlink{_u_a_r_t__interface_8h_a2ada5f0990eceabc128d3fcbeb79377c}{MUSART\_vTransmitByte}}( Bluetooth\_UART\_ID, A\_u8Byte ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00060}00060 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00061}00061 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00062}00062 }
@@ -72,7 +72,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00068}00068 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00069}00069     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} L\_u8ReceivedByte = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00070}00070 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00071}00071     L\_u8ReceivedByte = \mbox{\hyperlink{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}{MUSART\_u8ReceiveByteSynchBlocking}}( Bluetooth\_UART\_ID ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00071}00071     L\_u8ReceivedByte = \mbox{\hyperlink{_u_a_r_t__interface_8h_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}( Bluetooth\_UART\_ID ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00072}00072 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00073}00073     \textcolor{keywordflow}{return} L\_u8ReceivedByte ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00074}00074 }
@@ -84,7 +84,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00080}00080 \textcolor{keywordtype}{void} HBluetooth\_u8AsynchReceiveByte( \textcolor{keywordtype}{void} (*Fptr) (\textcolor{keywordtype}{void}) )}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00081}00081 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00082}00082 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00083}00083     \mbox{\hyperlink{_u_a_r_t__interface_8h_a1678fc67fdd85e3c9a50b71f62833c30}{MUSART1\_vSetCallBack}}( Fptr ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00083}00083     \mbox{\hyperlink{_u_a_r_t__interface_8h_a9ef0e7048b326b502767829152cb23f9}{MUSART1\_vSetCallBack}}( Fptr ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00084}00084 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00085}00085 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00086}00086 }
@@ -94,7 +94,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00090}00090 \textcolor{keywordtype}{void} HBluetooth\_vSendString( \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *A\_ptrc8String )}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00091}00091 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00092}00092 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00093}00093     \mbox{\hyperlink{_u_a_r_t__interface_8h_afb8484dbe78b2b920d55ed7612b7095a}{MUSART\_vTransmitString}}( Bluetooth\_UART\_ID, A\_ptrc8String ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00093}00093     \mbox{\hyperlink{_u_a_r_t__interface_8h_aaf5b81f3e000ad569a835ff04fb24014}{MUSART\_vTransmitString}}( Bluetooth\_UART\_ID, A\_ptrc8String ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00094}00094 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00095}00095 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00096}00096 }
@@ -104,7 +104,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00100}00100 \textcolor{keywordtype}{void} HBluetooth\_vReceiveString( \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} A\_c8YourString[] )}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00101}00101 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00102}00102 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00103}00103     \mbox{\hyperlink{_u_a_r_t__interface_8h_af106a2c478c533b05923c46e85872fc3}{MUSART\_vRecieveString}}( Bluetooth\_UART\_ID, A\_c8YourString ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00103}00103     \mbox{\hyperlink{_u_a_r_t__interface_8h_a9012038beeb0224f40e9191a16255dda}{MUSART\_vRecieveString}}( Bluetooth\_UART\_ID, A\_c8YourString ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00104}00104 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00105}00105 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00106}00106 }
@@ -116,7 +116,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00112}00112 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00113}00113     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} L\_u8Result = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00114}00114 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00115}00115     L\_u8Result = \mbox{\hyperlink{_u_a_r_t__interface_8h_a14cc7aa021d13b0f33f180ae7d90e44d}{MUSART\_u8CompareString}}( String1, String2 ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00115}00115     L\_u8Result = \mbox{\hyperlink{_u_a_r_t__interface_8h_a963243cdece8f17e1245a78ea097b344}{MUSART\_u8CompareString}}( String1, String2 ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00116}00116 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00117}00117     \textcolor{keywordflow}{return} L\_u8Result ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00118}00118 }
@@ -128,7 +128,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00124}00124 \textcolor{keywordtype}{void} HBluetooth\_vEnable( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00125}00125 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00126}00126 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00127}00127     \mbox{\hyperlink{_u_a_r_t__interface_8h_a657675cf8557659e4ed063a219d58b83}{MUSART\_vEnable}}( Bluetooth\_UART\_ID ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00127}00127     \mbox{\hyperlink{_u_a_r_t__interface_8h_a4b385eba59231a73011eb70b55a8ffee}{MUSART\_vEnable}}( Bluetooth\_UART\_ID ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00128}00128 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00129}00129 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00130}00130 }
@@ -138,7 +138,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00134}00134 \textcolor{keywordtype}{void} HBluetooth\_vDisable( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00135}00135 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00136}00136 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00137}00137     \mbox{\hyperlink{_u_a_r_t__interface_8h_ab58d8534ad0b67856a17f6ec5ced8115}{MUSART\_vDisable}}( Bluetooth\_UART\_ID ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00137}00137     \mbox{\hyperlink{_u_a_r_t__interface_8h_acafcd6cc785d2b7d90f66b17a9f95ec2}{MUSART\_vDisable}}( Bluetooth\_UART\_ID ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00138}00138 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00139}00139 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00140}00140 }
@@ -150,7 +150,7 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00146}00146 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00147}00147     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \textcolor{keyword}{volatile} L\_u8ReceivedByte = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00148}00148 }
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00149}00149     L\_u8ReceivedByte = \mbox{\hyperlink{_u_a_r_t__interface_8h_ab4fa6caaa510b35919441e0195b300da}{MUSART\_u8ReadDataRegister}}( \mbox{\hyperlink{group__uart__registers_ga38f9de19e0022108a0536f7b88267d5e}{USART1\_REG}} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00149}00149     L\_u8ReceivedByte = \mbox{\hyperlink{_u_a_r_t__interface_8h_aa3fe2075503bcc8e72eacd6da0b8fcad}{MUSART\_u8ReadDataRegister}}( \mbox{\hyperlink{group__uart__registers_ga38f9de19e0022108a0536f7b88267d5e}{USART1\_REG}} ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00150}00150 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00151}00151     \textcolor{keywordflow}{return} L\_u8ReceivedByte ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00152}00152 }
@@ -163,10 +163,10 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00159}00159 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00160}00160 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00161}00161     \textcolor{comment}{// RXNEIE Pending Flag Enabled:}}
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00162}00162     \mbox{\hyperlink{_u_a_r_t__interface_8h_ad99e4c4ef135bdb0996597181d991a66}{MUSART\_vRxIntSetStatus}}( Bluetooth\_UART\_ID, ENABLE ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00162}00162     \mbox{\hyperlink{_u_a_r_t__interface_8h_a0d2b121793165ec2fa0091f7bdebd70b}{MUSART\_vRxIntSetStatus}}( Bluetooth\_UART\_ID, ENABLE ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00163}00163 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00164}00164     \textcolor{comment}{// USART1 IRQ Active Flag Enabled:}}
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00165}00165     \mbox{\hyperlink{_n_v_i_c__interface_8h_ae2803f8dc399562d3dd0ffc4147c409c}{MNVIC\_vEnablePeriphral}}( \mbox{\hyperlink{group__vector__table_ga92871691058ff7ccffd7635930cb08da}{USART1}} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00165}00165     \mbox{\hyperlink{_n_v_i_c__interface_8h_a34cd565de1d9b98de8d37cf69893fb4d}{MNVIC\_vEnablePeriphral}}( \mbox{\hyperlink{group__vector__table_ga92871691058ff7ccffd7635930cb08da}{USART1}} ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00166}00166 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00167}00167 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00168}00168 }
@@ -177,10 +177,10 @@
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00173}00173 \{}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00174}00174 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00175}00175     \textcolor{comment}{// RXNEIE Pending Flag Disabled:}}
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00176}00176     \mbox{\hyperlink{_u_a_r_t__interface_8h_ad99e4c4ef135bdb0996597181d991a66}{MUSART\_vRxIntSetStatus}}( Bluetooth\_UART\_ID, DISABLE ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00176}00176     \mbox{\hyperlink{_u_a_r_t__interface_8h_a0d2b121793165ec2fa0091f7bdebd70b}{MUSART\_vRxIntSetStatus}}( Bluetooth\_UART\_ID, DISABLE ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00177}00177 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00178}00178     \textcolor{comment}{// USART1 IRQ Active Flag Disabled:}}
-\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00179}00179     \mbox{\hyperlink{_n_v_i_c__interface_8h_a6c8d2e254b3866055f3a6a56b85968c6}{MNVIC\_vDisablePeriphral}}( \mbox{\hyperlink{group__vector__table_ga92871691058ff7ccffd7635930cb08da}{USART1}} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00179}00179     \mbox{\hyperlink{_n_v_i_c__interface_8h_a7e5d39f4f5b477fae79556b5b53f235f}{MNVIC\_vDisablePeriphral}}( \mbox{\hyperlink{group__vector__table_ga92871691058ff7ccffd7635930cb08da}{USART1}} ) ;}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00180}00180 }
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00181}00181 \}}
 \DoxyCodeLine{\Hypertarget{_bluetooth__program_8c_source_l00182}00182 }

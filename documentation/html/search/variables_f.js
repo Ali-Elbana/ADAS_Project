@@ -10,7 +10,7 @@ var searchData=
   ['sqr1_7',['SQR1',['../struct_a_d_c___memory_map_type.html#af5af84f43ce810fb710149d7f6e420d7',1,'ADC_MemoryMapType']]],
   ['sqr2_8',['SQR2',['../struct_a_d_c___memory_map_type.html#a9335f953f8007d30d89ca4510a8b32c5',1,'ADC_MemoryMapType']]],
   ['sqr3_9',['SQR3',['../struct_a_d_c___memory_map_type.html#aff62457d156d32fc995f0623d2ba713e',1,'ADC_MemoryMapType']]],
-  ['sr_10',['SR',['../struct_a_d_c___memory_map_type.html#aa0ed76d319137a2ba0cff447f494a52a',1,'ADC_MemoryMapType']]],
+  ['sr_10',['SR',['../struct_a_d_c___memory_map_type.html#aa0ed76d319137a2ba0cff447f494a52a',1,'ADC_MemoryMapType::SR()'],['../struct_s_p_i___memory_map_type.html#a38ac9c94a99dadcd50a245ad49d66093',1,'SPI_MemoryMapType::SR()']]],
   ['sr_5freg_11',['SR_REG',['../struct_u_s_a_r_t___memory_map_type.html#a0c45427011800c5d5e8c6427fb03c7e6',1,'USART_MemoryMapType']]],
   ['sscgr_12',['SSCGR',['../struct_r_c_c___memory_map_type.html#a10e5679f6556facc72054bd01b159e96',1,'RCC_MemoryMapType']]],
   ['stopbits_13',['StopBits',['../struct_u_s_a_r_t___init_type.html#aeb52c37ce9ee7768af06e4d90d88d1a2',1,'USART_InitType']]],

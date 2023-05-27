@@ -20,17 +20,17 @@ This file contains the source code of the interfacing information for the DC Mot
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{_d_c_m__program_8c_ab932a8d33764b8f9e4db1762ec1dea76}{HDCM\+\_\+v\+Init\+Motor}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize a motor Initialize a motor with a certain GPIO Port \& Pin based on the passed motor configuration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}{HDCM\+\_\+v\+Move\+Forward}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
-\item 
+\begin{DoxyCompactList}\small\item\em Move a certain motor forward. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}{HDCM\+\_\+v\+Move\+Backward}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
-\item 
+\begin{DoxyCompactList}\small\item\em Move a certain motor backward. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}{HDCM\+\_\+v\+Stop\+Motor}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
-\item 
+\begin{DoxyCompactList}\small\item\em Stop a certain motor\textquotesingle{}s movement completely. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_d_c_m__program_8c_a71402297742506528410a72e29153924}{HDCM\+\_\+v\+Motor\+Speed\+Cntrl}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\+\_\+t}} A\+\_\+u16\+Speed\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Set a certain motor\textquotesingle{}s speed. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}} \mbox{\hyperlink{_d_c_m__program_8c_a28ad9d52971bd9f79677ea4431b03ec6}{HDCM\+\_\+v\+Get\+Speed\+Value}} (\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} $\ast$p\+Motor\+Configuration)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get a certain motor\textquotesingle{}s speed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -60,6 +60,18 @@ Definition in file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.
 
 
 
+Initialize a motor Initialize a motor with a certain GPIO Port \& Pin based on the passed motor configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor configuration to be initialized \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_d_c_m___motor_configuration}{DCM\+\_\+\+Motor\+Configuration}} 
+\end{DoxySeeAlso}
+
+
 Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{32}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
@@ -67,47 +79,53 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{32}} of fi
 \DoxyCodeLine{00033 \{}
 \DoxyCodeLine{00034 }
 \DoxyCodeLine{00035     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) DCMotorPin1Init =}
-\DoxyCodeLine{00036     \{}
-\DoxyCodeLine{00037         .Port           = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}} ,}
-\DoxyCodeLine{00038         .Pin            = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}} ,}
-\DoxyCodeLine{00039         .Mode           = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}                ,}
-\DoxyCodeLine{00040         .OutputType     = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}              ,}
-\DoxyCodeLine{00041         .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}}              ,}
-\DoxyCodeLine{00042         .InputType      = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
-\DoxyCodeLine{00043     \};}
-\DoxyCodeLine{00044 }
-\DoxyCodeLine{00045     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) DCMotorPin2Init =}
-\DoxyCodeLine{00046     \{}
-\DoxyCodeLine{00047         .Port           = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}} ,}
-\DoxyCodeLine{00048         .Pin            = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}} ,}
-\DoxyCodeLine{00049         .Mode           = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}                ,}
-\DoxyCodeLine{00050         .OutputType     = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}              ,}
-\DoxyCodeLine{00051         .OutputSpeed    = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}}              ,}
-\DoxyCodeLine{00052         .InputType      = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
-\DoxyCodeLine{00053     \};}
-\DoxyCodeLine{00054 }
-\DoxyCodeLine{00055     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&DCMotorPin1Init);}
-\DoxyCodeLine{00056     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&DCMotorPin2Init);}
-\DoxyCodeLine{00057 }
-\DoxyCodeLine{00058     \textcolor{comment}{// Give an initial direction to the DC Motor:}}
-\DoxyCodeLine{00059     \textcolor{keywordflow}{switch}( pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}{u8Direction}} )}
-\DoxyCodeLine{00060     \{}
-\DoxyCodeLine{00061 }
-\DoxyCodeLine{00062         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__motor__directions_ga6ddfdda7a062d10cff4a72b76b44aeb8}{FORWARD}}  : \mbox{\hyperlink{_d_c_m__interface_8h_aff110757165493eab42865f08f94010e}{HDCM\_vMoveForward}}(pMotorConfiguration);     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00036         \{}
+\DoxyCodeLine{00037             .Port = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}},}
+\DoxyCodeLine{00038             .Pin = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}},}
+\DoxyCodeLine{00039             .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
+\DoxyCodeLine{00040             .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00041             .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00042             .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}\};}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) DCMotorPin2Init =}
+\DoxyCodeLine{00045         \{}
+\DoxyCodeLine{00046             .Port = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}},}
+\DoxyCodeLine{00047             .Pin = pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}},}
+\DoxyCodeLine{00048             .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}},}
+\DoxyCodeLine{00049             .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}},}
+\DoxyCodeLine{00050             .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00051             .InputType = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}\};}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&DCMotorPin1Init);}
+\DoxyCodeLine{00054     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}(\&DCMotorPin2Init);}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056     \textcolor{comment}{// Give an initial direction to the DC Motor:}}
+\DoxyCodeLine{00057     \textcolor{keywordflow}{switch} (pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a2e20aa333b94d6c54b07fb7d5e46422c}{u8Direction}})}
+\DoxyCodeLine{00058     \{}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \textcolor{keywordflow}{case} \mbox{\hyperlink{group__motor__directions_ga6ddfdda7a062d10cff4a72b76b44aeb8}{FORWARD}}:}
+\DoxyCodeLine{00061         \mbox{\hyperlink{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}{HDCM\_vMoveForward}}(pMotorConfiguration);}
+\DoxyCodeLine{00062         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{00063 }
-\DoxyCodeLine{00064         \textcolor{keywordflow}{case} \mbox{\hyperlink{group__motor__directions_gadf445abfe1b77fa63f89e315ccc2f7f2}{BACKWARD}} : \mbox{\hyperlink{_d_c_m__interface_8h_a5de2441761aa1bd6ec6c62c7514cc032}{HDCM\_vMoveBackward}}(pMotorConfiguration);  \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00065 }
-\DoxyCodeLine{00066         \textcolor{comment}{/* Default case: stop the motor */}}
-\DoxyCodeLine{00067         default       : \mbox{\hyperlink{_d_c_m__interface_8h_a3165c909bf3a628b59eb97dc27b36002}{HDCM\_vStopMotor}}(pMotorConfiguration);        \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00068 }
-\DoxyCodeLine{00069     \}}
-\DoxyCodeLine{00070 }
-\DoxyCodeLine{00071     \textcolor{comment}{// Give an initial speed to the DC Motor:}}
-\DoxyCodeLine{00072     \mbox{\hyperlink{_d_c_m__interface_8h_aff88e1c36ce0f3100c3b6859452a7f1a}{HDCM\_vMotorSpeedCntrl}}( pMotorConfiguration, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a9692129a92cbbc24e640673026454c5e}{u32SpeedRatio}} ) ;}
+\DoxyCodeLine{00064     \textcolor{keywordflow}{case} \mbox{\hyperlink{group__motor__directions_gadf445abfe1b77fa63f89e315ccc2f7f2}{BACKWARD}}:}
+\DoxyCodeLine{00065         \mbox{\hyperlink{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}{HDCM\_vMoveBackward}}(pMotorConfiguration);}
+\DoxyCodeLine{00066         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \textcolor{comment}{/* Default case: stop the motor */}}
+\DoxyCodeLine{00069     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00070         \mbox{\hyperlink{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}{HDCM\_vStopMotor}}(pMotorConfiguration);}
+\DoxyCodeLine{00071         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00072     \}}
 \DoxyCodeLine{00073 }
-\DoxyCodeLine{00074 \}}
+\DoxyCodeLine{00074     \textcolor{comment}{// Give an initial speed to the DC Motor:}}
+\DoxyCodeLine{00075     \mbox{\hyperlink{_d_c_m__program_8c_a71402297742506528410a72e29153924}{HDCM\_vMotorSpeedCntrl}}(pMotorConfiguration, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a9692129a92cbbc24e640673026454c5e}{u32SpeedRatio}});}
+\DoxyCodeLine{00076 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_d_c_m__interface_8h_source_l00122}{BACKWARD}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00115}{FORWARD}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00257}{GPIOx\+\_\+\+Low\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00177}{GPIOx\+\_\+\+MODE\+\_\+\+OUTPUT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00293}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00242}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00108}{HDCM\+\_\+v\+Motor\+Speed\+Cntrl()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00090}{HDCM\+\_\+v\+Move\+Backward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00081}{HDCM\+\_\+v\+Move\+Forward()}}, \mbox{\hyperlink{_d_c_m__program_8c_source_l00099}{HDCM\+\_\+v\+Stop\+Motor()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00421}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00053}{DCM\+\_\+\+Motor\+Configuration\+::u32\+Speed\+Ratio}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00045}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Direction}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin1}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00041}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin2}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Port}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
 \mbox{\Hypertarget{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}\label{_d_c_m__program_8c_a299e66eb30f20f87b00ec50ff8f99aa5}} 
 \index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMoveForward@{HDCM\_vMoveForward}}
 \index{HDCM\_vMoveForward@{HDCM\_vMoveForward}!DCM\_program.c@{DCM\_program.c}}
@@ -116,16 +134,33 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{32}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00079}{79}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+Move a certain motor forward. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to move forward \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00081}{81}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00080 \{}
-\DoxyCodeLine{00081     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00082     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00083 \}}
+\DoxyCodeLine{00082 \{}
+\DoxyCodeLine{00083     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{00084     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00085 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00322}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00329}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin1}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00041}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin2}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Port}}.
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{HDCM\+\_\+v\+Init\+Motor()}}.
+
 \mbox{\Hypertarget{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}\label{_d_c_m__program_8c_ad81f5a96c1437d2d1a2b52d8ecef46aa}} 
 \index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMoveBackward@{HDCM\_vMoveBackward}}
 \index{HDCM\_vMoveBackward@{HDCM\_vMoveBackward}!DCM\_program.c@{DCM\_program.c}}
@@ -134,16 +169,33 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00079}{79}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00088}{88}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+Move a certain motor backward. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to move backward \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00090}{90}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00089 \{}
-\DoxyCodeLine{00090     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00091     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
-\DoxyCodeLine{00092 \}}
+\DoxyCodeLine{00091 \{}
+\DoxyCodeLine{00092     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00093     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}});}
+\DoxyCodeLine{00094 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00322}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00329}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin1}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00041}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin2}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Port}}.
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{HDCM\+\_\+v\+Init\+Motor()}}.
+
 \mbox{\Hypertarget{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}\label{_d_c_m__program_8c_a8e7c5d959de85f5f4174139ec5f5145a}} 
 \index{DCM\_program.c@{DCM\_program.c}!HDCM\_vStopMotor@{HDCM\_vStopMotor}}
 \index{HDCM\_vStopMotor@{HDCM\_vStopMotor}!DCM\_program.c@{DCM\_program.c}}
@@ -152,16 +204,33 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00088}{88}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00097}{97}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+Stop a certain motor\textquotesingle{}s movement completely. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to stop \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00099}{99}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00098 \{}
-\DoxyCodeLine{00099     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00100     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
-\DoxyCodeLine{00101 \}}
+\DoxyCodeLine{00100 \{}
+\DoxyCodeLine{00101     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6cdc315159c3cecff102fa5460b0517f}{u8Pin1}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00102     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}}, pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_acbf48152f1b2bb3d4731c1fdd23dfc79}{u8Pin2}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}});}
+\DoxyCodeLine{00103 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00329}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00037}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin1}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00041}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Pin2}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00033}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Port}}.
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{HDCM\+\_\+v\+Init\+Motor()}}.
+
 \mbox{\Hypertarget{_d_c_m__program_8c_a71402297742506528410a72e29153924}\label{_d_c_m__program_8c_a71402297742506528410a72e29153924}} 
 \index{DCM\_program.c@{DCM\_program.c}!HDCM\_vMotorSpeedCntrl@{HDCM\_vMotorSpeedCntrl}}
 \index{HDCM\_vMotorSpeedCntrl@{HDCM\_vMotorSpeedCntrl}!DCM\_program.c@{DCM\_program.c}}
@@ -170,42 +239,66 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00097}{97}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00106}{106}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+Set a certain motor\textquotesingle{}s speed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to set its speed \\
+\hline
+\mbox{\texttt{ in}}  & {\em A\+\_\+u16\+Speed\+Value} & The speed value to set the motor to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00108}{108}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00107 \{}
-\DoxyCodeLine{00108 }
-\DoxyCodeLine{00109     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\_ConfigType}})}
-\DoxyCodeLine{00110     TRIG =}
-\DoxyCodeLine{00111         \{}
-\DoxyCodeLine{00112             .u8Port = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}},}
-\DoxyCodeLine{00113             .u8Pin  = \mbox{\hyperlink{group__gpio__output__pins_ga5baac9180cecd3947f641f5464b7fb91}{GPIOx\_PIN8}}}
-\DoxyCodeLine{00114         \};}
+\DoxyCodeLine{00109 \{}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_h_u_l_t_s_n_c___config_type}{HULTSNC\_ConfigType}}) TRIG =}
+\DoxyCodeLine{00112         \{}
+\DoxyCodeLine{00113             .u8Port = \mbox{\hyperlink{group__gpio__ports_gaf197726bc9dc7e610c663cf62d196923}{GPIO\_PORTB}},}
+\DoxyCodeLine{00114             .u8Pin = \mbox{\hyperlink{group__gpio__output__pins_ga5baac9180cecd3947f641f5464b7fb91}{GPIOx\_PIN8}}\};}
 \DoxyCodeLine{00115 }
-\DoxyCodeLine{00116     MTIM1\_vGeneratePWM( pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a5ee7ceea1b69e1ab611417a35cff4186}{u8SpeedPin}}, PWM1, CENTER1,}
-\DoxyCodeLine{00117                             PSC\_VALUE, MAX\_SPEED, CR\_VALUE ) ;}
+\DoxyCodeLine{00116     MTIM1\_vGeneratePWM(pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a5ee7ceea1b69e1ab611417a35cff4186}{u8SpeedPin}}, PWM1, CENTER1,}
+\DoxyCodeLine{00117                        PSC\_VALUE, \mbox{\hyperlink{_d_c_m__config_8h_ac2cd96d53dd3ba6407db6766c3d92b26}{MAX\_SPEED}}, CR\_VALUE);}
 \DoxyCodeLine{00118 }
-\DoxyCodeLine{00119     HULTSNC\_vInit( \&TRIG ) ;}
+\DoxyCodeLine{00119     \mbox{\hyperlink{_ultra_sonic__interface_8h_ab790ce3b9eab4f2d2d3c407dc71e2d8f}{HULTSNC\_vInit}}(\&TRIG);}
 \DoxyCodeLine{00120 }
-\DoxyCodeLine{00121     \textcolor{keywordflow}{switch}( pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a5ee7ceea1b69e1ab611417a35cff4186}{u8SpeedPin}} )}
+\DoxyCodeLine{00121     \textcolor{keywordflow}{switch} (pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a5ee7ceea1b69e1ab611417a35cff4186}{u8SpeedPin}})}
 \DoxyCodeLine{00122     \{}
 \DoxyCodeLine{00123 }
-\DoxyCodeLine{00124         \textcolor{keywordflow}{case} TIM1\_CH1: MTIM1\_vSetCompareReg1Value( A\_u16SpeedValue ) ; break ;}
-\DoxyCodeLine{00125 }
-\DoxyCodeLine{00126         \textcolor{keywordflow}{case} TIM1\_CH2: MTIM1\_vSetCompareReg2Value( A\_u16SpeedValue ) ; break ;}
+\DoxyCodeLine{00124     \textcolor{keywordflow}{case} TIM1\_CH1:}
+\DoxyCodeLine{00125         MTIM1\_vSetCompareReg1Value(A\_u16SpeedValue);}
+\DoxyCodeLine{00126         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{00127 }
-\DoxyCodeLine{00128         \textcolor{keywordflow}{case} TIM1\_CH3: MTIM1\_vSetCompareReg3Value( A\_u16SpeedValue ) ; break ;}
-\DoxyCodeLine{00129 }
-\DoxyCodeLine{00130         \textcolor{keywordflow}{case} TIM1\_CH4: MTIM1\_vSetCompareReg4Value( A\_u16SpeedValue ) ; break ;}
+\DoxyCodeLine{00128     \textcolor{keywordflow}{case} TIM1\_CH2:}
+\DoxyCodeLine{00129         MTIM1\_vSetCompareReg2Value(A\_u16SpeedValue);}
+\DoxyCodeLine{00130         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{00131 }
-\DoxyCodeLine{00132         \textcolor{keywordflow}{default}:  break ;}
-\DoxyCodeLine{00133 }
-\DoxyCodeLine{00134     \}}
+\DoxyCodeLine{00132     \textcolor{keywordflow}{case} TIM1\_CH3:}
+\DoxyCodeLine{00133         MTIM1\_vSetCompareReg3Value(A\_u16SpeedValue);}
+\DoxyCodeLine{00134         \textcolor{keywordflow}{break};}
 \DoxyCodeLine{00135 }
-\DoxyCodeLine{00136 \}}
+\DoxyCodeLine{00136     \textcolor{keywordflow}{case} TIM1\_CH4:}
+\DoxyCodeLine{00137         MTIM1\_vSetCompareReg4Value(A\_u16SpeedValue);}
+\DoxyCodeLine{00138         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140     \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00141         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00142     \}}
+\DoxyCodeLine{00143 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00213}{GPIO\+\_\+\+PORTB}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00400}{GPIOx\+\_\+\+PIN8}}, \mbox{\hyperlink{_ultra_sonic__program_8c_source_l00028}{HULTSNC\+\_\+v\+Init()}}, \mbox{\hyperlink{_d_c_m__config_8h_source_l00017}{MAX\+\_\+\+SPEED}}, \mbox{\hyperlink{_d_c_m__interface_8h_source_l00049}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Speed\+Pin}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+
+
+Referenced by \mbox{\hyperlink{_d_c_m__program_8c_source_l00032}{HDCM\+\_\+v\+Init\+Motor()}}.
+
 \mbox{\Hypertarget{_d_c_m__program_8c_a28ad9d52971bd9f79677ea4431b03ec6}\label{_d_c_m__program_8c_a28ad9d52971bd9f79677ea4431b03ec6}} 
 \index{DCM\_program.c@{DCM\_program.c}!HDCM\_vGetSpeedValue@{HDCM\_vGetSpeedValue}}
 \index{HDCM\_vGetSpeedValue@{HDCM\_vGetSpeedValue}!DCM\_program.c@{DCM\_program.c}}
@@ -214,30 +307,54 @@ Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00106}{106}} of f
 
 
 
-Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00141}{141}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
+Get a certain motor\textquotesingle{}s speed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Motor\+Configuration} & The motor\textquotesingle{}s configuration to get its speed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The speed value of the motor 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_d_c_m__program_8c_source_l00148}{148}} of file \mbox{\hyperlink{_d_c_m__program_8c_source}{DCM\+\_\+program.\+c}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00142 \{}
-\DoxyCodeLine{00143 }
-\DoxyCodeLine{00144     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} L\_u32SpeedValue = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
-\DoxyCodeLine{00145 }
-\DoxyCodeLine{00146     \textcolor{keywordflow}{switch}( pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a5ee7ceea1b69e1ab611417a35cff4186}{u8SpeedPin}} )}
-\DoxyCodeLine{00147     \{}
-\DoxyCodeLine{00148 }
-\DoxyCodeLine{00149         \textcolor{keywordflow}{case} TIM1\_CH1: L\_u32SpeedValue = MTIM1\_u16GetCaptureReg1Value( ) ; break ;}
+\DoxyCodeLine{00149 \{}
 \DoxyCodeLine{00150 }
-\DoxyCodeLine{00151         \textcolor{keywordflow}{case} TIM1\_CH2: L\_u32SpeedValue = MTIM1\_u16GetCaptureReg2Value( ) ; break ;}
+\DoxyCodeLine{00151     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} L\_u32SpeedValue = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
 \DoxyCodeLine{00152 }
-\DoxyCodeLine{00153         \textcolor{keywordflow}{case} TIM1\_CH3: L\_u32SpeedValue = MTIM1\_u16GetCaptureReg3Value( ) ; break ;}
-\DoxyCodeLine{00154 }
-\DoxyCodeLine{00155         \textcolor{keywordflow}{case} TIM1\_CH4: L\_u32SpeedValue = MTIM1\_u16GetCaptureReg4Value( ) ; break ;}
-\DoxyCodeLine{00156 }
-\DoxyCodeLine{00157         \textcolor{keywordflow}{default}: \textcolor{comment}{/* Do nothing */}  break ;}
-\DoxyCodeLine{00158 }
-\DoxyCodeLine{00159     \}}
-\DoxyCodeLine{00160 }
-\DoxyCodeLine{00161     \textcolor{keywordflow}{return} L\_u32SpeedValue ;}
-\DoxyCodeLine{00162 \}}
+\DoxyCodeLine{00153     \textcolor{keywordflow}{switch} (pMotorConfiguration-\/>\mbox{\hyperlink{struct_d_c_m___motor_configuration_a5ee7ceea1b69e1ab611417a35cff4186}{u8SpeedPin}})}
+\DoxyCodeLine{00154     \{}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156     \textcolor{keywordflow}{case} TIM1\_CH1:}
+\DoxyCodeLine{00157         L\_u32SpeedValue = MTIM1\_u16GetCaptureReg1Value();}
+\DoxyCodeLine{00158         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00159 }
+\DoxyCodeLine{00160     \textcolor{keywordflow}{case} TIM1\_CH2:}
+\DoxyCodeLine{00161         L\_u32SpeedValue = MTIM1\_u16GetCaptureReg2Value();}
+\DoxyCodeLine{00162         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00163 }
+\DoxyCodeLine{00164     \textcolor{keywordflow}{case} TIM1\_CH3:}
+\DoxyCodeLine{00165         L\_u32SpeedValue = MTIM1\_u16GetCaptureReg3Value();}
+\DoxyCodeLine{00166         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00167 }
+\DoxyCodeLine{00168     \textcolor{keywordflow}{case} TIM1\_CH4:}
+\DoxyCodeLine{00169         L\_u32SpeedValue = MTIM1\_u16GetCaptureReg4Value();}
+\DoxyCodeLine{00170         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00171 }
+\DoxyCodeLine{00172     \textcolor{keywordflow}{default}: \textcolor{comment}{/* Do nothing */}}
+\DoxyCodeLine{00173         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00174     \}}
+\DoxyCodeLine{00175 }
+\DoxyCodeLine{00176     \textcolor{keywordflow}{return} L\_u32SpeedValue;}
+\DoxyCodeLine{00177 \}}
 
 \end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, and \mbox{\hyperlink{_d_c_m__interface_8h_source_l00049}{DCM\+\_\+\+Motor\+Configuration\+::u8\+Speed\+Pin}}.
+

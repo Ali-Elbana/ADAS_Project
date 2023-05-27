@@ -6,7 +6,7 @@ var searchData=
   ['parity_5fenable_3',['Parity_Enable',['../struct_u_s_a_r_t___init_type.html#affc0431b2a8516a92695a7250028bf57',1,'USART_InitType']]],
   ['parity_5fselection_4',['Parity_Selection',['../struct_u_s_a_r_t___init_type.html#ae83afe06a0ae8c796873deee3203608e',1,'USART_InitType']]],
   ['pend_5fsv_5',['PEND_SV',['../group__nvic__settable__priorities.html#ga8553be2a10dccdecaf91ac8f8a2f294d',1,'NVIC_private.h']]],
-  ['periodic_5finterval_5fmode_6',['PERIODIC_INTERVAL_MODE',['../group__interval__mode.html#ga286f850f1a2cec9b96bc322f5abd7af5',1,'SysTick_config.h']]],
+  ['periodic_5finterval_5fmode_6',['PERIODIC_INTERVAL_MODE',['../group__systick__configuration.html#ga286f850f1a2cec9b96bc322f5abd7af5',1,'SysTick_config.h']]],
   ['periodic_5finterval_5ftick_5ftime_7',['PERIODIC_INTERVAL_TICK_TIME',['../_sys_tick__interface_8h.html#a2c359c6330c0a281f506a4ce7cf6cc97',1,'SysTick_interface.h']]],
   ['pin_8',['Pin',['../struct_m_g_p_i_ox___config_type.html#a6edaa6c244cf152f48755cc6f0865794',1,'MGPIOx_ConfigType']]],
   ['pllcfgr_9',['PLLCFGR',['../struct_r_c_c___memory_map_type.html#ac261eeede91c6ce53358eb30bdc6fd55',1,'RCC_MemoryMapType']]],

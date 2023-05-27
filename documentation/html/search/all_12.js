@@ -17,5 +17,6 @@ var searchData=
   ['triggerstatus_14',['TriggerStatus',['../struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9',1,'EXTI_ConfigType']]],
   ['true_15',['TRUE',['../group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d',1,'LSTD_VALUES.h']]],
   ['tx_5fonly_16',['TX_ONLY',['../group__uart__operating__modes.html#ga68e18d9e86deac2cd5519242d9cbacfa',1,'UART_interface.h']]],
-  ['tx_5frx_17',['TX_RX',['../group__uart__operating__modes.html#gac320fb8cc73d1635bf24181d566e708c',1,'UART_interface.h']]]
+  ['tx_5frx_17',['TX_RX',['../group__uart__operating__modes.html#gac320fb8cc73d1635bf24181d566e708c',1,'UART_interface.h']]],
+  ['txcrcr_18',['TXCRCR',['../struct_s_p_i___memory_map_type.html#acb44fbd16d07081dd8a4bc2288270f27',1,'SPI_MemoryMapType']]]
 ];

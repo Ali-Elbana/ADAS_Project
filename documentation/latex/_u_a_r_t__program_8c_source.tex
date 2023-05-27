@@ -38,13 +38,13 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00034}00034 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00035}00035 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00036}00036 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00037}00037 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_ac597abeb412173c08bc61f38cc9929ef}{MUSART\_vInit}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\_InitType}}) A\_InitStruct, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\_ClockInitTypeDef}}) A\_ClockInitStruct, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00037}\mbox{\hyperlink{_u_a_r_t__interface_8h_a73bf3b20827ed61d222ae8dfb1eda45c}{00037}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a73bf3b20827ed61d222ae8dfb1eda45c}{MUSART\_vInit}}(\mbox{\hyperlink{struct_u_s_a_r_t___init_type}{USART\_InitType}} *A\_InitStruct, \mbox{\hyperlink{struct_u_s_a_r_t___clock_init_type_def}{USART\_ClockInitTypeDef}} *A\_ClockInitStruct, \mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00038}00038 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00039}00039 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00040}00040     \textcolor{keywordflow}{if} (A\_USARTx == \mbox{\hyperlink{group__uart__registers_ga38f9de19e0022108a0536f7b88267d5e}{USART1\_REG}})}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00041}00041     \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00042}00042 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00043}00043         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}(\mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga420f9a41acd93e242601bb3a43fbd0f8}{APB2ENR\_USART1EN}});}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00043}00043         \mbox{\hyperlink{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}{MRCC\_vEnablePeriphralCLK}}(\mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga420f9a41acd93e242601bb3a43fbd0f8}{APB2ENR\_USART1EN}});}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00044}00044 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00045}00045         \textcolor{comment}{/*configer Tx1 as alt fun*/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00046}00046         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} TX1 =}
@@ -63,7 +63,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00059}00059     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_USARTx == \mbox{\hyperlink{group__uart__registers_ga1a4ecad9a4dcd0594be0f53e2017dc66}{USART2\_REG}})}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00060}00060     \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00061}00061 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00062}00062         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}(\mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga9485c3e161e4c625e95e5a8f1aa05b30}{APB1ENR\_USART2EN}});}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00062}00062         \mbox{\hyperlink{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}{MRCC\_vEnablePeriphralCLK}}(\mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga9485c3e161e4c625e95e5a8f1aa05b30}{APB1ENR\_USART2EN}});}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00063}00063 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00064}00064         \textcolor{comment}{/*configer Tx2 as alt fun*/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00065}00065         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} TX2 =}
@@ -82,7 +82,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00078}00078     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (A\_USARTx == \mbox{\hyperlink{group__uart__registers_gac07061e10fa07006ad02f7810500ff91}{USART6\_REG}})}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00079}00079     \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00080}00080 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00081}00081         \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}(\mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga84b80e93e2a2d9aa77ede6763f2f6ba1}{APB2ENR\_USART6EN}});}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00081}00081         \mbox{\hyperlink{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}{MRCC\_vEnablePeriphralCLK}}(\mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga84b80e93e2a2d9aa77ede6763f2f6ba1}{APB2ENR\_USART6EN}});}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00082}00082 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00083}00083         \textcolor{comment}{/*configer Tx6 as alt fun*/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00084}00084         \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} TX6 =}
@@ -157,7 +157,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00153}00153 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00154}00154 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00155}00155 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00156}00156 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a657675cf8557659e4ed063a219d58b83}{MUSART\_vEnable}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00156}\mbox{\hyperlink{_u_a_r_t__interface_8h_a4b385eba59231a73011eb70b55a8ffee}{00156}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a4b385eba59231a73011eb70b55a8ffee}{MUSART\_vEnable}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00157}00157 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00158}00158     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}(A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, MUSART\_CR1\_UE\_BIT);}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00159}00159 \}}
@@ -165,7 +165,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00161}00161 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00162}00162 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00163}00163 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00164}00164 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_ab58d8534ad0b67856a17f6ec5ced8115}{MUSART\_vDisable}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00164}\mbox{\hyperlink{_u_a_r_t__interface_8h_acafcd6cc785d2b7d90f66b17a9f95ec2}{00164}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_acafcd6cc785d2b7d90f66b17a9f95ec2}{MUSART\_vDisable}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00165}00165 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00166}00166     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}(A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a259bcc8d1757d6bc77bbff16840f64b1}{CR1\_REG}}, MUSART\_CR1\_UE\_BIT);}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00167}00167 \}}
@@ -173,7 +173,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00169}00169 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00170}00170 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00171}00171 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00172}00172 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a01200a0c19cfcc79d3f47adb6ba9cc2b}{MUSART\_vTransmitByte}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8Byte)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00172}\mbox{\hyperlink{_u_a_r_t__interface_8h_a2ada5f0990eceabc128d3fcbeb79377c}{00172}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a2ada5f0990eceabc128d3fcbeb79377c}{MUSART\_vTransmitByte}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8Byte)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00173}00173 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00174}00174 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00175}00175     \textcolor{keywordflow}{while} (\mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}(A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, MUSART\_SR\_TXE\_BIT) == 0)}
@@ -191,7 +191,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00187}00187 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00188}00188 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00189}00189 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00190}00190 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_afb8484dbe78b2b920d55ed7612b7095a}{MUSART\_vTransmitString}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}}) A\_ptrc8String)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00190}\mbox{\hyperlink{_u_a_r_t__interface_8h_aaf5b81f3e000ad569a835ff04fb24014}{00190}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_aaf5b81f3e000ad569a835ff04fb24014}{MUSART\_vTransmitString}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *A\_ptrc8String)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00191}00191 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00192}00192 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00193}00193     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8Iterator = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
@@ -199,7 +199,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00195}00195     \textcolor{keywordflow}{while} (A\_ptrc8String[loc\_u8Iterator] != \textcolor{charliteral}{'\(\backslash\)0'})}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00196}00196     \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00197}00197 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00198}00198         \mbox{\hyperlink{_u_a_r_t__interface_8h_a01200a0c19cfcc79d3f47adb6ba9cc2b}{MUSART\_vTransmitByte}}(A\_USARTx, A\_ptrc8String[loc\_u8Iterator]);}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00198}00198         \mbox{\hyperlink{_u_a_r_t__interface_8h_a2ada5f0990eceabc128d3fcbeb79377c}{MUSART\_vTransmitByte}}(A\_USARTx, A\_ptrc8String[loc\_u8Iterator]);}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00199}00199 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00200}00200         loc\_u8Iterator++;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00201}00201     \}}
@@ -208,7 +208,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00204}00204 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00205}00205 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00206}00206 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00207}00207 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a9c55f4bee8a90362015a21216647143a}{MUSART\_u8ReceiveByteSynchNonBlocking}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00207}\mbox{\hyperlink{_u_a_r_t__interface_8h_a4f947717a103374791c627ad6a7d23b1}{00207}} \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a4f947717a103374791c627ad6a7d23b1}{MUSART\_u8ReceiveByteSynchNonBlocking}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00208}00208 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00209}00209 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00210}00210     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8Data = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
@@ -235,7 +235,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00231}00231 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00232}00232 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00233}00233 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00234}00234 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}{MUSART\_u8ReceiveByteSynchBlocking}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00234}\mbox{\hyperlink{_u_a_r_t__interface_8h_a1c7805c08b1ccfe84258b0791bde3a8f}{00234}} \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00235}00235 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00236}00236 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00237}00237     \textcolor{keywordflow}{while} (\mbox{\hyperlink{group__bitmath_ga675c41d461abd3b2224e9c3d99d7151a}{GET\_BIT}}(A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}}, MUSART\_SR\_RXNE\_BIT) == 0)}
@@ -247,14 +247,14 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00243}00243 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00244}00244 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00245}00245 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00246}00246 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} *\mbox{\hyperlink{_u_a_r_t__interface_8h_a0301641266329ac8b4d31392aae8d81a}{MUSART\_ptrReceiveStringSynchNonBlocking}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00246}\mbox{\hyperlink{_u_a_r_t__interface_8h_ae8b4dd1c6f12ebf2614390dd23877801}{00246}} \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} *\mbox{\hyperlink{_u_a_r_t__interface_8h_ae8b4dd1c6f12ebf2614390dd23877801}{MUSART\_ptrReceiveStringSynchNonBlocking}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00247}00247 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00248}00248 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00249}00249     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8Iterator = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00250}00250 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00251}00251     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} loc\_u8DataCome;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00252}00252 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00253}00253     \textcolor{keywordflow}{while} ((loc\_u8DataCome = \mbox{\hyperlink{_u_a_r_t__interface_8h_a9c55f4bee8a90362015a21216647143a}{MUSART\_u8ReceiveByteSynchNonBlocking}}(A\_USARTx)) != 13)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00253}00253     \textcolor{keywordflow}{while} ((loc\_u8DataCome = \mbox{\hyperlink{_u_a_r_t__interface_8h_a4f947717a103374791c627ad6a7d23b1}{MUSART\_u8ReceiveByteSynchNonBlocking}}(A\_USARTx)) != 13)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00254}00254     \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00255}00255         G\_u8String[loc\_u8Iterator] = loc\_u8DataCome;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00256}00256 }
@@ -269,19 +269,19 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00265}00265 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00266}00266 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00267}00267 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00268}00268 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_af106a2c478c533b05923c46e85872fc3}{MUSART\_vRecieveString}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} A\_c8YourString[])}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00268}\mbox{\hyperlink{_u_a_r_t__interface_8h_a9012038beeb0224f40e9191a16255dda}{00268}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a9012038beeb0224f40e9191a16255dda}{MUSART\_vRecieveString}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} A\_c8YourString[])}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00269}00269 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00270}00270 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00271}00271     \mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\_t}} L\_u32Counter = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00272}00272 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00273}00273     A\_c8YourString[L\_u32Counter] = \mbox{\hyperlink{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}{MUSART\_u8ReceiveByteSynchBlocking}}(A\_USARTx);}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00273}00273     A\_c8YourString[L\_u32Counter] = \mbox{\hyperlink{_u_a_r_t__interface_8h_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}(A\_USARTx);}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00274}00274 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00275}00275     \textcolor{keywordflow}{while} (A\_c8YourString[L\_u32Counter] != \textcolor{charliteral}{'\(\backslash\)0'})}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00276}00276     \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00277}00277 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00278}00278         L\_u32Counter++;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00279}00279 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00280}00280         A\_c8YourString[L\_u32Counter] = \mbox{\hyperlink{_u_a_r_t__interface_8h_a11da06b3906ca441a0e8a81fc4bbd862}{MUSART\_u8ReceiveByteSynchBlocking}}(A\_USARTx);}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00280}00280         A\_c8YourString[L\_u32Counter] = \mbox{\hyperlink{_u_a_r_t__interface_8h_a1c7805c08b1ccfe84258b0791bde3a8f}{MUSART\_u8ReceiveByteSynchBlocking}}(A\_USARTx);}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00281}00281 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00282}00282         \textcolor{keywordflow}{if} ((A\_c8YourString[L\_u32Counter] == \textcolor{charliteral}{'\(\backslash\)n'}) || (A\_c8YourString[L\_u32Counter] == \textcolor{charliteral}{'\(\backslash\)r'}))}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00283}00283         \{}
@@ -293,7 +293,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00289}00289 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00290}00290 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00291}00291 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00292}00292 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a14cc7aa021d13b0f33f180ae7d90e44d}{MUSART\_u8CompareString}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}}) String1, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}}) String2)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00292}\mbox{\hyperlink{_u_a_r_t__interface_8h_a963243cdece8f17e1245a78ea097b344}{00292}} \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_a963243cdece8f17e1245a78ea097b344}{MUSART\_u8CompareString}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *String1, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *String2)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00293}00293 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00294}00294 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00295}00295     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} L\_u8TheComparingResult = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}};}
@@ -313,7 +313,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00309}00309 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00310}00310 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00311}00311 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00312}00312 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_ab4fa6caaa510b35919441e0195b300da}{MUSART\_u8ReadDataRegister}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00312}\mbox{\hyperlink{_u_a_r_t__interface_8h_aa3fe2075503bcc8e72eacd6da0b8fcad}{00312}} \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{_u_a_r_t__interface_8h_aa3fe2075503bcc8e72eacd6da0b8fcad}{MUSART\_u8ReadDataRegister}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00313}00313 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00314}00314     \textcolor{keywordflow}{return} A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a3c8a559f7aa8d7f2d6a4b42e43c8c2a0}{DR\_REG}};}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00315}00315 \}}
@@ -321,7 +321,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00317}00317 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00318}00318 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00319}00319 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00320}00320 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_ae76fead853d3a82a5ae2534a597ce184}{MUSART\_vClearFlags}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00320}\mbox{\hyperlink{_u_a_r_t__interface_8h_a4ab0324766d87def5f6b36bfd1863932}{00320}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a4ab0324766d87def5f6b36bfd1863932}{MUSART\_vClearFlags}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00321}00321 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00322}00322     A\_USARTx-\/>\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type_a0c45427011800c5d5e8c6427fb03c7e6}{SR\_REG}} = 0;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00323}00323 \}}
@@ -329,7 +329,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00325}00325 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00326}00326 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00327}00327 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00328}00328 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_ad99e4c4ef135bdb0996597181d991a66}{MUSART\_vRxIntSetStatus}}(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}}) A\_USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8Status)}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00328}\mbox{\hyperlink{_u_a_r_t__interface_8h_a0d2b121793165ec2fa0091f7bdebd70b}{00328}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a0d2b121793165ec2fa0091f7bdebd70b}{MUSART\_vRxIntSetStatus}}(\mbox{\hyperlink{struct_u_s_a_r_t___memory_map_type}{USART\_MemoryMapType}} *A\_USARTx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8Status)}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00329}00329 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00330}00330 }
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00331}00331     \textcolor{keywordflow}{switch} (A\_u8Status)}
@@ -348,7 +348,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00344}00344 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00345}00345 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00346}00346 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00347}00347 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a1678fc67fdd85e3c9a50b71f62833c30}{MUSART1\_vSetCallBack}}(\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2FUNC}}(\textcolor{keywordtype}{void}, Fptr)(\textcolor{keywordtype}{void}))}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00347}\mbox{\hyperlink{_u_a_r_t__interface_8h_a9ef0e7048b326b502767829152cb23f9}{00347}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a9ef0e7048b326b502767829152cb23f9}{MUSART1\_vSetCallBack}}(\textcolor{keywordtype}{void} (*Fptr)(\textcolor{keywordtype}{void}))}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00348}00348 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00349}00349     MUSART1\_CallBack = Fptr;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00350}00350 \}}
@@ -356,7 +356,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00352}00352 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00353}00353 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00354}00354 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00355}00355 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a403c20ffe63acf998d9fa6d4071993bd}{MUSART2\_vSetCallBack}}(\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2FUNC}}(\textcolor{keywordtype}{void}, Fptr)(\textcolor{keywordtype}{void}))}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00355}\mbox{\hyperlink{_u_a_r_t__interface_8h_a85a06b37be14149456c2d8cc53b7f559}{00355}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_a85a06b37be14149456c2d8cc53b7f559}{MUSART2\_vSetCallBack}}(\textcolor{keywordtype}{void} (*Fptr)(\textcolor{keywordtype}{void}))}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00356}00356 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00357}00357     MUSART2\_CallBack = Fptr;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00358}00358 \}}
@@ -364,7 +364,7 @@
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00360}00360 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00361}00361 \textcolor{comment}{/******************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00362}00362 }
-\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00363}00363 \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_abbee2b24f7a86b68eac12384184049eb}{MUSART6\_vSetCallBack}}(\mbox{\hyperlink{group__compiler_ga93522904f3ee5ba154d6688d847f73b1}{P2FUNC}}(\textcolor{keywordtype}{void}, Fptr)(\textcolor{keywordtype}{void}))}
+\DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00363}\mbox{\hyperlink{_u_a_r_t__interface_8h_aac1d01690bcd0920bd5ced4670cef24f}{00363}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_u_a_r_t__interface_8h_aac1d01690bcd0920bd5ced4670cef24f}{MUSART6\_vSetCallBack}}(\textcolor{keywordtype}{void} (*Fptr)(\textcolor{keywordtype}{void}))}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00364}00364 \{}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00365}00365     MUSART6\_CallBack = Fptr;}
 \DoxyCodeLine{\Hypertarget{_u_a_r_t__program_8c_source_l00366}00366 \}}

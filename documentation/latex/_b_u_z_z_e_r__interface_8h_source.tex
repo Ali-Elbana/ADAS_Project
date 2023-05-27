@@ -1,36 +1,36 @@
 \hypertarget{_b_u_z_z_e_r__interface_8h_source}{}\doxysection{BUZZER\+\_\+interface.\+h}
 \label{_b_u_z_z_e_r__interface_8h_source}\index{COTS/HAL/BUZZER/BUZZER\_interface.h@{COTS/HAL/BUZZER/BUZZER\_interface.h}}
-
+\mbox{\hyperlink{_b_u_z_z_e_r__interface_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: BUZZER\_interface.h}}
 \DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00002}00002 \textcolor{comment}{ *  Author:  Mohamed Alaa}}
 \DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00003}00003 \textcolor{comment}{ *  Version:  V1.0}}
 \DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00004}00004 \textcolor{comment}{ *  DATE:   1/27/2022}}
 \DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00005}00005 \textcolor{comment}{ */}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_BUZZER\_INTERFACE\_H}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_BUZZER\_INTERFACE\_H}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00008}00008 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00009}00009 \textcolor{comment}{/************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00010}00010 \textcolor{comment}{/***********************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00011}00011 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00017}\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{00017}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00018}00018 \{}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00022}\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{00022}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}};}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00026}\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{00026}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}};}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00027}00027 \} \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}};}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00028}00028 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00029}00029 \textcolor{comment}{/************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00030}00030 \textcolor{comment}{/*                        Functions prototypes                          */}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00031}00031 \textcolor{comment}{/************************************************************************/}}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00032}00032 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00037}00037 \textcolor{keywordtype}{void} HBUZZER\_vInit(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}}) pBuzzer\_Cfg);}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00038}00038 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00043}00043 \textcolor{keywordtype}{void} HBUZZER\_vSoundOn(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}}) pBuzzer\_Cfg);}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00044}00044 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00049}00049 \textcolor{keywordtype}{void} HBUZZER\_vSoundOff(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}}) pBuzzer\_Cfg);}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00050}00050 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00055}00055 \textcolor{keywordtype}{void} HBUZZER\_vToggleSound(\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}}) pBuzzer\_Cfg);}
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00056}00056 }
-\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00057}00057 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_BUZZER\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00014}00014 \textcolor{preprocessor}{\#ifndef \_BUZZER\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00015}00015 \textcolor{preprocessor}{\#define \_BUZZER\_INTERFACE\_H}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00017}00017 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00018}00018 \textcolor{comment}{/***********************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00025}\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{00025}} \textcolor{keyword}{typedef} \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00026}00026 \{}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00030}\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{00030}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_a6439a8215e05cda734aef4c58d715032}{u8Port}};}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00034}\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{00034}}     \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration_aa04032dd2b59932d869adaefba43c15d}{u8Pin}};}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00035}00035 \} \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}};}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00037}00037 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00038}00038 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00039}00039 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00045}00045 \textcolor{keywordtype}{void} \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_aa0f35c6332e6a0b643e65b91cefa7916}{HBUZZER\_vInit}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}} *pBuzzer\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00051}00051 \textcolor{keywordtype}{void} \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_ae5e31e362e461843b73995fd0814b1e3}{HBUZZER\_vSoundOn}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}} *pBuzzer\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00057}00057 \textcolor{keywordtype}{void} \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_a17f92d0a2ce07cb97acf7ed875497125}{HBUZZER\_vSoundOff}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}} *pBuzzer\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00063}00063 \textcolor{keywordtype}{void} \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_a5134fd7c92dfb07fcdf87c70dc02240f}{HBUZZER\_vToggleSound}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\_BuzzerConfiguration}} *pBuzzer\_Cfg);}
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_b_u_z_z_e_r__interface_8h_source_l00065}00065 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_BUZZER\_INTERFACE\_H}}
 
 \end{DoxyCode}

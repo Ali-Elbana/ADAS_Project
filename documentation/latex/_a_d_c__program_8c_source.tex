@@ -18,7 +18,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00014}00014 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00015}00015 \textcolor{preprocessor}{\#include "{}../RCC/MRCC\_interface.h"{}}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00016}00016 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00017}00017 \textcolor{preprocessor}{\#include "{}ADC\_interface.h"{}}}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00017}00017 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_a_d_c__interface_8h}{ADC\_interface.h}}"{}}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00018}00018 \textcolor{preprocessor}{\#include "{}ADC\_private.h"{}}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00019}00019 \textcolor{preprocessor}{\#include "{}ADC\_config.h"{}}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00020}00020 }
@@ -31,11 +31,11 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00027}00027 \textcolor{comment}{/*                     Functions  implementations                       */}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00028}00028 \textcolor{comment}{/************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00029}00029 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00030}00030 \textcolor{keywordtype}{void} MADC\_vInit( \textcolor{keywordtype}{void} )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00030}\mbox{\hyperlink{_a_d_c__interface_8h_af1a488a0e8573d75ace08adefec357d8}{00030}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_af1a488a0e8573d75ace08adefec357d8}{MADC\_vInit}}( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00031}00031 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00032}00032 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00033}00033     \textcolor{comment}{// EN CLK on APB2 bus to be able to operate ADC peripheral:}}
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00034}00034     \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga3cfcc0e3cd7a1bdafb109192c4a4b34b}{APB2ENR\_ADC1EN}} ) ;}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00034}00034     \mbox{\hyperlink{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga3cfcc0e3cd7a1bdafb109192c4a4b34b}{APB2ENR\_ADC1EN}} ) ;}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00035}00035 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00036}00036     \textcolor{comment}{// EN/DIS power for ADC to be turned on/off:}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00037}00037 \textcolor{preprocessor}{    \#if ADC\_ON == ENABLE}}
@@ -346,7 +346,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00342}00342 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00343}00343 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00344}00344 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00345}00345 \textcolor{keywordtype}{void} MADC\_vSelectChannel( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) A\_u8ChannelNum )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00345}\mbox{\hyperlink{_a_d_c__interface_8h_add2ef083beb9b9808a934f520fcfc8d6}{00345}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_add2ef083beb9b9808a934f520fcfc8d6}{MADC\_vSelectChannel}}( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8ChannelNum )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00346}00346 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00347}00347 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00348}00348     \textcolor{comment}{// Select Regular channel(1/2/3/.../16)}}
@@ -357,7 +357,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00353}00353 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00354}00354 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00355}00355 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00356}00356 \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} MADC\_u16ConvertToDigital( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) A\_u8ChannelNum )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00356}\mbox{\hyperlink{_a_d_c__interface_8h_af0744fea646ac7de3ca4c0b14c8042d0}{00356}} \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} \mbox{\hyperlink{_a_d_c__interface_8h_af0744fea646ac7de3ca4c0b14c8042d0}{MADC\_u16ConvertToDigital}}( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8ChannelNum )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00357}00357 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00358}00358 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00359}00359     \textcolor{comment}{// Select Regular channel(1/2/3/.../16)}}
@@ -380,11 +380,11 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00376}00376 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00377}00377 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00378}00378 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00379}00379 \textcolor{keywordtype}{void} MADC\_vDisable( \textcolor{keywordtype}{void} )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00379}\mbox{\hyperlink{_a_d_c__interface_8h_ab1dd5b8e043f1bf64ab5c3178516de87}{00379}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_ab1dd5b8e043f1bf64ab5c3178516de87}{MADC\_vDisable}}( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00380}00380 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00381}00381 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00382}00382     \textcolor{comment}{// DIS CLK on APB2 bus to be able to operate ADC peripheral:}}
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00383}00383     \mbox{\hyperlink{_m_r_c_c__interface_8h_a3af1d440b894cde7bacd809146001be4}{MRCC\_vDisablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga3cfcc0e3cd7a1bdafb109192c4a4b34b}{APB2ENR\_ADC1EN}} ) ;}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00383}00383     \mbox{\hyperlink{_m_r_c_c__interface_8h_aae7b5bdf39efe155a97b93841422cce5}{MRCC\_vDisablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga3cfcc0e3cd7a1bdafb109192c4a4b34b}{APB2ENR\_ADC1EN}} ) ;}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00384}00384 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00385}00385     \textcolor{comment}{// Power off ADC:}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00386}00386     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( ADC-\/>CR2, ADON ) ;}
@@ -394,11 +394,11 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00390}00390 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00391}00391 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00392}00392 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00393}00393 \textcolor{keywordtype}{void} MADC\_vEnable( \textcolor{keywordtype}{void} )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00393}\mbox{\hyperlink{_a_d_c__interface_8h_a77b65f39388fbc9685bf6c2421697b4f}{00393}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_a77b65f39388fbc9685bf6c2421697b4f}{MADC\_vEnable}}( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00394}00394 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00395}00395 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00396}00396     \textcolor{comment}{// EN CLK on APB2 bus to be able to operate ADC peripheral:}}
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00397}00397     \mbox{\hyperlink{_m_r_c_c__interface_8h_a17795a5844c80453d3999066ec5749d3}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga3cfcc0e3cd7a1bdafb109192c4a4b34b}{APB2ENR\_ADC1EN}} ) ;}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00397}00397     \mbox{\hyperlink{_m_r_c_c__interface_8h_adf4049d31c5859572e821de89f05d6df}{MRCC\_vEnablePeriphralCLK}}( \mbox{\hyperlink{group___bus_ga87b37ab3b0024e2cdf8d4e0cbe1febdd}{RCC\_APB2}}, \mbox{\hyperlink{group___peripheral_ga3cfcc0e3cd7a1bdafb109192c4a4b34b}{APB2ENR\_ADC1EN}} ) ;}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00398}00398 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00399}00399     \textcolor{comment}{// Power on ADC:}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00400}00400     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( ADC-\/>CR2, ADON ) ;}
@@ -408,7 +408,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00404}00404 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00405}00405 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00406}00406 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00407}00407 \textcolor{keywordtype}{void} MADC\_vRegINT\_Disable( \textcolor{keywordtype}{void} )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00407}\mbox{\hyperlink{_a_d_c__interface_8h_ac1f00ee083387de1fc37c47be4f395fc}{00407}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_ac1f00ee083387de1fc37c47be4f395fc}{MADC\_vRegINT\_Disable}}( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00408}00408 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00409}00409     \mbox{\hyperlink{group__bitmath_gaf19b6fac717c58884e62ee37a2e89786}{CLR\_BIT}}( ADC-\/>CR1, EOCIE ) ;}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00410}00410 \}}
@@ -416,7 +416,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00412}00412 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00413}00413 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00414}00414 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00415}00415 \textcolor{keywordtype}{void} MADC\_vRegINTEnable( \textcolor{keywordtype}{void} )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00415}\mbox{\hyperlink{_a_d_c__interface_8h_adeff261257ef48e65197fbd5c64a4987}{00415}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_adeff261257ef48e65197fbd5c64a4987}{MADC\_vRegINTEnable}}( \textcolor{keywordtype}{void} )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00416}00416 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00417}00417     \mbox{\hyperlink{group__bitmath_ga6ec8b9eaa50956e59aedcd2c050298d3}{SET\_BIT}}( ADC-\/>CR1, EOCIE ) ;}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00418}00418 \}}
@@ -424,7 +424,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00420}00420 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00421}00421 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00422}00422 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00423}00423 \textcolor{keywordtype}{void} MADC\_vSetCallBack( \textcolor{keywordtype}{void} (*MEXTI\_vpPointerTo\_ISR\_function) (\textcolor{keywordtype}{void}) )}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00423}\mbox{\hyperlink{_a_d_c__interface_8h_a32a5a752414ca91e31ee94605c735811}{00423}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_a_d_c__interface_8h_a32a5a752414ca91e31ee94605c735811}{MADC\_vSetCallBack}}( \textcolor{keywordtype}{void} (*MEXTI\_vpPointerTo\_ISR\_function) (\textcolor{keywordtype}{void}) )}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00424}00424 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00425}00425 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00426}00426     \textcolor{keywordflow}{if}( MEXTI\_vpPointerTo\_ISR\_function != \mbox{\hyperlink{group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} )}
@@ -439,7 +439,7 @@
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00435}00435 \textcolor{comment}{/********************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00436}00436 \textcolor{comment}{/*******************************************************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00437}00437 }
-\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00438}00438 \mbox{\hyperlink{group__compiler_ga846278437e035619630d1fffd9974e82}{FUNC}}(\textcolor{keywordtype}{void}) ADC\_IRQHandler(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00438}00438 \textcolor{keywordtype}{void} ADC\_IRQHandler(\textcolor{keywordtype}{void})}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00439}00439 \{}
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00440}00440 }
 \DoxyCodeLine{\Hypertarget{_a_d_c__program_8c_source_l00441}00441     \textcolor{keywordflow}{if}( MADC\_vpPointerToFunction != \mbox{\hyperlink{group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}} )}

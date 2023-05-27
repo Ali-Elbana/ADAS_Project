@@ -29,9 +29,9 @@
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00025}00025 \textcolor{comment}{/*                        Externed variables                            */}}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00026}00026 \textcolor{comment}{/************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00027}00027 }
-\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00028}00028 \textcolor{keyword}{extern}  \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} LDR\_Vo   ;}
+\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00028}00028 \textcolor{keyword}{extern} \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}}) LDR\_Vo;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00029}00029 }
-\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00030}00030 \textcolor{keyword}{extern} \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) LDR\_CHANNEL         ;}
+\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00030}00030 \textcolor{keyword}{extern} \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) LDR\_CHANNEL;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00031}00031 }
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00032}00032 \textcolor{comment}{/************************************************************************/}}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00033}00033 \textcolor{comment}{/*                     Functions' implementations                       */}}
@@ -42,7 +42,7 @@
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00038}00038 }
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00039}00039     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&LDR\_Vo ) ;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00040}00040 }
-\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00041}00041     MADC\_vInit( ) ;}
+\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00041}00041     \mbox{\hyperlink{_a_d_c__interface_8h_af1a488a0e8573d75ace08adefec357d8}{MADC\_vInit}}( ) ;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00042}00042 }
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00043}00043 \}}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00044}00044 }
@@ -54,7 +54,7 @@
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00050}00050 }
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00051}00051     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}}) L\_u16DigitalResult = \mbox{\hyperlink{group__standardvalues_ga4d11bc62f87fecb66ddb08bbe922e468}{INITIAL\_ZERO}} ;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00052}00052 }
-\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00053}00053     L\_u16DigitalResult = MADC\_u16ConvertToDigital( LDR\_CHANNEL ) ;}
+\DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00053}00053     L\_u16DigitalResult = \mbox{\hyperlink{_a_d_c__interface_8h_af0744fea646ac7de3ca4c0b14c8042d0}{MADC\_u16ConvertToDigital}}( LDR\_CHANNEL ) ;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00054}00054 }
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00055}00055     \textcolor{keywordflow}{return} L\_u16DigitalResult ;}
 \DoxyCodeLine{\Hypertarget{_l_d_r__program_8c_source_l00056}00056 }

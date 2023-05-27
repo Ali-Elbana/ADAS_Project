@@ -9,7 +9,7 @@ var searchData=
   ['nvic_20settable_20priorities_6',['NVIC Settable Priorities',['../group__nvic__settable__priorities.html',1,'']]],
   ['nvic_20vector_20table_7',['NVIC Vector Table',['../group__vector__table.html',1,'']]],
   ['nvic_5fbase_5faddress_8',['NVIC_BASE_ADDRESS',['../group__nvic__addresses.html#ga34bb69bb1cf664ded3f70c7c70076046',1,'NVIC_private.h']]],
-  ['nvic_5fgetpriority_9',['NVIC_GetPriority',['../_n_v_i_c__interface_8h.html#ad3b1911350db17d52b25477f9b94642a',1,'NVIC_interface.h']]],
+  ['nvic_5fgetpriority_9',['NVIC_GetPriority',['../_n_v_i_c__interface_8h.html#a8631573a83351d70a0bb3add68c329dd',1,'NVIC_GetPriority(s8_t A_s8INTID):&#160;NVIC_program.c'],['../_n_v_i_c__program_8c.html#a8631573a83351d70a0bb3add68c329dd',1,'NVIC_GetPriority(s8_t A_s8INTID):&#160;NVIC_program.c']]],
   ['nvic_5finterface_2eh_10',['NVIC_interface.h',['../_n_v_i_c__interface_8h.html',1,'']]],
   ['nvic_5fmemorymaptype_11',['NVIC_MemoryMapType',['../struct_n_v_i_c___memory_map_type.html',1,'']]],
   ['nvic_5fprivate_2eh_12',['NVIC_private.h',['../_n_v_i_c__private_8h.html',1,'']]],
