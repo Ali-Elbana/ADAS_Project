@@ -68,7 +68,7 @@ void MGPIOx_vLockedPins(void);
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8Mode The mode to apply the pin
  */
-void MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8Mode);
+void MGPIOx_vSetPinMode(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8Mode);
 
 /**
  * @brief Sets a certain pin's output type on a speific port
@@ -76,7 +76,7 @@ void MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8OutputType The output type to apply on the pin
  */
-void MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputType);
+void MGPIOx_vSetPinOutputType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputType);
 
 /**
  * @brief Sets a certain pin's output speed on a speific port
@@ -84,7 +84,7 @@ void MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8OutputSpeed The output speed to apply on the pin
  */
-void MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputSpeed);
+void MGPIOx_vSetPinOutputSpeed(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputSpeed);
 
 /**
  * @brief Sets a certain pin's input pull type on a speific port
@@ -92,7 +92,7 @@ void MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8InputPullType The input pull type to apply on the pin
  */
-void MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8InputPullType);
+void MGPIOx_vSetPinInputPullType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8InputPullType);
 
 /**
  * @brief Gets the value currently on a certain pin
@@ -100,7 +100,7 @@ void MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(
  * @param[in] A_u8PinID The pin to update its mode
  * @return The current value on the pin
  */
-u8_t MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID);
+u8_t MGPIOx_u8GetPinValue(u8_t A_u8PortID, u8_t A_u8PinID);
 
 /**
  * @brief Sets a certain pin's output value on a speific port
@@ -108,7 +108,7 @@ u8_t MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID);
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8PinValue The set value to set on the pin
  */
-void MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8PinValue);
+void MGPIOx_vSetPinValue(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8PinValue);
 
 /**
  * @brief Resets a certain pin's output value on a speific port
@@ -116,7 +116,7 @@ void MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8SetResetPinValue The reset value to set on the pin
  */
-void MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue);
+void MGPIOx_vSetResetAtomic(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8SetResetPinValue);
 
 /**
  * @brief Applys an alternative function on a certain pin
@@ -124,33 +124,33 @@ void MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t)
  * @param[in] A_u8PinID The pin to update its mode
  * @param[in] A_u8AFID The alternative function to apply on the pin
  */
-void MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8AFID);
+void MGPIOx_vSetAlternateFunctionON(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8AFID);
 
 /**
  * @brief Updates a port's configuration lock
  * @param[in] A_u8PortID The port to update the pin's mode
  */
-void MGPIOx_vSetPortConfigLock(VAR(u8_t) A_u8PortID);
+void MGPIOx_vSetPortConfigLock(u8_t A_u8PortID);
 
 /**
  * @brief Initialize the GPIO with a certain configuration
  * @param[in] A_xPinConfig The initialization configuration for the GPIO
  */
-void MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig);
+void MGPIOx_vInit(MGPIOx_ConfigType * A_xPinConfig);
 
 /**
  * @brief Toggles a certain's pin's value on a certain port
  * @param[in] A_u8PortID The port that the pin belongs to
  * @param[in] A_u8PinID The pin to toggle its value
  */
-void MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID);
+void MGPIOx_vTogglePinValue(u8_t A_u8PortID, u8_t A_u8PinID);
 
 /**
  * @brief Sets a certain port's output value
  * @param[in] A_u8PortID The port to out the value on
  * @param[in] A_u16PortValue The value to set on the port
  */
-void GPIO_vSetNibbleLowValue(VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue);
+void GPIO_vSetNibbleLowValue(u8_t A_u8PortID, u16_t A_u16PortValue);
 
 /************************************************************************/
 /*                          Interfacing macros                          */

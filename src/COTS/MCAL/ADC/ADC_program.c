@@ -342,7 +342,7 @@ void MADC_vInit( void )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-void MADC_vSelectChannel( VAR(u8_t) A_u8ChannelNum )
+void MADC_vSelectChannel( u8_t A_u8ChannelNum )
 {
 
 	// Select Regular channel(1/2/3/.../16)
@@ -353,7 +353,7 @@ void MADC_vSelectChannel( VAR(u8_t) A_u8ChannelNum )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-u16_t MADC_u16ConvertToDigital( VAR(u8_t) A_u8ChannelNum )
+u16_t MADC_u16ConvertToDigital( u8_t A_u8ChannelNum )
 {
 
 	// Select Regular channel(1/2/3/.../16)
@@ -435,7 +435,7 @@ void MADC_vSetCallBack( void (*MEXTI_vpPointerTo_ISR_function) (void) )
 /********************************************************************************************************************/
 /*******************************************************************************************************************/
 
-FUNC(void) ADC_IRQHandler(void)
+void ADC_IRQHandler(void)
 {
 
 	if( MADC_vpPointerToFunction != NULL )

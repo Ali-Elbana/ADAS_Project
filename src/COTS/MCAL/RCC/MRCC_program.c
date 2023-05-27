@@ -26,7 +26,7 @@
 /*                     Functions  implementations                      	*/
 /************************************************************************/
 
-FUNC(void) MRCC_vInit( void )
+void MRCC_vInit( void )
 {
 
 	// PLLI2S (ON/OFF).
@@ -397,7 +397,7 @@ FUNC(void) MRCC_vInit( void )
 /******************************************************************/
 /******************************************************************/
 
-FUNC(void) MRCC_vEnablePeriphralCLK( VAR(u32_t) A_u32BusID, VAR(u32_t) A_u32PeriphralID )
+void MRCC_vEnablePeriphralCLK( u32_t A_u32BusID, u32_t A_u32PeriphralID )
 {
 
 	switch( A_u32BusID )
@@ -450,7 +450,7 @@ FUNC(void) MRCC_vEnablePeriphralCLK( VAR(u32_t) A_u32BusID, VAR(u32_t) A_u32Peri
 /******************************************************************/
 /******************************************************************/
 
-FUNC(void) MRCC_vDisablePeriphralCLK(  VAR(u32_t) A_u32BusID, VAR(u32_t) A_u32PeriphralID )
+void MRCC_vDisablePeriphralCLK(  u32_t A_u32BusID, u32_t A_u32PeriphralID )
 {
 
 	switch( A_u32BusID )

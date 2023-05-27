@@ -30,10 +30,10 @@
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-FUNC( void ) TSALC_vDispLux( void )
+void TSALC_vDispLux( void )
 {
 
-	VAR(u16_t) L_u16BrightnessLevel = INITIAL_ZERO ;
+	u16_t L_u16BrightnessLevel = INITIAL_ZERO ;
 
 	MRCC_vInit( ) ;
 

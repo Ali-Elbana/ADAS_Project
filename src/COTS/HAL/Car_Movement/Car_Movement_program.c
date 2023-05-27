@@ -38,7 +38,7 @@ void HCarMove_vInit( void )
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HCarMove_vSpeedRatio( VAR(u16_t) A_u16SpeedRatio )
+void HCarMove_vSpeedRatio( u16_t A_u16SpeedRatio )
 {
 
 	HDCM_vMotorSpeedCntrl( &Motor1, A_u16SpeedRatio ) ;

@@ -3,6 +3,14 @@
  *  Version:  V1.0
  *  DATE:   1/27/2022
  */
+/**
+ * @file BUZZER_interface.h
+ * @author Mohamed Alaa
+ * @brief This file contains the interface information for the Buzzer module
+ * @version 1.0
+ * @date 1/27/2022
+ */
+
 #ifndef _BUZZER_INTERFACE_H
 #define _BUZZER_INTERFACE_H
 
@@ -34,24 +42,24 @@ typedef struct
  * @brief This function is used to initialize the Buzzer
  * @param[in] pBuzzer_Cfg Pointer to Buzzer configuration structure to initialize the Buzzer with a certain port and pin
  */
-void HBUZZER_vInit(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg);
+void HBUZZER_vInit(BUZZER_BuzzerConfiguration *pBuzzer_Cfg);
 
 /**
  * @brief This function is used to sound the Buzzer on
  * @param[in] pBuzzer_Cfg Pointer to Buzzer configuration to sound on the Buzzer
  */
-void HBUZZER_vSoundOn(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg);
+void HBUZZER_vSoundOn(BUZZER_BuzzerConfiguration *pBuzzer_Cfg);
 
 /**
  * @brief This function is used to sound the Buzzer off
  * @param[in] pBuzzer_Cfg Pointer to Buzzer configuration to sound off the Buzzer
  */
-void HBUZZER_vSoundOff(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg);
+void HBUZZER_vSoundOff(BUZZER_BuzzerConfiguration *pBuzzer_Cfg);
 
 /**
  * @brief This function is used to toggle the sound of the buzzer
  * @param[in] pBuzzer_Cfg Pointer to Buzzer configuration to toggle the sound of the Buzzer
  */
-void HBUZZER_vToggleSound(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg);
+void HBUZZER_vToggleSound(BUZZER_BuzzerConfiguration *pBuzzer_Cfg);
 
 #endif //_BUZZER_INTERFACE_H

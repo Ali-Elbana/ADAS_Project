@@ -159,7 +159,7 @@ void HLCD_vInit(void)
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vSendCommand( VAR(u8_t) A_u8Cmd )
+void HLCD_vSendCommand( u8_t A_u8Cmd )
 {
 
 	// Set RS pin low to send a command.
@@ -190,7 +190,7 @@ void HLCD_vSendCommand( VAR(u8_t) A_u8Cmd )
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vSendData(VAR(u8_t) A_u8Data)
+void HLCD_vSendData(u8_t A_u8Data)
 {
 
 	// Set RS pin high to send data.
@@ -235,7 +235,7 @@ void HLCD_vClear(void)
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vDispString( P2VAR(c8_t) A_c8Char )
+void HLCD_vDispString( c8_t * A_c8Char )
 {
 
 	for( VAR(u8_t) L_u8I = 0 ; A_c8Char[L_u8I] != '\0' ; L_u8I++ )
@@ -285,7 +285,7 @@ void HLCD_vDispNumber( VAR(s32_t) A_s32Num )
 	}
 
 	// For arrangement the digits.
-	for ( VAR(s8_t) L_s8ArrangedNums = (L_u8Counter-1) ; L_s8ArrangedNums >= 0 ; L_s8ArrangedNums-- )
+	for (VAR(s8_t) L_s8ArrangedNums = (L_u8Counter - 1); L_s8ArrangedNums >= 0; L_s8ArrangedNums--)
 	{
 
 		HLCD_vSendData( '0' + LR_u8Digits[ L_s8ArrangedNums ] ) ;
@@ -297,11 +297,11 @@ void HLCD_vDispNumber( VAR(s32_t) A_s32Num )
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-//void HLCD_vDispNum(s32 A_s32Num)
+// void HLCD_vDispNum(s32 A_s32Num)
 //{
 //
 //
-//	u32 L_u32Rev = 0 ;
+//	VAR(u32_t) L_u32Rev = 0 ;
 //
 //	while( A_s32Num >0 )
 //	{
@@ -325,19 +325,19 @@ void HLCD_vDispNumber( VAR(s32_t) A_s32Num )
 //
 //
 //
-//}
+// }
 
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vSaveCustomChar( VAR(u8_t) A_u8Address, P2VAR(u8_t) A_u8CustomChar )
+void HLCD_vSaveCustomChar( u8_t A_u8Address, u8_t * A_u8CustomChar )
 {
 
 	// 1-Set CGRAM Address.
 	HLCD_vSendCommand( SET_CGRAM_AC_MASK + (NumOf_CGRAM_Patterns * A_u8Address) ) ;
 
 	// 2- Send custom char data.
-	for( VAR(u8_t) L_u8I = FirstByteInCGRAM_Pattern ; L_u8I < LastByteInCGRAM_Pattern ; L_u8I++ )
+	for( u8_t L_u8I = FirstByteInCGRAM_Pattern ; L_u8I < LastByteInCGRAM_Pattern ; L_u8I++ )
 	{
 
 		HLCD_vSendData( A_u8CustomChar[L_u8I] ) ;
@@ -352,7 +352,7 @@ void HLCD_vSaveCustomChar( VAR(u8_t) A_u8Address, P2VAR(u8_t) A_u8CustomChar )
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vGoTo( VAR(u8_t) A_u8Row, VAR(u8_t) A_u8Col )
+void HLCD_vGoTo( u8_t A_u8Row, u8_t A_u8Col )
 {
 
 	// Valid Range.
@@ -440,7 +440,7 @@ void HLCD_vSetCursorBlinkingOFF(void)
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vDispShiftLeftString( P2VAR(c8_t) A_c8Char )
+void HLCD_vDispShiftLeftString( c8_t * A_c8Char )
 {
 
 	VAR(u8_t) L_u8I = 0 ;
@@ -457,7 +457,7 @@ void HLCD_vDispShiftLeftString( P2VAR(c8_t) A_c8Char )
 	if( L_u8I > HLCD_CharactersNums )
 	{
 
-		for( VAR(u8_t) i = 0 ; i < L_u8I - HLCD_CharactersNums ; i++ )
+		for( u8_t i = 0 ; i < L_u8I - HLCD_CharactersNums ; i++ )
 		{
 
 			HLCD_vSetShiftLeftOn() ;
@@ -471,7 +471,7 @@ void HLCD_vDispShiftLeftString( P2VAR(c8_t) A_c8Char )
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HLCD_vClearChar( VAR(u8_t) A_u8Row, VAR(u8_t) A_u8Col )
+void HLCD_vClearChar( u8_t A_u8Row, u8_t A_u8Col )
 {
 
 	HLCD_vGoTo( A_u8Row, A_u8Col ) ;

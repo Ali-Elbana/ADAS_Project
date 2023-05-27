@@ -34,7 +34,7 @@ void (*MUSART6_CallBack)(void);
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vInit(P2VAR(USART_InitType) A_InitStruct, P2VAR(USART_ClockInitTypeDef) A_ClockInitStruct, P2VAR(USART_MemoryMapType) A_USARTx)
+void MUSART_vInit(USART_InitType *A_InitStruct, USART_ClockInitTypeDef *A_ClockInitStruct, USART_MemoryMapType *A_USARTx)
 {
 
 	if (A_USARTx == USART1_REG)
@@ -153,7 +153,7 @@ void MUSART_vInit(P2VAR(USART_InitType) A_InitStruct, P2VAR(USART_ClockInitTypeD
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vEnable(P2VAR(USART_MemoryMapType) A_USARTx)
+void MUSART_vEnable(USART_MemoryMapType *A_USARTx)
 {
 	SET_BIT(A_USARTx->CR1_REG, MUSART_CR1_UE_BIT);
 }
@@ -161,7 +161,7 @@ void MUSART_vEnable(P2VAR(USART_MemoryMapType) A_USARTx)
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vDisable(P2VAR(USART_MemoryMapType) A_USARTx)
+void MUSART_vDisable(USART_MemoryMapType *A_USARTx)
 {
 	CLR_BIT(A_USARTx->CR1_REG, MUSART_CR1_UE_BIT);
 }
@@ -169,7 +169,7 @@ void MUSART_vDisable(P2VAR(USART_MemoryMapType) A_USARTx)
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vTransmitByte(P2VAR(USART_MemoryMapType) A_USARTx, u8_t A_u8Byte)
+void MUSART_vTransmitByte(USART_MemoryMapType *A_USARTx, u8_t A_u8Byte)
 {
 
 	while (GET_BIT(A_USARTx->SR_REG, MUSART_SR_TXE_BIT) == 0)
@@ -187,7 +187,7 @@ void MUSART_vTransmitByte(P2VAR(USART_MemoryMapType) A_USARTx, u8_t A_u8Byte)
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vTransmitString(P2VAR(USART_MemoryMapType) A_USARTx, P2VAR(c8_t) A_ptrc8String)
+void MUSART_vTransmitString(USART_MemoryMapType *A_USARTx, c8_t *A_ptrc8String)
 {
 
 	u8_t loc_u8Iterator = INITIAL_ZERO;
@@ -204,7 +204,7 @@ void MUSART_vTransmitString(P2VAR(USART_MemoryMapType) A_USARTx, P2VAR(c8_t) A_p
 /******************************************************************/
 /******************************************************************/
 
-u8_t MUSART_u8ReceiveByteSynchNonBlocking(P2VAR(USART_MemoryMapType) A_USARTx)
+u8_t MUSART_u8ReceiveByteSynchNonBlocking(USART_MemoryMapType *A_USARTx)
 {
 
 	u8_t loc_u8Data = INITIAL_ZERO;
@@ -231,7 +231,7 @@ u8_t MUSART_u8ReceiveByteSynchNonBlocking(P2VAR(USART_MemoryMapType) A_USARTx)
 /******************************************************************/
 /******************************************************************/
 
-u8_t MUSART_u8ReceiveByteSynchBlocking(P2VAR(USART_MemoryMapType) A_USARTx)
+u8_t MUSART_u8ReceiveByteSynchBlocking(USART_MemoryMapType *A_USARTx)
 {
 
 	while (GET_BIT(A_USARTx->SR_REG, MUSART_SR_RXNE_BIT) == 0)
@@ -243,7 +243,7 @@ u8_t MUSART_u8ReceiveByteSynchBlocking(P2VAR(USART_MemoryMapType) A_USARTx)
 /******************************************************************/
 /******************************************************************/
 
-u8_t *MUSART_ptrReceiveStringSynchNonBlocking(P2VAR(USART_MemoryMapType) A_USARTx)
+u8_t *MUSART_ptrReceiveStringSynchNonBlocking(USART_MemoryMapType *A_USARTx)
 {
 
 	u8_t loc_u8Iterator = INITIAL_ZERO;
@@ -265,7 +265,7 @@ u8_t *MUSART_ptrReceiveStringSynchNonBlocking(P2VAR(USART_MemoryMapType) A_USART
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vRecieveString(P2VAR(USART_MemoryMapType) A_USARTx, c8_t A_c8YourString[])
+void MUSART_vRecieveString(USART_MemoryMapType *A_USARTx, c8_t A_c8YourString[])
 {
 
 	u32_t L_u32Counter = INITIAL_ZERO;
@@ -289,7 +289,7 @@ void MUSART_vRecieveString(P2VAR(USART_MemoryMapType) A_USARTx, c8_t A_c8YourStr
 /******************************************************************/
 /******************************************************************/
 
-u8_t MUSART_u8CompareString(P2VAR(c8_t) String1, P2VAR(c8_t) String2)
+u8_t MUSART_u8CompareString(c8_t *String1, c8_t *String2)
 {
 
 	u8_t L_u8TheComparingResult = INITIAL_ZERO;
@@ -309,7 +309,7 @@ u8_t MUSART_u8CompareString(P2VAR(c8_t) String1, P2VAR(c8_t) String2)
 /******************************************************************/
 /******************************************************************/
 
-u8_t MUSART_u8ReadDataRegister(P2VAR(USART_MemoryMapType) A_USARTx)
+u8_t MUSART_u8ReadDataRegister(USART_MemoryMapType *A_USARTx)
 {
 	return A_USARTx->DR_REG;
 }
@@ -317,7 +317,7 @@ u8_t MUSART_u8ReadDataRegister(P2VAR(USART_MemoryMapType) A_USARTx)
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vClearFlags(P2VAR(USART_MemoryMapType) A_USARTx)
+void MUSART_vClearFlags(USART_MemoryMapType *A_USARTx)
 {
 	A_USARTx->SR_REG = 0;
 }
@@ -325,7 +325,7 @@ void MUSART_vClearFlags(P2VAR(USART_MemoryMapType) A_USARTx)
 /******************************************************************/
 /******************************************************************/
 
-void MUSART_vRxIntSetStatus(P2VAR(USART_MemoryMapType) A_USARTx, u8_t A_u8Status)
+void MUSART_vRxIntSetStatus(USART_MemoryMapType *A_USARTx, u8_t A_u8Status)
 {
 
 	switch (A_u8Status)
@@ -344,7 +344,7 @@ void MUSART_vRxIntSetStatus(P2VAR(USART_MemoryMapType) A_USARTx, u8_t A_u8Status
 /******************************************************************/
 /******************************************************************/
 
-void MUSART1_vSetCallBack(P2FUNC(void, Fptr)(void))
+void MUSART1_vSetCallBack(void (*Fptr)(void))
 {
 	MUSART1_CallBack = Fptr;
 }
@@ -352,7 +352,7 @@ void MUSART1_vSetCallBack(P2FUNC(void, Fptr)(void))
 /******************************************************************/
 /******************************************************************/
 
-void MUSART2_vSetCallBack(P2FUNC(void, Fptr)(void))
+void MUSART2_vSetCallBack(void (*Fptr)(void))
 {
 	MUSART2_CallBack = Fptr;
 }
@@ -360,7 +360,7 @@ void MUSART2_vSetCallBack(P2FUNC(void, Fptr)(void))
 /******************************************************************/
 /******************************************************************/
 
-void MUSART6_vSetCallBack(P2FUNC(void, Fptr)(void))
+void MUSART6_vSetCallBack(void (*Fptr)(void))
 {
 	MUSART6_CallBack = Fptr;
 }

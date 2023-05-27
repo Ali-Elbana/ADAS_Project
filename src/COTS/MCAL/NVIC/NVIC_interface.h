@@ -19,14 +19,14 @@
  * @param[in] A_u8INTID The peripheral's interrupt ID
  * @see MNVIC_vDisablePeriphral
  */
-void MNVIC_vEnablePeriphral(VAR(u8_t) A_u8INTID);
+void MNVIC_vEnablePeriphral(u8_t A_u8INTID);
 
 /**
  * @brief Disable the interrupt of a certain peripheral in NVIC
  * @param[in] A_u8INTID The peripheral's interrupt ID
  * @see MNVIC_vEnablePeriphral
  */
-void MNVIC_vDisablePeriphral(VAR(u8_t) A_u8INTID);
+void MNVIC_vDisablePeriphral(u8_t A_u8INTID);
 
 /**
  * @brief Set the pending flag of the peripheral
@@ -34,7 +34,7 @@ void MNVIC_vDisablePeriphral(VAR(u8_t) A_u8INTID);
  * @param[in] A_u8INTID The peripheral's interrupt ID
  * @see MNVIC_vClearPendingFlag
  */
-void MNVIC_vSetPendingFlag(VAR(u8_t) A_u8INTID);
+void MNVIC_vSetPendingFlag(u8_t A_u8INTID);
 
 /**
  * @brief Clear the pending flag of the peripheral
@@ -42,20 +42,20 @@ void MNVIC_vSetPendingFlag(VAR(u8_t) A_u8INTID);
  * @param[in] A_u8INTID The peripheral's interrupt ID
  * @see MNVIC_vSetPendingFlag
  */
-void MNVIC_vClearPendingFlag(VAR(u8_t) A_u8INTID);
+void MNVIC_vClearPendingFlag(u8_t A_u8INTID);
 
 /**
  * @brief Get the current state of the interrupt active flag of a certain peripheral in NVIC
  * @param[in] A_u8INTID The peripheral's interrupt ID
  * @return The current state of the interrupt active flag
  */
-u8_t MNVIC_u8GetActive(VAR(u8_t) A_u8INTID);
+u8_t MNVIC_u8GetActive(u8_t A_u8INTID);
 
 /**
  * @brief Configures the group and sub-group priority configuration
  * @param[in] A_u8PriorityOption The peripheral's interrupt ID
  */
-void MNVIC_vSetPriorityConfig(VAR(u8_t) A_u8PriorityOption);
+void MNVIC_vSetPriorityConfig(u8_t A_u8PriorityOption);
 
 /**
  * @brief Set the group and the sub-group priorities for the required interrupt
@@ -65,14 +65,14 @@ void MNVIC_vSetPriorityConfig(VAR(u8_t) A_u8PriorityOption);
  * @see group_prioty
  * @see sub_group_prioty
  */
-void MNVIC_vSetPriority(VAR(s8_t) A_s8INTID, VAR(u8_t) A_u8GroupPriority, VAR(u8_t) A_u8SubPriority);
+void MNVIC_vSetPriority(s8_t A_s8INTID, u8_t A_u8GroupPriority, u8_t A_u8SubPriority);
 
 /**
  * @brief Get a certain interrupt's priority
  * @param[in] A_s8INTID
  * @return The priority for the corresponding interrupt
  */
-u32_t NVIC_GetPriority(VAR(s8_t) A_s8INTID);
+u32_t NVIC_GetPriority(s8_t A_s8INTID);
 
 /************************************************************************/
 /*                          Interfacing macros                          */

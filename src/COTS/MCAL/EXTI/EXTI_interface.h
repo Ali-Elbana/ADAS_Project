@@ -48,47 +48,47 @@ void MEXTI_vInit(void);
  * @brief Initialize the EXTI module with a certain configuration
  * @param[in] A_xINTConfig The configuration structure to initialize the interrupt with
  */
-void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig);
+void MEXTI_vInit_WithStruct(EXTI_ConfigType * A_xINTConfig);
 
 /**
  * @brief Enable the interrupt on a certain line ID with a certain trigger status
  * @param[in] A_u8LineID The line ID to enable the interrupt on
  * @param[in] A_u8TriggerStatus The trigger status to trigger when the interrupt occurs
  */
-void MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus);
+void MEXTI_vEnableLine(u8_t A_u8LineID, u8_t A_u8TriggerStatus);
 
 /**
  * @brief Disable the interrupt on a certain line ID
  * @param[in] A_u8LineID Which line to disable the interrupt on
  */
-void MEXTI_vDisableLine(VAR(u8_t) A_u8LineID);
+void MEXTI_vDisableLine(u8_t A_u8LineID);
 
 /**
  * @brief perform a software event interrupt on a certain line
  * @param[in] A_u8LineID The line ID to perform the software event interrupt on
  */
-void MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID);
+void MEXTI_vSWITrigger(u8_t A_u8LineID);
 
 /**
  * @brief Set the trigger status interrupt on a certain line ID
  * @param[in] A_u8LineID The line ID to enable the interrupt on
  * @param[in] A_u8TriggerStatus The trigger status to trigger when the interrupt occurs
  */
-void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus);
+void MEXTI_vSetTrigger(u8_t A_u8LineID, u8_t A_u8TriggerStatus);
 
 /**
  * @brief Set the callback when an interrupt occurs on a certain line ID
  * @param[in] A_u8LineID The line ID to set the callback on
  * @param[in] A_vFptr The callback to call when the interrupt occurs on a certain line
  */
-void MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, void (*A_vFptr)(void));
+void MEXTI_vSetCallback(u8_t A_u8LineID, void (*A_vFptr)(void));
 
 /**
  * @brief Enable the interrupt on a certain line in a certain port
  * @param[in] A_u8LineID The line ID to to enable the interrupt onto
  * @param[in] A_u8PortID Port that the line belongs to
  */
-void MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID);
+void MSYSCFG_vSetEXTIPort(u8_t A_u8LineID, u8_t A_u8PortID);
 
 /**
  * @defgroup interrupt_lines Interrupt line IDs

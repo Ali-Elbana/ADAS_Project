@@ -24,14 +24,14 @@ void MRCC_vInit(void);
  * @param[in] A_u32BusID Bus ID.
  * @param[in] A_u32PeriphralID Peripheral ID.
  */
-void MRCC_vEnablePeriphralCLK(VAR(u32_t) A_u32BusID, VAR(u32_t) A_u32PeriphralID);
+void MRCC_vEnablePeriphralCLK(u32_t A_u32BusID, u32_t A_u32PeriphralID);
 
 /**
  * @brief Disabling the CLK on a specific Peripheral.
  * @param[in] A_u32BusID Bus ID.
  * @param[in] A_u32PeriphralID Peripheral ID.
  */
-void MRCC_vDisablePeriphralCLK(VAR(u32_t) A_u32BusID, VAR(u32_t) A_u32PeriphralID);
+void MRCC_vDisablePeriphralCLK(u32_t A_u32BusID, u32_t A_u32PeriphralID);
 
 /************************************************************************/
 /*                          Interfacing macros                          */

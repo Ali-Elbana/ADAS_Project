@@ -110,7 +110,7 @@ void TMLDR_vLightLEDsWithLevels(void)
 
 	HLDR_vInit( ) ;
 
-	VAR(u16_t) L_u16BrightnessLevel = INITIAL_ZERO ;
+	u16_t L_u16BrightnessLevel = INITIAL_ZERO ;
 
 	while( TRUE )
 	{

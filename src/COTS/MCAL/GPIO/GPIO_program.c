@@ -22,7 +22,7 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-FUNC(void) MGPIOx_vLockedPins(void)
+void MGPIOx_vLockedPins(void)
 {
 
 	VAR(volatile u32_t) L_u32LockGPIOA = INITIAL_ZERO ;
@@ -68,7 +68,7 @@ FUNC(void) MGPIOx_vLockedPins(void)
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8Mode)
+void MGPIOx_vSetPinMode(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8Mode)
 {
 
 	switch (A_u8PortID)
@@ -94,7 +94,7 @@ FUNC(void) MGPIOx_vSetPinMode(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputType)
+void MGPIOx_vSetPinOutputType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputType)
 {
 
 	switch (A_u8OutputType)
@@ -139,7 +139,7 @@ FUNC(void) MGPIOx_vSetPinOutputType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, V
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8OutputSpeed)
+void MGPIOx_vSetPinOutputSpeed(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8OutputSpeed)
 {
 
 	switch(A_u8PortID)
@@ -165,7 +165,7 @@ FUNC(void) MGPIOx_vSetPinOutputSpeed(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, 
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8InputPullType)
+void MGPIOx_vSetPinInputPullType(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8InputPullType)
 {
 
 	switch (A_u8PortID)
@@ -191,10 +191,10 @@ FUNC(void) MGPIOx_vSetPinInputPullType(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(u8_t) MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
+u8_t MGPIOx_u8GetPinValue(u8_t A_u8PortID, u8_t A_u8PinID)
 {
 
-	VAR(u8_t) L_u8PinValue = INITIAL_ZERO;
+	u8_t L_u8PinValue = INITIAL_ZERO;
 
 	switch (A_u8PortID)
 	{
@@ -218,7 +218,7 @@ FUNC(u8_t) MGPIOx_u8GetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8PinValue)
+void MGPIOx_vSetPinValue(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8PinValue)
 {
 
 	switch (A_u8PinValue)
@@ -263,7 +263,7 @@ FUNC(void) MGPIOx_vSetPinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8SetResetPinValue)
+void MGPIOx_vSetResetAtomic(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8SetResetPinValue)
 {
 
 	switch (A_u8PortID)
@@ -320,7 +320,7 @@ FUNC(void) MGPIOx_vSetResetAtomic(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID, VAR(u8_t) A_u8AFID)
+void MGPIOx_vSetAlternateFunctionON(u8_t A_u8PortID, u8_t A_u8PinID, u8_t A_u8AFID)
 {
 
 	switch (A_u8PortID)
@@ -418,7 +418,7 @@ FUNC(void) MGPIOx_vSetAlternateFunctionON(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8Pi
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig)
+void MGPIOx_vInit(MGPIOx_ConfigType * A_xPinConfig)
 {
 
 	MGPIOx_vSetPinMode				(A_xPinConfig->Port, A_xPinConfig->Pin, A_xPinConfig->Mode			);
@@ -432,7 +432,7 @@ FUNC(void) MGPIOx_vInit(P2VAR(MGPIOx_ConfigType) A_xPinConfig)
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
+void MGPIOx_vTogglePinValue(u8_t A_u8PortID, u8_t A_u8PinID)
 {
 
 	switch (A_u8PortID)
@@ -455,7 +455,7 @@ FUNC(void) MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID)
 /**************************************************************************************/
 /**************************************************************************************/
 
-FUNC(void) GPIO_vSetNibbleLowValue( VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue )
+void GPIO_vSetNibbleLowValue( u8_t A_u8PortID, u16_t A_u16PortValue )
 {
 
     switch(A_u8PortID)

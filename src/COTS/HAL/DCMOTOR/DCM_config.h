@@ -10,6 +10,10 @@
 #ifndef _DCM_config_H
 #define _DCM_config_H
 
-#define MAX_SPEED 10000
+/**
+ * @def MAX_SPEED
+ * Maximum speed of the DC motor
+ */
+#define MAX_SPEED (10000)
 
 #endif //_DCM_config_H

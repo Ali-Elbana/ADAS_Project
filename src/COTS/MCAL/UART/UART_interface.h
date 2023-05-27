@@ -176,61 +176,61 @@ typedef struct
  * @param[in] A_ClockInitStruct Pointer to a structure that contains the configuration information for the specified USART peripheral.
  * @param[in] A_USARTx Pointer to USARTx registers map
  */
-void MUSART_vInit(P2VAR(USART_InitType) A_InitStruct, P2VAR(USART_ClockInitTypeDef) A_ClockInitStruct, P2VAR(USART_MemoryMapType) A_USARTx);
+void MUSART_vInit(USART_InitType * A_InitStruct, USART_ClockInitTypeDef * A_ClockInitStruct, USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Enables the USART peripheral
  * @param[in] A_USARTx Pointer to USARTx registers map
  */
-void MUSART_vEnable(P2VAR(USART_MemoryMapType) A_USARTx);
+void MUSART_vEnable(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Disables the USART peripheral
  * @param[in] A_USARTx Pointer to USARTx registers map
  */
-void MUSART_vDisable(P2VAR(USART_MemoryMapType) A_USARTx);
+void MUSART_vDisable(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Transmits a byte using the USART peripheral
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @param[in] A_u8Byte Byte to be transmitted
  */
-void MUSART_vTransmitByte(P2VAR(USART_MemoryMapType) A_USARTx, u8_t A_u8Byte);
+void MUSART_vTransmitByte(USART_MemoryMapType * A_USARTx, u8_t A_u8Byte);
 
 /**
  * @brief Transmits a string using the USART peripheral
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @param[in] A_ptrc8String Pointer to the string to be transmitted
  */
-void MUSART_vTransmitString(P2VAR(USART_MemoryMapType) A_USARTx, P2VAR(c8_t) A_ptrc8String);
+void MUSART_vTransmitString(USART_MemoryMapType * A_USARTx, c8_t * A_ptrc8String);
 
 /**
  * @brief Receives a byte using the USART peripheral (non-blocking)
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @return Received byte from the USART peripheral
  */
-u8_t MUSART_u8ReceiveByteSynchNonBlocking(P2VAR(USART_MemoryMapType) A_USARTx);
+u8_t MUSART_u8ReceiveByteSynchNonBlocking(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Receives a byte using the USART peripheral (blocking)
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @return Received byte from the USART peripheral
  */
-u8_t MUSART_u8ReceiveByteSynchBlocking(P2VAR(USART_MemoryMapType) A_USARTx);
+u8_t MUSART_u8ReceiveByteSynchBlocking(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Receives a string using the USART peripheral (non-blocking)
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @return Pointer to the received string from the USART peripheral
  */
-u8_t *MUSART_ptrReceiveStringSynchNonBlocking(P2VAR(USART_MemoryMapType) A_USARTx);
+u8_t *MUSART_ptrReceiveStringSynchNonBlocking(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Receives a string using the USART peripheral (blocking)
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @param[in] A_c8YourString Pointer to the string to be transmitted
  */
-void MUSART_vRecieveString(P2VAR(USART_MemoryMapType) A_USARTx, c8_t A_c8YourString[]);
+void MUSART_vRecieveString(USART_MemoryMapType * A_USARTx, c8_t A_c8YourString[]);
 
 /**
  * @brief Compares two strings using the USART peripheral
@@ -239,20 +239,20 @@ void MUSART_vRecieveString(P2VAR(USART_MemoryMapType) A_USARTx, c8_t A_c8YourStr
  * @return SAME_STRING if the strings are equal, DIFFERENT_STRING if not
  * @see SAME_STRING DIFFERENT_STRING
  */
-u8_t MUSART_u8CompareString(P2VAR(c8_t) String1, P2VAR(c8_t) String2);
+u8_t MUSART_u8CompareString(c8_t * String1, c8_t * String2);
 
 /**
  * @brief Reads the status register of the USART peripheral
  * @param[in] A_USARTx Pointer to USARTx registers map
  * @return Status register value
  */
-u8_t MUSART_u8ReadDataRegister(P2VAR(USART_MemoryMapType) A_USARTx);
+u8_t MUSART_u8ReadDataRegister(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Clears the status register of the USART peripheral
  * @param[in] A_USARTx Pointer to USARTx registers map
  */
-void MUSART_vClearFlags(P2VAR(USART_MemoryMapType) A_USARTx);
+void MUSART_vClearFlags(USART_MemoryMapType * A_USARTx);
 
 /**
  * @brief Set the status of the RX interrupt
@@ -260,25 +260,25 @@ void MUSART_vClearFlags(P2VAR(USART_MemoryMapType) A_USARTx);
  * @param[in] A_u8Status Status of the RX interrupt (ENABLE/DISABLE)
  * @see ENABLE DISABLE
  */
-void MUSART_vRxIntSetStatus(P2VAR(USART_MemoryMapType) A_USARTx, u8_t A_u8Status);
+void MUSART_vRxIntSetStatus(USART_MemoryMapType * A_USARTx, u8_t A_u8Status);
 
 /**
  * @brief Set UART1 RX callback function
  * @param[in] Fptr Pointer to the callback function
  */
-void MUSART1_vSetCallBack(P2FUNC(void, Fptr)(void));
+void MUSART1_vSetCallBack(void (*Fptr)(void));
 
 /**
  * @brief Set UART2 RX callback function
  * @param[in] Fptr Pointer to the callback function
  */
-void MUSART2_vSetCallBack(P2FUNC(void, Fptr)(void));
+void MUSART2_vSetCallBack(void (*Fptr)(void));
 
 /**
  * @brief Set UART6 RX callback function
  * @param[in] Fptr Pointer to the callback function
  */
-void MUSART6_vSetCallBack(P2FUNC(void, Fptr)(void));
+void MUSART6_vSetCallBack(void (*Fptr)(void));
 
 /************************************************************************/
 /*                          Interfacing macros                          */

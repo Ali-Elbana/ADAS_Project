@@ -1,7 +1,9 @@
-/* FILENAME: BUZZER_program
- *  Author:  Mohamed Alaa
- *  Version:  V1.0
- *  DATE:   Thu 12/22/2022
+/**
+ * @file BUZZER_program.c
+ * @author Mohamed Alaa
+ * @brief This file contains the logical operations of the buzzer module
+ * @version 1.0
+ * @date 12/22/2022
  */
 
 /************************************************************************/
@@ -21,10 +23,9 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-void HBUZZER_vInit(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
+void HBUZZER_vInit(BUZZER_BuzzerConfiguration * pBuzzer_Cfg)
 {
-    VAR(MGPIOx_ConfigType)
-    Buzzer_Cfg =
+    VAR(MGPIOx_ConfigType) Buzzer_Cfg =
         {
             .Port = pBuzzer_Cfg->u8Port,
             .Pin = pBuzzer_Cfg->u8Pin,
@@ -39,7 +40,7 @@ void HBUZZER_vInit(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HBUZZER_vSoundOn(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
+void HBUZZER_vSoundOn(BUZZER_BuzzerConfiguration * pBuzzer_Cfg)
 {
     MGPIOx_vSetPinValue(pBuzzer_Cfg->u8Port, pBuzzer_Cfg->u8Pin, GPIOx_HIGH);
 }
@@ -47,7 +48,7 @@ void HBUZZER_vSoundOn(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HBUZZER_vSoundOff(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
+void HBUZZER_vSoundOff(BUZZER_BuzzerConfiguration * pBuzzer_Cfg)
 {
     MGPIOx_vSetPinValue(pBuzzer_Cfg->u8Port, pBuzzer_Cfg->u8Pin, GPIOx_LOW);
 }
@@ -55,7 +56,7 @@ void HBUZZER_vSoundOff(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HBUZZER_vToggleSound(P2VAR(BUZZER_BuzzerConfiguration) pBuzzer_Cfg)
+void HBUZZER_vToggleSound(BUZZER_BuzzerConfiguration * pBuzzer_Cfg)
 {
     MGPIOx_vTogglePinValue(pBuzzer_Cfg->u8Port, pBuzzer_Cfg->u8Pin);
 }

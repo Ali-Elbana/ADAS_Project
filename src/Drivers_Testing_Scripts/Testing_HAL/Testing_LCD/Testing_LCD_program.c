@@ -26,7 +26,7 @@
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-FUNC(void) THLCD_vPrintString( void )
+void THLCD_vPrintString( void )
 {
 
 	MRCC_vInit( ) ;

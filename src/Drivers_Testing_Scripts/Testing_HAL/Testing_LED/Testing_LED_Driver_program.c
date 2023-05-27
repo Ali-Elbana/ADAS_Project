@@ -28,23 +28,19 @@
 
 void THLED_vTestLED(void)
 {
-    VAR(u32_t)
-    L_u32DelayCounter = INITIAL_ZERO;
+    u32_t L_u32DelayCounter = INITIAL_ZERO;
 
-    VAR(LED_LEDConfiguration)
-    LED1 =
+    LED_LEDConfiguration LED1 =
         {
             .u8Port = GPIO_PORTA,
             .u8Pin = GPIOx_PIN0};
 
-    VAR(LED_LEDConfiguration)
-    LED2 =
+    LED_LEDConfiguration LED2 =
         {
             .u8Port = GPIO_PORTB,
             .u8Pin = GPIOx_PIN1};
 
-    VAR(LED_LEDConfiguration)
-    LED3 =
+    LED_LEDConfiguration LED3 =
         {
             .u8Port = GPIO_PORTB,
             .u8Pin = GPIOx_PIN10};
@@ -86,43 +82,29 @@ void THLED_vTestLED(void)
 /**************************************************************************************/
 /**************************************************************************************/
 
-void THLED_vBlinkLED( void )
+void THLED_vBlinkLED(void)
 {
 
     VAR(LED_LEDConfiguration)
     LED =
         {
-            .u8Port = GPIO_PORTC ,
-            .u8Pin  = GPIOx_PIN13
-        };
+            .u8Port = GPIO_PORTC,
+            .u8Pin = GPIOx_PIN13};
 
-    MRCC_vInit( ) ;
+    MRCC_vInit();
 
-    MRCC_vEnablePeriphralCLK( RCC_AHB1, AHB1ENR_GPIOCEN ) ;
+    MRCC_vEnablePeriphralCLK(RCC_AHB1, AHB1ENR_GPIOCEN);
 
-    MGPIOx_vLockedPins( ) ;
+    MGPIOx_vLockedPins();
 
-    HLED_vInit(&LED) ;
+    HLED_vInit(&LED);
 
     while (TRUE)
     {
 
-    	HLED_vBlinkLED( &LED, 200 ) ;
-
+        HLED_vBlinkLED(&LED, 200);
     }
-
 }
 
 /**************************************************************************************/
 /**************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-

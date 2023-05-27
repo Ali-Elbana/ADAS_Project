@@ -25,9 +25,9 @@
 /*                        Externed variables                        	*/
 /************************************************************************/
 
-extern 	MGPIOx_ConfigType LDR_Vo 	;
+extern VAR(MGPIOx_ConfigType) LDR_Vo;
 
-extern VAR(u8_t) LDR_CHANNEL 		;
+extern VAR(u8_t) LDR_CHANNEL;
 
 /************************************************************************/
 /*                     Functions' implementations                      	*/

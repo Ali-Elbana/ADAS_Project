@@ -63,39 +63,39 @@ typedef struct
  * @param[in] pMotorConfiguration The motor configuration to be initialized
  * @see DCM_MotorConfiguration
  */
-void HDCM_vInitMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
+void HDCM_vInitMotor(DCM_MotorConfiguration *pMotorConfiguration);
 
 /**
  * @brief Move a certain motor forward
  * @param[in] pMotorConfiguration The motor's configuration to move forward
  */
-void HDCM_vMoveForward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
+void HDCM_vMoveForward(DCM_MotorConfiguration *pMotorConfiguration);
 
 /**
  * @brief Move a certain motor backward
  * @param[in] pMotorConfiguration The motor's configuration to move backward
  */
-void HDCM_vMoveBackward(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
+void HDCM_vMoveBackward(DCM_MotorConfiguration *pMotorConfiguration);
 
 /**
  * @brief Stop a certain motor's movement completely
  * @param[in] pMotorConfiguration The motor's configuration to stop
  */
-void HDCM_vStopMotor(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
+void HDCM_vStopMotor(DCM_MotorConfiguration *pMotorConfiguration);
 
 /**
  * @brief Set a certain motor's speed
  * @param[in] pMotorConfiguration The motor's configuration to set its speed
  * @param[in] A_u16SpeedValue The speed value to set the motor to
  */
-void HDCM_vMotorSpeedCntrl(P2VAR(DCM_MotorConfiguration) pMotorConfiguration, VAR(u16_t) A_u16SpeedValue);
+void HDCM_vMotorSpeedCntrl(DCM_MotorConfiguration *pMotorConfiguration, u16_t A_u16SpeedValue);
 
 /**
  * @brief Get a certain motor's speed
  * @param[in] pMotorConfiguration The motor's configuration to get its speed
  * @return The speed value of the motor
  */
-u32_t HDCM_vGetSpeedValue(P2VAR(DCM_MotorConfiguration) pMotorConfiguration);
+u32_t HDCM_vGetSpeedValue(DCM_MotorConfiguration *pMotorConfiguration);
 
 /************************************************************************/
 /*                          Interfacing macros                          */

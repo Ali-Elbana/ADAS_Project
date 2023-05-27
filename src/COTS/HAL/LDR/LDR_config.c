@@ -23,7 +23,7 @@
 /*                     Configuration parameters                         */
 /************************************************************************/
 
-MGPIOx_ConfigType LDR_Vo =
+VAR(MGPIOx_ConfigType) LDR_Vo =
 {
 
 	.Port 			= LDR_Vo_PORT 		,

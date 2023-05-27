@@ -15,21 +15,21 @@
 
 void HLCD_vInit 					( void ) 		 							;
 
-void HLCD_vSendCommand				( VAR(u8_t) A_u8Cmd ) 						;
+void HLCD_vSendCommand				( u8_t A_u8Cmd ) 						;
 
-void HLCD_vSendData					( VAR(u8_t) A_u8Data )						;
+void HLCD_vSendData					( u8_t A_u8Data )						;
 
 void HLCD_vClear					( void )									;
 
-void HLCD_vDispString				( P2VAR(c8_t) A_c8Char )					;
+void HLCD_vDispString				( c8_t * A_c8Char )					;
 
 void HLCD_vDispNumber				( VAR(s32_t) A_s32Num )						;
 
-void HLCD_vSaveCustomChar			( VAR(u8_t) A_u8Address, P2VAR(u8_t) A_u8CustomChar ) 	;
+void HLCD_vSaveCustomChar			( u8_t A_u8Address, u8_t * A_u8CustomChar ) 	;
 
-void HLCD_vSaveDispChar				( VAR(u8_t) A_u8Address, P2VAR(u8_t) A_u8CustomChar ) 	;
+void HLCD_vSaveDispChar				( u8_t A_u8Address, u8_t * A_u8CustomChar ) 	;
 
-void HLCD_vGoTo						( VAR(u8_t) A_u8Row, VAR(u8_t) A_u8Col )	;
+void HLCD_vGoTo						( u8_t A_u8Row, u8_t A_u8Col )	;
 
 void HLCD_vSetShiftLeftOn			(void)										;
 
@@ -39,9 +39,9 @@ void HLCD_vDispCursorWithBlinking	(void)										;
 
 void HLCD_vSetCursorBlinkingOFF		(void)									 	;
 
-void HLCD_vDispShiftLeftString		( P2VAR(c8_t) A_c8Char )				 	;
+void HLCD_vDispShiftLeftString		( c8_t * A_c8Char )				 	;
 
-void HLCD_vClearChar				( VAR(u8_t) A_u8Row, VAR(u8_t) A_u8Col )	;
+void HLCD_vClearChar				( u8_t A_u8Row, u8_t A_u8Col )	;
 
 /************************************************************************/
 /*                          Interfacing macros                          */

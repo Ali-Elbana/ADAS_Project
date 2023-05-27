@@ -50,7 +50,7 @@ void MSysTick_vInit(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
+void MSysTick_vSetBusyWait(u32_t A_u32Ticks)
 {
 
 	// Load Ticks to the load register.
@@ -76,11 +76,10 @@ void MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
-void MSysTick_vDelay(VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType)
+void MSysTick_vDelay(u32_t A_u32Ticks, u32_t A_u32TickType)
 {
 
-	VAR(u32_t)
-	l_u32TickNum = INITIAL_ZERO;
+	u32_t l_u32TickNum = INITIAL_ZERO;
 
 	if (A_u32TickType == MILLI_SEC)
 	{
@@ -130,10 +129,10 @@ void MSysTick_vDelay(VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MSysTick_vDelayMicroSec(VAR(u32_t) A_u32Ticks)
+void MSysTick_vDelayMicroSec(u32_t A_u32Ticks)
 {
 
-	VAR(u32_t)
+	u32_t
 	l_u32TickNum = INITIAL_ZERO;
 
 	l_u32TickNum = (A_u32Ticks)-1;
@@ -166,10 +165,10 @@ void MSysTick_vDelayMicroSec(VAR(u32_t) A_u32Ticks)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MSysTick_vDelayMilliSec(VAR(u32_t) A_u32Ticks)
+void MSysTick_vDelayMilliSec(u32_t A_u32Ticks)
 {
 
-	VAR(u32_t)
+	u32_t
 	l_u32TickNum = INITIAL_ZERO;
 
 	l_u32TickNum = (A_u32Ticks * 1000) - 1;
@@ -202,10 +201,10 @@ void MSysTick_vDelayMilliSec(VAR(u32_t) A_u32Ticks)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MSysTick_vDelaySec(VAR(u32_t) A_u32Ticks)
+void MSysTick_vDelaySec(u32_t A_u32Ticks)
 {
 
-	VAR(u32_t)
+	u32_t
 	l_u32TickNum = INITIAL_ZERO;
 
 	l_u32TickNum = (A_u32Ticks * 1000000) - 1;
@@ -238,7 +237,7 @@ void MSysTick_vDelaySec(VAR(u32_t) A_u32Ticks)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(void))
+void MSysTick_vSetSingleInterval(u32_t A_u32Ticks, void (*A_Fptr)(void))
 {
 
 	// Save the callback.
@@ -263,7 +262,7 @@ void MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(voi
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MSysTick_vSetPeriodicInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(void))
+void MSysTick_vSetPeriodicInterval(u32_t A_u32Ticks, void (*A_Fptr)(void))
 {
 
 	// Save the callback.
@@ -305,10 +304,10 @@ void MSysTick_vStopInterval(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-VAR(u32_t)
+u32_t
 MSysTick_u32GetElapsedTime(void)
 {
-	VAR(u32_t)
+	u32_t
 	L_u32ElapsedTime = INITIAL_ZERO;
 
 	L_u32ElapsedTime = (SysTick->LOAD - SysTick->VAL);
@@ -319,10 +318,10 @@ MSysTick_u32GetElapsedTime(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-VAR(u32_t)
+u32_t
 MSysTick_u32GetRemainingTime(void)
 {
-	VAR(u32_t)
+	u32_t
 	L_u32RemainingTime = INITIAL_ZERO;
 
 	L_u32RemainingTime = SysTick->VAL;
@@ -372,10 +371,14 @@ void MSysTick_vEnableException(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for handling the Systick interrupt
+ * @details This function is called by the NVIC when the Systick interrupt is raised
+ */
 void SysTick_Handler(void)
 {
 
-	volatile VAR(u8_t) L_u8ReadFlag = INITIAL_ZERO;
+	volatile u8_t L_u8ReadFlag = INITIAL_ZERO;
 
 	if (GS_vCallbackFunc != NULL)
 	{

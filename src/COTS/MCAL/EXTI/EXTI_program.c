@@ -19,18 +19,16 @@
 #include "EXTI_config.h"
 #include "SYSCFG_private.h"
 
-
-static void( *GS_vEXTI_Callback[EXTI_IRQs] ) (void) = {NULL} ;
-
+STATIC P2FUNC(void, GS_vEXTI_Callback[EXTI_IRQs])(void) = {NULL};
 
 /************************************************************************/
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-void MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
+void MSYSCFG_vSetEXTIPort(u8_t A_u8LineID, u8_t A_u8PortID)
 {
-	VAR(u8_t) L_u8Index = A_u8LineID / 4;
-	VAR(u8_t) L_u8ShiftAmount = A_u8LineID % 4;
+	u8_t L_u8Index = A_u8LineID / 4;
+	u8_t L_u8ShiftAmount = A_u8LineID % 4;
 
 	CLR_BITs(MSYSCFG->EXTICR[L_u8Index], 0b1111, L_u8ShiftAmount, 4);
 	SET_BITs(MSYSCFG->EXTICR[L_u8Index], A_u8PortID, L_u8ShiftAmount, 4);
@@ -42,7 +40,7 @@ void MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
 void MEXTI_vInit(void)
 {
 
-	VAR(u8_t) L_u8ShiftedOffset = INITIAL_ZERO;
+	u8_t L_u8ShiftedOffset = INITIAL_ZERO;
 
 #if EXTI_LINE0_EN == ENABLE
 	L_u8ShiftedOffset = 0;
@@ -267,25 +265,23 @@ void MEXTI_vInit(void)
 	SET_BIT(MEXTI->FTSR, L_u8ShiftedOffset);
 
 #endif
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig)
+void MEXTI_vInit_WithStruct(EXTI_ConfigType *A_xINTConfig)
 {
 
-	MEXTI_vEnableLine( A_xINTConfig->LineNum, A_xINTConfig->TriggerStatus ) ;
+	MEXTI_vEnableLine(A_xINTConfig->LineNum, A_xINTConfig->TriggerStatus);
 
-	MSYSCFG_vSetEXTIPort( A_xINTConfig->LineNum, A_xINTConfig->PortNum ) ;
-
+	MSYSCFG_vSetEXTIPort(A_xINTConfig->LineNum, A_xINTConfig->PortNum);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
+void MEXTI_vEnableLine(u8_t A_u8LineID, u8_t A_u8TriggerStatus)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -294,41 +290,37 @@ void MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 		SET_BIT(MEXTI->IMR, A_u8LineID);
 
 		MEXTI_vSetTrigger(A_u8LineID, A_u8TriggerStatus);
-
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
+void MEXTI_vDisableLine(u8_t A_u8LineID)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		CLR_BIT(MEXTI->IMR, A_u8LineID);
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
+void MEXTI_vSWITrigger(u8_t A_u8LineID)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		SET_BIT(MEXTI->SWIER, A_u8LineID);
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
+void MEXTI_vSetTrigger(u8_t A_u8LineID, u8_t A_u8TriggerStatus)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -355,25 +347,27 @@ void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 			break;
 		}
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
+void MEXTI_vSetCallback(u8_t A_u8LineID, void (*A_vFptr)(void))
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
 	{
 		GS_vEXTI_Callback[A_u8LineID] = A_vFptr;
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 0 module
+ *
+ */
 void EXTI0_IRQHandler(void)
 {
 
@@ -384,12 +378,15 @@ void EXTI0_IRQHandler(void)
 
 	// Clear the flag.
 	SET_BIT(MEXTI->PR, EXTI_LINE0);
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 1 module
+ *
+ */
 void EXTI1_IRQHandler(void)
 {
 
@@ -400,12 +397,15 @@ void EXTI1_IRQHandler(void)
 
 	// Clear the flag.
 	SET_BIT(MEXTI->PR, EXTI_LINE1);
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 2 module
+ *
+ */
 void EXTI2_IRQHandler(void)
 {
 
@@ -416,12 +416,15 @@ void EXTI2_IRQHandler(void)
 
 	// Clear the flag.
 	SET_BIT(MEXTI->PR, EXTI_LINE2);
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 3 module
+ *
+ */
 void EXTI3_IRQHandler(void)
 {
 
@@ -432,12 +435,15 @@ void EXTI3_IRQHandler(void)
 
 	// Clear the flag.
 	SET_BIT(MEXTI->PR, EXTI_LINE3);
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 4 module
+ *
+ */
 void EXTI4_IRQHandler(void)
 {
 
@@ -448,44 +454,29 @@ void EXTI4_IRQHandler(void)
 
 	// Clear the flag.
 	SET_BIT(MEXTI->PR, EXTI_LINE4);
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 5-9 module
+ *
+ */
 void EXTI9_5_IRQHandler(void)
 {
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
+/**
+ * @brief This function is responsible for clearing the pending flag of the External interrupt 10-15 module
+ *
+ */
 void EXTI15_10_IRQHandler(void)
 {
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

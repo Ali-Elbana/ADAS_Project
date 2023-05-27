@@ -26,23 +26,19 @@
 
 void THBuzzer_vTestBuzzer(void)
 {
-    VAR(u32_t)
-    L_u32DelayCounter = INITIAL_ZERO;
+    u32_t L_u32DelayCounter = INITIAL_ZERO;
 
-    VAR(BUZZER_BuzzerConfiguration)
-    Buzzer1 =
+    BUZZER_BuzzerConfiguration Buzzer1 =
         {
             .u8Port = GPIO_PORTA,
             .u8Pin = GPIOx_PIN0};
 
-    VAR(BUZZER_BuzzerConfiguration)
-    Buzzer2 =
+    BUZZER_BuzzerConfiguration Buzzer2 =
         {
             .u8Port = GPIO_PORTB,
             .u8Pin = GPIOx_PIN1};
 
-    VAR(BUZZER_BuzzerConfiguration)
-    Buzzer3 =
+    BUZZER_BuzzerConfiguration Buzzer3 =
         {
             .u8Port = GPIO_PORTB,
             .u8Pin = GPIOx_PIN10};

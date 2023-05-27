@@ -25,7 +25,7 @@
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-void HULTSNC_vInit( P2VAR(HULTSNC_ConfigType) TRIG_psCfg )
+void HULTSNC_vInit( HULTSNC_ConfigType * TRIG_psCfg )
 {
 
     VAR(MGPIOx_ConfigType) TRIG_Cfg =
@@ -48,7 +48,7 @@ void HULTSNC_vInit( P2VAR(HULTSNC_ConfigType) TRIG_psCfg )
 /**************************************************************************************************************/
 /*************************************************************************************************************/
 
-void HULTSNC_vTrigger( P2VAR(HULTSNC_ConfigType) TRIG_psCfg )
+void HULTSNC_vTrigger( HULTSNC_ConfigType * TRIG_psCfg )
 {
 
 	MGPIOx_vSetResetAtomic( TRIG_psCfg->u8Port, TRIG_psCfg->u8Pin, GPIOx_LOW ) ;

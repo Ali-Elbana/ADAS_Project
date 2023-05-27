@@ -30,7 +30,7 @@ STATIC VAR(u32_t) GS_u32GroupConf = INITIAL_ZERO;
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-FUNC(void) MNVIC_vEnablePeriphral(VAR(u8_t) A_u8INTID)
+void MNVIC_vEnablePeriphral(u8_t A_u8INTID)
 {
     MNVIC->ISERx[A_u8INTID / REGISTER_SIZE] = (1 << (A_u8INTID % REGISTER_SIZE));
 }
@@ -38,7 +38,7 @@ FUNC(void) MNVIC_vEnablePeriphral(VAR(u8_t) A_u8INTID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MNVIC_vDisablePeriphral(VAR(u8_t) A_u8INTID)
+void MNVIC_vDisablePeriphral(u8_t A_u8INTID)
 {
     MNVIC->ICERx[A_u8INTID / REGISTER_SIZE] = (1 << (A_u8INTID % REGISTER_SIZE));
 }
@@ -46,7 +46,7 @@ FUNC(void) MNVIC_vDisablePeriphral(VAR(u8_t) A_u8INTID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MNVIC_vSetPendingFlag(VAR(u8_t) A_u8INTID)
+void MNVIC_vSetPendingFlag(u8_t A_u8INTID)
 {
     MNVIC->ISPRx[A_u8INTID / REGISTER_SIZE] = (1 << (A_u8INTID % REGISTER_SIZE));
 }
@@ -54,7 +54,7 @@ FUNC(void) MNVIC_vSetPendingFlag(VAR(u8_t) A_u8INTID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MNVIC_vClearPendingFlag(VAR(u8_t) A_u8INTID)
+void MNVIC_vClearPendingFlag(u8_t A_u8INTID)
 {
     MNVIC->ICPRx[A_u8INTID / REGISTER_SIZE] = (1 << (A_u8INTID % REGISTER_SIZE));
 }
@@ -62,9 +62,9 @@ FUNC(void) MNVIC_vClearPendingFlag(VAR(u8_t) A_u8INTID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(u8_t) MNVIC_u8GetActive(VAR(u8_t) A_u8INTID)
+u8_t MNVIC_u8GetActive(u8_t A_u8INTID)
 {
-    VAR(u8_t) L_u8Active = INITIAL_ZERO;
+    u8_t L_u8Active = INITIAL_ZERO;
     L_u8Active = GET_BIT((MNVIC->IABRx[A_u8INTID / REGISTER_SIZE]), (A_u8INTID % REGISTER_SIZE));
     return L_u8Active;
 }
@@ -72,7 +72,7 @@ FUNC(u8_t) MNVIC_u8GetActive(VAR(u8_t) A_u8INTID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MNVIC_vSetPriorityConfig(VAR(u8_t) A_u8PriorityOption)
+void MNVIC_vSetPriorityConfig(u8_t A_u8PriorityOption)
 {
     GS_u32GroupConf = (VECTKEY_PASSWORD | (A_u8PriorityOption << 8));
     MSCB->AIRCR = GS_u32GroupConf;
@@ -81,9 +81,9 @@ FUNC(void) MNVIC_vSetPriorityConfig(VAR(u8_t) A_u8PriorityOption)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MNVIC_vSetPriority(VAR(s8_t) A_s8INTID, VAR(u8_t) A_u8GroupPriority, VAR(u8_t) A_u8SubPriority)
+void MNVIC_vSetPriority(s8_t A_s8INTID, u8_t A_u8GroupPriority, u8_t A_u8SubPriority)
 {
-    VAR(u8_t) L_u8Priority = INITIAL_ZERO;
+    u8_t L_u8Priority = INITIAL_ZERO;
     L_u8Priority = A_u8SubPriority | (A_u8GroupPriority << ((GS_u32GroupConf - 0x05FA0300) / 0x100));
 
     // Core Peripheral
@@ -123,9 +123,9 @@ FUNC(void) MNVIC_vSetPriority(VAR(s8_t) A_s8INTID, VAR(u8_t) A_u8GroupPriority, 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-VAR(u32_t) NVIC_GetPriority(VAR(s8_t) A_s8INTID)
+u32_t NVIC_GetPriority(s8_t A_s8INTID)
 {
-    VAR(u32_t) L_u32ThePriorityIS = INITIAL_ZERO;
+    u32_t L_u32ThePriorityIS = INITIAL_ZERO;
 
     // Core Peripheral
     if (A_s8INTID < 0)

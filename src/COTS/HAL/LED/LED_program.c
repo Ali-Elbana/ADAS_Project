@@ -22,9 +22,10 @@
 /*                     Functions' implementations                      	*/
 /************************************************************************/
 
-void HLED_vInit(P2VAR(LED_LEDConfiguration) pLED_Cfg)
+void HLED_vInit(LED_LEDConfiguration * pLED_Cfg)
 {
-    VAR(MGPIOx_ConfigType) LED_Cfg =
+    VAR(MGPIOx_ConfigType)
+    LED_Cfg =
         {
             .Port = pLED_Cfg->u8Port,
             .Pin = pLED_Cfg->u8Pin,
@@ -39,7 +40,7 @@ void HLED_vInit(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vTurnLightOn(P2VAR(LED_LEDConfiguration) pLED_Cfg)
+void HLED_vTurnLightOn(LED_LEDConfiguration * pLED_Cfg)
 {
     MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_HIGH);
 }
@@ -47,7 +48,7 @@ void HLED_vTurnLightOn(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vTurnLightOff(P2VAR(LED_LEDConfiguration) pLED_Cfg)
+void HLED_vTurnLightOff(LED_LEDConfiguration * pLED_Cfg)
 {
     MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_LOW);
 }
@@ -55,7 +56,7 @@ void HLED_vTurnLightOff(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vToggleLight(P2VAR(LED_LEDConfiguration) pLED_Cfg)
+void HLED_vToggleLight(LED_LEDConfiguration * pLED_Cfg)
 {
     MGPIOx_vTogglePinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin);
 }
@@ -63,19 +64,17 @@ void HLED_vToggleLight(P2VAR(LED_LEDConfiguration) pLED_Cfg)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-void HLED_vBlinkLED( P2VAR(LED_LEDConfiguration) pLED_Cfg, VAR(u32_t) A_u32MilliSecs )
+void HLED_vBlinkLED(LED_LEDConfiguration * pLED_Cfg, u32_t A_u32MilliSecs)
 {
 
-	MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_HIGH);
+    MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_HIGH);
 
-	MSysTick_vDelayMilliSec( A_u32MilliSecs ) ;
+    MSysTick_vDelayMilliSec(A_u32MilliSecs);
 
-	MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_LOW);
+    MGPIOx_vSetPinValue(pLED_Cfg->u8Port, pLED_Cfg->u8Pin, GPIOx_LOW);
 
-	MSysTick_vDelayMilliSec( A_u32MilliSecs ) ;
-
+    MSysTick_vDelayMilliSec(A_u32MilliSecs);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
-
