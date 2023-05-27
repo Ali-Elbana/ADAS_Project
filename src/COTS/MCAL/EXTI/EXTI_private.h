@@ -105,7 +105,10 @@ typedef struct
 #define EXTI_MAX_EXTI_NUM (22)
 /** @} */
 
-
+/**
+ * @def EXTI_IRQs
+ * Number of available interrupt IRQs
+ */
 #define EXTI_IRQs 23
 
 

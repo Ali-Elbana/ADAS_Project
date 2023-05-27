@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['exti_5fconfigtype_0',['EXTI_ConfigType',['../struct_e_x_t_i___config_type.html',1,'']]],
-  ['exti_5ftype_1',['EXTI_Type',['../struct_e_x_t_i___type.html',1,'']]]
+  ['buzzer_5fbuzzerconfiguration_0',['BUZZER_BuzzerConfiguration',['../struct_b_u_z_z_e_r___buzzer_configuration.html',1,'']]]
 ];

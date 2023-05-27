@@ -1,0 +1,920 @@
+\hypertarget{_s_p_i__private_8h}{}\doxysection{COTS/\+MCAL/\+SPI/\+SPI\+\_\+private.h File Reference}
+\label{_s_p_i__private_8h}\index{COTS/MCAL/SPI/SPI\_private.h@{COTS/MCAL/SPI/SPI\_private.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ad8529d2df242f4448a2e66aab0eef9a3}{CPHA}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a0eb64d85804990e6ee5259451c7f5a0d}{CPOL}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a863870c0ff8cfad017c11d9a9eaa0f6e}{MSTR}}~2
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}{SPE}}~6
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a5811613d98580676f67f0dde8125433e}{LSBFIRST}}~7
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a5b9615ac5bb07a63e566a69535df389c}{SSI}}~8
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ab33258c8c1ecde2d3d0452a8f41799ed}{SSM}}~9
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}{RXONLY}}~10
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a52c7b2f42005b75a56920061a1caf64f}{DFF}}~11
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_abc77494b4ccd0d92dd921631dd28d006}{CRCNEXT}}~12
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aa6ea2a09c411d46b99af2dd78b4c32c7}{CRCEN}}~13
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}{BIDIOE}}~14
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}{BIDIMODE}}~15
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a00bb38aa30e8078e8ccc221415cd95d5}{RXDMAEN}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a766ac644267e760407ac6d1cef887ce5}{TXDMAEN}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a2bfe71fd0e87f9cef5fe3ab76fb45be7}{SSOE}}~2
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a16bb5201c0534fcdf25f6a313efc67e5}{FRF}}~4
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a2e06257308190ec132aa0930f80fe0c9}{ERRIE}}~5
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a43370d870087df35f1a02b8d8e2037ac}{RXNEIE}}~6
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a01a6ae416abff4627d084305e66faf57}{TXEIE}}~7
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}{RXNE}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}{TXE}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aa06096cb767c25a844700a52d7150906}{CHSIDE}}~2
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ac54c0178d860edd97197fe90ab06f067}{UDR}}~3
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a7720c45b1d91308475d9d5814c9aedcc}{CRCERR}}~4
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a022fefdb92bb304842c479d15cfa0847}{MODF}}~5
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a098457becb3f04f08e5a6a9dc4b50d78}{OVR}}~6
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}{BSY}}~7
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a06fbf5ee74f827430c6ef00953209903}{FRE}}~8
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a655dc1c4d68fc47e8d412ec5da8029bc}{FIRST\+\_\+\+CLK\+\_\+\+Captured}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a2f98ed07521e8494c364f4be35aaeb26}{SECOND\+\_\+\+CLK\+\_\+\+Captured}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_af86200b9ee8be4c7d852bd33171383dd}{CLK\+\_\+\+Idle\+At0}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a24612e93f5533c00a69fca5e364d5650}{CLK\+\_\+\+Idle\+At1}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ae342da5a4630c191c1c983958808edd8}{SLAVE}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a3fa2d3bf1901157f734a584d47b25d8b}{MASTER}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a41f8d2a8558ac63328518804f8063299}{CLK\+\_\+\+By2}}~0b000U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_af0b9ac56ba2f5f11df3455574b1d66a5}{CLK\+\_\+\+By4}}~0b001U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a4d6463bda07604ba7da33144bee5bb3a}{CLK\+\_\+\+By8}}~0b010U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_abc2d369f88c0b441661e942b3adfb243}{CLK\+\_\+\+By16}}~0b011U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a289a343d5d7b0750047e46c4af3caf76}{CLK\+\_\+\+By32}}~0b100U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aa40a095f335adb6f171dc1975eeacdfd}{CLK\+\_\+\+By64}}~0b101U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a0d8833fba6f3dbde7140cfef7ca34af0}{CLK\+\_\+\+By128}}~0b110U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a65c1d35c1c8626989945ff7f00c7f4cb}{CLK\+\_\+\+By256}}~0b111U
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a514ad415fb6125ba296793df7d1a468a}{ENABLE}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a99496f7308834e8b220f7894efa0b6ab}{DISABLE}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a655c896958fee46efcc44ff8f174a7e7}{MSB\+\_\+\+First}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a6898de341d9cd4b81020d885277a774a}{LSB\+\_\+\+First}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_af504250cb09e83fc0ccf68c2552f67c5}{FULL\+\_\+\+DUPLEX}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a74cf94a9df9d9b857d11b2befc9eaf1a}{RX\+\_\+\+ONLY}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a769ff968ee856ac69da6e8e5ac021ce9}{EIGHT\+\_\+\+BITS}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a677475a6236a6612c930e7627a28efc7}{SIXTEEN\+\_\+\+BITS}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a230bb223d5b83fe69b08fff27fb2c34c}{CRC\+\_\+\+PHASE}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ae41fe0635ed57a6cf54cdd290df55e7e}{NO\+\_\+\+CRC\+\_\+\+PHASE}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a18338f7ccafd316ad901bdfa1a960707}{One\+Line}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a1e8eac06396d3bf908b26c2817c6dace}{Two\+Lines}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_abb507561e09a0d59b29aa54e3b7acb36}{MOTOROLA}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ab8364e5ecefb0f6e384a494b8c5522b2}{TI}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a2b7cf2a3641be7b89138615764d60ba3}{EMPTY}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a27378c137d412b05d0e86edad527f16a}{NOTEMPTY}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a437ef08681e7210d6678427030446a54}{LEFT}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a80fb826a684cf3f0d306b22aa100ddac}{RIGHT}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a2568349e67ebc319819b9811a9b84a67}{OCCURRED}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a38c7b018b841ec3b65c64227aeb79ead}{NOT\+\_\+\+OCCURRED}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a5721cd75e5247d90e9033368ee5e6312}{MATCHED}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a6809c4eb94ac2eaacad48624e20a075f}{NOT\+\_\+\+MATCHED}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aba06fcecd5ed8005b2cfb26c4a134547}{FAULT\+\_\+\+OCCURRED}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a6923cbfd1d910ddfb5efd7b9d982335e}{NO\+\_\+\+FAULT\+\_\+\+OCCURRED}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ab5be0aaddb58ffb9cb20c12530d66316}{BUSY}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a3c9b792132d615157543ec051b5020b7}{NOT\+\_\+\+BUSY}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a8fe83ac76edc595f6b98cd4a4127aed5}{ERROR}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a258bb72419ef143530a2f8f55e7d57af}{NO\+\_\+\+ERROR}}~0
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aad0e7708f829bd362e1061ac596166bb}{HALF\+\_\+\+DUPLEX\+\_\+\+TX}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a5fcf812955be382efcdf0c86557a39ea}{HALF\+\_\+\+DUPLEX\+\_\+\+RX}}~2
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_a6d15c71697b7e147406509a1bc4c0f81}{SIMPLEX\+\_\+\+TX}}~1
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_aed07ad39d5144b1906c0fbb04bd97e8f}{SIMPLEX\+\_\+\+RX}}~2
+\item 
+\#define \mbox{\hyperlink{_s_p_i__private_8h_ad7b1de175c86f9be7f8fec20f1a609d2}{SR\+\_\+\+RESET}}~0x0002
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_s_p_i__private_8h_ad8529d2df242f4448a2e66aab0eef9a3}\label{_s_p_i__private_8h_ad8529d2df242f4448a2e66aab0eef9a3}} 
+\index{SPI\_private.h@{SPI\_private.h}!CPHA@{CPHA}}
+\index{CPHA@{CPHA}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CPHA}{CPHA}}
+{\footnotesize\ttfamily \#define CPHA~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00011}{11}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a0eb64d85804990e6ee5259451c7f5a0d}\label{_s_p_i__private_8h_a0eb64d85804990e6ee5259451c7f5a0d}} 
+\index{SPI\_private.h@{SPI\_private.h}!CPOL@{CPOL}}
+\index{CPOL@{CPOL}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CPOL}{CPOL}}
+{\footnotesize\ttfamily \#define CPOL~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00012}{12}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a863870c0ff8cfad017c11d9a9eaa0f6e}\label{_s_p_i__private_8h_a863870c0ff8cfad017c11d9a9eaa0f6e}} 
+\index{SPI\_private.h@{SPI\_private.h}!MSTR@{MSTR}}
+\index{MSTR@{MSTR}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{MSTR}{MSTR}}
+{\footnotesize\ttfamily \#define MSTR~2}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00013}{13}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}\label{_s_p_i__private_8h_a4b23fe370a3a09cc47acd1e837a5b125}} 
+\index{SPI\_private.h@{SPI\_private.h}!SPE@{SPE}}
+\index{SPE@{SPE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SPE}{SPE}}
+{\footnotesize\ttfamily \#define SPE~6}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00014}{14}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a5811613d98580676f67f0dde8125433e}\label{_s_p_i__private_8h_a5811613d98580676f67f0dde8125433e}} 
+\index{SPI\_private.h@{SPI\_private.h}!LSBFIRST@{LSBFIRST}}
+\index{LSBFIRST@{LSBFIRST}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{LSBFIRST}{LSBFIRST}}
+{\footnotesize\ttfamily \#define LSBFIRST~7}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00015}{15}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a5b9615ac5bb07a63e566a69535df389c}\label{_s_p_i__private_8h_a5b9615ac5bb07a63e566a69535df389c}} 
+\index{SPI\_private.h@{SPI\_private.h}!SSI@{SSI}}
+\index{SSI@{SSI}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SSI}{SSI}}
+{\footnotesize\ttfamily \#define SSI~8}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00016}{16}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ab33258c8c1ecde2d3d0452a8f41799ed}\label{_s_p_i__private_8h_ab33258c8c1ecde2d3d0452a8f41799ed}} 
+\index{SPI\_private.h@{SPI\_private.h}!SSM@{SSM}}
+\index{SSM@{SSM}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SSM}{SSM}}
+{\footnotesize\ttfamily \#define SSM~9}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00017}{17}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}\label{_s_p_i__private_8h_aeede54b701d0e5bc75c1d7886a93426d}} 
+\index{SPI\_private.h@{SPI\_private.h}!RXONLY@{RXONLY}}
+\index{RXONLY@{RXONLY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{RXONLY}{RXONLY}}
+{\footnotesize\ttfamily \#define RXONLY~10}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00018}{18}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a52c7b2f42005b75a56920061a1caf64f}\label{_s_p_i__private_8h_a52c7b2f42005b75a56920061a1caf64f}} 
+\index{SPI\_private.h@{SPI\_private.h}!DFF@{DFF}}
+\index{DFF@{DFF}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{DFF}{DFF}}
+{\footnotesize\ttfamily \#define DFF~11}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00019}{19}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_abc77494b4ccd0d92dd921631dd28d006}\label{_s_p_i__private_8h_abc77494b4ccd0d92dd921631dd28d006}} 
+\index{SPI\_private.h@{SPI\_private.h}!CRCNEXT@{CRCNEXT}}
+\index{CRCNEXT@{CRCNEXT}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CRCNEXT}{CRCNEXT}}
+{\footnotesize\ttfamily \#define CRCNEXT~12}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00020}{20}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aa6ea2a09c411d46b99af2dd78b4c32c7}\label{_s_p_i__private_8h_aa6ea2a09c411d46b99af2dd78b4c32c7}} 
+\index{SPI\_private.h@{SPI\_private.h}!CRCEN@{CRCEN}}
+\index{CRCEN@{CRCEN}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CRCEN}{CRCEN}}
+{\footnotesize\ttfamily \#define CRCEN~13}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00021}{21}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}\label{_s_p_i__private_8h_a7dc6c96bf85199303d265411d5f10a9c}} 
+\index{SPI\_private.h@{SPI\_private.h}!BIDIOE@{BIDIOE}}
+\index{BIDIOE@{BIDIOE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{BIDIOE}{BIDIOE}}
+{\footnotesize\ttfamily \#define BIDIOE~14}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00022}{22}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}\label{_s_p_i__private_8h_a446eb589641a059ef9edfb1eb2db990f}} 
+\index{SPI\_private.h@{SPI\_private.h}!BIDIMODE@{BIDIMODE}}
+\index{BIDIMODE@{BIDIMODE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{BIDIMODE}{BIDIMODE}}
+{\footnotesize\ttfamily \#define BIDIMODE~15}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00023}{23}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a00bb38aa30e8078e8ccc221415cd95d5}\label{_s_p_i__private_8h_a00bb38aa30e8078e8ccc221415cd95d5}} 
+\index{SPI\_private.h@{SPI\_private.h}!RXDMAEN@{RXDMAEN}}
+\index{RXDMAEN@{RXDMAEN}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{RXDMAEN}{RXDMAEN}}
+{\footnotesize\ttfamily \#define RXDMAEN~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00026}{26}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a766ac644267e760407ac6d1cef887ce5}\label{_s_p_i__private_8h_a766ac644267e760407ac6d1cef887ce5}} 
+\index{SPI\_private.h@{SPI\_private.h}!TXDMAEN@{TXDMAEN}}
+\index{TXDMAEN@{TXDMAEN}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{TXDMAEN}{TXDMAEN}}
+{\footnotesize\ttfamily \#define TXDMAEN~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00027}{27}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a2bfe71fd0e87f9cef5fe3ab76fb45be7}\label{_s_p_i__private_8h_a2bfe71fd0e87f9cef5fe3ab76fb45be7}} 
+\index{SPI\_private.h@{SPI\_private.h}!SSOE@{SSOE}}
+\index{SSOE@{SSOE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SSOE}{SSOE}}
+{\footnotesize\ttfamily \#define SSOE~2}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00028}{28}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a16bb5201c0534fcdf25f6a313efc67e5}\label{_s_p_i__private_8h_a16bb5201c0534fcdf25f6a313efc67e5}} 
+\index{SPI\_private.h@{SPI\_private.h}!FRF@{FRF}}
+\index{FRF@{FRF}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{FRF}{FRF}}
+{\footnotesize\ttfamily \#define FRF~4}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00029}{29}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a2e06257308190ec132aa0930f80fe0c9}\label{_s_p_i__private_8h_a2e06257308190ec132aa0930f80fe0c9}} 
+\index{SPI\_private.h@{SPI\_private.h}!ERRIE@{ERRIE}}
+\index{ERRIE@{ERRIE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{ERRIE}{ERRIE}}
+{\footnotesize\ttfamily \#define ERRIE~5}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00030}{30}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a43370d870087df35f1a02b8d8e2037ac}\label{_s_p_i__private_8h_a43370d870087df35f1a02b8d8e2037ac}} 
+\index{SPI\_private.h@{SPI\_private.h}!RXNEIE@{RXNEIE}}
+\index{RXNEIE@{RXNEIE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{RXNEIE}{RXNEIE}}
+{\footnotesize\ttfamily \#define RXNEIE~6}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00031}{31}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a01a6ae416abff4627d084305e66faf57}\label{_s_p_i__private_8h_a01a6ae416abff4627d084305e66faf57}} 
+\index{SPI\_private.h@{SPI\_private.h}!TXEIE@{TXEIE}}
+\index{TXEIE@{TXEIE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{TXEIE}{TXEIE}}
+{\footnotesize\ttfamily \#define TXEIE~7}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00032}{32}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}\label{_s_p_i__private_8h_acd8f08569cfe7fe6e8c1e13c6f3fddc7}} 
+\index{SPI\_private.h@{SPI\_private.h}!RXNE@{RXNE}}
+\index{RXNE@{RXNE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{RXNE}{RXNE}}
+{\footnotesize\ttfamily \#define RXNE~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00035}{35}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}\label{_s_p_i__private_8h_ad2a325880979fe5b3d27e601afaca06f}} 
+\index{SPI\_private.h@{SPI\_private.h}!TXE@{TXE}}
+\index{TXE@{TXE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{TXE}{TXE}}
+{\footnotesize\ttfamily \#define TXE~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00036}{36}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aa06096cb767c25a844700a52d7150906}\label{_s_p_i__private_8h_aa06096cb767c25a844700a52d7150906}} 
+\index{SPI\_private.h@{SPI\_private.h}!CHSIDE@{CHSIDE}}
+\index{CHSIDE@{CHSIDE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CHSIDE}{CHSIDE}}
+{\footnotesize\ttfamily \#define CHSIDE~2}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00037}{37}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ac54c0178d860edd97197fe90ab06f067}\label{_s_p_i__private_8h_ac54c0178d860edd97197fe90ab06f067}} 
+\index{SPI\_private.h@{SPI\_private.h}!UDR@{UDR}}
+\index{UDR@{UDR}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{UDR}{UDR}}
+{\footnotesize\ttfamily \#define UDR~3}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00038}{38}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a7720c45b1d91308475d9d5814c9aedcc}\label{_s_p_i__private_8h_a7720c45b1d91308475d9d5814c9aedcc}} 
+\index{SPI\_private.h@{SPI\_private.h}!CRCERR@{CRCERR}}
+\index{CRCERR@{CRCERR}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CRCERR}{CRCERR}}
+{\footnotesize\ttfamily \#define CRCERR~4}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00039}{39}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a022fefdb92bb304842c479d15cfa0847}\label{_s_p_i__private_8h_a022fefdb92bb304842c479d15cfa0847}} 
+\index{SPI\_private.h@{SPI\_private.h}!MODF@{MODF}}
+\index{MODF@{MODF}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{MODF}{MODF}}
+{\footnotesize\ttfamily \#define MODF~5}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00040}{40}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a098457becb3f04f08e5a6a9dc4b50d78}\label{_s_p_i__private_8h_a098457becb3f04f08e5a6a9dc4b50d78}} 
+\index{SPI\_private.h@{SPI\_private.h}!OVR@{OVR}}
+\index{OVR@{OVR}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{OVR}{OVR}}
+{\footnotesize\ttfamily \#define OVR~6}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00041}{41}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}\label{_s_p_i__private_8h_af9a90580df99520af90316de6949f41f}} 
+\index{SPI\_private.h@{SPI\_private.h}!BSY@{BSY}}
+\index{BSY@{BSY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{BSY}{BSY}}
+{\footnotesize\ttfamily \#define BSY~7}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00042}{42}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a06fbf5ee74f827430c6ef00953209903}\label{_s_p_i__private_8h_a06fbf5ee74f827430c6ef00953209903}} 
+\index{SPI\_private.h@{SPI\_private.h}!FRE@{FRE}}
+\index{FRE@{FRE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{FRE}{FRE}}
+{\footnotesize\ttfamily \#define FRE~8}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00043}{43}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a655dc1c4d68fc47e8d412ec5da8029bc}\label{_s_p_i__private_8h_a655dc1c4d68fc47e8d412ec5da8029bc}} 
+\index{SPI\_private.h@{SPI\_private.h}!FIRST\_CLK\_Captured@{FIRST\_CLK\_Captured}}
+\index{FIRST\_CLK\_Captured@{FIRST\_CLK\_Captured}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{FIRST\_CLK\_Captured}{FIRST\_CLK\_Captured}}
+{\footnotesize\ttfamily \#define FIRST\+\_\+\+CLK\+\_\+\+Captured~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00049}{49}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a2f98ed07521e8494c364f4be35aaeb26}\label{_s_p_i__private_8h_a2f98ed07521e8494c364f4be35aaeb26}} 
+\index{SPI\_private.h@{SPI\_private.h}!SECOND\_CLK\_Captured@{SECOND\_CLK\_Captured}}
+\index{SECOND\_CLK\_Captured@{SECOND\_CLK\_Captured}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SECOND\_CLK\_Captured}{SECOND\_CLK\_Captured}}
+{\footnotesize\ttfamily \#define SECOND\+\_\+\+CLK\+\_\+\+Captured~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00050}{50}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_af86200b9ee8be4c7d852bd33171383dd}\label{_s_p_i__private_8h_af86200b9ee8be4c7d852bd33171383dd}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_IdleAt0@{CLK\_IdleAt0}}
+\index{CLK\_IdleAt0@{CLK\_IdleAt0}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_IdleAt0}{CLK\_IdleAt0}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+Idle\+At0~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00052}{52}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a24612e93f5533c00a69fca5e364d5650}\label{_s_p_i__private_8h_a24612e93f5533c00a69fca5e364d5650}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_IdleAt1@{CLK\_IdleAt1}}
+\index{CLK\_IdleAt1@{CLK\_IdleAt1}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_IdleAt1}{CLK\_IdleAt1}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+Idle\+At1~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00053}{53}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ae342da5a4630c191c1c983958808edd8}\label{_s_p_i__private_8h_ae342da5a4630c191c1c983958808edd8}} 
+\index{SPI\_private.h@{SPI\_private.h}!SLAVE@{SLAVE}}
+\index{SLAVE@{SLAVE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SLAVE}{SLAVE}}
+{\footnotesize\ttfamily \#define SLAVE~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00055}{55}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a3fa2d3bf1901157f734a584d47b25d8b}\label{_s_p_i__private_8h_a3fa2d3bf1901157f734a584d47b25d8b}} 
+\index{SPI\_private.h@{SPI\_private.h}!MASTER@{MASTER}}
+\index{MASTER@{MASTER}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{MASTER}{MASTER}}
+{\footnotesize\ttfamily \#define MASTER~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00056}{56}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a41f8d2a8558ac63328518804f8063299}\label{_s_p_i__private_8h_a41f8d2a8558ac63328518804f8063299}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By2@{CLK\_By2}}
+\index{CLK\_By2@{CLK\_By2}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By2}{CLK\_By2}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By2~0b000U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00058}{58}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_af0b9ac56ba2f5f11df3455574b1d66a5}\label{_s_p_i__private_8h_af0b9ac56ba2f5f11df3455574b1d66a5}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By4@{CLK\_By4}}
+\index{CLK\_By4@{CLK\_By4}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By4}{CLK\_By4}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By4~0b001U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00059}{59}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a4d6463bda07604ba7da33144bee5bb3a}\label{_s_p_i__private_8h_a4d6463bda07604ba7da33144bee5bb3a}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By8@{CLK\_By8}}
+\index{CLK\_By8@{CLK\_By8}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By8}{CLK\_By8}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By8~0b010U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00060}{60}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_abc2d369f88c0b441661e942b3adfb243}\label{_s_p_i__private_8h_abc2d369f88c0b441661e942b3adfb243}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By16@{CLK\_By16}}
+\index{CLK\_By16@{CLK\_By16}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By16}{CLK\_By16}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By16~0b011U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00061}{61}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a289a343d5d7b0750047e46c4af3caf76}\label{_s_p_i__private_8h_a289a343d5d7b0750047e46c4af3caf76}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By32@{CLK\_By32}}
+\index{CLK\_By32@{CLK\_By32}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By32}{CLK\_By32}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By32~0b100U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00062}{62}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aa40a095f335adb6f171dc1975eeacdfd}\label{_s_p_i__private_8h_aa40a095f335adb6f171dc1975eeacdfd}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By64@{CLK\_By64}}
+\index{CLK\_By64@{CLK\_By64}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By64}{CLK\_By64}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By64~0b101U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00063}{63}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a0d8833fba6f3dbde7140cfef7ca34af0}\label{_s_p_i__private_8h_a0d8833fba6f3dbde7140cfef7ca34af0}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By128@{CLK\_By128}}
+\index{CLK\_By128@{CLK\_By128}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By128}{CLK\_By128}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By128~0b110U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00064}{64}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a65c1d35c1c8626989945ff7f00c7f4cb}\label{_s_p_i__private_8h_a65c1d35c1c8626989945ff7f00c7f4cb}} 
+\index{SPI\_private.h@{SPI\_private.h}!CLK\_By256@{CLK\_By256}}
+\index{CLK\_By256@{CLK\_By256}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CLK\_By256}{CLK\_By256}}
+{\footnotesize\ttfamily \#define CLK\+\_\+\+By256~0b111U}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00065}{65}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a514ad415fb6125ba296793df7d1a468a}\label{_s_p_i__private_8h_a514ad415fb6125ba296793df7d1a468a}} 
+\index{SPI\_private.h@{SPI\_private.h}!ENABLE@{ENABLE}}
+\index{ENABLE@{ENABLE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{ENABLE}{ENABLE}}
+{\footnotesize\ttfamily \#define ENABLE~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00067}{67}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a99496f7308834e8b220f7894efa0b6ab}\label{_s_p_i__private_8h_a99496f7308834e8b220f7894efa0b6ab}} 
+\index{SPI\_private.h@{SPI\_private.h}!DISABLE@{DISABLE}}
+\index{DISABLE@{DISABLE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{DISABLE}{DISABLE}}
+{\footnotesize\ttfamily \#define DISABLE~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00068}{68}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a655c896958fee46efcc44ff8f174a7e7}\label{_s_p_i__private_8h_a655c896958fee46efcc44ff8f174a7e7}} 
+\index{SPI\_private.h@{SPI\_private.h}!MSB\_First@{MSB\_First}}
+\index{MSB\_First@{MSB\_First}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{MSB\_First}{MSB\_First}}
+{\footnotesize\ttfamily \#define MSB\+\_\+\+First~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00070}{70}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a6898de341d9cd4b81020d885277a774a}\label{_s_p_i__private_8h_a6898de341d9cd4b81020d885277a774a}} 
+\index{SPI\_private.h@{SPI\_private.h}!LSB\_First@{LSB\_First}}
+\index{LSB\_First@{LSB\_First}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{LSB\_First}{LSB\_First}}
+{\footnotesize\ttfamily \#define LSB\+\_\+\+First~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00071}{71}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_af504250cb09e83fc0ccf68c2552f67c5}\label{_s_p_i__private_8h_af504250cb09e83fc0ccf68c2552f67c5}} 
+\index{SPI\_private.h@{SPI\_private.h}!FULL\_DUPLEX@{FULL\_DUPLEX}}
+\index{FULL\_DUPLEX@{FULL\_DUPLEX}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{FULL\_DUPLEX}{FULL\_DUPLEX}}
+{\footnotesize\ttfamily \#define FULL\+\_\+\+DUPLEX~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00073}{73}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a74cf94a9df9d9b857d11b2befc9eaf1a}\label{_s_p_i__private_8h_a74cf94a9df9d9b857d11b2befc9eaf1a}} 
+\index{SPI\_private.h@{SPI\_private.h}!RX\_ONLY@{RX\_ONLY}}
+\index{RX\_ONLY@{RX\_ONLY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{RX\_ONLY}{RX\_ONLY}}
+{\footnotesize\ttfamily \#define RX\+\_\+\+ONLY~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00074}{74}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a769ff968ee856ac69da6e8e5ac021ce9}\label{_s_p_i__private_8h_a769ff968ee856ac69da6e8e5ac021ce9}} 
+\index{SPI\_private.h@{SPI\_private.h}!EIGHT\_BITS@{EIGHT\_BITS}}
+\index{EIGHT\_BITS@{EIGHT\_BITS}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{EIGHT\_BITS}{EIGHT\_BITS}}
+{\footnotesize\ttfamily \#define EIGHT\+\_\+\+BITS~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00076}{76}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a677475a6236a6612c930e7627a28efc7}\label{_s_p_i__private_8h_a677475a6236a6612c930e7627a28efc7}} 
+\index{SPI\_private.h@{SPI\_private.h}!SIXTEEN\_BITS@{SIXTEEN\_BITS}}
+\index{SIXTEEN\_BITS@{SIXTEEN\_BITS}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SIXTEEN\_BITS}{SIXTEEN\_BITS}}
+{\footnotesize\ttfamily \#define SIXTEEN\+\_\+\+BITS~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00077}{77}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a230bb223d5b83fe69b08fff27fb2c34c}\label{_s_p_i__private_8h_a230bb223d5b83fe69b08fff27fb2c34c}} 
+\index{SPI\_private.h@{SPI\_private.h}!CRC\_PHASE@{CRC\_PHASE}}
+\index{CRC\_PHASE@{CRC\_PHASE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{CRC\_PHASE}{CRC\_PHASE}}
+{\footnotesize\ttfamily \#define CRC\+\_\+\+PHASE~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00079}{79}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ae41fe0635ed57a6cf54cdd290df55e7e}\label{_s_p_i__private_8h_ae41fe0635ed57a6cf54cdd290df55e7e}} 
+\index{SPI\_private.h@{SPI\_private.h}!NO\_CRC\_PHASE@{NO\_CRC\_PHASE}}
+\index{NO\_CRC\_PHASE@{NO\_CRC\_PHASE}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NO\_CRC\_PHASE}{NO\_CRC\_PHASE}}
+{\footnotesize\ttfamily \#define NO\+\_\+\+CRC\+\_\+\+PHASE~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00080}{80}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a18338f7ccafd316ad901bdfa1a960707}\label{_s_p_i__private_8h_a18338f7ccafd316ad901bdfa1a960707}} 
+\index{SPI\_private.h@{SPI\_private.h}!OneLine@{OneLine}}
+\index{OneLine@{OneLine}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{OneLine}{OneLine}}
+{\footnotesize\ttfamily \#define One\+Line~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00082}{82}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a1e8eac06396d3bf908b26c2817c6dace}\label{_s_p_i__private_8h_a1e8eac06396d3bf908b26c2817c6dace}} 
+\index{SPI\_private.h@{SPI\_private.h}!TwoLines@{TwoLines}}
+\index{TwoLines@{TwoLines}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{TwoLines}{TwoLines}}
+{\footnotesize\ttfamily \#define Two\+Lines~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00083}{83}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_abb507561e09a0d59b29aa54e3b7acb36}\label{_s_p_i__private_8h_abb507561e09a0d59b29aa54e3b7acb36}} 
+\index{SPI\_private.h@{SPI\_private.h}!MOTOROLA@{MOTOROLA}}
+\index{MOTOROLA@{MOTOROLA}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{MOTOROLA}{MOTOROLA}}
+{\footnotesize\ttfamily \#define MOTOROLA~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00085}{85}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ab8364e5ecefb0f6e384a494b8c5522b2}\label{_s_p_i__private_8h_ab8364e5ecefb0f6e384a494b8c5522b2}} 
+\index{SPI\_private.h@{SPI\_private.h}!TI@{TI}}
+\index{TI@{TI}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{TI}{TI}}
+{\footnotesize\ttfamily \#define TI~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00086}{86}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a2b7cf2a3641be7b89138615764d60ba3}\label{_s_p_i__private_8h_a2b7cf2a3641be7b89138615764d60ba3}} 
+\index{SPI\_private.h@{SPI\_private.h}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{EMPTY}{EMPTY}}
+{\footnotesize\ttfamily \#define EMPTY~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00088}{88}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a27378c137d412b05d0e86edad527f16a}\label{_s_p_i__private_8h_a27378c137d412b05d0e86edad527f16a}} 
+\index{SPI\_private.h@{SPI\_private.h}!NOTEMPTY@{NOTEMPTY}}
+\index{NOTEMPTY@{NOTEMPTY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NOTEMPTY}{NOTEMPTY}}
+{\footnotesize\ttfamily \#define NOTEMPTY~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00089}{89}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a437ef08681e7210d6678427030446a54}\label{_s_p_i__private_8h_a437ef08681e7210d6678427030446a54}} 
+\index{SPI\_private.h@{SPI\_private.h}!LEFT@{LEFT}}
+\index{LEFT@{LEFT}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{LEFT}{LEFT}}
+{\footnotesize\ttfamily \#define LEFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00091}{91}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a80fb826a684cf3f0d306b22aa100ddac}\label{_s_p_i__private_8h_a80fb826a684cf3f0d306b22aa100ddac}} 
+\index{SPI\_private.h@{SPI\_private.h}!RIGHT@{RIGHT}}
+\index{RIGHT@{RIGHT}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT}{RIGHT}}
+{\footnotesize\ttfamily \#define RIGHT~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00092}{92}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a2568349e67ebc319819b9811a9b84a67}\label{_s_p_i__private_8h_a2568349e67ebc319819b9811a9b84a67}} 
+\index{SPI\_private.h@{SPI\_private.h}!OCCURRED@{OCCURRED}}
+\index{OCCURRED@{OCCURRED}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{OCCURRED}{OCCURRED}}
+{\footnotesize\ttfamily \#define OCCURRED~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00094}{94}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a38c7b018b841ec3b65c64227aeb79ead}\label{_s_p_i__private_8h_a38c7b018b841ec3b65c64227aeb79ead}} 
+\index{SPI\_private.h@{SPI\_private.h}!NOT\_OCCURRED@{NOT\_OCCURRED}}
+\index{NOT\_OCCURRED@{NOT\_OCCURRED}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NOT\_OCCURRED}{NOT\_OCCURRED}}
+{\footnotesize\ttfamily \#define NOT\+\_\+\+OCCURRED~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00095}{95}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a5721cd75e5247d90e9033368ee5e6312}\label{_s_p_i__private_8h_a5721cd75e5247d90e9033368ee5e6312}} 
+\index{SPI\_private.h@{SPI\_private.h}!MATCHED@{MATCHED}}
+\index{MATCHED@{MATCHED}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{MATCHED}{MATCHED}}
+{\footnotesize\ttfamily \#define MATCHED~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00097}{97}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a6809c4eb94ac2eaacad48624e20a075f}\label{_s_p_i__private_8h_a6809c4eb94ac2eaacad48624e20a075f}} 
+\index{SPI\_private.h@{SPI\_private.h}!NOT\_MATCHED@{NOT\_MATCHED}}
+\index{NOT\_MATCHED@{NOT\_MATCHED}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NOT\_MATCHED}{NOT\_MATCHED}}
+{\footnotesize\ttfamily \#define NOT\+\_\+\+MATCHED~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00098}{98}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aba06fcecd5ed8005b2cfb26c4a134547}\label{_s_p_i__private_8h_aba06fcecd5ed8005b2cfb26c4a134547}} 
+\index{SPI\_private.h@{SPI\_private.h}!FAULT\_OCCURRED@{FAULT\_OCCURRED}}
+\index{FAULT\_OCCURRED@{FAULT\_OCCURRED}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{FAULT\_OCCURRED}{FAULT\_OCCURRED}}
+{\footnotesize\ttfamily \#define FAULT\+\_\+\+OCCURRED~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00100}{100}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a6923cbfd1d910ddfb5efd7b9d982335e}\label{_s_p_i__private_8h_a6923cbfd1d910ddfb5efd7b9d982335e}} 
+\index{SPI\_private.h@{SPI\_private.h}!NO\_FAULT\_OCCURRED@{NO\_FAULT\_OCCURRED}}
+\index{NO\_FAULT\_OCCURRED@{NO\_FAULT\_OCCURRED}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NO\_FAULT\_OCCURRED}{NO\_FAULT\_OCCURRED}}
+{\footnotesize\ttfamily \#define NO\+\_\+\+FAULT\+\_\+\+OCCURRED~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00101}{101}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ab5be0aaddb58ffb9cb20c12530d66316}\label{_s_p_i__private_8h_ab5be0aaddb58ffb9cb20c12530d66316}} 
+\index{SPI\_private.h@{SPI\_private.h}!BUSY@{BUSY}}
+\index{BUSY@{BUSY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{BUSY}{BUSY}}
+{\footnotesize\ttfamily \#define BUSY~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00103}{103}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a3c9b792132d615157543ec051b5020b7}\label{_s_p_i__private_8h_a3c9b792132d615157543ec051b5020b7}} 
+\index{SPI\_private.h@{SPI\_private.h}!NOT\_BUSY@{NOT\_BUSY}}
+\index{NOT\_BUSY@{NOT\_BUSY}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NOT\_BUSY}{NOT\_BUSY}}
+{\footnotesize\ttfamily \#define NOT\+\_\+\+BUSY~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00104}{104}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a8fe83ac76edc595f6b98cd4a4127aed5}\label{_s_p_i__private_8h_a8fe83ac76edc595f6b98cd4a4127aed5}} 
+\index{SPI\_private.h@{SPI\_private.h}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily \#define ERROR~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00106}{106}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a258bb72419ef143530a2f8f55e7d57af}\label{_s_p_i__private_8h_a258bb72419ef143530a2f8f55e7d57af}} 
+\index{SPI\_private.h@{SPI\_private.h}!NO\_ERROR@{NO\_ERROR}}
+\index{NO\_ERROR@{NO\_ERROR}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{NO\_ERROR}{NO\_ERROR}}
+{\footnotesize\ttfamily \#define NO\+\_\+\+ERROR~0}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00107}{107}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aad0e7708f829bd362e1061ac596166bb}\label{_s_p_i__private_8h_aad0e7708f829bd362e1061ac596166bb}} 
+\index{SPI\_private.h@{SPI\_private.h}!HALF\_DUPLEX\_TX@{HALF\_DUPLEX\_TX}}
+\index{HALF\_DUPLEX\_TX@{HALF\_DUPLEX\_TX}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{HALF\_DUPLEX\_TX}{HALF\_DUPLEX\_TX}}
+{\footnotesize\ttfamily \#define HALF\+\_\+\+DUPLEX\+\_\+\+TX~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00110}{110}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a5fcf812955be382efcdf0c86557a39ea}\label{_s_p_i__private_8h_a5fcf812955be382efcdf0c86557a39ea}} 
+\index{SPI\_private.h@{SPI\_private.h}!HALF\_DUPLEX\_RX@{HALF\_DUPLEX\_RX}}
+\index{HALF\_DUPLEX\_RX@{HALF\_DUPLEX\_RX}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{HALF\_DUPLEX\_RX}{HALF\_DUPLEX\_RX}}
+{\footnotesize\ttfamily \#define HALF\+\_\+\+DUPLEX\+\_\+\+RX~2}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00111}{111}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_a6d15c71697b7e147406509a1bc4c0f81}\label{_s_p_i__private_8h_a6d15c71697b7e147406509a1bc4c0f81}} 
+\index{SPI\_private.h@{SPI\_private.h}!SIMPLEX\_TX@{SIMPLEX\_TX}}
+\index{SIMPLEX\_TX@{SIMPLEX\_TX}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SIMPLEX\_TX}{SIMPLEX\_TX}}
+{\footnotesize\ttfamily \#define SIMPLEX\+\_\+\+TX~1}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00114}{114}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_aed07ad39d5144b1906c0fbb04bd97e8f}\label{_s_p_i__private_8h_aed07ad39d5144b1906c0fbb04bd97e8f}} 
+\index{SPI\_private.h@{SPI\_private.h}!SIMPLEX\_RX@{SIMPLEX\_RX}}
+\index{SIMPLEX\_RX@{SIMPLEX\_RX}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SIMPLEX\_RX}{SIMPLEX\_RX}}
+{\footnotesize\ttfamily \#define SIMPLEX\+\_\+\+RX~2}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00115}{115}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_s_p_i__private_8h_ad7b1de175c86f9be7f8fec20f1a609d2}\label{_s_p_i__private_8h_ad7b1de175c86f9be7f8fec20f1a609d2}} 
+\index{SPI\_private.h@{SPI\_private.h}!SR\_RESET@{SR\_RESET}}
+\index{SR\_RESET@{SR\_RESET}!SPI\_private.h@{SPI\_private.h}}
+\doxysubsubsection{\texorpdfstring{SR\_RESET}{SR\_RESET}}
+{\footnotesize\ttfamily \#define SR\+\_\+\+RESET~0x0002}
+
+
+
+Definition at line \mbox{\hyperlink{_s_p_i__private_8h_source_l00118}{118}} of file \mbox{\hyperlink{_s_p_i__private_8h_source}{SPI\+\_\+private.\+h}}.
+

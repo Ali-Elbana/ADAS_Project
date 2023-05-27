@@ -1,0 +1,88 @@
+\hypertarget{_t_i_m1__interface_8h_source}{}\doxysection{TIM1\+\_\+interface.\+h}
+\label{_t_i_m1__interface_8h_source}\index{COTS/MCAL/TIM1/TIM1\_interface.h@{COTS/MCAL/TIM1/TIM1\_interface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: TIM1\_interface  }}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00004}00004 \textcolor{comment}{*  DATE:   Tue 01/24/2023}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_TIM1\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_TIM1\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00009}00009 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00010}00010 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00011}00011 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00013}00013 \textcolor{keywordtype}{void} MTIM1\_vInit( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00015}00015 \textcolor{keywordtype}{void} MTIM1\_vSetCounterValue( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16CNT\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00017}00017 \textcolor{keywordtype}{void} MTIM1\_vSetPrescalerValue( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16PSC\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00019}00019 \textcolor{keywordtype}{void} MTIM1\_vSetAutoReloadValue( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16ARR\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00021}00021 \textcolor{keywordtype}{void} MTIM1\_vSetRepetitionValue( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8RCR\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00023}00023 \textcolor{keywordtype}{void} MTIM1\_vSetCompareReg1Value( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16CCR1\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00025}00025 \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} MTIM1\_u16GetCaptureReg1Value( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00027}00027 \textcolor{keywordtype}{void} MTIM1\_vSetCompareReg2Value( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16CCR2\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00029}00029 \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} MTIM1\_u16GetCaptureReg2Value( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00031}00031 \textcolor{keywordtype}{void} MTIM1\_vSetCompareReg3Value( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16CCR3\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00033}00033 \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} MTIM1\_u16GetCaptureReg3Value( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00035}00035 \textcolor{keywordtype}{void} MTIM1\_vSetCompareReg4Value( \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16CCR4\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00037}00037 \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} MTIM1\_u16GetCaptureReg4Value( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00039}00039 \textcolor{keywordtype}{void} MTIM1\_vGeneratePWM( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8T1CHx, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8PWM\_Mode, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8CenterMode,}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00040}00040                     \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16PSC\_Value, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16ARR\_Value, \mbox{\hyperlink{group__typedefs_gac9b933f433c9cde06e3f0467a098556b}{u16\_t}} A\_u16CCRx\_Value ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00042}00042 \textcolor{keywordtype}{void} MTIM1\_vReadPWM( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00044}00044 \textcolor{keywordtype}{void} MTIM1\_vEnableCounter( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00046}00046 \textcolor{keywordtype}{void} MTIM1\_vDisableCounter( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00048}00048 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00049}00049 \textcolor{comment}{/*                          Interfacing macros                          */}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00050}00050 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00052}00052 \textcolor{preprocessor}{\#define T1CHx\_PORT              GPIO\_PORTA}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00053}00053 \textcolor{preprocessor}{\#define T1CH1\_PIN               GPIOx\_PIN8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00054}00054 \textcolor{preprocessor}{\#define T1CH2\_PIN               GPIOx\_PIN9}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00055}00055 \textcolor{preprocessor}{\#define T1CH3\_PIN               GPIOx\_PIN10}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00056}00056 \textcolor{preprocessor}{\#define T1CH4\_PIN               GPIOx\_PIN11}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00058}00058 \textcolor{preprocessor}{\#define PSC\_VALUE               7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00059}00059 \textcolor{preprocessor}{\#define ARR\_VALUE               4000}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00060}00060 \textcolor{preprocessor}{\#define CR\_VALUE                0}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00062}00062 \textcolor{preprocessor}{\#define TIM1\_CH1 1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00063}00063 \textcolor{preprocessor}{\#define TIM1\_CH2 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00064}00064 \textcolor{preprocessor}{\#define TIM1\_CH3 3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00065}00065 \textcolor{preprocessor}{\#define TIM1\_CH4 4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00067}00067 \textcolor{preprocessor}{\#define  FROZEN                 1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00068}00068 \textcolor{preprocessor}{\#define  OC1REF\_HIGH            2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00069}00069 \textcolor{preprocessor}{\#define  OC1REF\_LOW             3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00070}00070 \textcolor{preprocessor}{\#define  OC1REF\_TOGGLE          4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00071}00071 \textcolor{preprocessor}{\#define  OC1REF\_FORCED\_LOW      5}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00072}00072 \textcolor{preprocessor}{\#define  OC1REF\_FORCED\_HIGH     6}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00073}00073 \textcolor{preprocessor}{\#define  PWM1                   7}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00074}00074 \textcolor{preprocessor}{\#define  PWM2                   8}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00076}00076 \textcolor{preprocessor}{\#define EDGE                    1}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00077}00077 \textcolor{preprocessor}{\#define CENTER1                 2}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00078}00078 \textcolor{preprocessor}{\#define CENTER2                 3}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00079}00079 \textcolor{preprocessor}{\#define CENTER3                 4}}
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_t_i_m1__interface_8h_source_l00082}00082 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_TIM1\_interface\_H}}
+
+\end{DoxyCode}

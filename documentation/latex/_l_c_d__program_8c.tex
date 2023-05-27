@@ -1,0 +1,664 @@
+\hypertarget{_l_c_d__program_8c}{}\doxysection{COTS/\+HAL/\+LCD/\+LCD\+\_\+program.c File Reference}
+\label{_l_c_d__program_8c}\index{COTS/HAL/LCD/LCD\_program.c@{COTS/HAL/LCD/LCD\_program.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+COMPILER.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+VALUES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+BITMATH.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+RCC/\+MRCC\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+Sys\+Tick/\+Sys\+Tick\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LCD\+\_\+config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LCD\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LCD\+\_\+private.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_af444fd5e5a7ebf7f666fbd3fde084416}{HLCD\+\_\+v\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\+\_\+v\+Send\+Command}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Cmd)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\+\_\+v\+Send\+Data}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Data)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_abf5e7b017d1265b146d700aecdd1d4b0}{HLCD\+\_\+v\+Clear}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_a7b28fa10f67af0541a79ef2d28e4140c}{HLCD\+\_\+v\+Disp\+String}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$A\+\_\+c8\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_af52d115f19a48af3ed729886b6c91eb5}{HLCD\+\_\+v\+Disp\+Number}} (\mbox{\hyperlink{group__typedefs_ga9a09c48a77a67721578bfbbd4b63cda5}{s32\+\_\+t}} A\+\_\+s32\+Num)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_ac8d5ba1c54a7dde594fe604d0b71be0d}{HLCD\+\_\+v\+Save\+Custom\+Char}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Address, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} $\ast$A\+\_\+u8\+Custom\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_a75e9b8eeced8ac67652d8f58b4a80636}{HLCD\+\_\+v\+Go\+To}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Row, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Col)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_ab5ef6c55810057a517c7126ad8695ef6}{HLCD\+\_\+v\+Set\+Shift\+Left\+On}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_a3c1d870221f59f5f42e580669062643c}{HLCD\+\_\+v\+Set\+Disp\+OFF}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_acdc9476720a1ac4e36f7ef2d0fc39829}{HLCD\+\_\+v\+Disp\+Cursor\+With\+Blinking}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_af63615baabc0c4195418a5fb71fc09c7}{HLCD\+\_\+v\+Set\+Cursor\+Blinking\+OFF}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_a2d967e60647e831617c7686d97cd45a6}{HLCD\+\_\+v\+Disp\+Shift\+Left\+String}} (\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$A\+\_\+c8\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__program_8c_a4cf3e59079601771fe0bbd006695ce2d}{HLCD\+\_\+v\+Clear\+Char}} (\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Row, \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} A\+\_\+u8\+Col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_l_c_d__program_8c_af444fd5e5a7ebf7f666fbd3fde084416}\label{_l_c_d__program_8c_af444fd5e5a7ebf7f666fbd3fde084416}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vInit@{HLCD\_vInit}}
+\index{HLCD\_vInit@{HLCD\_vInit}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vInit()}{HLCD\_vInit()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00030}{30}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031 \{}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \mbox{\hyperlink{_sys_tick__interface_8h_a4e8fe0bd8178e76ab2e78536014006fb}{MSysTick\_vInit}}( ) ;}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1000 ) ;}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{comment}{// Set your pin directions:}}
+\DoxyCodeLine{00038     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RS =}
+\DoxyCodeLine{00039     \{}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_adc3a70aa9681aefff4586da1b194d368}{HLCD\_RS\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00042         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044     \} ;}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RW =}
+\DoxyCodeLine{00047     \{}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a79a440e47696563b747c9bff063584df}{HLCD\_RW\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00050         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052     \} ;}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} EN =}
+\DoxyCodeLine{00055     \{}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a4ed47f970506d786c86db708c7507172}{HLCD\_EN\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00058         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \} ;}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D0 =}
+\DoxyCodeLine{00063     \{}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_af35bb96f1f7965264bbddb576947203f}{D0\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00066         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \} ;}
+\DoxyCodeLine{00069 }
+\DoxyCodeLine{00070     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D1 =}
+\DoxyCodeLine{00071     \{}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_af70aafc16e3dd904599982e4784405f4}{D1\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00074         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076     \} ;}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D2 =}
+\DoxyCodeLine{00079     \{}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_ab5dc5f30ad937fb8c3ecea4922a8e17e}{D2\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00082         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \} ;}
+\DoxyCodeLine{00085 }
+\DoxyCodeLine{00086     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D3 =}
+\DoxyCodeLine{00087     \{}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a93c8addeb4d1481807fbb09a3dd41322}{D3\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00090         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00091 }
+\DoxyCodeLine{00092     \} ;}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D4 =}
+\DoxyCodeLine{00095     \{}
+\DoxyCodeLine{00096 }
+\DoxyCodeLine{00097         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a397c2c535f67a13298ac59cd4a5aba4c}{D4\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00098         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00099 }
+\DoxyCodeLine{00100     \} ;}
+\DoxyCodeLine{00101 }
+\DoxyCodeLine{00102     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D5 =}
+\DoxyCodeLine{00103     \{}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a9c3b90946c5e3746cf8b032e34c7d824}{D5\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00106         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108     \} ;}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D6 =}
+\DoxyCodeLine{00111     \{}
+\DoxyCodeLine{00112 }
+\DoxyCodeLine{00113         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a5b6dc21cf46572ec4c1349b26bed67e9}{D6\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00114         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00115 }
+\DoxyCodeLine{00116     \} ;}
+\DoxyCodeLine{00117 }
+\DoxyCodeLine{00118     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D7 =}
+\DoxyCodeLine{00119     \{}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_abb43489f7452bd6cd0e820071f22c74d}{D7\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00122         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00123 }
+\DoxyCodeLine{00124     \} ;}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&RS ) ;}
+\DoxyCodeLine{00127     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&RW ) ;}
+\DoxyCodeLine{00128     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&EN ) ;}
+\DoxyCodeLine{00129     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D0 ) ;}
+\DoxyCodeLine{00130     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D1 ) ;}
+\DoxyCodeLine{00131     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D2 ) ;}
+\DoxyCodeLine{00132     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D3 ) ;}
+\DoxyCodeLine{00133     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D4 ) ;}
+\DoxyCodeLine{00134     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D5 ) ;}
+\DoxyCodeLine{00135     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D6 ) ;}
+\DoxyCodeLine{00136     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D7 ) ;}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138     \textcolor{comment}{// Start initialization sequence.}}
+\DoxyCodeLine{00139     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 50 ) ;}
+\DoxyCodeLine{00140 }
+\DoxyCodeLine{00141     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_ad24d927971a7db8837c4a946d555006a}{HLCD\_FuctionSet\_Cmd}} )    ;}
+\DoxyCodeLine{00142 }
+\DoxyCodeLine{00143     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00144 }
+\DoxyCodeLine{00145     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a8bb9686aea1acaf89f219d6e6234bd70}{HLCD\_DispOnOffCTRL\_Cmd}} ) ;}
+\DoxyCodeLine{00146 }
+\DoxyCodeLine{00147     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00148 }
+\DoxyCodeLine{00149     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a76e4536ec7f40dd6244d1b0f57c5f946}{HLCD\_DispClear\_Cmd}} )  ;}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 3 ) ;}
+\DoxyCodeLine{00152 }
+\DoxyCodeLine{00153     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a6857abe59c972d78ff3cd63470edac66}{HLCD\_EntryModeSet\_Cmd}} )    ;}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00156 }
+\DoxyCodeLine{00157 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00024}{D0\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00025}{D1\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00026}{D2\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00027}{D3\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00028}{D4\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00029}{D5\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00030}{D6\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00031}{D7\+\_\+\+PIN}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00258}{GPIOx\+\_\+\+Low\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00178}{GPIOx\+\_\+\+MODE\+\_\+\+OUTPUT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00294}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00243}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00015}{HLCD\+\_\+\+CTRL\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00022}{HLCD\+\_\+\+DATA\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00044}{HLCD\+\_\+\+Disp\+Clear\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00036}{HLCD\+\_\+\+Disp\+On\+Off\+CTRL\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00019}{HLCD\+\_\+\+EN\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00046}{HLCD\+\_\+\+Entry\+Mode\+Set\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00034}{HLCD\+\_\+\+Fuction\+Set\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00017}{HLCD\+\_\+\+RS\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00018}{HLCD\+\_\+\+RW\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00421}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}, \mbox{\hyperlink{_sys_tick__program_8c_source_l00028}{MSys\+Tick\+\_\+v\+Init()}}, and \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00028}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}\label{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vSendCommand@{HLCD\_vSendCommand}}
+\index{HLCD\_vSendCommand@{HLCD\_vSendCommand}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSendCommand()}{HLCD\_vSendCommand()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Cmd }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{162}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00163 \{}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165     \textcolor{comment}{// Set RS pin low to send a command.}}
+\DoxyCodeLine{00166     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_adc3a70aa9681aefff4586da1b194d368}{HLCD\_RS\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00167 }
+\DoxyCodeLine{00168     \textcolor{comment}{// Set RW pin low to write the command.}}
+\DoxyCodeLine{00169     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_a79a440e47696563b747c9bff063584df}{HLCD\_RW\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00170 }
+\DoxyCodeLine{00171     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00172 }
+\DoxyCodeLine{00173     \textcolor{comment}{// Put the command on the data bus.}}
+\DoxyCodeLine{00174     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3f10a912736ecfccd7f4bda2f9522c14}{GPIO\_vSetNibbleLowValue}}( \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, A\_u8Cmd ) ;}
+\DoxyCodeLine{00175 }
+\DoxyCodeLine{00176     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00177 }
+\DoxyCodeLine{00178     \textcolor{comment}{// Set the enable pin high.}}
+\DoxyCodeLine{00179     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_a4ed47f970506d786c86db708c7507172}{HLCD\_EN\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00181     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00182 }
+\DoxyCodeLine{00183     \textcolor{comment}{// Set the enable pin low.}}
+\DoxyCodeLine{00184     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_a4ed47f970506d786c86db708c7507172}{HLCD\_EN\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00185 }
+\DoxyCodeLine{00186     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00187 }
+\DoxyCodeLine{00188 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00458}{GPIO\+\_\+v\+Set\+Nibble\+Low\+Value()}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00323}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00330}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00015}{HLCD\+\_\+\+CTRL\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00022}{HLCD\+\_\+\+DATA\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00019}{HLCD\+\_\+\+EN\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00017}{HLCD\+\_\+\+RS\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00018}{HLCD\+\_\+\+RW\+\_\+\+PIN}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00224}{HLCD\+\_\+v\+Clear()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00415}{HLCD\+\_\+v\+Disp\+Cursor\+With\+Blinking()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00355}{HLCD\+\_\+v\+Go\+To()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00030}{HLCD\+\_\+v\+Init()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00333}{HLCD\+\_\+v\+Save\+Custom\+Char()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00429}{HLCD\+\_\+v\+Set\+Cursor\+Blinking\+OFF()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00400}{HLCD\+\_\+v\+Set\+Disp\+OFF()}}, and \mbox{\hyperlink{_l_c_d__program_8c_source_l00385}{HLCD\+\_\+v\+Set\+Shift\+Left\+On()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}\label{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vSendData@{HLCD\_vSendData}}
+\index{HLCD\_vSendData@{HLCD\_vSendData}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSendData()}{HLCD\_vSendData()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{193}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194 \{}
+\DoxyCodeLine{00195 }
+\DoxyCodeLine{00196     \textcolor{comment}{// Set RS pin high to send data.}}
+\DoxyCodeLine{00197     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_adc3a70aa9681aefff4586da1b194d368}{HLCD\_RS\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00198 }
+\DoxyCodeLine{00199     \textcolor{comment}{// Set RW pin low to write the data.}}
+\DoxyCodeLine{00200     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_a79a440e47696563b747c9bff063584df}{HLCD\_RW\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}} ) ;}
+\DoxyCodeLine{00201 }
+\DoxyCodeLine{00202     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00203 }
+\DoxyCodeLine{00204     \textcolor{comment}{// Put the data on the data bus.}}
+\DoxyCodeLine{00205     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3f10a912736ecfccd7f4bda2f9522c14}{GPIO\_vSetNibbleLowValue}}( \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, A\_u8Data ) ;}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00208 }
+\DoxyCodeLine{00209     \textcolor{comment}{// Set the enable pin high.}}
+\DoxyCodeLine{00210     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_a4ed47f970506d786c86db708c7507172}{HLCD\_EN\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_gad4850c5b570986c1a0b8111114fbbfdc}{GPIOx\_HIGH}} ) ;}
+\DoxyCodeLine{00211 }
+\DoxyCodeLine{00212     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00213 }
+\DoxyCodeLine{00214     \textcolor{comment}{// Set the enable pin low.}}
+\DoxyCodeLine{00215     \mbox{\hyperlink{_g_p_i_o__interface_8h_a3d6ad5ad5f68b519f08d4be6292bf6a2}{MGPIOx\_vSetPinValue}}( \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_a4ed47f970506d786c86db708c7507172}{HLCD\_EN\_PIN}}, \mbox{\hyperlink{group__gpio__output__values_ga024aaae1f1031a1886437ac9089ddab9}{GPIOx\_LOW}}) ;}
+\DoxyCodeLine{00216 }
+\DoxyCodeLine{00217     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00218 }
+\DoxyCodeLine{00219 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00458}{GPIO\+\_\+v\+Set\+Nibble\+Low\+Value()}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00323}{GPIOx\+\_\+\+HIGH}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00330}{GPIOx\+\_\+\+LOW}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00015}{HLCD\+\_\+\+CTRL\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00022}{HLCD\+\_\+\+DATA\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00019}{HLCD\+\_\+\+EN\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00017}{HLCD\+\_\+\+RS\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00018}{HLCD\+\_\+\+RW\+\_\+\+PIN}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00221}{MGPIOx\+\_\+v\+Set\+Pin\+Value()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00474}{HLCD\+\_\+v\+Clear\+Char()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00253}{HLCD\+\_\+v\+Disp\+Number()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00443}{HLCD\+\_\+v\+Disp\+Shift\+Left\+String()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00238}{HLCD\+\_\+v\+Disp\+String()}}, and \mbox{\hyperlink{_l_c_d__program_8c_source_l00333}{HLCD\+\_\+v\+Save\+Custom\+Char()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_abf5e7b017d1265b146d700aecdd1d4b0}\label{_l_c_d__program_8c_abf5e7b017d1265b146d700aecdd1d4b0}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vClear@{HLCD\_vClear}}
+\index{HLCD\_vClear@{HLCD\_vClear}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vClear()}{HLCD\_vClear()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00224}{224}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00225 \{}
+\DoxyCodeLine{00226 }
+\DoxyCodeLine{00227     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00228 }
+\DoxyCodeLine{00229     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a76e4536ec7f40dd6244d1b0f57c5f946}{HLCD\_DispClear\_Cmd}} ) ;}
+\DoxyCodeLine{00230 }
+\DoxyCodeLine{00231     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00232 }
+\DoxyCodeLine{00233 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00044}{HLCD\+\_\+\+Disp\+Clear\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_a7b28fa10f67af0541a79ef2d28e4140c}\label{_l_c_d__program_8c_a7b28fa10f67af0541a79ef2d28e4140c}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vDispString@{HLCD\_vDispString}}
+\index{HLCD\_vDispString@{HLCD\_vDispString}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispString()}{HLCD\_vDispString()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{A\+\_\+c8\+Char }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00238}{238}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00239 \{}
+\DoxyCodeLine{00240 }
+\DoxyCodeLine{00241     \textcolor{keywordflow}{for}( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8I = 0 ; A\_c8Char[L\_u8I] != \textcolor{charliteral}{'\(\backslash\)0'} ; L\_u8I++ )}
+\DoxyCodeLine{00242     \{}
+\DoxyCodeLine{00243 }
+\DoxyCodeLine{00244         \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( A\_c8Char[L\_u8I] ) ;}
+\DoxyCodeLine{00245 }
+\DoxyCodeLine{00246     \}}
+\DoxyCodeLine{00247 }
+\DoxyCodeLine{00248 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_af52d115f19a48af3ed729886b6c91eb5}\label{_l_c_d__program_8c_af52d115f19a48af3ed729886b6c91eb5}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vDispNumber@{HLCD\_vDispNumber}}
+\index{HLCD\_vDispNumber@{HLCD\_vDispNumber}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispNumber()}{HLCD\_vDispNumber()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga9a09c48a77a67721578bfbbd4b63cda5}{s32\+\_\+t}}}]{A\+\_\+s32\+Num }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00253}{253}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00254 \{}
+\DoxyCodeLine{00255 }
+\DoxyCodeLine{00256     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8Counter        =   0   ;}
+\DoxyCodeLine{00257 }
+\DoxyCodeLine{00258     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) LR\_u8Digits[10]    =   \{0\} ;}
+\DoxyCodeLine{00259 }
+\DoxyCodeLine{00260     \textcolor{comment}{// In case the number is signed.}}
+\DoxyCodeLine{00261     \textcolor{keywordflow}{if} ( A\_s32Num < 0 )}
+\DoxyCodeLine{00262     \{}
+\DoxyCodeLine{00263 }
+\DoxyCodeLine{00264         \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( \textcolor{charliteral}{'-\/'} ) ;}
+\DoxyCodeLine{00265 }
+\DoxyCodeLine{00266         A\_s32Num = A\_s32Num * ( -\/1 ) ;}
+\DoxyCodeLine{00267 }
+\DoxyCodeLine{00268     \}}
+\DoxyCodeLine{00269 }
+\DoxyCodeLine{00270     \textcolor{comment}{// In case the number the number contains zeros.}}
+\DoxyCodeLine{00271     \textcolor{keywordflow}{if}( A\_s32Num == 0 )}
+\DoxyCodeLine{00272     \{}
+\DoxyCodeLine{00273         \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( \textcolor{charliteral}{'0'} ) ;}
+\DoxyCodeLine{00274 }
+\DoxyCodeLine{00275     \}}
+\DoxyCodeLine{00276 }
+\DoxyCodeLine{00277     \textcolor{comment}{// Save reversed digits in the array.}}
+\DoxyCodeLine{00278     \textcolor{keywordflow}{for}( L\_u8Counter = 0 ; A\_s32Num != 0 ; L\_u8Counter++ )}
+\DoxyCodeLine{00279     \{}
+\DoxyCodeLine{00280 }
+\DoxyCodeLine{00281         LR\_u8Digits[L\_u8Counter] = A\_s32Num \% 10 ;}
+\DoxyCodeLine{00282 }
+\DoxyCodeLine{00283         A\_s32Num /= 10 ;}
+\DoxyCodeLine{00284 }
+\DoxyCodeLine{00285     \}}
+\DoxyCodeLine{00286 }
+\DoxyCodeLine{00287     \textcolor{comment}{// For arrangement the digits.}}
+\DoxyCodeLine{00288     \textcolor{keywordflow}{for} ( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga07906842b175053ae8bc92126c4c81a5}{s8\_t}}) L\_s8ArrangedNums = (L\_u8Counter-\/1) ; L\_s8ArrangedNums >= 0 ; L\_s8ArrangedNums-\/-\/ )}
+\DoxyCodeLine{00289     \{}
+\DoxyCodeLine{00290 }
+\DoxyCodeLine{00291         \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( \textcolor{charliteral}{'0'} + LR\_u8Digits[ L\_s8ArrangedNums ] ) ;}
+\DoxyCodeLine{00292 }
+\DoxyCodeLine{00293     \}}
+\DoxyCodeLine{00294 }
+\DoxyCodeLine{00295 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_ac8d5ba1c54a7dde594fe604d0b71be0d}\label{_l_c_d__program_8c_ac8d5ba1c54a7dde594fe604d0b71be0d}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vSaveCustomChar@{HLCD\_vSaveCustomChar}}
+\index{HLCD\_vSaveCustomChar@{HLCD\_vSaveCustomChar}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSaveCustomChar()}{HLCD\_vSaveCustomChar()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Save\+Custom\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Address,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}} $\ast$}]{A\+\_\+u8\+Custom\+Char }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00333}{333}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00334 \{}
+\DoxyCodeLine{00335 }
+\DoxyCodeLine{00336     \textcolor{comment}{// 1-\/Set CGRAM Address.}}
+\DoxyCodeLine{00337     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_aac12ede1b61f4608ec6c5c23a48469fc}{SET\_CGRAM\_AC\_MASK}} + (\mbox{\hyperlink{_l_c_d__config_8h_a413d70f33a810265981aa42db733e3ae}{NumOf\_CGRAM\_Patterns}} * A\_u8Address) ) ;}
+\DoxyCodeLine{00338 }
+\DoxyCodeLine{00339     \textcolor{comment}{// 2-\/ Send custom char data.}}
+\DoxyCodeLine{00340     \textcolor{keywordflow}{for}( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8I = \mbox{\hyperlink{_l_c_d__config_8h_aed876a69e4e1a17492f58d14be6bd30a}{FirstByteInCGRAM\_Pattern}} ; L\_u8I < \mbox{\hyperlink{_l_c_d__config_8h_a41028b9819c2a2094c63b1dd05904e1f}{LastByteInCGRAM\_Pattern}} ; L\_u8I++ )}
+\DoxyCodeLine{00341     \{}
+\DoxyCodeLine{00342 }
+\DoxyCodeLine{00343         \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( A\_u8CustomChar[L\_u8I] ) ;}
+\DoxyCodeLine{00344 }
+\DoxyCodeLine{00345     \}}
+\DoxyCodeLine{00346 }
+\DoxyCodeLine{00347     \textcolor{comment}{// 3-\/Set DDRAM address}}
+\DoxyCodeLine{00348     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a579998e683a079765dc43c14ab12ea9f}{SET\_DDRAM\_AC\_MASK}} ) ;}
+\DoxyCodeLine{00349 }
+\DoxyCodeLine{00350 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00066}{First\+Byte\+In\+CGRAM\+\_\+\+Pattern}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00068}{Last\+Byte\+In\+CGRAM\+\_\+\+Pattern}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00064}{Num\+Of\+\_\+\+CGRAM\+\_\+\+Patterns}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00062}{SET\+\_\+\+CGRAM\+\_\+\+AC\+\_\+\+MASK}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00060}{SET\+\_\+\+DDRAM\+\_\+\+AC\+\_\+\+MASK}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_a75e9b8eeced8ac67652d8f58b4a80636}\label{_l_c_d__program_8c_a75e9b8eeced8ac67652d8f58b4a80636}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vGoTo@{HLCD\_vGoTo}}
+\index{HLCD\_vGoTo@{HLCD\_vGoTo}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vGoTo()}{HLCD\_vGoTo()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Go\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Row,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Col }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00355}{355}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00356 \{}
+\DoxyCodeLine{00357 }
+\DoxyCodeLine{00358     \textcolor{comment}{// Valid Range.}}
+\DoxyCodeLine{00359     \textcolor{keywordflow}{if} ( (A\_u8Row <= \mbox{\hyperlink{_l_c_d__interface_8h_a34c02ab1a822c6b096df879014c5b970}{MAX\_IDX\_OF\_ROWS}}) \&\& (A\_u8Col <= \mbox{\hyperlink{_l_c_d__interface_8h_a11af7fd247e1a370ed118e06a1425aca}{MAX\_IDX\_OF\_COL}}) )}
+\DoxyCodeLine{00360     \{}
+\DoxyCodeLine{00361 }
+\DoxyCodeLine{00362         \textcolor{keywordflow}{switch}( A\_u8Row )}
+\DoxyCodeLine{00363         \{}
+\DoxyCodeLine{00364 }
+\DoxyCodeLine{00365             \textcolor{keywordflow}{case} 0: \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a579998e683a079765dc43c14ab12ea9f}{SET\_DDRAM\_AC\_MASK}} + A\_u8Col + \mbox{\hyperlink{_l_c_d__config_8h_a6b80c8aed323d4a6482e8ccac1e09e56}{FIRST\_ROW\_START}} ) ; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00366 }
+\DoxyCodeLine{00367             \textcolor{keywordflow}{case} 1: \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a579998e683a079765dc43c14ab12ea9f}{SET\_DDRAM\_AC\_MASK}} + A\_u8Col + \mbox{\hyperlink{_l_c_d__config_8h_aa9247e296858b9df045b6a99aae85e2f}{SEC\_ROW\_START}}    ) ; \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00368 }
+\DoxyCodeLine{00369         \}}
+\DoxyCodeLine{00370 }
+\DoxyCodeLine{00371     \}}
+\DoxyCodeLine{00372 }
+\DoxyCodeLine{00373     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00374     \{}
+\DoxyCodeLine{00375 }
+\DoxyCodeLine{00376         \textcolor{comment}{// Do Nothing}}
+\DoxyCodeLine{00377     \}}
+\DoxyCodeLine{00378 }
+\DoxyCodeLine{00379 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00056}{FIRST\+\_\+\+ROW\+\_\+\+START}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, \mbox{\hyperlink{_l_c_d__interface_8h_source_l00056}{MAX\+\_\+\+IDX\+\_\+\+OF\+\_\+\+COL}}, \mbox{\hyperlink{_l_c_d__interface_8h_source_l00052}{MAX\+\_\+\+IDX\+\_\+\+OF\+\_\+\+ROWS}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00058}{SEC\+\_\+\+ROW\+\_\+\+START}}, and \mbox{\hyperlink{_l_c_d__config_8h_source_l00060}{SET\+\_\+\+DDRAM\+\_\+\+AC\+\_\+\+MASK}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00474}{HLCD\+\_\+v\+Clear\+Char()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_ab5ef6c55810057a517c7126ad8695ef6}\label{_l_c_d__program_8c_ab5ef6c55810057a517c7126ad8695ef6}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vSetShiftLeftOn@{HLCD\_vSetShiftLeftOn}}
+\index{HLCD\_vSetShiftLeftOn@{HLCD\_vSetShiftLeftOn}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSetShiftLeftOn()}{HLCD\_vSetShiftLeftOn()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Set\+Shift\+Left\+On (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00385}{385}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00386 \{}
+\DoxyCodeLine{00387 }
+\DoxyCodeLine{00388     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00389 }
+\DoxyCodeLine{00390     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_af9bff88db841359295a3c1e7f747479c}{HLCD\_EntryModeSet\_ShiftLeftOn\_Cmd}} ) ;}
+\DoxyCodeLine{00391 }
+\DoxyCodeLine{00392     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00393 }
+\DoxyCodeLine{00394 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00048}{HLCD\+\_\+\+Entry\+Mode\+Set\+\_\+\+Shift\+Left\+On\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00443}{HLCD\+\_\+v\+Disp\+Shift\+Left\+String()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_a3c1d870221f59f5f42e580669062643c}\label{_l_c_d__program_8c_a3c1d870221f59f5f42e580669062643c}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vSetDispOFF@{HLCD\_vSetDispOFF}}
+\index{HLCD\_vSetDispOFF@{HLCD\_vSetDispOFF}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSetDispOFF()}{HLCD\_vSetDispOFF()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Set\+Disp\+OFF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00400}{400}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00401 \{}
+\DoxyCodeLine{00402 }
+\DoxyCodeLine{00403     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00404 }
+\DoxyCodeLine{00405     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_ac3d4eaa2e75ce2661a223743473310f5}{HLCD\_DispOff\_Cmd}} ) ;}
+\DoxyCodeLine{00406 }
+\DoxyCodeLine{00407     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00408 }
+\DoxyCodeLine{00409 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00038}{HLCD\+\_\+\+Disp\+Off\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_acdc9476720a1ac4e36f7ef2d0fc39829}\label{_l_c_d__program_8c_acdc9476720a1ac4e36f7ef2d0fc39829}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vDispCursorWithBlinking@{HLCD\_vDispCursorWithBlinking}}
+\index{HLCD\_vDispCursorWithBlinking@{HLCD\_vDispCursorWithBlinking}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispCursorWithBlinking()}{HLCD\_vDispCursorWithBlinking()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+Cursor\+With\+Blinking (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00415}{415}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00416 \{}
+\DoxyCodeLine{00417 }
+\DoxyCodeLine{00418     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00419 }
+\DoxyCodeLine{00420     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a3074c5561d06f6b54277c3ccedeed576}{HLCD\_DispCursorWithBlinking\_Cmd}} ) ;}
+\DoxyCodeLine{00421 }
+\DoxyCodeLine{00422     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00423 }
+\DoxyCodeLine{00424 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00040}{HLCD\+\_\+\+Disp\+Cursor\+With\+Blinking\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_af63615baabc0c4195418a5fb71fc09c7}\label{_l_c_d__program_8c_af63615baabc0c4195418a5fb71fc09c7}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vSetCursorBlinkingOFF@{HLCD\_vSetCursorBlinkingOFF}}
+\index{HLCD\_vSetCursorBlinkingOFF@{HLCD\_vSetCursorBlinkingOFF}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSetCursorBlinkingOFF()}{HLCD\_vSetCursorBlinkingOFF()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Set\+Cursor\+Blinking\+OFF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00429}{429}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00430 \{}
+\DoxyCodeLine{00431 }
+\DoxyCodeLine{00432     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00433 }
+\DoxyCodeLine{00434     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_aa0709003f3cc63e71a0c15d1fafc3c03}{HLCD\_SetCursorBlinkingOFF\_Cmd}} ) ;}
+\DoxyCodeLine{00435 }
+\DoxyCodeLine{00436     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00437 }
+\DoxyCodeLine{00438 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00042}{HLCD\+\_\+\+Set\+Cursor\+Blinking\+OFF\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_a2d967e60647e831617c7686d97cd45a6}\label{_l_c_d__program_8c_a2d967e60647e831617c7686d97cd45a6}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vDispShiftLeftString@{HLCD\_vDispShiftLeftString}}
+\index{HLCD\_vDispShiftLeftString@{HLCD\_vDispShiftLeftString}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispShiftLeftString()}{HLCD\_vDispShiftLeftString()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+Shift\+Left\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}} $\ast$}]{A\+\_\+c8\+Char }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00443}{443}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00444 \{}
+\DoxyCodeLine{00445 }
+\DoxyCodeLine{00446     \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) L\_u8I = 0 ;}
+\DoxyCodeLine{00447 }
+\DoxyCodeLine{00448     \textcolor{keywordflow}{for}( L\_u8I = 0 ; A\_c8Char[L\_u8I] != \textcolor{charliteral}{'\(\backslash\)0'} ; L\_u8I++ )}
+\DoxyCodeLine{00449     \{}
+\DoxyCodeLine{00450 }
+\DoxyCodeLine{00451         \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( A\_c8Char[L\_u8I] ) ;}
+\DoxyCodeLine{00452 }
+\DoxyCodeLine{00453     \}}
+\DoxyCodeLine{00454 }
+\DoxyCodeLine{00455     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00456 }
+\DoxyCodeLine{00457     \textcolor{keywordflow}{if}( L\_u8I > \mbox{\hyperlink{_l_c_d__config_8h_ad10f035526cc023adb7773ef0f35272c}{HLCD\_CharactersNums}} )}
+\DoxyCodeLine{00458     \{}
+\DoxyCodeLine{00459 }
+\DoxyCodeLine{00460         \textcolor{keywordflow}{for}( \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}}) i = 0 ; i < L\_u8I -\/ \mbox{\hyperlink{_l_c_d__config_8h_ad10f035526cc023adb7773ef0f35272c}{HLCD\_CharactersNums}} ; i++ )}
+\DoxyCodeLine{00461         \{}
+\DoxyCodeLine{00462 }
+\DoxyCodeLine{00463             \mbox{\hyperlink{_l_c_d__program_8c_ab5ef6c55810057a517c7126ad8695ef6}{HLCD\_vSetShiftLeftOn}}() ;}
+\DoxyCodeLine{00464 }
+\DoxyCodeLine{00465         \}}
+\DoxyCodeLine{00466 }
+\DoxyCodeLine{00467     \}}
+\DoxyCodeLine{00468 }
+\DoxyCodeLine{00469 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00051}{HLCD\+\_\+\+Characters\+Nums}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00385}{HLCD\+\_\+v\+Set\+Shift\+Left\+On()}}, \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+
+\mbox{\Hypertarget{_l_c_d__program_8c_a4cf3e59079601771fe0bbd006695ce2d}\label{_l_c_d__program_8c_a4cf3e59079601771fe0bbd006695ce2d}} 
+\index{LCD\_program.c@{LCD\_program.c}!HLCD\_vClearChar@{HLCD\_vClearChar}}
+\index{HLCD\_vClearChar@{HLCD\_vClearChar}!LCD\_program.c@{LCD\_program.c}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vClearChar()}{HLCD\_vClearChar()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Clear\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Row,  }\item[{\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}}]{A\+\_\+u8\+Col }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00474}{474}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00475 \{}
+\DoxyCodeLine{00476 }
+\DoxyCodeLine{00477     \mbox{\hyperlink{_l_c_d__program_8c_a75e9b8eeced8ac67652d8f58b4a80636}{HLCD\_vGoTo}}( A\_u8Row, A\_u8Col ) ;}
+\DoxyCodeLine{00478 }
+\DoxyCodeLine{00479     \mbox{\hyperlink{_l_c_d__program_8c_a81c77b8595e99a6e5070e9a5cf9549bc}{HLCD\_vSendData}}( \textcolor{charliteral}{' '} ) ;}
+\DoxyCodeLine{00480 }
+\DoxyCodeLine{00481 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__program_8c_source_l00355}{HLCD\+\_\+v\+Go\+To()}}, and \mbox{\hyperlink{_l_c_d__program_8c_source_l00193}{HLCD\+\_\+v\+Send\+Data()}}.
+

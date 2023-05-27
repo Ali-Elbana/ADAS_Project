@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rcc_5fmemorymaptype_0',['RCC_MemoryMapType',['../struct_r_c_c___memory_map_type.html',1,'']]]
+  ['hultsnc_5fconfigtype_0',['HULTSNC_ConfigType',['../struct_h_u_l_t_s_n_c___config_type.html',1,'']]]
 ];

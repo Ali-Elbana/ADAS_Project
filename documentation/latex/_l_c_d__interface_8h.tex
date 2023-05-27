@@ -1,0 +1,742 @@
+\hypertarget{_l_c_d__interface_8h}{}\doxysection{COTS/\+HAL/\+LCD/\+LCD\+\_\+interface.h File Reference}
+\label{_l_c_d__interface_8h}\index{COTS/HAL/LCD/LCD\_interface.h@{COTS/HAL/LCD/LCD\_interface.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a93de1754fe209cd738fc7ddfe2697ae8}{MIN\+\_\+\+IDX\+\_\+\+OF\+\_\+\+ROWS}}~0
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a34c02ab1a822c6b096df879014c5b970}{MAX\+\_\+\+IDX\+\_\+\+OF\+\_\+\+ROWS}}~1
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a76c78a7e7e8ab30b421d3d884512329a}{MIN\+\_\+\+IDX\+\_\+\+OF\+\_\+\+COL}}~0
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a11af7fd247e1a370ed118e06a1425aca}{MAX\+\_\+\+IDX\+\_\+\+OF\+\_\+\+COL}}~15
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a7340431a1c28ff421fc5e139152bf6b0}{HLCD\+\_\+\+LINE1}}~0
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_ad58448880b8522947c363a1d689524bb}{HLCD\+\_\+\+LINE2}}~1
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a1a2800a57a63ed40e779a3236ea54f05}{HLCD\+\_\+\+Square1}}~0
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a366c21da5b25f70274b114c43d6a3caf}{HLCD\+\_\+\+Square2}}~1
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a98ae44d833d5eea5b67f97df40c696ff}{HLCD\+\_\+\+Square3}}~2
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a55fb6da3693cfdd5d27104e01de8f752}{HLCD\+\_\+\+Square4}}~3
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_abfa2feebeae655fadc2bfdf557b9bb2b}{HLCD\+\_\+\+Square5}}~4
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_adf4a115143ec46663bb6af492c788355}{HLCD\+\_\+\+Square6}}~5
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_aa49502d15281ce9e8573f7590173192a}{HLCD\+\_\+\+Square7}}~6
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a415cd5cca5908dd2ffc639dff3f8eb77}{HLCD\+\_\+\+Square8}}~7
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_aeeac0b228f429c47f7fc7f5974fed9be}{HLCD\+\_\+\+Square9}}~8
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a92d3836c129cd3f37a3396cb0d8afb8b}{HLCD\+\_\+\+Square10}}~9
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a21f602ee909f94d2d242fb5939e6d033}{HLCD\+\_\+\+Square11}}~10
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a667a5bc32cafbcfff82a38e3dc523e7b}{HLCD\+\_\+\+Square12}}~11
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a743d0535caac1583d5a69ef7b9eb24eb}{HLCD\+\_\+\+Square13}}~12
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_aeec46e12b8424fe49abdbb2ea6e2307b}{HLCD\+\_\+\+Square14}}~13
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a8476abb52d0eccf535a1cd47336a2283}{HLCD\+\_\+\+Square15}}~14
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_ab0d54eae0d4f2b62ba106ca1e70dfb9a}{HLCD\+\_\+\+Square16}}~15
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_ab48c18562b0f1d5ed7264a8e134c2d60}{CGRAM\+\_\+\+Address\+Of\+Pattern0}}~0
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_ab464c1dbec1f9cc5669fe52dc6db0831}{CGRAM\+\_\+\+Address\+Of\+Pattern1}}~1
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a175f62c5455350674efc8b88156c7bdd}{CGRAM\+\_\+\+Address\+Of\+Pattern2}}~2
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_abd5324f8374c491f3038b42657c60894}{CGRAM\+\_\+\+Address\+Of\+Pattern3}}~3
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a4761608ef0a41d4354b2ca9e2603d0a0}{CGRAM\+\_\+\+Address\+Of\+Pattern4}}~4
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_ad365bb533548cdb8fdc9687ae84e86d7}{CGRAM\+\_\+\+Address\+Of\+Pattern5}}~5
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a3b64c3bf93aa99f8f43d362f91a775c8}{CGRAM\+\_\+\+Address\+Of\+Pattern7}}~6
+\item 
+\#define \mbox{\hyperlink{_l_c_d__interface_8h_a0f2198c29e5c7978a6dc9824ee4940df}{CGRAM\+\_\+\+Address\+Of\+Pattern8}}~7
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_af444fd5e5a7ebf7f666fbd3fde084416}{HLCD\+\_\+v\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_aa4b7c6c2b321052250afa9fc99f87b28}{HLCD\+\_\+v\+Send\+Command}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Cmd)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_a2312aac2c1482f7b2658c3e9ff53ad29}{HLCD\+\_\+v\+Send\+Data}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Data)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_abf5e7b017d1265b146d700aecdd1d4b0}{HLCD\+\_\+v\+Clear}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_a5cab3d4bed54789b9b119d17d388374c}{HLCD\+\_\+v\+Disp\+String}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}) A\+\_\+c8\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_ab833bb23662b4dbbaf640e178043dbe5}{HLCD\+\_\+v\+Disp\+Number}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga9a09c48a77a67721578bfbbd4b63cda5}{s32\+\_\+t}}) A\+\_\+s32\+Num)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_ae634b712fcf29fd5eb1a06ca9097e31a}{HLCD\+\_\+v\+Save\+Custom\+Char}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Address, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Custom\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_af13b3350002451bb8f35e8ff1eedc328}{HLCD\+\_\+v\+Save\+Disp\+Char}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Address, \mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Custom\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_a692e206f227c1b8b5f3801ff3401fcbe}{HLCD\+\_\+v\+Go\+To}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Row, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Col)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_ab5ef6c55810057a517c7126ad8695ef6}{HLCD\+\_\+v\+Set\+Shift\+Left\+On}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_a3c1d870221f59f5f42e580669062643c}{HLCD\+\_\+v\+Set\+Disp\+OFF}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_acdc9476720a1ac4e36f7ef2d0fc39829}{HLCD\+\_\+v\+Disp\+Cursor\+With\+Blinking}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_af63615baabc0c4195418a5fb71fc09c7}{HLCD\+\_\+v\+Set\+Cursor\+Blinking\+OFF}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_a29ce23f8fa34d1f5a4becbcb20298ae5}{HLCD\+\_\+v\+Disp\+Shift\+Left\+String}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}}) A\+\_\+c8\+Char)
+\item 
+void \mbox{\hyperlink{_l_c_d__interface_8h_abc5e3c3a1ae9978bf232bb6d3f3a241f}{HLCD\+\_\+v\+Clear\+Char}} (\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Row, \mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}}) A\+\_\+u8\+Col)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_l_c_d__interface_8h_a93de1754fe209cd738fc7ddfe2697ae8}\label{_l_c_d__interface_8h_a93de1754fe209cd738fc7ddfe2697ae8}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!MIN\_IDX\_OF\_ROWS@{MIN\_IDX\_OF\_ROWS}}
+\index{MIN\_IDX\_OF\_ROWS@{MIN\_IDX\_OF\_ROWS}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_IDX\_OF\_ROWS}{MIN\_IDX\_OF\_ROWS}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+IDX\+\_\+\+OF\+\_\+\+ROWS~0}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00050}{50}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a34c02ab1a822c6b096df879014c5b970}\label{_l_c_d__interface_8h_a34c02ab1a822c6b096df879014c5b970}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!MAX\_IDX\_OF\_ROWS@{MAX\_IDX\_OF\_ROWS}}
+\index{MAX\_IDX\_OF\_ROWS@{MAX\_IDX\_OF\_ROWS}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_IDX\_OF\_ROWS}{MAX\_IDX\_OF\_ROWS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+IDX\+\_\+\+OF\+\_\+\+ROWS~1}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00052}{52}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a76c78a7e7e8ab30b421d3d884512329a}\label{_l_c_d__interface_8h_a76c78a7e7e8ab30b421d3d884512329a}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!MIN\_IDX\_OF\_COL@{MIN\_IDX\_OF\_COL}}
+\index{MIN\_IDX\_OF\_COL@{MIN\_IDX\_OF\_COL}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_IDX\_OF\_COL}{MIN\_IDX\_OF\_COL}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+IDX\+\_\+\+OF\+\_\+\+COL~0}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00054}{54}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a11af7fd247e1a370ed118e06a1425aca}\label{_l_c_d__interface_8h_a11af7fd247e1a370ed118e06a1425aca}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!MAX\_IDX\_OF\_COL@{MAX\_IDX\_OF\_COL}}
+\index{MAX\_IDX\_OF\_COL@{MAX\_IDX\_OF\_COL}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_IDX\_OF\_COL}{MAX\_IDX\_OF\_COL}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+IDX\+\_\+\+OF\+\_\+\+COL~15}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00056}{56}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a7340431a1c28ff421fc5e139152bf6b0}\label{_l_c_d__interface_8h_a7340431a1c28ff421fc5e139152bf6b0}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_LINE1@{HLCD\_LINE1}}
+\index{HLCD\_LINE1@{HLCD\_LINE1}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_LINE1}{HLCD\_LINE1}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+LINE1~0}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00059}{59}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ad58448880b8522947c363a1d689524bb}\label{_l_c_d__interface_8h_ad58448880b8522947c363a1d689524bb}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_LINE2@{HLCD\_LINE2}}
+\index{HLCD\_LINE2@{HLCD\_LINE2}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_LINE2}{HLCD\_LINE2}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+LINE2~1}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00061}{61}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a1a2800a57a63ed40e779a3236ea54f05}\label{_l_c_d__interface_8h_a1a2800a57a63ed40e779a3236ea54f05}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square1@{HLCD\_Square1}}
+\index{HLCD\_Square1@{HLCD\_Square1}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square1}{HLCD\_Square1}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square1~0}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00064}{64}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a366c21da5b25f70274b114c43d6a3caf}\label{_l_c_d__interface_8h_a366c21da5b25f70274b114c43d6a3caf}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square2@{HLCD\_Square2}}
+\index{HLCD\_Square2@{HLCD\_Square2}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square2}{HLCD\_Square2}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square2~1}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00066}{66}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a98ae44d833d5eea5b67f97df40c696ff}\label{_l_c_d__interface_8h_a98ae44d833d5eea5b67f97df40c696ff}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square3@{HLCD\_Square3}}
+\index{HLCD\_Square3@{HLCD\_Square3}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square3}{HLCD\_Square3}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square3~2}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00068}{68}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a55fb6da3693cfdd5d27104e01de8f752}\label{_l_c_d__interface_8h_a55fb6da3693cfdd5d27104e01de8f752}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square4@{HLCD\_Square4}}
+\index{HLCD\_Square4@{HLCD\_Square4}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square4}{HLCD\_Square4}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square4~3}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00070}{70}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_abfa2feebeae655fadc2bfdf557b9bb2b}\label{_l_c_d__interface_8h_abfa2feebeae655fadc2bfdf557b9bb2b}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square5@{HLCD\_Square5}}
+\index{HLCD\_Square5@{HLCD\_Square5}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square5}{HLCD\_Square5}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square5~4}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00072}{72}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_adf4a115143ec46663bb6af492c788355}\label{_l_c_d__interface_8h_adf4a115143ec46663bb6af492c788355}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square6@{HLCD\_Square6}}
+\index{HLCD\_Square6@{HLCD\_Square6}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square6}{HLCD\_Square6}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square6~5}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00074}{74}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_aa49502d15281ce9e8573f7590173192a}\label{_l_c_d__interface_8h_aa49502d15281ce9e8573f7590173192a}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square7@{HLCD\_Square7}}
+\index{HLCD\_Square7@{HLCD\_Square7}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square7}{HLCD\_Square7}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square7~6}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00076}{76}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a415cd5cca5908dd2ffc639dff3f8eb77}\label{_l_c_d__interface_8h_a415cd5cca5908dd2ffc639dff3f8eb77}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square8@{HLCD\_Square8}}
+\index{HLCD\_Square8@{HLCD\_Square8}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square8}{HLCD\_Square8}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square8~7}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00078}{78}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_aeeac0b228f429c47f7fc7f5974fed9be}\label{_l_c_d__interface_8h_aeeac0b228f429c47f7fc7f5974fed9be}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square9@{HLCD\_Square9}}
+\index{HLCD\_Square9@{HLCD\_Square9}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square9}{HLCD\_Square9}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square9~8}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00080}{80}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a92d3836c129cd3f37a3396cb0d8afb8b}\label{_l_c_d__interface_8h_a92d3836c129cd3f37a3396cb0d8afb8b}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square10@{HLCD\_Square10}}
+\index{HLCD\_Square10@{HLCD\_Square10}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square10}{HLCD\_Square10}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square10~9}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00082}{82}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a21f602ee909f94d2d242fb5939e6d033}\label{_l_c_d__interface_8h_a21f602ee909f94d2d242fb5939e6d033}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square11@{HLCD\_Square11}}
+\index{HLCD\_Square11@{HLCD\_Square11}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square11}{HLCD\_Square11}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square11~10}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00084}{84}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a667a5bc32cafbcfff82a38e3dc523e7b}\label{_l_c_d__interface_8h_a667a5bc32cafbcfff82a38e3dc523e7b}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square12@{HLCD\_Square12}}
+\index{HLCD\_Square12@{HLCD\_Square12}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square12}{HLCD\_Square12}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square12~11}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00086}{86}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a743d0535caac1583d5a69ef7b9eb24eb}\label{_l_c_d__interface_8h_a743d0535caac1583d5a69ef7b9eb24eb}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square13@{HLCD\_Square13}}
+\index{HLCD\_Square13@{HLCD\_Square13}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square13}{HLCD\_Square13}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square13~12}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00088}{88}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_aeec46e12b8424fe49abdbb2ea6e2307b}\label{_l_c_d__interface_8h_aeec46e12b8424fe49abdbb2ea6e2307b}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square14@{HLCD\_Square14}}
+\index{HLCD\_Square14@{HLCD\_Square14}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square14}{HLCD\_Square14}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square14~13}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00090}{90}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a8476abb52d0eccf535a1cd47336a2283}\label{_l_c_d__interface_8h_a8476abb52d0eccf535a1cd47336a2283}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square15@{HLCD\_Square15}}
+\index{HLCD\_Square15@{HLCD\_Square15}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square15}{HLCD\_Square15}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square15~14}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00092}{92}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ab0d54eae0d4f2b62ba106ca1e70dfb9a}\label{_l_c_d__interface_8h_ab0d54eae0d4f2b62ba106ca1e70dfb9a}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_Square16@{HLCD\_Square16}}
+\index{HLCD\_Square16@{HLCD\_Square16}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_Square16}{HLCD\_Square16}}
+{\footnotesize\ttfamily \#define HLCD\+\_\+\+Square16~15}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00094}{94}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ab48c18562b0f1d5ed7264a8e134c2d60}\label{_l_c_d__interface_8h_ab48c18562b0f1d5ed7264a8e134c2d60}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern0@{CGRAM\_AddressOfPattern0}}
+\index{CGRAM\_AddressOfPattern0@{CGRAM\_AddressOfPattern0}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern0}{CGRAM\_AddressOfPattern0}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern0~0}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00097}{97}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ab464c1dbec1f9cc5669fe52dc6db0831}\label{_l_c_d__interface_8h_ab464c1dbec1f9cc5669fe52dc6db0831}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern1@{CGRAM\_AddressOfPattern1}}
+\index{CGRAM\_AddressOfPattern1@{CGRAM\_AddressOfPattern1}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern1}{CGRAM\_AddressOfPattern1}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern1~1}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00099}{99}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a175f62c5455350674efc8b88156c7bdd}\label{_l_c_d__interface_8h_a175f62c5455350674efc8b88156c7bdd}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern2@{CGRAM\_AddressOfPattern2}}
+\index{CGRAM\_AddressOfPattern2@{CGRAM\_AddressOfPattern2}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern2}{CGRAM\_AddressOfPattern2}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern2~2}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00101}{101}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_abd5324f8374c491f3038b42657c60894}\label{_l_c_d__interface_8h_abd5324f8374c491f3038b42657c60894}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern3@{CGRAM\_AddressOfPattern3}}
+\index{CGRAM\_AddressOfPattern3@{CGRAM\_AddressOfPattern3}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern3}{CGRAM\_AddressOfPattern3}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern3~3}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00103}{103}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a4761608ef0a41d4354b2ca9e2603d0a0}\label{_l_c_d__interface_8h_a4761608ef0a41d4354b2ca9e2603d0a0}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern4@{CGRAM\_AddressOfPattern4}}
+\index{CGRAM\_AddressOfPattern4@{CGRAM\_AddressOfPattern4}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern4}{CGRAM\_AddressOfPattern4}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern4~4}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00105}{105}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ad365bb533548cdb8fdc9687ae84e86d7}\label{_l_c_d__interface_8h_ad365bb533548cdb8fdc9687ae84e86d7}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern5@{CGRAM\_AddressOfPattern5}}
+\index{CGRAM\_AddressOfPattern5@{CGRAM\_AddressOfPattern5}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern5}{CGRAM\_AddressOfPattern5}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern5~5}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00107}{107}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a3b64c3bf93aa99f8f43d362f91a775c8}\label{_l_c_d__interface_8h_a3b64c3bf93aa99f8f43d362f91a775c8}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern7@{CGRAM\_AddressOfPattern7}}
+\index{CGRAM\_AddressOfPattern7@{CGRAM\_AddressOfPattern7}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern7}{CGRAM\_AddressOfPattern7}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern7~6}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00109}{109}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a0f2198c29e5c7978a6dc9824ee4940df}\label{_l_c_d__interface_8h_a0f2198c29e5c7978a6dc9824ee4940df}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!CGRAM\_AddressOfPattern8@{CGRAM\_AddressOfPattern8}}
+\index{CGRAM\_AddressOfPattern8@{CGRAM\_AddressOfPattern8}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{CGRAM\_AddressOfPattern8}{CGRAM\_AddressOfPattern8}}
+{\footnotesize\ttfamily \#define CGRAM\+\_\+\+Address\+Of\+Pattern8~7}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__interface_8h_source_l00111}{111}} of file \mbox{\hyperlink{_l_c_d__interface_8h_source}{LCD\+\_\+interface.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_l_c_d__interface_8h_af444fd5e5a7ebf7f666fbd3fde084416}\label{_l_c_d__interface_8h_af444fd5e5a7ebf7f666fbd3fde084416}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vInit@{HLCD\_vInit}}
+\index{HLCD\_vInit@{HLCD\_vInit}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vInit()}{HLCD\_vInit()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00030}{30}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031 \{}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     \mbox{\hyperlink{_sys_tick__interface_8h_a4e8fe0bd8178e76ab2e78536014006fb}{MSysTick\_vInit}}( ) ;}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1000 ) ;}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{comment}{// Set your pin directions:}}
+\DoxyCodeLine{00038     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RS =}
+\DoxyCodeLine{00039     \{}
+\DoxyCodeLine{00040 }
+\DoxyCodeLine{00041         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_adc3a70aa9681aefff4586da1b194d368}{HLCD\_RS\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00042         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044     \} ;}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} RW =}
+\DoxyCodeLine{00047     \{}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a79a440e47696563b747c9bff063584df}{HLCD\_RW\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00050         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052     \} ;}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} EN =}
+\DoxyCodeLine{00055     \{}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_ae1480fc6044d3736e48104bbbddcc0dc}{HLCD\_CTRL\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a4ed47f970506d786c86db708c7507172}{HLCD\_EN\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00058         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \} ;}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D0 =}
+\DoxyCodeLine{00063     \{}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_af35bb96f1f7965264bbddb576947203f}{D0\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00066         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068     \} ;}
+\DoxyCodeLine{00069 }
+\DoxyCodeLine{00070     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D1 =}
+\DoxyCodeLine{00071     \{}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_af70aafc16e3dd904599982e4784405f4}{D1\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00074         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076     \} ;}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D2 =}
+\DoxyCodeLine{00079     \{}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_ab5dc5f30ad937fb8c3ecea4922a8e17e}{D2\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00082         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \} ;}
+\DoxyCodeLine{00085 }
+\DoxyCodeLine{00086     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D3 =}
+\DoxyCodeLine{00087     \{}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a93c8addeb4d1481807fbb09a3dd41322}{D3\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00090         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00091 }
+\DoxyCodeLine{00092     \} ;}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D4 =}
+\DoxyCodeLine{00095     \{}
+\DoxyCodeLine{00096 }
+\DoxyCodeLine{00097         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a397c2c535f67a13298ac59cd4a5aba4c}{D4\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00098         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00099 }
+\DoxyCodeLine{00100     \} ;}
+\DoxyCodeLine{00101 }
+\DoxyCodeLine{00102     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D5 =}
+\DoxyCodeLine{00103     \{}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a9c3b90946c5e3746cf8b032e34c7d824}{D5\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00106         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108     \} ;}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D6 =}
+\DoxyCodeLine{00111     \{}
+\DoxyCodeLine{00112 }
+\DoxyCodeLine{00113         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_a5b6dc21cf46572ec4c1349b26bed67e9}{D6\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00114         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00115 }
+\DoxyCodeLine{00116     \} ;}
+\DoxyCodeLine{00117 }
+\DoxyCodeLine{00118     \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\_ConfigType}} D7 =}
+\DoxyCodeLine{00119     \{}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121         .\mbox{\hyperlink{struct_m_g_p_i_ox___config_type_a5fd991c1d48a95358085baf482215bfc}{Port}}       = \mbox{\hyperlink{_l_c_d__config_8h_a539612e55ca2505fe54813505e8ffee0}{HLCD\_DATA\_PORT}}, .Pin = \mbox{\hyperlink{_l_c_d__config_8h_abb43489f7452bd6cd0e820071f22c74d}{D7\_PIN}}, .Mode = \mbox{\hyperlink{group__gpio__modes_ga4972d73d7eb99665462f063f0264138f}{GPIOx\_MODE\_OUTPUT}}, .OutputType = \mbox{\hyperlink{group__gpio__output__types_ga5343b590d444a2b8a37f7507366869ea}{GPIOx\_PUSHPULL}}, .OutputSpeed = \mbox{\hyperlink{group__gpio__pin__speed_ga0c2f1d04e61f1ea65a8e68751013e2b2}{GPIOx\_LowSpeed}},}
+\DoxyCodeLine{00122         .InputType  = \mbox{\hyperlink{group__gpio__pull__types_gaf4cf4bb06c94c525f63f7c84377d48f8}{GPIOx\_NoPull}}}
+\DoxyCodeLine{00123 }
+\DoxyCodeLine{00124     \} ;}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&RS ) ;}
+\DoxyCodeLine{00127     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&RW ) ;}
+\DoxyCodeLine{00128     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&EN ) ;}
+\DoxyCodeLine{00129     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D0 ) ;}
+\DoxyCodeLine{00130     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D1 ) ;}
+\DoxyCodeLine{00131     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D2 ) ;}
+\DoxyCodeLine{00132     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D3 ) ;}
+\DoxyCodeLine{00133     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D4 ) ;}
+\DoxyCodeLine{00134     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D5 ) ;}
+\DoxyCodeLine{00135     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D6 ) ;}
+\DoxyCodeLine{00136     \mbox{\hyperlink{_g_p_i_o__interface_8h_ae0822bea960c4226977e88ec16f3764e}{MGPIOx\_vInit}}( \&D7 ) ;}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138     \textcolor{comment}{// Start initialization sequence.}}
+\DoxyCodeLine{00139     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 50 ) ;}
+\DoxyCodeLine{00140 }
+\DoxyCodeLine{00141     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_ad24d927971a7db8837c4a946d555006a}{HLCD\_FuctionSet\_Cmd}} )    ;}
+\DoxyCodeLine{00142 }
+\DoxyCodeLine{00143     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00144 }
+\DoxyCodeLine{00145     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a8bb9686aea1acaf89f219d6e6234bd70}{HLCD\_DispOnOffCTRL\_Cmd}} ) ;}
+\DoxyCodeLine{00146 }
+\DoxyCodeLine{00147     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00148 }
+\DoxyCodeLine{00149     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a76e4536ec7f40dd6244d1b0f57c5f946}{HLCD\_DispClear\_Cmd}} )  ;}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 3 ) ;}
+\DoxyCodeLine{00152 }
+\DoxyCodeLine{00153     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a6857abe59c972d78ff3cd63470edac66}{HLCD\_EntryModeSet\_Cmd}} )    ;}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00156 }
+\DoxyCodeLine{00157 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00024}{D0\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00025}{D1\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00026}{D2\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00027}{D3\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00028}{D4\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00029}{D5\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00030}{D6\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00031}{D7\+\_\+\+PIN}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00258}{GPIOx\+\_\+\+Low\+Speed}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00178}{GPIOx\+\_\+\+MODE\+\_\+\+OUTPUT}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00294}{GPIOx\+\_\+\+No\+Pull}}, \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00243}{GPIOx\+\_\+\+PUSHPULL}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00015}{HLCD\+\_\+\+CTRL\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00022}{HLCD\+\_\+\+DATA\+\_\+\+PORT}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00044}{HLCD\+\_\+\+Disp\+Clear\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00036}{HLCD\+\_\+\+Disp\+On\+Off\+CTRL\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00019}{HLCD\+\_\+\+EN\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00046}{HLCD\+\_\+\+Entry\+Mode\+Set\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00034}{HLCD\+\_\+\+Fuction\+Set\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00017}{HLCD\+\_\+\+RS\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__config_8h_source_l00018}{HLCD\+\_\+\+RW\+\_\+\+PIN}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, \mbox{\hyperlink{_g_p_i_o__program_8c_source_l00421}{MGPIOx\+\_\+v\+Init()}}, \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}, \mbox{\hyperlink{_sys_tick__program_8c_source_l00028}{MSys\+Tick\+\_\+v\+Init()}}, and \mbox{\hyperlink{_g_p_i_o__interface_8h_source_l00028}{MGPIOx\+\_\+\+Config\+Type\+::\+Port}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_aa4b7c6c2b321052250afa9fc99f87b28}\label{_l_c_d__interface_8h_aa4b7c6c2b321052250afa9fc99f87b28}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSendCommand@{HLCD\_vSendCommand}}
+\index{HLCD\_vSendCommand@{HLCD\_vSendCommand}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSendCommand()}{HLCD\_vSendCommand()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Send\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a2312aac2c1482f7b2658c3e9ff53ad29}\label{_l_c_d__interface_8h_a2312aac2c1482f7b2658c3e9ff53ad29}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSendData@{HLCD\_vSendData}}
+\index{HLCD\_vSendData@{HLCD\_vSendData}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSendData()}{HLCD\_vSendData()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_abf5e7b017d1265b146d700aecdd1d4b0}\label{_l_c_d__interface_8h_abf5e7b017d1265b146d700aecdd1d4b0}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vClear@{HLCD\_vClear}}
+\index{HLCD\_vClear@{HLCD\_vClear}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vClear()}{HLCD\_vClear()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00224}{224}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00225 \{}
+\DoxyCodeLine{00226 }
+\DoxyCodeLine{00227     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00228 }
+\DoxyCodeLine{00229     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a76e4536ec7f40dd6244d1b0f57c5f946}{HLCD\_DispClear\_Cmd}} ) ;}
+\DoxyCodeLine{00230 }
+\DoxyCodeLine{00231     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 1 ) ;}
+\DoxyCodeLine{00232 }
+\DoxyCodeLine{00233 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00044}{HLCD\+\_\+\+Disp\+Clear\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a5cab3d4bed54789b9b119d17d388374c}\label{_l_c_d__interface_8h_a5cab3d4bed54789b9b119d17d388374c}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vDispString@{HLCD\_vDispString}}
+\index{HLCD\_vDispString@{HLCD\_vDispString}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispString()}{HLCD\_vDispString()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}})}]{A\+\_\+c8\+Char }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ab833bb23662b4dbbaf640e178043dbe5}\label{_l_c_d__interface_8h_ab833bb23662b4dbbaf640e178043dbe5}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vDispNumber@{HLCD\_vDispNumber}}
+\index{HLCD\_vDispNumber@{HLCD\_vDispNumber}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispNumber()}{HLCD\_vDispNumber()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga9a09c48a77a67721578bfbbd4b63cda5}{s32\+\_\+t}})}]{A\+\_\+s32\+Num }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ae634b712fcf29fd5eb1a06ca9097e31a}\label{_l_c_d__interface_8h_ae634b712fcf29fd5eb1a06ca9097e31a}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSaveCustomChar@{HLCD\_vSaveCustomChar}}
+\index{HLCD\_vSaveCustomChar@{HLCD\_vSaveCustomChar}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSaveCustomChar()}{HLCD\_vSaveCustomChar()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Save\+Custom\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Address,  }\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Custom\+Char }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_af13b3350002451bb8f35e8ff1eedc328}\label{_l_c_d__interface_8h_af13b3350002451bb8f35e8ff1eedc328}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSaveDispChar@{HLCD\_vSaveDispChar}}
+\index{HLCD\_vSaveDispChar@{HLCD\_vSaveDispChar}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSaveDispChar()}{HLCD\_vSaveDispChar()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Save\+Disp\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Address,  }\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Custom\+Char }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a692e206f227c1b8b5f3801ff3401fcbe}\label{_l_c_d__interface_8h_a692e206f227c1b8b5f3801ff3401fcbe}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vGoTo@{HLCD\_vGoTo}}
+\index{HLCD\_vGoTo@{HLCD\_vGoTo}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vGoTo()}{HLCD\_vGoTo()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Go\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Row,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Col }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_ab5ef6c55810057a517c7126ad8695ef6}\label{_l_c_d__interface_8h_ab5ef6c55810057a517c7126ad8695ef6}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSetShiftLeftOn@{HLCD\_vSetShiftLeftOn}}
+\index{HLCD\_vSetShiftLeftOn@{HLCD\_vSetShiftLeftOn}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSetShiftLeftOn()}{HLCD\_vSetShiftLeftOn()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Set\+Shift\+Left\+On (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00385}{385}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00386 \{}
+\DoxyCodeLine{00387 }
+\DoxyCodeLine{00388     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00389 }
+\DoxyCodeLine{00390     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_af9bff88db841359295a3c1e7f747479c}{HLCD\_EntryModeSet\_ShiftLeftOn\_Cmd}} ) ;}
+\DoxyCodeLine{00391 }
+\DoxyCodeLine{00392     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00393 }
+\DoxyCodeLine{00394 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00048}{HLCD\+\_\+\+Entry\+Mode\+Set\+\_\+\+Shift\+Left\+On\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_l_c_d__program_8c_source_l00443}{HLCD\+\_\+v\+Disp\+Shift\+Left\+String()}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a3c1d870221f59f5f42e580669062643c}\label{_l_c_d__interface_8h_a3c1d870221f59f5f42e580669062643c}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSetDispOFF@{HLCD\_vSetDispOFF}}
+\index{HLCD\_vSetDispOFF@{HLCD\_vSetDispOFF}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSetDispOFF()}{HLCD\_vSetDispOFF()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Set\+Disp\+OFF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00400}{400}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00401 \{}
+\DoxyCodeLine{00402 }
+\DoxyCodeLine{00403     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00404 }
+\DoxyCodeLine{00405     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_ac3d4eaa2e75ce2661a223743473310f5}{HLCD\_DispOff\_Cmd}} ) ;}
+\DoxyCodeLine{00406 }
+\DoxyCodeLine{00407     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00408 }
+\DoxyCodeLine{00409 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00038}{HLCD\+\_\+\+Disp\+Off\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_acdc9476720a1ac4e36f7ef2d0fc39829}\label{_l_c_d__interface_8h_acdc9476720a1ac4e36f7ef2d0fc39829}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vDispCursorWithBlinking@{HLCD\_vDispCursorWithBlinking}}
+\index{HLCD\_vDispCursorWithBlinking@{HLCD\_vDispCursorWithBlinking}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispCursorWithBlinking()}{HLCD\_vDispCursorWithBlinking()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+Cursor\+With\+Blinking (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00415}{415}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00416 \{}
+\DoxyCodeLine{00417 }
+\DoxyCodeLine{00418     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00419 }
+\DoxyCodeLine{00420     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_a3074c5561d06f6b54277c3ccedeed576}{HLCD\_DispCursorWithBlinking\_Cmd}} ) ;}
+\DoxyCodeLine{00421 }
+\DoxyCodeLine{00422     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00423 }
+\DoxyCodeLine{00424 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00040}{HLCD\+\_\+\+Disp\+Cursor\+With\+Blinking\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_af63615baabc0c4195418a5fb71fc09c7}\label{_l_c_d__interface_8h_af63615baabc0c4195418a5fb71fc09c7}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vSetCursorBlinkingOFF@{HLCD\_vSetCursorBlinkingOFF}}
+\index{HLCD\_vSetCursorBlinkingOFF@{HLCD\_vSetCursorBlinkingOFF}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vSetCursorBlinkingOFF()}{HLCD\_vSetCursorBlinkingOFF()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Set\+Cursor\+Blinking\+OFF (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_l_c_d__program_8c_source_l00429}{429}} of file \mbox{\hyperlink{_l_c_d__program_8c_source}{LCD\+\_\+program.\+c}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00430 \{}
+\DoxyCodeLine{00431 }
+\DoxyCodeLine{00432     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00433 }
+\DoxyCodeLine{00434     \mbox{\hyperlink{_l_c_d__program_8c_ac3bd4c3aa159fd2c9ba47bab4a280087}{HLCD\_vSendCommand}}( \mbox{\hyperlink{_l_c_d__config_8h_aa0709003f3cc63e71a0c15d1fafc3c03}{HLCD\_SetCursorBlinkingOFF\_Cmd}} ) ;}
+\DoxyCodeLine{00435 }
+\DoxyCodeLine{00436     \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSysTick\_vDelayMilliSec}}( 500 ) ;}
+\DoxyCodeLine{00437 }
+\DoxyCodeLine{00438 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_l_c_d__config_8h_source_l00042}{HLCD\+\_\+\+Set\+Cursor\+Blinking\+OFF\+\_\+\+Cmd}}, \mbox{\hyperlink{_l_c_d__program_8c_source_l00162}{HLCD\+\_\+v\+Send\+Command()}}, and \mbox{\hyperlink{_sys_tick__interface_8h_a1e33cc70ac096839a0377f4d9716bd04}{MSys\+Tick\+\_\+v\+Delay\+Milli\+Sec()}}.
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_a29ce23f8fa34d1f5a4becbcb20298ae5}\label{_l_c_d__interface_8h_a29ce23f8fa34d1f5a4becbcb20298ae5}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vDispShiftLeftString@{HLCD\_vDispShiftLeftString}}
+\index{HLCD\_vDispShiftLeftString@{HLCD\_vDispShiftLeftString}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vDispShiftLeftString()}{HLCD\_vDispShiftLeftString()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Disp\+Shift\+Left\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\+\_\+t}})}]{A\+\_\+c8\+Char }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_l_c_d__interface_8h_abc5e3c3a1ae9978bf232bb6d3f3a241f}\label{_l_c_d__interface_8h_abc5e3c3a1ae9978bf232bb6d3f3a241f}} 
+\index{LCD\_interface.h@{LCD\_interface.h}!HLCD\_vClearChar@{HLCD\_vClearChar}}
+\index{HLCD\_vClearChar@{HLCD\_vClearChar}!LCD\_interface.h@{LCD\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HLCD\_vClearChar()}{HLCD\_vClearChar()}}
+{\footnotesize\ttfamily void HLCD\+\_\+v\+Clear\+Char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Row,  }\item[{\mbox{\hyperlink{group__compiler_gaf36fbf9b72d48ddc34a627487ef0bba9}{VAR}}(\mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\+\_\+t}})}]{A\+\_\+u8\+Col }\end{DoxyParamCaption})}
+

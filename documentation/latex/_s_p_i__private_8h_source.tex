@@ -1,0 +1,133 @@
+\hypertarget{_s_p_i__private_8h_source}{}\doxysection{SPI\+\_\+private.\+h}
+\label{_s_p_i__private_8h_source}\index{COTS/MCAL/SPI/SPI\_private.h@{COTS/MCAL/SPI/SPI\_private.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: SPI\_private  }}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00004}00004 \textcolor{comment}{*  DATE:   Wed 10/12/2022}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_SPI\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_SPI\_private\_H}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00010}00010 \textcolor{comment}{// CR1 BITS}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00011}00011 \textcolor{preprocessor}{\#define CPHA        0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00012}00012 \textcolor{preprocessor}{\#define CPOL        1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00013}00013 \textcolor{preprocessor}{\#define MSTR        2}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00014}00014 \textcolor{preprocessor}{\#define SPE         6}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00015}00015 \textcolor{preprocessor}{\#define LSBFIRST    7}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00016}00016 \textcolor{preprocessor}{\#define SSI         8}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00017}00017 \textcolor{preprocessor}{\#define SSM         9}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00018}00018 \textcolor{preprocessor}{\#define RXONLY      10}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00019}00019 \textcolor{preprocessor}{\#define DFF         11}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00020}00020 \textcolor{preprocessor}{\#define CRCNEXT     12}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00021}00021 \textcolor{preprocessor}{\#define CRCEN       13}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00022}00022 \textcolor{preprocessor}{\#define BIDIOE      14}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00023}00023 \textcolor{preprocessor}{\#define BIDIMODE    15}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00025}00025 \textcolor{comment}{// CR2 BITS}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00026}00026 \textcolor{preprocessor}{\#define RXDMAEN 0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00027}00027 \textcolor{preprocessor}{\#define TXDMAEN 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00028}00028 \textcolor{preprocessor}{\#define SSOE    2}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00029}00029 \textcolor{preprocessor}{\#define FRF     4}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00030}00030 \textcolor{preprocessor}{\#define ERRIE   5}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00031}00031 \textcolor{preprocessor}{\#define RXNEIE  6}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00032}00032 \textcolor{preprocessor}{\#define TXEIE   7}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00034}00034 \textcolor{comment}{// SR BITS}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00035}00035 \textcolor{preprocessor}{\#define RXNE    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00036}00036 \textcolor{preprocessor}{\#define TXE     1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00037}00037 \textcolor{preprocessor}{\#define CHSIDE  2}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00038}00038 \textcolor{preprocessor}{\#define UDR     3}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00039}00039 \textcolor{preprocessor}{\#define CRCERR  4}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00040}00040 \textcolor{preprocessor}{\#define MODF    5}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00041}00041 \textcolor{preprocessor}{\#define OVR     6}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00042}00042 \textcolor{preprocessor}{\#define BSY     7}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00043}00043 \textcolor{preprocessor}{\#define FRE     8}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00048}00048 \textcolor{comment}{// Configuration options:}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00049}00049 \textcolor{preprocessor}{\#define FIRST\_CLK\_Captured  1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00050}00050 \textcolor{preprocessor}{\#define SECOND\_CLK\_Captured 0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00052}00052 \textcolor{preprocessor}{\#define CLK\_IdleAt0 0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00053}00053 \textcolor{preprocessor}{\#define CLK\_IdleAt1 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00055}00055 \textcolor{preprocessor}{\#define SLAVE   0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00056}00056 \textcolor{preprocessor}{\#define MASTER  1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00058}00058 \textcolor{preprocessor}{\#define CLK\_By2     0b000U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00059}00059 \textcolor{preprocessor}{\#define CLK\_By4     0b001U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00060}00060 \textcolor{preprocessor}{\#define CLK\_By8     0b010U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00061}00061 \textcolor{preprocessor}{\#define CLK\_By16    0b011U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00062}00062 \textcolor{preprocessor}{\#define CLK\_By32    0b100U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00063}00063 \textcolor{preprocessor}{\#define CLK\_By64    0b101U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00064}00064 \textcolor{preprocessor}{\#define CLK\_By128   0b110U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00065}00065 \textcolor{preprocessor}{\#define CLK\_By256   0b111U}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00067}00067 \textcolor{preprocessor}{\#define ENABLE  1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00068}00068 \textcolor{preprocessor}{\#define DISABLE 0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00070}00070 \textcolor{preprocessor}{\#define MSB\_First 0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00071}00071 \textcolor{preprocessor}{\#define LSB\_First 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00073}00073 \textcolor{preprocessor}{\#define FULL\_DUPLEX 0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00074}00074 \textcolor{preprocessor}{\#define RX\_ONLY     1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00076}00076 \textcolor{preprocessor}{\#define EIGHT\_BITS   0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00077}00077 \textcolor{preprocessor}{\#define SIXTEEN\_BITS 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00079}00079 \textcolor{preprocessor}{\#define CRC\_PHASE       1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00080}00080 \textcolor{preprocessor}{\#define NO\_CRC\_PHASE    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00082}00082 \textcolor{preprocessor}{\#define OneLine     1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00083}00083 \textcolor{preprocessor}{\#define TwoLines    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00085}00085 \textcolor{preprocessor}{\#define MOTOROLA    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00086}00086 \textcolor{preprocessor}{\#define TI          1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00088}00088 \textcolor{preprocessor}{\#define EMPTY       0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00089}00089 \textcolor{preprocessor}{\#define NOTEMPTY    1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00091}00091 \textcolor{preprocessor}{\#define LEFT    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00092}00092 \textcolor{preprocessor}{\#define RIGHT   1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00094}00094 \textcolor{preprocessor}{\#define OCCURRED        1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00095}00095 \textcolor{preprocessor}{\#define NOT\_OCCURRED    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00097}00097 \textcolor{preprocessor}{\#define MATCHED     0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00098}00098 \textcolor{preprocessor}{\#define NOT\_MATCHED 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00100}00100 \textcolor{preprocessor}{\#define FAULT\_OCCURRED      1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00101}00101 \textcolor{preprocessor}{\#define NO\_FAULT\_OCCURRED   0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00103}00103 \textcolor{preprocessor}{\#define BUSY        1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00104}00104 \textcolor{preprocessor}{\#define NOT\_BUSY    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00106}00106 \textcolor{preprocessor}{\#define ERROR       1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00107}00107 \textcolor{preprocessor}{\#define NO\_ERROR    0}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00109}00109 \textcolor{comment}{// HALF DUPLEX TX/RX:}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00110}00110 \textcolor{preprocessor}{\#define HALF\_DUPLEX\_TX 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00111}00111 \textcolor{preprocessor}{\#define HALF\_DUPLEX\_RX 2}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00113}00113 \textcolor{comment}{// SIMPLEX TX/RX:}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00114}00114 \textcolor{preprocessor}{\#define SIMPLEX\_TX 1}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00115}00115 \textcolor{preprocessor}{\#define SIMPLEX\_RX 2}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00117}00117 \textcolor{comment}{// Reset Flags}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00118}00118 \textcolor{preprocessor}{\#define SR\_RESET 0x0002}}
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{_s_p_i__private_8h_source_l00127}00127 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_SPI\_private\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,63 @@
+\hypertarget{_t_f_t___config_8c}{}\doxysection{COTS/\+HAL/\+TFT/\+TFT\+\_\+\+Config.c File Reference}
+\label{_t_f_t___config_8c}\index{COTS/HAL/TFT/TFT\_Config.c@{COTS/HAL/TFT/TFT\_Config.c}}
+{\ttfamily \#include \char`\"{}../../\+LIB/\+LSTD\+\_\+\+TYPES.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../\+MCAL/\+GPIO/\+GPIO\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}TFT\+\_\+config.\+h\char`\"{}}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} \mbox{\hyperlink{_t_f_t___config_8c_a187d2507d5b66ef77a1ed92b1d866134}{TFT\+\_\+\+A0}}
+\item 
+\mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} \mbox{\hyperlink{_t_f_t___config_8c_ad9f704e45d884e1cb9f2af30de149cc7}{TFT\+\_\+\+RST}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_t_f_t___config_8c_a187d2507d5b66ef77a1ed92b1d866134}\label{_t_f_t___config_8c_a187d2507d5b66ef77a1ed92b1d866134}} 
+\index{TFT\_Config.c@{TFT\_Config.c}!TFT\_A0@{TFT\_A0}}
+\index{TFT\_A0@{TFT\_A0}!TFT\_Config.c@{TFT\_Config.c}}
+\doxysubsubsection{\texorpdfstring{TFT\_A0}{TFT\_A0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} TFT\+\_\+\+A0}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    .Port           =   (0)                 , .Pin          =   (1)             ,}
+\DoxyCodeLine{    .Mode           =  (0b01)   , .OutputType   =  (2)      ,}
+\DoxyCodeLine{    .OutputSpeed    =  (0b00)       , .InputType    =  (0b00) }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_t_f_t___config_8c_source_l00014}{14}} of file \mbox{\hyperlink{_t_f_t___config_8c_source}{TFT\+\_\+\+Config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}, \mbox{\hyperlink{_t_f_t__program_8c_source_l00035}{HTFT\+\_\+v\+Write\+CMD()}}, and \mbox{\hyperlink{_t_f_t__program_8c_source_l00047}{HTFT\+\_\+v\+Write\+Data()}}.
+
+\mbox{\Hypertarget{_t_f_t___config_8c_ad9f704e45d884e1cb9f2af30de149cc7}\label{_t_f_t___config_8c_ad9f704e45d884e1cb9f2af30de149cc7}} 
+\index{TFT\_Config.c@{TFT\_Config.c}!TFT\_RST@{TFT\_RST}}
+\index{TFT\_RST@{TFT\_RST}!TFT\_Config.c@{TFT\_Config.c}}
+\doxysubsubsection{\texorpdfstring{TFT\_RST}{TFT\_RST}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_g_p_i_ox___config_type}{MGPIOx\+\_\+\+Config\+Type}} TFT\+\_\+\+RST}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    .Port           =   (0)                 ,   .Pin        =   (0)             ,}
+\DoxyCodeLine{    .Mode           =  (0b01)   ,   .OutputType =  (2)      ,}
+\DoxyCodeLine{    .OutputSpeed    =  (0b00)       ,   .InputType  =  (0b00) }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_t_f_t___config_8c_source_l00022}{22}} of file \mbox{\hyperlink{_t_f_t___config_8c_source}{TFT\+\_\+\+Config.\+c}}.
+
+
+
+Referenced by \mbox{\hyperlink{_t_f_t__program_8c_source_l00087}{HTFT\+\_\+v\+Init()}}, and \mbox{\hyperlink{_t_f_t__program_8c_source_l00059}{HTFT\+\_\+v\+Reset\+Sequence()}}.
+

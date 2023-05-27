@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('_n_v_i_c__program_8c.html',''); initRe
 <code>#include &quot;<a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html">../../LIB/LSTD_BITMATH.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_v_i_c__interface_8h_source.html">NVIC_interface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_n_v_i_c__private_8h_source.html">NVIC_private.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_n_v_i_c__config_8h_source.html">NVIC_config.h</a>&quot;</code><br />
+<code>#include &quot;NVIC_config.h&quot;</code><br />
 </div>
 <p><a href="_n_v_i_c__program_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -176,13 +176,10 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_n_v_i_c__program_8c_source.html#l00033">33</a> of file <a class="el" href="_n_v_i_c__program_8c_source.html">NVIC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ISERx[A_u8INTID / <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>] = (1 &lt;&lt; (A_u8INTID % <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>));</div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ISERx[A_u8INTID / REGISTER_SIZE] = (1 &lt;&lt; (A_u8INTID % REGISTER_SIZE));</div>
 <div class="line"><span class="lineno">   36</span>}</div>
-<div class="ttc" id="a_n_v_i_c__program_8c_html_abe2f7b6344bb4d51dfea9c9f58609427"><div class="ttname"><a href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a></div><div class="ttdeci">#define REGISTER_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__program_8c_source.html#l00027">NVIC_program.c:27</a></div></div>
 <div class="ttc" id="agroup__nvic__registers_html_ga5592a87b609cf093eb988459b69071ce"><div class="ttname"><a href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a></div><div class="ttdeci">#define MNVIC</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00240">NVIC_private.h:240</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, and <a class="el" href="_n_v_i_c__program_8c_source.html#l00027">REGISTER_SIZE</a>.</p>
-
 </div>
 </div>
 <a id="a7e5d39f4f5b477fae79556b5b53f235f" name="a7e5d39f4f5b477fae79556b5b53f235f"></a>
@@ -203,11 +200,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_n_v_i_c__program_8c_source.html#l00041">41</a> of file <a class="el" href="_n_v_i_c__program_8c_source.html">NVIC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   42</span>{</div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ICERx[A_u8INTID / <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>] = (1 &lt;&lt; (A_u8INTID % <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>));</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ICERx[A_u8INTID / REGISTER_SIZE] = (1 &lt;&lt; (A_u8INTID % REGISTER_SIZE));</div>
 <div class="line"><span class="lineno">   44</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, and <a class="el" href="_n_v_i_c__program_8c_source.html#l00027">REGISTER_SIZE</a>.</p>
-
 </div>
 </div>
 <a id="ad5bcb425a5f5a2f145815bee02af5bd9" name="ad5bcb425a5f5a2f145815bee02af5bd9"></a>
@@ -228,11 +223,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_n_v_i_c__program_8c_source.html#l00049">49</a> of file <a class="el" href="_n_v_i_c__program_8c_source.html">NVIC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   50</span>{</div>
-<div class="line"><span class="lineno">   51</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ISPRx[A_u8INTID / <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>] = (1 &lt;&lt; (A_u8INTID % <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>));</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ISPRx[A_u8INTID / REGISTER_SIZE] = (1 &lt;&lt; (A_u8INTID % REGISTER_SIZE));</div>
 <div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, and <a class="el" href="_n_v_i_c__program_8c_source.html#l00027">REGISTER_SIZE</a>.</p>
-
 </div>
 </div>
 <a id="ac507713ac304b76f07267511941db0a0" name="ac507713ac304b76f07267511941db0a0"></a>
@@ -253,11 +246,9 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="_n_v_i_c__program_8c_source.html#l00057">57</a> of file <a class="el" href="_n_v_i_c__program_8c_source.html">NVIC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   58</span>{</div>
-<div class="line"><span class="lineno">   59</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ICPRx[A_u8INTID / <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>] = (1 &lt;&lt; (A_u8INTID % <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>));</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;ICPRx[A_u8INTID / REGISTER_SIZE] = (1 &lt;&lt; (A_u8INTID % REGISTER_SIZE));</div>
 <div class="line"><span class="lineno">   60</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, and <a class="el" href="_n_v_i_c__program_8c_source.html#l00027">REGISTER_SIZE</a>.</p>
-
 </div>
 </div>
 <a id="a46fc4d62b97d6604e67848ccc555767b" name="a46fc4d62b97d6604e67848ccc555767b"></a>
@@ -279,16 +270,14 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_n_v_i_c__program_8c_source.html#l00065">65</a> of file <a class="el" href="_n_v_i_c__program_8c_source.html">NVIC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   66</span>{</div>
 <div class="line"><span class="lineno">   67</span>    <a class="code hl_define" href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a>(<a class="code hl_typedef" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>) L_u8Active = <a class="code hl_define" href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a>;</div>
-<div class="line"><span class="lineno">   68</span>    L_u8Active = <a class="code hl_define" href="group__bitmath.html#ga675c41d461abd3b2224e9c3d99d7151a">GET_BIT</a>((<a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;IABRx[A_u8INTID / <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>]), (A_u8INTID % <a class="code hl_define" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427">REGISTER_SIZE</a>));</div>
+<div class="line"><span class="lineno">   68</span>    L_u8Active = <a class="code hl_define" href="group__bitmath.html#ga675c41d461abd3b2224e9c3d99d7151a">GET_BIT</a>((<a class="code hl_define" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce">MNVIC</a>-&gt;IABRx[A_u8INTID / REGISTER_SIZE]), (A_u8INTID % REGISTER_SIZE));</div>
 <div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> L_u8Active;</div>
 <div class="line"><span class="lineno">   70</span>}</div>
 <div class="ttc" id="agroup__bitmath_html_ga675c41d461abd3b2224e9c3d99d7151a"><div class="ttname"><a href="group__bitmath.html#ga675c41d461abd3b2224e9c3d99d7151a">GET_BIT</a></div><div class="ttdeci">#define GET_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00044">LSTD_BITMATH.h:44</a></div></div>
 <div class="ttc" id="agroup__compiler_html_gaf36fbf9b72d48ddc34a627487ef0bba9"><div class="ttname"><a href="group__compiler.html#gaf36fbf9b72d48ddc34a627487ef0bba9">VAR</a></div><div class="ttdeci">#define VAR(vartype)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">LSTD_COMPILER.h:23</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">LSTD_VALUES.h:57</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">LSTD_VALUES.h:56</a></div></div>
 <div class="ttc" id="agroup__typedefs_html_ga8127f1441872f9f912b20a65f40d4d24"><div class="ttname"><a href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a></div><div class="ttdeci">unsigned char u8_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00030">LSTD_TYPES.h:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00044">GET_BIT</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, <a class="el" href="_n_v_i_c__program_8c_source.html#l00027">REGISTER_SIZE</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
-
 </div>
 </div>
 <a id="a060f3a46ddd39c723516d327c2a70a97" name="a060f3a46ddd39c723516d327c2a70a97"></a>
@@ -315,8 +304,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_n_v_i_c__private_8h_html_a9c228760273574d427b5d2bbcccc6c22"><div class="ttname"><a href="_n_v_i_c__private_8h.html#a9c228760273574d427b5d2bbcccc6c22">VECTKEY_PASSWORD</a></div><div class="ttdeci">#define VECTKEY_PASSWORD</div><div class="ttdoc">VECTKEY Password.</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00252">NVIC_private.h:252</a></div></div>
 <div class="ttc" id="agroup__nvic__registers_html_gad64f4ba7787546fc107c2c2993554e91"><div class="ttname"><a href="group__nvic__registers.html#gad64f4ba7787546fc107c2c2993554e91">MSCB</a></div><div class="ttdeci">#define MSCB</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00234">NVIC_private.h:234</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00234">MSCB</a>, and <a class="el" href="_n_v_i_c__private_8h_source.html#l00252">VECTKEY_PASSWORD</a>.</p>
-
 </div>
 </div>
 <a id="a2bc11a514b96fd1f36e2ea33d095bd55" name="a2bc11a514b96fd1f36e2ea33d095bd55"></a>
@@ -394,10 +381,8 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__nvic__settable__priorities_html_ga74cc0334396805a1f1afa1c34f184986"><div class="ttname"><a href="group__nvic__settable__priorities.html#ga74cc0334396805a1f1afa1c34f184986">USAGE_FAULT</a></div><div class="ttdeci">#define USAGE_FAULT</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00296">NVIC_private.h:296</a></div></div>
 <div class="ttc" id="agroup__nvic__settable__priorities_html_ga8553be2a10dccdecaf91ac8f8a2f294d"><div class="ttname"><a href="group__nvic__settable__priorities.html#ga8553be2a10dccdecaf91ac8f8a2f294d">PEND_SV</a></div><div class="ttdeci">#define PEND_SV</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00266">NVIC_private.h:266</a></div></div>
 <div class="ttc" id="agroup__nvic__settable__priorities_html_gad942404ac7d5ff6c1c65dec93525dcb9"><div class="ttname"><a href="group__nvic__settable__priorities.html#gad942404ac7d5ff6c1c65dec93525dcb9">SYSTICK</a></div><div class="ttdeci">#define SYSTICK</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00272">NVIC_private.h:272</a></div></div>
-<div class="ttc" id="agroup__nvic__settable__priorities_html_gaffd50de6dc17574cfc949534345ee91c"><div class="ttname"><a href="group__nvic__settable__priorities.html#gaffd50de6dc17574cfc949534345ee91c">MEMORY_MANAGE</a></div><div class="ttdeci">#define MEMORY_MANAGE</div></div>
+<div class="ttc" id="agroup__nvic__settable__priorities_html_gaffd50de6dc17574cfc949534345ee91c"><div class="ttname"><a href="group__nvic__settable__priorities.html#gaffd50de6dc17574cfc949534345ee91c">MEMORY_MANAGE</a></div><div class="ttdeci">#define MEMORY_MANAGE</div><div class="ttdef"><b>Definition:</b> <a href="_n_v_i_c__private_8h_source.html#l00284">NVIC_private.h:284</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00290">BUS_FAULT</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="group__nvic__settable__priorities.html#gaffd50de6dc17574cfc949534345ee91c">MEMORY_MANAGE</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00234">MSCB</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00266">PEND_SV</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00278">SV_CALL</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00272">SYSTICK</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00296">USAGE_FAULT</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
-
 </div>
 </div>
 <a id="a8631573a83351d70a0bb3add68c329dd" name="a8631573a83351d70a0bb3add68c329dd"></a>
@@ -455,10 +440,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  162</span> </div>
 <div class="line"><span class="lineno">  163</span>    <span class="keywordflow">return</span> L_u32ThePriorityIS;</div>
 <div class="line"><span class="lineno">  164</span>}</div>
-<div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned long int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00044">LSTD_TYPES.h:44</a></div></div>
+<div class="ttc" id="agroup__typedefs_html_gae9d3c0db71e8dcd5b0393d8b2608f071"><div class="ttname"><a href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071">u32_t</a></div><div class="ttdeci">unsigned int u32_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00051">LSTD_TYPES.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_n_v_i_c__private_8h_source.html#l00290">BUS_FAULT</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="group__nvic__settable__priorities.html#gaffd50de6dc17574cfc949534345ee91c">MEMORY_MANAGE</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00240">MNVIC</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00234">MSCB</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00266">PEND_SV</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00278">SV_CALL</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00272">SYSTICK</a>, <a class="el" href="_n_v_i_c__private_8h_source.html#l00296">USAGE_FAULT</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -467,7 +450,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_bf6cfb23c629a1bbcb78d13135e184d7.html">NVIC</a></li><li class="navelem"><a class="el" href="_n_v_i_c__program_8c.html">NVIC_program.c</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat May 27 2023 00:03:12 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

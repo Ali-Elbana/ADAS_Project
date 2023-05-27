@@ -1,0 +1,44 @@
+\hypertarget{_bluetooth__interface_8h_source}{}\doxysection{Bluetooth\+\_\+interface.\+h}
+\label{_bluetooth__interface_8h_source}\index{COTS/HAL/Bluetooth/Bluetooth\_interface.h@{COTS/HAL/Bluetooth/Bluetooth\_interface.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00001}00001 \textcolor{comment}{/* FILENAME: Bluetooth\_interface  }}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00002}00002 \textcolor{comment}{*  Author:  Ali El Bana}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00003}00003 \textcolor{comment}{*  Version:  V1.0}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00004}00004 \textcolor{comment}{*  DATE:   Thu 01/05/2023}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00005}00005 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00006}00006 \textcolor{preprocessor}{\#ifndef \_Bluetooth\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00007}00007 \textcolor{preprocessor}{\#define \_Bluetooth\_interface\_H}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00009}00009 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00010}00010 \textcolor{comment}{/*                        Functions prototypes                          */}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00011}00011 \textcolor{comment}{/************************************************************************/}}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00013}00013 \textcolor{keywordtype}{void} HBluetooth\_vInit( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00015}00015 \textcolor{keywordtype}{void} HBluetooth\_vSendByte( \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} A\_u8Byte ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00017}00017 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} HBluetooth\_u8ReceiveByte( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00019}00019 \textcolor{keywordtype}{void} HBluetooth\_u8AsynchReceiveByte( \textcolor{keywordtype}{void} (*Fptr) (\textcolor{keywordtype}{void}) ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00021}00021 \textcolor{keywordtype}{void} HBluetooth\_vSendString( \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *A\_ptrc8String ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00023}00023 \textcolor{keywordtype}{void} HBluetooth\_vReceiveString( \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} A\_c8YourString[] ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00025}00025 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} HBluetooth\_u8CompStrings( \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *String1, \mbox{\hyperlink{group__typedefs_ga4782c2e0e32746464299989e379e14a8}{c8\_t}} *String2 ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00027}00027 \textcolor{keywordtype}{void} HBluetooth\_vEnable( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00029}00029 \textcolor{keywordtype}{void} HBluetooth\_vDisable( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00031}00031 \textcolor{keywordtype}{void} HBluetooth\_vEnableAsynchReceive( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00033}00033 \textcolor{keywordtype}{void} HBluetooth\_vDisableAsynchReceive( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00035}00035 \mbox{\hyperlink{group__typedefs_ga8127f1441872f9f912b20a65f40d4d24}{u8\_t}} HBluetooth\_u8GetDataRegister( \textcolor{keywordtype}{void} ) ;}
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_bluetooth__interface_8h_source_l00038}00038 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//\_Bluetooth\_interface\_H}}
+
+\end{DoxyCode}

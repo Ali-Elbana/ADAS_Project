@@ -3,7 +3,7 @@
     <topic label="Description" href="index.html#autotoc_md1">
       <topic label="Adaptive Cruise Control" href="index.html#autotoc_md2"/>
       <topic label="Adaptive Light Control" href="index.html#autotoc_md3"/>
-      <topic label="Driver Health Care" href="index.html#autotoc_md4"/>
+      <topic label="Driver Drowsiness Detection" href="index.html#autotoc_md4"/>
     </topic>
     <topic label="Hardware specifications" href="index.html#autotoc_md5"/>
   </topic>
@@ -11,6 +11,19 @@
     <topic label="DC Motor Directions" href="group__motor__directions.html">
       <topic label="FORWARD" href="group__motor__directions.html#ga6ddfdda7a062d10cff4a72b76b44aeb8"/>
       <topic label="BACKWARD" href="group__motor__directions.html#gadf445abfe1b77fa63f89e315ccc2f7f2"/>
+    </topic>
+    <topic label="DC Motor Speeds" href="group__motor__speeds.html">
+      <topic label="SPEED_0_PERCENT" href="group__motor__speeds.html#gae5ac5eeae3cf04a9d1e585344e54bdeb"/>
+      <topic label="SPEED_10_PERCENT" href="group__motor__speeds.html#gac296ff023217cd73073b3a32e0864727"/>
+      <topic label="SPEED_20_PERCENT" href="group__motor__speeds.html#ga7cb645d6cb6ab47b0b69c1fce5b2f853"/>
+      <topic label="SPEED_30_PERCENT" href="group__motor__speeds.html#ga13eb4732e1a07060a4c943c3bce40539"/>
+      <topic label="SPEED_40_PERCENT" href="group__motor__speeds.html#gae33aebfaba65805e468fe5ad991ac75d"/>
+      <topic label="SPEED_50_PERCENT" href="group__motor__speeds.html#ga4e407fa9631b9146b77dc0ed6f9fe99b"/>
+      <topic label="SPEED_60_PERCENT" href="group__motor__speeds.html#ga01d0d7cec4aad7ad1407eac449781ada"/>
+      <topic label="SPEED_70_PERCENT" href="group__motor__speeds.html#ga39cfdf3b19db22054b82f0c208e70c35"/>
+      <topic label="SPEED_80_PERCENT" href="group__motor__speeds.html#ga3a6da91fd7977c5eb7fd350b1f7c60eb"/>
+      <topic label="SPEED_90_PERCENT" href="group__motor__speeds.html#ga856eec191c77c8452e68eec98c6f8b13"/>
+      <topic label="SPEED_100_PERCENT" href="group__motor__speeds.html#ga89268c7ea49fe78f02601656198bfcaf"/>
     </topic>
     <topic label="DC Motor Rotation Directions" href="group__motor__rotation__direction.html">
       <topic label="CW" href="group__motor__rotation__direction.html#gabe61b07c31c2a3e90576eb4c5d95b024"/>
@@ -45,13 +58,16 @@
     <topic label="Standard types" href="group__typedefs.html">
       <topic label="bool_t" href="group__typedefs.html#ga04dd5074964518403bf944f2b240a5f8"/>
       <topic label="u8_t" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24"/>
+      <topic label="c8_t" href="group__typedefs.html#ga4782c2e0e32746464299989e379e14a8"/>
       <topic label="u16_t" href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b"/>
       <topic label="u32_t" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071"/>
+      <topic label="u64_t" href="group__typedefs.html#ga3123cc74e9b2376970dc6fafd737eda8"/>
+      <topic label="s64_t" href="group__typedefs.html#ga0c3aba789a99a7cca62e204546c75c9e"/>
       <topic label="s8_t" href="group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5"/>
       <topic label="s16_t" href="group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478"/>
       <topic label="s32_t" href="group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5"/>
-      <topic label="fl32_t" href="group__typedefs.html#gaea18e97fe4ad79b1972d2e9ab64a7def"/>
-      <topic label="fl64_t" href="group__typedefs.html#gae508fe7e6b0f5f01e4eae145da6dd747"/>
+      <topic label="f32_t" href="group__typedefs.html#gad8e451647f66f06a13c0baefa773a542"/>
+      <topic label="f64_t" href="group__typedefs.html#ga68753cef8a9cf6aec82b4d71c44a933d"/>
     </topic>
     <topic label="Standard values" href="group__standardvalues.html">
       <topic label="TRUE" href="group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d"/>
@@ -64,6 +80,8 @@
       <topic label="STOP" href="group__standardvalues.html#gae19b6bb2940d2fbe0a79852b070eeafd"/>
       <topic label="PRESSED" href="group__standardvalues.html#ga654adff3c664f27f0b29c24af818dd26"/>
       <topic label="RELEASED" href="group__standardvalues.html#gad74b7f5218b46c8332cd531df7178d45"/>
+      <topic label="SAME_STRING" href="group__standardvalues.html#ga7b8c0d456045358dc5197792205b20be"/>
+      <topic label="DIFFERENT_STRING" href="group__standardvalues.html#gaa956229c39573f53bbcc5e20f445d6c8"/>
     </topic>
     <topic label="Interrupt line IDs" href="group__interrupt__lines.html">
       <topic label="EXTI_LINE0" href="group__interrupt__lines.html#ga5d9011faf4106bf40c74ff617b1e4973"/>
@@ -177,7 +195,6 @@
       <topic label="GPIOA_BASE_ADDRESS" href="group__gpio__addresses.html#ga034245d27ea38f0c5b26e72f78b18d8c"/>
       <topic label="GPIOB_BASE_ADDRESS" href="group__gpio__addresses.html#gabbde468c4be08bb6288f992d2ba4b0b2"/>
       <topic label="GPIOC_BASE_ADDRESS" href="group__gpio__addresses.html#gacc0899208f96ee70b8f7bdab8d9045a4"/>
-      <topic label="CLK_SOURCE" href="group__gpio__addresses.html#ga1cb6265e66aa849a2e04e04a89c04789"/>
     </topic>
     <topic label="GPIO Registers" href="group__gpio__registers.html">
       <topic label="GPIOA" href="group__gpio__registers.html#gac485358099728ddae050db37924dd6b7"/>
@@ -219,8 +236,8 @@
       <topic label="NO_SUB_PRIORITY" href="group__sub__group__prioty.html#ga0f459c644dd1567a391ba2fb7f1d13e7"/>
       <topic label="SUB_PRIORITY_0" href="group__sub__group__prioty.html#ga4da2ef75d0cdab029ad424f6df82c40e"/>
       <topic label="SUB_PRIORITY_1" href="group__sub__group__prioty.html#gaa47bd8f1615876728b070742ad34d7b7"/>
-      <topic label="SUB_PRIORITY_3" href="group__sub__group__prioty.html#gabeffdea416cc02d6c4e10a2f87e458a1"/>
       <topic label="SUB_PRIORITY_2" href="group__sub__group__prioty.html#gad465fa4963eb6b31d0bdcaf5285801b8"/>
+      <topic label="SUB_PRIORITY_3" href="group__sub__group__prioty.html#gabeffdea416cc02d6c4e10a2f87e458a1"/>
       <topic label="SUB_PRIORITY_4" href="group__sub__group__prioty.html#ga0903e82e4624117ad2ada96868aee136"/>
       <topic label="SUB_PRIORITY_5" href="group__sub__group__prioty.html#ga90222b7eb8a124b1875a5a8c9de65df9"/>
       <topic label="SUB_PRIORITY_6" href="group__sub__group__prioty.html#gabd2d487a9681537030467b4e1eb3ab7a"/>
@@ -280,10 +297,10 @@
       <topic label="DMA2_STREAM0" href="group__vector__table.html#ga0b6fa3a07607a6d9eb6f305f1ca1a345"/>
       <topic label="DMA2_STREAM1" href="group__vector__table.html#ga9b270e74a56d5a37e65ee890af39ce7a"/>
       <topic label="DMA2_STREAM2" href="group__vector__table.html#gafb683f8af7af0075e2b253a815ac53e6"/>
-      <topic label="DMA2_STREAM5" href="group__vector__table.html#ga57a817146fe5ca233e8a8af2366b8796"/>
       <topic label="DMA2_STREAM3" href="group__vector__table.html#ga14fe483b7785fe05710877fed9ab07c8"/>
       <topic label="DMA2_STREAM4" href="group__vector__table.html#ga5b012d6c35e0154a0323abea3326a239"/>
       <topic label="OTG_FS" href="group__vector__table.html#gac6da148c09f511d1a6b951151614ccef"/>
+      <topic label="DMA2_STREAM5" href="group__vector__table.html#ga57a817146fe5ca233e8a8af2366b8796"/>
       <topic label="DMA2_STREAM6" href="group__vector__table.html#gaa805a63d66104f6f0dc048f9d063ed49"/>
       <topic label="DMA2_STREAM7" href="group__vector__table.html#gaf73ac59b037781c5cc0cc3562ffacadc"/>
       <topic label="USART6" href="group__vector__table.html#ga2dab39a19ce3dd05fe360dcbb7b5dc84"/>
@@ -380,14 +397,76 @@
       <topic label="Dont_AssertRequest" href="group__systick__exception__request__enable.html#ga2b134b9547ceef09338eb24fc09e7a9d"/>
       <topic label="AssertRequest" href="group__systick__exception__request__enable.html#ga08bc6a27e8bc51f94ff9e8466dc0cf7a"/>
     </topic>
+    <topic label="UART Addresses" href="group__uart__addresses.html">
+      <topic label="USART1_BASE_ADDRESS" href="group__uart__addresses.html#gab4fe2cb41dcc9d652b033f2e0a89d44b"/>
+      <topic label="USART2_BASE_ADDRESS" href="group__uart__addresses.html#ga4845766e4b9aa8b3c91bbf4a71652106"/>
+      <topic label="USART6_BASE_ADDRESS" href="group__uart__addresses.html#ga9df7340f186b0dea97f421c10936f608"/>
+    </topic>
+    <topic label="UART Registers" href="group__uart__registers.html">
+      <topic label="USART1_REG" href="group__uart__registers.html#ga38f9de19e0022108a0536f7b88267d5e"/>
+      <topic label="USART2_REG" href="group__uart__registers.html#ga1a4ecad9a4dcd0594be0f53e2017dc66"/>
+      <topic label="USART6_REG" href="group__uart__registers.html#gac07061e10fa07006ad02f7810500ff91"/>
+    </topic>
+    <topic label="UART Oversampling" href="group__uart__over__sampling.html">
+      <topic label="OVER_SAMPLING_16" href="group__uart__over__sampling.html#gaf8c5da91760498f5e23684c559d9d0d1"/>
+      <topic label="OVER_SAMPLING_8" href="group__uart__over__sampling.html#ga6d7508f36c8dde4eed0ab2ad952e344c"/>
+    </topic>
+    <topic label="UART Operating Modes" href="group__uart__operating__modes.html">
+      <topic label="TX_ONLY" href="group__uart__operating__modes.html#ga68e18d9e86deac2cd5519242d9cbacfa"/>
+      <topic label="RX_ONLY" href="group__uart__operating__modes.html#ga74cf94a9df9d9b857d11b2befc9eaf1a"/>
+      <topic label="TX_RX" href="group__uart__operating__modes.html#gac320fb8cc73d1635bf24181d566e708c"/>
+    </topic>
+    <topic label="UART Parity" href="group__uart__parity.html">
+      <topic label="EVEN_PARITY" href="group__uart__parity.html#ga30a963ff1432e4cfbdd83e74045ef142"/>
+      <topic label="ODD_PARITY" href="group__uart__parity.html#ga898d7631f24dd6b1deebf808a2214ea2"/>
+    </topic>
+    <topic label="UART Bit Sizes" href="group__uart__bit__sizes.html">
+      <topic label="MODE_8BIT" href="group__uart__bit__sizes.html#gaee68d10bce9651f8903872f9e1e8753c"/>
+      <topic label="MODE_9BIT" href="group__uart__bit__sizes.html#ga034730cadeba4657ae21a0bbb35bcb16"/>
+    </topic>
+    <topic label="UART Stop Bits" href="group__uart__stop__bits.html">
+      <topic label="STOP_BIT_1" href="group__uart__stop__bits.html#ga22de6895caca557a97364a36572ca319"/>
+      <topic label="STOP_BIT_0_5" href="group__uart__stop__bits.html#ga85d5bd1feb713cdf0f59068366e8ab99"/>
+      <topic label="STOP_BIT_2" href="group__uart__stop__bits.html#gafa1ce323ca9ac6fe9181f9f25eeb7953"/>
+      <topic label="STOP_BIT_1_5" href="group__uart__stop__bits.html#gaac9febcb73e8885a7d2ef78d6396a4e0"/>
+    </topic>
   </topic>
   <topic label="Data Structures" href="annotated.html">
     <topic label="Data Structures" href="annotated.html">
+      <topic label="ADC_MemoryMapType" href="struct_a_d_c___memory_map_type.html">
+        <topic label="SR" href="struct_a_d_c___memory_map_type.html#aa0ed76d319137a2ba0cff447f494a52a"/>
+        <topic label="CR1" href="struct_a_d_c___memory_map_type.html#a1b84b4cd1a6d420c4172ebe1a9f29ba9"/>
+        <topic label="CR2" href="struct_a_d_c___memory_map_type.html#a5ca394c394fd2c5fe2b8e5dd6aadb36e"/>
+        <topic label="SMPR1" href="struct_a_d_c___memory_map_type.html#ad0190e58b7458dde05014ef48d71e5da"/>
+        <topic label="SMPR2" href="struct_a_d_c___memory_map_type.html#a8c9973cb992288446638c816fbd0e56e"/>
+        <topic label="JOFR1" href="struct_a_d_c___memory_map_type.html#a3ee28d29c9f9b2bfeef5f6f5ab2faa38"/>
+        <topic label="JOFR2" href="struct_a_d_c___memory_map_type.html#a5f8f9f5199e4ad3484bed35179a29b65"/>
+        <topic label="JOFR3" href="struct_a_d_c___memory_map_type.html#ad49c8d8557d432ca608a6d6a2bd35b46"/>
+        <topic label="JOFR4" href="struct_a_d_c___memory_map_type.html#af378188c941daf9993f90047a2f95bb5"/>
+        <topic label="HTR" href="struct_a_d_c___memory_map_type.html#a4f9e70fa210c4db1754a766d6d8c622c"/>
+        <topic label="LTR" href="struct_a_d_c___memory_map_type.html#a10cf88431f2d62372355b6a0cdb55a0c"/>
+        <topic label="SQR1" href="struct_a_d_c___memory_map_type.html#af5af84f43ce810fb710149d7f6e420d7"/>
+        <topic label="SQR2" href="struct_a_d_c___memory_map_type.html#a9335f953f8007d30d89ca4510a8b32c5"/>
+        <topic label="SQR3" href="struct_a_d_c___memory_map_type.html#aff62457d156d32fc995f0623d2ba713e"/>
+        <topic label="JSQR" href="struct_a_d_c___memory_map_type.html#a78752ddeafb81062503ef49c1421be1f"/>
+        <topic label="JDR1" href="struct_a_d_c___memory_map_type.html#a0223e3aa60db3e24c1319db867ec5d7b"/>
+        <topic label="JDR2" href="struct_a_d_c___memory_map_type.html#a76516bde404049dace0245548cc66fa7"/>
+        <topic label="JDR3" href="struct_a_d_c___memory_map_type.html#aa23070953ff5d87edda4870d4bb0ca41"/>
+        <topic label="JDR4" href="struct_a_d_c___memory_map_type.html#a5e001acb77afed55b3d3239387baa575"/>
+        <topic label="DR" href="struct_a_d_c___memory_map_type.html#abcbd82166451364e69be1e7e1f514bd9"/>
+        <topic label="CCR" href="struct_a_d_c___memory_map_type.html#aa190f03a375e5642a2a75c5fe4122268"/>
+      </topic>
+      <topic label="BUZZER_BuzzerConfiguration" href="struct_b_u_z_z_e_r___buzzer_configuration.html">
+        <topic label="u8Port" href="struct_b_u_z_z_e_r___buzzer_configuration.html#a6439a8215e05cda734aef4c58d715032"/>
+        <topic label="u8Pin" href="struct_b_u_z_z_e_r___buzzer_configuration.html#aa04032dd2b59932d869adaefba43c15d"/>
+      </topic>
       <topic label="DCM_MotorConfiguration" href="struct_d_c_m___motor_configuration.html">
         <topic label="u8Port" href="struct_d_c_m___motor_configuration.html#a6439a8215e05cda734aef4c58d715032"/>
         <topic label="u8Pin1" href="struct_d_c_m___motor_configuration.html#a6cdc315159c3cecff102fa5460b0517f"/>
         <topic label="u8Pin2" href="struct_d_c_m___motor_configuration.html#acbf48152f1b2bb3d4731c1fdd23dfc79"/>
         <topic label="u8Direction" href="struct_d_c_m___motor_configuration.html#a2e20aa333b94d6c54b07fb7d5e46422c"/>
+        <topic label="u8SpeedPin" href="struct_d_c_m___motor_configuration.html#a5ee7ceea1b69e1ab611417a35cff4186"/>
+        <topic label="u32SpeedRatio" href="struct_d_c_m___motor_configuration.html#a9692129a92cbbc24e640673026454c5e"/>
       </topic>
       <topic label="EXTI_ConfigType" href="struct_e_x_t_i___config_type.html">
         <topic label="LineNum" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911"/>
@@ -413,6 +492,12 @@
         <topic label="LCKRx" href="struct_g_p_i_ox___memory_map_type.html#a3342cf1e8177885584f8f6526f961a27"/>
         <topic label="AFRLx" href="struct_g_p_i_ox___memory_map_type.html#a8a8d53f55426684b3eeff7b75ad96fd4"/>
         <topic label="AFRHx" href="struct_g_p_i_ox___memory_map_type.html#aaf96b9724e66d9ea57dab4a9d66d4a67"/>
+      </topic>
+      <topic label="HULTSNC_ConfigType" href="struct_h_u_l_t_s_n_c___config_type.html">
+      </topic>
+      <topic label="LED_LEDConfiguration" href="struct_l_e_d___l_e_d_configuration.html">
+        <topic label="u8Port" href="struct_l_e_d___l_e_d_configuration.html#a6439a8215e05cda734aef4c58d715032"/>
+        <topic label="u8Pin" href="struct_l_e_d___l_e_d_configuration.html#aa04032dd2b59932d869adaefba43c15d"/>
       </topic>
       <topic label="MGPIOx_ConfigType" href="struct_m_g_p_i_ox___config_type.html">
         <topic label="Port" href="struct_m_g_p_i_ox___config_type.html#a5fd991c1d48a95358085baf482215bfc"/>
@@ -496,11 +581,42 @@
         <topic label="MMFAR" href="struct_s_c_b___memory_map_type.html#a120bb9fd3069ae7490d672591e5c3e20"/>
         <topic label="BFAR" href="struct_s_c_b___memory_map_type.html#af49031580ccaef660e066c6ce1f48bde"/>
       </topic>
+      <topic label="SPI_MemoryMapType" href="struct_s_p_i___memory_map_type.html">
+      </topic>
       <topic label="SysTick_Type" href="struct_sys_tick___type.html">
         <topic label="CTRL" href="struct_sys_tick___type.html#ac17d66221ad72dbebf4527a848136238"/>
         <topic label="LOAD" href="struct_sys_tick___type.html#aa41fd086580200059da755429a0c7bb9"/>
         <topic label="VAL" href="struct_sys_tick___type.html#a91f0aa50edd91c8aa60b21241289f123"/>
         <topic label="CALIB" href="struct_sys_tick___type.html#a0885fb8feb38187bf76a637ab048ddac"/>
+      </topic>
+      <topic label="Task" href="struct_task.html">
+      </topic>
+      <topic label="TIM1_MemoryMapType" href="struct_t_i_m1___memory_map_type.html">
+      </topic>
+      <topic label="USART_ClockInitTypeDef" href="struct_u_s_a_r_t___clock_init_type_def.html">
+        <topic label="ClockOutput" href="struct_u_s_a_r_t___clock_init_type_def.html#a0fdb99d837deb1ce696f2324fd6abc02"/>
+        <topic label="ClockPolarity" href="struct_u_s_a_r_t___clock_init_type_def.html#a196a11a0546d1589d06e484d0d92e093"/>
+        <topic label="ClockPhase" href="struct_u_s_a_r_t___clock_init_type_def.html#a86c0c9aaf06dd093b727020851b18258"/>
+        <topic label="LastBitClockPulse" href="struct_u_s_a_r_t___clock_init_type_def.html#a310fd344063c5472789d02c1f5732aa6"/>
+      </topic>
+      <topic label="USART_InitType" href="struct_u_s_a_r_t___init_type.html">
+        <topic label="BaudRate" href="struct_u_s_a_r_t___init_type.html#afa1b17287553d6f2ed8e4ded8067ce7d"/>
+        <topic label="DataWidth" href="struct_u_s_a_r_t___init_type.html#a732332f56fabda2390e935a042712ed0"/>
+        <topic label="StopBits" href="struct_u_s_a_r_t___init_type.html#aeb52c37ce9ee7768af06e4d90d88d1a2"/>
+        <topic label="Parity_Enable" href="struct_u_s_a_r_t___init_type.html#affc0431b2a8516a92695a7250028bf57"/>
+        <topic label="Parity_Selection" href="struct_u_s_a_r_t___init_type.html#ae83afe06a0ae8c796873deee3203608e"/>
+        <topic label="TransferDirection" href="struct_u_s_a_r_t___init_type.html#ae274fe8182e9785a01cea7354892a9ec"/>
+        <topic label="HardwareFlowControl" href="struct_u_s_a_r_t___init_type.html#a578eb0b941006f70641b410789a8f65d"/>
+        <topic label="Oversampling" href="struct_u_s_a_r_t___init_type.html#a62c8fbf658e9677667a2f82aaae8ad8e"/>
+      </topic>
+      <topic label="USART_MemoryMapType" href="struct_u_s_a_r_t___memory_map_type.html">
+        <topic label="SR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a0c45427011800c5d5e8c6427fb03c7e6"/>
+        <topic label="DR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a3c8a559f7aa8d7f2d6a4b42e43c8c2a0"/>
+        <topic label="BRR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a2261448def1f381fb720aa1696ce6cc7"/>
+        <topic label="CR1_REG" href="struct_u_s_a_r_t___memory_map_type.html#a259bcc8d1757d6bc77bbff16840f64b1"/>
+        <topic label="CR2_REG" href="struct_u_s_a_r_t___memory_map_type.html#af226d966a116ce9a6a703070339ee580"/>
+        <topic label="CR3_REG" href="struct_u_s_a_r_t___memory_map_type.html#add3547c67019a8ea87a5868995d207a5"/>
+        <topic label="GTPR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a64e6173202e6b9b8201c4362dae64bfd"/>
       </topic>
     </topic>
     <topic label="Data Structure Index" href="classes.html"/>
@@ -512,33 +628,134 @@
   <topic label="Files" href="files.html">
     <topic label="File List" href="files.html">
       <topic label="COTS" href="dir_d1250299a5376307af898043e4279e0d.html">
+        <topic label="APP" href="dir_d4bbb3e6039411c85d738231040299b0.html">
+          <topic label="ACC" href="dir_25493b7cead7992913ec4661e876559a.html">
+            <topic label="ACC_config.h" href="_a_c_c__config_8h_source.html"/>
+            <topic label="ACC_interface.h" href="_a_c_c__interface_8h_source.html"/>
+            <topic label="ACC_private.h" href="_a_c_c__private_8h_source.html"/>
+            <topic label="ACC_program.c" href="_a_c_c__program_8c_source.html"/>
+          </topic>
+          <topic label="Exit_State" href="dir_3d3f39d4567d88429c63cf7c130b01e8.html">
+            <topic label="Exit_State_config.h" href="_exit___state__config_8h_source.html"/>
+            <topic label="Exit_State_interface.h" href="_exit___state__interface_8h_source.html"/>
+            <topic label="Exit_State_private.h" href="_exit___state__private_8h_source.html"/>
+            <topic label="Exit_State_program.c" href="_exit___state__program_8c_source.html"/>
+          </topic>
+          <topic label="FCW" href="dir_4162f5ad05e28c03194a7d9337af0abc.html">
+            <topic label="FCW_config.h" href="_f_c_w__config_8h_source.html"/>
+            <topic label="FCW_interface.h" href="_f_c_w__interface_8h_source.html"/>
+            <topic label="FCW_private.h" href="_f_c_w__private_8h_source.html"/>
+            <topic label="FCW_program.c" href="_f_c_w__program_8c_source.html"/>
+          </topic>
+          <topic label="Mob_APP" href="dir_e58e366344bc58ec69639d1fa6f5ef95.html">
+            <topic label="Mob_APP_config.h" href="_mob___a_p_p__config_8h_source.html"/>
+            <topic label="Mob_APP_interface.h" href="_mob___a_p_p__interface_8h_source.html"/>
+            <topic label="Mob_APP_private.h" href="_mob___a_p_p__private_8h_source.html"/>
+            <topic label="Mob_APP_program.c" href="_mob___a_p_p__program_8c_source.html"/>
+          </topic>
+          <topic label="NCC" href="dir_1d922b7e9f15be1767fb4b3bd4b1250d.html">
+            <topic label="NCC_config.h" href="_n_c_c__config_8h_source.html"/>
+            <topic label="NCC_interface.h" href="_n_c_c__interface_8h_source.html"/>
+            <topic label="NCC_private.h" href="_n_c_c__private_8h_source.html"/>
+            <topic label="NCC_program.c" href="_n_c_c__program_8c_source.html"/>
+          </topic>
+          <topic label="Traditional_Mode" href="dir_35a85d939363b3b3598e23592a5925fa.html">
+            <topic label="Traditional_Mode_config.h" href="_traditional___mode__config_8h_source.html"/>
+            <topic label="Traditional_Mode_interface.h" href="_traditional___mode__interface_8h_source.html"/>
+            <topic label="Traditional_Mode_private.h" href="_traditional___mode__private_8h_source.html"/>
+            <topic label="Traditional_Mode_program.c" href="_traditional___mode__program_8c_source.html"/>
+          </topic>
+        </topic>
         <topic label="HAL" href="dir_5b9f402d8cd57bcc858ed2703dcc50fe.html">
+          <topic label="Bluetooth" href="dir_cf0966b50fcdc1a85d163c81fd8e4503.html">
+            <topic label="Bluetooth_config.c" href="_bluetooth__config_8c_source.html"/>
+            <topic label="Bluetooth_config.h" href="_bluetooth__config_8h_source.html"/>
+            <topic label="Bluetooth_interface.h" href="_bluetooth__interface_8h_source.html"/>
+            <topic label="Bluetooth_private.h" href="_bluetooth__private_8h_source.html"/>
+            <topic label="Bluetooth_program.c" href="_bluetooth__program_8c_source.html"/>
+          </topic>
+          <topic label="BUZZER" href="dir_7c17e9609d8a0899797fcc66a36467ac.html">
+            <topic label="BUZZER_config.h" href="_b_u_z_z_e_r__config_8h_source.html"/>
+            <topic label="BUZZER_interface.h" href="_b_u_z_z_e_r__interface_8h_source.html"/>
+            <topic label="BUZZER_private.h" href="_b_u_z_z_e_r__private_8h_source.html"/>
+            <topic label="BUZZER_program.c" href="_b_u_z_z_e_r__program_8c_source.html"/>
+          </topic>
+          <topic label="Car_Movement" href="dir_4fafb91776a23803c7fb5c0f41f6166f.html">
+            <topic label="Car_Movement_config.h" href="_car___movement__config_8h_source.html"/>
+            <topic label="Car_Movement_interface.h" href="_car___movement__interface_8h_source.html"/>
+            <topic label="Car_Movement_private.h" href="_car___movement__private_8h_source.html"/>
+            <topic label="Car_Movement_program.c" href="_car___movement__program_8c_source.html"/>
+          </topic>
           <topic label="DCMOTOR" href="dir_39747b045b67bbc7fd218691b253bdc6.html">
-            <topic label="DCM_config.h" href="_d_c_m__config_8h.html"/>
+            <topic label="DCM_config.h" href="_d_c_m__config_8h.html">
+            </topic>
             <topic label="DCM_interface.h" href="_d_c_m__interface_8h.html">
               <topic label="DCM_MotorConfiguration" href="struct_d_c_m___motor_configuration.html">
                 <topic label="u8Port" href="struct_d_c_m___motor_configuration.html#a6439a8215e05cda734aef4c58d715032"/>
                 <topic label="u8Pin1" href="struct_d_c_m___motor_configuration.html#a6cdc315159c3cecff102fa5460b0517f"/>
                 <topic label="u8Pin2" href="struct_d_c_m___motor_configuration.html#acbf48152f1b2bb3d4731c1fdd23dfc79"/>
                 <topic label="u8Direction" href="struct_d_c_m___motor_configuration.html#a2e20aa333b94d6c54b07fb7d5e46422c"/>
+                <topic label="u8SpeedPin" href="struct_d_c_m___motor_configuration.html#a5ee7ceea1b69e1ab611417a35cff4186"/>
+                <topic label="u32SpeedRatio" href="struct_d_c_m___motor_configuration.html#a9692129a92cbbc24e640673026454c5e"/>
               </topic>
               <topic label="FORWARD" href="group__motor__directions.html#ga6ddfdda7a062d10cff4a72b76b44aeb8"/>
               <topic label="BACKWARD" href="group__motor__directions.html#gadf445abfe1b77fa63f89e315ccc2f7f2"/>
+              <topic label="SPEED_0_PERCENT" href="group__motor__speeds.html#gae5ac5eeae3cf04a9d1e585344e54bdeb"/>
+              <topic label="SPEED_10_PERCENT" href="group__motor__speeds.html#gac296ff023217cd73073b3a32e0864727"/>
+              <topic label="SPEED_20_PERCENT" href="group__motor__speeds.html#ga7cb645d6cb6ab47b0b69c1fce5b2f853"/>
+              <topic label="SPEED_30_PERCENT" href="group__motor__speeds.html#ga13eb4732e1a07060a4c943c3bce40539"/>
+              <topic label="SPEED_40_PERCENT" href="group__motor__speeds.html#gae33aebfaba65805e468fe5ad991ac75d"/>
+              <topic label="SPEED_50_PERCENT" href="group__motor__speeds.html#ga4e407fa9631b9146b77dc0ed6f9fe99b"/>
+              <topic label="SPEED_60_PERCENT" href="group__motor__speeds.html#ga01d0d7cec4aad7ad1407eac449781ada"/>
+              <topic label="SPEED_70_PERCENT" href="group__motor__speeds.html#ga39cfdf3b19db22054b82f0c208e70c35"/>
+              <topic label="SPEED_80_PERCENT" href="group__motor__speeds.html#ga3a6da91fd7977c5eb7fd350b1f7c60eb"/>
+              <topic label="SPEED_90_PERCENT" href="group__motor__speeds.html#ga856eec191c77c8452e68eec98c6f8b13"/>
+              <topic label="SPEED_100_PERCENT" href="group__motor__speeds.html#ga89268c7ea49fe78f02601656198bfcaf"/>
               <topic label="HDCM_vInitMotor" href="_d_c_m__interface_8h.html#abb7950e9d50ca2626641fd453a588fd7"/>
               <topic label="HDCM_vMoveForward" href="_d_c_m__interface_8h.html#aff110757165493eab42865f08f94010e"/>
               <topic label="HDCM_vMoveBackward" href="_d_c_m__interface_8h.html#a5de2441761aa1bd6ec6c62c7514cc032"/>
               <topic label="HDCM_vStopMotor" href="_d_c_m__interface_8h.html#a3165c909bf3a628b59eb97dc27b36002"/>
+              <topic label="HDCM_vMotorSpeedCntrl" href="_d_c_m__interface_8h.html#aff88e1c36ce0f3100c3b6859452a7f1a"/>
+              <topic label="HDCM_vGetSpeedValue" href="_d_c_m__interface_8h.html#a9b5faae8a727eb43586f154cc39d839b"/>
             </topic>
             <topic label="DCM_private.h" href="_d_c_m__private_8h.html">
               <topic label="CW" href="group__motor__rotation__direction.html#gabe61b07c31c2a3e90576eb4c5d95b024"/>
               <topic label="CCW" href="group__motor__rotation__direction.html#ga8a460b6555077a64fc97f2e7ef47b843"/>
             </topic>
             <topic label="DCM_program.c" href="_d_c_m__program_8c.html">
-              <topic label="HDCM_vInitMotor" href="_d_c_m__program_8c.html#ab932a8d33764b8f9e4db1762ec1dea76"/>
-              <topic label="HDCM_vMoveForward" href="_d_c_m__program_8c.html#a299e66eb30f20f87b00ec50ff8f99aa5"/>
-              <topic label="HDCM_vMoveBackward" href="_d_c_m__program_8c.html#ad81f5a96c1437d2d1a2b52d8ecef46aa"/>
-              <topic label="HDCM_vStopMotor" href="_d_c_m__program_8c.html#a8e7c5d959de85f5f4174139ec5f5145a"/>
             </topic>
+          </topic>
+          <topic label="LCD" href="dir_92a3e558d7d51153b4e3e6ae8f43382f.html">
+            <topic label="LCD_config.h" href="_l_c_d__config_8h_source.html"/>
+            <topic label="LCD_interface.h" href="_l_c_d__interface_8h_source.html"/>
+            <topic label="LCD_private.h" href="_l_c_d__private_8h_source.html"/>
+            <topic label="LCD_program.c" href="_l_c_d__program_8c_source.html"/>
+          </topic>
+          <topic label="LDR" href="dir_30057e8fc16c30966b9244d9086f9d4e.html">
+            <topic label="LDR_config.c" href="_l_d_r__config_8c_source.html"/>
+            <topic label="LDR_config.h" href="_l_d_r__config_8h_source.html"/>
+            <topic label="LDR_interface.h" href="_l_d_r__interface_8h_source.html"/>
+            <topic label="LDR_private.h" href="_l_d_r__private_8h_source.html"/>
+            <topic label="LDR_program.c" href="_l_d_r__program_8c_source.html"/>
+          </topic>
+          <topic label="LED" href="dir_608454fcb9245fbb9a648cb6614cfd1a.html">
+            <topic label="LED_config.h" href="_l_e_d__config_8h_source.html"/>
+            <topic label="LED_interface.h" href="_l_e_d__interface_8h_source.html"/>
+            <topic label="LED_private.h" href="_l_e_d__private_8h_source.html"/>
+            <topic label="LED_program.c" href="_l_e_d__program_8c_source.html"/>
+          </topic>
+          <topic label="TFT" href="dir_5b2774dcae62ba4965b9171cfdb5b521.html">
+            <topic label="TFT_Config.c" href="_t_f_t___config_8c_source.html"/>
+            <topic label="TFT_config.h" href="_t_f_t__config_8h_source.html"/>
+            <topic label="TFT_interface.h" href="_t_f_t__interface_8h_source.html"/>
+            <topic label="TFT_private.h" href="_t_f_t__private_8h_source.html"/>
+            <topic label="TFT_program.c" href="_t_f_t__program_8c_source.html"/>
+          </topic>
+          <topic label="UltraSonic" href="dir_54a76ae2379ca989a0d471a6b75a74c6.html">
+            <topic label="UltraSonic_config.h" href="_ultra_sonic__config_8h_source.html"/>
+            <topic label="UltraSonic_interface.h" href="_ultra_sonic__interface_8h_source.html"/>
+            <topic label="UltraSonic_private.h" href="_ultra_sonic__private_8h_source.html"/>
+            <topic label="UltraSonic_program.c" href="_ultra_sonic__program_8c_source.html"/>
           </topic>
         </topic>
         <topic label="LIB" href="dir_a209168a2a96c7e0a316e7cc0f4c7c5b.html">
@@ -569,13 +786,16 @@
           <topic label="LSTD_TYPES.h" href="_l_s_t_d___t_y_p_e_s_8h.html">
             <topic label="bool_t" href="group__typedefs.html#ga04dd5074964518403bf944f2b240a5f8"/>
             <topic label="u8_t" href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24"/>
+            <topic label="c8_t" href="group__typedefs.html#ga4782c2e0e32746464299989e379e14a8"/>
             <topic label="u16_t" href="group__typedefs.html#gac9b933f433c9cde06e3f0467a098556b"/>
             <topic label="u32_t" href="group__typedefs.html#gae9d3c0db71e8dcd5b0393d8b2608f071"/>
+            <topic label="u64_t" href="group__typedefs.html#ga3123cc74e9b2376970dc6fafd737eda8"/>
+            <topic label="s64_t" href="group__typedefs.html#ga0c3aba789a99a7cca62e204546c75c9e"/>
             <topic label="s8_t" href="group__typedefs.html#ga07906842b175053ae8bc92126c4c81a5"/>
             <topic label="s16_t" href="group__typedefs.html#gadce8fffa87d27a0ffe6eafdc457a2478"/>
             <topic label="s32_t" href="group__typedefs.html#ga9a09c48a77a67721578bfbbd4b63cda5"/>
-            <topic label="fl32_t" href="group__typedefs.html#gaea18e97fe4ad79b1972d2e9ab64a7def"/>
-            <topic label="fl64_t" href="group__typedefs.html#gae508fe7e6b0f5f01e4eae145da6dd747"/>
+            <topic label="f32_t" href="group__typedefs.html#gad8e451647f66f06a13c0baefa773a542"/>
+            <topic label="f64_t" href="group__typedefs.html#ga68753cef8a9cf6aec82b4d71c44a933d"/>
           </topic>
           <topic label="LSTD_VALUES.h" href="_l_s_t_d___v_a_l_u_e_s_8h.html">
             <topic label="TRUE" href="group__standardvalues.html#gaa8cecfc5c5c054d2875c03e77b7be15d"/>
@@ -588,44 +808,19 @@
             <topic label="STOP" href="group__standardvalues.html#gae19b6bb2940d2fbe0a79852b070eeafd"/>
             <topic label="PRESSED" href="group__standardvalues.html#ga654adff3c664f27f0b29c24af818dd26"/>
             <topic label="RELEASED" href="group__standardvalues.html#gad74b7f5218b46c8332cd531df7178d45"/>
+            <topic label="SAME_STRING" href="group__standardvalues.html#ga7b8c0d456045358dc5197792205b20be"/>
+            <topic label="DIFFERENT_STRING" href="group__standardvalues.html#gaa956229c39573f53bbcc5e20f445d6c8"/>
           </topic>
         </topic>
         <topic label="MCAL" href="dir_d6f295fad42b91af10e375a168f2de53.html">
+          <topic label="ADC" href="dir_bc167eb24bf90a6af7375a7e20048ea1.html">
+            <topic label="ADC_config.h" href="_a_d_c__config_8h_source.html"/>
+            <topic label="ADC_interface.h" href="_a_d_c__interface_8h_source.html"/>
+            <topic label="ADC_private.h" href="_a_d_c__private_8h_source.html"/>
+            <topic label="ADC_program.c" href="_a_d_c__program_8c_source.html"/>
+          </topic>
           <topic label="EXTI" href="dir_5fb87216867aef742b0165cc60e7ad53.html">
-            <topic label="EXTI_config.h" href="_e_x_t_i__config_8h.html">
-              <topic label="EXTI_LINE0_EN" href="_e_x_t_i__config_8h.html#a113a37a99548d9999fb9e5fb6d68d3ea"/>
-              <topic label="EXTI_LINE0_TRIGGER" href="_e_x_t_i__config_8h.html#a78717fd3f1a3c5940b20bf5e68b6843a"/>
-              <topic label="EXTI_LINE1_EN" href="_e_x_t_i__config_8h.html#a4c5deb4302d3d43dfcd0f81b300cb35f"/>
-              <topic label="EXTI_LINE1_TRIGGER" href="_e_x_t_i__config_8h.html#a569483d68d1092840860eeed64f718ff"/>
-              <topic label="EXTI_LINE2_EN" href="_e_x_t_i__config_8h.html#a6834847eda4b1a37cd206aad9779366b"/>
-              <topic label="EXTI_LINE2_TRIGGER" href="_e_x_t_i__config_8h.html#a197e60249cea5518136eb572dc765828"/>
-              <topic label="EXTI_LINE3_EN" href="_e_x_t_i__config_8h.html#a1b8159ec129ab9b622dcc7ec69deaef2"/>
-              <topic label="EXTI_LINE3_TRIGGER" href="_e_x_t_i__config_8h.html#aee73409b40d414da9d0be986f47912ff"/>
-              <topic label="EXTI_LINE4_EN" href="_e_x_t_i__config_8h.html#a8ca730f4e55c4eb9bc523f018815899f"/>
-              <topic label="EXTI_LINE4_TRIGGER" href="_e_x_t_i__config_8h.html#a0c8d07bf9a5953234f4bdfc41d178a43"/>
-              <topic label="EXTI_LINE5_EN" href="_e_x_t_i__config_8h.html#ace173a12a7e012ebafcf631b7073d7cd"/>
-              <topic label="EXTI_LINE5_TRIGGER" href="_e_x_t_i__config_8h.html#a510fbb64f81fabcaa10d8cfa7dbb8ea0"/>
-              <topic label="EXTI_LINE6_EN" href="_e_x_t_i__config_8h.html#a17f79e353d5f86ced4dde90f9c32fffd"/>
-              <topic label="EXTI_LINE6_TRIGGER" href="_e_x_t_i__config_8h.html#aa378614eec98a01e71c8fd5637b6c759"/>
-              <topic label="EXTI_LINE7_EN" href="_e_x_t_i__config_8h.html#a0841c9a82759865a1e7ff85d8a70e95c"/>
-              <topic label="EXTI_LINE7_TRIGGER" href="_e_x_t_i__config_8h.html#ad55d6685fe1606c49a04b38c99f7785a"/>
-              <topic label="EXTI_LINE8_EN" href="_e_x_t_i__config_8h.html#a8e99e79ba5f5154273c3bd990c6fcdbe"/>
-              <topic label="EXTI_LINE8_TRIGGER" href="_e_x_t_i__config_8h.html#a9b0c0891f24ea2e639e2bd1f1abb52ae"/>
-              <topic label="EXTI_LINE9_EN" href="_e_x_t_i__config_8h.html#a4a82e5d133c34fc600795d7375a01a61"/>
-              <topic label="EXTI_LINE9_TRIGGER" href="_e_x_t_i__config_8h.html#a2fcee3b5a8a8986e97bf0442a1535711"/>
-              <topic label="EXTI_LINE10_EN" href="_e_x_t_i__config_8h.html#a3f32da57894b7cb6943b05bfbe6759f4"/>
-              <topic label="EXTI_LINE10_TRIGGER" href="_e_x_t_i__config_8h.html#a408d7aee4f9f176d665ae7d23cb164d8"/>
-              <topic label="EXTI_LINE11_EN" href="_e_x_t_i__config_8h.html#a90daba99baae21616188b2e7b078faca"/>
-              <topic label="EXTI_LINE11_TRIGGER" href="_e_x_t_i__config_8h.html#a949090c43b0b32bc01ddda05b7d82294"/>
-              <topic label="EXTI_LINE12_EN" href="_e_x_t_i__config_8h.html#a671a4725fb3d3541ec5c9562b6c9410f"/>
-              <topic label="EXTI_LINE12_TRIGGER" href="_e_x_t_i__config_8h.html#a5ed89a8cc84960de518e364099b25862"/>
-              <topic label="EXTI_LINE13_EN" href="_e_x_t_i__config_8h.html#a1a1345d3b2d2a2326d395be70230bf3d"/>
-              <topic label="EXTI_LINE13_TRIGGER" href="_e_x_t_i__config_8h.html#a80c6ed10754174e7d321f2a51f914e1d"/>
-              <topic label="EXTI_LINE14_EN" href="_e_x_t_i__config_8h.html#a44ae672d51d487361722d5c4417b3308"/>
-              <topic label="EXTI_LINE14_TRIGGER" href="_e_x_t_i__config_8h.html#a888cd44ed24b6fb02259cf6918ba4402"/>
-              <topic label="EXTI_LINE15_EN" href="_e_x_t_i__config_8h.html#a930318c8f7716b99b991cca4992616d3"/>
-              <topic label="EXTI_LINE15_TRIGGER" href="_e_x_t_i__config_8h.html#a65e63622e789a60fc9069468af01d403"/>
-            </topic>
+            <topic label="EXTI_config.h" href="_e_x_t_i__config_8h_source.html"/>
             <topic label="EXTI_interface.h" href="_e_x_t_i__interface_8h.html">
               <topic label="EXTI_ConfigType" href="struct_e_x_t_i___config_type.html">
                 <topic label="LineNum" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911"/>
@@ -677,21 +872,7 @@
               <topic label="EXTI_IRQs" href="_e_x_t_i__private_8h.html#a5696d3b03a8cc0e124a164497c129681"/>
             </topic>
             <topic label="EXTI_program.c" href="_e_x_t_i__program_8c.html">
-              <topic label="MSYSCFG_vSetEXTIPort" href="_e_x_t_i__program_8c.html#a01ffb77d3fc4b388649f85dd7a376813"/>
               <topic label="MEXTI_vInit" href="_e_x_t_i__program_8c.html#af54debc6d14edcd542b2d03f68b181b8"/>
-              <topic label="MEXTI_vInit_WithStruct" href="_e_x_t_i__program_8c.html#acc081412bea6e4187f804bb1d82210a5"/>
-              <topic label="MEXTI_vEnableLine" href="_e_x_t_i__program_8c.html#a484a698963e210849ccfd33e69f61e8f"/>
-              <topic label="MEXTI_vDisableLine" href="_e_x_t_i__program_8c.html#a1f3b5b51bbe15c316b31195c6ca1841b"/>
-              <topic label="MEXTI_vSWITrigger" href="_e_x_t_i__program_8c.html#af6b1b151ae0e7cfee8ee534510ada214"/>
-              <topic label="MEXTI_vSetTrigger" href="_e_x_t_i__program_8c.html#ac222bf62cb25f9ef576b2222168826bd"/>
-              <topic label="MEXTI_vSetCallback" href="_e_x_t_i__program_8c.html#aade86f1535e9cc8a1ab3f4057142c922"/>
-              <topic label="EXTI0_IRQHandler" href="_e_x_t_i__program_8c.html#a17e9789a29a87d2df54f12b94dd1a0b6"/>
-              <topic label="EXTI1_IRQHandler" href="_e_x_t_i__program_8c.html#a49cfdd46eb8d0ef3e1987514aa9343dc"/>
-              <topic label="EXTI2_IRQHandler" href="_e_x_t_i__program_8c.html#ab5a1d9e9c8ef50e0cb9ddb5745a20a14"/>
-              <topic label="EXTI3_IRQHandler" href="_e_x_t_i__program_8c.html#a30c045de96d18ec9c67a7b9e4350920f"/>
-              <topic label="EXTI4_IRQHandler" href="_e_x_t_i__program_8c.html#a290cb997018c8d85d4b965b4a242842f"/>
-              <topic label="EXTI9_5_IRQHandler" href="_e_x_t_i__program_8c.html#a7b2096b8b2643286dc3a7e5110e5ae85"/>
-              <topic label="EXTI15_10_IRQHandler" href="_e_x_t_i__program_8c.html#a738473a5b43f6c92b80ce1d3d6f77ed9"/>
             </topic>
             <topic label="SYSCFG_private.h" href="_s_y_s_c_f_g__private_8h.html">
               <topic label="MSYSCFG_MemMap_t" href="struct_m_s_y_s_c_f_g___mem_map__t.html">
@@ -709,6 +890,8 @@
               <topic label="GPIOA_PIN_POS" href="_g_p_i_o__config_8h.html#a13e84566d603a1923361df965110c94d"/>
               <topic label="GPIOB_PIN_POS" href="_g_p_i_o__config_8h.html#ab3758da87052ce9d2988dc84b5c9d1eb"/>
               <topic label="LCKK_BIT_POS" href="_g_p_i_o__config_8h.html#aec9764fb7c7a18a92444892a6333e614"/>
+              <topic label="PORTA_BIT_MANIPULATION" href="_g_p_i_o__config_8h.html#a9d96fa9df375defe1b227c0bbe29b4c6"/>
+              <topic label="PORTB_BIT_MANIPULATION" href="_g_p_i_o__config_8h.html#a7256abf66d8c2b306d014d6b50bccab1"/>
             </topic>
             <topic label="GPIO_interface.h" href="_g_p_i_o__interface_8h.html">
               <topic label="MGPIOx_ConfigType" href="struct_m_g_p_i_ox___config_type.html">
@@ -770,18 +953,21 @@
               <topic label="GPIOx_AF13" href="group__gpio__alternate__functions.html#ga1e51edfdec77cafecce4114106492c92"/>
               <topic label="GPIOx_AF14" href="group__gpio__alternate__functions.html#ga5f30c724dc478433a443b52b3ad2a6db"/>
               <topic label="GPIOx_AF15" href="group__gpio__alternate__functions.html#ga2af2f39b86aad620e5a7b1fce2620a52"/>
+              <topic label="GPIOA_LOW_NIBBLE_HIGH" href="_g_p_i_o__interface_8h.html#a9d859616aeb3e958a080361b697407e0"/>
+              <topic label="GPIOA_LOW_NIBBLE_LOW" href="_g_p_i_o__interface_8h.html#a17cc313ed43b01fdb370bc4a5da084da"/>
               <topic label="MGPIOx_vLockedPins" href="_g_p_i_o__interface_8h.html#a9691f4861ec6e00ce72839a3d72c376f"/>
-              <topic label="MGPIOx_vSetPinMode" href="_g_p_i_o__interface_8h.html#afc362fef8b827f868df511979deeabe7"/>
-              <topic label="MGPIOx_vSetPinOutputType" href="_g_p_i_o__interface_8h.html#aa257a3acb91828ecf11477c882cc8a47"/>
-              <topic label="MGPIOx_vSetPinOutputSpeed" href="_g_p_i_o__interface_8h.html#a9770a5328d104bcf99fad16945e91a3c"/>
-              <topic label="MGPIOx_vSetPinInputPullType" href="_g_p_i_o__interface_8h.html#ad6b97a96185619d9985ec6b4324acca9"/>
-              <topic label="MGPIOx_u8GetPinValue" href="_g_p_i_o__interface_8h.html#ae2e4c57235f249b9c191b620de7cb72f"/>
-              <topic label="MGPIOx_vSetPinValue" href="_g_p_i_o__interface_8h.html#af20c7fe5cc6f8343c15c804adb2bb064"/>
-              <topic label="MGPIOx_vSetResetAtomic" href="_g_p_i_o__interface_8h.html#a8372b7233448858c9b80d9ef73555a55"/>
-              <topic label="MGPIOx_vSetAlternateFunctionON" href="_g_p_i_o__interface_8h.html#a7e88babca6499dd8eb11315215bac806"/>
-              <topic label="MGPIOx_vSetPortConfigLock" href="_g_p_i_o__interface_8h.html#aa08db93858812ffc7e233d590dd049eb"/>
-              <topic label="MGPIOx_vInit" href="_g_p_i_o__interface_8h.html#a6903496555fd7b13cc21ad6465c2c8b8"/>
-              <topic label="MGPIOx_vTogglePinValue" href="_g_p_i_o__interface_8h.html#aeb229c6e980c1ffe03123a18f1242a0c"/>
+              <topic label="MGPIOx_vSetPinMode" href="_g_p_i_o__interface_8h.html#a2aa50bedad3f84f3ddc1d373f6a1677f"/>
+              <topic label="MGPIOx_vSetPinOutputType" href="_g_p_i_o__interface_8h.html#ae96fece4783997728111939101fa9acd"/>
+              <topic label="MGPIOx_vSetPinOutputSpeed" href="_g_p_i_o__interface_8h.html#a9aa97f2ab874a52442157be1d116e3ec"/>
+              <topic label="MGPIOx_vSetPinInputPullType" href="_g_p_i_o__interface_8h.html#aed7c233eae6f28f195b7e8474465dbeb"/>
+              <topic label="MGPIOx_u8GetPinValue" href="_g_p_i_o__interface_8h.html#ad812a682e84c5bcc3fdda9546fb957d4"/>
+              <topic label="MGPIOx_vSetPinValue" href="_g_p_i_o__interface_8h.html#a3d6ad5ad5f68b519f08d4be6292bf6a2"/>
+              <topic label="MGPIOx_vSetResetAtomic" href="_g_p_i_o__interface_8h.html#a29da100159c6f4c0db683e1a12bbe827"/>
+              <topic label="MGPIOx_vSetAlternateFunctionON" href="_g_p_i_o__interface_8h.html#a9f4bdac7d7d5430ad1b71bd86ec7fb5a"/>
+              <topic label="MGPIOx_vSetPortConfigLock" href="_g_p_i_o__interface_8h.html#a42719bf092de1987e5723770a1ec7477"/>
+              <topic label="MGPIOx_vInit" href="_g_p_i_o__interface_8h.html#ae0822bea960c4226977e88ec16f3764e"/>
+              <topic label="MGPIOx_vTogglePinValue" href="_g_p_i_o__interface_8h.html#a36bc9410064c8b745c2ef939c545e8f4"/>
+              <topic label="GPIO_vSetNibbleLowValue" href="_g_p_i_o__interface_8h.html#a3f10a912736ecfccd7f4bda2f9522c14"/>
             </topic>
             <topic label="GPIO_private.h" href="_g_p_i_o__private_8h.html">
               <topic label="GPIOx_MemoryMapType" href="struct_g_p_i_ox___memory_map_type.html">
@@ -815,10 +1001,11 @@
               <topic label="MGPIOx_vSetAlternateFunctionON" href="_g_p_i_o__program_8c.html#a9f4bdac7d7d5430ad1b71bd86ec7fb5a"/>
               <topic label="MGPIOx_vInit" href="_g_p_i_o__program_8c.html#ae0822bea960c4226977e88ec16f3764e"/>
               <topic label="MGPIOx_vTogglePinValue" href="_g_p_i_o__program_8c.html#a36bc9410064c8b745c2ef939c545e8f4"/>
+              <topic label="GPIO_vSetNibbleLowValue" href="_g_p_i_o__program_8c.html#a3f10a912736ecfccd7f4bda2f9522c14"/>
             </topic>
           </topic>
           <topic label="NVIC" href="dir_bf6cfb23c629a1bbcb78d13135e184d7.html">
-            <topic label="NVIC_config.h" href="_n_v_i_c__config_8h.html"/>
+            <topic label="NVIC_config.h" href="_n_v_i_c__config_8h_source.html"/>
             <topic label="NVIC_interface.h" href="_n_v_i_c__interface_8h.html">
               <topic label="_16GROUP_NoSub_Priorities" href="group__interrupt__prioty__grouping.html#ga07c28a8e61dae934727bbf23e4c65e34"/>
               <topic label="_8GROUP_2Sub_Priorities" href="group__interrupt__prioty__grouping.html#ga9be7891db281c11f8089caf9e2623848"/>
@@ -964,7 +1151,6 @@
               <topic label="SCB_BASE_ADDRESS" href="group__nvic__addresses.html#gaa677236f48778f5c6d5cc28679e9f2c6"/>
               <topic label="MSCB" href="group__nvic__registers.html#gad64f4ba7787546fc107c2c2993554e91"/>
               <topic label="MNVIC" href="group__nvic__registers.html#ga5592a87b609cf093eb988459b69071ce"/>
-              <topic label="MNVIC_STIR" href="_n_v_i_c__private_8h.html#a13be8416c2e6532faa1a48365b876ed7"/>
               <topic label="VECTKEY_PASSWORD" href="_n_v_i_c__private_8h.html#a9c228760273574d427b5d2bbcccc6c22"/>
               <topic label="PEND_SV" href="group__nvic__settable__priorities.html#ga8553be2a10dccdecaf91ac8f8a2f294d"/>
               <topic label="SYSTICK" href="group__nvic__settable__priorities.html#gad942404ac7d5ff6c1c65dec93525dcb9"/>
@@ -974,74 +1160,10 @@
               <topic label="USAGE_FAULT" href="group__nvic__settable__priorities.html#ga74cc0334396805a1f1afa1c34f184986"/>
             </topic>
             <topic label="NVIC_program.c" href="_n_v_i_c__program_8c.html">
-              <topic label="REGISTER_SIZE" href="_n_v_i_c__program_8c.html#abe2f7b6344bb4d51dfea9c9f58609427"/>
-              <topic label="MNVIC_vEnablePeriphral" href="_n_v_i_c__program_8c.html#a34cd565de1d9b98de8d37cf69893fb4d"/>
-              <topic label="MNVIC_vDisablePeriphral" href="_n_v_i_c__program_8c.html#a7e5d39f4f5b477fae79556b5b53f235f"/>
-              <topic label="MNVIC_vSetPendingFlag" href="_n_v_i_c__program_8c.html#ad5bcb425a5f5a2f145815bee02af5bd9"/>
-              <topic label="MNVIC_vClearPendingFlag" href="_n_v_i_c__program_8c.html#ac507713ac304b76f07267511941db0a0"/>
-              <topic label="MNVIC_u8GetActive" href="_n_v_i_c__program_8c.html#a46fc4d62b97d6604e67848ccc555767b"/>
-              <topic label="MNVIC_vSetPriorityConfig" href="_n_v_i_c__program_8c.html#a060f3a46ddd39c723516d327c2a70a97"/>
-              <topic label="MNVIC_vSetPriority" href="_n_v_i_c__program_8c.html#a2bc11a514b96fd1f36e2ea33d095bd55"/>
-              <topic label="NVIC_GetPriority" href="_n_v_i_c__program_8c.html#a8631573a83351d70a0bb3add68c329dd"/>
             </topic>
           </topic>
           <topic label="RCC" href="dir_b58645a5aaf8ed5939b0aed386878fd4.html">
             <topic label="MRCC_config.h" href="_m_r_c_c__config_8h.html">
-              <topic label="PLLI2S" href="_m_r_c_c__config_8h.html#ac7d554290c0ba74bc7d01f1d61a9e681"/>
-              <topic label="PLL" href="_m_r_c_c__config_8h.html#a4ca8c7fe9892e150e5422bf40ec7fda2"/>
-              <topic label="CSS" href="_m_r_c_c__config_8h.html#a168a8532b94e763575750deda4a4b198"/>
-              <topic label="HSEBYP" href="_m_r_c_c__config_8h.html#a3e868e4b82b96f6be496a4cb7457c774"/>
-              <topic label="HSE_EN" href="_m_r_c_c__config_8h.html#a969d0bf01d5705d59e6c580e84d152d1"/>
-              <topic label="HSI_EN" href="_m_r_c_c__config_8h.html#a704b6238af6934d6b9d7e791da71c492"/>
-              <topic label="PLLQ" href="_m_r_c_c__config_8h.html#a88c9577ebd8731df35ea298209102810"/>
-              <topic label="PLLSRC" href="_m_r_c_c__config_8h.html#af966b87aba1fa36c0eac3d989e283ce0"/>
-              <topic label="PLLP" href="_m_r_c_c__config_8h.html#a13a4d0b95d03583df51a0d5483da27f8"/>
-              <topic label="PLLN" href="_m_r_c_c__config_8h.html#a7abf0e7508f234041c336a88760fd0d2"/>
-              <topic label="PLLM" href="_m_r_c_c__config_8h.html#acbfff191678f1d57d6fcc997b1474c46"/>
-              <topic label="MCO2" href="_m_r_c_c__config_8h.html#a98e9f886b24a5741ad1eea64a87f4fc6"/>
-              <topic label="MCO2PRE" href="_m_r_c_c__config_8h.html#ab6819822db42f1fc91c77ef1d0aac9f7"/>
-              <topic label="MCO1PRE" href="_m_r_c_c__config_8h.html#af66c616aeaa4ddbd97d1d928e4d5eed2"/>
-              <topic label="I2SSRC" href="_m_r_c_c__config_8h.html#a33c22e8907fa255cb3cff23a61c8edca"/>
-              <topic label="MCO1" href="_m_r_c_c__config_8h.html#a306aa6d8225a7adc7893d4d57ebeadd9"/>
-              <topic label="RTCPRE" href="_m_r_c_c__config_8h.html#a486f47218e5d49ced5c5c548713e37b4"/>
-              <topic label="PPRE2" href="_m_r_c_c__config_8h.html#a91107dd195dd2639d0768e02861c9a9b"/>
-              <topic label="PPRE1" href="_m_r_c_c__config_8h.html#a81ac3a0ed565da12fa92246ff591e6ac"/>
-              <topic label="HPRE" href="_m_r_c_c__config_8h.html#a51740b5bf3b6c013c4b70cec5c05c96f"/>
-              <topic label="SWS" href="_m_r_c_c__config_8h.html#a0d011132753771db41fa7773748d1993"/>
-              <topic label="SW" href="_m_r_c_c__config_8h.html#a4b95e941f44a20ea60512bbe2065f0b6"/>
-              <topic label="DMA2CLK" href="_m_r_c_c__config_8h.html#a403a095db81a346e78ec07bc420f2d0e"/>
-              <topic label="DMA1CLK" href="_m_r_c_c__config_8h.html#acd740f14cc06d11f167bd9c9d1705560"/>
-              <topic label="CRCCLK" href="_m_r_c_c__config_8h.html#ac158bc823b3de65d8ea74e30e576d82f"/>
-              <topic label="GPIOHCLK" href="_m_r_c_c__config_8h.html#a68f1849852f71980112ef129ee5e102c"/>
-              <topic label="GPIOECLK" href="_m_r_c_c__config_8h.html#ac71f062230633aaaf4fe3853f759cdbf"/>
-              <topic label="GPIODCLK" href="_m_r_c_c__config_8h.html#ad93a1145aca050b64c445bb5ad58eb1a"/>
-              <topic label="GPIOCCLK" href="_m_r_c_c__config_8h.html#a4d45814a065d8377a9709a7d5152b0eb"/>
-              <topic label="GPIOBCLK" href="_m_r_c_c__config_8h.html#af59f60322b377effba50bc6deebc8751"/>
-              <topic label="GPIOACLK" href="_m_r_c_c__config_8h.html#a4f0701d9e5300d93766055f92256bee0"/>
-              <topic label="OTGFS" href="_m_r_c_c__config_8h.html#a69ade9647fdd0ceaa131db1cecf2512c"/>
-              <topic label="PWREN" href="_m_r_c_c__config_8h.html#a199280c524fafc4d41b2777c623efc88"/>
-              <topic label="I2C3EN" href="_m_r_c_c__config_8h.html#a500bd030b854c12c7181f810238cc1ae"/>
-              <topic label="I2C2EN" href="_m_r_c_c__config_8h.html#a3eb43f90acdad05d59f5bdbf197c3c83"/>
-              <topic label="I2C1EN" href="_m_r_c_c__config_8h.html#a560753a67410b8656b93da370df9c037"/>
-              <topic label="USART2EN" href="_m_r_c_c__config_8h.html#a8d1b8b03c166956ffd1f0cc2bcebd6c1"/>
-              <topic label="SPI3EN" href="_m_r_c_c__config_8h.html#aec36a5473f31b6daaca54bc7808d9874"/>
-              <topic label="SPI2EN" href="_m_r_c_c__config_8h.html#a165bfe4ff0d30cf9e6289fc05795c6f8"/>
-              <topic label="WWDGEN" href="_m_r_c_c__config_8h.html#a86e93cbca0a688f736fabd54ea1c868b"/>
-              <topic label="TIM5EN" href="_m_r_c_c__config_8h.html#ae51a33646e7f3654bb22616773d8bc1d"/>
-              <topic label="TIM4EN" href="_m_r_c_c__config_8h.html#a9975cc53efd1925ef0865b60f00d73a6"/>
-              <topic label="TIM3EN" href="_m_r_c_c__config_8h.html#acae94df24840ec677afedb7b95bbfd0e"/>
-              <topic label="TIM2EN" href="_m_r_c_c__config_8h.html#abbceb243e8305e9efff7f67d8043f414"/>
-              <topic label="TIM11EN" href="_m_r_c_c__config_8h.html#ab442574264657cde41ab8eb3dd71d6ed"/>
-              <topic label="TIM10EN" href="_m_r_c_c__config_8h.html#a3053eb99263385b85b7e19bec54305aa"/>
-              <topic label="TIM9EN" href="_m_r_c_c__config_8h.html#a64fae74ec20e36f4b72ed88f84bccfe3"/>
-              <topic label="SYSCFGEN" href="_m_r_c_c__config_8h.html#ac52fa54323dd305a4207c260f4aeda90"/>
-              <topic label="SPI4EN" href="_m_r_c_c__config_8h.html#a586c92d95aedcc963c930099a2e7f13a"/>
-              <topic label="SPI1EN" href="_m_r_c_c__config_8h.html#aa012cbf528eef3fdcead40765ea3fbf5"/>
-              <topic label="SDIOEN" href="_m_r_c_c__config_8h.html#afd217a08b3de3bb14b3171ec13114a5d"/>
-              <topic label="ADC1EN" href="_m_r_c_c__config_8h.html#a3cae351a44d8f23703cf0abe7e10f7f3"/>
-              <topic label="USART6EN" href="_m_r_c_c__config_8h.html#acf08deccf108c054fb85fc410546d2db"/>
-              <topic label="USART1EN" href="_m_r_c_c__config_8h.html#a9fc8ab2bbe4feee8fd38c89d5d54fde8"/>
-              <topic label="TIM1EN" href="_m_r_c_c__config_8h.html#a17c885a91c193f32502e7e4815913611"/>
             </topic>
             <topic label="MRCC_interface.h" href="_m_r_c_c__interface_8h.html">
               <topic label="RCC_AHB1" href="group___bus.html#gaefd73ec71a770d3b37f9bc0ea55ad130"/>
@@ -1127,242 +1249,19 @@
               </topic>
               <topic label="RCC_BASE_ADDRESS" href="_m_r_c_c__private_8h.html#aa539b1cce2e30fa6c6721693837ff2c1"/>
               <topic label="RCC" href="_m_r_c_c__private_8h.html#a74944438a086975793d26ae48d5882d4"/>
-              <topic label="RCC_CR_PLLI2SRDY" href="_m_r_c_c__private_8h.html#a7354703f289244a71753debf3ae26e46"/>
-              <topic label="RCC_CR_PLLI2SON" href="_m_r_c_c__private_8h.html#a3ccb8964b640530f1080f9ea549d8133"/>
-              <topic label="RCC_CR_PLLRDY" href="_m_r_c_c__private_8h.html#afa12d7ac6a7f0f91d066aeb2c6071888"/>
-              <topic label="RCC_CR_PLLON" href="_m_r_c_c__private_8h.html#ad0e73d5b0a4883e074d40029b49ee47e"/>
-              <topic label="RCC_CR_CSSON" href="_m_r_c_c__private_8h.html#acc05308869ad055e1e6f2c32d738aecd"/>
-              <topic label="RCC_CR_HSEBYP" href="_m_r_c_c__private_8h.html#aa3288090671af5a959aae4d7f7696d55"/>
-              <topic label="RCC_CR_HSERDY" href="_m_r_c_c__private_8h.html#a86a34e00182c83409d89ff566cb02cc4"/>
-              <topic label="RCC_CR_HSEON" href="_m_r_c_c__private_8h.html#adb8228c9020595b4cf9995137b8c9a7d"/>
-              <topic label="RCC_CR_HSIRDY" href="_m_r_c_c__private_8h.html#a9dbac3f2bc04f04ebafe1e66ae3fcf0d"/>
-              <topic label="RCC_CR_HSION" href="_m_r_c_c__private_8h.html#af4fcacf94a97f7d49a70e089b39cf474"/>
-              <topic label="RCC_PLLCFGR_PLLQ_b0" href="_m_r_c_c__private_8h.html#a174bf2b12d54a0c0001aaa7a3bd8d9fd"/>
-              <topic label="RCC_PLLCFGR_PLLQ_b1" href="_m_r_c_c__private_8h.html#a32de7d5aa0c505341a8fc1cce541abd3"/>
-              <topic label="RCC_PLLCFGR_PLLQ_b2" href="_m_r_c_c__private_8h.html#a570052093e08ba28e53bca7bb07e2653"/>
-              <topic label="RCC_PLLCFGR_PLLQ_b3" href="_m_r_c_c__private_8h.html#a3dbbe0a613d28650905133297397541c"/>
-              <topic label="RCC_PLLCFGR_PLLSRC" href="_m_r_c_c__private_8h.html#a92cb53ea81d2c47537eb217cc6659a2e"/>
-              <topic label="RCC_PLLCFGR_PLLP_b0" href="_m_r_c_c__private_8h.html#a2dbafc2cff35610ec511d470220a7ea0"/>
-              <topic label="RCC_PLLCFGR_PLLP_b1" href="_m_r_c_c__private_8h.html#a7a0998b2034136ffe6a978bb8427931c"/>
-              <topic label="RCC_PLLCFGR_PLLN_b0" href="_m_r_c_c__private_8h.html#a47dc9f8f7d302515ec4a7d0e72c2d66b"/>
-              <topic label="RCC_PLLCFGR_PLLN_b1" href="_m_r_c_c__private_8h.html#a17083a9d4906bb2b8cb7b60d6381c57b"/>
-              <topic label="RCC_PLLCFGR_PLLN_b2" href="_m_r_c_c__private_8h.html#aa1e7baa9779b3e121f7dfe4f1e2fe972"/>
-              <topic label="RCC_PLLCFGR_PLLN_b3" href="_m_r_c_c__private_8h.html#a9e004c1fdd9e6dba1e3b912c527c6df8"/>
-              <topic label="RCC_PLLCFGR_PLLN_b4" href="_m_r_c_c__private_8h.html#a61b0615cfd22061408dd743ff8a57eda"/>
-              <topic label="RCC_PLLCFGR_PLLN_b5" href="_m_r_c_c__private_8h.html#a580cb60e38f2f081393efee195ffc5f6"/>
-              <topic label="RCC_PLLCFGR_PLLN_b6" href="_m_r_c_c__private_8h.html#aa0a4c3b18f242fd8ed3c63db0ca5368b"/>
-              <topic label="RCC_PLLCFGR_PLLN_b7" href="_m_r_c_c__private_8h.html#ad234cdcbfc5931d2f1fd053cfd7c19bb"/>
-              <topic label="RCC_PLLCFGR_PLLN_b8" href="_m_r_c_c__private_8h.html#aee4f19b134e350bc93f2964850358d2a"/>
-              <topic label="RCC_PLLCFGR_PLLM_b0" href="_m_r_c_c__private_8h.html#a97536d8f7cdfd04c8d8dcb8eaafe7942"/>
-              <topic label="RCC_PLLCFGR_PLLM_b1" href="_m_r_c_c__private_8h.html#adece68f6c7154a34982bef35e77fcf6d"/>
-              <topic label="RCC_PLLCFGR_PLLM_b2" href="_m_r_c_c__private_8h.html#ad0936655e7d4d74ff1232fb02cc00589"/>
-              <topic label="RCC_PLLCFGR_PLLM_b3" href="_m_r_c_c__private_8h.html#aab11b10f314fc0dde7afd065afd08898"/>
-              <topic label="RCC_PLLCFGR_PLLM_b4" href="_m_r_c_c__private_8h.html#ab7ba2f97badfd12e11569f7530fbfd71"/>
-              <topic label="RCC_PLLCFGR_PLLM_b5" href="_m_r_c_c__private_8h.html#ad13f566abc16db9e97cdc87ef280d0cd"/>
-              <topic label="RCC_CFGR_MOC2_b0" href="_m_r_c_c__private_8h.html#ac40f34015b075e6101d6e7e87fdea405"/>
-              <topic label="RCC_CFGR_MOC2_b1" href="_m_r_c_c__private_8h.html#a55a7dc20977c92c7d48f48992b6af17e"/>
-              <topic label="RCC_CFGR_MOC2PRE_b0" href="_m_r_c_c__private_8h.html#a4e5d3abf408a5b0e0764e7495dbdf25c"/>
-              <topic label="RCC_CFGR_MOC2PRE_b1" href="_m_r_c_c__private_8h.html#a1798d37349f0c8adef81a9efc85e9593"/>
-              <topic label="RCC_CFGR_MOC2PRE_b2" href="_m_r_c_c__private_8h.html#ab0cb8c74eaee6177e695323d52804974"/>
-              <topic label="RCC_CFGR_MOC1PRE_b0" href="_m_r_c_c__private_8h.html#a8d277f007bf4b140b51c0cc6cc32679d"/>
-              <topic label="RCC_CFGR_MOC1PRE_b1" href="_m_r_c_c__private_8h.html#ad2045633ec191231a741910e3b6641ab"/>
-              <topic label="RCC_CFGR_MOC1PRE_b2" href="_m_r_c_c__private_8h.html#a748f9e0cbb789185f60da10ffb8394c1"/>
-              <topic label="RCC_CFGR_I2SSRC" href="_m_r_c_c__private_8h.html#a5d43413fd6b17bd988ccae9e34296412"/>
-              <topic label="RCC_CFGR_MOC1_b0" href="_m_r_c_c__private_8h.html#a94db33680ee6faaedf3f94ac5b4006fe"/>
-              <topic label="RCC_CFGR_MOC1_b1" href="_m_r_c_c__private_8h.html#a7ffaee719233844047b403ef31c457b3"/>
-              <topic label="RCC_CFGR_RTCPRE_b0" href="_m_r_c_c__private_8h.html#a55b8de3918b2d939ea284cae92bf2a34"/>
-              <topic label="RCC_CFGR_RTCPRE_b1" href="_m_r_c_c__private_8h.html#a52e508cd27e9984d3d5e1939fc146a75"/>
-              <topic label="RCC_CFGR_RTCPRE_b2" href="_m_r_c_c__private_8h.html#a51d111d4943d38f9f65c58bbedd54eec"/>
-              <topic label="RCC_CFGR_RTCPRE_b3" href="_m_r_c_c__private_8h.html#a8e7980d6eccc0b1e879b491437dac3d5"/>
-              <topic label="RCC_CFGR_RTCPRE_b4" href="_m_r_c_c__private_8h.html#ae7bdc9c3b044ab5353cd29808130499a"/>
-              <topic label="RCC_CFGR_PPRE2_b0" href="_m_r_c_c__private_8h.html#addf707d0e9e0b3f83b816c9b69ca5e11"/>
-              <topic label="RCC_CFGR_PPRE2_b1" href="_m_r_c_c__private_8h.html#af28cd86dc06547782817443af59ff7b3"/>
-              <topic label="RCC_CFGR_PPRE2_b2" href="_m_r_c_c__private_8h.html#af21d36388ae67c3413cdb5db3655e60f"/>
-              <topic label="RCC_CFGR_PPRE1_b0" href="_m_r_c_c__private_8h.html#a231274f29657e327a68af0b2ed345ee1"/>
-              <topic label="RCC_CFGR_PPRE1_b1" href="_m_r_c_c__private_8h.html#a527bd9f6be8355ad5a81d817c4b35a3b"/>
-              <topic label="RCC_CFGR_PPRE1_b2" href="_m_r_c_c__private_8h.html#a85c79b6b817ae9dace1c16d011b368ad"/>
-              <topic label="RCC_CFGR_HPRE_b0" href="_m_r_c_c__private_8h.html#aeb262b9f8f18f70b1d7104d63b19ed58"/>
-              <topic label="RCC_CFGR_HPRE_b1" href="_m_r_c_c__private_8h.html#abdd6ead3810ccf81dca767f68650d4b6"/>
-              <topic label="RCC_CFGR_HPRE_b2" href="_m_r_c_c__private_8h.html#a1f9d3b36e7f260e735942d224b9c2162"/>
-              <topic label="RCC_CFGR_HPRE_b3" href="_m_r_c_c__private_8h.html#a8e8e7008ec556b2d64e1c819f62d1b87"/>
-              <topic label="RCC_CFGR_SWS_b0" href="_m_r_c_c__private_8h.html#a9b9fb718b7d5aa6bb63ccd66e411ecdd"/>
-              <topic label="RCC_CFGR_SWS_b1" href="_m_r_c_c__private_8h.html#a732a1a6a9a9f6f7673794463726c2f85"/>
-              <topic label="RCC_CFGR_SW_b0" href="_m_r_c_c__private_8h.html#a4ec762be98659ce934895414435959d4"/>
-              <topic label="RCC_CFGR_SW_b1" href="_m_r_c_c__private_8h.html#a13f86bda561141bd25f9fa46a1408459"/>
-              <topic label="RCC_AHB1ENR_DMA2EN" href="_m_r_c_c__private_8h.html#a664a5d572a39a0c084e4ee7c1cf7df0d"/>
-              <topic label="RCC_AHB1ENR_DMA1EN" href="_m_r_c_c__private_8h.html#ae07b00778a51a4e52b911aeccb897aba"/>
-              <topic label="RCC_AHB1ENR_CRCEN" href="_m_r_c_c__private_8h.html#afa3d41f31401e812f839defee241df83"/>
-              <topic label="RCC_AHB1ENR_GPIOHEN" href="_m_r_c_c__private_8h.html#adb16afc550121895822ebb22108196b6"/>
-              <topic label="RCC_AHB1ENR_GPIOEEN" href="_m_r_c_c__private_8h.html#a67a9094e0e464eaa8e25f854f90abfc6"/>
-              <topic label="RCC_AHB1ENR_GPIODEN" href="_m_r_c_c__private_8h.html#aebd8146e91c76f14af8dfe78a1c2d916"/>
-              <topic label="RCC_AHB1ENR_GPIOCEN" href="_m_r_c_c__private_8h.html#ae8a8b42e33aef2a7bc2d41ad9d231733"/>
-              <topic label="RCC_AHB1ENR_GPIOBEN" href="_m_r_c_c__private_8h.html#ad7f408f92e7fd49b0957b8cb4ff31ca5"/>
-              <topic label="RCC_AHB1ENR_GPIOAEN" href="_m_r_c_c__private_8h.html#a6ff46fb3b30fc6792e4fd18fcb0941b5"/>
-              <topic label="RCC_AHB2ENR_OTGFSEN" href="_m_r_c_c__private_8h.html#a22576caeba7c7a1e6afdd0b90394c76d"/>
-              <topic label="RCC_APB1ENR_PWREN" href="_m_r_c_c__private_8h.html#a5c19997ccd28464b80a7c3325da0ca60"/>
-              <topic label="RCC_APB1ENR_I2C3EN" href="_m_r_c_c__private_8h.html#a96621806b8fb96891efa9364e370f3f7"/>
-              <topic label="RCC_APB1ENR_I2C2EN" href="_m_r_c_c__private_8h.html#afd7d1c3c7dbe20aea87a694ae15840f6"/>
-              <topic label="RCC_APB1ENR_I2C1EN" href="_m_r_c_c__private_8h.html#a5ca3afe0c517702b2d1366b692c8db0e"/>
-              <topic label="RCC_APB1ENR_USART2EN" href="_m_r_c_c__private_8h.html#ab840af4f735ec36419d61c7db3cfa00d"/>
-              <topic label="RCC_APB1ENR_SPI3EN" href="_m_r_c_c__private_8h.html#a8757f8d1e1ff1447e08e5abea4615083"/>
-              <topic label="RCC_APB1ENR_SPI2EN" href="_m_r_c_c__private_8h.html#afdce64692c44bf95efbf2fed054e59be"/>
-              <topic label="RCC_APB1ENR_WWDGEN" href="_m_r_c_c__private_8h.html#af712b922ee776a972d2efa3da0ea4733"/>
-              <topic label="RCC_APB1ENR_TIM5EN" href="_m_r_c_c__private_8h.html#a49abbbc8fd297c544df2d337b28f80e4"/>
-              <topic label="RCC_APB1ENR_TIM4EN" href="_m_r_c_c__private_8h.html#ad4fbbf6b1beeec92c7d80e9e05bd1461"/>
-              <topic label="RCC_APB1ENR_TIM3EN" href="_m_r_c_c__private_8h.html#a75bfa33eb00ee30c6e22f7ceea464ac7"/>
-              <topic label="RCC_APB1ENR_TIM2EN" href="_m_r_c_c__private_8h.html#acd3966a4d6ae47f06b3c095eaf26a610"/>
-              <topic label="RCC_APB2ENR_TIM11EN" href="_m_r_c_c__private_8h.html#ab1d2aeebc8ccf4e2ee18f4d924a35188"/>
-              <topic label="RCC_APB2ENR_TIM10EN" href="_m_r_c_c__private_8h.html#aa98e28e157787e24b93af95273ab3055"/>
-              <topic label="RCC_APB2ENR_TIM9EN" href="_m_r_c_c__private_8h.html#a987ebd8255dc8f9c09127e1d608d1065"/>
-              <topic label="RCC_APB2ENR_SYSCFGEN" href="_m_r_c_c__private_8h.html#a7a9d56a8aa1fa0f519ecbdf0d19dd4da"/>
-              <topic label="RCC_APB2ENR_SPI4EN" href="_m_r_c_c__private_8h.html#ac9b531ccde79f9f1c5b7b63169016e16"/>
-              <topic label="RCC_APB2ENR_SPI1EN" href="_m_r_c_c__private_8h.html#ae08a3510371b9234eb96369c91d3552f"/>
-              <topic label="RCC_APB2ENR_SDIOEN" href="_m_r_c_c__private_8h.html#abf714bbe5b378910693dbfe824b70de8"/>
-              <topic label="RCC_APB2ENR_ADC1EN" href="_m_r_c_c__private_8h.html#a57b9f50cb96a2e4ceba37728b4a32a42"/>
-              <topic label="RCC_APB2ENR_USART6EN" href="_m_r_c_c__private_8h.html#a0569d91f3b18ae130b7a09e0100c4459"/>
-              <topic label="RCC_APB2ENR_USART1EN" href="_m_r_c_c__private_8h.html#a4666bb90842e8134b32e6a34a0f165f3"/>
-              <topic label="RCC_APB2ENR_TIM1EN" href="_m_r_c_c__private_8h.html#a25852ad4ebc09edc724814de967816bc"/>
-              <topic label="RCC_AHB1LPENR_FLITFLPEN" href="_m_r_c_c__private_8h.html#a378f6e2ad9fef59f28db829d2074e796"/>
-              <topic label="ENABLE" href="_m_r_c_c__private_8h.html#a514ad415fb6125ba296793df7d1a468a"/>
-              <topic label="DISABLE" href="_m_r_c_c__private_8h.html#a99496f7308834e8b220f7894efa0b6ab"/>
-              <topic label="BYBASED" href="_m_r_c_c__private_8h.html#a320a7fbdb817dc5624052e215c830a5e"/>
-              <topic label="NOTBYBASED" href="_m_r_c_c__private_8h.html#a76b2fb0bbc7e011b710b1a2093c75c41"/>
-              <topic label="SYSCLK" href="_m_r_c_c__private_8h.html#a97ee8be60ff9ae1cfface03bc50f1d94"/>
-              <topic label="PLLI2SCLK" href="_m_r_c_c__private_8h.html#ac0e78c63de6d71325d131c75a1a9180c"/>
-              <topic label="HSE" href="_m_r_c_c__private_8h.html#ad6daaea06cfabdb88ada9f245624ac8d"/>
-              <topic label="PLLCLK" href="_m_r_c_c__private_8h.html#a44c2896186404cd98f9ec4e88dbdf1c8"/>
-              <topic label="NoDivision" href="_m_r_c_c__private_8h.html#a25c012e72ad4cf808ed16b94ad10cfc7"/>
-              <topic label="DivisionBy2" href="_m_r_c_c__private_8h.html#a8a6a90d85343843b2e9e710d467e9f7c"/>
-              <topic label="DivisionBy3" href="_m_r_c_c__private_8h.html#a45f4fabf242afcca4671ada764feea36"/>
-              <topic label="DivisionBy4" href="_m_r_c_c__private_8h.html#a634ece732a5b1b67482c2aa9e3993ba9"/>
-              <topic label="DivisionBy5" href="_m_r_c_c__private_8h.html#ae9d39779eed527c29c36dab28c3671f6"/>
-              <topic label="I2S_CKIN" href="_m_r_c_c__private_8h.html#a1e65ef1f3558acf087b4400cd6d5a40d"/>
-              <topic label="HSI" href="_m_r_c_c__private_8h.html#ac90ca32c4d6dd55d656622e84844dc27"/>
-              <topic label="LSE" href="_m_r_c_c__private_8h.html#a4f9fdd4cc37e5b4fa134aadbbd7616cd"/>
-              <topic label="PLLCLK" href="_m_r_c_c__private_8h.html#a44c2896186404cd98f9ec4e88dbdf1c8"/>
-              <topic label="SYSCLKby2" href="_m_r_c_c__private_8h.html#a4c3ff272944d28e77cff24a7773876e1"/>
-              <topic label="SYSCLKby4" href="_m_r_c_c__private_8h.html#a700d79005e5889720ac6f9b49d3f151f"/>
-              <topic label="SYSCLKby8" href="_m_r_c_c__private_8h.html#a95a50d0814f22254bb25630c88c33ddb"/>
-              <topic label="SYSCLKby16" href="_m_r_c_c__private_8h.html#a6667755256413a07913e2ca907bb3b32"/>
-              <topic label="SYSCLKby64" href="_m_r_c_c__private_8h.html#aab0fef0124d15a2fbdb0612d35400985"/>
-              <topic label="SYSCLKby128" href="_m_r_c_c__private_8h.html#acf07666a93297c6aa14c318ad4399bec"/>
-              <topic label="SYSCLKby256" href="_m_r_c_c__private_8h.html#a26eb16132f07582308c27b20453f7beb"/>
-              <topic label="SYSCLKby512" href="_m_r_c_c__private_8h.html#aa6204bd8c7246d5cda3dec6f2b934bb1"/>
-              <topic label="NoCLK0" href="_m_r_c_c__private_8h.html#a90d39c14e094bb639c481ecd2d887e95"/>
-              <topic label="NoCLK1" href="_m_r_c_c__private_8h.html#aa2ffee62c2f32eb447526100b5a2db0f"/>
-              <topic label="HSEby2" href="_m_r_c_c__private_8h.html#a45e07ae76f329e1e1cf832366c7fb153"/>
-              <topic label="HSEby3" href="_m_r_c_c__private_8h.html#a9f006f8dbed9356de50f994920d35545"/>
-              <topic label="HSEby4" href="_m_r_c_c__private_8h.html#a50fb76e331b610aeca3665cd09cdedce"/>
-              <topic label="HSEby5" href="_m_r_c_c__private_8h.html#a8a5671ad017c4527fb0c2ab6f33519ae"/>
-              <topic label="HSEby6" href="_m_r_c_c__private_8h.html#a3395f3b082457d5a425f910b7e5cc83e"/>
-              <topic label="HSEby7" href="_m_r_c_c__private_8h.html#acac850db4f26777b55067237a95c993d"/>
-              <topic label="HSEby8" href="_m_r_c_c__private_8h.html#a631fed4ea79794f6af5d614decd184d9"/>
-              <topic label="HSEby9" href="_m_r_c_c__private_8h.html#ae287ecc776ba2ec0a0d2e09ed0895efd"/>
-              <topic label="HSEby10" href="_m_r_c_c__private_8h.html#a5c676511274cc4e2990ef8e822b8e75e"/>
-              <topic label="HSEby11" href="_m_r_c_c__private_8h.html#a583c7f56c05687497c8c7e8a6b869750"/>
-              <topic label="HSEby12" href="_m_r_c_c__private_8h.html#ae5cc3c8857bb70e6ef616d62df7793a1"/>
-              <topic label="HSEby13" href="_m_r_c_c__private_8h.html#a1940308cfd7ac8dabaf4305367fe4b7b"/>
-              <topic label="HSEby14" href="_m_r_c_c__private_8h.html#a2c6b16ce80b5b3122d4aba9784c7da3a"/>
-              <topic label="HSEby15" href="_m_r_c_c__private_8h.html#aadd864a5d1a31ab3dd8a379d45b941f9"/>
-              <topic label="HSEby16" href="_m_r_c_c__private_8h.html#a91038a2dbeccae9f4e1ed55d38753fa5"/>
-              <topic label="HSEby17" href="_m_r_c_c__private_8h.html#ae33e730d1780cccfec460bec4e9f3374"/>
-              <topic label="HSEby18" href="_m_r_c_c__private_8h.html#a962a9637f8c801304767f1cf39d95e8b"/>
-              <topic label="HSEby19" href="_m_r_c_c__private_8h.html#ac9634e7150c336885981cd790f6ecd22"/>
-              <topic label="HSEby20" href="_m_r_c_c__private_8h.html#a6a080856b3c29b5a144eecc107f26dd8"/>
-              <topic label="HSEby21" href="_m_r_c_c__private_8h.html#aa62a05fd477652cd81caeb856f8d878f"/>
-              <topic label="HSEby22" href="_m_r_c_c__private_8h.html#af40217ac462102572be7b679b6d17e03"/>
-              <topic label="HSEby23" href="_m_r_c_c__private_8h.html#a9ba38c291a76f1a82be0f5e68da0dfcb"/>
-              <topic label="HSEby24" href="_m_r_c_c__private_8h.html#a3dfca4e672769716f3843561fac947ac"/>
-              <topic label="HSEby25" href="_m_r_c_c__private_8h.html#a61e4e637523b86a643ebe4f7c157766e"/>
-              <topic label="HSEby26" href="_m_r_c_c__private_8h.html#aa2cdfccee02da84256608c133de1687b"/>
-              <topic label="HSEby27" href="_m_r_c_c__private_8h.html#a456451ed30c787324001cb6b4da70bd6"/>
-              <topic label="HSEby28" href="_m_r_c_c__private_8h.html#a1d4164747584b3a9a20b49b5e5387ff9"/>
-              <topic label="HSEby29" href="_m_r_c_c__private_8h.html#a5d2d271a6c054f70810ce3be5eb4282f"/>
-              <topic label="HSEby30" href="_m_r_c_c__private_8h.html#af9e9f45b5bc41177bdb9d93a5b721f55"/>
-              <topic label="HSEby31" href="_m_r_c_c__private_8h.html#a27b62a6360d577508d9e28d5085b3c6e"/>
-              <topic label="AHBby2" href="_m_r_c_c__private_8h.html#a4995b1421490c3dd6833ad6cc0aa416e"/>
-              <topic label="AHBby4" href="_m_r_c_c__private_8h.html#ac2fab56b8d93de1f831486e39fd4e7bd"/>
-              <topic label="AHBby8" href="_m_r_c_c__private_8h.html#a35fe15794267b338424a9779a48bd1b7"/>
-              <topic label="AHBby16" href="_m_r_c_c__private_8h.html#a715635ff12c213fb671b25900dfb1b3f"/>
-              <topic label="Equal_0" href="_m_r_c_c__private_8h.html#aeb26b0d0d01cb3d6dcd24f77585df908"/>
-              <topic label="Equal_1" href="_m_r_c_c__private_8h.html#a7d72f97698ab91ace4977bcc08b6048f"/>
-              <topic label="Equal_2" href="_m_r_c_c__private_8h.html#a8c4885cd7711be70a5bb09aa43344b6f"/>
-              <topic label="Equal_3" href="_m_r_c_c__private_8h.html#a1dbd553c1ac95b76acc625fb014564db"/>
-              <topic label="Equal_4" href="_m_r_c_c__private_8h.html#a5ed7fa484830d3ef70f489164fb1792b"/>
-              <topic label="Equal_5" href="_m_r_c_c__private_8h.html#ac122dab5b7de98900fde77abb6e90354"/>
-              <topic label="Equal_6" href="_m_r_c_c__private_8h.html#a4852f0334f98bfdcb05a9a1e58c9c716"/>
-              <topic label="Equal_7" href="_m_r_c_c__private_8h.html#a270b27eca465c7cdfe6c53b35aa17a76"/>
-              <topic label="Equal_8" href="_m_r_c_c__private_8h.html#aad723a181d9139faf21b2abdcd2410eb"/>
-              <topic label="Equal_9" href="_m_r_c_c__private_8h.html#aa3dd6f2c19cbc302c67f239d397a127e"/>
-              <topic label="Equal_10" href="_m_r_c_c__private_8h.html#ac1b4fcc72d52f0956623e1334dfcb5eb"/>
-              <topic label="Equal_11" href="_m_r_c_c__private_8h.html#adb104d7a35f3110d2b4f89f4c822056d"/>
-              <topic label="Equal_12" href="_m_r_c_c__private_8h.html#accada72a405a5a3f23e21d14cbf17a79"/>
-              <topic label="Equal_13" href="_m_r_c_c__private_8h.html#ac2dc7afee60d35683388b1a1a92c0e8f"/>
-              <topic label="Equal_14" href="_m_r_c_c__private_8h.html#ab041121721dfeb33824bef268d179cb7"/>
-              <topic label="Equal_15" href="_m_r_c_c__private_8h.html#ace382ffd78f81bd14ebefb79868ee148"/>
-              <topic label="Equal_16" href="_m_r_c_c__private_8h.html#a7fac7a091f070cea9a6cd230466b28fc"/>
-              <topic label="Equal_17" href="_m_r_c_c__private_8h.html#ab71715034b1b75ebf9b132bd4c559c42"/>
-              <topic label="Equal_18" href="_m_r_c_c__private_8h.html#a818fef9ebf332b328e733b02d942e62b"/>
-              <topic label="Equal_19" href="_m_r_c_c__private_8h.html#a21fc68932c0c9acdded77be262797f2b"/>
-              <topic label="Equal_20" href="_m_r_c_c__private_8h.html#a40390d780ce0c60c45b454e27bb9e78e"/>
-              <topic label="Equal_21" href="_m_r_c_c__private_8h.html#a04d6ef09f85844ac38cd6737e298d47d"/>
-              <topic label="Equal_22" href="_m_r_c_c__private_8h.html#a27fcb291234a12bec2d210d1163c2d38"/>
-              <topic label="Equal_23" href="_m_r_c_c__private_8h.html#a641d11d6a2dd6e3829829b8c565ed648"/>
-              <topic label="Equal_24" href="_m_r_c_c__private_8h.html#a631f1e5d75c97ec6012b17326a0ece1a"/>
-              <topic label="Equal_25" href="_m_r_c_c__private_8h.html#a91069187a8390868d7693b96a1f51452"/>
-              <topic label="Equal_26" href="_m_r_c_c__private_8h.html#a822f7b8c68ed3eeff4c72564ec9d426e"/>
-              <topic label="Equal_27" href="_m_r_c_c__private_8h.html#aab5eb5954672e29c8139dd6218854400"/>
-              <topic label="Equal_28" href="_m_r_c_c__private_8h.html#a426510f35925dc712492cf341a9bf732"/>
-              <topic label="Equal_29" href="_m_r_c_c__private_8h.html#ab18d75f7ede8533115bc3c9f8b127d08"/>
-              <topic label="Equal_30" href="_m_r_c_c__private_8h.html#a41aa5f9588de40d5a76424f57263f0b6"/>
-              <topic label="Equal_31" href="_m_r_c_c__private_8h.html#a866cdc37e9a9e9feb02d7922d827fb97"/>
-              <topic label="Equal_32" href="_m_r_c_c__private_8h.html#a45f82baead04c34e49d81c53d63d12da"/>
-              <topic label="Equal_33" href="_m_r_c_c__private_8h.html#a9575e30dd43d9b318d1ee2988d8a71d8"/>
-              <topic label="Equal_34" href="_m_r_c_c__private_8h.html#ac056013b537bc4bb9698856b44c8f325"/>
-              <topic label="Equal_35" href="_m_r_c_c__private_8h.html#a44e29b96d2dd26384b598b3b5cb6a432"/>
-              <topic label="Equal_36" href="_m_r_c_c__private_8h.html#af5040073af8f87de00eea827614d89ef"/>
-              <topic label="Equal_37" href="_m_r_c_c__private_8h.html#a958bb077502001e474ba303bae1333a7"/>
-              <topic label="Equal_38" href="_m_r_c_c__private_8h.html#a41058adbb593b6f32c3f6f28042dd2c7"/>
-              <topic label="Equal_39" href="_m_r_c_c__private_8h.html#a372f92436a3449460d7792305887c214"/>
-              <topic label="Equal_40" href="_m_r_c_c__private_8h.html#ac46326626e7fcdb6866285cce740adf7"/>
-              <topic label="Equal_41" href="_m_r_c_c__private_8h.html#ac10e25963007387dd3b7550932a46c4c"/>
-              <topic label="Equal_42" href="_m_r_c_c__private_8h.html#a64fdcfa34ec2c93c56c1a29bc0677371"/>
-              <topic label="Equal_43" href="_m_r_c_c__private_8h.html#ad13626fa17e6e2d98f01a4027192569c"/>
-              <topic label="Equal_44" href="_m_r_c_c__private_8h.html#a44a5e189a2c87bff27a7fe114d71d9e1"/>
-              <topic label="Equal_45" href="_m_r_c_c__private_8h.html#ab3017e650429d1fc955847d722f1d699"/>
-              <topic label="Equal_46" href="_m_r_c_c__private_8h.html#aa980deecd3544850eded1c4018c4de51"/>
-              <topic label="Equal_47" href="_m_r_c_c__private_8h.html#a3a6ee81d167b5fd77d39ed4c63dcb1ee"/>
-              <topic label="Equal_48" href="_m_r_c_c__private_8h.html#a0a050dad4e44792e456689a3cb08bb95"/>
-              <topic label="Equal_49" href="_m_r_c_c__private_8h.html#a7cf7d9d473cf25c01a1f69838041d24c"/>
-              <topic label="Equal_50" href="_m_r_c_c__private_8h.html#ab4a2b7e3beb0a03e13c3f483eee180bc"/>
-              <topic label="Equal_51" href="_m_r_c_c__private_8h.html#aacbe080257a6d30c8a301944c2600e8f"/>
-              <topic label="Equal_52" href="_m_r_c_c__private_8h.html#ae702a0b9403625e7c03e41338a1c1fd4"/>
-              <topic label="Equal_53" href="_m_r_c_c__private_8h.html#a5587236d8ed0745a4e3c200c93fa9cc6"/>
-              <topic label="Equal_54" href="_m_r_c_c__private_8h.html#a0dc482f153a1f8fc3b818ddb696bc385"/>
-              <topic label="Equal_55" href="_m_r_c_c__private_8h.html#a28b170afe4fec11ffb5de589c6329c31"/>
-              <topic label="Equal_56" href="_m_r_c_c__private_8h.html#aa874350423cc879d04b412ad476ba991"/>
-              <topic label="Equal_57" href="_m_r_c_c__private_8h.html#ab2db8bea34fe7867d0214dfdd1790112"/>
-              <topic label="Equal_58" href="_m_r_c_c__private_8h.html#a880d775bce757e917a3e67f22cc66ba5"/>
-              <topic label="Equal_59" href="_m_r_c_c__private_8h.html#a5ed5125a90167e613686225b37ba761e"/>
-              <topic label="Equal_60" href="_m_r_c_c__private_8h.html#ad23d25e178e77b2b68d5ef68d33ad5ba"/>
-              <topic label="Equal_61" href="_m_r_c_c__private_8h.html#a8ad80b8bd8bba8c3dc8792b08ab4533a"/>
-              <topic label="Equal_62" href="_m_r_c_c__private_8h.html#a235cbe3d9bbfce91c66d9b91842cd786"/>
-              <topic label="Equal_63" href="_m_r_c_c__private_8h.html#a1da8fadebc012af57f11743509e5d4fe"/>
             </topic>
             <topic label="MRCC_program.c" href="_m_r_c_c__program_8c.html">
               <topic label="MRCC_vInit" href="_m_r_c_c__program_8c.html#ab4245d45e035033aece85f81662a9cf0"/>
-              <topic label="MRCC_vEnablePeriphralCLK" href="_m_r_c_c__program_8c.html#adf4049d31c5859572e821de89f05d6df"/>
-              <topic label="MRCC_vDisablePeriphralCLK" href="_m_r_c_c__program_8c.html#aae7b5bdf39efe155a97b93841422cce5"/>
             </topic>
           </topic>
+          <topic label="SPI" href="dir_91e9d73f349ab280cb951af50771b37b.html">
+            <topic label="SPI_config.h" href="_s_p_i__config_8h_source.html"/>
+            <topic label="SPI_interface.h" href="_s_p_i__interface_8h_source.html"/>
+            <topic label="SPI_private.h" href="_s_p_i__private_8h_source.html"/>
+            <topic label="SPI_program.c" href="_s_p_i__program_8c_source.html"/>
+          </topic>
           <topic label="SysTick" href="dir_bc8d9b300b3d36e275cf505746a03818.html">
-            <topic label="SysTick_config.h" href="_sys_tick__config_8h.html">
-              <topic label="CLK_SOURCE" href="group__gpio__addresses.html#ga1cb6265e66aa849a2e04e04a89c04789"/>
-              <topic label="Exception_Request" href="_sys_tick__config_8h.html#a90a0c1a7437e1990638930fe8bbf0c31"/>
-              <topic label="SINGLE_INTERVAL_MODE" href="group__interval__mode.html#ga7dee2e4ebd814929b352807ce3c18926"/>
-              <topic label="PERIODIC_INTERVAL_MODE" href="group__interval__mode.html#ga286f850f1a2cec9b96bc322f5abd7af5"/>
-              <topic label="MAX_TICKS" href="_sys_tick__config_8h.html#af525dcb5ad726f160c74b092470c3afb"/>
-            </topic>
+            <topic label="SysTick_config.h" href="_sys_tick__config_8h_source.html"/>
             <topic label="SysTick_interface.h" href="_sys_tick__interface_8h.html">
               <topic label="BUSY_TICK_TIME" href="_sys_tick__interface_8h.html#abc8b094de6fdada914d30ea3df099502"/>
               <topic label="SINGLE_INTERVAL_TICK_TIME" href="_sys_tick__interface_8h.html#ade19761cee9e365eed75787eb739dc00"/>
@@ -1376,14 +1275,15 @@
               <topic label="MSysTick_vDelayMicroSec" href="_sys_tick__interface_8h.html#a4fad8ea85f5b15c9bc861b8c93d79672"/>
               <topic label="MSysTick_vDelayMilliSec" href="_sys_tick__interface_8h.html#a1e33cc70ac096839a0377f4d9716bd04"/>
               <topic label="MSysTick_vDelaySec" href="_sys_tick__interface_8h.html#a03c3d971653533d421d39fa094393dba"/>
-              <topic label="MSysTick_vSetSingleInterval" href="_sys_tick__interface_8h.html#a3cafdfe46ddf474da42fb8726c36485a"/>
-              <topic label="MSysTick_vSetPeriodicInterval" href="_sys_tick__interface_8h.html#a460c9d69948f5e22aa24d57ea778b952"/>
+              <topic label="MSysTick_vSetSingleInterval" href="_sys_tick__interface_8h.html#ac25d52e28d687ad7d870a0c055b18d6c"/>
+              <topic label="MSysTick_vSetPeriodicInterval" href="_sys_tick__interface_8h.html#a8c0a733d140ce5dc6d66b35f8ecb797b"/>
               <topic label="MSysTick_vStopInterval" href="_sys_tick__interface_8h.html#a9c9a6f3425756cab6a1fbb3b20a23b70"/>
               <topic label="MSysTick_u32GetElapsedTime" href="_sys_tick__interface_8h.html#a45ee3f2564c8000bc7cf233e96d1c69e"/>
               <topic label="MSysTick_u32GetRemainingTime" href="_sys_tick__interface_8h.html#aa51d26a36ec48495d2c3e8373d2a1a51"/>
               <topic label="MSysTick_vEnable" href="_sys_tick__interface_8h.html#a7251bfe242375bc64ba056925ad386df"/>
               <topic label="MSysTick_vDisable" href="_sys_tick__interface_8h.html#acccf8e71a97d029223e58bd5ab1ae9be"/>
               <topic label="MSysTick_vEnableException" href="_sys_tick__interface_8h.html#a0c426902b052e85b0fb0759a40bd5308"/>
+              <topic label="MSysTick_vDisableException" href="_sys_tick__interface_8h.html#a4402d4fad36c22569b8587202ac24630"/>
             </topic>
             <topic label="SysTick_private.h" href="_sys_tick__private_8h.html">
               <topic label="SysTick_Type" href="struct_sys_tick___type.html">
@@ -1404,23 +1304,99 @@
               <topic label="AssertRequest" href="group__systick__exception__request__enable.html#ga08bc6a27e8bc51f94ff9e8466dc0cf7a"/>
             </topic>
             <topic label="SysTick_program.c" href="_sys_tick__program_8c.html">
-              <topic label="MSysTick_vEnableException" href="_sys_tick__program_8c.html#a0c426902b052e85b0fb0759a40bd5308"/>
               <topic label="MSysTick_vInit" href="_sys_tick__program_8c.html#a4e8fe0bd8178e76ab2e78536014006fb"/>
-              <topic label="MSysTick_vSetBusyWait" href="_sys_tick__program_8c.html#a945b29a41bc160424af4b1c8d3a89542"/>
-              <topic label="MSysTick_vDelay" href="_sys_tick__program_8c.html#af5c3d4277b65a6834129834b1c927868"/>
-              <topic label="MSysTick_vDelayMicroSec" href="_sys_tick__program_8c.html#a3d2c258787b14636e9e744da1a9a9765"/>
-              <topic label="MSysTick_vDelayMilliSec" href="_sys_tick__program_8c.html#a396b023d0e4ee7f9deea6dee69399eb5"/>
-              <topic label="MSysTick_vDelaySec" href="_sys_tick__program_8c.html#a705579bf2ac10de307f5c4117ea60026"/>
-              <topic label="MSysTick_vSetSingleInterval" href="_sys_tick__program_8c.html#a9a34457b53b8cfd265a40ec436b9fb79"/>
-              <topic label="MSysTick_vSetPeriodicInterval" href="_sys_tick__program_8c.html#a2f32d3077bf293f13cb1d435a8b86971"/>
               <topic label="MSysTick_vStopInterval" href="_sys_tick__program_8c.html#a9c9a6f3425756cab6a1fbb3b20a23b70"/>
               <topic label="MSysTick_u32GetElapsedTime" href="_sys_tick__program_8c.html#a45ee3f2564c8000bc7cf233e96d1c69e"/>
               <topic label="MSysTick_u32GetRemainingTime" href="_sys_tick__program_8c.html#aa51d26a36ec48495d2c3e8373d2a1a51"/>
               <topic label="MSysTick_vEnable" href="_sys_tick__program_8c.html#a7251bfe242375bc64ba056925ad386df"/>
               <topic label="MSysTick_vDisable" href="_sys_tick__program_8c.html#acccf8e71a97d029223e58bd5ab1ae9be"/>
-              <topic label="SysTick_Handler" href="_sys_tick__program_8c.html#ab5e09814056d617c521549e542639b7e"/>
+              <topic label="MSysTick_vDisableException" href="_sys_tick__program_8c.html#a4402d4fad36c22569b8587202ac24630"/>
+              <topic label="MSysTick_vEnableException" href="_sys_tick__program_8c.html#a0c426902b052e85b0fb0759a40bd5308"/>
             </topic>
           </topic>
+          <topic label="TIM1" href="dir_0a6742c1e5cd66fbd541389f9ab0d2a8.html">
+            <topic label="TIM1_config.h" href="_t_i_m1__config_8h_source.html"/>
+            <topic label="TIM1_interface.h" href="_t_i_m1__interface_8h_source.html"/>
+            <topic label="TIM1_private.h" href="_t_i_m1__private_8h_source.html"/>
+            <topic label="TIM1_program.c" href="_t_i_m1__program_8c_source.html"/>
+          </topic>
+          <topic label="UART" href="dir_cd2ba2296451afb4d1acd7f10dbc2af0.html">
+            <topic label="UART_config.h" href="_u_a_r_t__config_8h_source.html"/>
+            <topic label="UART_interface.h" href="_u_a_r_t__interface_8h.html">
+              <topic label="USART_MemoryMapType" href="struct_u_s_a_r_t___memory_map_type.html">
+                <topic label="SR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a0c45427011800c5d5e8c6427fb03c7e6"/>
+                <topic label="DR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a3c8a559f7aa8d7f2d6a4b42e43c8c2a0"/>
+                <topic label="BRR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a2261448def1f381fb720aa1696ce6cc7"/>
+                <topic label="CR1_REG" href="struct_u_s_a_r_t___memory_map_type.html#a259bcc8d1757d6bc77bbff16840f64b1"/>
+                <topic label="CR2_REG" href="struct_u_s_a_r_t___memory_map_type.html#af226d966a116ce9a6a703070339ee580"/>
+                <topic label="CR3_REG" href="struct_u_s_a_r_t___memory_map_type.html#add3547c67019a8ea87a5868995d207a5"/>
+                <topic label="GTPR_REG" href="struct_u_s_a_r_t___memory_map_type.html#a64e6173202e6b9b8201c4362dae64bfd"/>
+              </topic>
+              <topic label="USART_InitType" href="struct_u_s_a_r_t___init_type.html">
+                <topic label="BaudRate" href="struct_u_s_a_r_t___init_type.html#afa1b17287553d6f2ed8e4ded8067ce7d"/>
+                <topic label="DataWidth" href="struct_u_s_a_r_t___init_type.html#a732332f56fabda2390e935a042712ed0"/>
+                <topic label="StopBits" href="struct_u_s_a_r_t___init_type.html#aeb52c37ce9ee7768af06e4d90d88d1a2"/>
+                <topic label="Parity_Enable" href="struct_u_s_a_r_t___init_type.html#affc0431b2a8516a92695a7250028bf57"/>
+                <topic label="Parity_Selection" href="struct_u_s_a_r_t___init_type.html#ae83afe06a0ae8c796873deee3203608e"/>
+                <topic label="TransferDirection" href="struct_u_s_a_r_t___init_type.html#ae274fe8182e9785a01cea7354892a9ec"/>
+                <topic label="HardwareFlowControl" href="struct_u_s_a_r_t___init_type.html#a578eb0b941006f70641b410789a8f65d"/>
+                <topic label="Oversampling" href="struct_u_s_a_r_t___init_type.html#a62c8fbf658e9677667a2f82aaae8ad8e"/>
+              </topic>
+              <topic label="USART_ClockInitTypeDef" href="struct_u_s_a_r_t___clock_init_type_def.html">
+                <topic label="ClockOutput" href="struct_u_s_a_r_t___clock_init_type_def.html#a0fdb99d837deb1ce696f2324fd6abc02"/>
+                <topic label="ClockPolarity" href="struct_u_s_a_r_t___clock_init_type_def.html#a196a11a0546d1589d06e484d0d92e093"/>
+                <topic label="ClockPhase" href="struct_u_s_a_r_t___clock_init_type_def.html#a86c0c9aaf06dd093b727020851b18258"/>
+                <topic label="LastBitClockPulse" href="struct_u_s_a_r_t___clock_init_type_def.html#a310fd344063c5472789d02c1f5732aa6"/>
+              </topic>
+              <topic label="USART1_BASE_ADDRESS" href="group__uart__addresses.html#gab4fe2cb41dcc9d652b033f2e0a89d44b"/>
+              <topic label="USART2_BASE_ADDRESS" href="group__uart__addresses.html#ga4845766e4b9aa8b3c91bbf4a71652106"/>
+              <topic label="USART6_BASE_ADDRESS" href="group__uart__addresses.html#ga9df7340f186b0dea97f421c10936f608"/>
+              <topic label="USART1_REG" href="group__uart__registers.html#ga38f9de19e0022108a0536f7b88267d5e"/>
+              <topic label="USART2_REG" href="group__uart__registers.html#ga1a4ecad9a4dcd0594be0f53e2017dc66"/>
+              <topic label="USART6_REG" href="group__uart__registers.html#gac07061e10fa07006ad02f7810500ff91"/>
+              <topic label="OVER_SAMPLING_16" href="group__uart__over__sampling.html#gaf8c5da91760498f5e23684c559d9d0d1"/>
+              <topic label="OVER_SAMPLING_8" href="group__uart__over__sampling.html#ga6d7508f36c8dde4eed0ab2ad952e344c"/>
+              <topic label="TX_ONLY" href="group__uart__operating__modes.html#ga68e18d9e86deac2cd5519242d9cbacfa"/>
+              <topic label="RX_ONLY" href="group__uart__operating__modes.html#ga74cf94a9df9d9b857d11b2befc9eaf1a"/>
+              <topic label="TX_RX" href="group__uart__operating__modes.html#gac320fb8cc73d1635bf24181d566e708c"/>
+              <topic label="EVEN_PARITY" href="group__uart__parity.html#ga30a963ff1432e4cfbdd83e74045ef142"/>
+              <topic label="ODD_PARITY" href="group__uart__parity.html#ga898d7631f24dd6b1deebf808a2214ea2"/>
+              <topic label="MODE_8BIT" href="group__uart__bit__sizes.html#gaee68d10bce9651f8903872f9e1e8753c"/>
+              <topic label="MODE_9BIT" href="group__uart__bit__sizes.html#ga034730cadeba4657ae21a0bbb35bcb16"/>
+              <topic label="STOP_BIT_1" href="group__uart__stop__bits.html#ga22de6895caca557a97364a36572ca319"/>
+              <topic label="STOP_BIT_0_5" href="group__uart__stop__bits.html#ga85d5bd1feb713cdf0f59068366e8ab99"/>
+              <topic label="STOP_BIT_2" href="group__uart__stop__bits.html#gafa1ce323ca9ac6fe9181f9f25eeb7953"/>
+              <topic label="STOP_BIT_1_5" href="group__uart__stop__bits.html#gaac9febcb73e8885a7d2ef78d6396a4e0"/>
+              <topic label="ENABLE" href="_u_a_r_t__interface_8h.html#a514ad415fb6125ba296793df7d1a468a"/>
+              <topic label="DISABLE" href="_u_a_r_t__interface_8h.html#a99496f7308834e8b220f7894efa0b6ab"/>
+              <topic label="__BAUDRATE__" href="_u_a_r_t__interface_8h.html#a6d446b35159115d4080e505601938aac"/>
+              <topic label="MUSART_vInit" href="_u_a_r_t__interface_8h.html#ac597abeb412173c08bc61f38cc9929ef"/>
+              <topic label="MUSART_vEnable" href="_u_a_r_t__interface_8h.html#a657675cf8557659e4ed063a219d58b83"/>
+              <topic label="MUSART_vDisable" href="_u_a_r_t__interface_8h.html#ab58d8534ad0b67856a17f6ec5ced8115"/>
+              <topic label="MUSART_vTransmitByte" href="_u_a_r_t__interface_8h.html#a01200a0c19cfcc79d3f47adb6ba9cc2b"/>
+              <topic label="MUSART_vTransmitString" href="_u_a_r_t__interface_8h.html#afb8484dbe78b2b920d55ed7612b7095a"/>
+              <topic label="MUSART_u8ReceiveByteSynchNonBlocking" href="_u_a_r_t__interface_8h.html#a9c55f4bee8a90362015a21216647143a"/>
+              <topic label="MUSART_u8ReceiveByteSynchBlocking" href="_u_a_r_t__interface_8h.html#a11da06b3906ca441a0e8a81fc4bbd862"/>
+              <topic label="MUSART_ptrReceiveStringSynchNonBlocking" href="_u_a_r_t__interface_8h.html#a0301641266329ac8b4d31392aae8d81a"/>
+              <topic label="MUSART_vRecieveString" href="_u_a_r_t__interface_8h.html#af106a2c478c533b05923c46e85872fc3"/>
+              <topic label="MUSART_u8CompareString" href="_u_a_r_t__interface_8h.html#a14cc7aa021d13b0f33f180ae7d90e44d"/>
+              <topic label="MUSART_u8ReadDataRegister" href="_u_a_r_t__interface_8h.html#ab4fa6caaa510b35919441e0195b300da"/>
+              <topic label="MUSART_vClearFlags" href="_u_a_r_t__interface_8h.html#ae76fead853d3a82a5ae2534a597ce184"/>
+              <topic label="MUSART_vRxIntSetStatus" href="_u_a_r_t__interface_8h.html#ad99e4c4ef135bdb0996597181d991a66"/>
+              <topic label="MUSART1_vSetCallBack" href="_u_a_r_t__interface_8h.html#a1678fc67fdd85e3c9a50b71f62833c30"/>
+              <topic label="MUSART2_vSetCallBack" href="_u_a_r_t__interface_8h.html#a403c20ffe63acf998d9fa6d4071993bd"/>
+              <topic label="MUSART6_vSetCallBack" href="_u_a_r_t__interface_8h.html#abbee2b24f7a86b68eac12384184049eb"/>
+            </topic>
+            <topic label="UART_private.h" href="_u_a_r_t__private_8h.html">
+            </topic>
+            <topic label="UART_program.c" href="_u_a_r_t__program_8c_source.html"/>
+          </topic>
+        </topic>
+        <topic label="MyRTOS" href="dir_085f9dad40bcf4ad86875262433a9f79.html">
+          <topic label="MyRTOS_config.h" href="_my_r_t_o_s__config_8h_source.html"/>
+          <topic label="MyRTOS_interface.h" href="_my_r_t_o_s__interface_8h_source.html"/>
+          <topic label="MyRTOS_private.h" href="_my_r_t_o_s__private_8h_source.html"/>
+          <topic label="MyRTOS_program.c" href="_my_r_t_o_s__program_8c_source.html"/>
         </topic>
       </topic>
     </topic>
@@ -1459,7 +1435,6 @@
         <topic label="e" href="globals_defs_e.html"/>
         <topic label="f" href="globals_defs_f.html"/>
         <topic label="g" href="globals_defs_g.html"/>
-        <topic label="h" href="globals_defs_h.html"/>
         <topic label="i" href="globals_defs_i.html"/>
         <topic label="l" href="globals_defs_l.html"/>
         <topic label="m" href="globals_defs_m.html"/>

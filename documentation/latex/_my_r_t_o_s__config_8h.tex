@@ -1,0 +1,143 @@
+\hypertarget{_my_r_t_o_s__config_8h}{}\doxysection{COTS/\+My\+RTOS/\+My\+RTOS\+\_\+config.h File Reference}
+\label{_my_r_t_o_s__config_8h}\index{COTS/MyRTOS/MyRTOS\_config.h@{COTS/MyRTOS/MyRTOS\_config.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_my_r_t_o_s__config_8h_ae52b423ecbdf1b595a24653976d7a2c8}{MAX\+\_\+\+TASK\+\_\+\+NUM}}~20U
+\item 
+\#define \mbox{\hyperlink{_my_r_t_o_s__config_8h_ab1961dabcaa0622379a2fa08e1698d09}{MIN\+\_\+\+TASK\+\_\+\+NUM}}~0
+\item 
+\#define \mbox{\hyperlink{_my_r_t_o_s__config_8h_a4e0b131217df9e325c2a08686fe9d7b4}{RTOS\+\_\+\+TICK\+\_\+\+TIME}}~100000U /$\ast$ 100 Milli\+Second $\ast$/
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611}{Error\+\_\+en\+State}} \{ \newline
+\mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611abf350750d0d4fabd8954c0f1e9bbae94}{NO\+\_\+\+ERROR}}
+, \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611aa4ea86098f638085cd46b2a01b1bed7f}{PRIORTY\+\_\+\+ERROR}}
+, \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a082e3102a4bbb07b0f8b4112ef950786}{TASK\+\_\+\+RESERVED\+\_\+\+ERROR}}
+, \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a0dc2a4cf4d363fe19a492fb6f1e3e83e}{TASK\+\_\+\+EMPTY\+\_\+\+ERROR}}
+, \newline
+\mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611af4c666f9500d590e03f06be57e9fed13}{TASK\+\_\+\+SUSP\+\_\+\+ERROR}}
+ \}
+\item 
+enum \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561}{Priority\+\_\+en\+State}} \{ \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561a2f0d18fc0d0fa4a6cd92dc328501874d}{EMPTY}}
+, \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561aff3982d21bd983d87b10549c9b938d6b}{NOT\+\_\+\+EMPTY}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_my_r_t_o_s__config_8h_ae52b423ecbdf1b595a24653976d7a2c8}\label{_my_r_t_o_s__config_8h_ae52b423ecbdf1b595a24653976d7a2c8}} 
+\index{MyRTOS\_config.h@{MyRTOS\_config.h}!MAX\_TASK\_NUM@{MAX\_TASK\_NUM}}
+\index{MAX\_TASK\_NUM@{MAX\_TASK\_NUM}!MyRTOS\_config.h@{MyRTOS\_config.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_TASK\_NUM}{MAX\_TASK\_NUM}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+TASK\+\_\+\+NUM~20U}
+
+
+
+Definition at line \mbox{\hyperlink{_my_r_t_o_s__config_8h_source_l00036}{36}} of file \mbox{\hyperlink{_my_r_t_o_s__config_8h_source}{My\+RTOS\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{_my_r_t_o_s__config_8h_ab1961dabcaa0622379a2fa08e1698d09}\label{_my_r_t_o_s__config_8h_ab1961dabcaa0622379a2fa08e1698d09}} 
+\index{MyRTOS\_config.h@{MyRTOS\_config.h}!MIN\_TASK\_NUM@{MIN\_TASK\_NUM}}
+\index{MIN\_TASK\_NUM@{MIN\_TASK\_NUM}!MyRTOS\_config.h@{MyRTOS\_config.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_TASK\_NUM}{MIN\_TASK\_NUM}}
+{\footnotesize\ttfamily \#define MIN\+\_\+\+TASK\+\_\+\+NUM~0}
+
+
+
+Definition at line \mbox{\hyperlink{_my_r_t_o_s__config_8h_source_l00037}{37}} of file \mbox{\hyperlink{_my_r_t_o_s__config_8h_source}{My\+RTOS\+\_\+config.\+h}}.
+
+\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a4e0b131217df9e325c2a08686fe9d7b4}\label{_my_r_t_o_s__config_8h_a4e0b131217df9e325c2a08686fe9d7b4}} 
+\index{MyRTOS\_config.h@{MyRTOS\_config.h}!RTOS\_TICK\_TIME@{RTOS\_TICK\_TIME}}
+\index{RTOS\_TICK\_TIME@{RTOS\_TICK\_TIME}!MyRTOS\_config.h@{MyRTOS\_config.h}}
+\doxysubsubsection{\texorpdfstring{RTOS\_TICK\_TIME}{RTOS\_TICK\_TIME}}
+{\footnotesize\ttfamily \#define RTOS\+\_\+\+TICK\+\_\+\+TIME~100000U /$\ast$ 100 Milli\+Second $\ast$/}
+
+
+
+Definition at line \mbox{\hyperlink{_my_r_t_o_s__config_8h_source_l00040}{40}} of file \mbox{\hyperlink{_my_r_t_o_s__config_8h_source}{My\+RTOS\+\_\+config.\+h}}.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611}\label{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611}} 
+\index{MyRTOS\_config.h@{MyRTOS\_config.h}!Error\_enState@{Error\_enState}}
+\index{Error\_enState@{Error\_enState}!MyRTOS\_config.h@{MyRTOS\_config.h}}
+\doxysubsubsection{\texorpdfstring{Error\_enState}{Error\_enState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611}{Error\+\_\+en\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_ERROR@{NO\_ERROR}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!NO\_ERROR@{NO\_ERROR}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611abf350750d0d4fabd8954c0f1e9bbae94}\label{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611abf350750d0d4fabd8954c0f1e9bbae94}} 
+NO\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRIORTY\_ERROR@{PRIORTY\_ERROR}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!PRIORTY\_ERROR@{PRIORTY\_ERROR}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611aa4ea86098f638085cd46b2a01b1bed7f}\label{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611aa4ea86098f638085cd46b2a01b1bed7f}} 
+PRIORTY\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TASK\_RESERVED\_ERROR@{TASK\_RESERVED\_ERROR}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!TASK\_RESERVED\_ERROR@{TASK\_RESERVED\_ERROR}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a082e3102a4bbb07b0f8b4112ef950786}\label{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a082e3102a4bbb07b0f8b4112ef950786}} 
+TASK\+\_\+\+RESERVED\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TASK\_EMPTY\_ERROR@{TASK\_EMPTY\_ERROR}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!TASK\_EMPTY\_ERROR@{TASK\_EMPTY\_ERROR}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a0dc2a4cf4d363fe19a492fb6f1e3e83e}\label{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a0dc2a4cf4d363fe19a492fb6f1e3e83e}} 
+TASK\+\_\+\+EMPTY\+\_\+\+ERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TASK\_SUSP\_ERROR@{TASK\_SUSP\_ERROR}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!TASK\_SUSP\_ERROR@{TASK\_SUSP\_ERROR}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611af4c666f9500d590e03f06be57e9fed13}\label{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611af4c666f9500d590e03f06be57e9fed13}} 
+TASK\+\_\+\+SUSP\+\_\+\+ERROR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_my_r_t_o_s__config_8h_source_l00010}{10}} of file \mbox{\hyperlink{_my_r_t_o_s__config_8h_source}{My\+RTOS\+\_\+config.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011 \{}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611abf350750d0d4fabd8954c0f1e9bbae94}{NO\_ERROR}}            ,}
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611aa4ea86098f638085cd46b2a01b1bed7f}{PRIORTY\_ERROR}}      ,}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a082e3102a4bbb07b0f8b4112ef950786}{TASK\_RESERVED\_ERROR}}  ,}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611a0dc2a4cf4d363fe19a492fb6f1e3e83e}{TASK\_EMPTY\_ERROR}}    ,}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611af4c666f9500d590e03f06be57e9fed13}{TASK\_SUSP\_ERROR}}}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023 \} \mbox{\hyperlink{_my_r_t_o_s__config_8h_a9871623f272916a7f6820cff52d2d611}{Error\_enState}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561}\label{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561}} 
+\index{MyRTOS\_config.h@{MyRTOS\_config.h}!Priority\_enState@{Priority\_enState}}
+\index{Priority\_enState@{Priority\_enState}!MyRTOS\_config.h@{MyRTOS\_config.h}}
+\doxysubsubsection{\texorpdfstring{Priority\_enState}{Priority\_enState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561}{Priority\+\_\+en\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EMPTY@{EMPTY}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!EMPTY@{EMPTY}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561a2f0d18fc0d0fa4a6cd92dc328501874d}\label{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561a2f0d18fc0d0fa4a6cd92dc328501874d}} 
+EMPTY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOT\_EMPTY@{NOT\_EMPTY}!MyRTOS\_config.h@{MyRTOS\_config.h}}\index{MyRTOS\_config.h@{MyRTOS\_config.h}!NOT\_EMPTY@{NOT\_EMPTY}}}\mbox{\Hypertarget{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561aff3982d21bd983d87b10549c9b938d6b}\label{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561aff3982d21bd983d87b10549c9b938d6b}} 
+NOT\+\_\+\+EMPTY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_my_r_t_o_s__config_8h_source_l00025}{25}} of file \mbox{\hyperlink{_my_r_t_o_s__config_8h_source}{My\+RTOS\+\_\+config.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026 \{}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561a2f0d18fc0d0fa4a6cd92dc328501874d}{EMPTY}}      ,}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030     \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561aff3982d21bd983d87b10549c9b938d6b}{NOT\_EMPTY}}  ,}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032 \} \mbox{\hyperlink{_my_r_t_o_s__config_8h_a75b2eabb5510e10a575a11218c8bf561}{Priority\_enState}};}
+
+\end{DoxyCode}

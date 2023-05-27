@@ -1,0 +1,741 @@
+\hypertarget{_u_a_r_t__private_8h}{}\doxysection{COTS/\+MCAL/\+UART/\+UART\+\_\+private.h File Reference}
+\label{_u_a_r_t__private_8h}\index{COTS/MCAL/UART/UART\_private.h@{COTS/MCAL/UART/UART\_private.h}}
+
+
+This file contains the private information of UART driver.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_abd6dd99fff6cd5c0374780fd72a61e6e}{UART\+\_\+\+DIV\+\_\+\+SAMPLING16}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)~((\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})((((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+PCLK\+\_\+))$\ast$25U)/(4U$\ast$((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+BAUD\+\_\+)))))
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a9cd479aff25c454d9d4f3c1c20517c86}{UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING16}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)~(UART\+\_\+\+DIV\+\_\+\+SAMPLING16((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+))/100U)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ade99ebfd7502df11b366c48fac5417d7}{UART\+\_\+\+DIVFRAQ\+\_\+\+SAMPLING16}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)~((((UART\+\_\+\+DIV\+\_\+\+SAMPLING16((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) -\/ (UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING16((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) $\ast$ 100U)) $\ast$ 16U) + 50U) / 100U)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aed98b14acfc939985cc9909a6fa64d71}{UART\+\_\+\+BRR\+\_\+\+SAMPLING16}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a97075bc06a62c182b0b9a00bbf04b170}{UART\+\_\+\+DIV\+\_\+\+SAMPLING8}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)~((\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})((((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+PCLK\+\_\+))$\ast$25U)/(2U$\ast$((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+BAUD\+\_\+)))))
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a3dafeed17fc4cf319b0dd88d7d0fb614}{UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING8}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)~(UART\+\_\+\+DIV\+\_\+\+SAMPLING8((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+))/100U)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ae0c8a28dbc006a93dd8e90e8ff8a37a0}{UART\+\_\+\+DIVFRAQ\+\_\+\+SAMPLING8}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)~((((UART\+\_\+\+DIV\+\_\+\+SAMPLING8((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) -\/ (UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING8((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) $\ast$ 100U)) $\ast$ 8U) + 50U) / 100U)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ae36ed9e94681494a31a9d8a7bbcc1a2c}{UART\+\_\+\+BRR\+\_\+\+SAMPLING8}}(\+\_\+\+PCLK\+\_\+,  \+\_\+\+BAUD\+\_\+)
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ac18d18b90771b18977c5f93a36321557}{MUSART\+\_\+\+SR\+\_\+\+PE\+\_\+\+BIT}}~0
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_abfd1944673197c6b0e511d0129793fbf}{MUSART\+\_\+\+SR\+\_\+\+FE\+\_\+\+BIT}}~1
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aa0ba433c7143ea2c33a7167a5a83bcc7}{MUSART\+\_\+\+SR\+\_\+\+NE\+\_\+\+BIT}}~2
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ac216f68a45cafa48709ac64616087602}{MUSART\+\_\+\+SR\+\_\+\+ORE\+\_\+\+BIT}}~3
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aefe09d1278fc0e60512b48ca066ffb84}{MUSART\+\_\+\+SR\+\_\+\+IDLE\+\_\+\+BIT}}~4
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a115169432cbecb0767d67a593fabd84b}{MUSART\+\_\+\+SR\+\_\+\+RXNE\+\_\+\+BIT}}~5
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a1d10221aebb6e8592fbca9ffe0af7913}{MUSART\+\_\+\+SR\+\_\+\+TC\+\_\+\+BIT}}~6
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a9fb4ebcfe1b22a7b96250ccde22b887e}{MUSART\+\_\+\+SR\+\_\+\+TXE\+\_\+\+BIT}}~7
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a380b8c035ea1c34817cfe772a78cb1c3}{MUSART\+\_\+\+SR\+\_\+\+LBD\+\_\+\+BIT}}~8
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a428b426498a31a34812ed265de7664f6}{MUSART\+\_\+\+SR\+\_\+\+CTS\+\_\+\+BIT}}~9
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ab20477c483c28c87927d06ef770e2ad3}{MUSART\+\_\+\+CR1\+\_\+\+SBK\+\_\+\+BIT}}~0
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a92ae80507ab88480bed25805c70a657b}{MUSART\+\_\+\+CR1\+\_\+\+RWU\+\_\+\+BIT}}~1
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_af075c44b5c18bbf9aded7ff89a966376}{MUSART\+\_\+\+CR1\+\_\+\+RE\+\_\+\+BIT}}~2
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a9d1bbbd383d81b3e9d4b657abe2c401a}{MUSART\+\_\+\+CR1\+\_\+\+TE\+\_\+\+BIT}}~3
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a1319de385bed6d81360463c106903591}{MUSART\+\_\+\+CR1\+\_\+\+IDLEIE\+\_\+\+BIT}}~4
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a5507a61546d8ae77e5baf30e501a1026}{MUSART\+\_\+\+CR1\+\_\+\+RXNEIE\+\_\+\+BIT}}~5
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a80c7c65694c756fb9f99e97c4c5c8263}{MUSART\+\_\+\+CR1\+\_\+\+TCIE\+\_\+\+BIT}}~6
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_adf3f133baa1b239f7de16c0026fe3b43}{MUSART\+\_\+\+CR1\+\_\+\+TXEIE\+\_\+\+BIT}}~7
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a90a0c6e4029830ee2e3a476861a8594a}{MUSART\+\_\+\+CR1\+\_\+\+PEIE\+\_\+\+BIT}}~8
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a3a17627d8072b5eccf0b0c9d65ca08cb}{MUSART\+\_\+\+CR1\+\_\+\+PS\+\_\+\+BIT}}~9
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a3869b2fa48a3c7ad277eeb32ac8b6f9b}{MUSART\+\_\+\+CR1\+\_\+\+PCE\+\_\+\+BIT}}~10
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a6883e68ab1b9d4e2e9402fc3875aaf85}{MUSART\+\_\+\+CR1\+\_\+\+WAKE\+\_\+\+BIT}}~11
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a2e075bd040d19bcf801cd2a8ac7946c8}{MUSART\+\_\+\+CR1\+\_\+\+M\+\_\+\+BIT}}~12
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a350860889903501c94a59df0ad77dacd}{MUSART\+\_\+\+CR1\+\_\+\+UE\+\_\+\+BIT}}~13
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a291d33518a88ef7cd163b3a6fb4feef8}{MUSART\+\_\+\+CR1\+\_\+\+OVER8\+\_\+\+BIT}}~15
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_af1814754726fd69c983720b9251f2cf7}{MUSART\+\_\+\+CR2\+\_\+\+ADD0\+\_\+\+BIT}}~0
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a755c70aab09fce20586df8e74772fb98}{MUSART\+\_\+\+CR2\+\_\+\+ADD1\+\_\+\+BIT}}~1
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a8e1bb4c49e15dda0e86ca159514bad31}{MUSART\+\_\+\+CR2\+\_\+\+ADD2\+\_\+\+BIT}}~2
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_af5653a175ec110191cf40ae280cdae1c}{MUSART\+\_\+\+CR2\+\_\+\+ADD3\+\_\+\+BIT}}~3
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a8945ba32448a2e48daf0f83e1fd42a8c}{MUSART\+\_\+\+CR2\+\_\+\+LBDL\+\_\+\+BIT}}~5
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aba7a456449a2be05421a285b57879b07}{MUSART\+\_\+\+CR2\+\_\+\+LBDIE\+\_\+\+BIT}}~6
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a0122e3c65a33534eac8732a2e917845d}{MUSART\+\_\+\+CR2\+\_\+\+LBCL\+\_\+\+BIT}}~8
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a4ec84796cf476540e9a14223500966d6}{MUSART\+\_\+\+CR2\+\_\+\+CPHA\+\_\+\+BIT}}~9
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a13d03234ac40d29225e0c649e9b0e587}{MUSART\+\_\+\+CR2\+\_\+\+CPOL\+\_\+\+BIT}}~10
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aea289c162882585123e7b0295fa4b77b}{MUSART\+\_\+\+CR2\+\_\+\+CLKEN\+\_\+\+BIT}}~11
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a980d75b6894b27927b1f6a1c96f72366}{MUSART\+\_\+\+CR2\+\_\+\+STOP\+\_\+\+BIT}}~12
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a6efdb1a19e055a17ef0332c785ddb7e3}{MUSART\+\_\+\+CR2\+\_\+\+STOP0\+\_\+\+BIT}}~12
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aad54681e707cc9e15c11c696ef19de85}{MUSART\+\_\+\+CR2\+\_\+\+STOP1\+\_\+\+BIT}}~13
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aa018fbd0697fb86da66ffb37286aed42}{MUSART\+\_\+\+CR2\+\_\+\+LINEN\+\_\+\+BIT}}~14
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a7a3961a1a0ebe6a86489875249aade27}{MUSART\+\_\+\+CR3\+\_\+\+CTSIE\+\_\+\+BIT}}~10
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_af1ba7620f2afa1314205dc1aca34da4a}{MUSART\+\_\+\+CR3\+\_\+\+CTSE\+\_\+\+BIT}}~9
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a5a27d1942bd6f54db62eef89c8d19199}{MUSART\+\_\+\+CR3\+\_\+\+RTSE\+\_\+\+BIT}}~8
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a9427e7060647286b8f5803eb1c9dd8a2}{MUSART\+\_\+\+CR3\+\_\+\+DMAT\+\_\+\+BIT}}~7
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a959fcfab6a24e6540ee534bd22439bb8}{MUSART\+\_\+\+CR3\+\_\+\+DMAR\+\_\+\+BIT}}~6
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a620db1948e2e8caee1334746facd5f89}{MUSART\+\_\+\+CR3\+\_\+\+SCEN\+\_\+\+BIT}}~5
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aec1e59d0d8728b3b79f6b3094b6b12da}{MUSART\+\_\+\+CR3\+\_\+\+NACK\+\_\+\+BIT}}~4
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a013bf4e007dcb9b50391797feb3e94d4}{MUSART\+\_\+\+CR3\+\_\+\+HDSEL\+\_\+\+BIT}}~3
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_ae5a23e51d15e6f4b71eb9c2c6ccd9e73}{MUSART\+\_\+\+CR3\+\_\+\+IRLP\+\_\+\+BIT}}~2
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_a520e516ccb0ea2e4ba379aa53a24340d}{MUSART\+\_\+\+CR3\+\_\+\+IREN\+\_\+\+BIT}}~1
+\item 
+\#define \mbox{\hyperlink{_u_a_r_t__private_8h_aa6b2b2fcfdad3cae9e21227107967afb}{MUSART\+\_\+\+CR3\+\_\+\+EIE\+\_\+\+BIT}}~0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the private information of UART driver. 
+
+\begin{DoxyAuthor}{Author}
+Ali El Bana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+10/14/2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_u_a_r_t__private_8h_abd6dd99fff6cd5c0374780fd72a61e6e}\label{_u_a_r_t__private_8h_abd6dd99fff6cd5c0374780fd72a61e6e}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_DIV\_SAMPLING16@{UART\_DIV\_SAMPLING16}}
+\index{UART\_DIV\_SAMPLING16@{UART\_DIV\_SAMPLING16}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_DIV\_SAMPLING16}{UART\_DIV\_SAMPLING16}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+DIV\+\_\+\+SAMPLING16(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})~((\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})((((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+PCLK\+\_\+))$\ast$25U)/(4U$\ast$((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+BAUD\+\_\+)))))}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00014}{14}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a9cd479aff25c454d9d4f3c1c20517c86}\label{_u_a_r_t__private_8h_a9cd479aff25c454d9d4f3c1c20517c86}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_DIVMANT\_SAMPLING16@{UART\_DIVMANT\_SAMPLING16}}
+\index{UART\_DIVMANT\_SAMPLING16@{UART\_DIVMANT\_SAMPLING16}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_DIVMANT\_SAMPLING16}{UART\_DIVMANT\_SAMPLING16}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING16(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})~(UART\+\_\+\+DIV\+\_\+\+SAMPLING16((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+))/100U)}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00015}{15}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ade99ebfd7502df11b366c48fac5417d7}\label{_u_a_r_t__private_8h_ade99ebfd7502df11b366c48fac5417d7}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_DIVFRAQ\_SAMPLING16@{UART\_DIVFRAQ\_SAMPLING16}}
+\index{UART\_DIVFRAQ\_SAMPLING16@{UART\_DIVFRAQ\_SAMPLING16}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_DIVFRAQ\_SAMPLING16}{UART\_DIVFRAQ\_SAMPLING16}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+DIVFRAQ\+\_\+\+SAMPLING16(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})~((((UART\+\_\+\+DIV\+\_\+\+SAMPLING16((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) -\/ (UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING16((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) $\ast$ 100U)) $\ast$ 16U) + 50U) / 100U)}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00016}{16}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aed98b14acfc939985cc9909a6fa64d71}\label{_u_a_r_t__private_8h_aed98b14acfc939985cc9909a6fa64d71}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_BRR\_SAMPLING16@{UART\_BRR\_SAMPLING16}}
+\index{UART\_BRR\_SAMPLING16@{UART\_BRR\_SAMPLING16}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BRR\_SAMPLING16}{UART\_BRR\_SAMPLING16}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+BRR\+\_\+\+SAMPLING16(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                                        ((UART\_DIVMANT\_SAMPLING16((\_PCLK\_), (\_BAUD\_)) << 4U) + \(\backslash\)}
+\DoxyCodeLine{                                                        (UART\_DIVFRAQ\_SAMPLING16((\_PCLK\_), (\_BAUD\_)) \& 0xF0U) + \(\backslash\)}
+\DoxyCodeLine{                                                        (UART\_DIVFRAQ\_SAMPLING16((\_PCLK\_), (\_BAUD\_)) \& 0x0FU))}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00019}{19}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a97075bc06a62c182b0b9a00bbf04b170}\label{_u_a_r_t__private_8h_a97075bc06a62c182b0b9a00bbf04b170}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_DIV\_SAMPLING8@{UART\_DIV\_SAMPLING8}}
+\index{UART\_DIV\_SAMPLING8@{UART\_DIV\_SAMPLING8}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_DIV\_SAMPLING8}{UART\_DIV\_SAMPLING8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+DIV\+\_\+\+SAMPLING8(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})~((\mbox{\hyperlink{group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071}{u32\+\_\+t}})((((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+PCLK\+\_\+))$\ast$25U)/(2U$\ast$((\mbox{\hyperlink{group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8}{u64\+\_\+t}})(\+\_\+\+BAUD\+\_\+)))))}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00023}{23}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a3dafeed17fc4cf319b0dd88d7d0fb614}\label{_u_a_r_t__private_8h_a3dafeed17fc4cf319b0dd88d7d0fb614}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_DIVMANT\_SAMPLING8@{UART\_DIVMANT\_SAMPLING8}}
+\index{UART\_DIVMANT\_SAMPLING8@{UART\_DIVMANT\_SAMPLING8}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_DIVMANT\_SAMPLING8}{UART\_DIVMANT\_SAMPLING8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING8(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})~(UART\+\_\+\+DIV\+\_\+\+SAMPLING8((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+))/100U)}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00024}{24}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ae0c8a28dbc006a93dd8e90e8ff8a37a0}\label{_u_a_r_t__private_8h_ae0c8a28dbc006a93dd8e90e8ff8a37a0}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_DIVFRAQ\_SAMPLING8@{UART\_DIVFRAQ\_SAMPLING8}}
+\index{UART\_DIVFRAQ\_SAMPLING8@{UART\_DIVFRAQ\_SAMPLING8}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_DIVFRAQ\_SAMPLING8}{UART\_DIVFRAQ\_SAMPLING8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+DIVFRAQ\+\_\+\+SAMPLING8(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})~((((UART\+\_\+\+DIV\+\_\+\+SAMPLING8((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) -\/ (UART\+\_\+\+DIVMANT\+\_\+\+SAMPLING8((\+\_\+\+PCLK\+\_\+), (\+\_\+\+BAUD\+\_\+)) $\ast$ 100U)) $\ast$ 8U) + 50U) / 100U)}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00025}{25}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ae36ed9e94681494a31a9d8a7bbcc1a2c}\label{_u_a_r_t__private_8h_ae36ed9e94681494a31a9d8a7bbcc1a2c}} 
+\index{UART\_private.h@{UART\_private.h}!UART\_BRR\_SAMPLING8@{UART\_BRR\_SAMPLING8}}
+\index{UART\_BRR\_SAMPLING8@{UART\_BRR\_SAMPLING8}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{UART\_BRR\_SAMPLING8}{UART\_BRR\_SAMPLING8}}
+{\footnotesize\ttfamily \#define UART\+\_\+\+BRR\+\_\+\+SAMPLING8(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+PCLK\+\_\+,  }\item[{}]{\+\_\+\+BAUD\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                                        ((UART\_DIVMANT\_SAMPLING8((\_PCLK\_), (\_BAUD\_)) << 4U) + \(\backslash\)}
+\DoxyCodeLine{                                                        ((UART\_DIVFRAQ\_SAMPLING8((\_PCLK\_), (\_BAUD\_)) \& 0xF8U) << 1U) + \(\backslash\)}
+\DoxyCodeLine{                                                        (UART\_DIVFRAQ\_SAMPLING8((\_PCLK\_), (\_BAUD\_)) \& 0x07U))}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00028}{28}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ac18d18b90771b18977c5f93a36321557}\label{_u_a_r_t__private_8h_ac18d18b90771b18977c5f93a36321557}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_PE\_BIT@{MUSART\_SR\_PE\_BIT}}
+\index{MUSART\_SR\_PE\_BIT@{MUSART\_SR\_PE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_PE\_BIT}{MUSART\_SR\_PE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+PE\+\_\+\+BIT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00037}{37}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_abfd1944673197c6b0e511d0129793fbf}\label{_u_a_r_t__private_8h_abfd1944673197c6b0e511d0129793fbf}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_FE\_BIT@{MUSART\_SR\_FE\_BIT}}
+\index{MUSART\_SR\_FE\_BIT@{MUSART\_SR\_FE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_FE\_BIT}{MUSART\_SR\_FE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+FE\+\_\+\+BIT~1}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00039}{39}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aa0ba433c7143ea2c33a7167a5a83bcc7}\label{_u_a_r_t__private_8h_aa0ba433c7143ea2c33a7167a5a83bcc7}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_NE\_BIT@{MUSART\_SR\_NE\_BIT}}
+\index{MUSART\_SR\_NE\_BIT@{MUSART\_SR\_NE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_NE\_BIT}{MUSART\_SR\_NE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+NE\+\_\+\+BIT~2}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00041}{41}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ac216f68a45cafa48709ac64616087602}\label{_u_a_r_t__private_8h_ac216f68a45cafa48709ac64616087602}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_ORE\_BIT@{MUSART\_SR\_ORE\_BIT}}
+\index{MUSART\_SR\_ORE\_BIT@{MUSART\_SR\_ORE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_ORE\_BIT}{MUSART\_SR\_ORE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+ORE\+\_\+\+BIT~3}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00043}{43}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aefe09d1278fc0e60512b48ca066ffb84}\label{_u_a_r_t__private_8h_aefe09d1278fc0e60512b48ca066ffb84}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_IDLE\_BIT@{MUSART\_SR\_IDLE\_BIT}}
+\index{MUSART\_SR\_IDLE\_BIT@{MUSART\_SR\_IDLE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_IDLE\_BIT}{MUSART\_SR\_IDLE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+IDLE\+\_\+\+BIT~4}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00045}{45}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a115169432cbecb0767d67a593fabd84b}\label{_u_a_r_t__private_8h_a115169432cbecb0767d67a593fabd84b}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_RXNE\_BIT@{MUSART\_SR\_RXNE\_BIT}}
+\index{MUSART\_SR\_RXNE\_BIT@{MUSART\_SR\_RXNE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_RXNE\_BIT}{MUSART\_SR\_RXNE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+RXNE\+\_\+\+BIT~5}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00047}{47}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a1d10221aebb6e8592fbca9ffe0af7913}\label{_u_a_r_t__private_8h_a1d10221aebb6e8592fbca9ffe0af7913}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_TC\_BIT@{MUSART\_SR\_TC\_BIT}}
+\index{MUSART\_SR\_TC\_BIT@{MUSART\_SR\_TC\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_TC\_BIT}{MUSART\_SR\_TC\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+TC\+\_\+\+BIT~6}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00049}{49}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a9fb4ebcfe1b22a7b96250ccde22b887e}\label{_u_a_r_t__private_8h_a9fb4ebcfe1b22a7b96250ccde22b887e}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_TXE\_BIT@{MUSART\_SR\_TXE\_BIT}}
+\index{MUSART\_SR\_TXE\_BIT@{MUSART\_SR\_TXE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_TXE\_BIT}{MUSART\_SR\_TXE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+TXE\+\_\+\+BIT~7}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00051}{51}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a380b8c035ea1c34817cfe772a78cb1c3}\label{_u_a_r_t__private_8h_a380b8c035ea1c34817cfe772a78cb1c3}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_LBD\_BIT@{MUSART\_SR\_LBD\_BIT}}
+\index{MUSART\_SR\_LBD\_BIT@{MUSART\_SR\_LBD\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_LBD\_BIT}{MUSART\_SR\_LBD\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+LBD\+\_\+\+BIT~8}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00053}{53}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a428b426498a31a34812ed265de7664f6}\label{_u_a_r_t__private_8h_a428b426498a31a34812ed265de7664f6}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_SR\_CTS\_BIT@{MUSART\_SR\_CTS\_BIT}}
+\index{MUSART\_SR\_CTS\_BIT@{MUSART\_SR\_CTS\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_SR\_CTS\_BIT}{MUSART\_SR\_CTS\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+SR\+\_\+\+CTS\+\_\+\+BIT~9}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00055}{55}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ab20477c483c28c87927d06ef770e2ad3}\label{_u_a_r_t__private_8h_ab20477c483c28c87927d06ef770e2ad3}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_SBK\_BIT@{MUSART\_CR1\_SBK\_BIT}}
+\index{MUSART\_CR1\_SBK\_BIT@{MUSART\_CR1\_SBK\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_SBK\_BIT}{MUSART\_CR1\_SBK\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+SBK\+\_\+\+BIT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00061}{61}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a92ae80507ab88480bed25805c70a657b}\label{_u_a_r_t__private_8h_a92ae80507ab88480bed25805c70a657b}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_RWU\_BIT@{MUSART\_CR1\_RWU\_BIT}}
+\index{MUSART\_CR1\_RWU\_BIT@{MUSART\_CR1\_RWU\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_RWU\_BIT}{MUSART\_CR1\_RWU\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+RWU\+\_\+\+BIT~1}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00063}{63}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_af075c44b5c18bbf9aded7ff89a966376}\label{_u_a_r_t__private_8h_af075c44b5c18bbf9aded7ff89a966376}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_RE\_BIT@{MUSART\_CR1\_RE\_BIT}}
+\index{MUSART\_CR1\_RE\_BIT@{MUSART\_CR1\_RE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_RE\_BIT}{MUSART\_CR1\_RE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+RE\+\_\+\+BIT~2}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00065}{65}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a9d1bbbd383d81b3e9d4b657abe2c401a}\label{_u_a_r_t__private_8h_a9d1bbbd383d81b3e9d4b657abe2c401a}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_TE\_BIT@{MUSART\_CR1\_TE\_BIT}}
+\index{MUSART\_CR1\_TE\_BIT@{MUSART\_CR1\_TE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_TE\_BIT}{MUSART\_CR1\_TE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+TE\+\_\+\+BIT~3}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00067}{67}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a1319de385bed6d81360463c106903591}\label{_u_a_r_t__private_8h_a1319de385bed6d81360463c106903591}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_IDLEIE\_BIT@{MUSART\_CR1\_IDLEIE\_BIT}}
+\index{MUSART\_CR1\_IDLEIE\_BIT@{MUSART\_CR1\_IDLEIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_IDLEIE\_BIT}{MUSART\_CR1\_IDLEIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+IDLEIE\+\_\+\+BIT~4}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00069}{69}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a5507a61546d8ae77e5baf30e501a1026}\label{_u_a_r_t__private_8h_a5507a61546d8ae77e5baf30e501a1026}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_RXNEIE\_BIT@{MUSART\_CR1\_RXNEIE\_BIT}}
+\index{MUSART\_CR1\_RXNEIE\_BIT@{MUSART\_CR1\_RXNEIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_RXNEIE\_BIT}{MUSART\_CR1\_RXNEIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+RXNEIE\+\_\+\+BIT~5}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00071}{71}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a80c7c65694c756fb9f99e97c4c5c8263}\label{_u_a_r_t__private_8h_a80c7c65694c756fb9f99e97c4c5c8263}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_TCIE\_BIT@{MUSART\_CR1\_TCIE\_BIT}}
+\index{MUSART\_CR1\_TCIE\_BIT@{MUSART\_CR1\_TCIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_TCIE\_BIT}{MUSART\_CR1\_TCIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+TCIE\+\_\+\+BIT~6}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00073}{73}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_adf3f133baa1b239f7de16c0026fe3b43}\label{_u_a_r_t__private_8h_adf3f133baa1b239f7de16c0026fe3b43}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_TXEIE\_BIT@{MUSART\_CR1\_TXEIE\_BIT}}
+\index{MUSART\_CR1\_TXEIE\_BIT@{MUSART\_CR1\_TXEIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_TXEIE\_BIT}{MUSART\_CR1\_TXEIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+TXEIE\+\_\+\+BIT~7}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00075}{75}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a90a0c6e4029830ee2e3a476861a8594a}\label{_u_a_r_t__private_8h_a90a0c6e4029830ee2e3a476861a8594a}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_PEIE\_BIT@{MUSART\_CR1\_PEIE\_BIT}}
+\index{MUSART\_CR1\_PEIE\_BIT@{MUSART\_CR1\_PEIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_PEIE\_BIT}{MUSART\_CR1\_PEIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+PEIE\+\_\+\+BIT~8}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00077}{77}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a3a17627d8072b5eccf0b0c9d65ca08cb}\label{_u_a_r_t__private_8h_a3a17627d8072b5eccf0b0c9d65ca08cb}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_PS\_BIT@{MUSART\_CR1\_PS\_BIT}}
+\index{MUSART\_CR1\_PS\_BIT@{MUSART\_CR1\_PS\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_PS\_BIT}{MUSART\_CR1\_PS\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+PS\+\_\+\+BIT~9}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00079}{79}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a3869b2fa48a3c7ad277eeb32ac8b6f9b}\label{_u_a_r_t__private_8h_a3869b2fa48a3c7ad277eeb32ac8b6f9b}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_PCE\_BIT@{MUSART\_CR1\_PCE\_BIT}}
+\index{MUSART\_CR1\_PCE\_BIT@{MUSART\_CR1\_PCE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_PCE\_BIT}{MUSART\_CR1\_PCE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+PCE\+\_\+\+BIT~10}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00081}{81}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a6883e68ab1b9d4e2e9402fc3875aaf85}\label{_u_a_r_t__private_8h_a6883e68ab1b9d4e2e9402fc3875aaf85}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_WAKE\_BIT@{MUSART\_CR1\_WAKE\_BIT}}
+\index{MUSART\_CR1\_WAKE\_BIT@{MUSART\_CR1\_WAKE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_WAKE\_BIT}{MUSART\_CR1\_WAKE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+WAKE\+\_\+\+BIT~11}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00083}{83}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a2e075bd040d19bcf801cd2a8ac7946c8}\label{_u_a_r_t__private_8h_a2e075bd040d19bcf801cd2a8ac7946c8}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_M\_BIT@{MUSART\_CR1\_M\_BIT}}
+\index{MUSART\_CR1\_M\_BIT@{MUSART\_CR1\_M\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_M\_BIT}{MUSART\_CR1\_M\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+M\+\_\+\+BIT~12}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00085}{85}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a350860889903501c94a59df0ad77dacd}\label{_u_a_r_t__private_8h_a350860889903501c94a59df0ad77dacd}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_UE\_BIT@{MUSART\_CR1\_UE\_BIT}}
+\index{MUSART\_CR1\_UE\_BIT@{MUSART\_CR1\_UE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_UE\_BIT}{MUSART\_CR1\_UE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+UE\+\_\+\+BIT~13}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00087}{87}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a291d33518a88ef7cd163b3a6fb4feef8}\label{_u_a_r_t__private_8h_a291d33518a88ef7cd163b3a6fb4feef8}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR1\_OVER8\_BIT@{MUSART\_CR1\_OVER8\_BIT}}
+\index{MUSART\_CR1\_OVER8\_BIT@{MUSART\_CR1\_OVER8\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR1\_OVER8\_BIT}{MUSART\_CR1\_OVER8\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR1\+\_\+\+OVER8\+\_\+\+BIT~15}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00089}{89}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_af1814754726fd69c983720b9251f2cf7}\label{_u_a_r_t__private_8h_af1814754726fd69c983720b9251f2cf7}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_ADD0\_BIT@{MUSART\_CR2\_ADD0\_BIT}}
+\index{MUSART\_CR2\_ADD0\_BIT@{MUSART\_CR2\_ADD0\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_ADD0\_BIT}{MUSART\_CR2\_ADD0\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+ADD0\+\_\+\+BIT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00095}{95}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a755c70aab09fce20586df8e74772fb98}\label{_u_a_r_t__private_8h_a755c70aab09fce20586df8e74772fb98}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_ADD1\_BIT@{MUSART\_CR2\_ADD1\_BIT}}
+\index{MUSART\_CR2\_ADD1\_BIT@{MUSART\_CR2\_ADD1\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_ADD1\_BIT}{MUSART\_CR2\_ADD1\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+ADD1\+\_\+\+BIT~1}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00096}{96}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a8e1bb4c49e15dda0e86ca159514bad31}\label{_u_a_r_t__private_8h_a8e1bb4c49e15dda0e86ca159514bad31}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_ADD2\_BIT@{MUSART\_CR2\_ADD2\_BIT}}
+\index{MUSART\_CR2\_ADD2\_BIT@{MUSART\_CR2\_ADD2\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_ADD2\_BIT}{MUSART\_CR2\_ADD2\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+ADD2\+\_\+\+BIT~2}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00097}{97}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_af5653a175ec110191cf40ae280cdae1c}\label{_u_a_r_t__private_8h_af5653a175ec110191cf40ae280cdae1c}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_ADD3\_BIT@{MUSART\_CR2\_ADD3\_BIT}}
+\index{MUSART\_CR2\_ADD3\_BIT@{MUSART\_CR2\_ADD3\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_ADD3\_BIT}{MUSART\_CR2\_ADD3\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+ADD3\+\_\+\+BIT~3}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00098}{98}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a8945ba32448a2e48daf0f83e1fd42a8c}\label{_u_a_r_t__private_8h_a8945ba32448a2e48daf0f83e1fd42a8c}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_LBDL\_BIT@{MUSART\_CR2\_LBDL\_BIT}}
+\index{MUSART\_CR2\_LBDL\_BIT@{MUSART\_CR2\_LBDL\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_LBDL\_BIT}{MUSART\_CR2\_LBDL\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+LBDL\+\_\+\+BIT~5}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00100}{100}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aba7a456449a2be05421a285b57879b07}\label{_u_a_r_t__private_8h_aba7a456449a2be05421a285b57879b07}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_LBDIE\_BIT@{MUSART\_CR2\_LBDIE\_BIT}}
+\index{MUSART\_CR2\_LBDIE\_BIT@{MUSART\_CR2\_LBDIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_LBDIE\_BIT}{MUSART\_CR2\_LBDIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+LBDIE\+\_\+\+BIT~6}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00102}{102}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a0122e3c65a33534eac8732a2e917845d}\label{_u_a_r_t__private_8h_a0122e3c65a33534eac8732a2e917845d}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_LBCL\_BIT@{MUSART\_CR2\_LBCL\_BIT}}
+\index{MUSART\_CR2\_LBCL\_BIT@{MUSART\_CR2\_LBCL\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_LBCL\_BIT}{MUSART\_CR2\_LBCL\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+LBCL\+\_\+\+BIT~8}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00104}{104}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a4ec84796cf476540e9a14223500966d6}\label{_u_a_r_t__private_8h_a4ec84796cf476540e9a14223500966d6}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_CPHA\_BIT@{MUSART\_CR2\_CPHA\_BIT}}
+\index{MUSART\_CR2\_CPHA\_BIT@{MUSART\_CR2\_CPHA\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_CPHA\_BIT}{MUSART\_CR2\_CPHA\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+CPHA\+\_\+\+BIT~9}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00106}{106}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a13d03234ac40d29225e0c649e9b0e587}\label{_u_a_r_t__private_8h_a13d03234ac40d29225e0c649e9b0e587}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_CPOL\_BIT@{MUSART\_CR2\_CPOL\_BIT}}
+\index{MUSART\_CR2\_CPOL\_BIT@{MUSART\_CR2\_CPOL\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_CPOL\_BIT}{MUSART\_CR2\_CPOL\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+CPOL\+\_\+\+BIT~10}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00108}{108}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aea289c162882585123e7b0295fa4b77b}\label{_u_a_r_t__private_8h_aea289c162882585123e7b0295fa4b77b}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_CLKEN\_BIT@{MUSART\_CR2\_CLKEN\_BIT}}
+\index{MUSART\_CR2\_CLKEN\_BIT@{MUSART\_CR2\_CLKEN\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_CLKEN\_BIT}{MUSART\_CR2\_CLKEN\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+CLKEN\+\_\+\+BIT~11}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00110}{110}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a980d75b6894b27927b1f6a1c96f72366}\label{_u_a_r_t__private_8h_a980d75b6894b27927b1f6a1c96f72366}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_STOP\_BIT@{MUSART\_CR2\_STOP\_BIT}}
+\index{MUSART\_CR2\_STOP\_BIT@{MUSART\_CR2\_STOP\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_STOP\_BIT}{MUSART\_CR2\_STOP\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+STOP\+\_\+\+BIT~12}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00112}{112}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a6efdb1a19e055a17ef0332c785ddb7e3}\label{_u_a_r_t__private_8h_a6efdb1a19e055a17ef0332c785ddb7e3}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_STOP0\_BIT@{MUSART\_CR2\_STOP0\_BIT}}
+\index{MUSART\_CR2\_STOP0\_BIT@{MUSART\_CR2\_STOP0\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_STOP0\_BIT}{MUSART\_CR2\_STOP0\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+STOP0\+\_\+\+BIT~12}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00114}{114}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aad54681e707cc9e15c11c696ef19de85}\label{_u_a_r_t__private_8h_aad54681e707cc9e15c11c696ef19de85}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_STOP1\_BIT@{MUSART\_CR2\_STOP1\_BIT}}
+\index{MUSART\_CR2\_STOP1\_BIT@{MUSART\_CR2\_STOP1\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_STOP1\_BIT}{MUSART\_CR2\_STOP1\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+STOP1\+\_\+\+BIT~13}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00115}{115}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aa018fbd0697fb86da66ffb37286aed42}\label{_u_a_r_t__private_8h_aa018fbd0697fb86da66ffb37286aed42}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR2\_LINEN\_BIT@{MUSART\_CR2\_LINEN\_BIT}}
+\index{MUSART\_CR2\_LINEN\_BIT@{MUSART\_CR2\_LINEN\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR2\_LINEN\_BIT}{MUSART\_CR2\_LINEN\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR2\+\_\+\+LINEN\+\_\+\+BIT~14}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00117}{117}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a7a3961a1a0ebe6a86489875249aade27}\label{_u_a_r_t__private_8h_a7a3961a1a0ebe6a86489875249aade27}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_CTSIE\_BIT@{MUSART\_CR3\_CTSIE\_BIT}}
+\index{MUSART\_CR3\_CTSIE\_BIT@{MUSART\_CR3\_CTSIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_CTSIE\_BIT}{MUSART\_CR3\_CTSIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+CTSIE\+\_\+\+BIT~10}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00123}{123}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_af1ba7620f2afa1314205dc1aca34da4a}\label{_u_a_r_t__private_8h_af1ba7620f2afa1314205dc1aca34da4a}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_CTSE\_BIT@{MUSART\_CR3\_CTSE\_BIT}}
+\index{MUSART\_CR3\_CTSE\_BIT@{MUSART\_CR3\_CTSE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_CTSE\_BIT}{MUSART\_CR3\_CTSE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+CTSE\+\_\+\+BIT~9}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00125}{125}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a5a27d1942bd6f54db62eef89c8d19199}\label{_u_a_r_t__private_8h_a5a27d1942bd6f54db62eef89c8d19199}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_RTSE\_BIT@{MUSART\_CR3\_RTSE\_BIT}}
+\index{MUSART\_CR3\_RTSE\_BIT@{MUSART\_CR3\_RTSE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_RTSE\_BIT}{MUSART\_CR3\_RTSE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+RTSE\+\_\+\+BIT~8}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00127}{127}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a9427e7060647286b8f5803eb1c9dd8a2}\label{_u_a_r_t__private_8h_a9427e7060647286b8f5803eb1c9dd8a2}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_DMAT\_BIT@{MUSART\_CR3\_DMAT\_BIT}}
+\index{MUSART\_CR3\_DMAT\_BIT@{MUSART\_CR3\_DMAT\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_DMAT\_BIT}{MUSART\_CR3\_DMAT\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+DMAT\+\_\+\+BIT~7}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00129}{129}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a959fcfab6a24e6540ee534bd22439bb8}\label{_u_a_r_t__private_8h_a959fcfab6a24e6540ee534bd22439bb8}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_DMAR\_BIT@{MUSART\_CR3\_DMAR\_BIT}}
+\index{MUSART\_CR3\_DMAR\_BIT@{MUSART\_CR3\_DMAR\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_DMAR\_BIT}{MUSART\_CR3\_DMAR\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+DMAR\+\_\+\+BIT~6}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00131}{131}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a620db1948e2e8caee1334746facd5f89}\label{_u_a_r_t__private_8h_a620db1948e2e8caee1334746facd5f89}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_SCEN\_BIT@{MUSART\_CR3\_SCEN\_BIT}}
+\index{MUSART\_CR3\_SCEN\_BIT@{MUSART\_CR3\_SCEN\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_SCEN\_BIT}{MUSART\_CR3\_SCEN\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+SCEN\+\_\+\+BIT~5}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00133}{133}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aec1e59d0d8728b3b79f6b3094b6b12da}\label{_u_a_r_t__private_8h_aec1e59d0d8728b3b79f6b3094b6b12da}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_NACK\_BIT@{MUSART\_CR3\_NACK\_BIT}}
+\index{MUSART\_CR3\_NACK\_BIT@{MUSART\_CR3\_NACK\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_NACK\_BIT}{MUSART\_CR3\_NACK\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+NACK\+\_\+\+BIT~4}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00135}{135}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a013bf4e007dcb9b50391797feb3e94d4}\label{_u_a_r_t__private_8h_a013bf4e007dcb9b50391797feb3e94d4}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_HDSEL\_BIT@{MUSART\_CR3\_HDSEL\_BIT}}
+\index{MUSART\_CR3\_HDSEL\_BIT@{MUSART\_CR3\_HDSEL\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_HDSEL\_BIT}{MUSART\_CR3\_HDSEL\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+HDSEL\+\_\+\+BIT~3}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00137}{137}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_ae5a23e51d15e6f4b71eb9c2c6ccd9e73}\label{_u_a_r_t__private_8h_ae5a23e51d15e6f4b71eb9c2c6ccd9e73}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_IRLP\_BIT@{MUSART\_CR3\_IRLP\_BIT}}
+\index{MUSART\_CR3\_IRLP\_BIT@{MUSART\_CR3\_IRLP\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_IRLP\_BIT}{MUSART\_CR3\_IRLP\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+IRLP\+\_\+\+BIT~2}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00139}{139}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_a520e516ccb0ea2e4ba379aa53a24340d}\label{_u_a_r_t__private_8h_a520e516ccb0ea2e4ba379aa53a24340d}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_IREN\_BIT@{MUSART\_CR3\_IREN\_BIT}}
+\index{MUSART\_CR3\_IREN\_BIT@{MUSART\_CR3\_IREN\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_IREN\_BIT}{MUSART\_CR3\_IREN\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+IREN\+\_\+\+BIT~1}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00141}{141}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+
+\mbox{\Hypertarget{_u_a_r_t__private_8h_aa6b2b2fcfdad3cae9e21227107967afb}\label{_u_a_r_t__private_8h_aa6b2b2fcfdad3cae9e21227107967afb}} 
+\index{UART\_private.h@{UART\_private.h}!MUSART\_CR3\_EIE\_BIT@{MUSART\_CR3\_EIE\_BIT}}
+\index{MUSART\_CR3\_EIE\_BIT@{MUSART\_CR3\_EIE\_BIT}!UART\_private.h@{UART\_private.h}}
+\doxysubsubsection{\texorpdfstring{MUSART\_CR3\_EIE\_BIT}{MUSART\_CR3\_EIE\_BIT}}
+{\footnotesize\ttfamily \#define MUSART\+\_\+\+CR3\+\_\+\+EIE\+\_\+\+BIT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_u_a_r_t__private_8h_source_l00143}{143}} of file \mbox{\hyperlink{_u_a_r_t__private_8h_source}{UART\+\_\+private.\+h}}.
+

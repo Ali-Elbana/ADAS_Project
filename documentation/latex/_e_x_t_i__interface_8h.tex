@@ -154,7 +154,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00042}{42}} of 
 \DoxyCodeLine{00087     \textcolor{comment}{// Enable EXTI on a line.}}
 \DoxyCodeLine{00088     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR = 0;}
 \DoxyCodeLine{00089 }
-\DoxyCodeLine{00090     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR |= (\mbox{\hyperlink{group__exti__line__status_ga514ad415fb6125ba296793df7d1a468a}{ENABLE}} << L\_u8ShiftedOffset);}
+\DoxyCodeLine{00090     \mbox{\hyperlink{group__exti__registers_gade59853bea97901ef8816f8d8623cdf2}{MEXTI}}-\/>IMR |= (ENABLE << L\_u8ShiftedOffset);}
 \DoxyCodeLine{00091 }
 \DoxyCodeLine{00092 \textcolor{comment}{// Set EXTI Triggered status on a line.}}
 \DoxyCodeLine{00093 \textcolor{preprocessor}{\#if EXTI\_LINE0\_TRIGGER == EXTI\_RisingEdge}}
@@ -325,7 +325,7 @@ Definition at line \mbox{\hyperlink{_e_x_t_i__program_8c_source_l00042}{42}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00085}{ENABLE}}, \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00057}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
+References \mbox{\hyperlink{_l_s_t_d___v_a_l_u_e_s_8h_source_l00056}{INITIAL\+\_\+\+ZERO}}, \mbox{\hyperlink{_e_x_t_i__private_8h_source_l00071}{MEXTI}}, \mbox{\hyperlink{_l_s_t_d___b_i_t_m_a_t_h_8h_source_l00023}{SET\+\_\+\+BIT}}, and \mbox{\hyperlink{_l_s_t_d___c_o_m_p_i_l_e_r_8h_source_l00023}{VAR}}.
 
 \mbox{\Hypertarget{_e_x_t_i__interface_8h_ac3c0a131d05ffc06852eb9867ccce3ea}\label{_e_x_t_i__interface_8h_ac3c0a131d05ffc06852eb9867ccce3ea}} 
 \index{EXTI\_interface.h@{EXTI\_interface.h}!MEXTI\_vInit\_WithStruct@{MEXTI\_vInit\_WithStruct}}

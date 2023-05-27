@@ -17,42 +17,40 @@
 #include "SysTick_private.h"
 #include "SysTick_config.h"
 
-STATIC P2FUNC(VAR(void), GS_vCallbackFunc)(void) = NULL ;
+STATIC P2FUNC(VAR(void), GS_vCallbackFunc)(void) = NULL;
 
-STATIC VAR(u8_t) GS_u8MyIntervalMode = INITIAL_ZERO ;
-
+STATIC VAR(u8_t) GS_u8MyIntervalMode = INITIAL_ZERO;
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vInit(void)
+void MSysTick_vInit(void)
 {
 
 	// Reset timer value.
 	SysTick->VAL = INITIAL_ZERO;
 
-	// Choose the input CLK source.
-	#if CLK_SOURCE == AHB_DividedBy8
-		CLR_BIT(SysTick->CTRL, CLKSOURCE);
+// Choose the input CLK source.
+#if CLK_SOURCE == AHB_DividedBy8
+	CLR_BIT(SysTick->CTRL, CLKSOURCE);
 
-	#elif CLK_SOURCE == AHB
-		SET_BIT(SysTick->CTRL, CLKSOURCE);
-	#endif
+#elif CLK_SOURCE == AHB
+	SET_BIT(SysTick->CTRL, CLKSOURCE);
+#endif
 
-	// SysTick exception request enable.
-	#if Exception_Request == Dont_AssertRequest
-		CLR_BIT( SysTick->CTRL, TICKINT ) ;
+// SysTick exception request enable.
+#if Exception_Request == Dont_AssertRequest
+	CLR_BIT(SysTick->CTRL, TICKINT);
 
-	#elif Exception_Request == AssertRequest
-		SET_BIT( SysTick->CTRL, TICKINT ) ;
-	#endif
-
+#elif Exception_Request == AssertRequest
+	SET_BIT(SysTick->CTRL, TICKINT);
+#endif
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
+void MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
 {
 
 	// Load Ticks to the load register.
@@ -62,40 +60,41 @@ FUNC(void) MSysTick_vSetBusyWait(VAR(u32_t) A_u32Ticks)
 	SysTick->VAL = INITIAL_ZERO;
 
 	// Start Timer.
-	SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+	SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 	// Wait till the flag is raised (= 1).
-	while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
+	while (GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED)
+		;
 
 	// Stop the timer.
-	CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+	CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 	// Clear the LOAD and VAL registers
 	SysTick->LOAD = INITIAL_ZERO;
 	SysTick->VAL = INITIAL_ZERO;
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
-FUNC(void) MSysTick_vDelay( VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType )
+void MSysTick_vDelay(VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType)
 {
 
-	VAR(u32_t) l_u32TickNum = INITIAL_ZERO ;
+	VAR(u32_t)
+	l_u32TickNum = INITIAL_ZERO;
 
-	if( A_u32TickType == MILLI_SEC )
+	if (A_u32TickType == MILLI_SEC)
 	{
-		l_u32TickNum = (A_u32Ticks * 1000) - 1 ;
+		l_u32TickNum = (A_u32Ticks * 1000) - 1;
 	}
 
-	else if( A_u32TickType == MICRO_SEC )
+	else if (A_u32TickType == MICRO_SEC)
 	{
-		l_u32TickNum = A_u32Ticks - 1 ;
+		l_u32TickNum = A_u32Ticks - 1;
 	}
 
-	else if( A_u32TickType == SEC )
+	else if (A_u32TickType == SEC)
 	{
-		l_u32TickNum = (A_u32Ticks * 1000000) - 1 ;
+		l_u32TickNum = (A_u32Ticks * 1000000) - 1;
 	}
 
 	else
@@ -113,31 +112,31 @@ FUNC(void) MSysTick_vDelay( VAR(u32_t) A_u32Ticks, VAR(u32_t) A_u32TickType )
 		SysTick->VAL = INITIAL_ZERO;
 
 		// Start Timer.
-		SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Wait till the flag is raised (= 1).
-		while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
+		while (GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED)
+			;
 
 		// Stop the timer.
-		CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Clear the LOAD and VAL registers
 		SysTick->LOAD = INITIAL_ZERO;
-		SysTick->VAL  = INITIAL_ZERO;
-
+		SysTick->VAL = INITIAL_ZERO;
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vDelayMicroSec( VAR(u32_t) A_u32Ticks )
+void MSysTick_vDelayMicroSec(VAR(u32_t) A_u32Ticks)
 {
 
-	VAR(u32_t) l_u32TickNum = INITIAL_ZERO ;
+	VAR(u32_t)
+	l_u32TickNum = INITIAL_ZERO;
 
-	l_u32TickNum = (A_u32Ticks) - 1 ;
+	l_u32TickNum = (A_u32Ticks)-1;
 
 	if (l_u32TickNum < MAX_TICKS)
 	{
@@ -149,31 +148,31 @@ FUNC(void) MSysTick_vDelayMicroSec( VAR(u32_t) A_u32Ticks )
 		SysTick->VAL = INITIAL_ZERO;
 
 		// Start Timer.
-		SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Wait till the flag is raised (= 1).
-		while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
+		while (GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED)
+			;
 
 		// Stop the timer.
-		CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Clear the LOAD and VAL registers
 		SysTick->LOAD = INITIAL_ZERO;
-		SysTick->VAL  = INITIAL_ZERO;
-
+		SysTick->VAL = INITIAL_ZERO;
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vDelayMilliSec( VAR(u32_t) A_u32Ticks )
+void MSysTick_vDelayMilliSec(VAR(u32_t) A_u32Ticks)
 {
 
-	VAR(u32_t) l_u32TickNum = INITIAL_ZERO ;
+	VAR(u32_t)
+	l_u32TickNum = INITIAL_ZERO;
 
-	l_u32TickNum = (A_u32Ticks * 1000) - 1 ;
+	l_u32TickNum = (A_u32Ticks * 1000) - 1;
 
 	if (l_u32TickNum < MAX_TICKS)
 	{
@@ -185,31 +184,31 @@ FUNC(void) MSysTick_vDelayMilliSec( VAR(u32_t) A_u32Ticks )
 		SysTick->VAL = INITIAL_ZERO;
 
 		// Start Timer.
-		SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Wait till the flag is raised (= 1).
-		while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
+		while (GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED)
+			;
 
 		// Stop the timer.
-		CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Clear the LOAD and VAL registers
 		SysTick->LOAD = INITIAL_ZERO;
-		SysTick->VAL  = INITIAL_ZERO;
-
+		SysTick->VAL = INITIAL_ZERO;
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vDelaySec( VAR(u32_t) A_u32Ticks )
+void MSysTick_vDelaySec(VAR(u32_t) A_u32Ticks)
 {
 
-	VAR(u32_t) l_u32TickNum = INITIAL_ZERO ;
+	VAR(u32_t)
+	l_u32TickNum = INITIAL_ZERO;
 
-	l_u32TickNum = (A_u32Ticks * 1000000) - 1 ;
+	l_u32TickNum = (A_u32Ticks * 1000000) - 1;
 
 	if (l_u32TickNum < MAX_TICKS)
 	{
@@ -221,98 +220,96 @@ FUNC(void) MSysTick_vDelaySec( VAR(u32_t) A_u32Ticks )
 		SysTick->VAL = INITIAL_ZERO;
 
 		// Start Timer.
-		SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Wait till the flag is raised (= 1).
-		while( GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED ) ;
+		while (GET_BIT(SysTick->CTRL, COUNTFLAG) == FLAG_CLEARED)
+			;
 
 		// Stop the timer.
-		CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Clear the LOAD and VAL registers
 		SysTick->LOAD = INITIAL_ZERO;
-		SysTick->VAL  = INITIAL_ZERO;
-
+		SysTick->VAL = INITIAL_ZERO;
 	}
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, P2FUNC(VAR(void), A_Fptr)(void))
-{
-
-	// Save the callback.
-	GS_vCallbackFunc = A_Fptr ;
-
-	// Reset timer value.
-	SysTick->VAL = INITIAL_ZERO ;
-
-	// Load Ticks to the load register.
-	SysTick->LOAD = A_u32Ticks ;
-
-	// Start Timer.
-	SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
-
-	// Set interval mode to single.
-	GS_u8MyIntervalMode = SINGLE_INTERVAL_MODE ;
-
-	// Enable the IRQ.
-	SET_BIT( SysTick->CTRL, TICKINT ) ;
-
-}
-
-/*******************************************************************************************************************/
-/******************************************************************************************************************/
-
-FUNC(void) MSysTick_vSetPeriodicInterval(VAR(u32_t) A_u32Ticks, P2FUNC(VAR(void), A_Fptr)(void))
+void MSysTick_vSetSingleInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(void))
 {
 
 	// Save the callback.
 	GS_vCallbackFunc = A_Fptr;
 
 	// Reset timer value.
-	SysTick->VAL = INITIAL_ZERO ;
+	SysTick->VAL = INITIAL_ZERO;
 
 	// Load Ticks to the load register.
 	SysTick->LOAD = A_u32Ticks;
 
 	// Start Timer.
-	SET_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+	SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
+
+	// Set interval mode to single.
+	GS_u8MyIntervalMode = SINGLE_INTERVAL_MODE;
+
+	// Enable the IRQ.
+	SET_BIT(SysTick->CTRL, TICKINT);
+}
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+void MSysTick_vSetPeriodicInterval(VAR(u32_t) A_u32Ticks, P2FUNC(void, A_Fptr)(void))
+{
+
+	// Save the callback.
+	GS_vCallbackFunc = A_Fptr;
+
+	// Reset timer value.
+	SysTick->VAL = INITIAL_ZERO;
+
+	// Load Ticks to the load register.
+	SysTick->LOAD = A_u32Ticks;
+
+	// Start Timer.
+	SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 	// Set interval mode to single.
 	GS_u8MyIntervalMode = PERIODIC_INTERVAL_MODE;
 
 	// Enable the IRQ.
-	SET_BIT( SysTick->CTRL, TICKINT ) ;
-
+	SET_BIT(SysTick->CTRL, TICKINT);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vStopInterval(void)
+void MSysTick_vStopInterval(void)
 {
 
 	// Disable the IRQ.
-	SET_BIT( SysTick->CTRL, TICKINT ) ;
+	SET_BIT(SysTick->CTRL, TICKINT);
 
 	// Stop the timer.
-	SET_BIT( SysTick->CTRL, TICKINT ) ;
+	SET_BIT(SysTick->CTRL, TICKINT);
 
 	// Clear the LOAD and VAL registers
 	SysTick->LOAD = INITIAL_ZERO;
 	SysTick->VAL = INITIAL_ZERO;
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-VAR(u32_t) MSysTick_u32GetElapsedTime(void)
+VAR(u32_t)
+MSysTick_u32GetElapsedTime(void)
 {
-	VAR(u32_t) L_u32ElapsedTime = INITIAL_ZERO;
+	VAR(u32_t)
+	L_u32ElapsedTime = INITIAL_ZERO;
 
 	L_u32ElapsedTime = (SysTick->LOAD - SysTick->VAL);
 
@@ -322,9 +319,11 @@ VAR(u32_t) MSysTick_u32GetElapsedTime(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-VAR(u32_t) MSysTick_u32GetRemainingTime(void)
+VAR(u32_t)
+MSysTick_u32GetRemainingTime(void)
 {
-	VAR(u32_t) L_u32RemainingTime = INITIAL_ZERO;
+	VAR(u32_t)
+	L_u32RemainingTime = INITIAL_ZERO;
 
 	L_u32RemainingTime = SysTick->VAL;
 
@@ -334,26 +333,24 @@ VAR(u32_t) MSysTick_u32GetRemainingTime(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vEnable(void)
+void MSysTick_vEnable(void)
 {
 
 	// Start Timer.
 	SET_BIT(SysTick->CTRL, COUNTER_ENABLE);
-
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vDisable(void)
+void MSysTick_vDisable(void)
 {
 
 	// Disable the peripheral interrupt.
-	SET_BIT( SysTick->CTRL, TICKINT ) ;
+	SET_BIT(SysTick->CTRL, TICKINT);
 
 	// Stop the timer.
 	CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
-
 }
 
 /*******************************************************************************************************************/
@@ -361,21 +358,21 @@ FUNC(void) MSysTick_vDisable(void)
 
 void MSysTick_vDisableException(void)
 {
-	CLR_BIT(SysTick->CTRL, TICKINT) ;
+	CLR_BIT(SysTick->CTRL, TICKINT);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MSysTick_vEnableException(void)
+void MSysTick_vEnableException(void)
 {
-	SET_BIT(SysTick->CTRL, TICKINT) ;
+	SET_BIT(SysTick->CTRL, TICKINT);
 }
 
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) SysTick_Handler(void)
+void SysTick_Handler(void)
 {
 
 	volatile VAR(u8_t) L_u8ReadFlag = INITIAL_ZERO;
@@ -389,10 +386,10 @@ FUNC(void) SysTick_Handler(void)
 	if (GS_u8MyIntervalMode == SINGLE_INTERVAL_MODE)
 	{
 		// Disable the IRQ.
-		CLR_BIT( SysTick->CTRL, TICKINT ) ;
+		CLR_BIT(SysTick->CTRL, TICKINT);
 
 		// Stop the timer.
-		CLR_BIT( SysTick->CTRL, COUNTER_ENABLE ) ;
+		CLR_BIT(SysTick->CTRL, COUNTER_ENABLE);
 
 		// Clear the LOAD and VAL registers
 		SysTick->LOAD = INITIAL_ZERO;
@@ -403,7 +400,6 @@ FUNC(void) SysTick_Handler(void)
 
 	// Clear IRQ flag.
 	L_u8ReadFlag = GET_BIT(SysTick->CTRL, COUNTFLAG);
-
 }
 
 /*******************************************************************************************************************/

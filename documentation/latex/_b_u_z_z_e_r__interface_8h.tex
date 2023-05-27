@@ -1,0 +1,93 @@
+\hypertarget{_b_u_z_z_e_r__interface_8h}{}\doxysection{COTS/\+HAL/\+BUZZER/\+BUZZER\+\_\+interface.h File Reference}
+\label{_b_u_z_z_e_r__interface_8h}\index{COTS/HAL/BUZZER/BUZZER\_interface.h@{COTS/HAL/BUZZER/BUZZER\_interface.h}}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}}
+\begin{DoxyCompactList}\small\item\em Buzzer configuration structure for Buzzer initialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_afb08d363eb0c3a5e9c1363fafce89c7e}{HBUZZER\+\_\+v\+Init}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}}) p\+Buzzer\+\_\+\+Cfg)
+\begin{DoxyCompactList}\small\item\em This function is used to initialize the Buzzer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_a3fba2f43cd7b980367a9f7ceae2205de}{HBUZZER\+\_\+v\+Sound\+On}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}}) p\+Buzzer\+\_\+\+Cfg)
+\begin{DoxyCompactList}\small\item\em This function is used to sound the Buzzer on. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_a1f8b56091ccba9dd067e46cb9ad61cc4}{HBUZZER\+\_\+v\+Sound\+Off}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}}) p\+Buzzer\+\_\+\+Cfg)
+\begin{DoxyCompactList}\small\item\em This function is used to sound the Buzzer off. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_b_u_z_z_e_r__interface_8h_a0614a5131fcb0dad7029dae4262efd0b}{HBUZZER\+\_\+v\+Toggle\+Sound}} (\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}}) p\+Buzzer\+\_\+\+Cfg)
+\begin{DoxyCompactList}\small\item\em This function is used to toggle the sound of the buzzer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_b_u_z_z_e_r__interface_8h_afb08d363eb0c3a5e9c1363fafce89c7e}\label{_b_u_z_z_e_r__interface_8h_afb08d363eb0c3a5e9c1363fafce89c7e}} 
+\index{BUZZER\_interface.h@{BUZZER\_interface.h}!HBUZZER\_vInit@{HBUZZER\_vInit}}
+\index{HBUZZER\_vInit@{HBUZZER\_vInit}!BUZZER\_interface.h@{BUZZER\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HBUZZER\_vInit()}{HBUZZER\_vInit()}}
+{\footnotesize\ttfamily void HBUZZER\+\_\+v\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}})}]{p\+Buzzer\+\_\+\+Cfg }\end{DoxyParamCaption})}
+
+
+
+This function is used to initialize the Buzzer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration structure to initialize the Buzzer with a certain port and pin \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_f_c_w__program_8c_source_l00061}{AFCW\+\_\+v\+Mode\+ON()}}.
+
+\mbox{\Hypertarget{_b_u_z_z_e_r__interface_8h_a3fba2f43cd7b980367a9f7ceae2205de}\label{_b_u_z_z_e_r__interface_8h_a3fba2f43cd7b980367a9f7ceae2205de}} 
+\index{BUZZER\_interface.h@{BUZZER\_interface.h}!HBUZZER\_vSoundOn@{HBUZZER\_vSoundOn}}
+\index{HBUZZER\_vSoundOn@{HBUZZER\_vSoundOn}!BUZZER\_interface.h@{BUZZER\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HBUZZER\_vSoundOn()}{HBUZZER\_vSoundOn()}}
+{\footnotesize\ttfamily void HBUZZER\+\_\+v\+Sound\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}})}]{p\+Buzzer\+\_\+\+Cfg }\end{DoxyParamCaption})}
+
+
+
+This function is used to sound the Buzzer on. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration to sound on the Buzzer \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_f_c_w__program_8c_source_l00061}{AFCW\+\_\+v\+Mode\+ON()}}.
+
+\mbox{\Hypertarget{_b_u_z_z_e_r__interface_8h_a1f8b56091ccba9dd067e46cb9ad61cc4}\label{_b_u_z_z_e_r__interface_8h_a1f8b56091ccba9dd067e46cb9ad61cc4}} 
+\index{BUZZER\_interface.h@{BUZZER\_interface.h}!HBUZZER\_vSoundOff@{HBUZZER\_vSoundOff}}
+\index{HBUZZER\_vSoundOff@{HBUZZER\_vSoundOff}!BUZZER\_interface.h@{BUZZER\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HBUZZER\_vSoundOff()}{HBUZZER\_vSoundOff()}}
+{\footnotesize\ttfamily void HBUZZER\+\_\+v\+Sound\+Off (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}})}]{p\+Buzzer\+\_\+\+Cfg }\end{DoxyParamCaption})}
+
+
+
+This function is used to sound the Buzzer off. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration to sound off the Buzzer \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by \mbox{\hyperlink{_exit___state__program_8c_source_l00037}{AExit\+\_\+v\+Criteria\+ON()}}, and \mbox{\hyperlink{_f_c_w__program_8c_source_l00061}{AFCW\+\_\+v\+Mode\+ON()}}.
+
+\mbox{\Hypertarget{_b_u_z_z_e_r__interface_8h_a0614a5131fcb0dad7029dae4262efd0b}\label{_b_u_z_z_e_r__interface_8h_a0614a5131fcb0dad7029dae4262efd0b}} 
+\index{BUZZER\_interface.h@{BUZZER\_interface.h}!HBUZZER\_vToggleSound@{HBUZZER\_vToggleSound}}
+\index{HBUZZER\_vToggleSound@{HBUZZER\_vToggleSound}!BUZZER\_interface.h@{BUZZER\_interface.h}}
+\doxysubsubsection{\texorpdfstring{HBUZZER\_vToggleSound()}{HBUZZER\_vToggleSound()}}
+{\footnotesize\ttfamily void HBUZZER\+\_\+v\+Toggle\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1}{P2\+VAR}}(\mbox{\hyperlink{struct_b_u_z_z_e_r___buzzer_configuration}{BUZZER\+\_\+\+Buzzer\+Configuration}})}]{p\+Buzzer\+\_\+\+Cfg }\end{DoxyParamCaption})}
+
+
+
+This function is used to toggle the sound of the buzzer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+Buzzer\+\_\+\+Cfg} & Pointer to Buzzer configuration to toggle the sound of the Buzzer \\
+\hline
+\end{DoxyParams}

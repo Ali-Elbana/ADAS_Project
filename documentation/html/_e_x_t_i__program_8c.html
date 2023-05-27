@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('_e_x_t_i__program_8c.html',''); initRe
 <code>#include &quot;<a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html">../../LIB/LSTD_BITMATH.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_e_x_t_i__private_8h_source.html">EXTI_private.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_e_x_t_i__config_8h_source.html">EXTI_config.h</a>&quot;</code><br />
+<code>#include &quot;EXTI_config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_s_y_s_c_f_g__private_8h_source.html">SYSCFG_private.h</a>&quot;</code><br />
 </div>
 <p><a href="_e_x_t_i__program_8c_source.html">Go to the source code of this file.</a></p>
@@ -191,10 +191,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__syscfg__memory__registers_html_ga531c08f5a73855527d044114a066fbb4"><div class="ttname"><a href="group__syscfg__memory__registers.html#ga531c08f5a73855527d044114a066fbb4">MSYSCFG</a></div><div class="ttdeci">#define MSYSCFG</div><div class="ttdef"><b>Definition:</b> <a href="_s_y_s_c_f_g__private_8h_source.html#l00064">SYSCFG_private.h:64</a></div></div>
 <div class="ttc" id="agroup__typedefs_html_ga8127f1441872f9f912b20a65f40d4d24"><div class="ttname"><a href="group__typedefs.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a></div><div class="ttdeci">unsigned char u8_t</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00030">LSTD_TYPES.h:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00066">CLR_BITs</a>, <a class="el" href="_s_y_s_c_f_g__private_8h_source.html#l00064">MSYSCFG</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00059">SET_BITs</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_e_x_t_i__program_8c_source.html#l00276">MEXTI_vInit_WithStruct()</a>.</p>
-
 </div>
 </div>
 <a id="af54debc6d14edcd542b2d03f68b181b8" name="af54debc6d14edcd542b2d03f68b181b8"></a>
@@ -263,7 +259,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   87</span>    <span class="comment">// Enable EXTI on a line.</span></div>
 <div class="line"><span class="lineno">   88</span>    <a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR = 0;</div>
 <div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>    <a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR |= (<a class="code hl_define" href="group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a">ENABLE</a> &lt;&lt; L_u8ShiftedOffset);</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR |= (ENABLE &lt;&lt; L_u8ShiftedOffset);</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span><span class="comment">// Set EXTI Triggered status on a line.</span></div>
 <div class="line"><span class="lineno">   93</span><span class="preprocessor">#if EXTI_LINE0_TRIGGER == EXTI_RisingEdge</span></div>
@@ -431,11 +427,10 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  270</span> </div>
 <div class="line"><span class="lineno">  271</span>}</div>
 <div class="ttc" id="agroup__bitmath_html_ga6ec8b9eaa50956e59aedcd2c050298d3"><div class="ttname"><a href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a></div><div class="ttdeci">#define SET_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">LSTD_BITMATH.h:23</a></div></div>
-<div class="ttc" id="agroup__exti__line__status_html_ga514ad415fb6125ba296793df7d1a468a"><div class="ttname"><a href="group__exti__line__status.html#ga514ad415fb6125ba296793df7d1a468a">ENABLE</a></div><div class="ttdeci">#define ENABLE</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__private_8h_source.html#l00085">EXTI_private.h:85</a></div></div>
 <div class="ttc" id="agroup__exti__registers_html_gade59853bea97901ef8816f8d8623cdf2"><div class="ttname"><a href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a></div><div class="ttdeci">#define MEXTI</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__private_8h_source.html#l00071">EXTI_private.h:71</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">LSTD_VALUES.h:57</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga4d11bc62f87fecb66ddb08bbe922e468"><div class="ttname"><a href="group__standardvalues.html#ga4d11bc62f87fecb66ddb08bbe922e468">INITIAL_ZERO</a></div><div class="ttdeci">#define INITIAL_ZERO</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">LSTD_VALUES.h:56</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__private_8h_source.html#l00085">ENABLE</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00057">INITIAL_ZERO</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00056">INITIAL_ZERO</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>, and <a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html#l00023">VAR</a>.</p>
 
 </div>
 </div>
@@ -458,19 +453,17 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="_e_x_t_i__program_8c_source.html#l00276">276</a> of file <a class="el" href="_e_x_t_i__program_8c_source.html">EXTI_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  277</span>{</div>
 <div class="line"><span class="lineno">  278</span> </div>
-<div class="line"><span class="lineno">  279</span>    <a class="code hl_function" href="_e_x_t_i__program_8c.html#a484a698963e210849ccfd33e69f61e8f">MEXTI_vEnableLine</a>( A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">LineNum</a>, A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9">TriggerStatus</a> ) ;</div>
+<div class="line"><span class="lineno">  279</span>    <a class="code hl_function" href="_e_x_t_i__interface_8h.html#acc0d34262afbbf8fb80fe0bb2cebc918">MEXTI_vEnableLine</a>( A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">LineNum</a>, A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9">TriggerStatus</a> ) ;</div>
 <div class="line"><span class="lineno">  280</span> </div>
-<div class="line"><span class="lineno">  281</span>    <a class="code hl_function" href="_e_x_t_i__program_8c.html#a01ffb77d3fc4b388649f85dd7a376813">MSYSCFG_vSetEXTIPort</a>( A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">LineNum</a>, A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#a03f7ea588ac005a41d3a5bbc6c4a7059">PortNum</a> ) ;</div>
+<div class="line"><span class="lineno">  281</span>    <a class="code hl_function" href="_e_x_t_i__interface_8h.html#a4ff2b0474ed8dbaef5b76d829e71e6ad">MSYSCFG_vSetEXTIPort</a>( A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">LineNum</a>, A_xINTConfig-&gt;<a class="code hl_variable" href="struct_e_x_t_i___config_type.html#a03f7ea588ac005a41d3a5bbc6c4a7059">PortNum</a> ) ;</div>
 <div class="line"><span class="lineno">  282</span> </div>
 <div class="line"><span class="lineno">  283</span>}</div>
-<div class="ttc" id="a_e_x_t_i__program_8c_html_a01ffb77d3fc4b388649f85dd7a376813"><div class="ttname"><a href="_e_x_t_i__program_8c.html#a01ffb77d3fc4b388649f85dd7a376813">MSYSCFG_vSetEXTIPort</a></div><div class="ttdeci">void MSYSCFG_vSetEXTIPort(u8_t A_u8LineID, u8_t A_u8PortID)</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__program_8c_source.html#l00030">EXTI_program.c:30</a></div></div>
-<div class="ttc" id="a_e_x_t_i__program_8c_html_a484a698963e210849ccfd33e69f61e8f"><div class="ttname"><a href="_e_x_t_i__program_8c.html#a484a698963e210849ccfd33e69f61e8f">MEXTI_vEnableLine</a></div><div class="ttdeci">void MEXTI_vEnableLine(u8_t A_u8LineID, u8_t A_u8TriggerStatus)</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__program_8c_source.html#l00288">EXTI_program.c:288</a></div></div>
+<div class="ttc" id="a_e_x_t_i__interface_8h_html_a4ff2b0474ed8dbaef5b76d829e71e6ad"><div class="ttname"><a href="_e_x_t_i__interface_8h.html#a4ff2b0474ed8dbaef5b76d829e71e6ad">MSYSCFG_vSetEXTIPort</a></div><div class="ttdeci">void MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)</div><div class="ttdoc">Enable the interrupt on a certain line in a certain port.</div></div>
+<div class="ttc" id="a_e_x_t_i__interface_8h_html_acc0d34262afbbf8fb80fe0bb2cebc918"><div class="ttname"><a href="_e_x_t_i__interface_8h.html#acc0d34262afbbf8fb80fe0bb2cebc918">MEXTI_vEnableLine</a></div><div class="ttdeci">void MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)</div><div class="ttdoc">Enable the interrupt on a certain line ID with a certain trigger status.</div></div>
 <div class="ttc" id="astruct_e_x_t_i___config_type_html_a03f7ea588ac005a41d3a5bbc6c4a7059"><div class="ttname"><a href="struct_e_x_t_i___config_type.html#a03f7ea588ac005a41d3a5bbc6c4a7059">EXTI_ConfigType::PortNum</a></div><div class="ttdeci">u8_t PortNum</div><div class="ttdoc">Initialize the interrupt with a certain PORT.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00028">EXTI_interface.h:28</a></div></div>
 <div class="ttc" id="astruct_e_x_t_i___config_type_html_a45c425d724824171926cf8660e9662a9"><div class="ttname"><a href="struct_e_x_t_i___config_type.html#a45c425d724824171926cf8660e9662a9">EXTI_ConfigType::TriggerStatus</a></div><div class="ttdeci">u8_t TriggerStatus</div><div class="ttdoc">The trigger status to trigger when the interrupt occurs.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00033">EXTI_interface.h:33</a></div></div>
 <div class="ttc" id="astruct_e_x_t_i___config_type_html_ab0103928ab78746d72ca7a1edfe59911"><div class="ttname"><a href="struct_e_x_t_i___config_type.html#ab0103928ab78746d72ca7a1edfe59911">EXTI_ConfigType::LineNum</a></div><div class="ttdeci">u8_t LineNum</div><div class="ttdoc">Initialize the interrupt with a certain line ID.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00023">EXTI_interface.h:23</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00023">EXTI_ConfigType::LineNum</a>, <a class="el" href="_e_x_t_i__program_8c_source.html#l00288">MEXTI_vEnableLine()</a>, <a class="el" href="_e_x_t_i__program_8c_source.html#l00030">MSYSCFG_vSetEXTIPort()</a>, <a class="el" href="_e_x_t_i__interface_8h_source.html#l00028">EXTI_ConfigType::PortNum</a>, and <a class="el" href="_e_x_t_i__interface_8h_source.html#l00033">EXTI_ConfigType::TriggerStatus</a>.</p>
-
 </div>
 </div>
 <a id="a484a698963e210849ccfd33e69f61e8f" name="a484a698963e210849ccfd33e69f61e8f"></a>
@@ -507,18 +500,14 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  293</span> </div>
 <div class="line"><span class="lineno">  294</span>        <a class="code hl_define" href="group__bitmath.html#ga6ec8b9eaa50956e59aedcd2c050298d3">SET_BIT</a>(<a class="code hl_define" href="group__exti__registers.html#gade59853bea97901ef8816f8d8623cdf2">MEXTI</a>-&gt;IMR, A_u8LineID);</div>
 <div class="line"><span class="lineno">  295</span> </div>
-<div class="line"><span class="lineno">  296</span>        <a class="code hl_function" href="_e_x_t_i__program_8c.html#ac222bf62cb25f9ef576b2222168826bd">MEXTI_vSetTrigger</a>(A_u8LineID, A_u8TriggerStatus);</div>
+<div class="line"><span class="lineno">  296</span>        <a class="code hl_function" href="_e_x_t_i__interface_8h.html#a880e5ab4d3ca7fbfcde882970c5ac81b">MEXTI_vSetTrigger</a>(A_u8LineID, A_u8TriggerStatus);</div>
 <div class="line"><span class="lineno">  297</span> </div>
 <div class="line"><span class="lineno">  298</span>    }</div>
 <div class="line"><span class="lineno">  299</span> </div>
 <div class="line"><span class="lineno">  300</span>}</div>
-<div class="ttc" id="a_e_x_t_i__program_8c_html_ac222bf62cb25f9ef576b2222168826bd"><div class="ttname"><a href="_e_x_t_i__program_8c.html#ac222bf62cb25f9ef576b2222168826bd">MEXTI_vSetTrigger</a></div><div class="ttdeci">void MEXTI_vSetTrigger(u8_t A_u8LineID, u8_t A_u8TriggerStatus)</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__program_8c_source.html#l00331">EXTI_program.c:331</a></div></div>
+<div class="ttc" id="a_e_x_t_i__interface_8h_html_a880e5ab4d3ca7fbfcde882970c5ac81b"><div class="ttname"><a href="_e_x_t_i__interface_8h.html#a880e5ab4d3ca7fbfcde882970c5ac81b">MEXTI_vSetTrigger</a></div><div class="ttdeci">void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)</div><div class="ttdoc">Set the trigger status interrupt on a certain line ID.</div></div>
 <div class="ttc" id="agroup__exti__line__settings_html_ga5870b26cac399eb25698f68a8603c645"><div class="ttname"><a href="group__exti__line__settings.html#ga5870b26cac399eb25698f68a8603c645">EXTI_MAX_EXTI_NUM</a></div><div class="ttdeci">#define EXTI_MAX_EXTI_NUM</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__private_8h_source.html#l00105">EXTI_private.h:105</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__private_8h_source.html#l00105">EXTI_MAX_EXTI_NUM</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_e_x_t_i__program_8c_source.html#l00331">MEXTI_vSetTrigger()</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_e_x_t_i__program_8c_source.html#l00276">MEXTI_vInit_WithStruct()</a>.</p>
-
 </div>
 </div>
 <a id="a1f3b5b51bbe15c316b31195c6ca1841b" name="a1f3b5b51bbe15c316b31195c6ca1841b"></a>
@@ -548,8 +537,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  313</span>}</div>
 <div class="ttc" id="agroup__bitmath_html_gaf19b6fac717c58884e62ee37a2e89786"><div class="ttname"><a href="group__bitmath.html#gaf19b6fac717c58884e62ee37a2e89786">CLR_BIT</a></div><div class="ttdeci">#define CLR_BIT(Reg, bitnum)</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">LSTD_BITMATH.h:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00105">EXTI_MAX_EXTI_NUM</a>, and <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>.</p>
-
 </div>
 </div>
 <a id="af6b1b151ae0e7cfee8ee534510ada214" name="af6b1b151ae0e7cfee8ee534510ada214"></a>
@@ -578,8 +565,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  325</span> </div>
 <div class="line"><span class="lineno">  326</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__private_8h_source.html#l00105">EXTI_MAX_EXTI_NUM</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
 </div>
 </div>
 <a id="ac222bf62cb25f9ef576b2222168826bd" name="ac222bf62cb25f9ef576b2222168826bd"></a>
@@ -641,10 +626,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup__interrupt__trigger__status_html_gababc163d1594cab727397a54b37fb34e"><div class="ttname"><a href="group__interrupt__trigger__status.html#gababc163d1594cab727397a54b37fb34e">EXTI_RisingEdge</a></div><div class="ttdeci">#define EXTI_RisingEdge</div><div class="ttdoc">trigger interrupt on rising edge</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00218">EXTI_interface.h:218</a></div></div>
 <div class="ttc" id="agroup__interrupt__trigger__status_html_gaf251e318af9a6ba2e13264a606254bc0"><div class="ttname"><a href="group__interrupt__trigger__status.html#gaf251e318af9a6ba2e13264a606254bc0">EXTI_OnChange</a></div><div class="ttdeci">#define EXTI_OnChange</div><div class="ttdoc">trigger interrupt on level change</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00224">EXTI_interface.h:224</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00030">CLR_BIT</a>, <a class="el" href="_e_x_t_i__interface_8h_source.html#l00212">EXTI_FallingEdge</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00105">EXTI_MAX_EXTI_NUM</a>, <a class="el" href="_e_x_t_i__interface_8h_source.html#l00224">EXTI_OnChange</a>, <a class="el" href="_e_x_t_i__interface_8h_source.html#l00218">EXTI_RisingEdge</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_e_x_t_i__program_8c_source.html#l00288">MEXTI_vEnableLine()</a>.</p>
-
 </div>
 </div>
 <a id="aade86f1535e9cc8a1ab3f4057142c922" name="aade86f1535e9cc8a1ab3f4057142c922"></a>
@@ -683,8 +664,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  371</span> </div>
 <div class="line"><span class="lineno">  372</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__private_8h_source.html#l00105">EXTI_MAX_EXTI_NUM</a>.</p>
-
 </div>
 </div>
 <a id="a17e9789a29a87d2df54f12b94dd1a0b6" name="a17e9789a29a87d2df54f12b94dd1a0b6"></a>
@@ -716,10 +695,8 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  387</span> </div>
 <div class="line"><span class="lineno">  388</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_ga5d9011faf4106bf40c74ff617b1e4973"><div class="ttname"><a href="group__interrupt__lines.html#ga5d9011faf4106bf40c74ff617b1e4973">EXTI_LINE0</a></div><div class="ttdeci">#define EXTI_LINE0</div><div class="ttdoc">Line 0.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00104">EXTI_interface.h:104</a></div></div>
-<div class="ttc" id="agroup__standardvalues_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">LSTD_VALUES.h:43</a></div></div>
+<div class="ttc" id="agroup__standardvalues_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__standardvalues.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00042">LSTD_VALUES.h:42</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00104">EXTI_LINE0</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
 </div>
 </div>
 <a id="a49cfdd46eb8d0ef3e1987514aa9343dc" name="a49cfdd46eb8d0ef3e1987514aa9343dc"></a>
@@ -752,8 +729,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  404</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_gaaba6df92e2a71ffd93baec85cd0f9e89"><div class="ttname"><a href="group__interrupt__lines.html#gaaba6df92e2a71ffd93baec85cd0f9e89">EXTI_LINE1</a></div><div class="ttdeci">#define EXTI_LINE1</div><div class="ttdoc">Line 1.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00110">EXTI_interface.h:110</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00110">EXTI_LINE1</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
 </div>
 </div>
 <a id="ab5a1d9e9c8ef50e0cb9ddb5745a20a14" name="ab5a1d9e9c8ef50e0cb9ddb5745a20a14"></a>
@@ -786,8 +761,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  420</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_gaa2510982e59ba9c313eada9cdc76aa08"><div class="ttname"><a href="group__interrupt__lines.html#gaa2510982e59ba9c313eada9cdc76aa08">EXTI_LINE2</a></div><div class="ttdeci">#define EXTI_LINE2</div><div class="ttdoc">Line 2.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00116">EXTI_interface.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00116">EXTI_LINE2</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
 </div>
 </div>
 <a id="a30c045de96d18ec9c67a7b9e4350920f" name="a30c045de96d18ec9c67a7b9e4350920f"></a>
@@ -820,8 +793,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  436</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_ga9534db63b2c5e59646d415e13325c028"><div class="ttname"><a href="group__interrupt__lines.html#ga9534db63b2c5e59646d415e13325c028">EXTI_LINE3</a></div><div class="ttdeci">#define EXTI_LINE3</div><div class="ttdoc">Line 3.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00122">EXTI_interface.h:122</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00122">EXTI_LINE3</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
 </div>
 </div>
 <a id="a290cb997018c8d85d4b965b4a242842f" name="a290cb997018c8d85d4b965b4a242842f"></a>
@@ -854,8 +825,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  452</span>}</div>
 <div class="ttc" id="agroup__interrupt__lines_html_ga148019fb5e5bbf3dbb6cc5eb74541df0"><div class="ttname"><a href="group__interrupt__lines.html#ga148019fb5e5bbf3dbb6cc5eb74541df0">EXTI_LINE4</a></div><div class="ttdeci">#define EXTI_LINE4</div><div class="ttdoc">Line 4.</div><div class="ttdef"><b>Definition:</b> <a href="_e_x_t_i__interface_8h_source.html#l00128">EXTI_interface.h:128</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_e_x_t_i__interface_8h_source.html#l00128">EXTI_LINE4</a>, <a class="el" href="_e_x_t_i__private_8h_source.html#l00071">MEXTI</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00043">NULL</a>, and <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00023">SET_BIT</a>.</p>
-
 </div>
 </div>
 <a id="a7b2096b8b2643286dc3a7e5110e5ae85" name="a7b2096b8b2643286dc3a7e5110e5ae85"></a>
@@ -910,7 +879,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d1250299a5376307af898043e4279e0d.html">COTS</a></li><li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_5fb87216867aef742b0165cc60e7ad53.html">EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__program_8c.html">EXTI_program.c</a></li>
-    <li class="footer">Generated on Wed Dec 14 2022 15:44:31 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat May 27 2023 00:03:12 for ADAS Graduation Project by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

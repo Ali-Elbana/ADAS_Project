@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gpiox_5fmemorymaptype_0',['GPIOx_MemoryMapType',['../struct_g_p_i_ox___memory_map_type.html',1,'']]]
+  ['dcm_5fmotorconfiguration_0',['DCM_MotorConfiguration',['../struct_d_c_m___motor_configuration.html',1,'']]]
 ];

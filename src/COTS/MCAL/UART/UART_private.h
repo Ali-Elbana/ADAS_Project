@@ -1,8 +1,12 @@
-/* FILENAME: UART_private  
-*  Author:  Ali El Bana
-*  Version:  V1.0
-*  DATE:   Fri 10/14/2022
-*/
+/**
+ * @file UART_private.h
+ * @author Ali El Bana
+ * @brief This file contains the private information of UART driver
+ * @version 1.0
+ * @date 10/14/2022
+ */
+
+/* Header file guard */
 #ifndef _UART_private_H
 #define _UART_private_H
 

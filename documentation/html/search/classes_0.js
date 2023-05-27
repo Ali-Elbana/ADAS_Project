@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dcm_5fmotorconfiguration_0',['DCM_MotorConfiguration',['../struct_d_c_m___motor_configuration.html',1,'']]]
+  ['adc_5fmemorymaptype_0',['ADC_MemoryMapType',['../struct_a_d_c___memory_map_type.html',1,'']]]
 ];

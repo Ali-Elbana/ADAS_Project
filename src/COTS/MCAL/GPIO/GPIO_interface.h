@@ -150,8 +150,7 @@ void MGPIOx_vTogglePinValue(VAR(u8_t) A_u8PortID, VAR(u8_t) A_u8PinID);
  * @param[in] A_u8PortID The port to out the value on
  * @param[in] A_u16PortValue The value to set on the port
  */
-void GPIO_vSetNibbleLowValue( VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue ) ;
-
+void GPIO_vSetNibbleLowValue(VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue);
 
 /************************************************************************/
 /*                          Interfacing macros                          */
@@ -571,12 +570,16 @@ void GPIO_vSetNibbleLowValue( VAR(u8_t) A_u8PortID, VAR(u16_t) A_u16PortValue ) 
 
 /** @} */
 
+/**
+ * @def GPIOA_LOW_NIBBLE_HIGH
+ * @brief GPIO Port A low nibble high
+ */
+#define GPIOA_LOW_NIBBLE_HIGH 0xFF
 
-#define GPIOA_LOW_NIBBLE_HIGH	0xFF
-
-#define GPIOA_LOW_NIBBLE_LOW	0x00
-
-
-
+/**
+ * @def GPIOA_LOW_NIBBLE_LOW
+ * @brief GPIO Port A low nibble low
+ */
+#define GPIOA_LOW_NIBBLE_LOW 0x00
 
 #endif //_GPIO_interface_H

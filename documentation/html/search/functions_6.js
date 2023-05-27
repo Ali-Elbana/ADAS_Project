@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['var_0',['VAR',['../_sys_tick__interface_8h.html#a05463fcebb8a7c018f7dce492b39e328',1,'SysTick_interface.h']]]
+  ['rtos_5fu8createtask_0',['RTOS_u8CreateTask',['../_my_r_t_o_s__interface_8h.html#ad80a61316a610b4d70341f5587c6935b',1,'RTOS_u8CreateTask(void A_CopyHandler(void), u8_t A_u8Periodicity, u8_t A_u8Priority, u8_t A_u8FirstDelay):&#160;MyRTOS_program.c'],['../_my_r_t_o_s__program_8c.html#ad80a61316a610b4d70341f5587c6935b',1,'RTOS_u8CreateTask(void A_CopyHandler(void), u8_t A_u8Periodicity, u8_t A_u8Priority, u8_t A_u8FirstDelay):&#160;MyRTOS_program.c']]],
+  ['rtos_5fu8deletetask_1',['RTOS_u8DeleteTask',['../_my_r_t_o_s__interface_8h.html#afd440e17cb67d1430a3e775e3541ce36',1,'RTOS_u8DeleteTask(u8_t A_u8Priority):&#160;MyRTOS_program.c'],['../_my_r_t_o_s__program_8c.html#afd440e17cb67d1430a3e775e3541ce36',1,'RTOS_u8DeleteTask(u8_t A_u8Priority):&#160;MyRTOS_program.c']]],
+  ['rtos_5fu8resumetask_2',['RTOS_u8ResumeTask',['../_my_r_t_o_s__interface_8h.html#aed429b678059d8a495c3e7688cd997b6',1,'RTOS_u8ResumeTask(u8_t A_u8Priority):&#160;MyRTOS_program.c'],['../_my_r_t_o_s__program_8c.html#aed429b678059d8a495c3e7688cd997b6',1,'RTOS_u8ResumeTask(u8_t A_u8Priority):&#160;MyRTOS_program.c']]],
+  ['rtos_5fu8suspendtask_3',['RTOS_u8SuspendTask',['../_my_r_t_o_s__interface_8h.html#a73d7011d7cced02f5cd1677f19d82e89',1,'RTOS_u8SuspendTask(u8_t A_u8Priority):&#160;MyRTOS_program.c'],['../_my_r_t_o_s__program_8c.html#a73d7011d7cced02f5cd1677f19d82e89',1,'RTOS_u8SuspendTask(u8_t A_u8Priority):&#160;MyRTOS_program.c']]],
+  ['rtos_5fvstartos_4',['RTOS_vStartOS',['../_my_r_t_o_s__interface_8h.html#a8f2584cce3e176599db2aea37c77a614',1,'RTOS_vStartOS(void):&#160;MyRTOS_program.c'],['../_my_r_t_o_s__program_8c.html#a8f2584cce3e176599db2aea37c77a614',1,'RTOS_vStartOS(void):&#160;MyRTOS_program.c']]]
 ];

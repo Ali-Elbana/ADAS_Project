@@ -12,12 +12,13 @@ var _sys_tick__interface_8h =
     [ "MSysTick_vDelayMicroSec", "_sys_tick__interface_8h.html#a4fad8ea85f5b15c9bc861b8c93d79672", null ],
     [ "MSysTick_vDelayMilliSec", "_sys_tick__interface_8h.html#a1e33cc70ac096839a0377f4d9716bd04", null ],
     [ "MSysTick_vDelaySec", "_sys_tick__interface_8h.html#a03c3d971653533d421d39fa094393dba", null ],
-    [ "MSysTick_vSetSingleInterval", "_sys_tick__interface_8h.html#a3cafdfe46ddf474da42fb8726c36485a", null ],
-    [ "MSysTick_vSetPeriodicInterval", "_sys_tick__interface_8h.html#a460c9d69948f5e22aa24d57ea778b952", null ],
+    [ "MSysTick_vSetSingleInterval", "_sys_tick__interface_8h.html#ac25d52e28d687ad7d870a0c055b18d6c", null ],
+    [ "MSysTick_vSetPeriodicInterval", "_sys_tick__interface_8h.html#a8c0a733d140ce5dc6d66b35f8ecb797b", null ],
     [ "MSysTick_vStopInterval", "_sys_tick__interface_8h.html#a9c9a6f3425756cab6a1fbb3b20a23b70", null ],
     [ "MSysTick_u32GetElapsedTime", "_sys_tick__interface_8h.html#a45ee3f2564c8000bc7cf233e96d1c69e", null ],
     [ "MSysTick_u32GetRemainingTime", "_sys_tick__interface_8h.html#aa51d26a36ec48495d2c3e8373d2a1a51", null ],
     [ "MSysTick_vEnable", "_sys_tick__interface_8h.html#a7251bfe242375bc64ba056925ad386df", null ],
     [ "MSysTick_vDisable", "_sys_tick__interface_8h.html#acccf8e71a97d029223e58bd5ab1ae9be", null ],
-    [ "MSysTick_vEnableException", "_sys_tick__interface_8h.html#a0c426902b052e85b0fb0759a40bd5308", null ]
+    [ "MSysTick_vEnableException", "_sys_tick__interface_8h.html#a0c426902b052e85b0fb0759a40bd5308", null ],
+    [ "MSysTick_vDisableException", "_sys_tick__interface_8h.html#a4402d4fad36c22569b8587202ac24630", null ]
 ];

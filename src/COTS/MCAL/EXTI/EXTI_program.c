@@ -27,7 +27,7 @@ static void( *GS_vEXTI_Callback[EXTI_IRQs] ) (void) = {NULL} ;
 /*                     Functions implementations                      	*/
 /************************************************************************/
 
-FUNC(void) MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
+void MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
 {
 	VAR(u8_t) L_u8Index = A_u8LineID / 4;
 	VAR(u8_t) L_u8ShiftAmount = A_u8LineID % 4;
@@ -39,7 +39,7 @@ FUNC(void) MSYSCFG_vSetEXTIPort(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8PortID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vInit(void)
+void MEXTI_vInit(void)
 {
 
 	VAR(u8_t) L_u8ShiftedOffset = INITIAL_ZERO;
@@ -273,7 +273,7 @@ FUNC(void) MEXTI_vInit(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig)
+void MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig)
 {
 
 	MEXTI_vEnableLine( A_xINTConfig->LineNum, A_xINTConfig->TriggerStatus ) ;
@@ -285,7 +285,7 @@ FUNC(void) MEXTI_vInit_WithStruct(P2VAR(EXTI_ConfigType) A_xINTConfig)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
+void MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -302,7 +302,7 @@ FUNC(void) MEXTI_vEnableLine(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
+void MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -315,7 +315,7 @@ FUNC(void) MEXTI_vDisableLine(VAR(u8_t) A_u8LineID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
+void MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -328,7 +328,7 @@ FUNC(void) MEXTI_vSWITrigger(VAR(u8_t) A_u8LineID)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
+void MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -361,7 +361,7 @@ FUNC(void) MEXTI_vSetTrigger(VAR(u8_t) A_u8LineID, VAR(u8_t) A_u8TriggerStatus)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
+void MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(void))
 {
 
 	if (A_u8LineID < EXTI_MAX_EXTI_NUM)
@@ -374,7 +374,7 @@ FUNC(void) MEXTI_vSetCallback(VAR(u8_t) A_u8LineID, P2FUNC(VAR(void), A_vFptr)(v
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI0_IRQHandler(void)
+void EXTI0_IRQHandler(void)
 {
 
 	if (GS_vEXTI_Callback[EXTI_LINE0] != NULL)
@@ -390,7 +390,7 @@ FUNC(void) EXTI0_IRQHandler(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI1_IRQHandler(void)
+void EXTI1_IRQHandler(void)
 {
 
 	if (GS_vEXTI_Callback[EXTI_LINE1] != NULL)
@@ -406,7 +406,7 @@ FUNC(void) EXTI1_IRQHandler(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI2_IRQHandler(void)
+void EXTI2_IRQHandler(void)
 {
 
 	if (GS_vEXTI_Callback[EXTI_LINE2] != NULL)
@@ -422,7 +422,7 @@ FUNC(void) EXTI2_IRQHandler(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI3_IRQHandler(void)
+void EXTI3_IRQHandler(void)
 {
 
 	if (GS_vEXTI_Callback[EXTI_LINE3] != NULL)
@@ -438,7 +438,7 @@ FUNC(void) EXTI3_IRQHandler(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI4_IRQHandler(void)
+void EXTI4_IRQHandler(void)
 {
 
 	if (GS_vEXTI_Callback[EXTI_LINE4] != NULL)
@@ -454,7 +454,7 @@ FUNC(void) EXTI4_IRQHandler(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI9_5_IRQHandler(void)
+void EXTI9_5_IRQHandler(void)
 {
 
 }
@@ -462,7 +462,7 @@ FUNC(void) EXTI9_5_IRQHandler(void)
 /*******************************************************************************************************************/
 /******************************************************************************************************************/
 
-FUNC(void) EXTI15_10_IRQHandler(void)
+void EXTI15_10_IRQHandler(void)
 {
 
 }
