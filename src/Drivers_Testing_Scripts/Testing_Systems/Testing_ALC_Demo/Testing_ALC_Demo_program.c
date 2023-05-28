@@ -54,7 +54,7 @@ void TSALC_vDispLux( void )
 
 	HLDR_vInit( ) ;
 
-	HLCD_vDispString( "LUX:" ) ;
+	HLCD_vDispString( "Do:" ) ;
 
 	while( TRUE )
 	{
