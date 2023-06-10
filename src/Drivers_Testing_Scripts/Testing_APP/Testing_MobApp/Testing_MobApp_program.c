@@ -23,7 +23,6 @@
 #include "../../../COTS/HAL/UltraSonic/UltraSonic_interface.h"
 
 #include "../../../COTS/APP/Mob_APP/Mob_APP_interface.h"
-#include "../../../COTS/APP/ACC/ACC_interface.h"
 
 #include "Testing_MobApp_interface.h"
 #include "Testing_MobApp_private.h"
